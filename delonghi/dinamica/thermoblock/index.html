@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De&#39;Longhi</a>
@@ -81,7 +73,7 @@
       <span>Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">De&#39;Longhi • Heizelemente &amp; Thermoblöcke</span>
+        <h1>De&#39;Longhi Dinamica (ECAM 350.55.B): Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">De&#39;Longhi</span>
-          <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
           <span class="badge-rating">★ 4.7 (680 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: 5513227941</span>
         </div>
-
-        <h1>De&#39;Longhi Dinamica (ECAM 350.55.B): Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B0H6MDHX5S?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B0H6MDHX5S) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B0H6MDHX5S?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -164,12 +144,12 @@
         <div class="section-box">
           <h2>🔬 Mechatronische Analyse &amp; Funktionsprinzip</h2>
           <hr class="section-divider">
-          <p class="prose-p">Der Thermoblock der De&#39;Longhi Dinamica ECAM 350.55.B fungiert als kompakter hydrodynamischer Durchlauferhitzer mit einer Nennleistungsaufnahme von <strong>1400 W</strong> bei <strong>230 V</strong> Wechselspannung. Die physikalische Konstruktion basiert auf einem hochverdichteten Aluminium-Druckgusskörper (typischerweise AlSi10Mg), in welchen eine rohrförmige Edelstahl-Heizwendel (Werkstoff 1.4541 bzw.</p>
+          <p class="prose-p">Der <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> der De&#39;Longhi Dinamica ECAM 350.55.B fungiert als kompakter hydrodynamischer Durchlauferhitzer mit einer Nennleistungsaufnahme von <strong>1400 W</strong> bei <strong>230 V</strong> Wechselspannung. Die physikalische Konstruktion basiert auf einem hochverdichteten Aluminium-Druckgusskörper (typischerweise AlSi10Mg), in welchen eine rohrförmige Edelstahl-Heizwendel (Werkstoff 1.4541 bzw.</p>
 <p class="prose-p">Incoloy-800) im Einbettungsverfahren spaltfrei eingegossen ist. Der ohmsche Soll-Widerstand der primären Heizschleife liegt im kalten Zustand (20 °C) bei präzise 37,8 Ω mit einer zulässigen Werkstoleranz von ±5 % (35,9 Ω bis 39,7 Ω).</p>
-<p class="prose-p">Hydraulisch ist das Heizelement für einen statischen Betriebsdruck von bis zu <strong>18 bar</strong> ausgelegt; im dynamischen Brühbetrieb generiert die nachgeschaltete <strong>Ulka EP5</strong> Schwingkolbenpumpe einen Extraktionsdruck zwischen 9 und <strong>12 bar</strong> bei einem geregelten Volumenstrom von 1,2 bis <strong>2,5 ml</strong>/s. Die thermische Erfassung erfolgt über einen NTC-Sensor (negativer Temperaturkoeffizient), der mittels Wärmeleitpaste direkt an der Au��enwandung des Blocks verschraubt oder geklemmt ist.</p>
+<p class="prose-p">Hydraulisch ist das Heizelement für einen statischen Betriebsdruck von bis zu <strong>18 bar</strong> ausgelegt; im dynamischen Brühbetrieb generiert die nachgeschaltete <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Ulka Pumpe">Ulka EP5</a> <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> einen Extraktionsdruck zwischen 9 und <strong>12 bar</strong> bei einem geregelten Volumenstrom von 1,2 bis <strong>2,5 ml</strong>/s. Die thermische Erfassung erfolgt über einen NTC-Sensor (negativer Temperaturkoeffizient), der mittels Wärmeleitpaste direkt an der Au��enwandung des Blocks verschraubt oder geklemmt ist.</p>
 <p class="prose-p">Dieser Heißleiter weist bei 20 °C einen Referenzwiderstand von ca. 10 bis 12 kΩ auf, welcher bei Betriebstemperatur (95 °C) auf ca. 1,1 bis 1,3 kΩ absinkt. Zum Überhitzungsschutz sind zwei thermische Schmelzsicherungen (Microtemp) in Serie geschaltet, ausgelegt auf eine Abschalttemperatur von 192 °C (oder modellabhängig 216 °C) bei 10 A Nennstrom.</p>
 <p class="prose-p">Die Hochdruckfluidik nutzt 4x2 mm <strong>PTFE</strong>-Druckschläuche, die über Raccord-Steckanschlüsse mit Sicherungssplinten aus Federstahl <strong>1.4310</strong> fixiert und durch peroxidisch vernetzte <strong>VMQ</strong>- bzw. <strong>EPDM</strong>-O-Ringe (70 Shore A) hermetisch abgedichtet werden.</p>
-<p class="prose-p">Mechanische Hauptversagensursachen sind hydrostatische Spannungsrisse durch Frost- oder Überdruckeinwirkung, Lochfraßkorrosion im Aluminiumkörper durch Verwendung amidosulfonsäure- oder essigsäurebasierter Entkalker mit falschem pH-Wert sowie die thermische Zersetzung der Polymer-Elastomerdichtungen infolge permanenter thermozyklischer Wechsellast.</p>
+<p class="prose-p">Mechanische Hauptversagensursachen sind hydrostatische Spannungsrisse durch Frost- oder Überdruckeinwirkung, Lochfraßkorrosion im Aluminiumkörper durch Verwendung amidosulfonsäure- oder essigsäurebasierter <a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/" class="wiki-link" title="Wasserfilter &amp; Entkalkung">Entkalker</a> mit falschem pH-Wert sowie die thermische Zersetzung der Polymer-Elastomerdichtungen infolge permanenter thermozyklischer Wechsellast.</p>
           
           <div class="callout-box callout-tip">
             <span class="callout-icon">💡</span>
@@ -184,251 +164,302 @@
         <div class="section-box">
           <h2>⚠️ Typische Ausfallsymptome &amp; Ursachenanalyse</h2>
           <hr class="section-divider">
-          <p class="prose-p">Das Versagen des <strong>1400W</strong>-Thermoblocks oder dessen NTC-Sensorik manifestiert sich durch charakteristische sensorische, akustische und steuerungstechnische Fehlermuster. Das prominenteste Leitsymptom ist die Meldung &#39;Allgemeine Störung&#39; (im Servicemenü als Error 01 hinterlegt) im Display der ECAM 350.55.B unmittelbar nach dem Einschalten oder nach Ablauf eines 3-minütigen Initialisierungs-Timeouts.</p>
+          <p class="prose-p">Das Versagen des <strong>1400W</strong>-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblocks</a> oder dessen NTC-Sensorik manifestiert sich durch charakteristische sensorische, akustische und steuerungstechnische Fehlermuster. Das prominenteste Leitsymptom ist die Meldung &#39;Allgemeine Störung&#39; (im Servicemenü als Error 01 hinterlegt) im Display der ECAM 350.55.B unmittelbar nach dem Einschalten oder nach Ablauf eines 3-minütigen Initialisierungs-Timeouts.</p>
 <p class="prose-p">Dies tritt ein, wenn die Triac-Ansteuerung der Leistungselektronik zwar aktiv ist, der Mikrocontroller über die NTC-Spannungsteilerschaltung jedoch keinen plausiblen Temperaturgradienten (dT/dt) detektiert. Die primäre Ursache liegt hierbei entweder in einem irreversiblen Wendelbruch des Rohrheizkörpers (Widerstand = unendlich), dem Auslösen der 192 °C-Thermosicherungen infolge von Kalkschichten, die als Wärmeisolator fungieren, oder einem NTC-Drahtbruch.</p>
-<p class="prose-p">Ein weiteres Phänomen ist eine lauwarme Kaffeeausgabe (&lt; 70 °C in der Tasse) mit blasser, instabiler Crema, hervorgerufen durch partielle NTC-Drift oder massive Calcit-Ablagerungen (CaCO3) im Innenkanal, welche den Wärmeübergangskoeffizienten drastisch reduzieren. Akustisch kündigt sich ein fortschreitender thermischer Defekt oft durch intensives Dampfknattern (Kavitation) und ein verzögertes Ansprechen der Brühgruppe an.</p>
+<p class="prose-p">Ein weiteres Phänomen ist eine lauwarme Kaffeeausgabe (&lt; 70 °C in der Tasse) mit blasser, instabiler Crema, hervorgerufen durch partielle NTC-Drift oder massive Calcit-Ablagerungen (CaCO3) im Innenkanal, welche den Wärmeübergangskoeffizienten drastisch reduzieren. Akustisch kündigt sich ein fortschreitender thermischer Defekt oft durch intensives Dampfknattern (Kavitation) und ein verzögertes Ansprechen der <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> an.</p>
 <p class="prose-p">Begleitend tritt häufig ein Druckabfall auf, wenn interne Dichtungen porös werden, was zu zischenden Entweichungsgeräuschen und Heißwasseransammlungen in der Auffangschale oder dem Geräteboden führt. Schlägt der Isolationswiderstand des Heizelements infolge von Feuchtigkeitsschäden gegen Masse durch (&gt; 1 mA Leckstrom), löst im häuslichen Unterverteiler der Fehlerstrom-Schutzschalter (FI/RCD) unverzüglich aus.</p>
-          
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Freischaltung und Gehäusedemontage</h4>
+                  <p>Netzstecker ziehen, Wassertank und Bohnenbehälterdeckel entfernen. Rückwand und Seitenteile mit Torx TX20 lösen, Rastnasen vorsichtig aushebeln.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Elektrische Messtechnik und Spannungsfreiheit</h4>
+                  <p>Spannungsfreiheit feststellen. Thermoblock-Heizwendel (Soll: ~38 Ω), Thermosicherungen (Soll: 0 Ω) und NTC-Sensor (Soll: ~10-12 kΩ bei Raumtemperatur) mit Multimeter auf Durchgang prüfen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Hydraulische Dekonnektierung</h4>
+                  <p>Sicherungssplinte der PTFE-Hochdruckschläuche mit Schlitzschraubendreher entnehmen, Schläuche vorsichtig abziehen, Restwasser mit saugfähigem Tuch auffangen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Mechanischer Komponententausch</h4>
+                  <p>Befestigungsschrauben des Thermoblock-Trägers lösen. Alten Block entnehmen. Neuen 1400W Thermoblock montieren, NTC-Fühler mit Wärmeleitpaste bestreichen und präzise fixieren.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Dichtungstausch, Reassemblierung und Druckprüfung</h4>
+                  <p>Neue rote VMQ-O-Ringe mit OKS 1110 fetten, PTFE-Rohre arretieren, Splinte setzen. Gehäuse schließen, Spülzyklus starten und Sichtprüfung auf absolute Dichtigkeit durchführen.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Freischaltung und Gehäusedemontage</div>
-                <div class="step-item-desc">Netzstecker ziehen, Wassertank und Bohnenbehälterdeckel entfernen. Rückwand und Seitenteile mit Torx TX20 lösen, Rastnasen vorsichtig aushebeln.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Elektrische Messtechnik und Spannungsfreiheit</div>
-                <div class="step-item-desc">Spannungsfreiheit feststellen. Thermoblock-Heizwendel (Soll: ~38 Ω), Thermosicherungen (Soll: 0 Ω) und NTC-Sensor (Soll: ~10-12 kΩ bei Raumtemperatur) mit Multimeter auf Durchgang prüfen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Hydraulische Dekonnektierung</div>
-                <div class="step-item-desc">Sicherungssplinte der PTFE-Hochdruckschläuche mit Schlitzschraubendreher entnehmen, Schläuche vorsichtig abziehen, Restwasser mit saugfähigem Tuch auffangen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Mechanischer Komponententausch</div>
-                <div class="step-item-desc">Befestigungsschrauben des Thermoblock-Trägers lösen. Alten Block entnehmen. Neuen 1400W Thermoblock montieren, NTC-Fühler mit Wärmeleitpaste bestreichen und präzise fixieren.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Dichtungstausch, Reassemblierung und Druckprüfung</div>
-                <div class="step-item-desc">Neue rote VMQ-O-Ringe mit OKS 1110 fetten, PTFE-Rohre arretieren, Splinte setzen. Gehäuse schließen, Spülzyklus starten und Sichtprüfung auf absolute Dichtigkeit durchführen.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Vor Beginn der Revision an der De&#39;Longhi Dinamica ECAM 350.55.B ist die Maschine zwingend allpolig vom <strong>230V</strong>-Netz zu trennen. Legen Sie sich folgende Werkzeuge bereit: <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> und <strong>TX20</strong>, feiner Schlitzschraubendreher (<strong>2,5 mm</strong>), Spitzzange, Digitalmultimeter, silikonfreies Schleifvlies, <strong>OKS 1110</strong> lebensmittelechtes Silikonfett sowie Hochleistungs-Wärmeleitpaste auf Zinkoxid-Basis.</p>
+          <p class="prose-p">Vor Beginn der Revision an der De&#39;Longhi Dinamica ECAM 350.55.B ist die Maschine zwingend allpolig vom <strong>230V</strong>-Netz zu trennen. Legen Sie sich folgende Werkzeuge bereit: <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> und <strong>TX20</strong>, feiner Schlitzschraubendreher (<strong>2,5 mm</strong>), Spitzzange, Digitalmultimeter, silikonfreies Schleifvlies, <strong>OKS 1110</strong> lebensmittelechtes Silikonfett sowie Hochleistungs-Wärmeleitpaste auf Zinkoxid-Basis.</p>
 <p class="prose-p">Entfernen Sie Wassertank, Tropfschale und Kaffeesatzbehälter. Lösen Sie die Schrauben der Gehäuserückwand (<strong>TX20</strong>) und schieben Sie diese nach hinten weg.</p>
-<p class="prose-p">Die beiden Seitenwände lassen sich nach dem Lösen der rückseitigen Haltepunkte durch leichtes Schieben nach hinten entriegeln. Lokalisieren Sie den Thermoblock im oberen Maschinenbereich.</p>
+<p class="prose-p">Die beiden Seitenwände lassen sich nach dem Lösen der rückseitigen Haltepunkte durch leichtes Schieben nach hinten entriegeln. Lokalisieren Sie den <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> im oberen Maschinenbereich.</p>
 <p class="prose-p">Führen Sie eine Eingangsmessung durch: Ziehen Sie die Flachstecker der Heizung ab und messen Sie den Widerstand direkt an den Anschlussfahnen. Liegt der Wert nicht im Sollbereich von 36–40 Ω, ist die Wendel defekt.</p>
 <p class="prose-p">Prüfen Sie die zwei inline geschalteten Thermosicherungen auf Durchgang (&lt; 0,5 Ω); offener Durchgang indiziert ein Übertemperaturereignis. Messen Sie den NTC-Sensor über dessen zweipoligen JST-Stecker (Soll: ca. 10–12 kΩ bei 20 °C).</p>
 <p class="prose-p">Zum Ausbau hebeln Sie die Haltefedern (Splinte) an den Fluidanschlüssen mit dem Schlitzschraubendreher heraus. Ziehen Sie die <strong>PTFE</strong>-Druckschläuche axial heraus.</p>
 <p class="prose-p">Die alten O-Ringe müssen ausnahmslos verworfen werden. Lösen Sie die Erdungsschraube (PE) sowie die mechanischen Befestigungsschrauben am Halteblech.</p>
-<p class="prose-p">Setzen Sie den neuen Thermoblock <strong>1400W</strong> ein. Übertragen Sie den NTC-Sensor: Reinigen Sie die Kontaktfläche am Block metallisch rein, tragen Sie einen erbsengroßen Tropfen Wärmeleitpaste auf und schrauben Sie den Sensor mit maximal <strong>0,8 Nm</strong> Drehmoment fest, um Verzug zu vermeiden.</p>
+<p class="prose-p">Setzen Sie den neuen <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> <strong>1400W</strong> ein. Übertragen Sie den NTC-Sensor: Reinigen Sie die Kontaktfläche am Block metallisch rein, tragen Sie einen erbsengroßen Tropfen Wärmeleitpaste auf und schrauben Sie den Sensor mit maximal <strong>0,8 Nm</strong> Drehmoment fest, um Verzug zu vermeiden.</p>
 <p class="prose-p">Bestücken Sie die <strong>PTFE</strong>-Schläuche mit neuen roten <strong>VMQ</strong>-Dichtungen (4x2 mm), die hauchdünn mit <strong>OKS 1110</strong> benetzt sind. Schieben Sie die Rohre bis zum spürbaren Anschlag ein und arretieren Sie die Sicherungssplinte vollständig.</p>
 <p class="prose-p">Stecken Sie die hitzebeständigen Silikon-Flachsteckhülsen wieder fest auf die Fahnen. Montieren Sie das Gehäuse provisorisch für den ersten Testlauf.</p>
 <p class="prose-p">Schalten Sie das Gerät ein, beobachten Sie die Initialisierungsphase und initiieren Sie über das Display mehrere Spülzyklen. Kontrollieren Sie die Anschlüsse unter Verwendung einer Inspektionslampe minutiös auf Mikroleckagen oder Dampfaustritt, bevor die endgültige Gehäusemontage erfolgt.</p>
-          </div>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Allgemeine Störung (General Alarm) nach 2-3 Minuten</strong></td>
-                    <td data-label="Mögliche Ursache">Heizschleife unterbrochen (R = unendlich), Thermosicherungen 192 °C ausgelöst oder NTC-Sensor hochohmig abgerissen.</td>
-                    <td data-label="Lösungsmaßnahme">Widerstandsmessung durchführen: Heizkreis (Soll: ~38 Ω), Sicherungen (Soll: 0 Ω) und NTC (Soll: ~11 kΩ) prüfen; defektes Bauteil bzw. Thermoblock austauschen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Kaffeebrühtemperatur signifikant zu gering (&lt; 75 °C)</strong></td>
-                    <td data-label="Mögliche Ursache">Massive Verkalkungsschicht im inneren Wendelrohr wirkt thermisch isolierend; NTC hat Kennliniendrift nach unten.</td>
-                    <td data-label="Lösungsmaßnahme">Entkalkungsprogramm intensiv mit Milchsäure durchführen. Bleibt die Temperatur niedrig, NTC-Sensorik messen und gegebenenfalls Fühler inklusive Wärmeleitpaste erneuern.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Zischen im Innenraum und Wasserverlust unter der Maschine</strong></td>
-                    <td data-label="Mögliche Ursache">Gealterte, versprödete VMQ-O-Ringe (70 Shore A) an den Steckanschlüssen oder Riss im Aluminium-Druckgussgehäuse durch Kavitation/Frost.</td>
-                    <td data-label="Lösungsmaßnahme">PTFE-Schlauchverbindungen demontieren, Dichtsitz säubern, neue VMQ-Dichtungen mit OKS 1110 applizieren. Bei Gehäuseriss den gesamten Thermoblock zwingend ersetzen.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Allgemeine Störung (General Alarm) nach 2-3 Minuten</td>
+                  <td>Heizschleife unterbrochen (R = unendlich), Thermosicherungen 192 °C ausgelöst oder NTC-Sensor hochohmig abgerissen.</td>
+                  <td class="diag-fix">✓ Widerstandsmessung durchführen: Heizkreis (Soll: ~38 Ω), Sicherungen (Soll: 0 Ω) und NTC (Soll: ~11 kΩ) prüfen; defektes Bauteil bzw. Thermoblock austauschen.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Manuelle Heißwasserspülung über die Düse auslösen, um Mikropartikel aus dem Brühkanal zu spülen; Abtropfschale auf Feuchtigkeitsspuren prüfen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Präventive Entkalkung mit originalem EcoDecalk (Milchsäurebasis) durchführen; pH-neutrale Pflege des Aluminium-Druckgusses gewährleisten.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6-12 Monate</strong></td>
-                    <td data-label="Maßnahme">Sichtprüfung der Raccord-Anschlüsse im Maschineninnenraum auf Kalkblüten; Erneuerung der VMQ-Dichtungen an den PTFE-Rohren und Neufettung des oberen Brühkolbens mit OKS 1110.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Kaffeebrühtemperatur signifikant zu gering (&lt; 75 °C)</td>
+                  <td>Massive Verkalkungsschicht im inneren Wendelrohr wirkt thermisch isolierend; NTC hat Kennliniendrift nach unten.</td>
+                  <td class="diag-fix">✓ Entkalkungsprogramm intensiv mit Milchsäure durchführen. Bleibt die Temperatur niedrig, NTC-Sensorik messen und gegebenenfalls Fühler inklusive Wärmeleitpaste erneuern.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Zischen im Innenraum und Wasserverlust unter der Maschine</td>
+                  <td>Gealterte, versprödete VMQ-O-Ringe (70 Shore A) an den Steckanschlüssen oder Riss im Aluminium-Druckgussgehäuse durch Kavitation/Frost.</td>
+                  <td class="diag-fix">✓ PTFE-Schlauchverbindungen demontieren, Dichtsitz säubern, neue VMQ-Dichtungen mit OKS 1110 applizieren. Bei Gehäuseriss den gesamten Thermoblock zwingend ersetzen.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>De&#39;Longhi Dinamica ECAM 350.55.B, De&#39;Longhi Dinamica ECAM 350.15.B, De&#39;Longhi Dinamica ECAM 350.35.W, De&#39;Longhi Dinamica ECAM 350.75.S, De&#39;Longhi Dinamica Plus ECAM 370.70.B, De&#39;Longhi Dinamica Plus ECAM 370.95.T, De&#39;Longhi Magnifica S ECAM 22.110.B, De&#39;Longhi Intensa ECAM 23.420.SW</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">De&#39;Longhi Magnifica ESAM 3000.B (Hufeisen-Thermoblock mit zwei Heizkreisen), De&#39;Longhi Primadonna ESAM 6600 (Doppel-Boiler System), De&#39;Longhi Dedica EC 685 (Siebträger-Thermoblock-Bauform), De&#39;Longhi EAM Serie (Klassische Röhrenkessel)</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica ECAM 350.55.B</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica ECAM 350.15.B</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica ECAM 350.35.W</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica ECAM 350.75.S</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica Plus ECAM 370.70.B</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica Plus ECAM 370.95.T</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Magnifica S ECAM 22.110.B</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Intensa ECAM 23.420.SW</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi Magnifica ESAM 3000.B (Hufeisen-Thermoblock mit zwei Heizkreisen)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi Primadonna ESAM 6600 (Doppel-Boiler System)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi Dedica EC 685 (Siebträger-Thermoblock-Bauform)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi EAM Serie (Klassische Röhrenkessel)</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Manuelle Heißwasserspülung über die Düse auslösen, um Mikropartikel aus dem Brühkanal zu spülen; Abtropfschale auf Feuchtigkeitsspuren prüfen.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Präventive Entkalkung mit originalem EcoDecalk (Milchsäurebasis) durchführen; pH-neutrale Pflege des Aluminium-Druckgusses gewährleisten.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Sichtprüfung der Raccord-Anschlüsse im Maschineninnenraum auf Kalkblüten; Erneuerung der VMQ-Dichtungen an den PTFE-Rohren und Neufettung des oberen Brühkolbens mit OKS 1110.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Wie überprüfe ich den Thermoblock und die Thermosicherungen messtechnisch mit einem Multimeter?</div>
-                <div class="faq-answer">A: Für die messtechnische Diagnose trennen Sie das Gerät zwingend vom Stromnetz und ziehen mindestens eine Flachsteckhülse der Heizelemente ab, um Fehlmessungen durch Parallelschaltungen zu verhindern. Stellen Sie das Multimeter auf Widerstandsmessung (200-Ω-Bereich). Kontaktieren Sie die beiden Anschlussfahnen der Heizspirale: Das Messgerät muss einen Wert zwischen 36 und 40 Ω anzeigen. Ein unendlicher Widerstand (OL) belegt einen Bruch der internen Heizwendel. Messen Sie danach im Durchgangsprüfmodus die beiden thermischen Schmelzsicherungen. Ein intakter Übertemperaturschutz weist einen Widerstand nahe 0,0 bis 0,3 Ω auf. Zeigt eine der Sicherungen keinen Durchgang, hat sie bei 192 °C irreversibel ausgelöst und muss zusammen mit der Fehlerursache ersetzt werden.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Wie überprüfe ich den Thermoblock und die Thermosicherungen messtechnisch mit einem Multimeter?</div>
+                <div class="faq-a">Für die messtechnische Diagnose trennen Sie das Gerät zwingend vom Stromnetz und ziehen mindestens eine Flachsteckhülse der Heizelemente ab, um Fehlmessungen durch Parallelschaltungen zu verhindern. Stellen Sie das Multimeter auf Widerstandsmessung (200-Ω-Bereich). Kontaktieren Sie die beiden Anschlussfahnen der Heizspirale: Das Messgerät muss einen Wert zwischen 36 und 40 Ω anzeigen. Ein unendlicher Widerstand (OL) belegt einen Bruch der internen Heizwendel. Messen Sie danach im Durchgangsprüfmodus die beiden thermischen Schmelzsicherungen. Ein intakter Übertemperaturschutz weist einen Widerstand nahe 0,0 bis 0,3 Ω auf. Zeigt eine der Sicherungen keinen Durchgang, hat sie bei 192 °C irreversibel ausgelöst und muss zusammen mit der Fehlerursache ersetzt werden.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum darf für diesen De&#39;Longhi Thermoblock keinesfalls Zitronen- oder Essigsäure zur Entkalkung verwendet werden?</div>
-                <div class="faq-answer">A: Der Thermoblock der ECAM-Serie besteht aus einer AlSi10Mg-Aluminium-Druckgusslegierung. Essigsäure greift die Passivierungsschicht des Aluminiums chemisch stark an, zersetzt Elastomer-Dichtungen und führt zu Lochfraßkorrosion. Zitronensäure wiederum bildet bei den im Brühprozess herrschenden Betriebstemperaturen von bis zu 95 °C unlösliches Calciumcitrat. Dieser zähe Niederschlag lagert sich mikrokristallin in den engen Windungen des Strömungskanals ab und verstopft das System dauerhaft. De&#39;Longhi schreibt zwingend Entkalker auf Basis organischer L-(+)-Milchsäure (wie EcoDecalk) vor. Diese schont das Aluminiumsubstrat, komplexiert Calciumionen wasserlöslich und greift weder die peroxidisch vernetzten VMQ-O-Ringe noch den Brühzylinder an.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum darf für diesen De&#39;Longhi Thermoblock keinesfalls Zitronen- oder Essigsäure zur Entkalkung verwendet werden?</div>
+                <div class="faq-a">Der Thermoblock der ECAM-Serie besteht aus einer AlSi10Mg-Aluminium-Druckgusslegierung. Essigsäure greift die Passivierungsschicht des Aluminiums chemisch stark an, zersetzt Elastomer-Dichtungen und führt zu Lochfraßkorrosion. Zitronensäure wiederum bildet bei den im Brühprozess herrschenden Betriebstemperaturen von bis zu 95 °C unlösliches Calciumcitrat. Dieser zähe Niederschlag lagert sich mikrokristallin in den engen Windungen des Strömungskanals ab und verstopft das System dauerhaft. De&#39;Longhi schreibt zwingend Entkalker auf Basis organischer L-(+)-Milchsäure (wie EcoDecalk) vor. Diese schont das Aluminiumsubstrat, komplexiert Calciumionen wasserlöslich und greift weder die peroxidisch vernetzten VMQ-O-Ringe noch den Brühzylinder an.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Welche Symptome deuten auf einen defekten NTC-Temperatursensor hin und wie verifiziert man seine Kennlinie?</div>
-                <div class="faq-answer">A: Ein defekter NTC-Sensor äußert sich primär durch zwei Extreme: Überhitzt der Block unkontrolliert bis zum Ansprechen der Schmelzsicherungen, meldet der Sensor fälschlicherweise einen zu hohen Widerstand (Kälte). Bleibt das Wasser kalt oder bricht die Maschine mit &#39;Allgemeine Störung&#39; ab, liegt meist ein Kurzschluss oder Kabelbruch vor. Zur Verifikation ziehen Sie den Sensorstecker von der Leistungsplatine ab und messen im 20-kΩ-Bereich. Bei 20 °C Umgebungstemperatur muss der Messwert präzise zwischen 10 und 12 kΩ liegen. Erwärmt man den Fühler z. B. vorsichtig mit den Fingern oder warmer Luft, muss der Widerstandswert kontinuierlich und linear abfallen (z. B. auf 6–7 kΩ bei 35 °C). Sprunghafte Messwertänderungen belegen einen irreversiblen Halbleiterdefekt.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Welche Symptome deuten auf einen defekten NTC-Temperatursensor hin und wie verifiziert man seine Kennlinie?</div>
+                <div class="faq-a">Ein defekter NTC-Sensor äußert sich primär durch zwei Extreme: Überhitzt der Block unkontrolliert bis zum Ansprechen der Schmelzsicherungen, meldet der Sensor fälschlicherweise einen zu hohen Widerstand (Kälte). Bleibt das Wasser kalt oder bricht die Maschine mit &#39;Allgemeine Störung&#39; ab, liegt meist ein Kurzschluss oder Kabelbruch vor. Zur Verifikation ziehen Sie den Sensorstecker von der Leistungsplatine ab und messen im 20-kΩ-Bereich. Bei 20 °C Umgebungstemperatur muss der Messwert präzise zwischen 10 und 12 kΩ liegen. Erwärmt man den Fühler z. B. vorsichtig mit den Fingern oder warmer Luft, muss der Widerstandswert kontinuierlich und linear abfallen (z. B. auf 6–7 kΩ bei 35 °C). Sprunghafte Messwertänderungen belegen einen irreversiblen Halbleiterdefekt.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu De&#39;Longhi</h3>
-          <ul class="sidebar-links">
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/bruehgruppe/">
-                  › Magnifica S &amp; Dinamica (ECAM Baureihe): Brühgruppe Revision &amp; O-Ring Dichtungsset
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/vibrationspumpe/">
-                  › Magnifica S (ECAM 22.110.B): Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/fehlercodes/">
-                  › Magnifica S (ECAM 22.110.B): Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung
-                </a>
-              </li>
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>De&#39;Longhi Dinamica (ECAM 350.55.B)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B0H6MDHX5S?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für Dinamica (ECAM 350.55.B)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/milchkaraffe/">
-                  › Dinamica (ECAM 350.55.B): LatteCrema Milchkaraffe &amp; Aufschäumerdeckel
+                  <span>LatteCrema Milchkaraffe &amp; Aufschäumerdeckel</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/thermoblock/">
-                  › Dinamica (ECAM 350.55.B): Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/magnetventil/">
-                  › Eletta Cappuccino (ECAM 44.660.B): 2-Wege &amp; 3-Wege Solenoid Magnetventil 230V
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wassertank-ventil/">
-                  › Magnifica S &amp; Dinamica: Wassertank-Ventil Lippendichtung &amp; Feder
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wasserfilter/">
-                  › Alle ECAM &amp; ETAM Serien: DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)
-                </a>
-              </li>
-            
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/" style="font-weight:700; color:var(--primary);">
+                <span>Alle Dinamica (ECAM 350.55.B) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">De&#39;Longhi Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/">
+                  <span>Magnifica S &amp; Dinamica (ECAM Baureihe)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/">
+                  <span>Dinamica (ECAM 350.55.B)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/">
+                  <span>Eletta Cappuccino (ECAM 44.660.B)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/la-specialista/">
+                  <span>La Specialista (EC9335.M)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="font-weight:700; color:var(--primary);">
+                <span>Zur De&#39;Longhi Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -443,50 +474,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">De&#39;Longhi Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B0H6MDHX5S?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

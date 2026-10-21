@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De&#39;Longhi</a>
@@ -81,7 +73,7 @@
       <span>Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">De&#39;Longhi • Störungsdiagnose &amp; Fehlercodes</span>
+        <h1>De&#39;Longhi Magnifica S (ECAM 22.110.B): Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">De&#39;Longhi</span>
-          <span class="badge-cat">Störungsdiagnose &amp; Fehlercodes</span>
           <span class="badge-rating">★ 4.9 (3.120 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: DIAG-ECAM-01</span>
         </div>
-
-        <h1>De&#39;Longhi Magnifica S (ECAM 22.110.B): Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B0FDFW6NW8?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B0FDFW6NW8) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B0FDFW6NW8?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -164,10 +144,10 @@
         <div class="section-box">
           <h2>🔬 Mechatronische Analyse &amp; Funktionsprinzip</h2>
           <hr class="section-divider">
-          <p class="prose-p">Die De&#39;Longhi Magnifica S (ECAM 22.110.B) basiert auf einer modular aufgebauten Systemarchitektur, die elektromechanische, fluidische und elektronische Regelkreise eng miteinander verzahnt. Im Zentrum der Kaffeewasserextraktion steht eine elektromagnetische Schwingkolbenpumpe des Typs <strong>Ulka EX5</strong> (<strong>230 V</strong>, <strong>48 W</strong>, <strong>50 Hz</strong>), die gegen ein geschlossenes System einen Spitzenförderdruck von nominal <strong>15 bar</strong> generiert.</p>
+          <p class="prose-p">Die De&#39;Longhi Magnifica S (ECAM 22.110.B) basiert auf einer modular aufgebauten Systemarchitektur, die elektromechanische, fluidische und elektronische Regelkreise eng miteinander verzahnt. Im Zentrum der Kaffeewasserextraktion steht eine elektromagnetische <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> des Typs <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Ulka Pumpe">Ulka EX5</a> (<strong>230 V</strong>, <strong>48 W</strong>, <strong>50 Hz</strong>), die gegen ein geschlossenes System einen Spitzenförderdruck von nominal <strong>15 bar</strong> generiert.</p>
 <p class="prose-p">Im stationären Brühzyklus pendelt sich der reale Betriebsdruck über den hydraulischen Strömungswiderstand des komprimierten Kaffeepucks auf 9,5 bis <strong>11,5 bar</strong> bei einem volumetrischen Durchsatz von ca. 120 bis <strong>180 ml</strong>/min ein. Überdruckspitzen werden durch ein federbelastetes mechanisches Überdruckventil (OPV) mit <strong>EPDM</strong>-Dichtkörper abgeleitet, welches ab ca. <strong>16 bar</strong> in den Rücklauf öffnet.</p>
-<p class="prose-p">Die thermische Energieübertragung erfolgt über einen <strong>1400 W</strong> starken Aluminium-Druckguss-Thermoblock mit integriertem Edelstahlrohr (Werkstoff <strong>1.4301</strong> / AISI 304). Die präzise Temperaturregelung wird über einen NTC-Sensor realisiert (Nennwiderstand ca. 10 bis 12 kΩ bei 25 °C; ca. 1,0 bis 1,4 kΩ bei 100 °C Betriebstemperatur), überwacht durch zwei redundante, auf <strong>1.4310</strong>-Federstahlklammern montierte Bimetall-Thermosicherungen (Abschaltschwelle 192 °C).</p>
-<p class="prose-p">Die fluidischen Verbindungsleitungen bestehen aus extrudiertem Polytetrafluorethylen (<strong>PTFE</strong>, Außendurchmesser <strong>4,0 mm</strong>, Wandstärke <strong>1,0 mm</strong>), die mit Messing-Stützhülsen armiert und über hochtemperaturbeständige Elastomer-O-Ringe aus Polyvinyl-Methyl-Silikon (<strong>VMQ</strong>, 70 Shore A Härte) gegen Heißwasseraustritt abgedichtet werden. Mechanisch stützt sich die Brühgruppe auf formstabile Komponenten aus Polyoxymethylen (<strong>POM</strong>), einem hochkristallinen Thermoplasten mit exzellentem Gleitreibungsverhalten und hoher Biegewechselfestigkeit.</p>
+<p class="prose-p">Die thermische Energieübertragung erfolgt über einen <strong>1400 W</strong> starken Aluminium-Druckguss-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mit integriertem Edelstahlrohr (Werkstoff <strong>1.4301</strong> / AISI 304). Die präzise Temperaturregelung wird über einen NTC-Sensor realisiert (Nennwiderstand ca. 10 bis 12 kΩ bei 25 °C; ca. 1,0 bis 1,4 kΩ bei 100 °C Betriebstemperatur), überwacht durch zwei redundante, auf <strong>1.4310</strong>-Federstahlklammern montierte Bimetall-Thermosicherungen (Abschaltschwelle 192 °C).</p>
+<p class="prose-p">Die fluidischen Verbindungsleitungen bestehen aus extrudiertem Polytetrafluorethylen (<strong>PTFE</strong>, Außendurchmesser <strong>4,0 mm</strong>, Wandstärke <strong>1,0 mm</strong>), die mit Messing-Stützhülsen armiert und über hochtemperaturbeständige Elastomer-O-Ringe aus Polyvinyl-Methyl-Silikon (<strong>VMQ</strong>, 70 Shore A Härte) gegen Heißwasseraustritt abgedichtet werden. Mechanisch stützt sich die <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> auf formstabile Komponenten aus Polyoxymethylen (<strong>POM</strong>), einem hochkristallinen Thermoplasten mit exzellentem Gleitreibungsverhalten und hoher Biegewechselfestigkeit.</p>
 <p class="prose-p">Der vertikale Hubschlitten wird über eine Trapezgewindespindel mit 230-V-Permanentmagnet-DC-Motor angetrieben. Die Weginformation und Positionserfassung des Brühkolbens im Brühzylinder erfolgen hybrid: Der obere Totpunkt (TDC) und untere Totpunkt (BDC) werden über mechanische Präzisions-Mikroschalter registriert, während die relative Verfahrstrecke über eine Gabellichtschranke bzw. einen optoelektronischen Reed-Sensor am Impulsgeberrad der Getriebewelle inkrementell gezählt wird.</p>
 <p class="prose-p">Mechanische Schwachstellen konzentrieren sich auf thermisch induzierten Viskositätsverlust des Spindelschmierfetts, Kalkablagerungen im Bereich der Ventilstößel, Mikrorisse in <strong>POM</strong>-Druckstutzen sowie das Nachlassen der Radialspannung der <strong>VMQ</strong>-Lippendichtungen am Brühkolben.</p>
           
@@ -185,247 +165,326 @@
           <h2>⚠️ Typische Ausfallsymptome &amp; Ursachenanalyse</h2>
           <hr class="section-divider">
           <p class="prose-p">Tritt an der Magnifica S eine Fehlfunktion auf, signalisiert die Steuerelektronik dies primär über die LED-Statusanzeigen des Bedienfelds, insbesondere durch das rote Warndreieck (Allgemeine Störung). Ein statisches, ununterbrochenes Leuchten des roten Warndreiecks unmittelbar nach Beendigung der Netzinitialisierung weist darauf hin, dass die elektronische Selbstüberprüfung fehlgeschlagen ist.</p>
-<p class="prose-p">Häufige Ursachen sind ein hochohmiger NTC-Temperaturfühler (Kabelbruch oder Sensor-Drift), ausgelöste 192-°C-Thermosicherungen (Heizkreiswiderstand R = ∞ anstelle der Sollwerte von 38 bis 45 Ω) oder eine mechanisch blockierte Brühgruppe. Kann der Gleichstrommotor den Schlitten innerhalb des programmierten Timeouts (ca. 4,5 bis 6 Sekunden) nicht aus der Parkposition bewegen, bricht die Steuerung den Vorgang ab, um einen Motordefekt zu verhindern.</p>
-<p class="prose-p">Ein blinkendes Warndreieck während des regulären Kaffeebezugs oder des Spülvorgangs indiziert hingegen eine unzureichende Impulsfrequenz des Turbinen-Flowmeters (unter 0,5 l/min Durchfluss) infolge schwerer Verkalkung des Thermoblocks, einer verstopften Brühsieb-Mikroperforation oder eines Luftpolsters im Pumpenzylinder nach Wassermangel. Auffällige akustische Anomalien liefern exakte Diagnoseparameter: Ein lautes, gequältes Ächzen oder Knarren während der Brühgruppenfahrt resultiert aus abgewaschenem Schmierfilm auf der Trapezgewindespindel und gequollenen Brühkolbendichtungen, wodurch der Motorstrom den Überwachungsschwellwert von 1,8 A überschreitet.</p>
+<p class="prose-p">Häufige Ursachen sind ein hochohmiger NTC-Temperaturfühler (Kabelbruch oder Sensor-Drift), ausgelöste 192-°C-Thermosicherungen (Heizkreiswiderstand R = ∞ anstelle der Sollwerte von 38 bis 45 Ω) oder eine mechanisch blockierte <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a>. Kann der Gleichstrommotor den Schlitten innerhalb des programmierten Timeouts (ca. 4,5 bis 6 Sekunden) nicht aus der Parkposition bewegen, bricht die Steuerung den Vorgang ab, um einen Motordefekt zu verhindern.</p>
+<p class="prose-p">Ein blinkendes Warndreieck während des regulären Kaffeebezugs oder des Spülvorgangs indiziert hingegen eine unzureichende Impulsfrequenz des Turbinen-Flowmeters (unter 0,5 l/min Durchfluss) infolge schwerer Verkalkung des <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblocks</a>, einer verstopften Brühsieb-Mikroperforation oder eines Luftpolsters im Pumpenzylinder nach Wassermangel. Auffällige akustische Anomalien liefern exakte Diagnoseparameter: Ein lautes, gequältes Ächzen oder Knarren während der Brühgruppenfahrt resultiert aus abgewaschenem Schmierfilm auf der Trapezgewindespindel und gequollenen Brühkolbendichtungen, wodurch der Motorstrom den Überwachungsschwellwert von 1,8 A überschreitet.</p>
 <p class="prose-p">Ein schnelles, metallisches Klacken rührt von überspringenden Zahnflanken des Getrieberitzels her. Ein abrupt verstummendes oder extrem leises Brummen der Ulka-Pumpe ohne Kaffeeauslauf zeigt einen unüberwindbaren hydraulischen Gegendruck (&gt; <strong>15 bar</strong>) an, meist bedingt durch einen verkalkten oberen Brühkolben oder eine verpresste Feinmahlung im Siebtrichter.</p>
-          
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Elektrische Freischaltung und Demontage der Gehäuseschalen</h4>
+                  <p>Netzstecker ziehen, Wassertank und Abtropfschale entnehmen. Die fünf rückseitigen Torx-Schrauben (TX20 mit Stirnlochbohrung) lösen. Die Gehäuserückwand abnehmen, danach die beiden Seitenwände nach hinten schieben und aus den Verrasterungen aushängen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Aktivierung des Diagnose- und Prüfmodus</h4>
+                  <p>Bei gezogenem Netzstecker gleichzeitig die Tasten &#39;Einzeltasse Espresso&#39; und &#39;Dampf&#39; drücken und halten, während der Netzstecker wieder eingesteckt wird. Im Testmodus über die Fronttasten den Antrieb manuell hoch-/runterfahren sowie Pumpe, Mahlwerk und Thermoblock separat ansteuern, um die Mikroschalterquittierung über die LEDs zu prüfen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Elektrische Widerstandsmessung an Thermoblock und NTC</h4>
+                  <p>Mit einem Digitalmultimeter (Messbereich 200 Ω) den Durchgangswiderstand der Heizwendel prüfen (Sollwert: 38–45 Ω). Die beiden Thermosicherungen auf Durchgang prüfen (Sollwert: &lt; 0,5 Ω). Den NTC-Sensor abziehen und bei 20–25 °C Raumtemperatur messen (Sollwert: 10–12 kΩ).</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Revision des oberen Brühkolbens und Endschalterprüfung</h4>
+                  <p>Die Druckleitungen durch Ziehen der Messing-Sicherungsfedern drucklos demontieren. Die Befestigungsschrauben des oberen Brühkolbens lösen, Kolben entnehmen, zerlegen und die roten VMQ-Lippendichtungen ersetzen. Mikroschalter am oberen Anschlag auf mechanischen Schaltpunkt und elektrischen Übergangswiderstand prüfen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Reinigung, Spindelschmierung und Remontage</h4>
+                  <p>Die Trapezgewindespindel von Kaffeestaub und verharztem Altfett befreien. Dünn mit lebensmittelechtem Hochtemperatur-Silikonfett (z. B. OKS 1110) bestreichen. Gehäuse remontieren, einen Spülvorgang auslösen und den Brühzyklus auf Leckagen sowie reibungslose Endlagenabschaltung überwachen.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Elektrische Freischaltung und Demontage der Gehäuseschalen</div>
-                <div class="step-item-desc">Netzstecker ziehen, Wassertank und Abtropfschale entnehmen. Die fünf rückseitigen Torx-Schrauben (TX20 mit Stirnlochbohrung) lösen. Die Gehäuserückwand abnehmen, danach die beiden Seitenwände nach hinten schieben und aus den Verrasterungen aushängen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Aktivierung des Diagnose- und Prüfmodus</div>
-                <div class="step-item-desc">Bei gezogenem Netzstecker gleichzeitig die Tasten &#39;Einzeltasse Espresso&#39; und &#39;Dampf&#39; drücken und halten, während der Netzstecker wieder eingesteckt wird. Im Testmodus über die Fronttasten den Antrieb manuell hoch-/runterfahren sowie Pumpe, Mahlwerk und Thermoblock separat ansteuern, um die Mikroschalterquittierung über die LEDs zu prüfen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Elektrische Widerstandsmessung an Thermoblock und NTC</div>
-                <div class="step-item-desc">Mit einem Digitalmultimeter (Messbereich 200 Ω) den Durchgangswiderstand der Heizwendel prüfen (Sollwert: 38–45 Ω). Die beiden Thermosicherungen auf Durchgang prüfen (Sollwert: &lt; 0,5 Ω). Den NTC-Sensor abziehen und bei 20–25 °C Raumtemperatur messen (Sollwert: 10–12 kΩ).</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Revision des oberen Brühkolbens und Endschalterprüfung</div>
-                <div class="step-item-desc">Die Druckleitungen durch Ziehen der Messing-Sicherungsfedern drucklos demontieren. Die Befestigungsschrauben des oberen Brühkolbens lösen, Kolben entnehmen, zerlegen und die roten VMQ-Lippendichtungen ersetzen. Mikroschalter am oberen Anschlag auf mechanischen Schaltpunkt und elektrischen Übergangswiderstand prüfen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Reinigung, Spindelschmierung und Remontage</div>
-                <div class="step-item-desc">Die Trapezgewindespindel von Kaffeestaub und verharztem Altfett befreien. Dünn mit lebensmittelechtem Hochtemperatur-Silikonfett (z. B. OKS 1110) bestreichen. Gehäuse remontieren, einen Spülvorgang auslösen und den Brühzyklus auf Leckagen sowie reibungslose Endlagenabschaltung überwachen.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Die Instandsetzung der De&#39;Longhi ECAM 22.110.B bei Signalisierung des roten Warndreiecks erfordert zwingend methodisches Vorgehen und standardisiertes Werkzeug. Zur Grundausstattung gehören ein <strong>Torx</strong>-Sicherheitsbit-Satz (zwingend <strong>TX20</strong> mit Innenbohrung für die De&#39;Longhi-Sicherheitsschrauben, sowie <strong>TX10</strong>), ein Kreuzschlitz-Schraubendreher PH1/PH2, ein O-Ring-Demontagehaken aus Polyamid, ein digitales Multimeter mit Messbereich bis 200 kΩ sowie <strong>NSF-H1</strong>-zertifiziertes Schmierfett (z.</p>
+          <p class="prose-p">Die Instandsetzung der De&#39;Longhi ECAM 22.110.B bei Signalisierung des roten Warndreiecks erfordert zwingend methodisches Vorgehen und standardisiertes Werkzeug. Zur Grundausstattung gehören ein <strong>Torx</strong>-Sicherheitsbit-Satz (zwingend <strong>TX20</strong> mit Innenbohrung für die De&#39;Longhi-Sicherheitsschrauben, sowie <strong>TX10</strong>), ein Kreuzschlitz-Schraubendreher PH1/PH2, ein O-Ring-Demontagehaken aus Polyamid, ein digitales Multimeter mit Messbereich bis 200 kΩ sowie <strong>NSF-H1</strong>-zertifiziertes Schmierfett (z.</p>
 <p class="prose-p">B. <strong>OKS 1110</strong> oder Klüberpaste UH1 14-151).</p>
 <p class="prose-p">Trennen Sie das Gerät vor Arbeitsbeginn ausnahmslos zweipolig vom 230-V-Netz. Nach Demontage der Verkleidungsteile wird zunächst eine visuelle Inspektion auf interne Wasserschäden und Spuren von Kriechströmen an der Leistungselektronik durchgeführt.</p>
-<p class="prose-p">Liegt ein Blockadefehler vor, muss die Leichtgängigkeit der Brühgruppenmechanik geprüft werden. Lässt sich die Brühgruppe im stromlosen Zustand nicht über den Entriegelungsmechanismus entnehmen, steht sie nicht in Grundstellung.</p>
+<p class="prose-p">Liegt ein Blockadefehler vor, muss die Leichtgängigkeit der Brühgruppenmechanik geprüft werden. Lässt sich die <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> im stromlosen Zustand nicht über den Entriegelungsmechanismus entnehmen, steht sie nicht in Grundstellung.</p>
 <p class="prose-p">Schalten Sie das Gerät in den herstellerspezifischen Testmodus (Tastenkombination &#39;1 Tasse&#39; + &#39;Dampf&#39; beim Einstecken): Drücken Sie die Taste für Kaffeesatzbehälter/Mahlgrad, um den DC-Motor anzusteuern. Fährt der Schlitten nach oben, muss bei Erreichen des oberen Brühkolbens die Bezugs-LED aufleuchten – geschieht dies nicht, ist der obere Marquardt-Mikroschalter defekt oder dessen Schaltfahne verbogen.</p>
 <p class="prose-p">Bei Erreichen der unteren Endlage muss die Kaffeesatz-LED signalisieren. Zeigt der Motor keine Reaktion, prüfen Sie mit dem Multimeter die Motorspulen auf Durchgang (typisch 40 bis 60 Ω Gleichstromwiderstand) sowie die Transistoren der H-Brücke auf der Platine.</p>
 <p class="prose-p">Werden thermische Fehler vermutet, messen Sie die Heizschleife: Ergibt die Messung an den Thermosicherungen unendlichen Widerstand, haben diese ausgelöst. Tauschen Sie niemals nur die Sicherungen, sondern stets auch die Wärmeleitpaste des NTC-Sensors und den Sensor selbst, da ein träge gewordener Sensor die Überhitzung verursacht hat.</p>
 <p class="prose-p">Bei der Revision des oberen Brühkolbens werden sämtliche <strong>VMQ</strong>-Dichtungen erneuert, die Dichtsitze mit Isopropanol gereinigt und die Kolbeninnenwand hauchdünn gefettet. Führen Sie vor Schließen des Gehäuses einen Testlauf unter Beobachtung durch, um sicherzustellen, dass die <strong>PTFE</strong>-Anschlüsse bei <strong>12 bar</strong> Druckaufbau absolut dicht abschließen.</p>
-          </div>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Rotes Warndreieck leuchtet dauerhaft direkt nach dem Einschalten</strong></td>
-                    <td data-label="Mögliche Ursache">Thermoblock heizt nicht (Thermosicherungen 192 °C offen, Heizwendel unterbrochen) oder NTC-Temperatursensor defekt/Kabelbruch.</td>
-                    <td data-label="Lösungsmaßnahme">Widerstand an Heizung (Soll: 38–45 Ω) und Sicherungen prüfen. Sicherungssatz inkl. NTC-Sensor austauschen, falls kein Durchgang vorhanden ist.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Rotes Warndreieck blinkt rhythmisch, Kaffeepulver wird trocken abgeworfen</strong></td>
-                    <td data-label="Mögliche Ursache">Brühgruppenantrieb blockiert mechanisch oder oberer Mikroschalter wird durch Hubschlitten nicht betätigt (Timeout-Abschaltung der Elektronik).</td>
-                    <td data-label="Lösungsmaßnahme">Trapezgewindespindel reinigen und mit OKS 1110 schmieren. Mikroschalter am oberen Totpunkt im Testmodus prüfen und ggf. ersetzen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Rotes Warndreieck und Dampf-LED blinken abwechselnd / Pumpe brummt laut</strong></td>
-                    <td data-label="Mögliche Ursache">Strömungswächter (Flowmeter) registriert keinen Durchfluss. Entweder hydraulischer Pfad massiv verkalkt oder Flügelrad-Sensor blockiert.</td>
-                    <td data-label="Lösungsmaßnahme">Heißwasser über Dampflanze beziehen, um System zu entlüften. Reagiert das System nicht, Flowmeter öffnen, reinigen oder Reed-Sensorplatine erneuern.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Rotes Warndreieck leuchtet dauerhaft direkt nach dem Einschalten</td>
+                  <td>Thermoblock heizt nicht (Thermosicherungen 192 °C offen, Heizwendel unterbrochen) oder NTC-Temperatursensor defekt/Kabelbruch.</td>
+                  <td class="diag-fix">✓ Widerstand an Heizung (Soll: 38–45 Ω) und Sicherungen prüfen. Sicherungssatz inkl. NTC-Sensor austauschen, falls kein Durchgang vorhanden ist.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Herausnehmen der Brühgruppe, gründliches Spülen unter fließendem warmen Wasser (ohne Reinigungsmittel!), Reinigen des Brühkammerinnenraums und der Abtropfschale.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Prüfen und mechanisches Reinigen des oberen Brühkolbensiebs; Entfetten der Brühgruppenführung und Sichtprüfung der VMQ-Lippendichtungen auf Risse oder Versprödung.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6-12 Monate</strong></td>
-                    <td data-label="Maßnahme">Vollständige Entkalkung mit Amidosulfonsäure-basiertem Entkalker; Neuabschmieren der Trapezgewindespindel und Kolbenführungen mit OKS 1110; Wechsel der VMQ-O-Ringe am Druckschlauchanschluss und Brühkolben.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Rotes Warndreieck blinkt rhythmisch, Kaffeepulver wird trocken abgeworfen</td>
+                  <td>Brühgruppenantrieb blockiert mechanisch oder oberer Mikroschalter wird durch Hubschlitten nicht betätigt (Timeout-Abschaltung der Elektronik).</td>
+                  <td class="diag-fix">✓ Trapezgewindespindel reinigen und mit OKS 1110 schmieren. Mikroschalter am oberen Totpunkt im Testmodus prüfen und ggf. ersetzen.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Rotes Warndreieck und Dampf-LED blinken abwechselnd / Pumpe brummt laut</td>
+                  <td>Strömungswächter (Flowmeter) registriert keinen Durchfluss. Entweder hydraulischer Pfad massiv verkalkt oder Flügelrad-Sensor blockiert.</td>
+                  <td class="diag-fix">✓ Heißwasser über Dampflanze beziehen, um System zu entlüften. Reagiert das System nicht, Flowmeter öffnen, reinigen oder Reed-Sensorplatine erneuern.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>De&#39;Longhi Magnifica S ECAM 22.110.B, De&#39;Longhi Magnifica S ECAM 22.110.SB, De&#39;Longhi Magnifica S ECAM 21.117.B, De&#39;Longhi Magnifica S ECAM 21.117.SB, De&#39;Longhi Intensa ECAM 23.210.B, De&#39;Longhi Intensa ECAM 23.420.SW, De&#39;Longhi ECAM 25.120.B</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">De&#39;Longhi Magnifica ESAM 3000.B (Verwendet mechanisch inkompatiblen Schwenkarm-Thermoblock), De&#39;Longhi ESAM 04.110.S (Größere Gehäusechassis-Bauform und ESAM-Getriebeblock), De&#39;Longhi EAM 3200 (Alte Getriebegeneration mit 230V-Wechselstrommotor), De&#39;Longhi Dedica EC 685 (Siebträger-Thermoblock-System ohne Brühgruppe), De&#39;Longhi La Specialista EC 9335 (Manuelles Siebträgersystem mit Dual-Heizblock)</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Magnifica S ECAM 22.110.B</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Magnifica S ECAM 22.110.SB</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Magnifica S ECAM 21.117.B</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Magnifica S ECAM 21.117.SB</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Intensa ECAM 23.210.B</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Intensa ECAM 23.420.SW</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi ECAM 25.120.B</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi Magnifica ESAM 3000.B (Verwendet mechanisch inkompatiblen Schwenkarm-Thermoblock)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi ESAM 04.110.S (Größere Gehäusechassis-Bauform und ESAM-Getriebeblock)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi EAM 3200 (Alte Getriebegeneration mit 230V-Wechselstrommotor)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi Dedica EC 685 (Siebträger-Thermoblock-System ohne Brühgruppe)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi La Specialista EC 9335 (Manuelles Siebträgersystem mit Dual-Heizblock)</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Herausnehmen der Brühgruppe, gründliches Spülen unter fließendem warmen Wasser (ohne Reinigungsmittel!), Reinigen des Brühkammerinnenraums und der Abtropfschale.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Prüfen und mechanisches Reinigen des oberen Brühkolbensiebs; Entfetten der Brühgruppenführung und Sichtprüfung der VMQ-Lippendichtungen auf Risse oder Versprödung.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Vollständige Entkalkung mit Amidosulfonsäure-basiertem Entkalker; Neuabschmieren der Trapezgewindespindel und Kolbenführungen mit OKS 1110; Wechsel der VMQ-O-Ringe am Druckschlauchanschluss und Brühkolben.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum leuchtet das rote Warndreieck meiner De&#39;Longhi ECAM 22.110.B sofort nach dem Einschalten auf?</div>
-                <div class="faq-answer">A: Das permanente Aufleuchten des roten Warndreiecks direkt beim Gerätestart ist das Resultat eines fehlgeschlagenen System-Selbsttests der Steuerplatine. Während der Initialisierung fragt der Mikrocontroller die Plausibilität der NTC-Sensorwerte ab und prüft den Durchgang des Heizkreises. Wenn der Thermoblock innerhalb eines definierten Zeitfensters keine Wärme abgibt (Heizdraht defekt oder mindestens eine der beiden 192-°C-Schmelzsicherungen ausgelöst), oder wenn der NTC-Messwert außerhalb des Bereichs von 2 bis 150 kΩ liegt, schaltet die Steuerung aus Brandschutzgründen das gesamte System ab. Es handelt sich hierbei um eine hardwareseitige Notabschaltung, die erst behoben werden kann, wenn die unterbrochene Komponente messtechnisch identifiziert und ausgetauscht wurde.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum leuchtet das rote Warndreieck meiner De&#39;Longhi ECAM 22.110.B sofort nach dem Einschalten auf?</div>
+                <div class="faq-a">Das permanente Aufleuchten des roten Warndreiecks direkt beim Gerätestart ist das Resultat eines fehlgeschlagenen System-Selbsttests der Steuerplatine. Während der Initialisierung fragt der Mikrocontroller die Plausibilität der NTC-Sensorwerte ab und prüft den Durchgang des Heizkreises. Wenn der Thermoblock innerhalb eines definierten Zeitfensters keine Wärme abgibt (Heizdraht defekt oder mindestens eine der beiden 192-°C-Schmelzsicherungen ausgelöst), oder wenn der NTC-Messwert außerhalb des Bereichs von 2 bis 150 kΩ liegt, schaltet die Steuerung aus Brandschutzgründen das gesamte System ab. Es handelt sich hierbei um eine hardwareseitige Notabschaltung, die erst behoben werden kann, wenn die unterbrochene Komponente messtechnisch identifiziert und ausgetauscht wurde.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Wie wird der interne Diagnose- und Testmodus aufgerufen und was lässt sich damit prüfen?</div>
-                <div class="faq-answer">A: Der herstellerspezifische Testmodus wird aktiviert, indem das Gerät vom Stromnetz getrennt wird und anschließend bei gleichzeitig gedrückten Tasten &#39;1 Tasse Espresso&#39; und &#39;Dampf&#39; der Netzstecker wieder eingesteckt wird. Sobald die LEDs aufleuchten, befindet sich die ECAM 22.110.B im manuellen Steuermodus. Über die Fronttasten können nun einzelne Komponenten direkt mit Betriebsspannung versorgt werden: Die Kaffeetasten verfahren den Spindelantrieb millimetergenau nach oben und unten. Die LED-Symbole zeigen dabei in Echtzeit an, ob der obere Mikroschalter, der untere Mikroschalter oder der Hallsensor korrekt durchschalten. Ebenso lassen sich das Mahlwerk, die Ulka-Pumpe und der Thermoblock isoliert triggern, was eine präzise Fehlerzuordnung ohne teures Teiletauschen ermöglicht.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Wie wird der interne Diagnose- und Testmodus aufgerufen und was lässt sich damit prüfen?</div>
+                <div class="faq-a">Der herstellerspezifische Testmodus wird aktiviert, indem das Gerät vom Stromnetz getrennt wird und anschließend bei gleichzeitig gedrückten Tasten &#39;1 Tasse Espresso&#39; und &#39;Dampf&#39; der Netzstecker wieder eingesteckt wird. Sobald die LEDs aufleuchten, befindet sich die ECAM 22.110.B im manuellen Steuermodus. Über die Fronttasten können nun einzelne Komponenten direkt mit Betriebsspannung versorgt werden: Die Kaffeetasten verfahren den Spindelantrieb millimetergenau nach oben und unten. Die LED-Symbole zeigen dabei in Echtzeit an, ob der obere Mikroschalter, der untere Mikroschalter oder der Hallsensor korrekt durchschalten. Ebenso lassen sich das Mahlwerk, die Ulka-Pumpe und der Thermoblock isoliert triggern, was eine präzise Fehlerzuordnung ohne teures Teiletauschen ermöglicht.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Welches Schmierfett darf für die Spindel und Brühgruppe verwendet werden und warum führt WD-40 zum Defekt?</div>
-                <div class="faq-answer">A: Für die Mechanik der De&#39;Longhi Magnifica S darf ausschließlich lebensmittelechtes, temperaturstabiles Silikonfett nach NSF-H1-Zertifizierung (wie OKS 1110, Molykote 111 oder Klüberpaste UH1) verwendet werden. Diese Schmierstoffe widerstehen Heißwasser und Kaffeesäuren, verharzen nicht und greifen Kunststoffe wie POM sowie Dichtungen aus EPDM und VMQ nicht an. Kriechöle wie WD-40, Universal-Schmierfette oder mineralölbasierte Fette sind hochgradig schädlich: Sie zersetzen die Molekularstruktur der Elastomerdichtungen (Versprödung und Quellung), lösen das originale Hochleistungsfett auf und binden Kaffeestaub zu einer abrasiven Schmirgelpaste. Dies führt binnen kürzester Zeit zu erhöhtem mechanischem Widerstand und zum Abscheren des POM-Spindelgewindes.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Welches Schmierfett darf für die Spindel und Brühgruppe verwendet werden und warum führt WD-40 zum Defekt?</div>
+                <div class="faq-a">Für die Mechanik der De&#39;Longhi Magnifica S darf ausschließlich lebensmittelechtes, temperaturstabiles Silikonfett nach NSF-H1-Zertifizierung (wie OKS 1110, Molykote 111 oder Klüberpaste UH1) verwendet werden. Diese Schmierstoffe widerstehen Heißwasser und Kaffeesäuren, verharzen nicht und greifen Kunststoffe wie POM sowie Dichtungen aus EPDM und VMQ nicht an. Kriechöle wie WD-40, Universal-Schmierfette oder mineralölbasierte Fette sind hochgradig schädlich: Sie zersetzen die Molekularstruktur der Elastomerdichtungen (Versprödung und Quellung), lösen das originale Hochleistungsfett auf und binden Kaffeestaub zu einer abrasiven Schmirgelpaste. Dies führt binnen kürzester Zeit zu erhöhtem mechanischem Widerstand und zum Abscheren des POM-Spindelgewindes.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu De&#39;Longhi</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>De&#39;Longhi Magnifica S (ECAM 22.110.B)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B0FDFW6NW8?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für Magnifica S (ECAM 22.110.B)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/bruehgruppe/">
-                  › Magnifica S &amp; Dinamica (ECAM Baureihe): Brühgruppe Revision &amp; O-Ring Dichtungsset
+                  <span>Brühgruppe Revision &amp; O-Ring Dichtungsset</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/vibrationspumpe/">
-                  › Magnifica S (ECAM 22.110.B): Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/fehlercodes/">
-                  › Magnifica S (ECAM 22.110.B): Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/milchkaraffe/">
-                  › Dinamica (ECAM 350.55.B): LatteCrema Milchkaraffe &amp; Aufschäumerdeckel
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/thermoblock/">
-                  › Dinamica (ECAM 350.55.B): Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/magnetventil/">
-                  › Eletta Cappuccino (ECAM 44.660.B): 2-Wege &amp; 3-Wege Solenoid Magnetventil 230V
+                  <span>Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wassertank-ventil/">
-                  › Magnifica S &amp; Dinamica: Wassertank-Ventil Lippendichtung &amp; Feder
+                  <span>Wassertank-Ventil Lippendichtung &amp; Feder</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wasserfilter/">
-                  › Alle ECAM &amp; ETAM Serien: DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)
+                  <span>DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/mahlwerk/">
+                  <span>Edelstahl Kegelmahlwerk Mahlkegel &amp; Mahlring</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/" style="font-weight:700; color:var(--primary);">
+                <span>Alle Magnifica S (ECAM 22.110.B) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">De&#39;Longhi Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/">
+                  <span>Magnifica S &amp; Dinamica (ECAM Baureihe)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/">
+                  <span>Dinamica (ECAM 350.55.B)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/">
+                  <span>Eletta Cappuccino (ECAM 44.660.B)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/la-specialista/">
+                  <span>La Specialista (EC9335.M)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="font-weight:700; color:var(--primary);">
+                <span>Zur De&#39;Longhi Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -440,50 +499,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">De&#39;Longhi Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B0FDFW6NW8?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

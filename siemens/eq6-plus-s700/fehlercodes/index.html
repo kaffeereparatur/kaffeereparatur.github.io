@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
@@ -81,7 +73,7 @@
       <span>Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">Siemens • Störungsdiagnose &amp; Fehlercodes</span>
+        <h1>Siemens EQ.6 Plus s700 (TE657503DE): Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">Siemens</span>
-          <span class="badge-cat">Störungsdiagnose &amp; Fehlercodes</span>
           <span class="badge-rating">★ 4.9 (2.100 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: DIAG-EQ6-511</span>
         </div>
-
-        <h1>Siemens EQ.6 Plus s700 (TE657503DE): Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B0GS9RWRHB?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B0GS9RWRHB) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B0GS9RWRHB?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -166,13 +146,13 @@
           <hr class="section-divider">
           <p class="prose-p">Die mechatronische und hydraulische Systemarchitektur der Siemens EQ.6 Plus s700 (Plattform CTES32 / Modell TE657503DE) stützt sich auf eine sequenzielle Niederdruck- und Hochdrucktopologie mit präziser sensorischer Rückkopplung. Die Wasseraufnahme erfolgt aus dem rückseitigen Reservoir über einen federbelasteten Ventilstößel mit <strong>EPDM</strong>-Formsitz in den Ansaugtrakt.</p>
 <p class="prose-p">Als primärer Mengensensor fungiert ein Flügelrad-Durchflussmesser (Flowmeter Digmesa FHKSC oder Äquivalent) mit integriertem Hall-Sensor. Dieser erzeugt ca. 1800 bis 2200 Impulse pro Liter Fluid.</p>
-<p class="prose-p">Registriert die Steuerelektronik (Mainboard mit Microcontroller) bei angesteuerter Pumpe über ein Zeitfenster von mehr als 2000 ms eine Impulsfrequenz von unter <strong>1,5 Hz</strong> (äquivalent zu einem Flussvolumen von &lt; 40–<strong>50 ml</strong>/min), wird die hydrostatische Schutzabschaltung aktiviert und der Fehlercode <span class="code-pill">E0513</span> generiert. Der Hochdruckaufbau obliegt einer elektromagnetischen Schwingankerpumpe (<strong>Ulka EX5</strong>, <strong>230 V</strong>, <strong>50 Hz</strong>, <strong>48 W</strong>, integrierte Gleichrichterdiode).</p>
+<p class="prose-p">Registriert die Steuerelektronik (Mainboard mit Microcontroller) bei angesteuerter Pumpe über ein Zeitfenster von mehr als 2000 ms eine Impulsfrequenz von unter <strong>1,5 Hz</strong> (äquivalent zu einem Flussvolumen von &lt; 40–<strong>50 ml</strong>/min), wird die hydrostatische Schutzabschaltung aktiviert und der Fehlercode <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Fehlercode-Diagnose"><span class="code-pill">E0513</span></a> generiert. Der Hochdruckaufbau obliegt einer elektromagnetischen Schwingankerpumpe (<a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Ulka Pumpe">Ulka EX5</a>, <strong>230 V</strong>, <strong>50 Hz</strong>, <strong>48 W</strong>, integrierte Gleichrichterdiode).</p>
 <p class="prose-p">Diese Einheit entwickelt bei Nullförderung einen statischen Grenzdruck von bis zu <strong>19 bar</strong>. Im regulären Brühbetrieb agiert das Aggregat in einem dynamischen Arbeitsfenster von 9 bis <strong>11 bar</strong> bei einer Förderleistung von 120 bis <strong>180 ml</strong>/min gegen den komprimierten Kaffeepuck.</p>
-<p class="prose-p">Dem Pumpenausgang ist ein Pulsationsdämpfer (Membranregler mit <strong>VMQ</strong>-Elastomermembran, 70 Shore A) nachgeschaltet, welcher Drucktransienten glättet und akustische 50-Hz-Resonanzen dämpft. Der nachgeordnete Durchlauferhitzer (Aluminiumguss-Thermoblock, <strong>1500 W</strong>) führt das Fluid durch eine eingegossene Edelstahlrohrschlange (Werkstoff <strong>1.4301</strong> / AISI 304).</p>
+<p class="prose-p">Dem Pumpenausgang ist ein Pulsationsdämpfer (Membranregler mit <strong>VMQ</strong>-Elastomermembran, 70 Shore A) nachgeschaltet, welcher Drucktransienten glättet und akustische 50-Hz-Resonanzen dämpft. Der nachgeordnete <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Durchlauferhitzer</a> (Aluminiumguss-Thermoblock, <strong>1500 W</strong>) führt das Fluid durch eine eingegossene Edelstahlrohrschlange (Werkstoff <strong>1.4301</strong> / AISI 304).</p>
 <p class="prose-p">Ein NTC-Widerstand (10 kΩ bei 25 °C) sowie redundante Schmelzsicherungen (Abschaltschwellen 192 °C und 216 °C) regulieren und sichern die thermische Stufe. Das funktionale Herzstück der Strömungsverteilung bildet das elektrisch kommutierte Mehrwege-Keramikventil.</p>
-<p class="prose-p">Ein <strong>12V</strong>-DC-Gleichstrommotor treibt über ein mehrstufiges Stirnraduntersetzungsgetriebe aus hochfestem <strong>POM</strong> (Polyoxymethylen) zwei planparallel geschliffene Keramikscheiben aus Reinst-Aluminiumoxid (Al2O3 &gt; 99,5 %) an. Die Positionierung der Steuerbohrungen (Heißwasser, Dampf, Brühgruppe, Drainagebypass) wird über Mikroschalter oder eine optoelektronische Gabellichtschranke an einer Nockenscheibe erfasst.</p>
-<p class="prose-p">Eine Blockade durch Verharzung, Fremdkörper, Zahnausbruch am <strong>POM</strong>-Getriebe oder Mikroschalterprellen führt zur Desynchronisation der Ventilposition und quittiert das System mit dem Fehlercode <span class="code-pill">E0511</span>. Sämtliche fluidischen Hochdruckverbindungen bestehen aus extrudierten <strong>PTFE</strong>-Druckschläuchen (<strong>4,0 mm</strong> Außen-, <strong>2,5 mm</strong> Innendurchmesser), die mittels Messing-Stützhülsen und O-Ringen (<strong>VMQ</strong>/<strong>EPDM</strong> nach ISO 3601) in den Fluidblöcken sitzen und über Sicherungsklammern aus <strong>1.4310</strong>-Federstahl mechanisch verriegelt sind.</p>
-<p class="prose-p">Ein verklemmtes Crema-Ventil (Federkraft 3,5–<strong>4,2 bar</strong>, <strong>1.4310</strong>-Draht) in der Brühgruppe führt analog zu Totalblockaden.</p>
+<p class="prose-p">Ein <strong>12V</strong>-DC-Gleichstrommotor treibt über ein mehrstufiges Stirnraduntersetzungsgetriebe aus hochfestem <strong>POM</strong> (Polyoxymethylen) zwei planparallel geschliffene Keramikscheiben aus Reinst-Aluminiumoxid (Al2O3 &gt; 99,5 %) an. Die Positionierung der Steuerbohrungen (Heißwasser, Dampf, <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a>, Drainagebypass) wird über Mikroschalter oder eine optoelektronische Gabellichtschranke an einer Nockenscheibe erfasst.</p>
+<p class="prose-p">Eine Blockade durch Verharzung, Fremdkörper, Zahnausbruch am <strong>POM</strong>-Getriebe oder Mikroschalterprellen führt zur Desynchronisation der Ventilposition und quittiert das System mit dem Fehlercode <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Fehlercode-Diagnose"><span class="code-pill">E0511</span></a>. Sämtliche fluidischen Hochdruckverbindungen bestehen aus extrudierten <strong>PTFE</strong>-Druckschläuchen (<strong>4,0 mm</strong> Außen-, <strong>2,5 mm</strong> Innendurchmesser), die mittels Messing-Stützhülsen und O-Ringen (<strong>VMQ</strong>/<strong>EPDM</strong> nach ISO 3601) in den Fluidblöcken sitzen und über Sicherungsklammern aus <strong>1.4310</strong>-Federstahl mechanisch verriegelt sind.</p>
+<p class="prose-p">Ein verklemmtes Crema-Ventil (Federkraft 3,5–<strong>4,2 bar</strong>, <strong>1.4310</strong>-Draht) in der <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> führt analog zu Totalblockaden.</p>
           
           <div class="callout-box callout-tip">
             <span class="callout-icon">💡</span>
@@ -187,261 +167,335 @@
         <div class="section-box">
           <h2>⚠️ Typische Ausfallsymptome &amp; Ursachenanalyse</h2>
           <hr class="section-divider">
-          <p class="prose-p">Das Fehlerbild bei Störungen der Siemens EQ.6 Plus s700 gliedert sich in spezifische akustische Signaturen, Fehlermeldungen im Display und physische Strömungsabbrüche:
+          <p class="prose-p">Das Fehlerbild bei Störungen der Siemens EQ.6 Plus s700 gliedert sich in spezifische akustische Signaturen, <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Diagnose &amp; Fehlercode-Datenbank">Fehlermeldungen</a> im Display und physische Strömungsabbrüche:
 
-1. Fehlercode <span class="code-pill">E0511</span> (Keramikventil-Laufzeitfehler / Positionierungsfehler): Das Gerät verweigert unmittelbar nach dem Selbsttest oder während des Bezugswechsels den Dienst.</p>
+1. Fehlercode <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Fehlercode-Diagnose"><span class="code-pill">E0511</span></a> (Keramikventil-Laufzeitfehler / Positionierungsfehler): Das Gerät verweigert unmittelbar nach dem Selbsttest oder während des Bezugswechsels den Dienst.</p>
 <p class="prose-p">Akustisch ist vor der Meldung oft ein gequältes Rattern, ein hochfrequentes Surren ohne Umschaltklicken oder ein kontinuierlicher Motorlauf zu vernehmen. Ursächlich ist ein Timeout des Positionssensors: Der Mikroschalter registriert die Nockenposition nicht binnen 3,5 Sekunden.</p>
 <p class="prose-p">Gründe hierfür sind verklemmte Keramikscheiben durch Verkalkung, Zahnausfall am <strong>POM</strong>-Antriebszahnrad, Motorkohlenabrieb auf dem Kollektor des Ventilmotors oder oxidierte Kontaktfahnen des Mikroschalters.
 
-2. Fehlercode <span class="code-pill">E0513</span> (Flowmeter-Durchflussstörung / Wasserzulauffehler): Auf dem Display erscheint meist zeitgleich die Aufforderung &#39;Wasser ohne Kohlensäure nachfüllen oder Filter wechseln&#39;, obwohl der Tank gefüllt ist.</p>
+2. Fehlercode <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Fehlercode-Diagnose"><span class="code-pill">E0513</span></a> (Flowmeter-Durchflussstörung / Wasserzulauffehler): Auf dem Display erscheint meist zeitgleich die Aufforderung &#39;Wasser ohne Kohlensäure nachfüllen oder Filter wechseln&#39;, obwohl der Tank gefüllt ist.</p>
 <p class="prose-p">Die Ulka-Schwingankerpumpe läuft an, wird jedoch nach 2 bis 3 Sekunden schlagartig leise (dumpfes, leises 50-Hz-Brummen). Dies signalisiert, dass die Pumpe gegen eine massive hydraulische Blockade drückt (Druck &gt; <strong>16 bar</strong>, Fördermenge sinkt gegen <strong>0 ml</strong>/min).</p>
-<p class="prose-p">Alternativ arbeitet die Pumpe ungewöhnlich laut und schrill (Kavitation / Trockenlauf durch Lufteinschlag oder verstopften Tanksitzfilter). Ursächlich für <span class="code-pill">E0513</span> sind:
+<p class="prose-p">Alternativ arbeitet die Pumpe ungewöhnlich laut und schrill (Kavitation / Trockenlauf durch Lufteinschlag oder verstopften Tanksitzfilter). Ursächlich für <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Fehlercode-Diagnose"><span class="code-pill">E0513</span></a> sind:
 - Mechanisch verharzte oder durch Schwebstoffe blockierte Flügelradturbinen im Flowmeter.
-- Massive Kalkinkrustationen im 0,8-mm-Injektor des Keramikventils oder der Heizspirale des Thermoblocks.
-- Aufgequollene O-Ringe am Brühgruppen-Einlaufstutzen (Nutring / <strong>VMQ</strong>-Formdichtung).
+- Massive Kalkinkrustationen im 0,8-mm-Injektor des Keramikventils oder der Heizspirale des <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblocks</a>.
+- Aufgequollene O-Ringe am <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppen</a>-Einlaufstutzen (Nutring / <strong>VMQ</strong>-Formdichtung).
 - Verklebte Crema-Ventilkugeln durch polymerisierte Kaffeefette.
 - Defekte Halbleiterdiode in der Pumpe, wodurch die Halbwelle fehlt und die Pumpe keinen Förderdruck über <strong>4 bar</strong> aufbauen kann.</p>
-          
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Freischaltung und Gehäusedemontage</h4>
+                  <p>Netzstecker ziehen. Wassertank, Tropfschale, Kaffeesatzbehälter und Brühgruppe entnehmen. Bohnenbehälter leeren. Gehäuseschrauben an Rückwand und Seitenwänden mit Torx TX10 und TX20 lösen. Rastnasen der Seitenverkleidungen mit Kunststoff-Demontagehebeln vorsichtig entriegeln und Seitenteile nach hinten abziehen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Niederdrucktrakt &amp; Flowmeter-Prüfung</h4>
+                  <p>Zulaufschlauch vom Wassertanksockel zum Flowmeter auf Knicke und Verunreinigungen prüfen. Flowmeter durch 90°-Drehung des Bajonettverschlusses öffnen. Flügelrad auf Leichtgängigkeit, Abrieb der Achse und Kalkpartikel prüfen. Turbine spülen, O-Ring fetten und Gehäuse schließen. Kabelbaum zum Mainboard auf Kabelbruch oder Korrosion an den Flachsteckern inspizieren.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Keramikventil-Inspektion &amp; Mikroschalter-Diagnose (E0511)</h4>
+                  <p>Keramikventil lokalisieren (in Fahrtrichtung rechts oben). Elektrische Steckverbindungen kennzeichnen und lösen. PTFE-Druckschläuche durch Ziehen der 1.4310-Federklammern lösen. Ventilhalterung demontieren. Mikroschalter mit Digitalmultimeter im Durchgangsprüfmodus messen; bei Nockenbetätigung muss der Übergangswiderstand &lt; 0,5 Ohm betragen. Gleichstrommotor an externem 12V-Labornetzteil auf Stromaufnahme prüfen (Leerlauf typisch &lt; 150 mA; über 500 mA deutet auf Getriebeklemmer hin).</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Hochdruckentkalkung und Dichtungsrevision</h4>
+                  <p>Zulauf- und Steigrohre der Brühgruppe reinigen. Den Brühkolben-Nutring (38x4 mm, VMQ) sowie Einlaufstutzendichtungen austauschen. Mechanische Bauteile und Elastomere mit physiologisch unbedenklichem Schmierfett (OKS 1110) dünn benetzen. Thermoblock-Durchgang mit Druckluft oder Spritze prüfen; bei partiellem Verschluss chemisch im Gegenstrom mit 10-prozentiger Amidosulfonsäure entkalken.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Remontage, Kalibrierlauf und Dichtheitsprüfung</h4>
+                  <p>Alle PTFE-Schläuche mit neuen EPDM-O-Ringen versehen, vollständig in die Kupplungssitze schieben und Klammern spannungsfrei einsetzen. Gehäuseteile provisorisch montieren, Wassertank einsetzen. Maschine einschalten, Spülvorgang starten und offene Baugruppen mittels Taschenlampe auf hydrostatische Leckagen bei 15 bar Spüldruck kontrollieren. Fehlerspeicher im Servicemenü löschen.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Freischaltung und Gehäusedemontage</div>
-                <div class="step-item-desc">Netzstecker ziehen. Wassertank, Tropfschale, Kaffeesatzbehälter und Brühgruppe entnehmen. Bohnenbehälter leeren. Gehäuseschrauben an Rückwand und Seitenwänden mit Torx TX10 und TX20 lösen. Rastnasen der Seitenverkleidungen mit Kunststoff-Demontagehebeln vorsichtig entriegeln und Seitenteile nach hinten abziehen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Niederdrucktrakt &amp; Flowmeter-Prüfung</div>
-                <div class="step-item-desc">Zulaufschlauch vom Wassertanksockel zum Flowmeter auf Knicke und Verunreinigungen prüfen. Flowmeter durch 90°-Drehung des Bajonettverschlusses öffnen. Flügelrad auf Leichtgängigkeit, Abrieb der Achse und Kalkpartikel prüfen. Turbine spülen, O-Ring fetten und Gehäuse schließen. Kabelbaum zum Mainboard auf Kabelbruch oder Korrosion an den Flachsteckern inspizieren.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Keramikventil-Inspektion &amp; Mikroschalter-Diagnose (E0511)</div>
-                <div class="step-item-desc">Keramikventil lokalisieren (in Fahrtrichtung rechts oben). Elektrische Steckverbindungen kennzeichnen und lösen. PTFE-Druckschläuche durch Ziehen der 1.4310-Federklammern lösen. Ventilhalterung demontieren. Mikroschalter mit Digitalmultimeter im Durchgangsprüfmodus messen; bei Nockenbetätigung muss der Übergangswiderstand &lt; 0,5 Ohm betragen. Gleichstrommotor an externem 12V-Labornetzteil auf Stromaufnahme prüfen (Leerlauf typisch &lt; 150 mA; über 500 mA deutet auf Getriebeklemmer hin).</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Hochdruckentkalkung und Dichtungsrevision</div>
-                <div class="step-item-desc">Zulauf- und Steigrohre der Brühgruppe reinigen. Den Brühkolben-Nutring (38x4 mm, VMQ) sowie Einlaufstutzendichtungen austauschen. Mechanische Bauteile und Elastomere mit physiologisch unbedenklichem Schmierfett (OKS 1110) dünn benetzen. Thermoblock-Durchgang mit Druckluft oder Spritze prüfen; bei partiellem Verschluss chemisch im Gegenstrom mit 10-prozentiger Amidosulfonsäure entkalken.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Remontage, Kalibrierlauf und Dichtheitsprüfung</div>
-                <div class="step-item-desc">Alle PTFE-Schläuche mit neuen EPDM-O-Ringen versehen, vollständig in die Kupplungssitze schieben und Klammern spannungsfrei einsetzen. Gehäuseteile provisorisch montieren, Wassertank einsetzen. Maschine einschalten, Spülvorgang starten und offene Baugruppen mittels Taschenlampe auf hydrostatische Leckagen bei 15 bar Spüldruck kontrollieren. Fehlerspeicher im Servicemenü löschen.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Zur fachgerechten Behebung der Fehler <span class="code-pill">E0511</span> und <span class="code-pill">E0513</span> an der Siemens EQ.6 Plus s700 sind zwingend ESD-Schutzvorkehrungen sowie spezifisches Werkzeug erforderlich: <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> und <strong>TX20</strong>, Kreuzschlitzschraubendreher PH1, Schlauchklemmen- oder Spitzzange, spitzes Demontagewerkzeug für O-Ringe, ein Digitalmultimeter mit feinen Prüfspitzen sowie lebensmittelechtes Hochleistungs-Silikonfett <strong>OKS 1110</strong> (<strong>NSF-H1</strong> zertifiziert). Vor Arbeitsbeginn ist das Gerät allpolig vom <strong>230V</strong>-Netz zu trennen; der Thermoblock muss auf Raumtemperatur abkühlen, um Verbrennungen und thermische Spannungsrisse an den Kunststoffstutzen zu vermeiden.</p>
-<p class="prose-p">Nach dem Abnehmen der Gehäuseteile wird zunächst der Strömungsweg analysiert. Bei Fehler <span class="code-pill">E0513</span> liegt das Primärversagen meist im Niederdruckbereich oder am Einlauf: Trennen Sie den Ansaugschlauch vom Flowmeter.</p>
+          <p class="prose-p">Zur fachgerechten Behebung der Fehler <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Fehlercode-Diagnose"><span class="code-pill">E0511</span></a> und E0513 an der Siemens EQ.6 Plus s700 sind zwingend ESD-Schutzvorkehrungen sowie spezifisches Werkzeug erforderlich: <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> und <strong>TX20</strong>, Kreuzschlitzschraubendreher PH1, Schlauchklemmen- oder Spitzzange, spitzes Demontagewerkzeug für O-Ringe, ein Digitalmultimeter mit feinen Prüfspitzen sowie lebensmittelechtes Hochleistungs-Silikonfett <strong>OKS 1110</strong> (<strong>NSF-H1</strong> zertifiziert). Vor Arbeitsbeginn ist das Gerät allpolig vom <strong>230V</strong>-Netz zu trennen; der <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> muss auf Raumtemperatur abkühlen, um Verbrennungen und thermische Spannungsrisse an den Kunststoffstutzen zu vermeiden.</p>
+<p class="prose-p">Nach dem Abnehmen der Gehäuseteile wird zunächst der Strömungsweg analysiert. Bei Fehler <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Fehlercode-Diagnose"><span class="code-pill">E0513</span></a> liegt das Primärversagen meist im Niederdruckbereich oder am Einlauf: Trennen Sie den Ansaugschlauch vom Flowmeter.</p>
 <p class="prose-p">Läuft das Wasser bei eingesetztem Tank nicht frei heraus, ist das Tanklippenventil verhärtet oder das Sieb blockiert. Das Flowmeter wird zerlegt, indem die Gehäusehälften gegeneinander verdreht werden.</p>
 <p class="prose-p">Das eingelagerte Flügelrad mit Ferritmagneten muss sich auf seiner Edelstahlachse vollkommen widerstandsfrei drehen. Kalkkristalle werden mit 5%iger Amidosulfonsäure gelöst.</p>
-<p class="prose-p">Vor dem Zusammenbau ist der Gehäuse-O-Ring zwingend mit <strong>OKS 1110</strong> zu fetten, um Falschluftansaugung (Kavitation) zu unterbinden. Liegt der Fehler <span class="code-pill">E0511</span> vor, fokussiert die Reparatur das Keramikventil.</p>
-<p class="prose-p">Lösen Sie die Halteklammern der <strong>PTFE</strong>-Leitungen mit einer Spitzzange. Markieren Sie zuvor jeden Schlauch hinsichtlich seiner Position (Zufluss Thermoblock, Auslauf Brühgruppe, Heißwasserdüse, Drainage).</p>
+<p class="prose-p">Vor dem Zusammenbau ist der Gehäuse-O-Ring zwingend mit <strong>OKS 1110</strong> zu fetten, um Falschluftansaugung (Kavitation) zu unterbinden. Liegt der Fehler <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Fehlercode-Diagnose"><span class="code-pill">E0511</span></a> vor, fokussiert die Reparatur das Keramikventil.</p>
+<p class="prose-p">Lösen Sie die Halteklammern der <strong>PTFE</strong>-Leitungen mit einer Spitzzange. Markieren Sie zuvor jeden Schlauch hinsichtlich seiner Position (Zufluss <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a>, Auslauf <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a>, Heißwasserdüse, Drainage).</p>
 <p class="prose-p">Entnehmen Sie das Keramikventil. Weist das Getriebegehäuse Schleifspuren oder abgebrochene <strong>POM</strong>-Zähne auf, ist das Ventil als Kompletteinheit zu tauschen.</p>
 <p class="prose-p">Lässt sich die Welle mechanisch von Hand mit leichtem Drehmoment bewegen, liegt die Ursache zumeist an oxidierten Mikroschalterkontakten. Diese schalten die Logikpegel für den Mikrocontroller nicht mehr sauber auf Low (&lt; <strong>0,8 V</strong>).</p>
 <p class="prose-p">Reinigen Sie die Kontakte mit Kontaktreiniger oder tauschen Sie die Schalter aus. Bei der Wiederinbetriebnahme werden sämtliche fluidischen Schnittstellen mit neuen Dichtringen versehen.</p>
 <p class="prose-p">Trockene O-Ringe scheren beim Einschieben der <strong>PTFE</strong>-Rohre ab und führen zu fatalen Spritzwasserschäden an der Leistungselektronik. Nach dem Zusammenbau wird der Entlüftungsmodus ausgeführt: Wasserbezug über die Heißwasserdüse starten, bis die Pumpe leise wird und ein kontinuierlicher, blasenfreier Strahl austritt.</p>
 <p class="prose-p">Dies belegt, dass die Ulka-Pumpe die Luftsäule überwunden hat und das Flowmeter wieder synchrone Messimpulse liefert.</p>
-          </div>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Fehler E0511 / Keramikventil blockiert</strong></td>
-                    <td data-label="Mögliche Ursache">Schrittverlust des DC-Getriebemotors durch schwergängige Al2O3-Keramikscheiben, Getriebeschaden (POM-Zahnausfall) oder defekter Mikroschalter an der Nockensteuerung.</td>
-                    <td data-label="Lösungsmaßnahme">Keramikventil ausbauen, Getriebe auf Karies prüfen, Mikroschalter ohmsch durchmessen. Bei Getriebeschaden oder Scheibenfraß komplette Ventileinheit ersetzen; Mikroschalter ggf. separat nachlöten/tauschen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Fehler E0513 / Pumpe wird extrem leise</strong></td>
-                    <td data-label="Mögliche Ursache">Totaler Strömungsabriss im Hochdruckkreis (Gegendruck &gt; 16 bar). Häufig verstopfter Einlaufstutzen der Brühgruppe, verbackenes Crema-Ventil oder verkalkter Injektorkanal im Thermoblock.</td>
-                    <td data-label="Lösungsmaßnahme">Brühgruppe revidieren, Brühsieb abschrauben und Auslaufventil deblockieren. Thermoblock auf freien Durchgang prüfen, ggf. manuelle Entkalkung mit 10 % Amidosulfonsäure durchführen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Wasserfluss bricht ab / Pumpe rasselt laut (Kavitation)</strong></td>
-                    <td data-label="Mögliche Ursache">Niederdruckblockade vor der Pumpe oder Lufteintrag. Flowmeter-Turbine klemmt durch Fremdkörper oder Wassertank-Bodenventil öffnet mechanisch nicht vollständig.</td>
-                    <td data-label="Lösungsmaßnahme">Wassertankaufnahme reinigen, Stößelfeder prüfen. Flowmeter öffnen, Flügelrad auf Fremdkörper untersuchen, Rotationsachse entkalken und mit OKS 1110 abdichten.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Fehler E0511 / Keramikventil blockiert</td>
+                  <td>Schrittverlust des DC-Getriebemotors durch schwergängige Al2O3-Keramikscheiben, Getriebeschaden (POM-Zahnausfall) oder defekter Mikroschalter an der Nockensteuerung.</td>
+                  <td class="diag-fix">✓ Keramikventil ausbauen, Getriebe auf Karies prüfen, Mikroschalter ohmsch durchmessen. Bei Getriebeschaden oder Scheibenfraß komplette Ventileinheit ersetzen; Mikroschalter ggf. separat nachlöten/tauschen.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Entnahme der Brühgruppe, manuelles Abspülen unter fließendem warmem Wasser ohne Reinigungsmittel, mechanische Reinigung des Kaffeesiebs und Absaugen der Brühkammer.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Reinigung des Geräts mit originalen Reinigungstabletten (Lösung von Kaffeefettpolymeren im Cremaventil) sowie Sichtkontrolle des Wassertank-Ansaugsiebs auf Schleimbildung oder Verkalkung.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6-12 Monate</strong></td>
-                    <td data-label="Maßnahme">Intensivwartung: Erneuerung der Brühgruppen-Lippendichtung (Kolben) und Einlaufstutzen-O-Ringe, Schmierung der Führungsschienen mit OKS 1110, chemische Entkalkung mit Amidosulfonsäure-Basis (keine Essig- oder Zitronensäure verwenden).</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Fehler E0513 / Pumpe wird extrem leise</td>
+                  <td>Totaler Strömungsabriss im Hochdruckkreis (Gegendruck &gt; 16 bar). Häufig verstopfter Einlaufstutzen der Brühgruppe, verbackenes Crema-Ventil oder verkalkter Injektorkanal im Thermoblock.</td>
+                  <td class="diag-fix">✓ Brühgruppe revidieren, Brühsieb abschrauben und Auslaufventil deblockieren. Thermoblock auf freien Durchgang prüfen, ggf. manuelle Entkalkung mit 10 % Amidosulfonsäure durchführen.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Wasserfluss bricht ab / Pumpe rasselt laut (Kavitation)</td>
+                  <td>Niederdruckblockade vor der Pumpe oder Lufteintrag. Flowmeter-Turbine klemmt durch Fremdkörper oder Wassertank-Bodenventil öffnet mechanisch nicht vollständig.</td>
+                  <td class="diag-fix">✓ Wassertankaufnahme reinigen, Stößelfeder prüfen. Flowmeter öffnen, Flügelrad auf Fremdkörper untersuchen, Rotationsachse entkalken und mit OKS 1110 abdichten.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>Siemens EQ.6 Plus s700 (TE657503DE), Siemens EQ.6 Plus s500 (TE655203RW), Siemens EQ.6 Plus s300 (TE653501DE), Bosch VeroBarista 600 (TIS65621DE)</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">Siemens EQ.9 s500 (TI9553X1RW) - Völlig abweichende Dual-Thermoblock-Plattform, Siemens EQ.7 Plus (TE716501DE) - Ältere Plattform mit mechanischem Brühgruppen-Drainageantrieb</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s700 (TE657503DE)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s500 (TE655203RW)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s300 (TE653501DE)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Bosch VeroBarista 600 (TIS65621DE)</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siemens EQ.9 s500 (TI9553X1RW) - Völlig abweichende Dual-Thermoblock-Plattform</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siemens EQ.7 Plus (TE716501DE) - Ältere Plattform mit mechanischem Brühgruppen-Drainageantrieb</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Entnahme der Brühgruppe, manuelles Abspülen unter fließendem warmem Wasser ohne Reinigungsmittel, mechanische Reinigung des Kaffeesiebs und Absaugen der Brühkammer.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Reinigung des Geräts mit originalen Reinigungstabletten (Lösung von Kaffeefettpolymeren im Cremaventil) sowie Sichtkontrolle des Wassertank-Ansaugsiebs auf Schleimbildung oder Verkalkung.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Intensivwartung: Erneuerung der Brühgruppen-Lippendichtung (Kolben) und Einlaufstutzen-O-Ringe, Schmierung der Führungsschienen mit OKS 1110, chemische Entkalkung mit Amidosulfonsäure-Basis (keine Essig- oder Zitronensäure verwenden).</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum führt eine Verkalkung des Thermoblocks direkt zum Fehler E0513 anstatt nur zu kaltem Kaffee?</div>
-                <div class="faq-answer">A: Der Durchlauferhitzer der Siemens EQ.6 Plus s700 verfügt über eine Edelstahlrohrschlange mit verhältnismäßig geringem Innenquerschnitt, um einen optimalen Wärmeübergang bei kurzer Aufheizzeit zu gewährleisten. Lagert sich hier Calcium- und Magnesiumcarbonat ab, reduziert sich der effektive Strömungsquerschnitt drastisch. Die Ulka-Schwingankerpumpe erreicht daraufhin vorzeitig ihren hydraulischen Abschaltdruck von 15 bis 18 bar, bei dem die Pumpleistung physikalisch gegen Null absinkt. Das im Niederdruckbereich vor der Pumpe positionierte Flowmeter registriert den Stillstand des Fluidstroms sofort. Wenn die Frequenz der Hall-Impulse für länger als 2000 Millisekunden unter den systemkritischen Schwellenwert fällt, interpretiert die Software dies als akute Blockade oder Wassermangel und schaltet das System mit Fehler E0513 ab, um eine thermische Zersetzung des Restwassers im Erhitzer zu verhindern.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum führt eine Verkalkung des Thermoblocks direkt zum Fehler E0513 anstatt nur zu kaltem Kaffee?</div>
+                <div class="faq-a">Der Durchlauferhitzer der Siemens EQ.6 Plus s700 verfügt über eine Edelstahlrohrschlange mit verhältnismäßig geringem Innenquerschnitt, um einen optimalen Wärmeübergang bei kurzer Aufheizzeit zu gewährleisten. Lagert sich hier Calcium- und Magnesiumcarbonat ab, reduziert sich der effektive Strömungsquerschnitt drastisch. Die Ulka-Schwingankerpumpe erreicht daraufhin vorzeitig ihren hydraulischen Abschaltdruck von 15 bis 18 bar, bei dem die Pumpleistung physikalisch gegen Null absinkt. Das im Niederdruckbereich vor der Pumpe positionierte Flowmeter registriert den Stillstand des Fluidstroms sofort. Wenn die Frequenz der Hall-Impulse für länger als 2000 Millisekunden unter den systemkritischen Schwellenwert fällt, interpretiert die Software dies als akute Blockade oder Wassermangel und schaltet das System mit Fehler E0513 ab, um eine thermische Zersetzung des Restwassers im Erhitzer zu verhindern.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Kann das Keramikventil bei Fehler E0511 zerlegt, gereinigt und weiterverwendet werden?</div>
-                <div class="faq-answer">A: Aus ingenieurtechnischer Sicht ist eine Instandsetzung des Keramikventils nur in etwa 20 % der Fälle dauerhaft von Erfolg gekrönt. Zwar lassen sich die Gehäuseschalen öffnen, um die beiden Aluminiumoxid-Keramikscheiben von Kalkkrusten zu befreien und die Wellendichtungen zu erneuern, doch das Problem liegt meist im Antriebstrakt. Wenn die Keramikscheiben durch Trockenlauf oder Kalkreibung blockieren, wirken enorme Scherkräfte auf das Untersetzungsgetriebe. Die Zahnräder bestehen aus POM-Kunststoff, dessen Zähne bei Überlastung mikrofeine Haarrisse erleiden oder partiell abscheren. Selbst wenn das Ventil nach einer Reinigung kurzzeitig wieder positioniert, führt die veränderte Zahngeometrie binnen weniger Wochen zu erneutem Schrittverlust und Fehler E0511. Ein Austausch des kompletten Ventils inklusive Motor und Mikroschaltern stellt die einzig prozesssichere Reparaturmethode dar.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Kann das Keramikventil bei Fehler E0511 zerlegt, gereinigt und weiterverwendet werden?</div>
+                <div class="faq-a">Aus ingenieurtechnischer Sicht ist eine Instandsetzung des Keramikventils nur in etwa 20 % der Fälle dauerhaft von Erfolg gekrönt. Zwar lassen sich die Gehäuseschalen öffnen, um die beiden Aluminiumoxid-Keramikscheiben von Kalkkrusten zu befreien und die Wellendichtungen zu erneuern, doch das Problem liegt meist im Antriebstrakt. Wenn die Keramikscheiben durch Trockenlauf oder Kalkreibung blockieren, wirken enorme Scherkräfte auf das Untersetzungsgetriebe. Die Zahnräder bestehen aus POM-Kunststoff, dessen Zähne bei Überlastung mikrofeine Haarrisse erleiden oder partiell abscheren. Selbst wenn das Ventil nach einer Reinigung kurzzeitig wieder positioniert, führt die veränderte Zahngeometrie binnen weniger Wochen zu erneutem Schrittverlust und Fehler E0511. Ein Austausch des kompletten Ventils inklusive Motor und Mikroschaltern stellt die einzig prozesssichere Reparaturmethode dar.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Welches Schmiermittel muss bei der Revision der Brühgruppe und Hydraulikverbindungen verwendet werden?</div>
-                <div class="faq-answer">A: Im gesamten Fluid- und Brühbereich der EQ.6 Plus s700 darf ausnahmslos NSF-H1-zertifiziertes, lebensmittelechtes Silikonfett wie OKS 1110 oder Glisseal verwendet werden. Mineralölbasierte Schmierstoffe, WD-40 oder klassische Universalfette sind strengstens untersagt, da sie die verbauten Elastomere – insbesondere die VMQ-Silikondichtungen und EPDM-O-Ringe – binnen kürzester Zeit anlösen, aufquellen lassen und deren Shore-Härte irreversibel verändern. Zudem dürfen die Heißwasserkontaktflächen keine toxikologischen Substanzen an das Brühwasser abgeben. Das Schmierfett muss eine hohe Heißwasser- und Dampfbeständigkeit bis mindestens 140 °C aufweisen, um nicht durch die Brüh- und Spülzyklen ausgewaschen zu werden. Das Schmiermittel wird hauchdünn aufgetragen; eine Überfettung führt zur schnellen Bindung von Kaffeepulverstaub, was wie Schmirgelpapier wirkt und mechanische Führungen zerstört.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Welches Schmiermittel muss bei der Revision der Brühgruppe und Hydraulikverbindungen verwendet werden?</div>
+                <div class="faq-a">Im gesamten Fluid- und Brühbereich der EQ.6 Plus s700 darf ausnahmslos NSF-H1-zertifiziertes, lebensmittelechtes Silikonfett wie OKS 1110 oder Glisseal verwendet werden. Mineralölbasierte Schmierstoffe, WD-40 oder klassische Universalfette sind strengstens untersagt, da sie die verbauten Elastomere – insbesondere die VMQ-Silikondichtungen und EPDM-O-Ringe – binnen kürzester Zeit anlösen, aufquellen lassen und deren Shore-Härte irreversibel verändern. Zudem dürfen die Heißwasserkontaktflächen keine toxikologischen Substanzen an das Brühwasser abgeben. Das Schmierfett muss eine hohe Heißwasser- und Dampfbeständigkeit bis mindestens 140 °C aufweisen, um nicht durch die Brüh- und Spülzyklen ausgewaschen zu werden. Das Schmiermittel wird hauchdünn aufgetragen; eine Überfettung führt zur schnellen Bindung von Kaffeepulverstaub, was wie Schmirgelpapier wirkt und mechanische Führungen zerstört.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu Siemens</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>Siemens EQ.6 Plus s700 (TE657503DE)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B0GS9RWRHB?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für EQ.6 Plus s700 (TE657503DE)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/mahlwerk/">
-                  › EQ.6 Plus s700 (TE657503DE): Keramik-Mahlwerk ceramDrive Einheit komplett
+                  <span>Keramik-Mahlwerk ceramDrive Einheit komplett</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/milchsystem/">
-                  › EQ.6 Plus s700 (TE657503DE): Edelstahl-Milchansauglanze &amp; Silikonschlauch Set
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/fehlercodes/">
-                  › EQ.6 Plus s700 (TE657503DE): Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung
+                  <span>Edelstahl-Milchansauglanze &amp; Silikonschlauch Set</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/bruehgruppe/">
-                  › EQ.6 Plus (s300 / s500 / s700): Brüheinheit Brühgruppe komplett (Typ 11014117)
+                  <span>Brüheinheit Brühgruppe komplett (Typ 11014117)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/kaffeeauslauf/">
-                  › EQ.6 Plus s700 (TE657503DE): Kaffeeauslauf Verteiler &amp; Düsenabdeckung
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq500/bruehgruppe/">
-                  › EQ.500 classic (TP503D09): Brühgruppe Wartungsset &amp; Dichtringe rot
+                  <span>Kaffeeauslauf Verteiler &amp; Düsenabdeckung</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/wasserfilter/">
-                  › EQ.300 / EQ.500 / EQ.6 / EQ.9: Brita Intenza Wasserfilterpatrone TZ70003 (3er Pack)
+                  <span>Brita Intenza Wasserfilterpatrone TZ70003 (3er Pack)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq9-plus/keramikventil/">
-                  › EQ.9 Plus s500 (TI9553X1RW): Elektrisches Keramikventil 3-Wege Umschaltung
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/reinigungstabletten/">
+                  <span>2in1 Reinigungstabletten TZ80001A gegen Kaffeefett</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/" style="font-weight:700; color:var(--primary);">
+                <span>Alle EQ.6 Plus s700 (TE657503DE) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Siemens Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/">
+                  <span>EQ.6 Plus s700 (TE657503DE)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq500/">
+                  <span>EQ.500 classic (TP503D09)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq9-plus/">
+                  <span>EQ.9 Plus s500 (TI9553X1RW)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq300/">
+                  <span>EQ.300 (TI351209RW)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="font-weight:700; color:var(--primary);">
+                <span>Zur Siemens Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -456,50 +510,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">Siemens Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B0GS9RWRHB?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

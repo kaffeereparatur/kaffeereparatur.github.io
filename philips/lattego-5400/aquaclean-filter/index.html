@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
@@ -81,7 +73,7 @@
       <span>AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">Philips • Wasserfilter &amp; Entkalkung</span>
+        <h1>Philips LatteGo 5400 (EP5447/90): AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">Philips</span>
-          <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
           <span class="badge-rating">★ 4.8 (18.200 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: CA6903/10</span>
         </div>
-
-        <h1>Philips LatteGo 5400 (EP5447/90): AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B074M9DZ4M?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B074M9DZ4M) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B074M9DZ4M?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -165,7 +145,7 @@
           <h2>🔬 Mechatronische Analyse &amp; Funktionsprinzip</h2>
           <hr class="section-divider">
           <p class="prose-p">Die hydraulische Architektur der Philips LatteGo 5400 (EP5447/90) stützt sich auf eine zweistufige Drucksektion, beginnend mit dem Niederdruck-Ansaugtrakt. Die Schnittstelle zwischen Wassertank und Chassis bildet ein federbelastetes Tellerventil aus Polyoxymethylen (<strong>POM</strong>-C) mit einem Schließfeder-Element aus korrosionsbeständigem <strong>1.4310</strong>-Federstahl.</p>
-<p class="prose-p">Die dynamische Abdichtung erfolgt über eine modifizierte Formdichtung aus Ethylen-Propylen-Dien-Kautschuk (<strong>EPDM</strong>) oder Fluorsilikonkautschuk (<strong>FKM</strong>/<strong>VMQ</strong>) mit Shore-A-Härte 70. Der <strong>AquaClean</strong>-Filter CA6903/10 dockt über eine konische <strong>POM</strong>-Steckaufnahme direkt an diese Ansaugleitung an.</p>
+<p class="prose-p">Die dynamische Abdichtung erfolgt über eine modifizierte Formdichtung aus Ethylen-Propylen-Dien-Kautschuk (<strong>EPDM</strong>) oder Fluorsilikonkautschuk (<strong>FKM</strong>/<strong>VMQ</strong>) mit Shore-A-Härte 70. Der <a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/" class="wiki-link" title="Wasserfilterpatrone">AquaClean</a>-Filter CA6903/10 dockt über eine konische <strong>POM</strong>-Steckaufnahme direkt an diese Ansaugleitung an.</p>
 <p class="prose-p">Das Innere der Kartusche besitzt ein patentiertes Strömungslabyrinth: Das Rohwasser passiert zunächst ein mikroporöses Polypropylen-Vlies (Porengröße 0,1 bis 0,2 µm), welches partikuläre Schwebstoffe zurückhält. Anschließend durchströmt das Fluid im Gegenstromverfahren ein Bett aus schwachsaurem Kationenaustauscherharz (Macroporous Acrylic Matrix) und säuregewaschener Aktivkohle auf Kokosnussbasis.</p>
 <p class="prose-p">Der Kationenaustauscher tauscht selektiv Ca2+- und Mg2+-Ionen gegen H+-Ionen aus, während die Aktivkohle Chlorverbindungen und organische Moleküle adsorbiert. Die nachgeschaltete Hochdrucksektion wird von einer Ulka Schwingankerpumpe des Typs EP5/HF (<strong>230 V</strong>, <strong>50 Hz</strong>, <strong>48 W</strong>) gespeist, die einen maximalen Nullförderdruck von 15 bis <strong>19 bar</strong> aufbaut.</p>
 <p class="prose-p">Der Arbeitsbereich während der Kaffee-Extraktion liegt bei 9 bis <strong>11,5 bar</strong> mit einer Durchflussrate von 1,2 bis <strong>2,4 ml</strong>/s. Unmittelbar vor der Pumpe überwacht ein Digmesa-Turbinen-Durchflussmesser (Flowmeter) mit Hall-Sensor und <strong>POM</strong>-Flügelrad das Ansaugvolumen im Niederdruckbereich (typisch 200 bis 450 Impulse pro Sekunde).</p>
@@ -185,259 +165,342 @@
         <div class="section-box">
           <h2>⚠️ Typische Ausfallsymptome &amp; Ursachenanalyse</h2>
           <hr class="section-divider">
-          <p class="prose-p">Tritt eine Störung im Bereich des <strong>AquaClean</strong>-Filters CA6903/10 auf, manifestiert sich dies primär über hydraulische und akustische Anomalien sowie Fehlercodes auf dem TFT-Display der EP5447/90. Das Leitsymptom ist der Fehlercode E05 (&#39;Wasserkreislauf blockiert&#39; bzw. &#39;Wasserkreislauf entlüften&#39;).</p>
+          <p class="prose-p">Tritt eine Störung im Bereich des <a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/" class="wiki-link" title="Wasserfilterpatrone">AquaClean</a>-Filters CA6903/10 auf, manifestiert sich dies primär über hydraulische und akustische Anomalien sowie <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Diagnose &amp; Fehlercode-Datenbank">Fehlercodes</a> auf dem TFT-Display der EP5447/90. Das Leitsymptom ist der Fehlercode E05 (&#39;Wasserkreislauf blockiert&#39; bzw. &#39;Wasserkreislauf entlüften&#39;).</p>
 <p class="prose-p">Auf Sensorebene bedeutet dies: Die MCU (Main Control Unit) steuert die Schwingankerpumpe an, registriert jedoch über den Hall-Sensor des Flowmeters keine oder zu wenige Impulse (&lt; 15 Impulse/Sekunde über ein Zeitfenster von 4 Sekunden). Akustisch verändert sich das Betriebsgeräusch der Maschine drastisch: Während der normale Brühvorgang ein sonores, gedämpftes Pumpengeräusch bei circa 55 bis 60 dB(A) erzeugt, schlägt das Geräusch bei verstopftem Filter oder Lufteinschluss in ein hochfrequentes, metallisch-aggressives Schnarren um.</p>
 <p class="prose-p">Dies resultiert aus extremer Kavitation im Pumpenzylinder, da der oszillierende Edelstahlkolben gegen ein Vakuum arbeitet und dampfförmige Kavitationsblasen implodieren. Bleibt die Wasserzufuhr vollständig aus, fällt das Geräusch nach einigen Sekunden in ein fast lautloses Summen ab, weil der Kolben ohne hydraulische Last im Magnetfeld schwingt.</p>
 <p class="prose-p">Sekundäre Symptome sind ein stark verlangsamter, tropfenweiser Kaffeebezug, unvollständig gepresste Tresterkuchen im Kaffeesatzbehälter (matschige Pucks durch Druckabfall in der Pre-Infusion) sowie Dampfstöße anstelle eines kontinuierlichen Heißwasserstrahls beim Spülzyklus. Ursächlich hierfür sind neben dem Zusetzen des Vlieses durch feine Kalkanlagerungen meist Bedienungsfehler: Wird der Filter vor dem Einsetzen nicht vorentlüftet, blockiert die komprimierte Luft im Inneren der Aktivkohlekartusche den hydrostatischen Durchfluss.</p>
-          
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Netztrennung und Arbeitsbereich-Sicherung</h4>
+                  <p>Schalten Sie die Philips 5400 am Hauptschalter aus, ziehen Sie den Schuko-Netzstecker und lassen Sie den Thermoblock mindestens 30 Minuten abkühlen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Wassertank entnehmen und Systeminspektion</h4>
+                  <p>Entnehmen Sie den Wassertank, leeren Sie das Restwasser und demontieren Sie den alten Filter durch senkrechtes Abziehen nach oben aus der POM-Aufnahme.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Ventil- und Dichtungsreinigung</h4>
+                  <p>Reinigen Sie den Tankboden, das federbelastete Auslaufventil und das Einlaufsieb im Maschinenchassis mit warmem Wasser und einem fusselfreien Tuch. Entfernen Sie Biofilm und Kriechsedimente.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>AquaClean-Hydraulik-Evakuierung</h4>
+                  <p>Schütteln Sie den neuen CA6903/10 Filter ca. 5 Sekunden kräftig. Tauchen Sie die Kartusche kopfüber in ein Gefäß mit kaltem Wasser, bis sämtliche Luftblasen vollständig entwichen sind.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Passgenaue Montage und Arretierung</h4>
+                  <p>Setzen Sie den vorentlüfteten Filter exakt vertikal auf den Dockingstutzen im Wassertank und drücken Sie ihn kraftvoll an, bis er fühlbar und mechanisch spielfrei einrastet.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">6</div>
+                <div class="step-body">
+                  <h4>Software-Initialisierung und Spülkalibrierung</h4>
+                  <p>Füllen Sie den Tank mit Frischwasser, setzen Sie ihn ein, schalten Sie die Maschine an, navigieren Sie ins Menü &#39;AquaClean&#39; und aktivieren Sie den Filter via Heißwasserausgabe.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Netztrennung und Arbeitsbereich-Sicherung</div>
-                <div class="step-item-desc">Schalten Sie die Philips 5400 am Hauptschalter aus, ziehen Sie den Schuko-Netzstecker und lassen Sie den Thermoblock mindestens 30 Minuten abkühlen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Wassertank entnehmen und Systeminspektion</div>
-                <div class="step-item-desc">Entnehmen Sie den Wassertank, leeren Sie das Restwasser und demontieren Sie den alten Filter durch senkrechtes Abziehen nach oben aus der POM-Aufnahme.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Ventil- und Dichtungsreinigung</div>
-                <div class="step-item-desc">Reinigen Sie den Tankboden, das federbelastete Auslaufventil und das Einlaufsieb im Maschinenchassis mit warmem Wasser und einem fusselfreien Tuch. Entfernen Sie Biofilm und Kriechsedimente.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">AquaClean-Hydraulik-Evakuierung</div>
-                <div class="step-item-desc">Schütteln Sie den neuen CA6903/10 Filter ca. 5 Sekunden kräftig. Tauchen Sie die Kartusche kopfüber in ein Gefäß mit kaltem Wasser, bis sämtliche Luftblasen vollständig entwichen sind.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Passgenaue Montage und Arretierung</div>
-                <div class="step-item-desc">Setzen Sie den vorentlüfteten Filter exakt vertikal auf den Dockingstutzen im Wassertank und drücken Sie ihn kraftvoll an, bis er fühlbar und mechanisch spielfrei einrastet.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 6</span>
-                <div class="step-item-title">Software-Initialisierung und Spülkalibrierung</div>
-                <div class="step-item-desc">Füllen Sie den Tank mit Frischwasser, setzen Sie ihn ein, schalten Sie die Maschine an, navigieren Sie ins Menü &#39;AquaClean&#39; und aktivieren Sie den Filter via Heißwasserausgabe.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Für eine professionelle Instandsetzung und den Filtertausch an der Philips 5400 EP5447/90 benötigen Sie ein sauberes Gefäß mit mindestens 2 Litern Fassungsvermögen, fusselfreie Mikrofasertücher, einen <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> (falls Gehäuseteile zur Sichtprüfung des Niederdruckschlauchs demontiert werden müssen) sowie <strong>NSF-H1</strong>-zertifiziertes Silikonfett (z. B.</p>
+          <p class="prose-p">Für eine professionelle Instandsetzung und den Filtertausch an der Philips 5400 EP5447/90 benötigen Sie ein sauberes Gefäß mit mindestens 2 Litern Fassungsvermögen, fusselfreie Mikrofasertücher, einen <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> (falls Gehäuseteile zur Sichtprüfung des Niederdruckschlauchs demontiert werden müssen) sowie <strong>NSF-H1</strong>-zertifiziertes Silikonfett (z. B.</p>
 <p class="prose-p"><strong>OKS 1110</strong>). Beginnen Sie zwingend mit der allpoligen Netztrennung durch Ziehen des Netzsteckers, um Kurzschlüsse an der Steuerungselektronik oder Fehlauslösungen des Mahlwerks zu verhindern.</p>
 <p class="prose-p">Entnehmen Sie den Wassertank und ziehen Sie die alte Filterkartusche senkrecht ab. Untersuchen Sie den Ventilsitz am Boden des Tanks: Das <strong>POM</strong>-Ventil mit seiner <strong>1.4310</strong>-Edelstahlfeder muss sich leichtgängig gegen den Federdruck nach oben bewegen lassen.</p>
 <p class="prose-p">Weist der dortige <strong>EPDM</strong>-Dichtring (Abmessung ca. 9 x <strong>2 mm</strong>) Risse, Deformationen oder Kalkinkrustationen auf, hebeln Sie diesen vorsichtig mit einem Kunststoff-Spatel aus und ersetzen Sie ihn. Tragen Sie einen mikrometerdünnen Film <strong>OKS 1110</strong> auf den O-Ring auf; vermeiden Sie mineralölbasierte Schmierstoffe, da diese das Elastomer unweigerlich zersetzen.</p>
 <p class="prose-p">Die Vorbereitung des neuen CA6903/10 ist der entscheidende hydraulische Schritt: Da trockenes Aktivkohlegranulat und mikroporöse Vliese eine hydrophobe Oberflächenspannung aufweisen, schütteln Sie die Kartusche 5 Sekunden lang horizontal und tauchen sie anschließend komplett unter Wasser. Drehen Sie den Filter unter Wasser mehrmals um 180 Grad, bis absolut keine Luftblasen mehr aus den Entlastungsbohrungen austreten.</p>
 <p class="prose-p">Stecken Sie die Kartusche nun exakt axial auf den Bodenstutzen des Tanks, bis der Klickmechanismus greift. Setzen Sie den gefüllten Tank ein.</p>
-<p class="prose-p">Schalten Sie das Gerät ein und rufen Sie über das Display das Menü &#39;<strong>AquaClean</strong>&#39; auf. Bestätigen Sie die Aktivierung.</p>
+<p class="prose-p">Schalten Sie das Gerät ein und rufen Sie über das Display das Menü &#39;<a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/" class="wiki-link" title="Wasserfilterpatrone">AquaClean</a>&#39; auf. Bestätigen Sie die Aktivierung.</p>
 <p class="prose-p">Die Maschine pumpt nun automatisiert ca. 100 bis <strong>150 ml</strong> Heißwasser durch das System, um die Ansaugstrecke zu füllen, das Granulat zu verdichten und den Flowmeter-Nullpunkt in der MCU-Firmware einzukalibrieren.</p>
-          </div>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Fehlercode E05 / &#39;Kreislauf entlüften&#39;</strong></td>
-                    <td data-label="Mögliche Ursache">Lufteinschluss im Filterbett verhindert hydrostatische Vorfüllung; Schwingankerpumpe fällt in Kavitationszustand.</td>
-                    <td data-label="Lösungsmaßnahme">Filter demontieren, 30 Sekunden im Wasserbad vollständig untertauchen und komprimierte Luft entweichen lassen. System über Heißwasserausgabe spülen, Filter wieder einsetzen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Extrem lautes Schnarren / Kreischen beim Brühstart</strong></td>
-                    <td data-label="Mögliche Ursache">Starker Unterdruck im Ansaugtrakt durch zugesetztes Mikrovlies oder verbackenes Ionenaustauscherharz.</td>
-                    <td data-label="Lösungsmaßnahme">AquaClean-Filter entfernen und Probelauf ohne Filter durchführen. Läuft die Maschine leise, ist der Filter verbraucht und muss ersetzt werden.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Wasseransammlung unter der Maschine / am Tankboden</strong></td>
-                    <td data-label="Mögliche Ursache">EPDM-Dichtung des Tankbodenventils ist spröde, rissig, verunreinigt oder nicht formschlüssig zentriert.</td>
-                    <td data-label="Lösungsmaßnahme">O-Ring am Tankauslaufventil entnehmen, Nut säubern, neue EPDM-Dichtung einsetzen und mit lebensmittelechtem Silikonfett (OKS 1110) dünn benetzen.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Fehlercode E05 / &#39;Kreislauf entlüften&#39;</td>
+                  <td>Lufteinschluss im Filterbett verhindert hydrostatische Vorfüllung; Schwingankerpumpe fällt in Kavitationszustand.</td>
+                  <td class="diag-fix">✓ Filter demontieren, 30 Sekunden im Wasserbad vollständig untertauchen und komprimierte Luft entweichen lassen. System über Heißwasserausgabe spülen, Filter wieder einsetzen.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Entnahme des Wassertanks, gründliches Spülen mit klarem Wasser und visuelle Kontrolle des Ansaugsiebs auf Schleimbildung oder Algenbeläge.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Reinigung des Wassertank-Ventilsitzes, Inspektion des Dichtungsrings auf Elastizität und Sichtprüfung auf Lufteintrag in der Saugleitung.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 3 Monate (max. 5000 Tassen)</strong></td>
-                    <td data-label="Maßnahme">Regulärer Austausch des AquaClean CA6903/10 Filters mit Re-Kalibrierung der Elektronik über das Einstellungsmenü.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6 bis 12 Monate / nach 8 Filtern</strong></td>
-                    <td data-label="Maßnahme">Vollständige Entkalkung der Hydraulik mit amidosulfonsäurebasiertem Entkalker, Austausch der EPDM-Dichtlippe und Schmierung mit OKS 1110.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Extrem lautes Schnarren / Kreischen beim Brühstart</td>
+                  <td>Starker Unterdruck im Ansaugtrakt durch zugesetztes Mikrovlies oder verbackenes Ionenaustauscherharz.</td>
+                  <td class="diag-fix">✓ AquaClean-Filter entfernen und Probelauf ohne Filter durchführen. Läuft die Maschine leise, ist der Filter verbraucht und muss ersetzt werden.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Wasseransammlung unter der Maschine / am Tankboden</td>
+                  <td>EPDM-Dichtung des Tankbodenventils ist spröde, rissig, verunreinigt oder nicht formschlüssig zentriert.</td>
+                  <td class="diag-fix">✓ O-Ring am Tankauslaufventil entnehmen, Nut säubern, neue EPDM-Dichtung einsetzen und mit lebensmittelechtem Silikonfett (OKS 1110) dünn benetzen.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>Philips LatteGo 5400 Serie (EP5447/90, EP5444/90, EP5441/50, EP5443/70), Philips LatteGo 4300 Serie (EP4346/70, EP4341/50, EP4343/70), Philips LatteGo 3200 Serie (EP3246/70, EP3221/40), Philips LatteGo 2200 Serie (EP2220/10, EP2231/40), Saeco GranAroma (SM6580, SM6582, SM6585), Saeco Xelsis &amp; PicoBaristo (mit AquaClean-Symbol auf Wassertank)</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">Philips &amp; Saeco Modelle mit Brita Intenza+ System (z.B. HD8829, HD8834, RI9840), De&#39;Longhi Magnifica / PrimaDonna Serien (DLSC002 Filtersystem), Jura E-Serie, J-Serie, Z-Serie (Claris Smart / Claris Blue Bajonett), Melitta Caffeo &amp; Barista Serien (Melitta Pro Aqua Einschraubfilter)</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Philips LatteGo 5400 Serie (EP5447/90, EP5444/90, EP5441/50, EP5443/70)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Philips LatteGo 4300 Serie (EP4346/70, EP4341/50, EP4343/70)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Philips LatteGo 3200 Serie (EP3246/70, EP3221/40)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Philips LatteGo 2200 Serie (EP2220/10, EP2231/40)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Saeco GranAroma (SM6580, SM6582, SM6585)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Saeco Xelsis &amp; PicoBaristo (mit AquaClean-Symbol auf Wassertank)</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Philips &amp; Saeco Modelle mit Brita Intenza+ System (z.B. HD8829, HD8834, RI9840)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi Magnifica / PrimaDonna Serien (DLSC002 Filtersystem)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Jura E-Serie, J-Serie, Z-Serie (Claris Smart / Claris Blue Bajonett)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Melitta Caffeo &amp; Barista Serien (Melitta Pro Aqua Einschraubfilter)</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Entnahme des Wassertanks, gründliches Spülen mit klarem Wasser und visuelle Kontrolle des Ansaugsiebs auf Schleimbildung oder Algenbeläge.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Reinigung des Wassertank-Ventilsitzes, Inspektion des Dichtungsrings auf Elastizität und Sichtprüfung auf Lufteintrag in der Saugleitung.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 3 Monate (max. 5000 Tassen):</span>
+                <span style="font-size:13px; color:#374151;">Regulärer Austausch des AquaClean CA6903/10 Filters mit Re-Kalibrierung der Elektronik über das Einstellungsmenü.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6 bis 12 Monate / nach 8 Filtern:</span>
+                <span style="font-size:13px; color:#374151;">Vollständige Entkalkung der Hydraulik mit amidosulfonsäurebasiertem Entkalker, Austausch der EPDM-Dichtlippe und Schmierung mit OKS 1110.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum blockiert ein nicht korrekt vorentlüfteter AquaClean-Filter die Pumpe und erzeugt Fehler E05?</div>
-                <div class="faq-answer">A: Die im Philips LatteGo 5400 verbaute Ulka EP5/HF Schwingankerpumpe ist ein Verdrängersystem, dessen Saugvermögen konstruktionsbedingt stark von der Vorflutung abhängt. Trockenes Aktivkohlevlies besitzt eine hohe Kapillar- und Oberflächenspannung. Befindet sich Luft im Gehäuse des CA6903/10, steigt der dynamische Ansaugwiderstand auf über -0,35 bar Unterdruck an. Die Pumpe vermag dieses Vakuum nicht zu überwinden, wodurch die Wassersäule abreißt und Kavitation entsteht. Da das Digmesa-Flowmeter keine Durchflussimpulse mehr registriert, schaltet die MCU aus Sicherheitsgründen ab und signalisiert E05.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum blockiert ein nicht korrekt vorentlüfteter AquaClean-Filter die Pumpe und erzeugt Fehler E05?</div>
+                <div class="faq-a">Die im Philips LatteGo 5400 verbaute Ulka EP5/HF Schwingankerpumpe ist ein Verdrängersystem, dessen Saugvermögen konstruktionsbedingt stark von der Vorflutung abhängt. Trockenes Aktivkohlevlies besitzt eine hohe Kapillar- und Oberflächenspannung. Befindet sich Luft im Gehäuse des CA6903/10, steigt der dynamische Ansaugwiderstand auf über -0,35 bar Unterdruck an. Die Pumpe vermag dieses Vakuum nicht zu überwinden, wodurch die Wassersäule abreißt und Kavitation entsteht. Da das Digmesa-Flowmeter keine Durchflussimpulse mehr registriert, schaltet die MCU aus Sicherheitsgründen ab und signalisiert E05.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Muss die Philips 5400 trotz durchgängigem Einsatz des AquaClean-Filters regelmäßig entkalkt werden?</div>
-                <div class="faq-answer">A: Ja, eine Entkalkung ist trotz CA6903/10 unumgänglich. Der Filter arbeitet mit einem Kationenaustauscherharz, dessen Selektivität und Bindungskapazität für Kalzium- und Magnesium-Ionen mit zunehmendem Wasserdurchsatz degressiv abfällt. Bei hartem Ausgangswasser verbleibt eine Resthärte im Wasser, welche im 140 °C heißen Aluminium-Edelstahl-Thermoblock thermisch ausfällt. Philips limitiert den Filterbetrieb firmwareseitig auf maximal 8 aufeinanderfolgende Kartuschen (ca. 5.000 Tassen). Nach diesem Zyklus fordert die Maschinensteuerung zwingend eine vollständige Entkalkung mit einem Amidosulfonsäure-Präparat, um Querschnittsverengungen in den PTFE-Schläuchen und Magnetventilen zu verhindern.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Muss die Philips 5400 trotz durchgängigem Einsatz des AquaClean-Filters regelmäßig entkalkt werden?</div>
+                <div class="faq-a">Ja, eine Entkalkung ist trotz CA6903/10 unumgänglich. Der Filter arbeitet mit einem Kationenaustauscherharz, dessen Selektivität und Bindungskapazität für Kalzium- und Magnesium-Ionen mit zunehmendem Wasserdurchsatz degressiv abfällt. Bei hartem Ausgangswasser verbleibt eine Resthärte im Wasser, welche im 140 °C heißen Aluminium-Edelstahl-Thermoblock thermisch ausfällt. Philips limitiert den Filterbetrieb firmwareseitig auf maximal 8 aufeinanderfolgende Kartuschen (ca. 5.000 Tassen). Nach diesem Zyklus fordert die Maschinensteuerung zwingend eine vollständige Entkalkung mit einem Amidosulfonsäure-Präparat, um Querschnittsverengungen in den PTFE-Schläuchen und Magnetventilen zu verhindern.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Welches Schmiermittel darf für die Dichtungen des Filters und des Wassertankventils verwendet werden?</div>
-                <div class="faq-answer">A: An allen hydraulischen Dichtstellen des Tanksystems darf ausnahmslos NSF-H1-zertifiziertes, physiologisch unbedenkliches Silikonfett wie OKS 1110 oder Glisseal eingesetzt werden. Die Dichtelemente bestehen aus EPDM (Ethylen-Propylen-Dien-Kautschuk) oder VMQ-Silikon. Mineralölbasierte Schmierstoffe, Haushaltsfette, WD-40 oder technische Vaseline sind absolut unzulässig: Sie penetrieren das Polymernetzwerk von EPDM, führen innerhalb kurzer Zeit zu starker Quellung, Elastizitätsverlust und Versprödung des Materials. Dies verursacht gravierende Leckagen, Falschlufteintrag in die Saugstrecke und kann im schlimmsten Fall mechanische Zerstörungen am POM-Ventilsitz nach sich ziehen.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Welches Schmiermittel darf für die Dichtungen des Filters und des Wassertankventils verwendet werden?</div>
+                <div class="faq-a">An allen hydraulischen Dichtstellen des Tanksystems darf ausnahmslos NSF-H1-zertifiziertes, physiologisch unbedenkliches Silikonfett wie OKS 1110 oder Glisseal eingesetzt werden. Die Dichtelemente bestehen aus EPDM (Ethylen-Propylen-Dien-Kautschuk) oder VMQ-Silikon. Mineralölbasierte Schmierstoffe, Haushaltsfette, WD-40 oder technische Vaseline sind absolut unzulässig: Sie penetrieren das Polymernetzwerk von EPDM, führen innerhalb kurzer Zeit zu starker Quellung, Elastizitätsverlust und Versprödung des Materials. Dies verursacht gravierende Leckagen, Falschlufteintrag in die Saugstrecke und kann im schlimmsten Fall mechanische Zerstörungen am POM-Ventilsitz nach sich ziehen.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu Philips</h3>
-          <ul class="sidebar-links">
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/aquaclean-filter/">
-                  › LatteGo 5400 (EP5447/90): AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)
-                </a>
-              </li>
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>Philips LatteGo 5400 (EP5447/90)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B074M9DZ4M?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für LatteGo 5400 (EP5447/90)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/milchbehaelter/">
-                  › LatteGo 5400 (EP5447/90): LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657
+                  <span>LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/fehlercodes/">
-                  › LatteGo 5400 / 4300 / 3200 / 2200: Fehlercode 1, 2, 3, 4, 5 &amp; Wartungs-Diagnose
+                  <span>Fehlercode 1, 2, 3, 4, 5 &amp; Wartungs-Diagnose</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/bruehgruppe/">
-                  › LatteGo 2200 / 3200 / 4300 / 5400: Saeco &amp; Philips Brühgruppe komplett entnehmbar
+                  <span>Saeco &amp; Philips Brühgruppe komplett entnehmbar</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/schmiermittel/">
-                  › Alle Philips &amp; Saeco Maschinen: Original Silikonfett HD5061/01 Schmiermittel (5g Tube)
+                  <span>Original Silikonfett HD5061/01 Schmiermittel (5g Tube)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-3200/auslaufduese/">
-                  › LatteGo 3200 &amp; 4300: Kaffeeauslauf Schieber &amp; Düsenabdeckung schwarz
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/bruehgruppe/">
+                  <span>Kompletter O-Ring Dichtungssatz für Brühkolben (10-teilig)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/philips-2200/panarello/">
-                  › Philips 2200 (EP2220/10): Klassischer Milchaufschäumer Panarello Dampfdüse
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/saeco-xelsis/milchsystem/">
-                  › Saeco Xelsis (SM7683/00): HygieSteam Dampf-Reinigungsanschluss &amp; Milchschlauch
-                </a>
-              </li>
-            
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/" style="font-weight:700; color:var(--primary);">
+                <span>Alle LatteGo 5400 (EP5447/90) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Philips Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/">
+                  <span>LatteGo 5400 (EP5447/90)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-3200/">
+                  <span>LatteGo 3200 &amp; 4300</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/philips-2200/">
+                  <span>Philips 2200 (EP2220/10)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/saeco-xelsis/">
+                  <span>Saeco Xelsis (SM7683/00)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/saeco-granaroma/">
+                  <span>Saeco GranAroma (SM6580/00)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/philips/" style="font-weight:700; color:var(--primary);">
+                <span>Zur Philips Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -452,50 +515,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">Philips AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B074M9DZ4M?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

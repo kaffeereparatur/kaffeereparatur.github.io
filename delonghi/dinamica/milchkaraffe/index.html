@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De&#39;Longhi</a>
@@ -81,7 +73,7 @@
       <span>LatteCrema Milchkaraffe &amp; Aufschäumerdeckel</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">De&#39;Longhi • Milchsysteme &amp; Düsen</span>
+        <h1>De&#39;Longhi Dinamica (ECAM 350.55.B): LatteCrema Milchkaraffe &amp; Aufschäumerdeckel</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">De&#39;Longhi</span>
-          <span class="badge-cat">Milchsysteme &amp; Düsen</span>
           <span class="badge-rating">★ 4.6 (1.240 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: DLSC011</span>
         </div>
-
-        <h1>De&#39;Longhi Dinamica (ECAM 350.55.B): LatteCrema Milchkaraffe &amp; Aufschäumerdeckel</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B0CMW1HFJ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B0CMW1HFJ7) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B0CMW1HFJ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -164,8 +144,8 @@
         <div class="section-box">
           <h2>🔬 Mechatronische Analyse &amp; Funktionsprinzip</h2>
           <hr class="section-divider">
-          <p class="prose-p">Das De&#39;Longhi <strong>LatteCrema</strong>-System der Dinamica-Baureihe (ECAM 350.55.B) basiert fluidmechanisch auf dem Venturi-Prinzip zur Erzeugung stabiler Mikro-Milchschaumemulsionen. Das Gesamtsystem gliedert sich in die maschinenseitige Dampferzeugung und die abnehmbare Aufschäumdüse im Karaffendeckel.</p>
-<p class="prose-p">Maschinenseitig wird Wasser über eine Ulka-Vibrationspumpe (modellabhängig EP5 oder EX5 mit 15–<strong>19 bar</strong> Maximaldruck) im Pulsbetrieb mit reduziertem Hubvolumen durch den dedizierten Edelstahlrohr-Thermoblock gefördert. Hier verdampft das Fluid bei Temperaturen zwischen 120 °C und 135 °C und wird über vorgesteuerte 2/2- bzw. 3/2-Wege-Magnetventile (Messing-/Polyamidgehäuse mit NBR/<strong>FKM</strong>-Dichtsitz) an die Dampfkupplung geleitet.</p>
+          <p class="prose-p">Das De&#39;Longhi <a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/" class="wiki-link" title="Milchsysteme &amp; Karaffen">LatteCrema</a>-System der Dinamica-Baureihe (ECAM 350.55.B) basiert fluidmechanisch auf dem Venturi-Prinzip zur Erzeugung stabiler Mikro-Milchschaumemulsionen. Das Gesamtsystem gliedert sich in die maschinenseitige Dampferzeugung und die abnehmbare Aufschäumdüse im Karaffendeckel.</p>
+<p class="prose-p">Maschinenseitig wird Wasser über eine Ulka-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Pumpen &amp; Hydraulik">Vibrationspumpe</a> (modellabhängig EP5 oder EX5 mit 15–<strong>19 bar</strong> Maximaldruck) im Pulsbetrieb mit reduziertem Hubvolumen durch den dedizierten Edelstahlrohr-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> gefördert. Hier verdampft das Fluid bei Temperaturen zwischen 120 °C und 135 °C und wird über vorgesteuerte 2/2- bzw. 3/2-Wege-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/magnetventil/" class="wiki-link" title="Magnetventile">Magnetventile</a> (Messing-/Polyamidgehäuse mit NBR/<strong>FKM</strong>-Dichtsitz) an die Dampfkupplung geleitet.</p>
 <p class="prose-p">Am Kupplungsstutzen liegt bei geöffnetem System ein dynamischer Betriebsdruck von etwa 1,2 bis <strong>2,0 bar</strong> an, bei einer kontrollierten Dampfmassenstromrate von circa 0,4 bis 0,65 Gramm pro Sekunde. Der Aufschäumerdeckel besteht konstruktiv im Wesentlichen aus hochgradig maßhaltigem Polyoxymethylen (<strong>POM</strong> / <strong>Delrin</strong>) für die strömungsführenden Kanäle sowie einem Behälter aus amorphem Stryrol-Acrylnitril (SAN) bzw.</p>
 <p class="prose-p">Polypropylen (PP). Im Injektorkern beschleunigt eine konische Verjüngung den Dampfstrahl auf signifikante Überschall- bzw.</p>
 <p class="prose-p">Hochgeschwindigkeitswerte, wodurch hinter der Düsenkehle ein relativer Unterdruck (Saugspannung von etwa -0,15 bis -<strong>0,35 bar</strong> gegenüber der Atmosphäre) induziert wird. Dieser Unterdruck saugt gekühlte Milch (Soll: 4–8 °C) über das Steigrohr an.</p>
@@ -185,59 +165,76 @@
         <div class="section-box">
           <h2>⚠️ Typische Ausfallsymptome &amp; Ursachenanalyse</h2>
           <hr class="section-divider">
-          <p class="prose-p">Tritt ein Funktionsverlust des <strong>LatteCrema</strong>-Systems auf, manifestiert sich dieser über spezifische elektro-mechanische und akustische Fehlersymptome. Ein dominierendes Symptom ist das sogenannte &#39;Spratzeln&#39; oder &#39;Dampfhusten&#39;, bei welchem ungeschäumte, heiße Milch stoßweise unter lauter Geräuschentwicklung aus dem Auslauf spritzt.</p>
+          <p class="prose-p">Tritt ein Funktionsverlust des <a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/" class="wiki-link" title="Milchsysteme &amp; Karaffen">LatteCrema</a>-Systems auf, manifestiert sich dieser über spezifische elektro-mechanische und akustische Fehlersymptome. Ein dominierendes Symptom ist das sogenannte &#39;Spratzeln&#39; oder &#39;Dampfhusten&#39;, bei welchem ungeschäumte, heiße Milch stoßweise unter lauter Geräuschentwicklung aus dem Auslauf spritzt.</p>
 <p class="prose-p">Ursache hierfür ist in 85 % der Fälle Falschluft im Ansaugtrakt: Beschädigte, gequetschte oder durch Heißwassereinwirkung versprödete <strong>VMQ</strong>-O-Ringe am maschinenseitigen Heißwasserauslaufzapfen (Kupplungsadapter) zerstören das zur Milchaspiration benötigte Bernoulli-Vakuum. Ist stattdessen ein hochfrequentes, pfeifendes Strömungsgeräusch wahrnehmbar und es tritt ausschließlich reiner Wasserdampf ohne Milchförderung aus, liegt eine vollständige Okklusion des Steigrohrs oder der Venturi-Querschnittsverengung durch verharzte Milchfette und verbackenen Milchstein vor.</p>
-<p class="prose-p">Fällt die Konsistenz des Milchschaums auffallend grobporig aus und kollabiert das Volumen innerhalb weniger Sekunden, schließt der Regulierdrehknopf nicht mehr hermetisch ab, oder die Drosselblende zieht unkontrolliert Sekundärluft. Ein weiteres kritisches Fehlerbild ist der interne Druckverlust: Meldet die Dinamica die Fehlermeldung &#39;Wasserkreislauf leer / Wasserkreislauf füllen&#39; während des Dampfaufbaus, registriert der Hall-Sensor des maschinenseitigen Flowmeters keinen hinreichenden Durchfluss, meist verursacht durch massive Kesselsteinablagerungen (Calcium- und Magnesiumcarbonat) in der Verdampferschleife des Thermoblocks oder ein hängendes Magnetventil, wodurch der Dampfdruck unter die kritische Schwelle von <strong>1,0 bar</strong> absinkt.</p>
-          
+<p class="prose-p">Fällt die Konsistenz des Milchschaums auffallend grobporig aus und kollabiert das Volumen innerhalb weniger Sekunden, schließt der Regulierdrehknopf nicht mehr hermetisch ab, oder die Drosselblende zieht unkontrolliert Sekundärluft. Ein weiteres kritisches Fehlerbild ist der interne Druckverlust: Meldet die Dinamica die <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Diagnose &amp; Fehlercode-Datenbank">Fehlermeldung</a> &#39;Wasserkreislauf leer / Wasserkreislauf füllen&#39; während des Dampfaufbaus, registriert der Hall-Sensor des maschinenseitigen Flowmeters keinen hinreichenden Durchfluss, meist verursacht durch massive Kesselsteinablagerungen (Calcium- und Magnesiumcarbonat) in der Verdampferschleife des <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblocks</a> oder ein hängendes <a href="https://roboparca.github.io/kaffeereparatur/kategorie/magnetventil/" class="wiki-link" title="Magnetventile">Magnetventil</a>, wodurch der Dampfdruck unter die kritische Schwelle von <strong>1,0 bar</strong> absinkt.</p>
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Systemtrennung &amp; Demontage</h4>
+                  <p>Vollautomaten ausschalten, Netzstecker ziehen und Milchbehälter komplett von der Kupplungsschnittstelle der Maschine abziehen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Zerlegung des LatteCrema-Deckels</h4>
+                  <p>Milchauslauf nach vorne abziehen, Steigrohr nach unten herausziehen und den Schaumregulierknopf auf Position &#39;Insert&#39; drehen, um ihn vertikal aus dem Gehäuse zu entnehmen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Dichtungsinspektion &amp; -demontage</h4>
+                  <p>Die internen VMQ-Dichtungen am Regulierkolben sowie die beiden Kupplungs-O-Ringe am Gehäusezapfen der Dinamica mit einem spitzen Kunststoff-Pick beschädigungsfrei abhebeln.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Chemisch-mechanische Tiefenreinigung</h4>
+                  <p>Sämtliche strömungsführenden Komponenten für 30 Minuten in einer 10%igen alkalischen Milchfettreinigungs-Lösung (z. B. Puly Milk) baden; Düsenkanäle mit Mikrofaserbürste säubern.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Elastomer-Montage &amp; Funktionskalibrierung</h4>
+                  <p>Neue lebensmittelechte Dichtungen aufziehen, Dichtflächen hauchdünn mit OKS 1110 Silikonfett benetzen, Baugruppe montieren und einen Referenzbezug mit kaltem Wasser durchführen.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Systemtrennung &amp; Demontage</div>
-                <div class="step-item-desc">Vollautomaten ausschalten, Netzstecker ziehen und Milchbehälter komplett von der Kupplungsschnittstelle der Maschine abziehen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Zerlegung des LatteCrema-Deckels</div>
-                <div class="step-item-desc">Milchauslauf nach vorne abziehen, Steigrohr nach unten herausziehen und den Schaumregulierknopf auf Position &#39;Insert&#39; drehen, um ihn vertikal aus dem Gehäuse zu entnehmen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Dichtungsinspektion &amp; -demontage</div>
-                <div class="step-item-desc">Die internen VMQ-Dichtungen am Regulierkolben sowie die beiden Kupplungs-O-Ringe am Gehäusezapfen der Dinamica mit einem spitzen Kunststoff-Pick beschädigungsfrei abhebeln.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Chemisch-mechanische Tiefenreinigung</div>
-                <div class="step-item-desc">Sämtliche strömungsführenden Komponenten für 30 Minuten in einer 10%igen alkalischen Milchfettreinigungs-Lösung (z. B. Puly Milk) baden; Düsenkanäle mit Mikrofaserbürste säubern.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Elastomer-Montage &amp; Funktionskalibrierung</div>
-                <div class="step-item-desc">Neue lebensmittelechte Dichtungen aufziehen, Dichtflächen hauchdünn mit OKS 1110 Silikonfett benetzen, Baugruppe montieren und einen Referenzbezug mit kaltem Wasser durchführen.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Die fachgerechte Instandsetzung und Generalüberholung des De&#39;Longhi <strong>LatteCrema</strong>-Systems erfordert präzises Vorgehen sowie adäquates Werkzeug. Benötigt werden: Ein nicht-abrasiver O-Ring-Pick aus <strong>POM</strong> oder Messing (kein gehärteter Federstahl, um Riefenbildung in den <strong>POM</strong>-Dichtsitzen zu vermeiden), <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> und <strong>TX20</strong> (falls die Gehäusedemontage der Dinamica zur Überprüfung der Dampfkupplung erforderlich wird), lebensmittelechtes Hochleistungs-Silikonfett nach <strong>NSF-H1</strong>-Zertifizierung (empfohlen: <strong>OKS 1110</strong> oder Klüber Paraliq GTE 703) sowie alkalischer Spezial-Milchsteinreiniger.</p>
-<p class="prose-p">Vor Beginn der Arbeiten ist die De&#39;Longhi Dinamica ECAM 350.55.B zwingend allpolig vom Stromnetz zu trennen. Verbrennungsgefahr: Wurde die Maschine kurz zuvor betrieben, muss der Thermoblock mindestens 30 Minuten abkühlen, da am Kupplungszapfen Oberflächentemperaturen von über 95 °C herrschen können.</p>
+          <p class="prose-p">Die fachgerechte Instandsetzung und Generalüberholung des De&#39;Longhi <a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/" class="wiki-link" title="Milchsysteme &amp; Karaffen">LatteCrema</a>-Systems erfordert präzises Vorgehen sowie adäquates Werkzeug. Benötigt werden: Ein nicht-abrasiver O-Ring-Pick aus <strong>POM</strong> oder Messing (kein gehärteter Federstahl, um Riefenbildung in den <strong>POM</strong>-Dichtsitzen zu vermeiden), <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> und <strong>TX20</strong> (falls die Gehäusedemontage der Dinamica zur Überprüfung der Dampfkupplung erforderlich wird), lebensmittelechtes Hochleistungs-Silikonfett nach <strong>NSF-H1</strong>-Zertifizierung (empfohlen: <strong>OKS 1110</strong> oder Klüber Paraliq GTE 703) sowie alkalischer Spezial-Milchsteinreiniger.</p>
+<p class="prose-p">Vor Beginn der Arbeiten ist die De&#39;Longhi Dinamica ECAM 350.55.B zwingend allpolig vom Stromnetz zu trennen. Verbrennungsgefahr: Wurde die Maschine kurz zuvor betrieben, muss der <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mindestens 30 Minuten abkühlen, da am Kupplungszapfen Oberflächentemperaturen von über 95 °C herrschen können.</p>
 <p class="prose-p">Ziehen Sie den Milchbehälter ab und demontieren Sie den Deckel. Nehmen Sie das elastische Ansaugröhrchen ab.</p>
 <p class="prose-p">Drehen Sie den Regulierknopf über die Rastung hinaus auf die Entnahmeposition (&#39;Insert/Remove&#39;) und ziehen Sie den Ventileinsatz mit gleichmäßigem axialem Zug nach oben heraus. Hebeln Sie nun das Auslaufrohr vorsichtig aus seiner Schwenkrastung.</p>
 <p class="prose-p">Prüfen Sie nun die maschinenseitigen Dichtungen: Am Heißwasserauslaufstutzen sitzen zwei thermisch stark beanspruchte O-Ringe (Format 9,25 x <strong>1,78 mm</strong> bzw. dichtungsspezifisch je nach Revisionsstand). Entfernen Sie diese mit dem Pick.</p>
@@ -246,188 +243,210 @@
 <p class="prose-p">Nach Trocknung werden die Dichtungen des Regulierkolbens ersetzt. Führen Sie den Kolben fluchtend in die Führung ein, drücken Sie ihn bis zum Anschlag nach unten und drehen Sie ihn zurück in die Betriebsstellung.</p>
 <p class="prose-p">Rasten Sie den Auslauf wieder ein. Führen Sie abschließend einen Druck- und Dichtigkeitstest durch: Starten Sie das Clean-Spülprogramm.</p>
 <p class="prose-p">Am Kupplungsflansch darf kein Kondensat oder Tropfwasser austreten. Beim anschließenden Testbezug mit gekühlter Vollmilch (3,5 % Fettgehalt) muss binnen 4 Sekunden ein homogener, feinporiger Schaumstrahl mit einer Ausgabetemperatur von 62 bis 68 °C laminar austreten.</p>
-          </div>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Milch wird nicht angesaugt; starkes Zischen und reiner Dampfaustritt am Auslauf</strong></td>
-                    <td data-label="Mögliche Ursache">Falschlufteintrag durch defekte oder elongierte O-Ringe am maschinenseitigen Dampfkupplungsadapter oder Mikroriss im POM-Steigrohr.</td>
-                    <td data-label="Lösungsmaßnahme">Kupplungs-O-Ringe auf Versprödung prüfen und austauschen; Steigrohr auf festen Presssitz und Haarrisse kontrollieren, ggf. ersetzen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Milchschaum ist extrem großporig, spritzt unkontrolliert und fällt rasch in sich zusammen</strong></td>
-                    <td data-label="Mögliche Ursache">Kalibrierte Luftbohrung im Einstellregler durch koagulierte Milcheiweiß-Rückstände verengt oder Rastmechanik des Reglers dejustiert.</td>
-                    <td data-label="Lösungsmaßnahme">Regulierknopf demontieren, Luftansaugkanal mechanisch mit einer Reinigungsnadel (0,3 mm) freistechen und im alkalischen Ultraschallbad reinigen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Wasser-/Dampfaustritt an der Schnittstelle zwischen Karaffendeckel und Maschinengehäuse</strong></td>
-                    <td data-label="Mögliche Ursache">Abrasiver Verschleiß des POM-Kupplungsflansches am Deckel oder axiale Deplatzierung der Maschinenzapfen-Dichtungen.</td>
-                    <td data-label="Lösungsmaßnahme">O-Ringe des Anschlusszapfens erneuern und mit OKS 1110 schmieren; bei Rissbildung oder Abnutzung der Verriegelungsnase den kompletten Deckel austauschen.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Milch wird nicht angesaugt; starkes Zischen und reiner Dampfaustritt am Auslauf</td>
+                  <td>Falschlufteintrag durch defekte oder elongierte O-Ringe am maschinenseitigen Dampfkupplungsadapter oder Mikroriss im POM-Steigrohr.</td>
+                  <td class="diag-fix">✓ Kupplungs-O-Ringe auf Versprödung prüfen und austauschen; Steigrohr auf festen Presssitz und Haarrisse kontrollieren, ggf. ersetzen.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Komplette Demontage des LatteCrema-Deckels in seine 5 Einzelbestandteile; Einlegen in 40 °C warme Reinigungslösung zur vollständigen Solubilisierung von Milchproteinen und Fetten.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Inspektion der maschinenseitigen Dampfkupplungs-O-Ringe auf Mikrorisse, Verhärtung und axiales Spiel; sparsames Nachfetten mit NSF-H1-zertifiziertem OKS 1110 Silikonfett.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6-12 Monate</strong></td>
-                    <td data-label="Maßnahme">Präventiver Austausch aller elastischen Dichtelemente (O-Ringe am Dampfstutzen und Regulierkolben) sowie visuelle Prüfung des Steigrohrs auf Mikrorisse zur Vermeidung von Falschluft.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Milchschaum ist extrem großporig, spritzt unkontrolliert und fällt rasch in sich zusammen</td>
+                  <td>Kalibrierte Luftbohrung im Einstellregler durch koagulierte Milcheiweiß-Rückstände verengt oder Rastmechanik des Reglers dejustiert.</td>
+                  <td class="diag-fix">✓ Regulierknopf demontieren, Luftansaugkanal mechanisch mit einer Reinigungsnadel (0,3 mm) freistechen und im alkalischen Ultraschallbad reinigen.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Wasser-/Dampfaustritt an der Schnittstelle zwischen Karaffendeckel und Maschinengehäuse</td>
+                  <td>Abrasiver Verschleiß des POM-Kupplungsflansches am Deckel oder axiale Deplatzierung der Maschinenzapfen-Dichtungen.</td>
+                  <td class="diag-fix">✓ O-Ringe des Anschlusszapfens erneuern und mit OKS 1110 schmieren; bei Rissbildung oder Abnutzung der Verriegelungsnase den kompletten Deckel austauschen.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>De&#39;Longhi Dinamica ECAM 350.55.B, De&#39;Longhi Dinamica ECAM 350.75.S, De&#39;Longhi Dinamica Plus ECAM 370.95.T, De&#39;Longhi Dinamica ECAM 352.55.SB</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">De&#39;Longhi Magnifica S ECAM 22.110.B (Nur manuelle Pannarello-Dampflanze), De&#39;Longhi PrimaDonna Exclusive ESAM 6900.M (Inkompatible Kupplungsgeometrie)</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica ECAM 350.55.B</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica ECAM 350.75.S</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica Plus ECAM 370.95.T</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica ECAM 352.55.SB</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi Magnifica S ECAM 22.110.B (Nur manuelle Pannarello-Dampflanze)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> De&#39;Longhi PrimaDonna Exclusive ESAM 6900.M (Inkompatible Kupplungsgeometrie)</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Komplette Demontage des LatteCrema-Deckels in seine 5 Einzelbestandteile; Einlegen in 40 °C warme Reinigungslösung zur vollständigen Solubilisierung von Milchproteinen und Fetten.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Inspektion der maschinenseitigen Dampfkupplungs-O-Ringe auf Mikrorisse, Verhärtung und axiales Spiel; sparsames Nachfetten mit NSF-H1-zertifiziertem OKS 1110 Silikonfett.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Präventiver Austausch aller elastischen Dichtelemente (O-Ringe am Dampfstutzen und Regulierkolben) sowie visuelle Prüfung des Steigrohrs auf Mikrorisse zur Vermeidung von Falschluft.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum verliert das LatteCrema-System der Dinamica ECAM 350.55.B nach dem Entkalken oft temporär an Schäumleistung?</div>
-                <div class="faq-answer">A: Während des Entkalkungsvorgangs lösen sich gelöste Kalkpartikel im Edelstahl-Thermoblock. Diese mineralischen Mikrofragmente können sich in den vorgeschalteten 2/2-Wege-Magnetventilen oder der mikroskopisch feinen Injektordüse der Dampfkupplung festsetzen. Dies reduziert den dynamischen Durchlassquerschnitt drastisch. In der Folge fällt der Arbeitsdampfdruck unter das kritische Niveau von ca. 1,2 bar ab, wodurch die Fließgeschwindigkeit nach dem Kontinuitätsgesetz sinkt und der resultierende Unterdruck im Venturi-Kanal nicht mehr ausreicht, um die erforderliche Milchmenge homogen anzusaugen.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum verliert das LatteCrema-System der Dinamica ECAM 350.55.B nach dem Entkalken oft temporär an Schäumleistung?</div>
+                <div class="faq-a">Während des Entkalkungsvorgangs lösen sich gelöste Kalkpartikel im Edelstahl-Thermoblock. Diese mineralischen Mikrofragmente können sich in den vorgeschalteten 2/2-Wege-Magnetventilen oder der mikroskopisch feinen Injektordüse der Dampfkupplung festsetzen. Dies reduziert den dynamischen Durchlassquerschnitt drastisch. In der Folge fällt der Arbeitsdampfdruck unter das kritische Niveau von ca. 1,2 bar ab, wodurch die Fließgeschwindigkeit nach dem Kontinuitätsgesetz sinkt und der resultierende Unterdruck im Venturi-Kanal nicht mehr ausreicht, um die erforderliche Milchmenge homogen anzusaugen.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Welches Schmiermittel darf bei der Wartung der Milchsystem-Dichtungen verwendet werden und warum?</div>
-                <div class="faq-answer">A: Ausschließlich hochreines, geruchs- und geschmacksneutrales Silikonfett mit NSF-H1-Zulassung oder FDA-Konformität nach 21 CFR 178.3570 (wie z. B. OKS 1110) darf verwendet werden. Herkömmliche Mineralölfette oder säurehaltige Schmierstoffe zersetzen die VMQ- und EPDM-Polymere chemisch und sind hochgradig toxisch bei oraler Aufnahme. Zudem muss extrem sparsam dosiert werden: Gelangt auch nur ein mikroskopischer Film Silikonfett in die Mischkammer, bricht die Oberflächenspannung der Milchproteine augenblicklich zusammen, was eine Schaumbildung vollständig verhindert.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Welches Schmiermittel darf bei der Wartung der Milchsystem-Dichtungen verwendet werden und warum?</div>
+                <div class="faq-a">Ausschließlich hochreines, geruchs- und geschmacksneutrales Silikonfett mit NSF-H1-Zulassung oder FDA-Konformität nach 21 CFR 178.3570 (wie z. B. OKS 1110) darf verwendet werden. Herkömmliche Mineralölfette oder säurehaltige Schmierstoffe zersetzen die VMQ- und EPDM-Polymere chemisch und sind hochgradig toxisch bei oraler Aufnahme. Zudem muss extrem sparsam dosiert werden: Gelangt auch nur ein mikroskopischer Film Silikonfett in die Mischkammer, bricht die Oberflächenspannung der Milchproteine augenblicklich zusammen, was eine Schaumbildung vollständig verhindert.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Woran erkenne ich, ob ein Defekt am Karaffendeckel vorliegt oder der Dampf-Thermoblock der Maschine defekt ist?</div>
-                <div class="faq-answer">A: Dies lässt sich durch einen einfachen Diagnosetest differenzieren: Stecken Sie die Heißwasserdüse anstelle der Milchkaraffe auf die Dinamica. Starten Sie den Heißwasserbezug. Fließt das Wasser in einem kräftigen, kontinuierlichen Strahl ohne massives Stottern oder übermäßige Dampfblasenbildung, ist die Förderpumpe und der primäre Durchlauferhitzer intakt. Schalten Sie anschließend auf manuellen Dampfbezug um: Ertönt das gleichmäßige, niederfrequente Pumpentakten und es tritt trockener Heißdampf unter konstantem Zischen aus, liegt das Problem eindeutig an den Dichtungen oder Kanälen des Aufschäumerdeckels.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Woran erkenne ich, ob ein Defekt am Karaffendeckel vorliegt oder der Dampf-Thermoblock der Maschine defekt ist?</div>
+                <div class="faq-a">Dies lässt sich durch einen einfachen Diagnosetest differenzieren: Stecken Sie die Heißwasserdüse anstelle der Milchkaraffe auf die Dinamica. Starten Sie den Heißwasserbezug. Fließt das Wasser in einem kräftigen, kontinuierlichen Strahl ohne massives Stottern oder übermäßige Dampfblasenbildung, ist die Förderpumpe und der primäre Durchlauferhitzer intakt. Schalten Sie anschließend auf manuellen Dampfbezug um: Ertönt das gleichmäßige, niederfrequente Pumpentakten und es tritt trockener Heißdampf unter konstantem Zischen aus, liegt das Problem eindeutig an den Dichtungen oder Kanälen des Aufschäumerdeckels.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu De&#39;Longhi</h3>
-          <ul class="sidebar-links">
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/bruehgruppe/">
-                  › Magnifica S &amp; Dinamica (ECAM Baureihe): Brühgruppe Revision &amp; O-Ring Dichtungsset
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/vibrationspumpe/">
-                  › Magnifica S (ECAM 22.110.B): Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/fehlercodes/">
-                  › Magnifica S (ECAM 22.110.B): Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/milchkaraffe/">
-                  › Dinamica (ECAM 350.55.B): LatteCrema Milchkaraffe &amp; Aufschäumerdeckel
-                </a>
-              </li>
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>De&#39;Longhi Dinamica (ECAM 350.55.B)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B0CMW1HFJ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für Dinamica (ECAM 350.55.B)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/thermoblock/">
-                  › Dinamica (ECAM 350.55.B): Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor
+                  <span>Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/magnetventil/">
-                  › Eletta Cappuccino (ECAM 44.660.B): 2-Wege &amp; 3-Wege Solenoid Magnetventil 230V
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wassertank-ventil/">
-                  › Magnifica S &amp; Dinamica: Wassertank-Ventil Lippendichtung &amp; Feder
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wasserfilter/">
-                  › Alle ECAM &amp; ETAM Serien: DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)
-                </a>
-              </li>
-            
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/" style="font-weight:700; color:var(--primary);">
+                <span>Alle Dinamica (ECAM 350.55.B) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">De&#39;Longhi Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/">
+                  <span>Magnifica S &amp; Dinamica (ECAM Baureihe)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/">
+                  <span>Dinamica (ECAM 350.55.B)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/">
+                  <span>Eletta Cappuccino (ECAM 44.660.B)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/la-specialista/">
+                  <span>La Specialista (EC9335.M)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="font-weight:700; color:var(--primary);">
+                <span>Zur De&#39;Longhi Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -442,50 +461,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">De&#39;Longhi LatteCrema Milchkaraffe &amp; Aufschäumerdeckel</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B0CMW1HFJ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

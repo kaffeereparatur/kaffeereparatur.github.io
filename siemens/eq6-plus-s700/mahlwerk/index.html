@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
@@ -81,7 +73,7 @@
       <span>Keramik-Mahlwerk ceramDrive Einheit komplett</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">Siemens • Mahlwerke &amp; Mahlscheiben</span>
+        <h1>Siemens EQ.6 Plus s700 (TE657503DE): Keramik-Mahlwerk ceramDrive Einheit komplett</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">Siemens</span>
-          <span class="badge-cat">Mahlwerke &amp; Mahlscheiben</span>
           <span class="badge-rating">★ 4.7 (1.120 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: 12014022</span>
         </div>
-
-        <h1>Siemens EQ.6 Plus s700 (TE657503DE): Keramik-Mahlwerk ceramDrive Einheit komplett</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B074QL4W4K?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B074QL4W4K) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B074QL4W4K?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -164,12 +144,12 @@
         <div class="section-box">
           <h2>🔬 Mechatronische Analyse &amp; Funktionsprinzip</h2>
           <hr class="section-divider">
-          <p class="prose-p">Das Mahlwerk der Siemens EQ.6 Plus s700 (Baureihe TE657503DE) firmiert herstellerseitig unter der Bezeichnung CeramDrive und ist als modulares Kegelmahlwerk konstruiert. Das Mahlwerkpaar besteht aus hochfester, isostatisch gepresster Zirkonoxid- bzw.</p>
+          <p class="prose-p">Das <a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" class="wiki-link" title="Mahlwerke &amp; Keramikmahlscheiben">Mahlwerk</a> der Siemens EQ.6 Plus s700 (Baureihe TE657503DE) firmiert herstellerseitig unter der Bezeichnung <a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" class="wiki-link" title="ceramDrive Keramikmahlwerk">CeramDrive</a> und ist als modulares Kegelmahlwerk konstruiert. Das Mahlwerkpaar besteht aus hochfester, isostatisch gepresster Zirkonoxid- bzw.</p>
 <p class="prose-p">Aluminiumoxid-Keramik (Al2O3-Reinheit &gt; 95 %), wodurch eine abrasive Abnutzung gegenüber metallischen Mahlscheiben minimiert wird. Der äußere Stator (Mahlring) und der rotierende Innenkonus (Mahlkegel) arbeiten mit eng tolerierten Radial- und Axialspalten zwischen 50 µm und maximal 350 µm, abhängig von der mechanischen Voreinstellung des Rastkranzes.</p>
 <p class="prose-p">Der mechanische Antrieb erfolgt über einen permanenterregten 230-V-Gleichstrommotor (Mabuchi/Johnson-Klasse), der über eine netzsynchron getaktete Dioden-Brückengleichrichtung auf der Leistungsplatine angesteuert wird. Die Kraftübertragung auf den Mahlkegel erfolgt über ein untersetztes Stirnrad- und Schneckengetriebe mit Komponenten aus hochkristallinem Polyoxymethylen (<strong>POM</strong>-C) zur Vibrationsdämpfung und Geräuschreduktion bei ca. 1.200 bis 1.400 U/min an der Spindel.</p>
 <p class="prose-p">Die axiale Lastaufnahme wird über ein Federpaket aus austenitischem Federstahl <strong>1.4310</strong> (X10CrNi18-8) kompensiert, welches Schockbelastungen durch Kaffeebohnen bricht. Zur Abdichtung der rotierenden Welle gegenüber Kaffeemehleintrag und abrasiven Feinstaubpartikeln dienen Formdichtungen aus Fluorkautschuk (<strong>FKM</strong>/Viton) bzw.</p>
 <p class="prose-p">Nitrilkautschuk (NBR). Die lastabhängige Überwachung des Mahlvorgangs erfolgt sensorlos über Shunt-Widerstände auf der Motorsteuerungsplatine.</p>
-<p class="prose-p">Ein blockiertes Mahlwerk erzeugt einen steilen Stromanstieg (&gt; 1,8 A), woraufhin der Mikrocontroller innerhalb von 150 ms die Leistungszufuhr per Triac abschaltet. Bei zu geringer Stromaufnahme (&lt; 0,35 A) registriert die Software fehlenden Bohneneinzug und initiiert die Displaymeldung zur Befüllung.</p>
+<p class="prose-p">Ein blockiertes <a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" class="wiki-link" title="Mahlwerke &amp; Keramikmahlscheiben">Mahlwerk</a> erzeugt einen steilen Stromanstieg (&gt; 1,8 A), woraufhin der Mikrocontroller innerhalb von 150 ms die Leistungszufuhr per Triac abschaltet. Bei zu geringer Stromaufnahme (&lt; 0,35 A) registriert die Software fehlenden Bohneneinzug und initiiert die Displaymeldung zur Befüllung.</p>
 <p class="prose-p">Das resultierende Mahlgut definiert direkt den hydraulischen Strömungswiderstand in der Brühkammer: Bei einem Soll-Pumpendruck von 9 bis <strong>15 bar</strong> (Ulka HF/EP5) führt ein unzulässiger Feinstaubanteil (Fines &lt; 100 µm) zu Porenverschluss des Edelstahl-Brühsiebs (<strong>1.4301</strong>) und Überdruckableitung über das mechanische Expansionsventil.</p>
           
           <div class="callout-box callout-tip">
@@ -185,249 +165,331 @@
         <div class="section-box">
           <h2>⚠️ Typische Ausfallsymptome &amp; Ursachenanalyse</h2>
           <hr class="section-divider">
-          <p class="prose-p">Mechanische und elektronische Defekte des EQ.6-Plus-Mahlwerks manifestieren sich durch spezifische Fehlerbilder. Das Leitsymptom &#39;<span class="code-pill">Bohnenbehälter füllen</span>&#39; bei gefülltem Trichter basiert auf einer unzureichenden Stromaufnahme des DC-Motors: Die Steuerung erkennt die Leerlaufdrehzahl (hohe Motordrehzahl ohne Mahlwiderstand) infolge von Hohlraumbildung (Bridging) bei öligen Röstungen, abgenutzten Einzugsschnecken oder einem mechanischen Bruch der <strong>POM</strong>-Mitnehmerachse.</p>
+          <p class="prose-p">Mechanische und elektronische Defekte des EQ.6-Plus-Mahlwerks manifestieren sich durch spezifische Fehlerbilder. Das Leitsymptom &#39;Bohnenbehälter füllen&#39; bei gefülltem Trichter basiert auf einer unzureichenden Stromaufnahme des DC-Motors: Die Steuerung erkennt die Leerlaufdrehzahl (hohe Motordrehzahl ohne Mahlwiderstand) infolge von Hohlraumbildung (Bridging) bei öligen Röstungen, abgenutzten Einzugsschnecken oder einem mechanischen Bruch der <strong>POM</strong>-Mitnehmerachse.</p>
 <p class="prose-p">Ein hohes, kreischendes oder mahlendes Geräusch weist auf Zahnausfall im Schneckenradgetriebe oder Fremdkörpereintrag (z. B. kleine Steine aus Rohkaffee) hin, die zwischen Stator und Rotor verkeilt sind.</p>
 <p class="prose-p">Ein dumpfes Summen ohne Rotation kennzeichnet eine Blockade des Mahlkonus oder einen Wicklungsschluss des Gleichstrommotors (typischer Wicklungswiderstand kalt: 70–110 Ohm; bei Schluss sinkt dieser unter 15 Ohm). Wässriger Kaffee mit unzureichender Crema und strukturlosem, feuchtem Trester im Satzbehälter deutet auf eine Dejustierung des Mahlspalts durch Vibrationen oder abrasiven Kantenverschleiß der Keramikschneiden hin.</p>
 <p class="prose-p">Zudem führt eine unvollständige Entfettung zu klebrigen Rückständen in den Auslaufkanälen, wodurch das Mehl gestaut wird und der Mahlwerksmotor thermisch überlastet.</p>
-          
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Sicherheitsabschaltung &amp; Gehäuseöffnung</h4>
+                  <p>Netzstecker ziehen. Bohnenbehälter leeren, Wassertank und Tropfschale entnehmen. Die rückseitigen und bodenseitigen Torx-Schrauben (TX10/TX15) lösen, Seitenverkleidungen nach hinten abziehen und die obere Gehäuseabdeckung vorsichtig von den Rastnasen lösen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Elektrische Trennung und Mahlwerkentnahme</h4>
+                  <p>Verkabelung des Mahlwerks am Gleichstrommotor fotografieren, Flachsteckhülsen mit isolierter Zange abziehen. Die elastischen VMQ-Schwingungsdämpfer aushängen und die komplette Mahleinheit samt Pulverauslauftrichter vertikal nach oben aus der Chassisführung heben.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Demontage der Mahleinheit &amp; Reinigung</h4>
+                  <p>Den oberen Bajonett-Haltering gegen den Uhrzeigersinn drehen und abheben. Keramik-Mahlring und Mahlkegel entnehmen. Bohnenreste, Kaffeefett und Verkrustungen mit Messingdrahtbürste, Staubsauger und Druckluft vollständig entfernen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Getriebeprüfung &amp; Wellenabdichtung</h4>
+                  <p>Getriebedeckel öffnen, POM-Zahnräder auf Karies prüfen. Altes Schmierfett entfernen und Getrieberäder sowie O-Ringe mit lebensmittelechtem Schmierfett OKS 1110 dünn benetzen. Wellendichtring auf Rissfreiheit prüfen und bei Verhärtung ersetzen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Kalibrierung, Remontage &amp; Bezugstest</h4>
+                  <p>Mahlwerk zusammenbauen und den Einstellring im Uhrzeigersinn auf Block drehen (Mahlflächen berühren sich), anschließend exakt 3 Raststufen gegen den Uhrzeigersinn öffnen (mechanische Nullpunktjustage). Mahlwerk einbauen, Gehäuse montieren und drei Referenzbezüge zur Partikelstabilisierung durchführen.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Sicherheitsabschaltung &amp; Gehäuseöffnung</div>
-                <div class="step-item-desc">Netzstecker ziehen. Bohnenbehälter leeren, Wassertank und Tropfschale entnehmen. Die rückseitigen und bodenseitigen Torx-Schrauben (TX10/TX15) lösen, Seitenverkleidungen nach hinten abziehen und die obere Gehäuseabdeckung vorsichtig von den Rastnasen lösen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Elektrische Trennung und Mahlwerkentnahme</div>
-                <div class="step-item-desc">Verkabelung des Mahlwerks am Gleichstrommotor fotografieren, Flachsteckhülsen mit isolierter Zange abziehen. Die elastischen VMQ-Schwingungsdämpfer aushängen und die komplette Mahleinheit samt Pulverauslauftrichter vertikal nach oben aus der Chassisführung heben.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Demontage der Mahleinheit &amp; Reinigung</div>
-                <div class="step-item-desc">Den oberen Bajonett-Haltering gegen den Uhrzeigersinn drehen und abheben. Keramik-Mahlring und Mahlkegel entnehmen. Bohnenreste, Kaffeefett und Verkrustungen mit Messingdrahtbürste, Staubsauger und Druckluft vollständig entfernen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Getriebeprüfung &amp; Wellenabdichtung</div>
-                <div class="step-item-desc">Getriebedeckel öffnen, POM-Zahnräder auf Karies prüfen. Altes Schmierfett entfernen und Getrieberäder sowie O-Ringe mit lebensmittelechtem Schmierfett OKS 1110 dünn benetzen. Wellendichtring auf Rissfreiheit prüfen und bei Verhärtung ersetzen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Kalibrierung, Remontage &amp; Bezugstest</div>
-                <div class="step-item-desc">Mahlwerk zusammenbauen und den Einstellring im Uhrzeigersinn auf Block drehen (Mahlflächen berühren sich), anschließend exakt 3 Raststufen gegen den Uhrzeigersinn öffnen (mechanische Nullpunktjustage). Mahlwerk einbauen, Gehäuse montieren und drei Referenzbezüge zur Partikelstabilisierung durchführen.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Die Instandsetzung des Mahlwerks der Siemens EQ.6 Plus s700 verlangt präzises handwerkliches Vorgehen. Als Werkzeugausstattung sind <strong>Torx</strong>-Schraubendreher der Größen <strong>TX10</strong>, <strong>TX15</strong> und <strong>TX20</strong>, ein flacher ESD-Kunststoffspudger, eine Spitzzange, ein digitales Multimeter sowie Schmierfett <strong>OKS 1110</strong> (<strong>NSF-H1</strong> zertifiziert) erforderlich.</p>
+          <p class="prose-p">Die Instandsetzung des Mahlwerks der Siemens EQ.6 Plus s700 verlangt präzises handwerkliches Vorgehen. Als Werkzeugausstattung sind <strong>Torx</strong>-Schraubendreher der Größen <strong>TX10</strong>, <strong>TX15</strong> und <strong>TX20</strong>, ein flacher ESD-Kunststoffspudger, eine Spitzzange, ein digitales Multimeter sowie Schmierfett <strong>OKS 1110</strong> (<strong>NSF-H1</strong> zertifiziert) erforderlich.</p>
 <p class="prose-p">Trennen Sie die Kaffeemaschine vor Beginn ausnahmslos allpolig vom Stromnetz und entladen Sie verbleibende Restspannungen der Leistungselektronik durch mehrfaches Betätigen des Netzschalters. Nach dem Entfernen des Wassertanks, des Bohnentrichterdeckels und der Kaffeesatzschublade lösen Sie die Schrauben an der Rückwand.</p>
-<p class="prose-p">Schieben Sie das Gehäusedach leicht nach vorn, um die sensiblen Rasten des Displays nicht abzubrechen. Das Mahlwerk liegt nun im oberen rechten Bereich frei.</p>
-<p class="prose-p">Lösen Sie die Rastlaschen des Auswurfkanals zur Brühgruppe. Heben Sie den Motorblock aus seinen vier <strong>VMQ</strong>-Entkopplungsgummis.</p>
+<p class="prose-p">Schieben Sie das Gehäusedach leicht nach vorn, um die sensiblen Rasten des Displays nicht abzubrechen. Das <a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" class="wiki-link" title="Mahlwerke &amp; Keramikmahlscheiben">Mahlwerk</a> liegt nun im oberen rechten Bereich frei.</p>
+<p class="prose-p">Lösen Sie die Rastlaschen des Auswurfkanals zur <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a>. Heben Sie den Motorblock aus seinen vier <strong>VMQ</strong>-Entkopplungsgummis.</p>
 <p class="prose-p">Überprüfen Sie mit dem Multimeter den Innenwiderstand der Motorwicklung: Liegt der Wert außerhalb des Fensters von 60 bis 120 Ohm, ist der Motor thermisch geschädigt und das Aggregat muss komplett getauscht werden. Zur Justierung und Revision wird der weiße oder schwarze Stellkranz nach Markierung der Werksposition gelöst.</p>
 <p class="prose-p">Nehmen Sie den Keramikmahlring heraus. Reinigen Sie die Schneidgeometrien gründlich von verharzten Kaffeewachsen.</p>
 <p class="prose-p">Tragen Sie eine minimale Menge <strong>OKS 1110</strong> auf die Dichtflächen auf, keinesfalls jedoch auf die Mahlzähne der Keramik. Setzen Sie Mahlkegel und Mahlring wieder zusammen.</p>
 <p class="prose-p">Drehen Sie den Zahnkranz manuell im Uhrzeigersinn ein, bis die Keramikflächen spürbar aneinanderstoßen (mechanischer Anschlagpunkt). Drehen Sie den Kranz nun exakt 2,5 bis 3 Rastzähne zurück – dies entspricht der Werkseinstellung für einen mittleren Espresso-Mahlgrad.</p>
 <p class="prose-p">Montieren Sie die Baugruppe in umgekehrter Reihenfolge, führen Sie die Kabel knickfrei in den Kabelführungen und führen Sie abschließend eine Dichtigkeits- und Stromaufnahmeprüfung unter Last durch.</p>
-          </div>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Meldung &#39;Bohnenbehälter füllen&#39; trotz vollem Trichter</strong></td>
-                    <td data-label="Mögliche Ursache">Motorstrom zu gering (&lt; 0,35 A) durch Mahlwerksleerstehung, verklebte Einzugsschnecke oder abgenutzte Keramikschneiden.</td>
-                    <td data-label="Lösungsmaßnahme">Trichter entleeren, Mahlwerk mit Staubsauger freisaugen. Obere Scheibe entnehmen, Schneckengang reinigen und Mahlgrad um 1 Stufe gröber justieren.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Kreischendes, metallisches Betriebsgeräusch</strong></td>
-                    <td data-label="Mögliche Ursache">Zahnbruch an den POM-Zahnrädern des Reduktionsgetriebes oder Fremdkörpereintrag im Keramikmahlspalt.</td>
-                    <td data-label="Lösungsmaßnahme">Mahlwerk demontieren, Getriebekasten öffnen. POM-Getrieberäder auf Zahnausfall prüfen, Fremdkörper entfernen oder Getriebemodul ersetzen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Kaffee tröpfelt nur, Trester nass und matschig</strong></td>
-                    <td data-label="Mögliche Ursache">Mahlgrad zu fein eingestellt; übermäßiger Feinpartikelanteil verstopft das Brühsieb, Brühdruck steigt über 16 bar.</td>
-                    <td data-label="Lösungsmaßnahme">Mahlwerk-Einstellhebel bei laufendem Mahlwerk um zwei Stufen gröber stellen. Brühsieb demontieren und mit Kaffeefettlöser reinigen.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Meldung &#39;Bohnenbehälter füllen&#39; trotz vollem Trichter</td>
+                  <td>Motorstrom zu gering (&lt; 0,35 A) durch Mahlwerksleerstehung, verklebte Einzugsschnecke oder abgenutzte Keramikschneiden.</td>
+                  <td class="diag-fix">✓ Trichter entleeren, Mahlwerk mit Staubsauger freisaugen. Obere Scheibe entnehmen, Schneckengang reinigen und Mahlgrad um 1 Stufe gröber justieren.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Entfernen von Bohnenresten im Bohnenschacht mit Kaffeefettlöser-Pinseln und Aussaugen des Trichters zur Vermeidung von Verharzung.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Überprüfung des Pulverauswurfkanals auf Kaffeemehlbrücken; Trockenreinigung mit flexibler Bürste bei entnommener Brühgruppe.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6-12 Monate</strong></td>
-                    <td data-label="Maßnahme">Demontage des oberen Mahlrings, Prüfung des Mahlspalts, Sichtprüfung der Keramikzähne auf Absplitterungen und Neukalibrierung des mechanischen Nullpunkts.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Kreischendes, metallisches Betriebsgeräusch</td>
+                  <td>Zahnbruch an den POM-Zahnrädern des Reduktionsgetriebes oder Fremdkörpereintrag im Keramikmahlspalt.</td>
+                  <td class="diag-fix">✓ Mahlwerk demontieren, Getriebekasten öffnen. POM-Getrieberäder auf Zahnausfall prüfen, Fremdkörper entfernen oder Getriebemodul ersetzen.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Kaffee tröpfelt nur, Trester nass und matschig</td>
+                  <td>Mahlgrad zu fein eingestellt; übermäßiger Feinpartikelanteil verstopft das Brühsieb, Brühdruck steigt über 16 bar.</td>
+                  <td class="diag-fix">✓ Mahlwerk-Einstellhebel bei laufendem Mahlwerk um zwei Stufen gröber stellen. Brühsieb demontieren und mit Kaffeefettlöser reinigen.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>Siemens EQ.6 Plus s700 (TE657503DE, TE657M03DE), Siemens EQ.6 Plus s500 (TE655203RW, TE655319DE), Siemens EQ.6 Plus s300 (TE653501DE, TE653311RW), Siemens EQ.6 Serie 300 / 700 (TE603201RW, TE607203DE), Bosch VeroAroma 300 / 700 (TES60321RW, TES60729DE)</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">Siemens EQ.9 Serie (TI903509DE, TI9553X1DE - separates Dual-Drive-System), Siemens EQ.3 / EQ.300 (TI303203RW - modifizierte Getriebeaufnahme), Siemens EQ.500 (TP507DX4 - abweichende Bohnentrichtergeometrie), Jura E- und J-Linie (Aroma-G3 Mahlwerke mit modifizierter Sensorik), DeLonghi ECAM Baureihen (Stahlkegelmahlwerke mit 230V Wechselstromantrieb)</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s700 (TE657503DE, TE657M03DE)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s500 (TE655203RW, TE655319DE)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s300 (TE653501DE, TE653311RW)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Serie 300 / 700 (TE603201RW, TE607203DE)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Bosch VeroAroma 300 / 700 (TES60321RW, TES60729DE)</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siemens EQ.9 Serie (TI903509DE, TI9553X1DE - separates Dual-Drive-System)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siemens EQ.3 / EQ.300 (TI303203RW - modifizierte Getriebeaufnahme)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siemens EQ.500 (TP507DX4 - abweichende Bohnentrichtergeometrie)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Jura E- und J-Linie (Aroma-G3 Mahlwerke mit modifizierter Sensorik)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> DeLonghi ECAM Baureihen (Stahlkegelmahlwerke mit 230V Wechselstromantrieb)</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Entfernen von Bohnenresten im Bohnenschacht mit Kaffeefettlöser-Pinseln und Aussaugen des Trichters zur Vermeidung von Verharzung.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Überprüfung des Pulverauswurfkanals auf Kaffeemehlbrücken; Trockenreinigung mit flexibler Bürste bei entnommener Brühgruppe.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Demontage des oberen Mahlrings, Prüfung des Mahlspalts, Sichtprüfung der Keramikzähne auf Absplitterungen und Neukalibrierung des mechanischen Nullpunkts.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Wie kalibriere ich die mechanische Grundeinstellung des Mahlwerks nach dem Tausch der Keramikmahlscheiben präzise?</div>
-                <div class="faq-answer">A: Die Kalibrierung erfolgt durch manuelles Einrasten des Mahlwerk-Stellkranzes bei geöffnetem Gerät. Drehen Sie den Justierring vorsichtig im Uhrzeigersinn, bis der Mahlkegel spielfrei und spürbar auf dem Mahlring aufsitzt (mechanischer Nullpunkt). Drehen Sie den Zahnkranz nun exakt drei Rastschritte entgegen dem Uhrzeigersinn zurück. In dieser Position wird der externe Verstellhebel in die mittlere Rasterung montiert. Hierdurch wird sichergestellt, dass die Keramikmahlscheiben selbst auf feinster Bedienerstufe berührungsfrei rotieren und Beschädigungen oder Keramikabrieb im Kaffeemehl zuverlässig verhindert werden.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Wie kalibriere ich die mechanische Grundeinstellung des Mahlwerks nach dem Tausch der Keramikmahlscheiben präzise?</div>
+                <div class="faq-a">Die Kalibrierung erfolgt durch manuelles Einrasten des Mahlwerk-Stellkranzes bei geöffnetem Gerät. Drehen Sie den Justierring vorsichtig im Uhrzeigersinn, bis der Mahlkegel spielfrei und spürbar auf dem Mahlring aufsitzt (mechanischer Nullpunkt). Drehen Sie den Zahnkranz nun exakt drei Rastschritte entgegen dem Uhrzeigersinn zurück. In dieser Position wird der externe Verstellhebel in die mittlere Rasterung montiert. Hierdurch wird sichergestellt, dass die Keramikmahlscheiben selbst auf feinster Bedienerstufe berührungsfrei rotieren und Beschädigungen oder Keramikabrieb im Kaffeemehl zuverlässig verhindert werden.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum meldet die Siemens EQ.6 &#39;Bohnenbehälter füllen&#39;, obwohl Bohnen im Trichter sind und das Mahlwerk läuft?</div>
-                <div class="faq-answer">A: Die Steuerungselektronik der Siemens EQ.6 Plus s700 misst kontinuierlich die Stromaufnahme des Gleichstrommotors über einen Mess-Shunt auf der Leistungsplatine. Treffen stark ölhaltige Röstungen auf Kaffeefettablagerungen an der Einzugsschnecke, rutschen die Bohnen nicht nach (Kavitationseffekt). Der Motor dreht ohne mechanische Last mit erhöhter Drehzahl, wodurch die Stromaufnahme unter den parametrierten Schwellenwert von circa 0,35 Ampere abfällt. Die Maschinenlogik interpretiert diese geringe Stromlast als leeren Vorratsbehälter und bricht den Bezugszyklus vorsorglich ab.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum meldet die Siemens EQ.6 &#39;Bohnenbehälter füllen&#39;, obwohl Bohnen im Trichter sind und das Mahlwerk läuft?</div>
+                <div class="faq-a">Die Steuerungselektronik der Siemens EQ.6 Plus s700 misst kontinuierlich die Stromaufnahme des Gleichstrommotors über einen Mess-Shunt auf der Leistungsplatine. Treffen stark ölhaltige Röstungen auf Kaffeefettablagerungen an der Einzugsschnecke, rutschen die Bohnen nicht nach (Kavitationseffekt). Der Motor dreht ohne mechanische Last mit erhöhter Drehzahl, wodurch die Stromaufnahme unter den parametrierten Schwellenwert von circa 0,35 Ampere abfällt. Die Maschinenlogik interpretiert diese geringe Stromlast als leeren Vorratsbehälter und bricht den Bezugszyklus vorsorglich ab.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Wann sollte das Mahlwerk komplett ersetzt werden statt nur die Keramikmahlscheiben zu reinigen oder zu tauschen?</div>
-                <div class="faq-answer">A: Ein Komplettaustausch des Mahlwerks ist zwingend erforderlich, wenn das interne POM-Untersetzungsgetriebe Zahnausfall aufweist, Lagerspiel an der Antriebswelle fühlbar ist oder der Gleichstrommotor Ankerfeuer, Wicklungsschäden oder Schmorgerüche zeigt. Auch wenn Feuchtigkeit über den Pulverschacht in das Getriebegehäuse eingedrungen ist und die Lager korrodiert sind, ist ein Einzeltausch der Mahlscheiben unwirtschaftlich. Ein neues Komplettaggregat stellt das ab Werk definierte Drehmomentprofil, absolute Rundlaufgenauigkeit (&lt; 0,05 mm) und die elektrische Betriebssicherheit für weitere Extraktionszyklen sicher.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Wann sollte das Mahlwerk komplett ersetzt werden statt nur die Keramikmahlscheiben zu reinigen oder zu tauschen?</div>
+                <div class="faq-a">Ein Komplettaustausch des Mahlwerks ist zwingend erforderlich, wenn das interne POM-Untersetzungsgetriebe Zahnausfall aufweist, Lagerspiel an der Antriebswelle fühlbar ist oder der Gleichstrommotor Ankerfeuer, Wicklungsschäden oder Schmorgerüche zeigt. Auch wenn Feuchtigkeit über den Pulverschacht in das Getriebegehäuse eingedrungen ist und die Lager korrodiert sind, ist ein Einzeltausch der Mahlscheiben unwirtschaftlich. Ein neues Komplettaggregat stellt das ab Werk definierte Drehmomentprofil, absolute Rundlaufgenauigkeit (&lt; 0,05 mm) und die elektrische Betriebssicherheit für weitere Extraktionszyklen sicher.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu Siemens</h3>
-          <ul class="sidebar-links">
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/mahlwerk/">
-                  › EQ.6 Plus s700 (TE657503DE): Keramik-Mahlwerk ceramDrive Einheit komplett
-                </a>
-              </li>
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>Siemens EQ.6 Plus s700 (TE657503DE)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B074QL4W4K?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für EQ.6 Plus s700 (TE657503DE)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/milchsystem/">
-                  › EQ.6 Plus s700 (TE657503DE): Edelstahl-Milchansauglanze &amp; Silikonschlauch Set
+                  <span>Edelstahl-Milchansauglanze &amp; Silikonschlauch Set</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/fehlercodes/">
-                  › EQ.6 Plus s700 (TE657503DE): Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung
+                  <span>Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/bruehgruppe/">
-                  › EQ.6 Plus (s300 / s500 / s700): Brüheinheit Brühgruppe komplett (Typ 11014117)
+                  <span>Brüheinheit Brühgruppe komplett (Typ 11014117)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/kaffeeauslauf/">
-                  › EQ.6 Plus s700 (TE657503DE): Kaffeeauslauf Verteiler &amp; Düsenabdeckung
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq500/bruehgruppe/">
-                  › EQ.500 classic (TP503D09): Brühgruppe Wartungsset &amp; Dichtringe rot
+                  <span>Kaffeeauslauf Verteiler &amp; Düsenabdeckung</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/wasserfilter/">
-                  › EQ.300 / EQ.500 / EQ.6 / EQ.9: Brita Intenza Wasserfilterpatrone TZ70003 (3er Pack)
+                  <span>Brita Intenza Wasserfilterpatrone TZ70003 (3er Pack)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq9-plus/keramikventil/">
-                  › EQ.9 Plus s500 (TI9553X1RW): Elektrisches Keramikventil 3-Wege Umschaltung
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/reinigungstabletten/">
+                  <span>2in1 Reinigungstabletten TZ80001A gegen Kaffeefett</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/" style="font-weight:700; color:var(--primary);">
+                <span>Alle EQ.6 Plus s700 (TE657503DE) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Siemens Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/">
+                  <span>EQ.6 Plus s700 (TE657503DE)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq500/">
+                  <span>EQ.500 classic (TP503D09)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq9-plus/">
+                  <span>EQ.9 Plus s500 (TI9553X1RW)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq300/">
+                  <span>EQ.300 (TI351209RW)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="font-weight:700; color:var(--primary);">
+                <span>Zur Siemens Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -442,50 +504,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">Siemens Keramik-Mahlwerk ceramDrive Einheit komplett</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B074QL4W4K?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

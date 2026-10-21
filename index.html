@@ -4,1002 +4,451 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <meta name="referrer" content="no-referrer">
-  <title>KaffeeTeile24 – Ersatzteile, Brühgruppen &amp; Reparatur-Leitfäden für Kaffeevollautomaten</title>
-  <meta name="description" content="Der führende deutsche Experten-Hub für De'Longhi, Siemens, Jura &amp; Philips Vollautomaten: Original-Ersatzteile, Fehlercodes, O-Ring-Sets und DIY-Reparatur.">
+  <title>KaffeeTeile24 – Unabhängiges Referenzportal für Kaffeevollautomaten-Reparatur</title>
+  <meta name="description" content="Das führende deutsche Referenzportal für De'Longhi, Siemens, Jura &amp; Philips Vollautomaten: Original-Ersatzteile, Fehlercodes, O-Ring-Sets und DIY-Reparatur.">
   <link rel="canonical" href="https://roboparca.github.io/kaffeereparatur/">
   <link rel="stylesheet" href="https://roboparca.github.io/kaffeereparatur/style.css">
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
+  </header>
 
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
-
+  <!-- Hero Section -->
   <section class="hero-banner">
     <div class="wrap">
-      <h1>Kaffeevollautomaten Ersatzteile &amp; Reparatur-Diagnose</h1>
+      <span class="hero-eyebrow">Unabhängiges Reparatur- &amp; Ersatzteil-Kompendium</span>
+      <h1>Kaffeevollautomaten reparieren statt neu kaufen</h1>
       <p>
-        Finden Sie sofort das exakt passende Ersatzteil, passgenaue Dichtungssätze, 15-Bar Ulka Pumpen und ingenieurtechnische Schritt-für-Schritt Reparaturanleitungen für Ihre Kaffeemaschine.
+        Das herstellerübergreifende Referenzportal für De'Longhi, Siemens, Jura, Philips und Krups. Originalgetreue Mechatronik-Analysen, Explosionszeichnungen und schrittweise Instandsetzungsanleitungen.
       </p>
     </div>
   </section>
 
   <main class="wrap">
-    <div style="margin-top: 28px;">
-      <h2 style="font-size:22px; font-weight:800; margin-bottom:16px;">🔥 50 Beliebteste Ersatzteile &amp; Reparatur-Leitfäden (Amazon.de)</h2>
+    <!-- SILO 1: Symptom & Intent-Driven Hub ("Reparatur nach Symptom" - LeatherClogs Style) -->
+    <section id="symptome" style="margin-top: 36px;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px;">
+        <h2 style="font-size:22px; font-weight:800; color:#1c1917;">🚨 Reparatur nach Fehlerbild &amp; Symptom</h2>
+      </div>
+      <p style="font-size:14px; color:#57534e; margin-bottom:16px;">
+        Diagnostizieren Sie den Fehler anhand der mechanischen und hydraulischen Anzeichen Ihrer Kaffeemaschine:
+      </p>
+
+      <div class="symptom-grid">
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="symptom-card">
+          <div class="symptom-icon">☕</div>
+          <div class="symptom-content">
+            <h3>Kaffee tröpfelt nur / kein Auslauf</h3>
+            <p>Einlaufstutzen verkalkt, 1.4310 Brühsieb verharzt oder Druckverlust am Kolben.</p>
+            <span class="symptom-link">Brühgruppen &amp; Dichtungen ›</span>
+          </div>
+        </a>
+
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="symptom-card">
+          <div class="symptom-icon">⚠️</div>
+          <div class="symptom-content">
+            <h3>Fehlercodes &amp; Alarmleuchten</h3>
+            <p>De'Longhi Allgemeiner Alarm, Siemens E0511/E0513, Jura Error 8 beheben.</p>
+            <span class="symptom-link">Fehlercode-Datenbank ›</span>
+          </div>
+        </a>
+
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/" class="symptom-card">
+          <div class="symptom-icon">🥛</div>
+          <div class="symptom-content">
+            <h3>Milchschaum bleibt flüssig</h3>
+            <p>Venturi-Feinluftdüse verstopft oder Kupplungsdichtung porös.</p>
+            <span class="symptom-link">Milchsysteme &amp; Karaffen ›</span>
+          </div>
+        </a>
+
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="symptom-card">
+          <div class="symptom-icon">🔊</div>
+          <div class="symptom-content">
+            <h3>Pumpe rattert laut oder brummt</h3>
+            <p>Trockenlauf-Kavitation, gealterte Kolbenfeder oder defekter Druckdämpfer.</p>
+            <span class="symptom-link">15-Bar Ulka Pumpen ›</span>
+          </div>
+        </a>
+
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/drainageventil/" class="symptom-card">
+          <div class="symptom-icon">💧</div>
+          <div class="symptom-content">
+            <h3>Abtropfschale läuft voll</h3>
+            <p>Verschlissenes Drainageventil oder O-Ring-Leckage am Übergabestutzen.</p>
+            <span class="symptom-link">Drainageventile &amp; Dichtungen ›</span>
+          </div>
+        </a>
+
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" class="symptom-card">
+          <div class="symptom-icon">⚙️</div>
+          <div class="symptom-content">
+            <h3>Mahlwerk blockiert / mahlt grob</h3>
+            <p>Fremdkörper-Blockade oder abgenutzte Schneidkanten der Keramikmahlscheiben.</p>
+            <span class="symptom-link">Keramik-Mahlwerke ›</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- SILO 2: Browse by Brand & Models -->
+    <section id="marken" style="margin-top: 36px;">
+      <h2 style="font-size:22px; font-weight:800; color:#1c1917; margin-bottom:8px;">☕ Hersteller &amp; Baureihen-Hubs</h2>
+      <p style="font-size:14px; color:#57534e; margin-bottom:16px;">
+        Direktzugriff auf alle modellspezifischen Ersatzteile und Revisionsanleitungen:
+      </p>
+
+      <div class="brand-grid">
+        
+          <a href="https://roboparca.github.io/kaffeereparatur/delonghi/" class="brand-card">
+            <span class="brand-name">De&#39;Longhi</span>
+            <span class="brand-count">10 Teile ›</span>
+          </a>
+          <a href="https://roboparca.github.io/kaffeereparatur/siemens/" class="brand-card">
+            <span class="brand-name">Siemens</span>
+            <span class="brand-count">10 Teile ›</span>
+          </a>
+          <a href="https://roboparca.github.io/kaffeereparatur/jura/" class="brand-card">
+            <span class="brand-name">Jura</span>
+            <span class="brand-count">10 Teile ›</span>
+          </a>
+          <a href="https://roboparca.github.io/kaffeereparatur/philips/" class="brand-card">
+            <span class="brand-name">Philips</span>
+            <span class="brand-count">10 Teile ›</span>
+          </a>
+          <a href="https://roboparca.github.io/kaffeereparatur/krups/" class="brand-card">
+            <span class="brand-name">Krups</span>
+            <span class="brand-count">3 Teile ›</span>
+          </a>
+          <a href="https://roboparca.github.io/kaffeereparatur/sage/" class="brand-card">
+            <span class="brand-name">Sage</span>
+            <span class="brand-count">3 Teile ›</span>
+          </a>
+          <a href="https://roboparca.github.io/kaffeereparatur/melitta/" class="brand-card">
+            <span class="brand-name">Melitta</span>
+            <span class="brand-count">2 Teile ›</span>
+          </a>
+          <a href="https://roboparca.github.io/kaffeereparatur/nivona/" class="brand-card">
+            <span class="brand-name">Nivona</span>
+            <span class="brand-count">1 Teile ›</span>
+          </a>
+          <a href="https://roboparca.github.io/kaffeereparatur/gaggia/" class="brand-card">
+            <span class="brand-name">Gaggia</span>
+            <span class="brand-count">1 Teile ›</span>
+          </a>
+      </div>
+    </section>
+
+    <!-- SILO 3: Component Categories -->
+    <section id="kategorien" style="margin-top: 36px;">
+      <h2 style="font-size:22px; font-weight:800; color:#1c1917; margin-bottom:8px;">🔩 Baugruppen &amp; Ersatzteil-Kategorien</h2>
+      <p style="font-size:14px; color:#57534e; margin-bottom:16px;">
+        Gezielte Auswahl nach mechatronischer Funktionsgruppe:
+      </p>
+
+      <div class="brand-grid">
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="brand-card">
+          <span class="brand-name">Brühgruppen &amp; Revision</span>
+          <span class="brand-count">›</span>
+        </a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="brand-card">
+          <span class="brand-name">Pumpen &amp; Hydraulik (15 Bar)</span>
+          <span class="brand-count">›</span>
+        </a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" class="brand-card">
+          <span class="brand-name">Mahlwerke &amp; Keramik</span>
+          <span class="brand-count">›</span>
+        </a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/" class="brand-card">
+          <span class="brand-name">Milchsysteme &amp; Karaffen</span>
+          <span class="brand-count">›</span>
+        </a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="brand-card">
+          <span class="brand-name">Heizelemente &amp; Thermoblöcke</span>
+          <span class="brand-count">›</span>
+        </a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/" class="brand-card">
+          <span class="brand-name">Wasserfilter &amp; Entkalkung</span>
+          <span class="brand-count">›</span>
+        </a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/drainageventil/" class="brand-card">
+          <span class="brand-name">Drainageventile &amp; Kappen</span>
+          <span class="brand-count">›</span>
+        </a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="brand-card">
+          <span class="brand-name">Fehlercode-Datenbank</span>
+          <span class="brand-count">›</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SILO 4: Editorial Guide (LeatherClogs Philosophy Section) -->
+    <section class="section-box" style="margin-top: 40px;">
+      <h2>📖 Was unterscheidet hochwertige Ersatzteile von minderwertigen Nachbauten?</h2>
+      <hr class="section-divider">
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; margin-top:16px;">
+        <div>
+          <h4 style="font-size:15px; font-weight:700; margin-bottom:6px; color:#1c1917;">1. Die Dichtungswerkstoffe</h4>
+          <p class="prose-p" style="font-size:13.5px;">
+            Billignachbauten verwenden oft günstigen NBR-Gummi, der bei 90 °C Brühtemperatur schnell versprödet und krebserregende Weichmacher abgeben kann. Qualitätssets setzen ausnahmslos auf <strong>lebensmittelechtes VMQ-Silikon</strong> (70 Shore A nach NSF-H1) mit thermischer Beständigkeit bis 180 °C.
+          </p>
+        </div>
+        <div>
+          <h4 style="font-size:15px; font-weight:700; margin-bottom:6px; color:#1c1917;">2. Maßhaltigkeit der Kulissenführungen</h4>
+          <p class="prose-p" style="font-size:13.5px;">
+            Brühgruppenchassis aus <strong>POM Delrin (Polyacetal)</strong> garantieren exakte Passgenauigkeit im Zehntel-Millimeter-Bereich. Billiger Spritzguss aus Rezyklat verzieht sich bei Heißwasserkontakt und führt zu irreversiblen Getriebeschäden durch Überlastung des Antriebsmotors.
+          </p>
+        </div>
+        <div>
+          <h4 style="font-size:15px; font-weight:700; margin-bottom:6px; color:#1c1917;">3. Elektrische &amp; hydraulische Sicherheit</h4>
+          <p class="prose-p" style="font-size:13.5px;">
+            Originale <strong>Ulka EX5 Pumpen</strong> und Magnetventile verfügen über integrierte 1N4007 Schutzdioden und thermische Schmelzsicherungen (105 °C / 192 °C). Ungeprüfte Nachbauten ohne VDE-Zertifikat stellen bei Feuchtigkeitseintritt ein ernstes Kurzschlussrisiko dar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SILO 5: Featured Technical Guides & Parts -->
+    <section style="margin-top: 40px;">
+      <h2 style="font-size:22px; font-weight:800; color:#1c1917; margin-bottom:16px;">🔥 Beliebteste Ersatzteile &amp; Reparaturleitfäden</h2>
       <div class="products-grid">
         
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61odfgh4STL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Brühgruppe Revision &amp; O-Ring Dichtungsset" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi Brühgruppe Revision &amp; O-Ring Dichtungsset</h3>
-              <div class="prod-card-model">Modell: Magnifica S &amp; Dinamica (ECAM Baureihe)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Pumpen &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)</h3>
-              <div class="prod-card-model">Modell: Magnifica S (ECAM 22.110.B)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/vibrationspumpe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/71VSqlDahKL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Störungsdiagnose &amp; Fehlercodes</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung</h3>
-              <div class="prod-card-model">Modell: Magnifica S (ECAM 22.110.B)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/fehlercodes/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51f4JiaJJqL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi LatteCrema Milchkaraffe &amp; Aufschäumerdeckel" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Milchsysteme &amp; Düsen</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi LatteCrema Milchkaraffe &amp; Aufschäumerdeckel</h3>
-              <div class="prod-card-model">Modell: Dinamica (ECAM 350.55.B)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/milchkaraffe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/71XN+gpi3SL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor</h3>
-              <div class="prod-card-model">Modell: Dinamica (ECAM 350.55.B)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/thermoblock/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61BniIo77EL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi 2-Wege &amp; 3-Wege Solenoid Magnetventil 230V" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Ventile &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi 2-Wege &amp; 3-Wege Solenoid Magnetventil 230V</h3>
-              <div class="prod-card-model">Modell: Eletta Cappuccino (ECAM 44.660.B)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/magnetventil/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/612dl7W-+HL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Wassertank-Ventil Lippendichtung &amp; Feder" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Dichtungen &amp; Kleinteile</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi Wassertank-Ventil Lippendichtung &amp; Feder</h3>
-              <div class="prod-card-model">Modell: Magnifica S &amp; Dinamica</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wassertank-ventil/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61dE1Qqb88L._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)</h3>
-              <div class="prod-card-model">Modell: Alle ECAM &amp; ETAM Serien</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wasserfilter/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61odfgh4STL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Edelstahl Kegelmahlwerk Mahlkegel &amp; Mahlring" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Mahlwerke &amp; Mahlscheiben</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi Edelstahl Kegelmahlwerk Mahlkegel &amp; Mahlring</h3>
-              <div class="prod-card-model">Modell: Magnifica S (ECAM 22.110.B)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/mahlwerk/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51n+nwPVlnL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Brühkopf-Dichtung 51mm &amp; Edelstahl Duschsieb" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">De&#39;Longhi</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">De&#39;Longhi Brühkopf-Dichtung 51mm &amp; Edelstahl Duschsieb</h3>
-              <div class="prod-card-model">Modell: La Specialista (EC9335.M)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/la-specialista/duschsieb/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/717A1JAw9SL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Keramik-Mahlwerk ceramDrive Einheit komplett" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Mahlwerke &amp; Mahlscheiben</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Keramik-Mahlwerk ceramDrive Einheit komplett</h3>
-              <div class="prod-card-model">Modell: EQ.6 Plus s700 (TE657503DE)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/mahlwerk/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51witeDzzvL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Edelstahl-Milchansauglanze &amp; Silikonschlauch Set" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Milchsysteme &amp; Düsen</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Edelstahl-Milchansauglanze &amp; Silikonschlauch Set</h3>
-              <div class="prod-card-model">Modell: EQ.6 Plus s700 (TE657503DE)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/milchsystem/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51q+5WBiDaL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Störungsdiagnose &amp; Fehlercodes</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung</h3>
-              <div class="prod-card-model">Modell: EQ.6 Plus s700 (TE657503DE)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/fehlercodes/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61mLaOqcBIL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Brüheinheit Brühgruppe komplett (Typ 11014117)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Brüheinheit Brühgruppe komplett (Typ 11014117)</h3>
-              <div class="prod-card-model">Modell: EQ.6 Plus (s300 / s500 / s700)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51KLLusY7LL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Kaffeeauslauf Verteiler &amp; Düsenabdeckung" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Auslauf &amp; Gehäuseteile</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Kaffeeauslauf Verteiler &amp; Düsenabdeckung</h3>
-              <div class="prod-card-model">Modell: EQ.6 Plus s700 (TE657503DE)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/kaffeeauslauf/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/71UyH+wvjkL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Brühgruppe Wartungsset &amp; Dichtringe rot" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Brühgruppe Wartungsset &amp; Dichtringe rot</h3>
-              <div class="prod-card-model">Modell: EQ.500 classic (TP503D09)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq500/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/713j3JBvJqL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Brita Intenza Wasserfilterpatrone TZ70003 (3er Pack)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Brita Intenza Wasserfilterpatrone TZ70003 (3er Pack)</h3>
-              <div class="prod-card-model">Modell: EQ.300 / EQ.500 / EQ.6 / EQ.9</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/wasserfilter/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61UvMSzwA5L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Elektrisches Keramikventil 3-Wege Umschaltung" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Ventile &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Elektrisches Keramikventil 3-Wege Umschaltung</h3>
-              <div class="prod-card-model">Modell: EQ.9 Plus s500 (TI9553X1RW)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq9-plus/keramikventil/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Sysko Vibrationspumpe 15 Bar &amp; Schwingungsdämpfer" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Pumpen &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">Siemens Sysko Vibrationspumpe 15 Bar &amp; Schwingungsdämpfer</h3>
-              <div class="prod-card-model">Modell: EQ.300 (TI351209RW)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq300/vibrationspumpe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/514xYzIR6AL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens 2in1 Reinigungstabletten TZ80001A gegen Kaffeefett" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Siemens</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">Siemens 2in1 Reinigungstabletten TZ80001A gegen Kaffeefett</h3>
-              <div class="prod-card-model">Modell: Alle Siemens Vollautomaten</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/reinigungstabletten/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61FNX1-bywL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Claris Smart Filterpatrone RFID (3er Pack grau)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">Jura Claris Smart Filterpatrone RFID (3er Pack grau)</h3>
-              <div class="prod-card-model">Modell: Jura E8 (Gen 3 / EB / EC)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/e8/wasserfilter/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/712tJTURVdL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Drainageventil komplett mit Messingkappe Upgrade" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Ventile &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">Jura Drainageventil komplett mit Messingkappe Upgrade</h3>
-              <div class="prod-card-model">Modell: Jura E8 (Gen 3 / EB / EC)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/e8/drainageventil/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/411nIvvgAVL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Störungsmeldung &#39;System füllen&#39; &amp; Flowmeter Sensor" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Störungsdiagnose &amp; Fehlercodes</span>
-              </div>
-              <h3 class="prod-card-title">Jura Störungsmeldung &#39;System füllen&#39; &amp; Flowmeter Sensor</h3>
-              <div class="prod-card-model">Modell: Jura E8 (Gen 3 / EB / EC)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/e8/fehlercodes/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/71SubedCl5L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Brühgruppen Wartungsset mit Ovals Kopfschlüssel" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Jura Brühgruppen Wartungsset mit Ovals Kopfschlüssel</h3>
-              <div class="prod-card-model">Modell: Jura E6 / E8 / J-Serie</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/e8/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51CdvfdjgKL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Profi-Feinschaumdüse G2 Feinschaumaufschäumer" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Milchsysteme &amp; Düsen</span>
-              </div>
-              <h3 class="prod-card-title">Jura Profi-Feinschaumdüse G2 Feinschaumaufschäumer</h3>
-              <div class="prod-card-model">Modell: Jura E8 / S8 / WE8</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/e8/milchsystem/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/611W4Rfxk7L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Membranregler &amp; Auslaufventil Schwingungsdämpfer" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Pumpen &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">Jura Membranregler &amp; Auslaufventil Schwingungsdämpfer</h3>
-              <div class="prod-card-model">Modell: Jura E-Serie &amp; F-Serie</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/e8/auslaufventil/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61pu8TrUyRL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Milchsystem-Reiniger Mini-Tabs Nachfüllflasche 180g" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">Jura Milchsystem-Reiniger Mini-Tabs Nachfüllflasche 180g</h3>
-              <div class="prod-card-model">Modell: Alle Jura Vollautomaten</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/e8/reinigungsmittel/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/512hfSCKwKL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Cold Extraction Process Magnetventil &amp; Bypassleitung" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Ventile &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">Jura Cold Extraction Process Magnetventil &amp; Bypassleitung</h3>
-              <div class="prod-card-model">Modell: Jura Z10 Aluminium</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/z10/kaltbruehventil/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/41Gbo2sf1EL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Kompakt-Brüheinheit VC &amp; Zylinderdichtung" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Jura Kompakt-Brüheinheit VC &amp; Zylinderdichtung</h3>
-              <div class="prod-card-model">Modell: Jura ENA 8 Touch</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/ena-8/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61HAqVDal6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura 2in1 Entkalkungstabletten (36 Stück Vorratspack)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Jura</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">Jura 2in1 Entkalkungstabletten (36 Stück Vorratspack)</h3>
-              <div class="prod-card-model">Modell: Alle Jura Vollautomaten</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/jura/e8/entkalker/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61lf71xP0UL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">Philips AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)</h3>
-              <div class="prod-card-model">Modell: LatteGo 5400 (EP5447/90)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/aquaclean-filter/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/512r-ijQNxL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Milchsysteme &amp; Düsen</span>
-              </div>
-              <h3 class="prod-card-title">Philips LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657</h3>
-              <div class="prod-card-model">Modell: LatteGo 5400 (EP5447/90)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/milchbehaelter/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61GI5L44SbL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Fehlercode 1, 2, 3, 4, 5 &amp; Wartungs-Diagnose" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Störungsdiagnose &amp; Fehlercodes</span>
-              </div>
-              <h3 class="prod-card-title">Philips Fehlercode 1, 2, 3, 4, 5 &amp; Wartungs-Diagnose</h3>
-              <div class="prod-card-model">Modell: LatteGo 5400 / 4300 / 3200 / 2200</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/fehlercodes/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51VWOULy6aL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Saeco &amp; Philips Brühgruppe komplett entnehmbar" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Philips Saeco &amp; Philips Brühgruppe komplett entnehmbar</h3>
-              <div class="prod-card-model">Modell: LatteGo 2200 / 3200 / 4300 / 5400</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51pLdKY1l1L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Original Silikonfett HD5061/01 Schmiermittel (5g Tube)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Philips Original Silikonfett HD5061/01 Schmiermittel (5g Tube)</h3>
-              <div class="prod-card-model">Modell: Alle Philips &amp; Saeco Maschinen</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/schmiermittel/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/71UKDbywOGL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Kaffeeauslauf Schieber &amp; Düsenabdeckung schwarz" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Auslauf &amp; Gehäuseteile</span>
-              </div>
-              <h3 class="prod-card-title">Philips Kaffeeauslauf Schieber &amp; Düsenabdeckung schwarz</h3>
-              <div class="prod-card-model">Modell: LatteGo 3200 &amp; 4300</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-3200/auslaufduese/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61QaR3Bd9EL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Klassischer Milchaufschäumer Panarello Dampfdüse" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Milchsysteme &amp; Düsen</span>
-              </div>
-              <h3 class="prod-card-title">Philips Klassischer Milchaufschäumer Panarello Dampfdüse</h3>
-              <div class="prod-card-model">Modell: Philips 2200 (EP2220/10)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/philips-2200/panarello/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61xbssXMU2L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips HygieSteam Dampf-Reinigungsanschluss &amp; Milchschlauch" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Milchsysteme &amp; Düsen</span>
-              </div>
-              <h3 class="prod-card-title">Philips HygieSteam Dampf-Reinigungsanschluss &amp; Milchschlauch</h3>
-              <div class="prod-card-model">Modell: Saeco Xelsis (SM7683/00)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/saeco-xelsis/milchsystem/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61WUEg85+IL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips 100% Keramik-Mahlwerk 12-Stufen Mahlwerkseinheit" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Mahlwerke &amp; Mahlscheiben</span>
-              </div>
-              <h3 class="prod-card-title">Philips 100% Keramik-Mahlwerk 12-Stufen Mahlwerkseinheit</h3>
-              <div class="prod-card-model">Modell: Saeco GranAroma (SM6580/00)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/saeco-granaroma/mahlwerk/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/71Zeqwuhp6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Kompletter O-Ring Dichtungssatz für Brühkolben (10-teilig)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Philips</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Philips Kompletter O-Ring Dichtungssatz für Brühkolben (10-teilig)</h3>
-              <div class="prod-card-model">Modell: Alle Philips &amp; Saeco Maschinen</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61M-IFhwPPL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Krups Hydraulischer Brühkolben Dichtungssatz &amp; Kolbenringe" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Krups</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Krups Hydraulischer Brühkolben Dichtungssatz &amp; Kolbenringe</h3>
-              <div class="prod-card-model">Modell: Krups EA8108 &amp; Arabica</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/krups/krups-ea8108/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/51ZQ2tIYlGL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Krups Wasserdurchflussmesser Flowmeter Sensor (Digmesa)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Krups</span>
-                <span class="badge-cat">Pumpen &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">Krups Wasserdurchflussmesser Flowmeter Sensor (Digmesa)</h3>
-              <div class="prod-card-model">Modell: Krups EA8108 &amp; Evidence</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/krups/krups-ea8108/flowmeter/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/71joJBOEJSL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Krups Claris Aqua Filter System Filterpatrone F088" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Krups</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">Krups Claris Aqua Filter System Filterpatrone F088</h3>
-              <div class="prod-card-model">Modell: Alle Krups EA &amp; Evidence Serien</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/krups/krups-ea8108/wasserfilter/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61LMyv3b3EL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Sage 54mm Silikon-Brühkopfdichtung &amp; Duschsieb Schraube" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Sage</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Sage 54mm Silikon-Brühkopfdichtung &amp; Duschsieb Schraube</h3>
-              <div class="prod-card-model">Modell: Barista Express (BES875)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/sage/barista-express/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/612G+tka11L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Sage ThermoJet 3-Sekunden Schnellheizer Baugruppe" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Sage</span>
-                <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
-              </div>
-              <h3 class="prod-card-title">Sage ThermoJet 3-Sekunden Schnellheizer Baugruppe</h3>
-              <div class="prod-card-model">Modell: Barista Touch &amp; Bambino Plus</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/sage/barista-touch/thermoblock/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61WKXRhBJgL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Sage Silikon O-Ringe Größe 007 &amp; 008 für Teflonschläuche (20er Pack)" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Sage</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Sage Silikon O-Ringe Größe 007 &amp; 008 für Teflonschläuche (20er Pack)</h3>
-              <div class="prod-card-model">Modell: Dual Boiler (BES920)</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/sage/dual-boiler/dichtungen/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/71DLdeMZKgL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Melitta Brühgruppe Brüheinheit komplett Austausch" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Melitta</span>
-                <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
-              </div>
-              <h3 class="prod-card-title">Melitta Brühgruppe Brüheinheit komplett Austausch</h3>
-              <div class="prod-card-model">Modell: Caffeo Solo &amp; Purista</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/melitta/caffeo-solo/bruehgruppe/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/819XZWk8IEL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Melitta Pro Aqua Wasserfilterpatrone gegen Kalkablagerung" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Melitta</span>
-                <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
-              </div>
-              <h3 class="prod-card-title">Melitta Pro Aqua Wasserfilterpatrone gegen Kalkablagerung</h3>
-              <div class="prod-card-model">Modell: Caffeo Barista &amp; CI Touch</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/melitta/caffeo-solo/wasserfilter/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/41+YaF8iOJL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Nivona Drainageventil &amp; Antriebs-Mikroschalter Revision" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Nivona</span>
-                <span class="badge-cat">Ventile &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">Nivona Drainageventil &amp; Antriebs-Mikroschalter Revision</h3>
-              <div class="prod-card-model">Modell: CafeRomatica 759 / 769 / 779</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/nivona/caferomatica/drainageventil/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
-          <article class="prod-card">
-            <img src="https://m.media-amazon.com/images/I/61M81Lm-9GL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Gaggia 3-Wege-Magnetventil OLAB 230V Entlastungsventil" onerror="this.style.opacity='0.8'">
-            <div class="prod-card-body">
-              <div class="prod-card-badges">
-                <span class="badge-brand">Gaggia</span>
-                <span class="badge-cat">Ventile &amp; Hydraulik</span>
-              </div>
-              <h3 class="prod-card-title">Gaggia 3-Wege-Magnetventil OLAB 230V Entlastungsventil</h3>
-              <div class="prod-card-model">Modell: Gaggia Classic &amp; Classic Pro</div>
-              <div class="prod-card-footer">
-                <span class="prod-card-price" style="color:#15803d; font-size:12px; font-weight:700;">✓ Prime lieferbar</span>
-                <a href="https://roboparca.github.io/kaffeereparatur/gaggia/classic-pro/magnetventil/" class="btn-card-details">
-                  Anleitung &amp; Teile ›
-                </a>
-              </div>
-            </div>
-          </article>
-        
+  <article class="prod-card">
+    <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/bruehgruppe/" class="prod-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61odfgh4STL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Brühgruppe Revision &amp; O-Ring Dichtungsset" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="prod-card-body">
+      <div class="prod-card-badges">
+        <span class="badge-brand">De&#39;Longhi</span>
+        <span class="badge-cat">Brühgruppe &amp; Dichtungen</span>
+      </div>
+      <h3 class="prod-card-title"><a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/bruehgruppe/">De&#39;Longhi Brühgruppe Revision &amp; O-Ring Dichtungsset</a></h3>
+      <div class="prod-card-model">Modell: Magnifica S &amp; Dinamica (ECAM Baureihe)</div>
+      <div class="prod-card-chips">
+        <span class="chip">POM Delrin</span><span class="chip">15 Bar Max</span>
+      </div>
+      <div class="prod-card-footer">
+        <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/bruehgruppe/" class="btn-card-details">
+          Anleitung &amp; Teile ›
+        </a>
       </div>
     </div>
+  </article>
+  <article class="prod-card">
+    <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/vibrationspumpe/" class="prod-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="prod-card-body">
+      <div class="prod-card-badges">
+        <span class="badge-brand">De&#39;Longhi</span>
+        <span class="badge-cat">Pumpen &amp; Hydraulik</span>
+      </div>
+      <h3 class="prod-card-title"><a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/vibrationspumpe/">De&#39;Longhi Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)</a></h3>
+      <div class="prod-card-model">Modell: Magnifica S (ECAM 22.110.B)</div>
+      <div class="prod-card-chips">
+        <span class="chip">48 Watt Spule</span><span class="chip">15 Bar Druck</span>
+      </div>
+      <div class="prod-card-footer">
+        <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/vibrationspumpe/" class="btn-card-details">
+          Anleitung &amp; Teile ›
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="prod-card">
+    <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/fehlercodes/" class="prod-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71VSqlDahKL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="prod-card-body">
+      <div class="prod-card-badges">
+        <span class="badge-brand">De&#39;Longhi</span>
+        <span class="badge-cat">Störungsdiagnose &amp; Fehlercodes</span>
+      </div>
+      <h3 class="prod-card-title"><a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/fehlercodes/">De&#39;Longhi Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung</a></h3>
+      <div class="prod-card-model">Modell: Magnifica S (ECAM 22.110.B)</div>
+      <div class="prod-card-chips">
+        <span class="chip">Fehler-Diagnose</span><span class="chip">Mikroschalter Test</span>
+      </div>
+      <div class="prod-card-footer">
+        <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/fehlercodes/" class="btn-card-details">
+          Anleitung &amp; Teile ›
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="prod-card">
+    <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/milchkaraffe/" class="prod-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51f4JiaJJqL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi LatteCrema Milchkaraffe &amp; Aufschäumerdeckel" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="prod-card-body">
+      <div class="prod-card-badges">
+        <span class="badge-brand">De&#39;Longhi</span>
+        <span class="badge-cat">Milchsysteme &amp; Düsen</span>
+      </div>
+      <h3 class="prod-card-title"><a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/milchkaraffe/">De&#39;Longhi LatteCrema Milchkaraffe &amp; Aufschäumerdeckel</a></h3>
+      <div class="prod-card-model">Modell: Dinamica (ECAM 350.55.B)</div>
+      <div class="prod-card-chips">
+        <span class="chip">LatteCrema System</span><span class="chip">Spülmaschinenfest</span>
+      </div>
+      <div class="prod-card-footer">
+        <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/milchkaraffe/" class="btn-card-details">
+          Anleitung &amp; Teile ›
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="prod-card">
+    <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/thermoblock/" class="prod-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71XN+gpi3SL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="prod-card-body">
+      <div class="prod-card-badges">
+        <span class="badge-brand">De&#39;Longhi</span>
+        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+      </div>
+      <h3 class="prod-card-title"><a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/thermoblock/">De&#39;Longhi Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor</a></h3>
+      <div class="prod-card-model">Modell: Dinamica (ECAM 350.55.B)</div>
+      <div class="prod-card-chips">
+        <span class="chip">1400 Watt</span><span class="chip">Aluguss mit Edelstahlrohr</span>
+      </div>
+      <div class="prod-card-footer">
+        <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/thermoblock/" class="btn-card-details">
+          Anleitung &amp; Teile ›
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="prod-card">
+    <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/magnetventil/" class="prod-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61BniIo77EL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi 2-Wege &amp; 3-Wege Solenoid Magnetventil 230V" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="prod-card-body">
+      <div class="prod-card-badges">
+        <span class="badge-brand">De&#39;Longhi</span>
+        <span class="badge-cat">Ventile &amp; Hydraulik</span>
+      </div>
+      <h3 class="prod-card-title"><a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/magnetventil/">De&#39;Longhi 2-Wege &amp; 3-Wege Solenoid Magnetventil 230V</a></h3>
+      <div class="prod-card-model">Modell: Eletta Cappuccino (ECAM 44.660.B)</div>
+      <div class="prod-card-chips">
+        <span class="chip">230V Spule</span><span class="chip">Messingkörper</span>
+      </div>
+      <div class="prod-card-footer">
+        <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/magnetventil/" class="btn-card-details">
+          Anleitung &amp; Teile ›
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="prod-card">
+    <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wassertank-ventil/" class="prod-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/612dl7W-+HL._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi Wassertank-Ventil Lippendichtung &amp; Feder" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="prod-card-body">
+      <div class="prod-card-badges">
+        <span class="badge-brand">De&#39;Longhi</span>
+        <span class="badge-cat">Dichtungen &amp; Kleinteile</span>
+      </div>
+      <h3 class="prod-card-title"><a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wassertank-ventil/">De&#39;Longhi Wassertank-Ventil Lippendichtung &amp; Feder</a></h3>
+      <div class="prod-card-model">Modell: Magnifica S &amp; Dinamica</div>
+      <div class="prod-card-chips">
+        <span class="chip">Lebensmittelechtes EPDM</span><span class="chip">Edelstahl-Druckfeder</span>
+      </div>
+      <div class="prod-card-footer">
+        <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wassertank-ventil/" class="btn-card-details">
+          Anleitung &amp; Teile ›
+        </a>
+      </div>
+    </div>
+  </article>
+  <article class="prod-card">
+    <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wasserfilter/" class="prod-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61dE1Qqb88L._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="prod-card-body">
+      <div class="prod-card-badges">
+        <span class="badge-brand">De&#39;Longhi</span>
+        <span class="badge-cat">Wasserfilter &amp; Entkalkung</span>
+      </div>
+      <h3 class="prod-card-title"><a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wasserfilter/">De&#39;Longhi DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)</a></h3>
+      <div class="prod-card-model">Modell: Alle ECAM &amp; ETAM Serien</div>
+      <div class="prod-card-chips">
+        <span class="chip">Aktivkohle &amp; Ionentauscher</span><span class="chip">Kalkschutz</span>
+      </div>
+      <div class="prod-card-footer">
+        <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wasserfilter/" class="btn-card-details">
+          Anleitung &amp; Teile ›
+        </a>
+      </div>
+    </div>
+  </article>
+      </div>
+    </section>
   </main>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
   <script src="https://roboparca.github.io/kaffeereparatur/instant-search.js"></script>
 </body>
 </html>

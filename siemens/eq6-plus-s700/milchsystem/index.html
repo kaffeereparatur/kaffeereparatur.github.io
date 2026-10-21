@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
@@ -81,7 +73,7 @@
       <span>Edelstahl-Milchansauglanze &amp; Silikonschlauch Set</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">Siemens • Milchsysteme &amp; Düsen</span>
+        <h1>Siemens EQ.6 Plus s700 (TE657503DE): Edelstahl-Milchansauglanze &amp; Silikonschlauch Set</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">Siemens</span>
-          <span class="badge-cat">Milchsysteme &amp; Düsen</span>
           <span class="badge-rating">★ 4.8 (2.450 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: 12004554</span>
         </div>
-
-        <h1>Siemens EQ.6 Plus s700 (TE657503DE): Edelstahl-Milchansauglanze &amp; Silikonschlauch Set</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B0H4WGYN9B?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B0H4WGYN9B) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B0H4WGYN9B?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -165,7 +145,7 @@
           <h2>🔬 Mechatronische Analyse &amp; Funktionsprinzip</h2>
           <hr class="section-divider">
           <p class="prose-p">Das Milchansaugsystem des Siemens EQ.6 Plus s700 (Baureihe TE657503DE) basiert hydraulisch auf der exakten Anwendung des Bernoulli-Effekts über eine nachgeschaltete Venturi-Mischkammer im Kombiauslauf. Das Gesamtsystem besteht aus der metallischen Lanze (Edelstahl <strong>1.4301</strong> / AISI 304, X5CrNi18-10), dem flexiblen Transferschlauch aus lebensmittelechtem Vinyl-Methyl-Silikon (<strong>VMQ</strong>, Shore-A 60±5, Innendurchmesser <strong>3,5 mm</strong>, Wandstärke <strong>1,5 mm</strong>) und den fluidischen Kupplungsadaptern aus Polyoxymethylen (<strong>POM</strong>).</p>
-<p class="prose-p">Im regulären Brüh- und Schäumbetrieb erzeugt der Dampf-Thermoblock einen Heißdampfstrom mit einem Systemdruck von ca. 1,8 bis <strong>2,5 bar</strong> bei einer Temperatur von 125 °C bis 135 °C. Dieser Treibdampf strömt durch eine kalibrierte Injektordüse (Querschnitt verengt auf unter <strong>1,0 mm</strong>) in die Expansionskammer.</p>
+<p class="prose-p">Im regulären Brüh- und Schäumbetrieb erzeugt der Dampf-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> einen Heißdampfstrom mit einem Systemdruck von ca. 1,8 bis <strong>2,5 bar</strong> bei einer Temperatur von 125 °C bis 135 °C. Dieser Treibdampf strömt durch eine kalibrierte Injektordüse (Querschnitt verengt auf unter <strong>1,0 mm</strong>) in die Expansionskammer.</p>
 <p class="prose-p">Durch die drastische Erhöhung der Strömungsgeschwindigkeit sinkt der statische Druck lokal drastisch ab und generiert ein relatives Vakuum von etwa -0,20 bis -<strong>0,38 bar</strong> gegenüber dem Umgebungsdruck. Über dieses hydraulische Vakuum wird die auf 4 bis 8 °C vortemperierte Milch über das elektropolierte Edelstahlrohr (Oberflächenrauheit Ra &lt; 0,4 µm, um Koagulation von Molkenproteinen zu minimieren) und den Silikonschlauch angesaugt.</p>
 <p class="prose-p">Gleichzeitig dosiert ein federbelastetes Luftventil mikroporöse Atmosphärenluft bei, die im turbulenten Mischraum mit Milchfett und Kasein zu einer feinstporigen Mikroschaum-Emulsion verquirlt wird. Kritische Ausfallursachen liegen im Bereich elastischer Ermüdung des Silikons: Bei thermischen Zyklen verhärtet <strong>VMQ</strong> oder weitet sich an den Steckverbindungen plastisch auf.</p>
 <p class="prose-p">Ein Spaltmaß von lediglich <strong>0,05 mm</strong> an der Kupplung reicht aus, um parasitäre Falschluft anzusaugen, was die kritische Druckdifferenz unter den Abreißpunkt senkt. Das Edelstahlrohr unterliegt mechanischer Verstopfung durch kalzifizierte Milcheiweißablagerungen (Milchstein) an den inneren Wandungszonen sowie Biegespannungen, die zu mikroskopischen Haarrissen im Anschlussflansch führen können.</p>
@@ -185,58 +165,75 @@
           <hr class="section-divider">
           <p class="prose-p">Tritt ein Defekt oder Verschleiß am Ansaugsystem der Siemens EQ.6 Plus s700 auf, manifestiert sich dies primär über akustische Anomalien, strömungsmechanische Abrisse und drastisch verminderte Schaumqualität. Das Leitsymptom ist das sogenannte &#39;Dampfspucken&#39;: Das System gibt hochfrequente, stotternde Knall- und Schlürfgeräusche von sich, während stoßweise ungeschäumte, siedend heiße Milch zusammen mit Wasserdampf aus dem Kombiauslauf spritzt.</p>
 <p class="prose-p">Ursache hierfür ist zumeist ein Haarriss im Silikonschlauch an der axialen Schnittstelle zum <strong>POM</strong>-Adapter oder eine unzureichende Klemmung am Edelstahlrohr. Hierdurch bricht die für den Venturi-Effekt erforderliche Unterdrucksäule kollabierend zusammen; anstelle homogener Milchansaugung wird Fremdluft pulsiert eingezogen.</p>
-<p class="prose-p">Ein zweites Fehlermuster ist das vollständige Ausbleiben der Milchansaugung trotz hörbarem Relais- und Pumpenbetrieb, begleitet von der Gerätemeldung &#39;Milchsystem reinigen&#39; oder einem Abbruch ohne Fehlermeldung. Hier liegt die Primärursache oft in der vollständigen Okklusion des <strong>1.4301</strong>-Edelstahlrohres durch denaturiertes Kasein und Calciumphosphat-Kristallisate infolge unzureichender Spülzyklen oder ungeeigneter Reinigungsmittel.</p>
+<p class="prose-p">Ein zweites Fehlermuster ist das vollständige Ausbleiben der Milchansaugung trotz hörbarem Relais- und Pumpenbetrieb, begleitet von der Gerätemeldung &#39;<a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/" class="wiki-link" title="Milchsysteme &amp; Karaffen">Milchsystem</a> reinigen&#39; oder einem Abbruch ohne <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Diagnose &amp; Fehlercode-Datenbank">Fehlermeldung</a>. Hier liegt die Primärursache oft in der vollständigen Okklusion des <strong>1.4301</strong>-Edelstahlrohres durch denaturiertes Kasein und Calciumphosphat-Kristallisate infolge unzureichender Spülzyklen oder ungeeigneter Reinigungsmittel.</p>
 <p class="prose-p">Ein dritter Indikator ist das &#39;Sieden ohne Schaumbildung&#39;: Die Milch läuft lauwarm bis heiß mit großen, instabilen Blasen ab. Dies resultiert häufig aus thermischer Degradation des Silikonschlauchs, der durch Heißdampfrückschlag seine radiale Rückstellkraft eingebüßt hat, wodurch sich der Querschnitt unter dem Ansaug-Unterdruck flach zusammenzieht (Kollapsphänomen) und die laminare Zulaufmenge abwürgt.</p>
-          
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Systemabschaltung und Druckentlastung</h4>
+                  <p>Kaffeevollautomaten über den Netzschalter ausschalten, Netzstecker ziehen und das Gerät mindestens 30 Minuten abkühlen lassen, um Restdruck im Dampferzeuger und Verbrühungsrisiken auszuschließen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Demontage des Kombiauslauf-Gehäuses</h4>
+                  <p>Kaffeeauslauf in die oberste Position schieben, die Frontblende vorsichtig nach vorne abziehen und den innenliegenden Milchschaum-Verteilerblock durch Entriegeln der seitlichen Rastnasen freigeben.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Separation von Ansaugschlauch und Edelstahlrohr</h4>
+                  <p>Den VMQ-Silikonschlauch vorsichtig axial vom Einlaufstutzen des Kombiauslaufs abziehen; danach das Edelstahlansaugrohr durch eine Dreh-Zieh-Bewegung aus dem unteren Schlauchendstück entnehmen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Hydraulische Inspektion und Komponentenreinigung</h4>
+                  <p>Kupplungsstutzen am Auslauf auf Rissbildung prüfen. Das Edelstahlrohr und die Düsenkanäle mit einer Interdental-Reinigungsbürste und alkalischem Milchsystemreiniger von getrockneten Eiweißbelägen befreien.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Installation der Neuteile und Schnittstellenfettung</h4>
+                  <p>Neuen VMQ-Schlauch gratfrei aufstecken (mindestens 10 mm Schiebeweg auf den Stutzen), das Edelstahlrohr einschieben, O-Ringe am Kombiauslauf hauchdünn mit OKS 1110 Schmierstoff benetzen und Gehäuse arretieren.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Systemabschaltung und Druckentlastung</div>
-                <div class="step-item-desc">Kaffeevollautomaten über den Netzschalter ausschalten, Netzstecker ziehen und das Gerät mindestens 30 Minuten abkühlen lassen, um Restdruck im Dampferzeuger und Verbrühungsrisiken auszuschließen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Demontage des Kombiauslauf-Gehäuses</div>
-                <div class="step-item-desc">Kaffeeauslauf in die oberste Position schieben, die Frontblende vorsichtig nach vorne abziehen und den innenliegenden Milchschaum-Verteilerblock durch Entriegeln der seitlichen Rastnasen freigeben.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Separation von Ansaugschlauch und Edelstahlrohr</div>
-                <div class="step-item-desc">Den VMQ-Silikonschlauch vorsichtig axial vom Einlaufstutzen des Kombiauslaufs abziehen; danach das Edelstahlansaugrohr durch eine Dreh-Zieh-Bewegung aus dem unteren Schlauchendstück entnehmen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Hydraulische Inspektion und Komponentenreinigung</div>
-                <div class="step-item-desc">Kupplungsstutzen am Auslauf auf Rissbildung prüfen. Das Edelstahlrohr und die Düsenkanäle mit einer Interdental-Reinigungsbürste und alkalischem Milchsystemreiniger von getrockneten Eiweißbelägen befreien.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Installation der Neuteile und Schnittstellenfettung</div>
-                <div class="step-item-desc">Neuen VMQ-Schlauch gratfrei aufstecken (mindestens 10 mm Schiebeweg auf den Stutzen), das Edelstahlrohr einschieben, O-Ringe am Kombiauslauf hauchdünn mit OKS 1110 Schmierstoff benetzen und Gehäuse arretieren.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Für die fachgerechte Instandsetzung des Milchansaugsystems der Siemens EQ.6 Plus s700 (TE657503DE) sind folgende Werkzeuge und Hilfsmittel bereitzustellen: Ein <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> (falls die Gehäuseschale des Auslaufs demontiert werden muss), ein flaches Entriegelungswerkzeug aus <strong>POM</strong> (Kunststoffspatel), medizinisches Silikonfett <strong>OKS 1110</strong> (<strong>NSF-H1</strong>-zertifiziert) sowie ein Heißwasserbad mit alkalischem Milchsystemreiniger. Vor Beginn der mechanischen Arbeiten ist zwingend die galvanische Trennung vom <strong>230V</strong>-Netz vorzunehmen.</p>
-<p class="prose-p">Da der Thermoblock im Dampfbetrieb bis zu 140 °C erreicht, besteht akute Verbrühungsgefahr durch Restdampf. Den Kaffeeauslauf ganz nach oben fahren.</p>
+          <p class="prose-p">Für die fachgerechte Instandsetzung des Milchansaugsystems der Siemens EQ.6 Plus s700 (TE657503DE) sind folgende Werkzeuge und Hilfsmittel bereitzustellen: Ein <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> (falls die Gehäuseschale des Auslaufs demontiert werden muss), ein flaches Entriegelungswerkzeug aus <strong>POM</strong> (Kunststoffspatel), medizinisches Silikonfett <strong>OKS 1110</strong> (<strong>NSF-H1</strong>-zertifiziert) sowie ein Heißwasserbad mit alkalischem Milchsystemreiniger. Vor Beginn der mechanischen Arbeiten ist zwingend die galvanische Trennung vom <strong>230V</strong>-Netz vorzunehmen.</p>
+<p class="prose-p">Da der <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> im Dampfbetrieb bis zu 140 °C erreicht, besteht akute Verbrühungsgefahr durch Restdampf. Den Kaffeeauslauf ganz nach oben fahren.</p>
 <p class="prose-p">Greifen Sie die verchromte Blende des Auslaufs beidseitig und ziehen Sie diese mit geradem Kraftaufwand nach vorn ab. Dahinter liegt das Gehäuse des Kombiverteilers.</p>
 <p class="prose-p">Entriegeln Sie die Rastzungen des Dampf- und Milchdüsenblocks. Ziehen Sie den alten <strong>VMQ</strong>-Silikonschlauch vom oberen Adapterzapfen ab.</p>
 <p class="prose-p">Untersuchen Sie den Stutzen: Weist das Polyoxymethylen (<strong>POM</strong>) feine Haarrisse oder Kerben auf, muss auch die Düsenaufnahme gewechselt werden. Trennen Sie nun das Edelstahlrohr <strong>1.4301</strong> vom Silikonschlauch.</p>
@@ -244,188 +241,255 @@
 <p class="prose-p">Schieben Sie das Edelstahlrohr nun ca. 12 bis <strong>15 mm</strong> tief in den Silikonschlauch ein – die Passung muss absolut kraftschlüssig und ohne Schmiermittel erfolgen, um ein Abgleiten unter Druckstößen zu verhindern. Bestreichen Sie die externen Dichtungs-O-Ringe des Verteilerkopfs mikroskopisch dünn mit <strong>OKS 1110</strong>, um die Scherkräfte bei der Remontage zu minimieren.</p>
 <p class="prose-p">Vermeiden Sie jeglichen Schmierstoffeintrag in das Innere der medienführenden Schläuche, da Fette die Oberflächenspannung der Milch zerstören und das Schäumen physikalisch verhindern. Führen Sie den Schlauch auf den oberen Anschlussnippel des Kombiauslaufs, clipsen Sie den Verteiler in seine Endlage und setzen Sie die Frontblende hörbar rastend auf.</p>
 <p class="prose-p">Führen Sie im Anschluss zwingend einen Testbezug mit reinem Wasser (Dampftest) und danach mit 4 °C kalter Vollmilch durch. Das erzeugte Schaumbild muss eine feinporige, homogene Textur ohne Blasenabriss aufweisen.</p>
-          </div>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Milch spratzt heftig, stößt heißen Dampf aus, kein Milchschaum</strong></td>
-                    <td data-label="Mögliche Ursache">Falschlufteintrag am Übergang vom Schlauch zum POM-Stutzen durch Mikroriss oder radiale Weitung des Silikons; Zusammenbruch des Venturi-Vakuums.</td>
-                    <td data-label="Lösungsmaßnahme">Silikonschlauch um 5 mm kürzen oder gegen Neuteil ersetzen; Sitz am Konusadapter auf Passgenauigkeit und absolute Dichtigkeit kontrollieren.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Keine Ansaugung, Milch verbleibt vollständig im Behälter</strong></td>
-                    <td data-label="Mögliche Ursache">Totale Verstopfung des 1.4301-Ansaugrohres durch koaguliertes Kasein oder verkalkter Venturi-Injektor im Kombiauslauf.</td>
-                    <td data-label="Lösungsmaßnahme">Edelstahlrohr mechanisch mit Reinigungsdraht freiräumen, Venturi-Mischdüse im Ultraschallbad mit Kaffeefettlöser/Milchreiniger regenerieren.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Schaum ist grobblasig, fällt binnen 30 Sekunden flüssig zusammen</strong></td>
-                    <td data-label="Mögliche Ursache">Verunreinigung des Luftansaugventils (Bypass) oder Fettfilmrückstände von Schmiermitteln im medienführenden Innenbereich des Schlauchs.</td>
-                    <td data-label="Lösungsmaßnahme">Luftzufuhr-Bohrung am Auslaufkopf mit feiner Düsenreinigungsnadel (0,4 mm) entkrusten; medienführende Teile mit fettlösendem Heißwasser spülen.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Milch spratzt heftig, stößt heißen Dampf aus, kein Milchschaum</td>
+                  <td>Falschlufteintrag am Übergang vom Schlauch zum POM-Stutzen durch Mikroriss oder radiale Weitung des Silikons; Zusammenbruch des Venturi-Vakuums.</td>
+                  <td class="diag-fix">✓ Silikonschlauch um 5 mm kürzen oder gegen Neuteil ersetzen; Sitz am Konusadapter auf Passgenauigkeit und absolute Dichtigkeit kontrollieren.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Vollständiges Zerlegen des Auslaufsystems; Einlegen von Silikonschlauch, POM-Adapter und Edelstahlrohr für 20 Minuten in 40 °C warme, alkalische Reinigungslösung; mechanisches Durchstoßen des Rohrs mit einer 3-mm-Nylonbürste.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Tiefenentkalkung und Eiweißlösung mittels 15-minütigem Ultraschallbad in 5-prozentiger Amidosulfonsäure zur rückstandsfreien Beseitigung mineralischer Milchstein-Präzipitate im 1.4301-Edelstahlrohr.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6-12 Monate</strong></td>
-                    <td data-label="Maßnahme">Präventiver Austausch des VMQ-Silikonschlauchs und der peripheren Formdichtungen am Kombiauslauf zur Verhinderung von Unterdruckverlusten durch thermische Weitung und Versprödung.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Keine Ansaugung, Milch verbleibt vollständig im Behälter</td>
+                  <td>Totale Verstopfung des 1.4301-Ansaugrohres durch koaguliertes Kasein oder verkalkter Venturi-Injektor im Kombiauslauf.</td>
+                  <td class="diag-fix">✓ Edelstahlrohr mechanisch mit Reinigungsdraht freiräumen, Venturi-Mischdüse im Ultraschallbad mit Kaffeefettlöser/Milchreiniger regenerieren.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Schaum ist grobblasig, fällt binnen 30 Sekunden flüssig zusammen</td>
+                  <td>Verunreinigung des Luftansaugventils (Bypass) oder Fettfilmrückstände von Schmiermitteln im medienführenden Innenbereich des Schlauchs.</td>
+                  <td class="diag-fix">✓ Luftzufuhr-Bohrung am Auslaufkopf mit feiner Düsenreinigungsnadel (0,4 mm) entkrusten; medienführende Teile mit fettlösendem Heißwasser spülen.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>Siemens EQ.6 Plus s700 (TE657503DE/01 bis /04), Siemens EQ.6 Plus s500 (TE655203DE), Siemens EQ.6 Plus s300 (TE653501DE), Siemens EQ.6 Plus s100 (TE651209RW), Siemens EQ.6 700 / 300 Serie (TE607203DE, TE603201RW), Bosch VeroAroma 300 / 500 / 700 Serie (TES60321RW, TES60729DE)</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">Siemens EQ.9 Serie (s300, s500, s700, s900 mit Doppel-Schlauchsystem und Magnetkupplung), Siemens EQ.300 / EQ.3 Serie (integrierte mechanische Schaumdüse im Schwenkarm), Siemens EQ.500 integral (integrierte Milchkaraffe ohne externen Ansaugschlauch), Philips LatteGo Serie (schlauchloses Zweikammer-Zyklonsystem), Jura E8 / GIGA Serie (proprietäre HP3/HP1 Steckanschlüsse mit Klick-Bajonett)</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s700 (TE657503DE/01 bis /04)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s500 (TE655203DE)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s300 (TE653501DE)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 Plus s100 (TE651209RW)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Siemens EQ.6 700 / 300 Serie (TE607203DE, TE603201RW)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Bosch VeroAroma 300 / 500 / 700 Serie (TES60321RW, TES60729DE)</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siemens EQ.9 Serie (s300, s500, s700, s900 mit Doppel-Schlauchsystem und Magnetkupplung)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siemens EQ.300 / EQ.3 Serie (integrierte mechanische Schaumdüse im Schwenkarm)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siemens EQ.500 integral (integrierte Milchkaraffe ohne externen Ansaugschlauch)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Philips LatteGo Serie (schlauchloses Zweikammer-Zyklonsystem)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Jura E8 / GIGA Serie (proprietäre HP3/HP1 Steckanschlüsse mit Klick-Bajonett)</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Vollständiges Zerlegen des Auslaufsystems; Einlegen von Silikonschlauch, POM-Adapter und Edelstahlrohr für 20 Minuten in 40 °C warme, alkalische Reinigungslösung; mechanisches Durchstoßen des Rohrs mit einer 3-mm-Nylonbürste.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Tiefenentkalkung und Eiweißlösung mittels 15-minütigem Ultraschallbad in 5-prozentiger Amidosulfonsäure zur rückstandsfreien Beseitigung mineralischer Milchstein-Präzipitate im 1.4301-Edelstahlrohr.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Präventiver Austausch des VMQ-Silikonschlauchs und der peripheren Formdichtungen am Kombiauslauf zur Verhinderung von Unterdruckverlusten durch thermische Weitung und Versprödung.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum ist das Edelstahl-Ansaugrohr aus Werkstoff 1.4301 den einfachen Kunststofflanzen überlegen?</div>
-                <div class="faq-answer">A: Austenitischer Edelstahl nach DIN EN 1.4301 (X5CrNi18-10) zeichnet sich durch herausragende chemische Beständigkeit gegenüber aggressiven sauren Entkalkungsmitteln und alkalischen Reinigungsmitteln aus. Seine elektropolierte Innenoberfläche reduziert die mikroskopische Rauheit (Ra &lt; 0,4 µm) erheblich im Vergleich zu extrudiertem Polypropylen. Hierdurch wird verhindert, dass sich hitzedenaturierte Milchproteine (insbesondere Kasein und Beta-Lactoglobulin) in mikroskopischen Poren festsetzen und Biofilme bilden. Zudem garantiert die hohe Formstabilität ein gleichmäßiges hydrostatisches Eintauchverhalten am Boden der Milchpackung ohne Auftriebsverformung.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum ist das Edelstahl-Ansaugrohr aus Werkstoff 1.4301 den einfachen Kunststofflanzen überlegen?</div>
+                <div class="faq-a">Austenitischer Edelstahl nach DIN EN 1.4301 (X5CrNi18-10) zeichnet sich durch herausragende chemische Beständigkeit gegenüber aggressiven sauren Entkalkungsmitteln und alkalischen Reinigungsmitteln aus. Seine elektropolierte Innenoberfläche reduziert die mikroskopische Rauheit (Ra &lt; 0,4 µm) erheblich im Vergleich zu extrudiertem Polypropylen. Hierdurch wird verhindert, dass sich hitzedenaturierte Milchproteine (insbesondere Kasein und Beta-Lactoglobulin) in mikroskopischen Poren festsetzen und Biofilme bilden. Zudem garantiert die hohe Formstabilität ein gleichmäßiges hydrostatisches Eintauchverhalten am Boden der Milchpackung ohne Auftriebsverformung.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Welche physikalischen Auswirkungen hat die Shore-A-Härte des Silikonschlauchs auf die Schaumkonsistenz?</div>
-                <div class="faq-answer">A: Der Silikonschlauch (VMQ) fungiert innerhalb des fluidischen Schwingungssystems als elastischer Dämpfer. Eine Shore-A-Härte von 60±5 bei einer Wandstärke von 1,5 mm stellt das exakte Äquilibrium zwischen mechanischer Flexibilität und Unterdruckstabilität dar. Ist das Silikon zu weich (z. B. Shore-A &lt; 45), kollabiert der Schlauchquerschnitt unter dem anliegenden Unterdruck von ca. -0,3 bar radial. Dadurch reißt die laminare Strömung ab. Ist das Elastomer zu hart (Shore-A &gt; 75), dämpft es die hochfrequenten Druckpulsationen der Hubkolbenpumpe nicht ab, was zu unregelmäßigem Milcheinzug führt.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Welche physikalischen Auswirkungen hat die Shore-A-Härte des Silikonschlauchs auf die Schaumkonsistenz?</div>
+                <div class="faq-a">Der Silikonschlauch (VMQ) fungiert innerhalb des fluidischen Schwingungssystems als elastischer Dämpfer. Eine Shore-A-Härte von 60±5 bei einer Wandstärke von 1,5 mm stellt das exakte Äquilibrium zwischen mechanischer Flexibilität und Unterdruckstabilität dar. Ist das Silikon zu weich (z. B. Shore-A &lt; 45), kollabiert der Schlauchquerschnitt unter dem anliegenden Unterdruck von ca. -0,3 bar radial. Dadurch reißt die laminare Strömung ab. Ist das Elastomer zu hart (Shore-A &gt; 75), dämpft es die hochfrequenten Druckpulsationen der Hubkolbenpumpe nicht ab, was zu unregelmäßigem Milcheinzug führt.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Weshalb darf an der Verbindungsstelle zwischen Schlauch und Edelstahlrohr keinesfalls Silikonfett verwendet werden?</div>
-                <div class="faq-answer">A: Silikonfette – selbst NSF-H1-zertifizierte Schmierstoffe wie OKS 1110 – weisen extrem niedrige Oberflächenspannungen auf. Gelangen selbst unsichtbare Mikrospuren des Schmierstoffs in die hydrodynamische Mischkammer des Auslaufs, destabilisieren die Silikonmoleküle die Lipidschichten der Milchproteine sofort. In der Folge können sich die gasförmigen Mikrodampfbläschen nicht mehr mit der Proteinmatrix verbinden, sodass der Schaum in Sekunden in sich zusammenfällt. Zudem hebt Schmierfett die mechanische Reibhaftung auf, was bei Heißdampfstößen zum hydraulischen Abspringen des Schlauchs führen kann.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Weshalb darf an der Verbindungsstelle zwischen Schlauch und Edelstahlrohr keinesfalls Silikonfett verwendet werden?</div>
+                <div class="faq-a">Silikonfette – selbst NSF-H1-zertifizierte Schmierstoffe wie OKS 1110 – weisen extrem niedrige Oberflächenspannungen auf. Gelangen selbst unsichtbare Mikrospuren des Schmierstoffs in die hydrodynamische Mischkammer des Auslaufs, destabilisieren die Silikonmoleküle die Lipidschichten der Milchproteine sofort. In der Folge können sich die gasförmigen Mikrodampfbläschen nicht mehr mit der Proteinmatrix verbinden, sodass der Schaum in Sekunden in sich zusammenfällt. Zudem hebt Schmierfett die mechanische Reibhaftung auf, was bei Heißdampfstößen zum hydraulischen Abspringen des Schlauchs führen kann.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu Siemens</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>Siemens EQ.6 Plus s700 (TE657503DE)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B0H4WGYN9B?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für EQ.6 Plus s700 (TE657503DE)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/mahlwerk/">
-                  › EQ.6 Plus s700 (TE657503DE): Keramik-Mahlwerk ceramDrive Einheit komplett
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/milchsystem/">
-                  › EQ.6 Plus s700 (TE657503DE): Edelstahl-Milchansauglanze &amp; Silikonschlauch Set
+                  <span>Keramik-Mahlwerk ceramDrive Einheit komplett</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/fehlercodes/">
-                  › EQ.6 Plus s700 (TE657503DE): Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung
+                  <span>Fehler E0511 &amp; E0513 Leitungsdiagnose &amp; Behebung</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/bruehgruppe/">
-                  › EQ.6 Plus (s300 / s500 / s700): Brüheinheit Brühgruppe komplett (Typ 11014117)
+                  <span>Brüheinheit Brühgruppe komplett (Typ 11014117)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/kaffeeauslauf/">
-                  › EQ.6 Plus s700 (TE657503DE): Kaffeeauslauf Verteiler &amp; Düsenabdeckung
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq500/bruehgruppe/">
-                  › EQ.500 classic (TP503D09): Brühgruppe Wartungsset &amp; Dichtringe rot
+                  <span>Kaffeeauslauf Verteiler &amp; Düsenabdeckung</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/wasserfilter/">
-                  › EQ.300 / EQ.500 / EQ.6 / EQ.9: Brita Intenza Wasserfilterpatrone TZ70003 (3er Pack)
+                  <span>Brita Intenza Wasserfilterpatrone TZ70003 (3er Pack)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq9-plus/keramikventil/">
-                  › EQ.9 Plus s500 (TI9553X1RW): Elektrisches Keramikventil 3-Wege Umschaltung
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/reinigungstabletten/">
+                  <span>2in1 Reinigungstabletten TZ80001A gegen Kaffeefett</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/" style="font-weight:700; color:var(--primary);">
+                <span>Alle EQ.6 Plus s700 (TE657503DE) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Siemens Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq6-plus-s700/">
+                  <span>EQ.6 Plus s700 (TE657503DE)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq500/">
+                  <span>EQ.500 classic (TP503D09)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq9-plus/">
+                  <span>EQ.9 Plus s500 (TI9553X1RW)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/siemens/eq300/">
+                  <span>EQ.300 (TI351209RW)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="font-weight:700; color:var(--primary);">
+                <span>Zur Siemens Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -440,50 +504,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">Siemens Edelstahl-Milchansauglanze &amp; Silikonschlauch Set</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B0H4WGYN9B?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

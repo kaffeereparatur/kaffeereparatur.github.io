@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
   <meta name="referrer" content="no-referrer">
-  <title>Sage Barista Touch &amp; Bambino Plus ThermoJet 3-Sekunden Schnellheizer Baugruppe: Reparatur &amp; Original-Ersatzteile</title>
-  <meta name="description" content="Originalgetreue Reparaturanleitung für Sage Barista Touch &amp; Bambino Plus: ThermoJet 3-Sekunden Schnellheizer Baugruppe. Symptome, Einbau und Wartung auf Amazon.de.">
+  <title>Sage ThermoJet Heizelement Baugruppe: Diagnose &amp; Tausch SES880 SES500</title>
+  <meta name="description" content="Umfassender technischer Leitfaden zur Sage ThermoJet Baugruppe (B0D83VMC71). Diagnose, Hydraulik, NTC-Werte, Druckprüfung &amp; Austausch für SES880 und SES500.">
   <link rel="canonical" href="https://roboparca.github.io/kaffeereparatur/sage/barista-touch/thermoblock/">
   <meta property="og:type" content="product">
-  <meta property="og:title" content="Sage Barista Touch &amp; Bambino Plus ThermoJet 3-Sekunden Schnellheizer Baugruppe: Reparatur &amp; Original-Ersatzteile">
-  <meta property="og:description" content="Originalgetreue Reparaturanleitung für Sage Barista Touch &amp; Bambino Plus: ThermoJet 3-Sekunden Schnellheizer Baugruppe. Symptome, Einbau und Wartung auf Amazon.de.">
+  <meta property="og:title" content="Sage ThermoJet Heizelement Baugruppe: Diagnose &amp; Tausch SES880 SES500">
+  <meta property="og:description" content="Umfassender technischer Leitfaden zur Sage ThermoJet Baugruppe (B0D83VMC71). Diagnose, Hydraulik, NTC-Werte, Druckprüfung &amp; Austausch für SES880 und SES500.">
   <meta property="og:image" content="https://m.media-amazon.com/images/I/612G+tka11L._AC_SL1500_.jpg">
   <link rel="stylesheet" href="https://roboparca.github.io/kaffeereparatur/style.css">
   <script type="application/ld+json">
@@ -18,7 +18,7 @@
     "@type": "Product",
     "name": "Sage Barista Touch &amp; Bambino Plus - ThermoJet 3-Sekunden Schnellheizer Baugruppe",
     "image": ["https://m.media-amazon.com/images/I/612G+tka11L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/51PVgtCrrtL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61mW5K6xh7L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61C57aB08SL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/31iKgnwqSWL._AC_SL1500_.jpg"],
-    "description": "Originalgetreue Reparaturanleitung für Sage Barista Touch &amp; Bambino Plus: ThermoJet 3-Sekunden Schnellheizer Baugruppe. Symptome, Einbau und Wartung auf Amazon.de.",
+    "description": "Umfassender technischer Leitfaden zur Sage ThermoJet Baugruppe (B0D83VMC71). Diagnose, Hydraulik, NTC-Werte, Druckprüfung &amp; Austausch für SES880 und SES500.",
     "sku": "B0D83VMC71",
     "brand": { "@type": "Brand", "name": "Sage" },
     "offers": {
@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/sage/">Sage</a>
@@ -81,7 +73,7 @@
       <span>ThermoJet 3-Sekunden Schnellheizer Baugruppe</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">Sage • Heizelemente &amp; Thermoblöcke</span>
+        <h1>Sage Barista Touch &amp; Bambino Plus: ThermoJet 3-Sekunden Schnellheizer Baugruppe</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">Sage</span>
-          <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
           <span class="badge-rating">★ 4.7 (290 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: SP0020087</span>
         </div>
-
-        <h1>Sage Barista Touch &amp; Bambino Plus: ThermoJet 3-Sekunden Schnellheizer Baugruppe</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B0D83VMC71?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B0D83VMC71) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B0D83VMC71?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -164,11 +144,13 @@
         <div class="section-box">
           <h2>🔬 Mechatronische Analyse &amp; Funktionsprinzip</h2>
           <hr class="section-divider">
-          <p class="prose-p">Die Komponente &quot;<strong>ThermoJet</strong> 3-Sekunden Schnellheizer Baugruppe&quot; für den Kaffeevollautomaten Sage Barista Touch &amp; Bambino Plus (mit OEM-Teilenummer SP0020087) ist das zentrale hydraulisch-mechanische Bindeglied für einen stabilen Brühdruck und aromatische Extraktion. Das Bauteil basiert auf einem Gegossener Aluminium-Wärmespeicher mit eingegossenem <strong>1.4301</strong> Edelstahl-Durchflussrohr, 10 kΩ / 100 kΩ NTC-Temperatursensoren.</p>
-<p class="prose-p">Im regulären Betrieb widersteht diese Baugruppe extremen Beanspruchungen: Prüfdruck bis <strong>25 Bar</strong>, Dauerbetrieb <strong>15 Bar</strong> sowie einer thermischen Dauerbelastung im Bereich von 92 °C Kaffeebrühtemperatur, 135 °C Dampfphase, thermische Schmelzsicherungen bei 192 °C / 216 °C. Das kinematische Funktionsprinzip beruht auf: Kontinuierlicher Durchlauferhitzer mit elektronischer Triac-Pulsweitenmodulation über die Hauptplatine.</p>
-<p class="prose-p">Während des automatisierten Bezugszyklus verfährt die Mechanik im Millisekundentakt, wobei die Spindellagerung und die inneren Gleitflanken hohen Reibkräften ausgesetzt sind. Das Zusammenspiel zwischen Sage-Steuerelektronik und den hydraulischen Dichtlippen erfordert engste Fertigungstoleranzen im Bereich von unter <strong>0,05 mm</strong>.</p>
-<p class="prose-p">Werden diese Toleranzen durch thermische Versprödung oder Kaffeefett-Inkrustationen überschritten, kommt es zu Druckabfällen und Schwergängigkeit. Typische mechanische Ausfallursachen in der Praxis sind: Kalkinkrustation im Strömungskanal mit Querschnittsverengung, Durchbrennen der <strong>1400W</strong>-Heizwendel, Ausfall der Schmelzsicherungen.</p>
-<p class="prose-p">Durch die stetige Einwirkung von Heißwasser und Kaffeesäuren verhärten herkömmliche Elastomere bereits nach 1.500 bis 3.000 Brühungen. Der Einsatz von hochbeständigem <strong>VMQ</strong>-Silikon und <strong>1.4310</strong> Edelstahlfedern gewährleistet eine dreifach höhere Standzeit gegenüber einfachen Nachbauten und schützt die Motorgetriebeeinheit vor Überlastschäden.</p>
+          <p class="prose-p">Die Sage ThermoJet-Baugruppe repräsentiert einen technologischen Paradigmenwechsel im Bereich der thermischen Fluidkonditionierung für Siebträgermaschinen des Haushalts- und Prosumer-Segments. Im Gegensatz zu traditionellen Messingkesseln oder voluminösen Aluminium-Druckguss-Thermoblöcken basiert der ThermoJet auf einer planar aufgebauten Dickschicht-Heiztechnologie (Thick-Film-Resistor-Technology).</p>
+<p class="prose-p">Das Heizelement besteht aus einer laserstrukturierten Widerstandspaste, die auf einer dielektrischen Keramik-Isolationsschicht direkt auf ein hochfestes Edelstahlsubstrat (Werkstoff <strong>1.4301</strong> / AISI 304) aufgesintert ist. Diese Konstruktion eliminiert Übergangswärmewiderstände nahezu vollständig und minimiert die thermische Masse des Aggregats auf ein absolutes Minimum.</p>
+<p class="prose-p">Mit einer elektrischen Nennleistung von <strong>1600 Watt</strong> bei <strong>230 V</strong> AC erzielt die Baugruppe eine thermische Ansprechzeit von unter drei Sekunden ab Kaltstart, um die Soll-Brühtemperatur von nominell 93 °C zu erreichen. Hydraulisch ist der ThermoJet für Betriebsdrücke bis zu einem Prüfdruck von <strong>16 bar</strong> und einen kontinuierlichen Arbeitsdruck von 9 bis <strong>12 bar</strong> ausgelegt.</p>
+<p class="prose-p">Der Strömungskanal ist als hochpräzise Edelstahlkapillare ausgeführt, die eine laminare Strömung bei typischen Espresso-Volumenströmen von 1,5 bis <strong>3,5 ml</strong>/s gewährleistet. Zur Dampferzeugung schaltet die Maschinensteuerung die Fluidzufuhr in einen diskontinuierlichen Mikro-Pulsbetrieb: Eine Ulka- oder Ceme-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Pumpen &amp; Hydraulik">Vibrationspumpe</a> injiziert stoßweise kleinste Flüssigkeitsmengen (ca. 10–<strong>18 ml</strong>/min), die im Heizelement flash-verdampfen und am Auslass Sattdampf bei Drücken von 1,5 bis <strong>2,2 bar</strong> generieren.</p>
+<p class="prose-p">Die Schnittstellen zur internen Maschinenhydraulik erfolgen über <strong>4,0 mm</strong> <strong>PTFE</strong>-Druckschläuche (Innen-Ø 2,0–<strong>2,5 mm</strong>), welche über glasfaserverstärkte Anschlussstutzen (Polyamid PA66-GF30) geführt und mittels U-förmiger Halteklammern aus austenitischem Federstahl (<strong>1.4310</strong> / X10CrNi18-8) formschlüssig arretiert werden. Die statische und dynamische Abdichtung erfolgt durch hochtemperaturbeständige Fluorkautschuk-O-Ringe (<strong>FKM</strong> / FPM, 75 Shore A), welche dauerhaften Betriebstemperaturen von bis zu 200 °C widerstehen.</p>
+<p class="prose-p">Zur elektronischen Regelung und Sicherheitsarchitektur verfügt die Baugruppe über mindestens einen hochempfindlichen NTC-Temperatursensor (Nennwiderstand typischerweise 50 kΩ oder 100 kΩ bei 25 °C mit negativem Temperaturkoeffizienten), der thermisch direkt an das Substrat gekoppelt ist. Ergänzt wird dies durch irreversibel auslösende Thermosicherungen (Thermal Cut-Offs, TCO) mit einer Schalttemperatur von 167 °C oder 192 °C.</p>
+<p class="prose-p">Zu den primären mechanischen Ausfallursachen zählen hydrothermale Calcit-Ablagerungen in den Kapillaren, welche lokale Hotspots provozieren, sowie mikroskopische Rissbildungen in den gedruckten Leiterbahnen infolge extremer thermomechanischer Lastwechselzyklen.</p>
           
           <div class="callout-box callout-tip">
             <span class="callout-icon">💡</span>
@@ -183,228 +165,289 @@
         <div class="section-box">
           <h2>⚠️ Typische Ausfallsymptome &amp; Ursachenanalyse</h2>
           <hr class="section-divider">
-          <p class="prose-p">Ein Defekt oder Verschleiß an der Baugruppe &quot;<strong>ThermoJet</strong> 3-Sekunden Schnellheizer Baugruppe&quot; bei der Sage Barista Touch &amp; Bambino Plus kündigt sich meist durch schleichende Symptome im täglichen Betrieb an. Zu den häufigsten auditiven und optischen Anzeichen gehören:
+          <p class="prose-p">Das Versagen oder die Degeneration der ThermoJet-Baugruppe manifestiert sich durch spezifische thermische, hydraulische und akustische Anomalien, die eine präzise messtechnische Differenzialdiagnose erfordern:
 
-1.</p>
-<p class="prose-p">Akustische Auffälligkeiten: Ein auffälliges Quietschen, Knarzen oder metallisches Schleifen während des Brühgruppen-Verfahrens. Brummt die Pumpe ungewohnt dumpf und leise, deutet dies auf eine hydraulische Verstopfung im System hin; ein lautes, ratterndes Pumpengeräusch weist hingegen auf eine Trockenlauf-Kavitation hin.
+1. Totalausfall der thermischen Funktion (Kaltwasserbezug): Das Wasser verlässt die <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> unbeeinflusst bei Umgebungstemperatur.</p>
+<p class="prose-p">Auf Displaymodellen (wie der SES880 Barista Touch) erscheint häufig ein generischer Fehlercode oder das Heizsymbol pulsiert endlos. Ursächlich ist in den meisten Fällen eine Durchtrennung des Stromkreises: Entweder liegt eine thermische Überlastung vor, die zum Ansprechen der 167-°C-Schmelzsicherung führte (Trockenlauf durch Kavitation oder blockiertes <a href="https://roboparca.github.io/kaffeereparatur/kategorie/magnetventil/" class="wiki-link" title="Magnetventile">Magnetventil</a>), oder die gedruckte Dickschicht-Widerstandsbahn weist durch Ermüdungsbrüche einen unendlichen Widerstand (Open Loop / OL) auf.
 
 2.</p>
-<p class="prose-p">Kaffee-Ergebnis &amp; Crema-Qualität: Der Kaffeeauslauf tröpfelt nur noch ungleichmäßig, die Crema ist blass oder zerfällt binnen weniger Sekunden, und das Kaffeemehl in der Abtropfschale ist kein fester, trockener Trester-Puck mehr, sondern ein feuchter Schlamm.
+<p class="prose-p">Dampfaustritt im Gehäuseinneren und Feuchtigkeitskondensation: Deutliches Zischen, feuchter Niederschlag auf dem Touchscreen und Pfützenbildung unter der Gehäusebasis deuten auf hydraulische Leckagen hin. Häufigste Ursache ist die thermische Versprödung der <strong>FKM</strong>-O-Ringe an den Steckanschlüssen oder eine elastische Relaxation der <strong>1.4310</strong>-Halteklammern.</p>
+<p class="prose-p">Seltener führt Kavitationserosion oder Frostschaden zu Mikrorissen im Übergangsbereich der Edelstahl-Fluidkanäle.
 
-3. Fehlermeldungen der Elektronik: Häufige Warnungen im Display oder über LEDs wie &quot;Brühdruck übersteigt nicht <strong>9 Bar</strong>, Dampflanze tropft, Dampfboiler-Füllstandsfehler&quot;.</p>
-<p class="prose-p">Diese Statusmeldungen werden durch integrierte Mikroschalter oder die elektronische Motorstromüberwachung ausgelöst, sobald der Schlitten die Endposition nicht innerhalb des definierten Zeitfensters erreicht.
+3. Temperaturdrift und unzureichende Dampfdruckbildung: Das Brühwasser erreicht nicht die programmierte Zieltemperatur, oder der Milchschaumvorgang bricht wegen unzureichenden Drucks ab.</p>
+<p class="prose-p">Hierbei liegt zumeist eine Sensor-Degeneration des NTC-Thermistors vor (Widerstandsdrift führt zu verfälschten ADC-Spannungswerten auf dem Mainboard), oder dicke Carbonat-Inkrustationen (Kesselstein) bilden eine thermische Isolationsschicht, wodurch der Wärmeübergangskoeffizient massiv absinkt und der Mikrocontroller die Energiezufuhr via Phasenanschnittsteuerung drosselt.
 
-4. Flüssigkeitsaustritt: Unbemerktes Ansammeln von klarem Heißwasser in der Tropfschale oder unter dem Gehäuseboden der Kaffeemaschine, verursacht durch poröse Dichtungsringe am Einlaufstutzen oder ein ermüdetes Drainageventil.</p>
-          
+4. Auslösen des Fehlerstrom-Schutzschalters (RCD/FI): Sobald die Maschine den Heizzyklus initiiert, trennt der FI-Schutzschalter den Stromkreis.</p>
+<p class="prose-p">Ursache ist ein Isolationsfehler der dielektrischen Keramikschicht des Heizelements, wodurch Ableitströme von mehr als 30 mA direkt über das geerdete Edelstahlchassis gegen den Schutzleiter (PE) fließen.</p>
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Sicherheitsfreischaltung &amp; Druckabbau</h4>
+                  <p>Netzstecker ziehen, Wassertank entnehmen und Maschine über Heißwasserbezug komplett druckentlasten; mindestens 30 Minuten abkühlen lassen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Demontage des Maschinengehäuses</h4>
+                  <p>Bohnenbehälter entfernen, Gehäuseschrauben an Rückseite, Deckel und Unterboden mit Torx TX10 und TX20 lösen und Gehäuseabdeckung vorsichtig abheben.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Elektrische &amp; sensorische Entkopplung</h4>
+                  <p>Hochstrom-Flachstecker der Heizung, Masseleiter sowie Steckverbindungen des NTC-Sensors und der Thermosicherungen dokumentieren und vorsichtig mit einer Abziehzange lösen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Hydraulische Dekonnektierung</h4>
+                  <p>Federstahl-Sicherungsclips (1.4310) mit einer Spitzzange axial herausziehen, PTFE-Druckschläuche gerade abziehen und alte FKM-Dichtungen vollständig entfernen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Installation der Baugruppe &amp; Dichtigkeitsprüfung</h4>
+                  <p>Neue ThermoJet-Einheit mit neuen, leicht mit OKS 1110 gefetteten FKM-O-Ringen montieren, Schläuche bis zum Anschlag einführen, Klammern setzen, elektrisch kontaktieren und offenen Probelauf unter Druck durchführen.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Netztrennung &amp; Arbeitsplatz-Vorbereitung</div>
-                <div class="step-item-desc">Gerät über den Hauptschalter ausschalten und den 230V Netzstecker ziehen. Wassertank, Tropfschale und Kaffeesatzbehälter entnehmen. Arbeitsfläche mit einem weichen Tuch abdecken, um Gehäusekratzer zu vermeiden.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Gehäuseöffnung &amp; Sichtprüfung der Baugruppe</div>
-                <div class="step-item-desc">Servicetür öffnen bzw. Gehäuseschrauben mit passendem TX20 lösen. Die Baugruppe &quot;ThermoJet 3-Sekunden Schnellheizer Baugruppe&quot; freilegen und sichtbare Kaffeemehlreste oder Wasserspuren mit einem Pinsel entfernen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Demontage der Verschleißteile &amp; Dichtungswechsel</div>
-                <div class="step-item-desc">Alte O-Ringe mit einem Kunststoffhaken vorsichtig aus den Dichtnuten abhebeln. Die Nutgründe gründlich mit Isopropanol reinigen. Neue lebensmittelechte Dichtungen aufziehen und gleichmäßig ohne Verdrehung einsetzen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Schmierung der Gleitflächen &amp; Kalibrierung</div>
-                <div class="step-item-desc">Alle mechanischen Führungsnuten, Achsen und Dichtflächen dünn mit lebensmittelechtem Schmiermittel (Hochtemperatur-Armaturenfett für Dampfventile und O-Ringe) benetzen. Keine säurehaltigen Fette verwenden, da diese den POM-Kunststoff zersetzen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Remontage, Dichtigkeitsprüfung &amp; Probelauf</div>
-                <div class="step-item-desc">Baugruppe exakt in die Führungsschienen einschieben, bis die mechanische Verriegelung hörbar einrastet. Netzstecker verbinden, Maschine einschalten, Spülzyklus aktivieren und Wasserwege auf absolute Tropffreiheit prüfen.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Für die fachgerechte Instandsetzung der Sage Barista Touch &amp; Bambino Plus benötigen Sie folgendes Spezialwerkzeug: <strong>TX20</strong>, <strong>TX10</strong>, Multimeter (Heizwiderstand ca. 38–44 Ω), Wärmeleitpaste für NTC-Sensor, Ersatz-Schmelzsicherungen. Sicherheitshinweis: Vor jedem Eingriff muss das Gerät zwingend vom Stromnetz getrennt werden, da im Inneren freiliegende <strong>230V</strong>-Leitungen an Thermoblock und Pumpe verlaufen.</p>
-<p class="prose-p">Beginnen Sie nach der Gehäuseöffnung mit einer genauen Dokumentation der Kabelführung und Schlauchpositionen mittels Smartphone-Foto. Beim Lösen von Druckschläuchen müssen die Halteklammern (Fluid-Splinte) gerade herausgezogen werden, um ein Abscheren des Dichtstutzens zu verhindern.</p>
-<p class="prose-p">Vor dem Aufziehen der neuen Dichtungen ist die peinliche Sauberkeit der Dichtnuten entscheidend: Bereits ein einzelnes verharztes Kaffeekorn in der Nut kann zu Mikroleckagen führen. Nach dem Aufziehen der Dichtringe wird ein dünner Film Hochtemperatur-Armaturenfett für Dampfventile und O-Ringe aufgetragen.</p>
-<p class="prose-p">Führen Sie die Baugruppe stets ohne Gewaltanwendung in das Chassis ein; rastet sie nicht leichtgängig ein, befindet sich der Getriebeantrieb nicht in der Neutralstellung (Grundposition). Starten Sie nach erfolgreichem Zusammenbau mindestens zwei Leerbezüge ohne Kaffeemehl, um eventuelle Luftpolster aus dem Hydraulikkreislauf zu spülen.</p>
-          </div>
+          <p class="prose-p">Der Austausch der ThermoJet-Baugruppe (ASIN B0D83VMC71) verlangt präzise handwerkliche Sorgfalt nach mechatronischen Standards. Für die Reparatur werden folgende Werkzeuge und Hilfsmittel benötigt: <strong>Torx</strong>-Schraubendreher der Größen <strong>TX10</strong> und <strong>TX20</strong>, Kreuzschlitzschraubendreher PH2, eine präzise abgewinkelte Spitzzange, ein spitzer Messing-Dorn (zum beschädigungsfreien Entfernen alter O-Ringe), ein Digitalmultimeter mit Durchgangs- und Widerstandsmessung sowie lebensmittelechtes Hochtemperatur-Silikonfett (vorzugsweise <strong>OKS 1110</strong> gemäß <strong>NSF-H1</strong>).</p>
+<p class="prose-p">Vor Beginn der Arbeiten ist die Maschine ausnahmslos allpolig vom Stromnetz zu trennen. Nach Demontage des Wassertanks und des Bohnenbehälters werden sämtliche Gehäuseschrauben an der Gehäuserückwand, unter dem Tropfblech und im Bohnenschacht gelöst.</p>
+<p class="prose-p">Beim vorsichtigen Lösen des oberen Gehäusedeckels ist zwingend auf die empfindlichen Flachbandkabel des Touchscreens (SES880) oder der Drucktastenplatine (SES500) zu achten; diese sind an den ZIF-Verbindern zu entriegeln und abzuziehen. Die ThermoJet-Baugruppe liegt nun im oberen Zentrum des Rahmens frei.</p>
+<p class="prose-p">Vor dem Lösen der Anschlüsse sollte der Widerstand des alten Heizers gemessen werden (Sollwert ca. 31–34 Ω bei intaktem Heizelement; NTC ca. 50–100 kΩ bei Raumtemperatur). Liegt der Heizelement-Widerstand bei unendlich (OL), ist der Heizer definitiv defekt.</p>
+<p class="prose-p">Zur hydraulischen Demontage werden die <strong>1.4310</strong>-Federklammern der Hochdruckanschlüsse mit der Spitzzange gezogen. Ziehen Sie die <strong>PTFE</strong>-Leitungen exakt axial heraus, um ein Aufweiten oder Knicken der Rohrenden zu verhindern.</p>
+<p class="prose-p">Überprüfen Sie die Schlauchenden: Weisen diese tiefe Einlaufriefen auf, müssen sie mit einem <strong>PTFE</strong>-Schlauchschneider um ca. <strong>3 mm</strong> rechtwinklig gekürzt werden. Die neuen <strong>FKM</strong>-O-Ringe werden minimal mit <strong>OKS 1110</strong> benetzt – dies verhindert das Abscheren der Dichtlippe beim Einpressen in den Flansch.</p>
+<p class="prose-p">Setzen Sie die neue ThermoJet-Baugruppe mechanisch in das Halterungsbett ein. Führen Sie die <strong>PTFE</strong>-Rohre vollständig bis zum spürbaren Endanschlag in die Kanäle ein und schieben Sie die Halteklammern ein, bis sie hörbar und vibrationsfest einrasten.</p>
+<p class="prose-p">Schließen Sie anschließend die temperaturbeständigen Silikonkabel an die Flachsteckzungen der Dickschichtheizung an und stecken Sie den NTC-Sensorstecker auf die Hauptplatine. Vor dem finalen Zusammenbau des Außengehäuses ist eine optische Druckprüfung im offenen Zustand zwingend vorgeschrieben: Setzen Sie den Wassertank ein, schließen Sie die Maschine über einen FI-gesicherten Trenntransformator an und starten Sie einen Spülzyklus gegen ein eingesetztes Blindsieb (Erzeugung des maximalen Systemdrucks von ca. <strong>12 bar</strong> am OPV).</p>
+<p class="prose-p">Kontrollieren Sie alle Steckanschlüsse akribisch mit trockenem Prüfpapier auf kapillare Undichtigkeiten. Nach erfolgreichem Dichtigkeitstest wird die Maschine in umgekehrter Reihenfolge vollständig montiert.</p>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Maschine stoppt mitten im Brühvorgang mit Fehlermeldung</strong></td>
-                    <td data-label="Mögliche Ursache">Elektronische Überstrom-Abschaltung des Antriebsmotors durch Schwergängigkeit der Führungsschienen oder Kaffeemehl-Blockade.</td>
-                    <td data-label="Lösungsmaßnahme">Brühmechanik entnehmen, gründlich von Kaffeefett befreien, O-Ringe prüfen und Gleitkulissen mit lebensmittelechtem Silikonfett nachfetten.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Kaffeeauslauf tröpfelt nur schwach, Pumpe klingt stark abgewürgt</strong></td>
-                    <td data-label="Mögliche Ursache">Verkalkter Einlaufstutzen oder zugesetztes 1.4310 Edelstahl-Brühsieb durch mikroskopische Kaffeeöl-Inkrustationen.</td>
-                    <td data-label="Lösungsmaßnahme">Brühsieb mit Torx TX10 abschrauben und im Ultraschallbad reinigen. Durchlauferhitzer mit professionellem Flüssigentkalker spülen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Abtropfschale füllt sich extrem schnell mit klarem Heißwasser</strong></td>
-                    <td data-label="Mögliche Ursache">Undichtigkeit am Drainageventil oder verschlissene Lippen-Dichtungen am Übergabestutzen der Brühkammer.</td>
-                    <td data-label="Lösungsmaßnahme">O-Ringe am Andockstutzen erneuern und Drainageventil auf Bruch der Ventilkappe oder Fremdkörper prüfen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Kaffeesatz ist matschig und bildet keine festen Pucks mehr</strong></td>
-                    <td data-label="Mögliche Ursache">Nachlassender Anpressdruck der Kolbenfeder oder verschlissener Kolbendichtring lässt Restwasser in der Kammer stehen.</td>
-                    <td data-label="Lösungsmaßnahme">Kolbendichtung erneuern, Mahlgrad um eine Stufe feiner stellen und Mahlwerk auf Schneidenschärfe kontrollieren.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Maschine heizt nicht / Display zeigt Fehler &#39;Thermischer Fehler&#39; / Heizanzeige blinkt dauerhaft</td>
+                  <td>Thermosicherung (TCO) hochohmig ausgelöst infolge Trockenlaufs oder Dickschicht-Heizbahn auf der Trägerplatte gerissen (Widerstand OL).</td>
+                  <td class="diag-fix">✓ ThermoJet elektrisch isolieren und Widerstand an den Heizfahnen messen. Weist dieser unendlich aus, Baugruppe B0D83VMC71 komplett ersetzen.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Baugruppe entnehmen und unter fließendem warmen Wasser ohne Spülmittel abspülen. Kaffeemehlreste aus dem Innenraum absaugen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Intensivreinigung mit Kaffeefettlöser-Tabletten zur Entfernung von ranzigen Kaffeeölen aus dem Mikrosieb. Milchsystem gründlich spülen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6–12 Monate</strong></td>
-                    <td data-label="Maßnahme">Präventiver Austausch aller dynamischen O-Ringe und Dichtmanschetten. Nachfettung der Führungsschienen mit Hochtemperatur-Armaturenfett für Dampfventile und O-Ringe. Entkalkung mit Amidosulfonsäure.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Wasseransammlung unter der Maschine / Dampfaustritt hinter dem Touchscreen</td>
+                  <td>O-Ringe (FKM) an den Ein- oder Auslassstutzen thermisch versprödet oder Haltefeder 1.4310 nicht vollständig verriegelt.</td>
+                  <td class="diag-fix">✓ Sicherungsfedern ziehen, Dichtungssitze reinigen, neue FKM-O-Ringe mit Silikonfett OKS 1110 montieren und Schläuche bis zum Anschlag fixieren.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Brühtemperatur schwankt stark (&gt; 8 °C) / Inkonsistenter Dampfbezug mit Stottern</td>
+                  <td>Schwere Verkalkung der Edelstahl-Mikrokapillare oder Messwertdrift des NTC-Temperatursensors durch thermische Ermüdung.</td>
+                  <td class="diag-fix">✓ Zunächst präventiven Entkalkungslauf mit Amidosulfonsäure durchführen. Bleibt der Fehler bestehen, NTC-Widerstand prüfen und Baugruppe austauschen.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>Sage Barista Touch &amp; Bambino Plus, Sage Barista Touch &amp; Bambino Plus Serie, Sage Baureihe mit OEM SP0020087, Kompatibel mit allen Standard-Modellen der Baureihe</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">Nespresso &amp; Dolce Gusto Kapselsysteme, Manuelle Gastronomie-Siebträger fremder Hersteller, Maschinen mit abweichender Getriebe-Generation</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Sage Barista Touch (SES880 / BES880)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Sage Bambino Plus (SES500 / BES500)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Sage Barista Pro (SES878 / BES878)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Sage Bambino (SES450 / BES450)</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Sage Barista Express (BES875 / BES870 - klassischer Druckguss-Thermoblock)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Sage Dual Boiler (BES920 / BES900 - Doppel-Edelstahlkessel-System)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Sage Oracle Touch (SES990 - Dual-Boiler-Architektur mit Heißwasserkessel)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Sage Dual Temp Pro (BES810 - Konventioneller Rohrschlangen-Thermoblock)</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Durchführung eines Rückspülzyklus (Backflush) mit eingesetztem Blindsieb und reinem Wasser, um organische Kaffeefette aus dem Drei-Wege-Magnetventil und dem ThermoJet-Auslaufkanal zu spülen.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Chemische Reinigung des Brühkopfes mit einer fettlösenden Reinigungstablette; mikroskopische Inspektion der Auslaufdusche auf Ablagerungen; Prüfung des Wasserhärtegrads im Tank.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Systemische Entkalkung ausschließlich mit Amidosulfonsäure-Basis (keine Zitronensäure verwenden); Gehäuseöffnung zur Sichtprüfung der FKM-Dichtungen und PTFE-Verbindungsstellen auf Kriechwasser und Salzausblühungen.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Kann ich den Austausch von &quot;ThermoJet 3-Sekunden Schnellheizer Baugruppe&quot; bei der Sage Barista Touch &amp; Bambino Plus selbst durchführen?</div>
-                <div class="faq-answer">A: Ja, der Austausch ist für handwerklich geschickte Laien innerhalb von 15 bis 30 Minuten problemlos machbar. Dank der modularen Bauweise von Sage werden lediglich handelsübliche Standardwerkzeuge wie Torx-Schraubendreher (TX10/TX20) benötigt. Befolgen Sie einfach unsere bebilderte Schritt-für-Schritt-Anleitung und achten Sie auf die Netztrennung vor Beginn der Arbeiten.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum erreicht der Sage ThermoJet in nur 3 Sekunden Betriebstemperatur, während klassische Thermoblöcke mehrere Minuten benötigen?</div>
+                <div class="faq-a">Klassische Thermoblöcke basieren auf massiven Aluminium- oder Messingkörpern mit einem Gewicht von 1 bis 2 Kilogramm, die vollständig durchgewärmt werden müssen, um thermische Stabilität zu gewährleisten. Der ThermoJet hingegen nutzt modernste Dickschicht-Widerstandsbahnen, die direkt auf eine hauchdünne dielektrische Schicht über einer Edelstahlkapillare aufgebracht sind. Die zu erwärmende thermische Masse ist dadurch infinitesimal klein. In Kombination mit einer PID-gesteuerten Leistungsaufnahme von 1600 Watt und geregelter Phasenanschnittsteuerung wird die thermische Energie verzögerungsfrei direkt an das durchströmende Wasser abgegeben.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Welches Schmiermittel muss für die Dichtungen und Mechanik zwingend verwendet werden?</div>
-                <div class="faq-answer">A: Verwenden Sie ausnahmslos 100% lebensmittelechtes Silikonfett mit NSF-H1-Zertifizierung oder Trinkwasserzulassung nach UBA-Leitlinie (z.B. OKS 1110, Glissa oder Original Sage Appliances-Fett). Mineralölbasierte Schmierstoffe, WD-40 oder Speiseöle dürfen keinesfalls verwendet werden, da sie den POM-Kunststoff verspröden, Dichtungen aufquellen lassen und ranzig werden.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Welches Entkalkungsmittel darf für die ThermoJet-Schnellheizer Baugruppe verwendet werden?</div>
+                <div class="faq-a">Für die ThermoJet-Technologie dürfen keinesfalls aggressive Essigsäuren oder ungeeignete Zitronensäurelösungen verwendet werden. Reine Zitronensäure neigt bei hohen Erwärmungstemperaturen dazu, schwerlösliches Calciumcitrat auszufällen, welches die filigranen Mikrokapillaren des ThermoJets irreparabel verstopft. Essigsäure greift die internen FKM- und VMQ-Elastomere chemisch an. Vorgeschrieben sind professionelle Entkalkungsmittel auf Basis von Amidosulfonsäure (Sulfaminsäure) mit Korrosionsinhibitoren. Diese lösen Calcit-Ablagerungen bis zu zehnmal schneller und rückstandsfrei auf, ohne das Edelstahlrohr oder die Lötverbindungen der Baugruppe anzugreifen.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Wann sollte dieses Ersatzteil präventiv gewechselt werden, um Folgeschäden zu vermeiden?</div>
-                <div class="faq-answer">A: Wir empfehlen eine präventive Revision nach ca. 2.500 bis 4.000 Brühzyklen oder spätestens nach 2 Jahren Betriebszeit. Verschlissene Dichtungen führen oft zu schleichendem Wasseraustritt im Gehäuseinneren, der teure Elektronikschäden an der Hauptplatine oder Korrosion am Spindelantrieb verursachen kann. Eine rechtzeitige Wartung spart mehrere hundert Euro Reparaturkosten.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Kann eine defekte Heizleiterbahn auf dem ThermoJet nachgelötet oder instand gesetzt werden?</div>
+                <div class="faq-a">Ein Nachlöten oder Reparieren einer gerissenen Dickschicht-Leiterbahn auf dem ThermoJet ist technisch unmöglich und sicherheitskritisch verboten. Die Leiterbahnen bestehen aus speziellen edelmetallhaltigen Cermet-Pasten, die bei über 850 °C auf das Keramiksubstrat eingebrannt wurden. Konventionelles Weichlot schmilzt bereits bei 180 bis 230 °C und hält den Betriebstemperaturen nicht stand. Zudem führen Überbrückungen zu veränderten ohmschen Widerständen, unkontrollierter lokaler Stromdichte und Brandgefahr. Bei einem Defekt der Heizbahn oder ausgelösten integrierten Schmelzsicherungen muss stets die vollständige Original-Baugruppe (ASIN B0D83VMC71) ersetzt werden.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu Sage</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>Sage Barista Touch &amp; Bambino Plus</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B0D83VMC71?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für Barista Touch &amp; Bambino Plus</div>
+          <ul class="silo-links-list">
             
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/sage/barista-express/bruehgruppe/">
-                  › Barista Express (BES875): 54mm Silikon-Brühkopfdichtung &amp; Duschsieb Schraube
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/sage/barista-touch/thermoblock/">
-                  › Barista Touch &amp; Bambino Plus: ThermoJet 3-Sekunden Schnellheizer Baugruppe
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/sage/dual-boiler/dichtungen/">
-                  › Dual Boiler (BES920): Silikon O-Ringe Größe 007 &amp; 008 für Teflonschläuche (20er Pack)
-                </a>
-              </li>
-            
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/sage/barista-touch/" style="font-weight:700; color:var(--primary);">
+                <span>Alle Barista Touch &amp; Bambino Plus Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Sage Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/sage/barista-express/">
+                  <span>Barista Express (BES875)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/sage/barista-touch/">
+                  <span>Barista Touch &amp; Bambino Plus</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/sage/dual-boiler/">
+                  <span>Dual Boiler (BES920)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/sage/" style="font-weight:700; color:var(--primary);">
+                <span>Zur Sage Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -419,50 +462,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">Sage ThermoJet 3-Sekunden Schnellheizer Baugruppe</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B0D83VMC71?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

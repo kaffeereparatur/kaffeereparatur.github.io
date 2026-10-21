@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De&#39;Longhi</a>
@@ -81,7 +73,7 @@
       <span>Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">De&#39;Longhi • Pumpen &amp; Hydraulik</span>
+        <h1>De&#39;Longhi Magnifica S (ECAM 22.110.B): Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">De&#39;Longhi</span>
-          <span class="badge-cat">Pumpen &amp; Hydraulik</span>
           <span class="badge-rating">★ 4.7 (1.890 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: 5113211311</span>
         </div>
-
-        <h1>De&#39;Longhi Magnifica S (ECAM 22.110.B): Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B08V52MLQ7) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -164,7 +144,7 @@
         <div class="section-box">
           <h2>🔬 Mechatronische Analyse &amp; Funktionsprinzip</h2>
           <hr class="section-divider">
-          <p class="prose-p">Die <strong>Ulka EX5</strong> ist eine elektromechanische Schwingankerpumpe (Solenoid-Plunger-Prinzip), die speziell für Heißgetränke-Hydraulikkreise konzipiert wurde. Im Lastbetrieb an <strong>230 V</strong> Wechselspannung (<strong>50 Hz</strong>, Leistungsaufnahme <strong>48 W</strong>) arbeitet die Spule im Halbwellenbetrieb über eine interne Silizium-Gleichrichterdiode (Typ 1N4007-Äquivalent), wodurch der Tauchkolben mit einer Frequenz von 50 Schwingungshüben pro Sekunde axial ausgelenkt wird.</p>
+          <p class="prose-p">Die <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Ulka Pumpe">Ulka EX5</a> ist eine elektromechanische Schwingankerpumpe (Solenoid-Plunger-Prinzip), die speziell für Heißgetränke-Hydraulikkreise konzipiert wurde. Im Lastbetrieb an <strong>230 V</strong> Wechselspannung (<strong>50 Hz</strong>, Leistungsaufnahme <strong>48 W</strong>) arbeitet die Spule im Halbwellenbetrieb über eine interne Silizium-Gleichrichterdiode (Typ 1N4007-Äquivalent), wodurch der Tauchkolben mit einer Frequenz von 50 Schwingungshüben pro Sekunde axial ausgelenkt wird.</p>
 <p class="prose-p">Der magnetische Kreis besteht aus einem Spulenkörper aus glasfaserverstärktem Polyamid (PA66 GF30) mit Kupferlackdraht-Wicklung der Isolationsklasse F (155 °C), umschlossen von einem verzinkten Weicheisenjoch. Im Inneren der Druckkammer operiert ein korrosionsbeständiger, ferromagnetischer Plungerkolben aus ferritischem Chromstahl (Werkstoff 1.4113 / AISI 430), welcher gegen eine kalibrierte Rückstellfeder aus austenitischem Federstahldraht (<strong>1.4310</strong> / X10CrNi18-8) arbeitet.</p>
 <p class="prose-p">Das integrierte Ventilsystem umfasst ein saugseitiges Rückschlagventil sowie ein federbelastetes Auslassventil mit Elastomer-Dichtkörpern aus <strong>EPDM</strong> bzw. Fluor-Kautschuk (<strong>FKM</strong>) und Ventilführungen aus Polyoxymethylen (<strong>POM</strong>).</p>
 <p class="prose-p">Ein zentrales Qualitätsmerkmal der EX5 gegenüber der EP5-Baureihe ist der Hochdruckanschluss aus entzinkungsbeständigem Messing (<strong>CW617N</strong> / CuZn40Pb2) mit G 1/8-Zoll- bzw. De&#39;Longhi-spezifischer Raccord-Geometrie für Hochdruck-<strong>PTFE</strong>-Leitungen.</p>
@@ -184,248 +164,319 @@
         <div class="section-box">
           <h2>⚠️ Typische Ausfallsymptome &amp; Ursachenanalyse</h2>
           <hr class="section-divider">
-          <p class="prose-p">Das Fehlerbild einer defekten <strong>Ulka EX5</strong> in der De&#39;Longhi Magnifica S manifestiert sich in distinkten akustischen und hydraulischen Anomalien. Ein lautes, trockenes Brummen ohne Wasserförderung deutet auf eine hydrostatische Entkopplung hin: Hierbei ist entweder eine Luftblase im Pumpenraum gefangen (Kavitationsblockade nach Dampfbezug oder Leerlaufen des Wassertanks) oder das saugseitige <strong>POM</strong>/<strong>EPDM</strong>-Rückschlagventil klebt infolge von Kalkausfällungen am Ventilsitz fest.</p>
+          <p class="prose-p">Das Fehlerbild einer defekten <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Ulka Pumpe">Ulka EX5</a> in der De&#39;Longhi Magnifica S manifestiert sich in distinkten akustischen und hydraulischen Anomalien. Ein lautes, trockenes Brummen ohne Wasserförderung deutet auf eine hydrostatische Entkopplung hin: Hierbei ist entweder eine Luftblase im Pumpenraum gefangen (Kavitationsblockade nach Dampfbezug oder Leerlaufen des Wassertanks) oder das saugseitige <strong>POM</strong>/<strong>EPDM</strong>-Rückschlagventil klebt infolge von Kalkausfällungen am Ventilsitz fest.</p>
 <p class="prose-p">Sinkt die Geräuschkulisse hingegen während des Brühvorgangs nahezu auf Null ab, während der Kaffee nur noch tröpfchenweise austritt, liegt dies am Verlust der Kolbenkompression; die Federsteifigkeit der <strong>1.4310</strong>-Rückholfeder reicht nicht mehr aus, um den Kolben gegen den ansteigenden Mahlgut-Gegendruck zurückzubewegen, wodurch der Schwinganker im Magnetfeld festfriert. Ein schrill vibrierendes, metallisches Kreischen signalisiert mechanischen Verschleiß der Kolbenführung oder Schwingungsübertragung durch kollabierte <strong>EPDM</strong>-Aufhängungsgummis an das Gehäuse-Chassis.</p>
-<p class="prose-p">Elektronisch führt mangelnder Durchfluss zu einem Timeout des Hall-Sensor-Flowmeters (Turbinenrad stoppt), woraufhin die Leistungsplatine den Brühzyklus abbricht und die Störungsanzeige &#39;<span class="code-pill">Allgemeiner Alarm</span>&#39; (Warndreieck leuchtet oder blinkt permanent) ausgibt. Ein vollständiger Stillstand der Pumpe bei intaktem Schalter resultiert entweder aus dem Auslösen der thermisch gekoppelten 128-°C-Schmelzsicherung (Klixon-Thermoschutz) auf dem Spulengehäuse oder einem Halbleiterdurchschlag der internen Gleichrichterdiode, was zum Ausfall des Halbwellenhubs führt.</p>
-          
+<p class="prose-p">Elektronisch führt mangelnder Durchfluss zu einem Timeout des Hall-Sensor-Flowmeters (Turbinenrad stoppt), woraufhin die Leistungsplatine den Brühzyklus abbricht und die Störungsanzeige &#39;<a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="De'Longhi Allgemeiner Alarm"><span class="code-pill">Allgemeiner Alarm</span></a>&#39; (Warndreieck leuchtet oder blinkt permanent) ausgibt. Ein vollständiger Stillstand der Pumpe bei intaktem Schalter resultiert entweder aus dem Auslösen der thermisch gekoppelten 128-°C-Schmelzsicherung (Klixon-Thermoschutz) auf dem Spulengehäuse oder einem Halbleiterdurchschlag der internen Gleichrichterdiode, was zum Ausfall des Halbwellenhubs führt.</p>
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Spannungsfreiheit herstellen &amp; Gehäusedemontage</h4>
+                  <p>Netzstecker ziehen, Wassertank und Kaffeesatzbehälter entnehmen. Rückwand mit Torx TX20 lösen, Seitenteile nach hinten schieben und aushängen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Hydraulik- und Kabelstrang dekonnektieren</h4>
+                  <p>Zulaufschlauch (Niederdruck, Silikon) vom Pumpeneingang abziehen. 6,3-mm-Flachsteckhülsen der Spulenversorgung und die Anschlüsse des Überhitzungsschutzes trennen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Hochdruckverbindung &amp; Membranregler lösen</h4>
+                  <p>Messing-Sicherungsklammer (Hairpin-Clip) am Druckausgang mit einer Spitzzange ziehen. PTFE-Druckleitung entnehmen und das Überdruckventil (Membranregler) abschrauben.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Pumpenkorpus aus EPDM-Lagern entnehmen</h4>
+                  <p>Die Ulka EX5 aus den beiden vibrationsdämpfenden EPDM-Gummilagern am Gehäuseboden hebeln. Schwingungsdämpfer auf Rissbildung prüfen und säubern.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Neuinstallation, Dichtungstausch &amp; Inbetriebnahme</h4>
+                  <p>Neue Ulka EX5 mit frischen VMQ/EPDM-O-Ringen (4x2 mm) und OKS 1110 Schmierstoff versehen, montieren, Raccord sichern und Heißwasserbezug zur Entlüftung starten.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Spannungsfreiheit herstellen &amp; Gehäusedemontage</div>
-                <div class="step-item-desc">Netzstecker ziehen, Wassertank und Kaffeesatzbehälter entnehmen. Rückwand mit Torx TX20 lösen, Seitenteile nach hinten schieben und aushängen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Hydraulik- und Kabelstrang dekonnektieren</div>
-                <div class="step-item-desc">Zulaufschlauch (Niederdruck, Silikon) vom Pumpeneingang abziehen. 6,3-mm-Flachsteckhülsen der Spulenversorgung und die Anschlüsse des Überhitzungsschutzes trennen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Hochdruckverbindung &amp; Membranregler lösen</div>
-                <div class="step-item-desc">Messing-Sicherungsklammer (Hairpin-Clip) am Druckausgang mit einer Spitzzange ziehen. PTFE-Druckleitung entnehmen und das Überdruckventil (Membranregler) abschrauben.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Pumpenkorpus aus EPDM-Lagern entnehmen</div>
-                <div class="step-item-desc">Die Ulka EX5 aus den beiden vibrationsdämpfenden EPDM-Gummilagern am Gehäuseboden hebeln. Schwingungsdämpfer auf Rissbildung prüfen und säubern.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Neuinstallation, Dichtungstausch &amp; Inbetriebnahme</div>
-                <div class="step-item-desc">Neue Ulka EX5 mit frischen VMQ/EPDM-O-Ringen (4x2 mm) und OKS 1110 Schmierstoff versehen, montieren, Raccord sichern und Heißwasserbezug zur Entlüftung starten.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Der Austausch der <strong>Ulka EX5</strong> erfordert höchste handwerkliche Präzision im Umgang mit druckbeaufschlagten fluidischen Systemen. Benötigtes Equipment: <strong>Torx</strong>-Schraubendreher <strong>TX20</strong> und <strong>TX10</strong>, Feinmechaniker-Schlitzschraubendreher, Spitzzange, Seitenschneider, Digitalmultimeter zur Impedanzmessung, lebensmittelechtes Silikonfett (<strong>OKS 1110</strong>) sowie zwei neue Hochdruck-O-Ringe (4x2 mm <strong>EPDM</strong> 70 ShA).</p>
+          <p class="prose-p">Der Austausch der <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Ulka Pumpe">Ulka EX5</a> erfordert höchste handwerkliche Präzision im Umgang mit druckbeaufschlagten fluidischen Systemen. Benötigtes Equipment: <strong>Torx</strong>-Schraubendreher <strong>TX20</strong> und <strong>TX10</strong>, Feinmechaniker-Schlitzschraubendreher, Spitzzange, Seitenschneider, Digitalmultimeter zur Impedanzmessung, lebensmittelechtes Silikonfett (<strong>OKS 1110</strong>) sowie zwei neue Hochdruck-O-Ringe (4x2 mm <strong>EPDM</strong> 70 ShA).</p>
 <p class="prose-p">Trennen Sie das Gerät vor Beginn zwingend vom 230-V-Netz. Nach Demontage der Gehäuserückwand und der linken Seitenwand liegt die Hydraulikeinheit im unteren Chassis frei.</p>
 <p class="prose-p">Ziehen Sie den gewebeverstärkten Silikon-Saugschlauch von der <strong>POM</strong>-Tülle der Pumpe ab. Trennen Sie die <strong>6,3 mm</strong> AMP-Flachsteckkontakte; notieren Sie dabei die Position des Spulenthermostats.</p>
 <p class="prose-p">Am Messingausgang der EX5 befindet sich entweder ein Raccord-Druckschlauchanschluss oder ein aufgeschraubter Membranregler. Ziehen Sie die U-förmige Sicherungsklammer aus Federstahl mit der Spitzzange radial heraus und ziehen Sie den <strong>PTFE</strong>-Druckschlauch axial ab.</p>
 <p class="prose-p">Der alte O-Ring muss zwingend entsorgt werden. Drehen Sie den Membranregler bzw. das Überdruckventil gegen den Uhrzeigersinn vom Messinggewinde der alten Pumpe ab.</p>
-<p class="prose-p">Hebeln Sie die alte Pumpe aus den <strong>EPDM</strong>-Aufhängungsblöcken. Setzen Sie die neue <strong>Ulka EX5</strong> in die Schwingungsdämpfer ein; achten Sie auf verspannungsfreien Sitz, um Körperschallbrücken zum ABS-Chassis zu vermeiden.</p>
+<p class="prose-p">Hebeln Sie die alte Pumpe aus den <strong>EPDM</strong>-Aufhängungsblöcken. Setzen Sie die neue <a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Ulka Pumpe">Ulka EX5</a> in die Schwingungsdämpfer ein; achten Sie auf verspannungsfreien Sitz, um Körperschallbrücken zum ABS-Chassis zu vermeiden.</p>
 <p class="prose-p">Dichten Sie das Messinggewinde des Membranreglers neu ab (flüssige Mittelfest-Gewindedichtung oder originalgetreue <strong>EPDM</strong>-Dichtscheibe) und schrauben Sie ihn handfest auf das <strong>CW617N</strong>-Messinggewinde. Bestreichen Sie den neuen 4x2 mm O-Ring hauchdünn mit <strong>OKS 1110</strong>, führen Sie den <strong>PTFE</strong>-Schlauch bis zum spürbaren Anschlag in den Messingflansch ein und verriegeln Sie die Verbindung formschlüssig mit der Sicherungsklammer.</p>
 <p class="prose-p">Stecken Sie den Niederdruckschlauch auf und sichern Sie ihn gegen Lufteintritt. Vor der Gehäusemontage erfolgt die hydrostatische Entlüftung: Schließen Sie das Gerät an, schalten Sie es ein und öffnen Sie sofort das Heißwasserventil am Dampfhahn.</p>
-<p class="prose-p">Die Pumpe füllt den Thermoblock; sobald ein blasenfreier Wasserstrahl austritt, schließen Sie den Hahn. Führen Sie nun einen Testbezug mit Blindsieb oder Kaffeemehl durch und kontrollieren Sie alle Hochdruckverbindungen mit einer Inspektionslampe auf absolute Dichtheit.</p>
-          </div>
+<p class="prose-p">Die Pumpe füllt den <a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a>; sobald ein blasenfreier Wasserstrahl austritt, schließen Sie den Hahn. Führen Sie nun einen Testbezug mit Blindsieb oder Kaffeemehl durch und kontrollieren Sie alle Hochdruckverbindungen mit einer Inspektionslampe auf absolute Dichtheit.</p>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Pumpe brummt laut, Nullförderung (Kavitation / Air-Lock)</strong></td>
-                    <td data-label="Mögliche Ursache">Trockenlauf nach Entleerung oder verklemmtes EPDM-Einlassventil durch Kalkbröckchen.</td>
-                    <td data-label="Lösungsmaßnahme">Dampf-/Heißwasserdrehknopf vollständig öffnen, um Systemunterdruck abzubauen. Gegebenenfalls Wasser über Spritze in den Ansaugtrakt injizieren (Zwangsbefüllung).</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Extremer Druckverlust bei Bezug (Kaffee tröpfelt, Pumpe verstummt fast)</strong></td>
-                    <td data-label="Mögliche Ursache">Federbruch der 1.4310-Rückholfeder oder axiale Riefen im Kolben; Kolben bleibt bei Gegendruck stecken.</td>
-                    <td data-label="Lösungsmaßnahme">Ulka EX5 vollständig austauschen. Ein Einzeltausch interner Federn ist herstellerseitig unzulässig und nicht dauerhaft druckstabil.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Wasseransammlung unter der Maschine während des Pumpenlaufs</strong></td>
-                    <td data-label="Mögliche Ursache">Versprödung oder Schnittbeschädigung des 4x2 mm Hochdruck-O-Rings am Raccord-Ausgang oder Riss im Membranreglergehäuse.</td>
-                    <td data-label="Lösungsmaßnahme">Sicherungsklammer entfernen, PTFE-Leitung kappen/neu absetzen, neuen O-Ring (EPDM 70) mit OKS 1110 einsetzen und Klammer arretieren.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Pumpe brummt laut, Nullförderung (Kavitation / Air-Lock)</td>
+                  <td>Trockenlauf nach Entleerung oder verklemmtes EPDM-Einlassventil durch Kalkbröckchen.</td>
+                  <td class="diag-fix">✓ Dampf-/Heißwasserdrehknopf vollständig öffnen, um Systemunterdruck abzubauen. Gegebenenfalls Wasser über Spritze in den Ansaugtrakt injizieren (Zwangsbefüllung).</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Inspektion des Wassertank-Ansaugsiebs auf Schleimbildung, Biofilm und Partikelablagerungen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Entkalkungszyklus mit amidosulfonsäurebasiertem Entkalker zur Vermeidung von Kalziumkarbonat-Ablagerungen in den Pumpenventilen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6-12 Monate</strong></td>
-                    <td data-label="Maßnahme">Visuelle Prüfung des PTFE-Druckschlauchs, Erneuerung der EPDM-Dichtringe am Pumpenausgang und Schmierung der Raccord-Verbindung mit OKS 1110.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Extremer Druckverlust bei Bezug (Kaffee tröpfelt, Pumpe verstummt fast)</td>
+                  <td>Federbruch der 1.4310-Rückholfeder oder axiale Riefen im Kolben; Kolben bleibt bei Gegendruck stecken.</td>
+                  <td class="diag-fix">✓ Ulka EX5 vollständig austauschen. Ein Einzeltausch interner Federn ist herstellerseitig unzulässig und nicht dauerhaft druckstabil.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Wasseransammlung unter der Maschine während des Pumpenlaufs</td>
+                  <td>Versprödung oder Schnittbeschädigung des 4x2 mm Hochdruck-O-Rings am Raccord-Ausgang oder Riss im Membranreglergehäuse.</td>
+                  <td class="diag-fix">✓ Sicherungsklammer entfernen, PTFE-Leitung kappen/neu absetzen, neuen O-Ring (EPDM 70) mit OKS 1110 einsetzen und Klammer arretieren.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>De&#39;Longhi Magnifica S (ECAM 22.110.B / SB / W), De&#39;Longhi Magnifica S Smart (ECAM 250.23.SB / 250.33.TB), De&#39;Longhi Dinamica (ECAM 350.15.B / 350.35.W / 350.55.B), De&#39;Longhi Autentica (ETAM 29.510.B / ETAM 29.660.SB)</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">Siebträgermaschinen mit Rotationspumpen (z.B. Fluid-o-Tech / Procon), Vollautomaten mit Gleichstrom-Getriebepumpen (24V DC), Kapselmaschinen mit Sysko- oder ARS-Kompaktpumpen abweichender Geometrie, Gastro-Systeme mit Festwasseranschluss ohne Druckminderer</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Magnifica S (ECAM 22.110.B / SB / W)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Magnifica S Smart (ECAM 250.23.SB / 250.33.TB)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Dinamica (ECAM 350.15.B / 350.35.W / 350.55.B)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> De&#39;Longhi Autentica (ETAM 29.510.B / ETAM 29.660.SB)</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Siebträgermaschinen mit Rotationspumpen (z.B. Fluid-o-Tech / Procon)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Vollautomaten mit Gleichstrom-Getriebepumpen (24V DC)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Kapselmaschinen mit Sysko- oder ARS-Kompaktpumpen abweichender Geometrie</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Gastro-Systeme mit Festwasseranschluss ohne Druckminderer</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Inspektion des Wassertank-Ansaugsiebs auf Schleimbildung, Biofilm und Partikelablagerungen.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Entkalkungszyklus mit amidosulfonsäurebasiertem Entkalker zur Vermeidung von Kalziumkarbonat-Ablagerungen in den Pumpenventilen.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Visuelle Prüfung des PTFE-Druckschlauchs, Erneuerung der EPDM-Dichtringe am Pumpenausgang und Schmierung der Raccord-Verbindung mit OKS 1110.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Was ist der technische Unterschied zwischen der Ulka EX5 und der Ulka EP5?</div>
-                <div class="faq-answer">A: Der primäre konstruktive Unterschied liegt im Werkstoff des druckseitigen Pumpenausgangs. Die Ulka EX5 besitzt einen massiven Hochdruckausgang aus korrosions- und entzinkungsbeständigem Messing (CW617N), während die Ulka EP5 über einen Ausgangsstutzen aus thermoplastischem Kunststoff (Polyphthalamid bzw. PA66) verfügt. Der Messingausgang der EX5 gewährleistet eine signifikant höhere mechanische Zug- und Druckbelastbarkeit gegenüber hydraulischen Druckschlägen (Transienten bis 20 bar) sowie eine drastisch reduzierte Rissbildungsneigung bei Temperaturschwankungen und mechanischen Schwingungen des Membranreglers. Die elektrischen Leistungsdaten (48 W, 230 V, 50 Hz, 15 bar Maximaldruck) sind bei beiden Typen identisch.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Was ist der technische Unterschied zwischen der Ulka EX5 und der Ulka EP5?</div>
+                <div class="faq-a">Der primäre konstruktive Unterschied liegt im Werkstoff des druckseitigen Pumpenausgangs. Die Ulka EX5 besitzt einen massiven Hochdruckausgang aus korrosions- und entzinkungsbeständigem Messing (CW617N), während die Ulka EP5 über einen Ausgangsstutzen aus thermoplastischem Kunststoff (Polyphthalamid bzw. PA66) verfügt. Der Messingausgang der EX5 gewährleistet eine signifikant höhere mechanische Zug- und Druckbelastbarkeit gegenüber hydraulischen Druckschlägen (Transienten bis 20 bar) sowie eine drastisch reduzierte Rissbildungsneigung bei Temperaturschwankungen und mechanischen Schwingungen des Membranreglers. Die elektrischen Leistungsdaten (48 W, 230 V, 50 Hz, 15 bar Maximaldruck) sind bei beiden Typen identisch.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum ist die maximale Einschaltdauer der Ulka EX5 auf 2/1 Minuten (ED 66%) spezifiziert?</div>
-                <div class="faq-answer">A: Schwingankerpumpen besitzen aufgrund ihrer kompakten Bauform und der hohen Leistungsdichte der Magnetspule keine aktive Eigenbelüftung. Beim Betrieb an 230 V Wechselstrom dissipiert der Kupferlackdraht der Wicklung erhebliche Joulesche Wärme. Die Betriebsart 2/1 min (Intermittent Operation: maximal 2 Minuten ununterbrochener Lastbetrieb, gefolgt von mindestens 1 Minute Abkühlphase) verhindert, dass die Grenztemperatur der Isolationsklasse F (155 °C) überschritten wird. Bei unzulässigem Dauerlauf erhitzt sich die Spule rasant, was zunächst zum Ansprechen der thermischen Schmelzsicherung (Klixon bei ca. 128 °C) und letztlich zur Zersetzung des Isolierlacks mit irreversiblem Windungsschluss führt.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum ist die maximale Einschaltdauer der Ulka EX5 auf 2/1 Minuten (ED 66%) spezifiziert?</div>
+                <div class="faq-a">Schwingankerpumpen besitzen aufgrund ihrer kompakten Bauform und der hohen Leistungsdichte der Magnetspule keine aktive Eigenbelüftung. Beim Betrieb an 230 V Wechselstrom dissipiert der Kupferlackdraht der Wicklung erhebliche Joulesche Wärme. Die Betriebsart 2/1 min (Intermittent Operation: maximal 2 Minuten ununterbrochener Lastbetrieb, gefolgt von mindestens 1 Minute Abkühlphase) verhindert, dass die Grenztemperatur der Isolationsklasse F (155 °C) überschritten wird. Bei unzulässigem Dauerlauf erhitzt sich die Spule rasant, was zunächst zum Ansprechen der thermischen Schmelzsicherung (Klixon bei ca. 128 °C) und letztlich zur Zersetzung des Isolierlacks mit irreversiblem Windungsschluss führt.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Wie wird die Pumpe nach einem Trockenlauf oder Pumpentausch ohne Spezialwerkzeug korrekt entlüftet?</div>
-                <div class="faq-answer">A: Da die Ulka EX5 als Kolbenpumpe bei vollständig luftgefülltem Zylinder nur ein sehr geringes Saugvakuum aufbauen kann (Kompressionsverhältnis von Luft reicht nicht aus, um das federbelastete Auslassventil gegen den Atmosphärendruck aufzustoßen), entsteht ein sogenannter Air-Lock. Zur Beseitigung setzen Sie den gefüllten Wassertank ein, schalten die Maschine ein und öffnen sofort den manuellen Heißwasser-/Dampfhahn. Dadurch wird der hydraulische Gegendruck des Thermoblocks und des Brühgruppen-Crema-Ventils umgangen. Sollte die Pumpe nach 30 Sekunden noch trocken laufen, kann über eine saubere 20-ml-Einwegspritze manuell warmes Wasser direkt in den Saugschlauch injiziert werden, um die EPDM-Ventilsitze sofort hydrodynamisch zu benetzen.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Wie wird die Pumpe nach einem Trockenlauf oder Pumpentausch ohne Spezialwerkzeug korrekt entlüftet?</div>
+                <div class="faq-a">Da die Ulka EX5 als Kolbenpumpe bei vollständig luftgefülltem Zylinder nur ein sehr geringes Saugvakuum aufbauen kann (Kompressionsverhältnis von Luft reicht nicht aus, um das federbelastete Auslassventil gegen den Atmosphärendruck aufzustoßen), entsteht ein sogenannter Air-Lock. Zur Beseitigung setzen Sie den gefüllten Wassertank ein, schalten die Maschine ein und öffnen sofort den manuellen Heißwasser-/Dampfhahn. Dadurch wird der hydraulische Gegendruck des Thermoblocks und des Brühgruppen-Crema-Ventils umgangen. Sollte die Pumpe nach 30 Sekunden noch trocken laufen, kann über eine saubere 20-ml-Einwegspritze manuell warmes Wasser direkt in den Saugschlauch injiziert werden, um die EPDM-Ventilsitze sofort hydrodynamisch zu benetzen.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu De&#39;Longhi</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>De&#39;Longhi Magnifica S (ECAM 22.110.B)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für Magnifica S (ECAM 22.110.B)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/bruehgruppe/">
-                  › Magnifica S &amp; Dinamica (ECAM Baureihe): Brühgruppe Revision &amp; O-Ring Dichtungsset
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/vibrationspumpe/">
-                  › Magnifica S (ECAM 22.110.B): Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)
+                  <span>Brühgruppe Revision &amp; O-Ring Dichtungsset</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/fehlercodes/">
-                  › Magnifica S (ECAM 22.110.B): Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/milchkaraffe/">
-                  › Dinamica (ECAM 350.55.B): LatteCrema Milchkaraffe &amp; Aufschäumerdeckel
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/thermoblock/">
-                  › Dinamica (ECAM 350.55.B): Thermoblock Durchlauferhitzer 1400W &amp; NTC Sensor
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/magnetventil/">
-                  › Eletta Cappuccino (ECAM 44.660.B): 2-Wege &amp; 3-Wege Solenoid Magnetventil 230V
+                  <span>Allgemeiner Alarm &amp; Rotes Warndreieck Reparaturanleitung</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wassertank-ventil/">
-                  › Magnifica S &amp; Dinamica: Wassertank-Ventil Lippendichtung &amp; Feder
+                  <span>Wassertank-Ventil Lippendichtung &amp; Feder</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/wasserfilter/">
-                  › Alle ECAM &amp; ETAM Serien: DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)
+                  <span>DLSC002 Wasserfilterpatrone gegen Kalk (4er Pack)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/mahlwerk/">
+                  <span>Edelstahl Kegelmahlwerk Mahlkegel &amp; Mahlring</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/" style="font-weight:700; color:var(--primary);">
+                <span>Alle Magnifica S (ECAM 22.110.B) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">De&#39;Longhi Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/magnifica-s/">
+                  <span>Magnifica S &amp; Dinamica (ECAM Baureihe)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/dinamica/">
+                  <span>Dinamica (ECAM 350.55.B)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/eletta-cappuccino/">
+                  <span>Eletta Cappuccino (ECAM 44.660.B)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/delonghi/la-specialista/">
+                  <span>La Specialista (EC9335.M)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="font-weight:700; color:var(--primary);">
+                <span>Zur De&#39;Longhi Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -440,50 +491,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">De&#39;Longhi Ulka EX5 Vibrationspumpe 15 Bar (48W Messing)</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){

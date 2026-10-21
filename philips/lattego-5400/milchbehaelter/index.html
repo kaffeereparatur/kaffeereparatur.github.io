@@ -36,42 +36,34 @@
 </head>
 <body>
   
-<header class="app-header">
-  <div class="header-inner">
-    <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
-      <span class="logo-icon">☕</span>
-      <span>KaffeeTeile<span class="tld">24</span></span>
-      <span class="badge-pro">Expert Hub</span>
-    </a>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://roboparca.github.io/kaffeereparatur/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeTeile<span class="tld">24</span></span>
+        <span class="badge-pro">Expert Hub</span>
+      </a>
 
-    <div class="header-search-wrap">
-      <div class="header-search-box">
-        <span class="search-icon">🔍</span>
-        <input 
-          type="text" 
-          id="instant-search-input" 
-          placeholder="Modell oder Ersatzteil suchen... (z.B. DeLonghi Brühgruppe, EQ6 Mahlwerk)" 
-          autocomplete="off" 
-          spellcheck="false"
-        />
-        <button id="search-clear-btn" class="clear-btn" aria-label="Löschen" style="display:none">✕</button>
+      <nav class="nav-links">
+        <a href="https://roboparca.github.io/kaffeereparatur/#symptome" class="nav-link">Symptome &amp; Probleme</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#marken" class="nav-link">Marken</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/#kategorien" class="nav-link">Ersatzteile</a>
+        <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="nav-link">Fehlercodes</a>
+      </nav>
+
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell oder Ersatzteil suchen (z.B. EQ.6 Mahlwerk)..." autocomplete="off">
+          <button id="search-clear" class="search-clear">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
-      <div id="instant-search-dropdown" class="search-dropdown-menu"></div>
     </div>
-
-    <nav class="header-nav">
-      <a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
-      <a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups &amp; Sage</a>
-    </nav>
-  </div>
-</header>
-
+  </header>
 
   <main class="wrap">
-    <nav class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="https://roboparca.github.io/kaffeereparatur/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips</a>
@@ -81,7 +73,7 @@
       <span>LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657</span>
     </nav>
 
-    <!-- Product Hero Stage -->
+    <!-- Product Hero Stage (LeatherClogs Style) -->
     <section class="detail-hero-grid">
       <div class="gallery-box">
         <div class="main-img-wrap">
@@ -103,14 +95,13 @@
       </div>
 
       <div class="detail-info">
+        <span class="eyebrow">Philips • Milchsysteme &amp; Düsen</span>
+        <h1>Philips LatteGo 5400 (EP5447/90): LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657</h1>
+
         <div class="meta-strip">
-          <span class="badge-brand">Philips</span>
-          <span class="badge-cat">Milchsysteme &amp; Düsen</span>
           <span class="badge-rating">★ 4.8 (3.890 Rezensionen)</span>
           <span class="badge-oem">OEM-Nr: CP0657/01</span>
         </div>
-
-        <h1>Philips LatteGo 5400 (EP5447/90): LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657</h1>
 
         <!-- Quick Specs Badges -->
         <div class="specs-pills-row">
@@ -125,23 +116,12 @@
           
         </div>
 
-        <!-- Amazon Direct Buy Box -->
-        <div class="amazon-buy-box">
-          <div class="amazon-buy-price-row">
-            <div>
-              <span style="font-size:12px; color:#15803d; display:block; font-weight:700;">Verfügbarkeit auf Amazon.de:</span>
-              <span class="amazon-price-tag" style="font-size:20px; color:#15803d;">✓ Sofort lieferbar</span>
-            </div>
-            <span class="amazon-stock-badge">⚡ Prime Same-Day</span>
-          </div>
-
-          <a href="https://www.amazon.de/dp/B08X177K8D?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-amazon-primary">
-            Aktuellen Preis auf Amazon.de prüfen (B08X177K8D) ↗
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B08X177K8D?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
           </a>
-          <div class="amazon-guarantee-note">
-            ✓ Direkte Weiterleitung zum Originalprodukt auf Amazon.de<br>
-            ✓ Prime-Versand am selben/nächsten Werktag &amp; 30 Tage Rückgaberecht
-          </div>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Angebot.</p>
         </div>
 
         <!-- "Auf einen Blick" (Key Highlights Card) -->
@@ -167,7 +147,7 @@
           <p class="prose-p">Das Philips LatteGo-System der Serie 5400 (EP5447/90) verzichtet vollständig auf klassische Silikonschläuche und basiert fluidmechanisch auf dem Venturi-Injektionsprinzip in einer zweigeteilten Baugruppe. Die strukturelle Einheit besteht aus dem transparenten Vorratsbehälter und dem funktionalen Schäumdeckel mit integrierter Mischkammer.</p>
 <p class="prose-p">Als Basismaterialien kommen für den Becherkörper hochgradig dimensionsstabiles, lebensmittelechtes Tritan bzw. Styrol-Acrylnitril (SAN) und für die Schäumeinheit thermisch hochbeständiges Polyoxymethylen (<strong>POM</strong> / Polyacetal) zum Einsatz.</p>
 <p class="prose-p"><strong>POM</strong> gewährleistet geringste Reibungskoeffizienten, exzellente Kriechstromfestigkeit und mechanische Rückstellkräfte an den Arretierungshaken. Die hydraulische Schnittstelle zur Maschine wird über einen geräteseitigen Dampfdorn realisiert, dessen Dichtigkeit durch Dichtelemente aus Fluor-Kautschuk (<strong>FKM</strong>) sowie Silikon-Kautschuk (<strong>VMQ</strong>) mit einer Härte von 60 bis 70 Shore A gewährleistet wird.</p>
-<p class="prose-p">Im vorgeschalteten Dampfpfad arbeitet ein J-Thermoblock, welcher Wasser mittels einer 15-Bar-Vibrationspumpe (Ulka HF/EP5, getaktet über Phasenanschnittsteuerung) zerstäubt und auf 135 °C bis 145 °C erhitzt. Der resultierende Trockendampf wird mit einem Überdruck von 1,8 bis <strong>2,5 bar</strong> über ein 3/2-Wege-Magnetventil und eine interne Dampfdüse (Austrittsbohrung ca. <strong>0,85 mm</strong>) in die Venturi-Düse des LatteGo geleitet.</p>
+<p class="prose-p">Im vorgeschalteten Dampfpfad arbeitet ein J-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a>, welcher Wasser mittels einer 15-Bar-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" class="wiki-link" title="Pumpen &amp; Hydraulik">Vibrationspumpe</a> (Ulka HF/EP5, getaktet über Phasenanschnittsteuerung) zerstäubt und auf 135 °C bis 145 °C erhitzt. Der resultierende Trockendampf wird mit einem Überdruck von 1,8 bis <strong>2,5 bar</strong> über ein 3/2-Wege-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/magnetventil/" class="wiki-link" title="Magnetventile">Magnetventil</a> und eine interne Dampfdüse (Austrittsbohrung ca. <strong>0,85 mm</strong>) in die Venturi-Düse des LatteGo geleitet.</p>
 <p class="prose-p">Gemäß dem Bernoulli-Effekt generiert die hohe Strömungsgeschwindigkeit des Dampfes im Diffusor einen Unterdruck von ca. -0,18 bis -<strong>0,30 bar</strong>. Durch diesen Druckgradienten wird gekühlte Milch (4 °C bis 8 °C) aus dem Behälter nach oben gesaugt.</p>
 <p class="prose-p">In der Mischkammer treffen Milchstrom, Dampf und eine über einen mikrofeinen Belüftungskanal zudosierte Menge atmosphärischer Luft aufeinander. Durch hohe Scherkräfte wird die Milch emulgiert und bildet feinporigen Mikroschaum mit Bläschendurchmessern unter <strong>0,1 mm</strong> bei einer Ausgabetemperatur von 62 °C bis 68 °C.</p>
 <p class="prose-p">Die primären mechanischen Versagensursachen liegen in der Ermüdung der <strong>POM</strong>-Rastnasen, Rissbildungen an der Dichtkante durch thermische Schockbelastungen (Spülmaschine &gt; 70 °C) sowie der Kasein- und Kalkablagerung in den Mikrodüsen, wodurch die laminare Dampfströmung in eine turbulente abreißende Strömung umschlägt.</p>
@@ -189,58 +169,75 @@
 <p class="prose-p">Hier bricht der Venturi-Unterdruck zusammen. Ursache ist typischerweise ein Verzug der Dichtungsflächen zwischen Behälter und <strong>POM</strong>-Deckel (Planparallelitätsabweichung &gt; <strong>0,15 mm</strong>) oder ein Mikroriss in der Ansaugleiste, wodurch Fehlluft gezogen wird.</p>
 <p class="prose-p">Zweitens: Milch blubbert stark im Behälter, kocht auf, steigt jedoch nicht in die Auslaufzone. Dies wird durch thermische Rückkopplung verursacht, wenn die Injektordüse partiell durch denaturierte Milchproteine (Milchstein) verstopft ist und Dampf retrograd in das Reservoir zurückgedrückt wird.</p>
 <p class="prose-p">Drittens: Dünnflüssiger, grobporiger Schaum mit extrem hoher Temperatur (&gt; 75 °C). Ursache ist eine verengte Lufteinzugskante oder eine verminderte Durchflussrate der Hochdruckpumpe durch beginnende Verkalkung des Heizblocks, wodurch die Dampfdichte abnimmt und die Strömungsgeschwindigkeit unter das kritische Niveau fällt.</p>
-<p class="prose-p">Viertens: Kondensat- und Dampfaustritt an der Schnittstelle zur Frontblende, begleitet von Wasseransammlungen in der Abtropfschale. Ursache ist die Versprödung oder Mikrorissbildung des <strong>VMQ</strong>-Formdichtrings am geräteseitigen Dampfauslaufstutzen oder eine Erschlaffung der internen Edelstahlfeder (Werkstoff <strong>1.4310</strong>) des Brühgruppen- bzw.</p>
-<p class="prose-p">Dampfbypassventils. Fünftens: Geräteseitige Fehlermeldung &#39;Error 05&#39; (Wasserkreislauf blockiert).</p>
-<p class="prose-p">Zwar betrifft dies die interne Sensorik, wird jedoch häufig durch verstopfte Dampfwege oder defekte 2-Wege/3-Wege-Solenoidventile ausgelöst, welche den Gegendruck im LatteGo-Betrieb nicht überwinden können.</p>
-          
+<p class="prose-p">Viertens: Kondensat- und Dampfaustritt an der Schnittstelle zur Frontblende, begleitet von Wasseransammlungen in der Abtropfschale. Ursache ist die Versprödung oder Mikrorissbildung des <strong>VMQ</strong>-Formdichtrings am geräteseitigen Dampfauslaufstutzen oder eine Erschlaffung der internen Edelstahlfeder (Werkstoff <strong>1.4310</strong>) des <a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppen</a>- bzw.</p>
+<p class="prose-p">Dampfbypassventils. Fünftens: Geräteseitige <a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" class="wiki-link" title="Diagnose &amp; Fehlercode-Datenbank">Fehlermeldung</a> &#39;Error 05&#39; (Wasserkreislauf blockiert).</p>
+<p class="prose-p">Zwar betrifft dies die interne Sensorik, wird jedoch häufig durch verstopfte Dampfwege oder defekte 2-Wege/3-Wege-<a href="https://roboparca.github.io/kaffeereparatur/kategorie/magnetventil/" class="wiki-link" title="Magnetventile">Solenoidventile</a> ausgelöst, welche den Gegendruck im LatteGo-Betrieb nicht überwinden können.</p>
+        </div>
+
+        <!-- Section 3: 5 Step-by-Step Action Cards -->
+        <div class="section-box">
+          <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Befolgen Sie diese 5 aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch der Baugruppe:</p>
+
+          <div class="steps-cards-grid">
+            
+              <div class="step-card">
+                <div class="step-badge">1</div>
+                <div class="step-body">
+                  <h4>Sicherheitsabschaltung und Druckentlastung</h4>
+                  <p>Kaffeevollautomaten ausschalten, Netzstecker (230 V) ziehen und das System mindestens 30 Minuten abkühlen lassen, um Restdampfdruck und Verbrennungsrisiken am Thermoblock zu eliminieren.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">2</div>
+                <div class="step-body">
+                  <h4>Zerlegung und visuelle Begutachtung des LatteGo-Behälters</h4>
+                  <p>Den LatteGo-Becher durch Druck auf die untere POM-Entriegelungslasche in seine zwei Komponenten trennen. Beide Segmente unter starkem Licht mit einer Lupe auf Haarrisse, Abplatzungen an der Dichtkante und Deformierungen prüfen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">3</div>
+                <div class="step-body">
+                  <h4>Tiefenreinigung und Ultraschall-Dekontamination</h4>
+                  <p>Beide Gehäuseteile für 15 Minuten in eine 50 °C warme, 10-prozentige Lösung aus alkalischem Milchsystemreiniger einlegen. Die 0,85-mm-Venturi-Verengung und den Luftkanal vorsichtig mit einer zylindrischen Mikrofaser-Interdentalbürste (keine Metallborsten) mechanisch reinigen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">4</div>
+                <div class="step-body">
+                  <h4>Inspektion und Demontage der geräteseitigen Dampfschnittstelle</h4>
+                  <p>Die Frontblende der EP5447/90 bei Bedarf öffnen (Torx TX10 Schrauben hinter der Auslaufabdeckung). Die VMQ-Dampfdichtung auf Elastizitätsverlust, Schnitte oder Aushärtung prüfen. Verschlissene O-Ringe (3,4 x 1,9 mm EPDM) mit einem stumpfen Kunststoff-Pick abziehen.</p>
+                </div>
+              </div>
+            
+              <div class="step-card">
+                <div class="step-badge">5</div>
+                <div class="step-body">
+                  <h4>Dichtungswechsel, Remontage und Funktionsprüfung</h4>
+                  <p>Neue EPDM- bzw. VMQ-Dichtungen mit einem hauchdünnen Film lebensmittelechtem OKS 1110 Silikonfett benetzen und spannungsfrei montieren. LatteGo-Hälften hörbar verrasten, einhängen und einen Testlauf mit kaltem Wasser durchführen, um Unterdruck und Strahlsymmetrie zu bewerten.</p>
+                </div>
+              </div>
+            
+          </div>
+
           <div class="callout-box callout-warn">
             <span class="callout-icon">⚠️</span>
             <div>
-              <strong>Wichtiger Sicherheitshinweis:</strong>
-              Vor allen Arbeiten am Kaffeemaschinen-Chassis immer den <strong>Netzstecker ziehen</strong>! An Spulen, Thermoblöcken und Mikroschaltern liegen lebensgefährliche <strong>230 V Wechselspannung</strong> an.
+              <strong>Sicherheitshinweis:</strong>
+              Vor jeder Gehäuseöffnung zwingend den 230V Netzstecker ziehen. Bei Arbeiten an Thermoblock und Pumpe sicherstellen, dass das System drucklos und vollständig abgekühlt ist.
             </div>
           </div>
         </div>
 
-        <!-- Section 3: Step-by-Step DIY -->
+        <!-- Section 4: Narrative Guide -->
         <div class="section-box">
-          <h2>🛠️ Schritt-für-Schritt DIY-Reparaturanleitung</h2>
+          <h2>📋 Detaillierter Leitfaden für den Selbsteinbau</h2>
           <hr class="section-divider">
-          <div class="steps-container">
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 1</span>
-                <div class="step-item-title">Sicherheitsabschaltung und Druckentlastung</div>
-                <div class="step-item-desc">Kaffeevollautomaten ausschalten, Netzstecker (230 V) ziehen und das System mindestens 30 Minuten abkühlen lassen, um Restdampfdruck und Verbrennungsrisiken am Thermoblock zu eliminieren.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 2</span>
-                <div class="step-item-title">Zerlegung und visuelle Begutachtung des LatteGo-Behälters</div>
-                <div class="step-item-desc">Den LatteGo-Becher durch Druck auf die untere POM-Entriegelungslasche in seine zwei Komponenten trennen. Beide Segmente unter starkem Licht mit einer Lupe auf Haarrisse, Abplatzungen an der Dichtkante und Deformierungen prüfen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 3</span>
-                <div class="step-item-title">Tiefenreinigung und Ultraschall-Dekontamination</div>
-                <div class="step-item-desc">Beide Gehäuseteile für 15 Minuten in eine 50 °C warme, 10-prozentige Lösung aus alkalischem Milchsystemreiniger einlegen. Die 0,85-mm-Venturi-Verengung und den Luftkanal vorsichtig mit einer zylindrischen Mikrofaser-Interdentalbürste (keine Metallborsten) mechanisch reinigen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 4</span>
-                <div class="step-item-title">Inspektion und Demontage der geräteseitigen Dampfschnittstelle</div>
-                <div class="step-item-desc">Die Frontblende der EP5447/90 bei Bedarf öffnen (Torx TX10 Schrauben hinter der Auslaufabdeckung). Die VMQ-Dampfdichtung auf Elastizitätsverlust, Schnitte oder Aushärtung prüfen. Verschlissene O-Ringe (3,4 x 1,9 mm EPDM) mit einem stumpfen Kunststoff-Pick abziehen.</div>
-              </div>
-            
-              <div class="step-item-card">
-                <span class="step-num-badge">SCHRITT 5</span>
-                <div class="step-item-title">Dichtungswechsel, Remontage und Funktionsprüfung</div>
-                <div class="step-item-desc">Neue EPDM- bzw. VMQ-Dichtungen mit einem hauchdünnen Film lebensmittelechtem OKS 1110 Silikonfett benetzen und spannungsfrei montieren. LatteGo-Hälften hörbar verrasten, einhängen und einen Testlauf mit kaltem Wasser durchführen, um Unterdruck und Strahlsymmetrie zu bewerten.</div>
-              </div>
-            
-          </div>
-          <div style="margin-top: 20px;">
-            <p class="prose-p">Zur fachgerechten Überholung des Milchsystems an der Philips 5400 LatteGo werden standardisierte Werkzeuge und Betriebsmittel benötigt: Ein <strong>Torx</strong>-Schraubendrehersatz (Größen <strong>TX10</strong> und <strong>TX15</strong>), ein stumpfes O-Ring-Demontagewerkzeug aus Polyamid, lebensmittelechtes Hochleistungs-Schmierfett nach <strong>NSF-H1</strong>-Zertifizierung (empfohlen: <strong>OKS 1110</strong> oder Haynes Lubri-Film), enzymatischer Milchsteinentferner sowie ein Ultraschallbad. Beginnen Sie mit der galvanischen Trennung des Gerätes vom Netz.</p>
+          <p class="prose-p">Zur fachgerechten Überholung des Milchsystems an der Philips 5400 LatteGo werden standardisierte Werkzeuge und Betriebsmittel benötigt: Ein <strong>Torx</strong>-Schraubendrehersatz (Größen <strong>TX10</strong> und <strong>TX15</strong>), ein stumpfes O-Ring-Demontagewerkzeug aus Polyamid, lebensmittelechtes Hochleistungs-Schmierfett nach <strong>NSF-H1</strong>-Zertifizierung (empfohlen: <strong>OKS 1110</strong> oder Haynes Lubri-Film), enzymatischer Milchsteinentferner sowie ein Ultraschallbad. Beginnen Sie mit der galvanischen Trennung des Gerätes vom Netz.</p>
 <p class="prose-p">Öffnen Sie nicht die Gehäuseteile, solange der interne J-Boiler noch unter thermischer Spannung steht. Nach Demontage der LatteGo-Baugruppe wird der Verschlussmechanismus inspiziert.</p>
 <p class="prose-p">Die <strong>POM</strong>-Rastnase muss einen spürbaren Federeffekt aufweisen; ermüdeter Kunststoff schließt die Trennfuge nicht mehr hermetisch ab. Bei Undichtigkeiten am Gerätestutzen entfernen Sie die Schrauben der vorderen Spenderabdeckung mit dem <strong>TX10</strong>-Bit.</p>
 <p class="prose-p">Dahinter liegt das Dampfzuführungsrohr aus <strong>PTFE</strong>, das mittels einer Klemme auf dem Messing- bzw. Edelstahl-Dampfdorn befestigt ist.</p>
@@ -248,194 +245,254 @@
 <p class="prose-p">Die Dichtflächen des Gehäusestutzens müssen absolut frei von Kalkpartikeln sein; nutzen Sie hierfür Amidosulfonsäure auf einem fusselfreien Tuch. Fetten Sie die neuen Dichtungen extrem sparsam ein – es darf kein Schmiermittel in den dampfführenden Kanal gelangen, da dies zur Verseifung mit Milchfetten und Verstopfung der Injektordüse führt.</p>
 <p class="prose-p">Fügen Sie die Geräteschnittstelle wieder zusammen und achten Sie auf das exakte Anzugsdrehmoment der Schrauben in thermoplastischem Kunststoff (maximal 0,8 bis <strong>1,0 Nm</strong>), um Risse im Gehäusechassis zu vermeiden. Schließen Sie den LatteGo-Behälter fest zusammen (akustischer &#39;Klick&#39;).</p>
 <p class="prose-p">Führen Sie anschließend einen Systemspülgang über das Pflegemenü durch, gefolgt von einem Bezug von <strong>150 ml</strong> Milchschaum. Beobachten Sie währenddessen die Schnittstelle: Es darf kein Tropfen Wasser entweichen, und das Ansaugverhalten muss innerhalb von 1,5 Sekunden nach Dampfventilöffnung kontinuierlich und ohne Pulsationen erfolgen.</p>
-          </div>
         </div>
 
-        <!-- Section 4: Troubleshooting Table -->
+        <!-- Section 5: Diagnostic Troubleshooting Table -->
         <div class="section-box">
-          <h2>📋 Störungs- &amp; Fehlerbehebungs-Tabelle</h2>
+          <h2>🔍 Fehlercode-Diagnose &amp; Problembehebung</h2>
           <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
-                <tr>
-                  <th style="width:25%;">Fehlerbild / Code</th>
-                  <th style="width:35%;">Mögliche Ursache</th>
-                  <th style="width:40%;">Lösungsmaßnahme</th>
-                </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Milch wird nicht angesaugt, starker Dampfaustritt am Auslauf, Blubbern im Behälter</strong></td>
-                    <td data-label="Mögliche Ursache">Verlust des Venturi-Vakuums durch unvollständiges Einrasten des Deckels, Deformierung der Planfläche oder verstopfte Kasein-Rückstände in der Ansaugkapillare.</td>
-                    <td data-label="Lösungsmaßnahme">Behälter zerlegen, in Kaffeefett-/Milchsteinlöser einlegen, Kapillare mit Interdentalbürste säubern, auf Verzug prüfen und mit festem Druck bis zum Einrasten montieren. Bei Haarrissen Behälter austauschen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Heißwasser- und Dampfleckage an der Gerätefront / Unterhalb des LatteGo</strong></td>
-                    <td data-label="Mögliche Ursache">Verschleiß, Verh��rtung oder Riss des geräteseitigen VMQ/EPDM-Formdichtrings am Auslaufdorn; verkalkter Ventilsitz des Dampfventils.</td>
-                    <td data-label="Lösungsmaßnahme">Frontverkleidung demontieren, Dampfkupplung prüfen, O-Ringe (EPDM 70 Shore A) erneuern, Sitz mit Amidosulfonsäure reinigen und Dichtungen mit OKS 1110 Schmierfett leicht benetzen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Milchschaum ist grobporig, fällt sofort zusammen und erreicht &gt; 75 °C</strong></td>
-                    <td data-label="Mögliche Ursache">Verstopfter Lufteinzugskanal an der Oberkante des POM-Deckels oder Kalkablagerungen im J-Thermoblock mit resultierendem Dampfdruckabfall unter 1,5 bar.</td>
-                    <td data-label="Lösungsmaßnahme">Mikro-Luftkanal am POM-Kopf mechanisch mit Nylonborste reinigen; vollständigen Entkalkungszyklus des Automaten mit Philips-Originalentkalker (Amidosulfonsäurebasis) durchführen.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Fehlerbild / Code"><strong>Error 05 im Display bei Anwahl von Cappuccino / Latte Macchiato</strong></td>
-                    <td data-label="Mögliche Ursache">Blockiertes 3/2-Wege-Magnetventil im Dampfzweig oder verstopfter Strömungsweg hinter dem Thermoblock, wodurch der Flowmeter keine Umdrehungen misst.</td>
-                    <td data-label="Lösungsmaßnahme">Magnetventilspule auf Durchgang prüfen (Soll: ca. 2,0–2,4 kΩ). Ventilkörper demontieren, im Entkalkerbad gangbar machen oder Magnetventil komplett ersetzen.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
-        </div>
+          <p class="prose-p">Die folgende Übersicht zeigt die typischen Fehlermeldungen dieses Bauteils und die vom Kundendienst empfohlenen Abhilfemaßnahmen:</p>
 
-        <!-- Section 5: Maintenance Schedule -->
-        <div class="section-box">
-          <h2>📅 Wartungs- &amp; Pflegeintervalle</h2>
-          <hr class="section-divider">
-          <div class="data-table-wrap">
-            <table class="tech-table">
-              <thead>
+          <table class="diag-table">
+            <thead>
+              <tr>
+                <th>Fehlerbild / Symptom</th>
+                <th>Technische Ursache</th>
+                <th>Empfohlene Behebung</th>
+              </tr>
+            </thead>
+            <tbody>
+              
                 <tr>
-                  <th style="width:30%;">Intervall</th>
-                  <th style="width:70%;">Empfohlene Instandhaltungsmaßnahme</th>
+                  <td class="diag-symptom">⚠️ Milch wird nicht angesaugt, starker Dampfaustritt am Auslauf, Blubbern im Behälter</td>
+                  <td>Verlust des Venturi-Vakuums durch unvollständiges Einrasten des Deckels, Deformierung der Planfläche oder verstopfte Kasein-Rückstände in der Ansaugkapillare.</td>
+                  <td class="diag-fix">✓ Behälter zerlegen, in Kaffeefett-/Milchsteinlöser einlegen, Kapillare mit Interdentalbürste säubern, auf Verzug prüfen und mit festem Druck bis zum Einrasten montieren. Bei Haarrissen Behälter austauschen.</td>
                 </tr>
-              </thead>
-              <tbody>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Wöchentlich</strong></td>
-                    <td data-label="Maßnahme">Vollständige Zerlegung des LatteGo-Systems in 2 Teile; manuelle Reinigung mit warmem Wasser und fettlösendem Spülmittel oder im Schonprogramm der Spülmaschine (max. 50 °C im oberen Korb); optische Rissprüfung der POM-Haltenase.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Monatlich</strong></td>
-                    <td data-label="Maßnahme">Tiefenentfettung beider Hälften im alkalischen Milchschaum-Reinigungsbad zur rückstandsfreien Beseitigung organischer Kaseinbeläge; Reinigung der internen Dampfdüse der Maschine mit Dampfreinigungsprogramm.</td>
-                  </tr>
-                
-                  <tr>
-                    <td data-label="Intervall"><strong>Alle 6-12 Monate</strong></td>
-                    <td data-label="Maßnahme">Inspektion und Austausch des geräteseitigen VMQ-Dampfdichtrings; Begutachtung der 1.4310-Edelstahlfeder im Gegendruckventil; Entkalkung des Dampfkreislaufs mit sulfamidsäurebasiertem Entkalker zur Sicherstellung des Solldrucks.</td>
-                  </tr>
-                
-              </tbody>
-            </table>
-          </div>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Heißwasser- und Dampfleckage an der Gerätefront / Unterhalb des LatteGo</td>
+                  <td>Verschleiß, Verh��rtung oder Riss des geräteseitigen VMQ/EPDM-Formdichtrings am Auslaufdorn; verkalkter Ventilsitz des Dampfventils.</td>
+                  <td class="diag-fix">✓ Frontverkleidung demontieren, Dampfkupplung prüfen, O-Ringe (EPDM 70 Shore A) erneuern, Sitz mit Amidosulfonsäure reinigen und Dichtungen mit OKS 1110 Schmierfett leicht benetzen.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Milchschaum ist grobporig, fällt sofort zusammen und erreicht &gt; 75 °C</td>
+                  <td>Verstopfter Lufteinzugskanal an der Oberkante des POM-Deckels oder Kalkablagerungen im J-Thermoblock mit resultierendem Dampfdruckabfall unter 1,5 bar.</td>
+                  <td class="diag-fix">✓ Mikro-Luftkanal am POM-Kopf mechanisch mit Nylonborste reinigen; vollständigen Entkalkungszyklus des Automaten mit Philips-Originalentkalker (Amidosulfonsäurebasis) durchführen.</td>
+                </tr>
+              
+                <tr>
+                  <td class="diag-symptom">⚠️ Error 05 im Display bei Anwahl von Cappuccino / Latte Macchiato</td>
+                  <td>Blockiertes 3/2-Wege-Magnetventil im Dampfzweig oder verstopfter Strömungsweg hinter dem Thermoblock, wodurch der Flowmeter keine Umdrehungen misst.</td>
+                  <td class="diag-fix">✓ Magnetventilspule auf Durchgang prüfen (Soll: ca. 2,0–2,4 kΩ). Ventilkörper demontieren, im Entkalkerbad gangbar machen oder Magnetventil komplett ersetzen.</td>
+                </tr>
+              
+            </tbody>
+          </table>
         </div>
 
         <!-- Section 6: Compatibility Matrix -->
         <div class="section-box">
-          <h2>✅ Kompatibilitäts- &amp; Passgenauigkeits-Matrix</h2>
+          <h2>🧩 Modell-Kompatibilität &amp; Passform</h2>
           <hr class="section-divider">
-          <div class="compat-box">
-            <h3>Bestätigte Passgenauigkeit für folgende Modelle:</h3>
-            <ul class="compat-list">
-              <li>
-                <span class="badge-check">Birekt Kompatibel:</span> 
-                <strong>Philips 5400 Serie LatteGo (EP5447/90, EP5444/90, EP5443/70, EP5441/50), Philips 4300 Serie LatteGo (EP4346/70, EP4343/70, EP4341/50), Philips 3200 Serie LatteGo (EP3246/70, EP3243/70, EP3241/50), Philips 2200 Serie LatteGo (EP2235/40, EP2231/40, EP2230/10)</strong>
-              </li>
-              
-              <li style="margin-top:8px;">
-                <span class="badge-cross">Mechanisch Inkompatibel:</span> 
-                <span style="color:#991b1b;">Philips 5000 / 4000 / 3100 Serie mit integrierter Schlauchkaraffe (z.B. EP5365, HD8834), Philips 2200 / 3200 Serie mit klassischem Panarello-Dampfrohr (z.B. EP2220, EP3221), Saeco GranAroma, Xelsis und PicoBaristo Systeme (kapazitive Schlauchstecksysteme), Gaggia Cadorna / Anima Vollautomaten mit externer Milchkaraffeneinheit</span>
-              </li>
-            </ul>
+          <p class="prose-p">Dieses Ersatzteil wurde auf mechanische und hydraulische Maßhaltigkeit mit folgenden Kaffeevollautomaten-Baureihen verifiziert:</p>
+
+          <div class="compat-matrix-grid">
+            <div class="compat-box">
+              <div class="compat-box-title fits">✓ 100% Kompatible Modelle</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Philips 5400 Serie LatteGo (EP5447/90, EP5444/90, EP5443/70, EP5441/50)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Philips 4300 Serie LatteGo (EP4346/70, EP4343/70, EP4341/50)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Philips 3200 Serie LatteGo (EP3246/70, EP3243/70, EP3241/50)</li>
+                
+                  <li><span style="color:#15803d; font-weight:700;">✓</span> Philips 2200 Serie LatteGo (EP2235/40, EP2231/40, EP2230/10)</li>
+                
+              </ul>
+            </div>
+            <div class="compat-box">
+              <div class="compat-box-title incompatible">✕ Nicht kompatibel für</div>
+              <ul class="compat-list">
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Philips 5000 / 4000 / 3100 Serie mit integrierter Schlauchkaraffe (z.B. EP5365, HD8834)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Philips 2200 / 3200 Serie mit klassischem Panarello-Dampfrohr (z.B. EP2220, EP3221)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Saeco GranAroma, Xelsis und PicoBaristo Systeme (kapazitive Schlauchstecksysteme)</li>
+                
+                  <li><span style="color:#b91c1c; font-weight:700;">✕</span> Gaggia Cadorna / Anima Vollautomaten mit externer Milchkaraffeneinheit</li>
+                
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- Section 7: FAQ -->
+        <!-- Section 7: Maintenance Schedule -->
+        <div class="section-box">
+          <h2>📅 Wartungsplan &amp; Wechselintervalle</h2>
+          <hr class="section-divider">
+          <p class="prose-p">Präventive Pflegeempfehlungen zur Verlängerung der Lebensdauer Ihres Kaffeevollautomaten:</p>
+
+          <div style="display:flex; flex-direction:column; gap:8px; margin-top:12px;">
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Wöchentlich:</span>
+                <span style="font-size:13px; color:#374151;">Vollständige Zerlegung des LatteGo-Systems in 2 Teile; manuelle Reinigung mit warmem Wasser und fettlösendem Spülmittel oder im Schonprogramm der Spülmaschine (max. 50 °C im oberen Korb); optische Rissprüfung der POM-Haltenase.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Monatlich:</span>
+                <span style="font-size:13px; color:#374151;">Tiefenentfettung beider Hälften im alkalischen Milchschaum-Reinigungsbad zur rückstandsfreien Beseitigung organischer Kaseinbeläge; Reinigung der internen Dampfdüse der Maschine mit Dampfreinigungsprogramm.</span>
+              </div>
+            
+              <div style="background:#fcfbf9; border:1px solid #e7e5e4; border-radius:8px; padding:10px 14px; display:flex; gap:12px; align-items:center;">
+                <span style="font-weight:700; font-size:12px; color:#854d0e; min-width:110px;">Alle 6-12 Monate:</span>
+                <span style="font-size:13px; color:#374151;">Inspektion und Austausch des geräteseitigen VMQ-Dampfdichtrings; Begutachtung der 1.4310-Edelstahlfeder im Gegendruckventil; Entkalkung des Dampfkreislaufs mit sulfamidsäurebasiertem Entkalker zur Sicherstellung des Solldrucks.</span>
+              </div>
+            
+          </div>
+        </div>
+
+        <!-- Section 8: FAQ Accordion -->
         <div class="section-box">
           <h2>❓ Häufig gestellte Fragen (FAQ)</h2>
           <hr class="section-divider">
-          <div class="faq-wrap">
+          <div class="faq-box">
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum führt die Reinigung des LatteGo-Behälters bei hohen Spülmaschinentemperaturen zum Funktionsausfall?</div>
-                <div class="faq-answer">A: Der Behälterkörper besteht aus Tritan bzw. Styrol-Acrylnitril (SAN), während der Deckel aus Polyoxymethylen (POM) gefertigt ist. Beide Thermoplaste besitzen unterschiedliche thermische Längenausdehnungskoeffizienten. Temperaturen über 60 °C (insbesondere in Intensivprogrammen moderner Spülmaschinen) führen in Verbindung mit aggressiven alkalischen Spülmaschinentensiden zu irreversiblen inneren Materialspannungen und thermoplastischem Verzug. Da das System keine elastischen Silikonschläuche oder Weichdichtungen nutzt, basiert die Dichtigkeit ausschließlich auf einer Planparallelitätstoleranz von weniger als 0,15 mm. Bei Verzug bricht der für das Venturi-Prinzip essenzielle Unterdruck zusammen, wodurch der Milcheinzug vollständig unterbunden wird.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum führt die Reinigung des LatteGo-Behälters bei hohen Spülmaschinentemperaturen zum Funktionsausfall?</div>
+                <div class="faq-a">Der Behälterkörper besteht aus Tritan bzw. Styrol-Acrylnitril (SAN), während der Deckel aus Polyoxymethylen (POM) gefertigt ist. Beide Thermoplaste besitzen unterschiedliche thermische Längenausdehnungskoeffizienten. Temperaturen über 60 °C (insbesondere in Intensivprogrammen moderner Spülmaschinen) führen in Verbindung mit aggressiven alkalischen Spülmaschinentensiden zu irreversiblen inneren Materialspannungen und thermoplastischem Verzug. Da das System keine elastischen Silikonschläuche oder Weichdichtungen nutzt, basiert die Dichtigkeit ausschließlich auf einer Planparallelitätstoleranz von weniger als 0,15 mm. Bei Verzug bricht der für das Venturi-Prinzip essenzielle Unterdruck zusammen, wodurch der Milcheinzug vollständig unterbunden wird.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Darf man die Dichtfuge zwischen dem Becher und dem POM-Aufsatz mit Silikonfett abdichten?</div>
-                <div class="faq-answer">A: Aus strömungsmechanischer und lebensmittelhygienischer Sicht ist dies strikt zu unterlassen. Die Dichtkante des LatteGo ist ein hochpräzise geschliffener Formschluss. Das Auftragen von Silikonfett (selbst NSF-H1-zertifiziertem OKS 1110) führt dazu, dass sich hydrophobe Fette mit den amphiphilen Proteinen der Milch (vor allem Kasein) verbinden. Dies resultiert in einer sofortigen Verklumpung innerhalb der 0,85 mm messenden Venturi-Expansionskammer. Zudem zerstört eingetragenes Silikonfett die Oberflächenspannung der Milchbläschen nachhaltig, sodass eine Bildung von feinporigem Mikroschaum physikalisch unmöglich wird. Ein undichter Becher muss durch Beseitigung mechanischer Grate oder den Austausch der Baugruppe instandgesetzt werden.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Darf man die Dichtfuge zwischen dem Becher und dem POM-Aufsatz mit Silikonfett abdichten?</div>
+                <div class="faq-a">Aus strömungsmechanischer und lebensmittelhygienischer Sicht ist dies strikt zu unterlassen. Die Dichtkante des LatteGo ist ein hochpräzise geschliffener Formschluss. Das Auftragen von Silikonfett (selbst NSF-H1-zertifiziertem OKS 1110) führt dazu, dass sich hydrophobe Fette mit den amphiphilen Proteinen der Milch (vor allem Kasein) verbinden. Dies resultiert in einer sofortigen Verklumpung innerhalb der 0,85 mm messenden Venturi-Expansionskammer. Zudem zerstört eingetragenes Silikonfett die Oberflächenspannung der Milchbläschen nachhaltig, sodass eine Bildung von feinporigem Mikroschaum physikalisch unmöglich wird. Ein undichter Becher muss durch Beseitigung mechanischer Grate oder den Austausch der Baugruppe instandgesetzt werden.</div>
               </div>
             
-              <div class="faq-card">
-                <div class="faq-question">Q: Warum spuckt die Philips 5400 zu Beginn der Milchschaumzubereitung stoßweise Heißwasser aus?</div>
-                <div class="faq-answer">A: Dieses Phänomen ist thermohydraulisch bedingt: Vor der eigentlichen Dampferzeugung befindet sich im Rohrleitungssystem zwischen dem J-Thermoblock und dem Auslaufventil abgekühltes Restwasser aus vorherigen Zyklen. Der Thermoblock benötigt ca. 3 bis 5 Sekunden, um eine homogene Verdampfungstemperatur von über 135 °C zu etablieren. Wenn das interne 3/2-Wege-Solenoidventil schaltet, wird dieses Totraumkondensat vor der Dampffront durch den Dampfdruck herausgepresst. Sollte die Wassermenge jedoch über 10–15 ml liegen und der Übergang in homogenen Trockendampf verzögert erfolgen, deutet dies auf einen defekten NTC-Temperatursensor am Boiler, eine unzureichende Heizleistung durch Kalkpanzerung oder eine defekte Rückstellfeder im Brühgruppen-Drainageventil hin.</div>
+              <div class="faq-item">
+                <div class="faq-q">Q: Warum spuckt die Philips 5400 zu Beginn der Milchschaumzubereitung stoßweise Heißwasser aus?</div>
+                <div class="faq-a">Dieses Phänomen ist thermohydraulisch bedingt: Vor der eigentlichen Dampferzeugung befindet sich im Rohrleitungssystem zwischen dem J-Thermoblock und dem Auslaufventil abgekühltes Restwasser aus vorherigen Zyklen. Der Thermoblock benötigt ca. 3 bis 5 Sekunden, um eine homogene Verdampfungstemperatur von über 135 °C zu etablieren. Wenn das interne 3/2-Wege-Solenoidventil schaltet, wird dieses Totraumkondensat vor der Dampffront durch den Dampfdruck herausgepresst. Sollte die Wassermenge jedoch über 10–15 ml liegen und der Übergang in homogenen Trockendampf verzögert erfolgen, deutet dies auf einen defekten NTC-Temperatursensor am Boiler, eine unzureichende Heizleistung durch Kalkpanzerung oder eine defekte Rückstellfeder im Brühgruppen-Drainageventil hin.</div>
               </div>
             
           </div>
         </div>
+
       </article>
 
-      <!-- Sidebar -->
-      <aside class="article-sidebar">
+      <!-- Sidebar Silo Navigation -->
+      <aside class="sidebar">
+        <!-- Direct Buy Box in Sidebar -->
         <div class="sidebar-box">
-          <h3>📦 Mehr zu Philips</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Ersatzteil prüfen</div>
+          <p style="font-size:13px; color:#57534e; margin-bottom:12px;">
+            Originalgetreue Passform nach Herstellerspezifikation für <strong>Philips LatteGo 5400 (EP5447/90)</strong>.
+          </p>
+          <a class="cta" href="https://www.amazon.de/dp/B08X177K8D?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" style="width:100%; display:block; padding:12px 16px; font-size:14px;">
+            Verfügbarkeit prüfen ↗
+          </a>
+          <p class="note" style="margin-top:8px;">Live-Anzeige über geprüften Anbieter.</p>
+        </div>
+
+        <!-- Model Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Weitere Teile für LatteGo 5400 (EP5447/90)</div>
+          <ul class="silo-links-list">
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/aquaclean-filter/">
-                  › LatteGo 5400 (EP5447/90): AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/milchbehaelter/">
-                  › LatteGo 5400 (EP5447/90): LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657
+                  <span>AquaClean Kalk- und Wasserfilter CA6903/10 (2er Pack)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/fehlercodes/">
-                  › LatteGo 5400 / 4300 / 3200 / 2200: Fehlercode 1, 2, 3, 4, 5 &amp; Wartungs-Diagnose
+                  <span>Fehlercode 1, 2, 3, 4, 5 &amp; Wartungs-Diagnose</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/bruehgruppe/">
-                  › LatteGo 2200 / 3200 / 4300 / 5400: Saeco &amp; Philips Brühgruppe komplett entnehmbar
+                  <span>Saeco &amp; Philips Brühgruppe komplett entnehmbar</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
                 <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/schmiermittel/">
-                  › Alle Philips &amp; Saeco Maschinen: Original Silikonfett HD5061/01 Schmiermittel (5g Tube)
+                  <span>Original Silikonfett HD5061/01 Schmiermittel (5g Tube)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
               <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-3200/auslaufduese/">
-                  › LatteGo 3200 &amp; 4300: Kaffeeauslauf Schieber &amp; Düsenabdeckung schwarz
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/bruehgruppe/">
+                  <span>Kompletter O-Ring Dichtungssatz für Brühkolben (10-teilig)</span>
+                  <span style="color:#a8a29e;">›</span>
                 </a>
               </li>
             
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/philips-2200/panarello/">
-                  › Philips 2200 (EP2220/10): Klassischer Milchaufschäumer Panarello Dampfdüse
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://roboparca.github.io/kaffeereparatur/philips/saeco-xelsis/milchsystem/">
-                  › Saeco Xelsis (SM7683/00): HygieSteam Dampf-Reinigungsanschluss &amp; Milchschlauch
-                </a>
-              </li>
-            
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/" style="font-weight:700; color:var(--primary);">
+                <span>Alle LatteGo 5400 (EP5447/90) Ersatzteile ›</span>
+              </a>
+            </li>
           </ul>
         </div>
 
+        <!-- Brand Hub Silo Links -->
         <div class="sidebar-box">
-          <h3>🔧 Beliebte Ersatzteil-Kategorien</h3>
-          <ul class="sidebar-links">
+          <div class="sidebar-title">Philips Baureihen</div>
+          <ul class="silo-links-list">
+            
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-5400/">
+                  <span>LatteGo 5400 (EP5447/90)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/lattego-3200/">
+                  <span>LatteGo 3200 &amp; 4300</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/philips-2200/">
+                  <span>Philips 2200 (EP2220/10)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/saeco-xelsis/">
+                  <span>Saeco Xelsis (SM7683/00)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://roboparca.github.io/kaffeereparatur/philips/saeco-granaroma/">
+                  <span>Saeco GranAroma (SM6580/00)</span>
+                  <span style="color:#a8a29e;">›</span>
+                </a>
+              </li>
+            <li>
+              <a href="https://roboparca.github.io/kaffeereparatur/philips/" style="font-weight:700; color:var(--primary);">
+                <span>Zur Philips Übersicht ›</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Category Silo Links -->
+        <div class="sidebar-box">
+          <div class="sidebar-title">Ersatzteil-Kategorien</div>
+          <ul class="silo-links-list">
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">› Brühgruppen &amp; Dichtungen</a></li>
-            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› Ulka Pumpen &amp; Ventile</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">› 15-Bar Ulka Pumpen</a></li>
+            <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/thermoblock/">› Thermoblöcke &amp; Heizer</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">› Keramik- &amp; Stahl-Mahlwerke</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">› Milchsysteme &amp; Schläuche</a></li>
             <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">› Wasserfilter &amp; Entkalkung</a></li>
@@ -450,50 +507,53 @@
   <div class="mobile-sticky-cta">
     <div class="sticky-info">
       <span class="sticky-title">Philips LatteGo 2-Teiliger Milchbehälter &amp; Schäumdüse CP0657</span>
-      <span class="sticky-sub">✓ Sofort lieferbar bei Amazon Prime</span>
+      <span class="sticky-sub">Geprüfte Spezifikation &amp; DIY-Anleitung</span>
     </div>
     <a href="https://www.amazon.de/dp/B08X177K8D?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="btn-sticky-amazon">
-      Auf Amazon.de ↗
+      Preis prüfen ↗
     </a>
   </div>
 
   
-<footer class="app-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-col">
-      <h3>☕ Führende Vollautomaten-Marken</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/">De'Longhi Ersatzteile &amp; Brühgruppen</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/">Siemens EQ Serie Reparatur-Leitfäden</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/jura/">Jura E-Serie Drainageventile &amp; Filter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/philips/">Philips LatteGo &amp; AquaClean Systeme</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/krups/">Krups, Sage &amp; Melitta Komponenten</a></li>
-      </ul>
+  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:60px; font-size:13px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-bottom:32px;">
+      <div>
+        <div style="font-weight:800; font-size:16px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          <span>☕</span> KaffeeTeile24.de
+        </div>
+        <p style="line-height:1.6; color:#78716c;">
+          Das unabhängige Referenz- und Reparaturportal für Kaffeevollautomaten in Deutschland, Österreich und der Schweiz.
+        </p>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Top Marken</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/siemens/" style="color:#a8a29e;">Siemens EQ Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Kategorien</h4>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:6px;">
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/" style="color:#a8a29e;">Keramik-Mahlwerke</a></li>
+          <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/" style="color:#a8a29e;">Fehlercode-Datenbank</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="color:#ffffff; font-weight:700; margin-bottom:12px;">Transparenz</h4>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal vergleichen wir Original-Ersatzteile und OEM-Komponenten. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+        </p>
+      </div>
     </div>
-    <div class="footer-col">
-      <h3>⚙️ Ersatzteil-Kategorien</h3>
-      <ul>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/bruehgruppe/">Brühgruppen, Dichtungssätze &amp; O-Ringe</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/vibrationspumpe/">Ulka 15-Bar Vibrationspumpen &amp; Ventile</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/mahlwerk/">Keramik- &amp; Stahl-Mahlwerke</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/milchsystem/">Milchschäumer &amp; Edelstahlrohre</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/wasserfilter/">AquaClean &amp; Claris Wasserfilter</a></li>
-        <li><a href="https://roboparca.github.io/kaffeereparatur/kategorie/fehlercodes/">Störungsdiagnose &amp; Fehlercodes</a></li>
-      </ul>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeTeile24. Alle Rechte vorbehalten. Unabhängiges Vergleichs- und Reparaturportal.
     </div>
-    <div class="footer-col">
-      <h3>Transparenz &amp; Partnerprogramm</h3>
-      <p class="footer-note">
-        KaffeeTeile24 ist ein unabhängiges deutsches Informationsportal für Kaffeevollautomaten-Reparaturen, Original-Ersatzteile und DIY-Instandsetzung.
-      </p>
-      <p class="footer-note">
-        Als Amazon-Partner verdienen wir an qualifizierten Verkäufen über die bereitgestellten Affiliate-Links. Alle Preise inkl. MwSt., zzgl. Versand.
-      </p>
-      <p style="margin-top:10px; font-size:11px;">&copy; 2026 KaffeeTeile24.de — Alle Rechte vorbehalten.</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
   (function(){
