@@ -11,32 +11,38 @@
 </head>
 <body>
   
-  <header class="app-header">
-    <div class="header-inner">
-      <a href="https://kaffeereparatur.github.io/" class="brand-logo">
-        <span class="logo-icon">☕</span>
-        <span>KaffeeReparatur<span class="tld">.de</span></span>
-        <span class="badge-pro">Silo Hub</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="https://kaffeereparatur.github.io/#marken" class="nav-link">Hersteller</a>
-        <a href="https://kaffeereparatur.github.io/#kategorien" class="nav-link">Baugruppen</a>
-      </nav>
-
-      <div class="header-search">
-        <div class="search-input-wrap">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="site-search" class="search-input" placeholder="Ersatzteil, Modell oder ASIN suchen..." autocomplete="off">
-          <button id="search-clear" class="search-clear" aria-label="Suche leeren">✕</button>
+  <header class="ios-nav-header">
+    <div class="ios-nav-container">
+      <div class="ios-nav-top">
+        <a href="https://kaffeereparatur.github.io/" class="ios-nav-brand">
+          <span class="ios-nav-logo">☕</span>
+          <span class="ios-brand-name">KaffeeReparatur<span class="ios-brand-sub">.de</span></span>
+        </a>
+        <div class="ios-nav-shortcuts">
+          <a href="https://kaffeereparatur.github.io/#marken" class="ios-nav-chip">Hersteller</a>
+          <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-nav-chip">Baugruppen</a>
         </div>
-        <div id="search-dropdown" class="search-dropdown"></div>
+      </div>
+
+      <div class="ios-search-wrapper">
+        <div class="ios-search-bar">
+          <svg class="ios-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" id="site-search" class="ios-search-input" placeholder="Suchen nach Modell, Marke oder Teil..." autocomplete="off">
+          <button id="search-clear" class="ios-search-clear" aria-label="Löschen" type="button">✕</button>
+        </div>
+        <div id="search-dropdown" class="ios-search-dropdown"></div>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="ios-nav-back-bar">
+      <a href="https://kaffeereparatur.github.io/philips/" class="ios-nav-back-btn">
+        <span class="ios-nav-back-chevron">‹</span> Philips
+      </a>
+    </div>
+
+    <nav class="ios-breadcrumb" aria-label="Breadcrumb">
       <a href="https://kaffeereparatur.github.io/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://kaffeereparatur.github.io/philips/">Philips</a>
@@ -44,807 +50,919 @@
       <span aria-current="page">LatteGo 2200 &amp; 3200 Serie</span>
     </nav>
 
-    <div style="background:#ffffff; border:1px solid var(--border-color); border-radius:16px; padding:28px 18px; margin:16px 0 28px; text-align:center;">
-      <h1 style="font-size:26px; font-weight:800; color:var(--text-main); margin-bottom:8px;">Philips LatteGo 2200 &amp; 3200 Serie</h1>
-      <p style="font-size:14.5px; color:var(--text-muted); max-width:650px; margin:0 auto; line-height:1.6;">
+    <div class="ios-hero-card">
+      <span class="ios-pill ios-pill-green" style="font-weight:700; margin-bottom:8px; display:inline-block;">MODELLREIHE</span>
+      <h1 class="ios-hero-title">Philips LatteGo 2200 &amp; 3200 Serie</h1>
+      <p class="ios-hero-sub">
         Kompatible Original- und OEM-Ersatzteile für die Modellreihe LatteGo 2200 &amp; 3200 Serie. Wartungsleitfäden, Dichtungssätze und mechatronische Fehlerdiagnose.
       </p>
     </div>
 
+    <div class="ios-section-title-bar">
+      <h2 class="ios-section-heading">Kompatible Ersatzteile &amp; Revisions-Kits</h2>
+      <span class="ios-section-count">44 Artikel</span>
+    </div>
     <div class="prod-grid">
       
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61l2a1DJlgL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco LatteGo Milchbehälter-Karaffe-Baugruppe für Philips 5000-Serie" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61l2a1DJlgL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco LatteGo Milchbehälter-Karaffe-Baugruppe für Philips 5000-Serie" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/">Saeco LatteGo Milchbehälter-Karaffe-Baugruppe für Philips 5000-Serie</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/">Saeco LatteGo Milchbehälter-Karaffe-Baugruppe für Philips 5000-Serie</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/512r-ijQNxL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Milchbehälter (Version C) zu LatteGo Kaffeemaschine, Schwarz, Silver, Transparent" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/512r-ijQNxL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Philips Milchbehälter (Version C) zu LatteGo Kaffeemaschine, Schwarz, Silver, Transparent" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/">Philips Milchbehälter (Version C) zu LatteGo Kaffeemaschine, Schwarz, Silver, Transparent</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/">Philips Milchbehälter (Version C) zu LatteGo Kaffeemaschine, Schwarz, Silver, Transparent</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71ZHY2aWUtL._AC_SL1500_.jpg" class="prod-card-thumb" alt="VIOKS Milchkaraffe Kaffeevollautomat Ersatz für Phіlips 421945016211" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71ZHY2aWUtL._AC_SL1500_.jpg" class="ios-card-thumb" alt="VIOKS Milchkaraffe Kaffeevollautomat Ersatz für Phіlips 421945016211" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/">VIOKS Milchkaraffe Kaffeevollautomat Ersatz für Phіlips 421945016211</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/">VIOKS Milchkaraffe Kaffeevollautomat Ersatz für Phіlips 421945016211</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61K+ncwmX5L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips LatteGo Espressomaschine Ersatzkaraffe, Premium Large, Chrom (für EP5447/94, EP4347/94, EP3246/74)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61K+ncwmX5L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Philips LatteGo Espressomaschine Ersatzkaraffe, Premium Large, Chrom (für EP5447/94, EP4347/94, EP3246/74)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/">Philips LatteGo Espressomaschine Ersatzkaraffe, Premium Large, Chrom (für EP5447/94, EP4347/94, EP3246/74)</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/">Philips LatteGo Espressomaschine Ersatzkaraffe, Premium Large, Chrom (für EP5447/94, EP4347/94, EP3246/74)</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-lattego-ersatzkaraffe-fuer-ep2230-14-ep324-b08ksjm62h/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61RC6f4k7IL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips LatteGo Ersatzkaraffe für EP2230/14 &amp; EP3241/54" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-lattego-ersatzkaraffe-fuer-ep2230-14-ep324-b08ksjm62h/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61RC6f4k7IL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Philips LatteGo Ersatzkaraffe für EP2230/14 &amp; EP3241/54" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-lattego-ersatzkaraffe-fuer-ep2230-14-ep324-b08ksjm62h/">Philips LatteGo Ersatzkaraffe für EP2230/14 &amp; EP3241/54</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/philips-lattego-ersatzkaraffe-fuer-ep2230-14-ep324-b08ksjm62h/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-lattego-ersatzkaraffe-fuer-ep2230-14-ep324-b08ksjm62h/">Philips LatteGo Ersatzkaraffe für EP2230/14 &amp; EP3241/54</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-lattego-ersatzkaraffe-fuer-ep2230-14-ep324-b08ksjm62h/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-saeco-421944029453-original-milchbehaelter-b07vfmhctb/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51x62TGKOlL._AC_SL1500_.jpg" class="prod-card-thumb" alt="PHILIPS Saeco 421944029453 ORIGINAL Milchbehälter Milchkaraffe Milchschale Milchtank Kanne Deckel Düse Rohr Kaffeemaschine Kaffeeautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-saeco-421944029453-original-milchbehaelter-b07vfmhctb/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51x62TGKOlL._AC_SL1500_.jpg" class="ios-card-thumb" alt="PHILIPS Saeco 421944029453 ORIGINAL Milchbehälter Milchkaraffe Milchschale Milchtank Kanne Deckel Düse Rohr Kaffeemaschine Kaffeeautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-saeco-421944029453-original-milchbehaelter-b07vfmhctb/">PHILIPS Saeco 421944029453 ORIGINAL Milchbehälter Milchkaraffe Milchschale Milchtank Kanne Deckel Düse Rohr Kaffeemaschine Kaffeeautomat</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/philips-saeco-421944029453-original-milchbehaelter-b07vfmhctb/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-saeco-421944029453-original-milchbehaelter-b07vfmhctb/">PHILIPS Saeco 421944029453 ORIGINAL Milchbehälter Milchkaraffe Milchschale Milchtank Kanne Deckel Düse Rohr Kaffeemaschine Kaffeeautomat</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-saeco-421944029453-original-milchbehaelter-b07vfmhctb/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-cp0355-01-milchbehaelter-komplettset-fuer-b07qfscnqj/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/714RkvB+gDL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips CP0355/01 Milchbehälter-Komplettset, für Kaffeemaschine, Milchkanne, schwarz, transparent, für Philips: HD8921/01, HD8921/09, HD8922/01, HD8922/09, SM3061/00, 1 Stück" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-cp0355-01-milchbehaelter-komplettset-fuer-b07qfscnqj/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/714RkvB+gDL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Philips CP0355/01 Milchbehälter-Komplettset, für Kaffeemaschine, Milchkanne, schwarz, transparent, für Philips: HD8921/01, HD8921/09, HD8922/01, HD8922/09, SM3061/00, 1 Stück" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-cp0355-01-milchbehaelter-komplettset-fuer-b07qfscnqj/">Philips CP0355/01 Milchbehälter-Komplettset, für Kaffeemaschine, Milchkanne, schwarz, transparent, für Philips: HD8921/01, HD8921/09, HD8922/01, HD8922/09, SM3061/00, 1 Stück</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/philips-cp0355-01-milchbehaelter-komplettset-fuer-b07qfscnqj/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-cp0355-01-milchbehaelter-komplettset-fuer-b07qfscnqj/">Philips CP0355/01 Milchbehälter-Komplettset, für Kaffeemaschine, Milchkanne, schwarz, transparent, für Philips: HD8921/01, HD8921/09, HD8922/01, HD8922/09, SM3061/00, 1 Stück</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-cp0355-01-milchbehaelter-komplettset-fuer-b07qfscnqj/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/milchkaennchen-kompatibel-mit-philips-lattego-5000-b0hhnrbrn4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51CZs71+P7L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Milchkännchen Kompatibel Mit Philips LatteGo 5000 5400 5500 Kaffeemaschinen-Milchbecher" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/milchkaennchen-kompatibel-mit-philips-lattego-5000-b0hhnrbrn4/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51CZs71+P7L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Milchkännchen Kompatibel Mit Philips LatteGo 5000 5400 5500 Kaffeemaschinen-Milchbecher" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/milchkaennchen-kompatibel-mit-philips-lattego-5000-b0hhnrbrn4/">Milchkännchen Kompatibel Mit Philips LatteGo 5000 5400 5500 Kaffeemaschinen-Milchbecher</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/milchkaennchen-kompatibel-mit-philips-lattego-5000-b0hhnrbrn4/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/milchkaennchen-kompatibel-mit-philips-lattego-5000-b0hhnrbrn4/">Milchkännchen Kompatibel Mit Philips LatteGo 5000 5400 5500 Kaffeemaschinen-Milchbecher</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/milchkaennchen-kompatibel-mit-philips-lattego-5000-b0hhnrbrn4/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-saec-b09wnbnrzl/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51iGArXRVWL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Milchbehälter kompatibel mit/Ersatzteil für Saeco, Philips CP0154,421944067741 Kaffeevollautomaten (siehe Beschreibung)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-saec-b09wnbnrzl/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51iGArXRVWL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Milchbehälter kompatibel mit/Ersatzteil für Saeco, Philips CP0154,421944067741 Kaffeevollautomaten (siehe Beschreibung)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-saec-b09wnbnrzl/">Milchbehälter kompatibel mit/Ersatzteil für Saeco, Philips CP0154,421944067741 Kaffeevollautomaten (siehe Beschreibung)</a></h3>
-      <div class="prod-card-rating">★ 4.9 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-saec-b09wnbnrzl/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-saec-b09wnbnrzl/">Milchbehälter kompatibel mit/Ersatzteil für Saeco, Philips CP0154,421944067741 Kaffeevollautomaten (siehe Beschreibung)</a></h3>
+      <div class="ios-card-rating">★ 4.9 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-saec-b09wnbnrzl/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71RmPwqRw6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Milchbehälter Kaffeevollautomat 421944075462 421944075461 für Philips" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71RmPwqRw6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Milchbehälter Kaffeevollautomat 421944075462 421944075461 für Philips" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/">Milchbehälter Kaffeevollautomat 421944075462 421944075461 für Philips</a></h3>
-      <div class="prod-card-rating">★ 4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/">Milchbehälter Kaffeevollautomat 421944075462 421944075461 für Philips</a></h3>
+      <div class="ios-card-rating">★ 4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-saeco-minuto-granbaristo-4000-incanto-neu-b0144lv9ku/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51x62TGKOlL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Saeco Minuto GranBaristo 4000 Incanto (neu) Milchkaraffe Milchbehälter Milchkanne" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-saeco-minuto-granbaristo-4000-incanto-neu-b0144lv9ku/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51x62TGKOlL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Philips Saeco Minuto GranBaristo 4000 Incanto (neu) Milchkaraffe Milchbehälter Milchkanne" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-saeco-minuto-granbaristo-4000-incanto-neu-b0144lv9ku/">Philips Saeco Minuto GranBaristo 4000 Incanto (neu) Milchkaraffe Milchbehälter Milchkanne</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/philips-saeco-minuto-granbaristo-4000-incanto-neu-b0144lv9ku/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-saeco-minuto-granbaristo-4000-incanto-neu-b0144lv9ku/">Philips Saeco Minuto GranBaristo 4000 Incanto (neu) Milchkaraffe Milchbehälter Milchkanne</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-saeco-minuto-granbaristo-4000-incanto-neu-b0144lv9ku/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/konzept-wasserkaraffe-ohne-deckel-2er-set-glaskara-b0czxr94v3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61eP-pWXLdL._AC_SL1500_.jpg" class="prod-card-thumb" alt="KONZEPT Wasserkaraffe ohne Deckel 2er Set, Glaskaraffe 1 liter, Karaffe ideal für Wasser, Saft, Wein, Limonade, Coctails und Milch" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/konzept-wasserkaraffe-ohne-deckel-2er-set-glaskara-b0czxr94v3/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61eP-pWXLdL._AC_SL1500_.jpg" class="ios-card-thumb" alt="KONZEPT Wasserkaraffe ohne Deckel 2er Set, Glaskaraffe 1 liter, Karaffe ideal für Wasser, Saft, Wein, Limonade, Coctails und Milch" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/konzept-wasserkaraffe-ohne-deckel-2er-set-glaskara-b0czxr94v3/">KONZEPT Wasserkaraffe ohne Deckel 2er Set, Glaskaraffe 1 liter, Karaffe ideal für Wasser, Saft, Wein, Limonade, Coctails und Milch</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/konzept-wasserkaraffe-ohne-deckel-2er-set-glaskara-b0czxr94v3/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/konzept-wasserkaraffe-ohne-deckel-2er-set-glaskara-b0czxr94v3/">KONZEPT Wasserkaraffe ohne Deckel 2er Set, Glaskaraffe 1 liter, Karaffe ideal für Wasser, Saft, Wein, Limonade, Coctails und Milch</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/konzept-wasserkaraffe-ohne-deckel-2er-set-glaskara-b0czxr94v3/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/lionizer-ersatz-wassertank-passend-fuer-philips-la-b0h329vwlw/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61IIkDCEJeL._AC_SL1500_.jpg" class="prod-card-thumb" alt="LIONIZER Ersatz-Wassertank passend für Philips LatteGo EP5447/90 – Wasserbehälter mit Griff Chrom" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/lionizer-ersatz-wassertank-passend-fuer-philips-la-b0h329vwlw/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61IIkDCEJeL._AC_SL1500_.jpg" class="ios-card-thumb" alt="LIONIZER Ersatz-Wassertank passend für Philips LatteGo EP5447/90 – Wasserbehälter mit Griff Chrom" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/lionizer-ersatz-wassertank-passend-fuer-philips-la-b0h329vwlw/">LIONIZER Ersatz-Wassertank passend für Philips LatteGo EP5447/90 – Wasserbehälter mit Griff Chrom</a></h3>
-      <div class="prod-card-rating">★ 3.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/lionizer-ersatz-wassertank-passend-fuer-philips-la-b0h329vwlw/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/lionizer-ersatz-wassertank-passend-fuer-philips-la-b0h329vwlw/">LIONIZER Ersatz-Wassertank passend für Philips LatteGo EP5447/90 – Wasserbehälter mit Griff Chrom</a></h3>
+      <div class="ios-card-rating">★ 3.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/lionizer-ersatz-wassertank-passend-fuer-philips-la-b0h329vwlw/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/lionizer-wassertank-passend-fuer-philips-lattego-e-b0h3fg9jgc/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71dmGa83-qL._AC_SL1500_.jpg" class="prod-card-thumb" alt="LIONIZER Wassertank passend für Philips LatteGo EP5441/50 – Wasserbehälter komplett Schwarz" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/lionizer-wassertank-passend-fuer-philips-lattego-e-b0h3fg9jgc/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71dmGa83-qL._AC_SL1500_.jpg" class="ios-card-thumb" alt="LIONIZER Wassertank passend für Philips LatteGo EP5441/50 – Wasserbehälter komplett Schwarz" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/lionizer-wassertank-passend-fuer-philips-lattego-e-b0h3fg9jgc/">LIONIZER Wassertank passend für Philips LatteGo EP5441/50 – Wasserbehälter komplett Schwarz</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/lionizer-wassertank-passend-fuer-philips-lattego-e-b0h3fg9jgc/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/lionizer-wassertank-passend-fuer-philips-lattego-e-b0h3fg9jgc/">LIONIZER Wassertank passend für Philips LatteGo EP5441/50 – Wasserbehälter komplett Schwarz</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/lionizer-wassertank-passend-fuer-philips-lattego-e-b0h3fg9jgc/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0ctty751g/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61iTn27SruL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Milchbehälter kompatibel mit/Ersatzteil für Philips Saeco 421946509871 HD88... Babila Kaffeevollautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0ctty751g/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61iTn27SruL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Milchbehälter kompatibel mit/Ersatzteil für Philips Saeco 421946509871 HD88... Babila Kaffeevollautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0ctty751g/">Milchbehälter kompatibel mit/Ersatzteil für Philips Saeco 421946509871 HD88... Babila Kaffeevollautomat</a></h3>
-      <div class="prod-card-rating">★ 3.9 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0ctty751g/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0ctty751g/">Milchbehälter kompatibel mit/Ersatzteil für Philips Saeco 421946509871 HD88... Babila Kaffeevollautomat</a></h3>
+      <div class="ios-card-rating">★ 3.9 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0ctty751g/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0h4l7xmpl/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61bAmRKSw5L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Milchbehälter kompatibel mit/Ersatzteil für Philips 642001018555 EP8757/20 Café Aromis Series 8000 Kaffeevollautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0h4l7xmpl/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61bAmRKSw5L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Milchbehälter kompatibel mit/Ersatzteil für Philips 642001018555 EP8757/20 Café Aromis Series 8000 Kaffeevollautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0h4l7xmpl/">Milchbehälter kompatibel mit/Ersatzteil für Philips 642001018555 EP8757/20 Café Aromis Series 8000 Kaffeevollautomat</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0h4l7xmpl/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0h4l7xmpl/">Milchbehälter kompatibel mit/Ersatzteil für Philips 642001018555 EP8757/20 Café Aromis Series 8000 Kaffeevollautomat</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0h4l7xmpl/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/dl-pro-philips-milchbehaelter-dl-pro-reinigungsbue-b0c24lxsfm/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61ki1shZCFL._AC_SL1500_.jpg" class="prod-card-thumb" alt="DL-pro Philips Milchbehälter + DL-pro Reinigungsbürste Milchkaraffe 421944029081 CP0500/01 für Moltio HD87 Kaffeemaschine" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/dl-pro-philips-milchbehaelter-dl-pro-reinigungsbue-b0c24lxsfm/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61ki1shZCFL._AC_SL1500_.jpg" class="ios-card-thumb" alt="DL-pro Philips Milchbehälter + DL-pro Reinigungsbürste Milchkaraffe 421944029081 CP0500/01 für Moltio HD87 Kaffeemaschine" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/dl-pro-philips-milchbehaelter-dl-pro-reinigungsbue-b0c24lxsfm/">DL-pro Philips Milchbehälter + DL-pro Reinigungsbürste Milchkaraffe 421944029081 CP0500/01 für Moltio HD87 Kaffeemaschine</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/dl-pro-philips-milchbehaelter-dl-pro-reinigungsbue-b0c24lxsfm/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/dl-pro-philips-milchbehaelter-dl-pro-reinigungsbue-b0c24lxsfm/">DL-pro Philips Milchbehälter + DL-pro Reinigungsbürste Milchkaraffe 421944029081 CP0500/01 für Moltio HD87 Kaffeemaschine</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/dl-pro-philips-milchbehaelter-dl-pro-reinigungsbue-b0c24lxsfm/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/bohnenbehaelter-aufsatz-passend-fuer-philips-kaffe-b0dpddbl6v/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61lr5WveorL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Bohnenbehälter Aufsatz passend für Philips Kaffeevollautomaten EP800 bis 5500 Zubehör by 3DCS 650 Gramm Bohnenbehälter Erweiterung passt für Philips mehr Kaffeebohnen Bohnenfach incl Klebestreifen" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/bohnenbehaelter-aufsatz-passend-fuer-philips-kaffe-b0dpddbl6v/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61lr5WveorL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Bohnenbehälter Aufsatz passend für Philips Kaffeevollautomaten EP800 bis 5500 Zubehör by 3DCS 650 Gramm Bohnenbehälter Erweiterung passt für Philips mehr Kaffeebohnen Bohnenfach incl Klebestreifen" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/bohnenbehaelter-aufsatz-passend-fuer-philips-kaffe-b0dpddbl6v/">Bohnenbehälter Aufsatz passend für Philips Kaffeevollautomaten EP800 bis 5500 Zubehör by 3DCS 650 Gramm Bohnenbehälter Erweiterung passt für Philips mehr Kaffeebohnen Bohnenfach incl Klebestreifen</a></h3>
-      <div class="prod-card-rating">★ 4.2 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/bohnenbehaelter-aufsatz-passend-fuer-philips-kaffe-b0dpddbl6v/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/bohnenbehaelter-aufsatz-passend-fuer-philips-kaffe-b0dpddbl6v/">Bohnenbehälter Aufsatz passend für Philips Kaffeevollautomaten EP800 bis 5500 Zubehör by 3DCS 650 Gramm Bohnenbehälter Erweiterung passt für Philips mehr Kaffeebohnen Bohnenfach incl Klebestreifen</a></h3>
+      <div class="ios-card-rating">★ 4.2 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/bohnenbehaelter-aufsatz-passend-fuer-philips-kaffe-b0dpddbl6v/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/lppp-milchbehaelter-milchtank-700-ml-kompatibel-mi-b0bvrd7wql/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51rWvmgAAPL._AC_SL1500_.jpg" class="prod-card-thumb" alt="LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/lppp-milchbehaelter-milchtank-700-ml-kompatibel-mi-b0bvrd7wql/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51rWvmgAAPL._AC_SL1500_.jpg" class="ios-card-thumb" alt="LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/lppp-milchbehaelter-milchtank-700-ml-kompatibel-mi-b0bvrd7wql/">LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/lppp-milchbehaelter-milchtank-700-ml-kompatibel-mi-b0bvrd7wql/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/lppp-milchbehaelter-milchtank-700-ml-kompatibel-mi-b0bvrd7wql/">LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/lppp-milchbehaelter-milchtank-700-ml-kompatibel-mi-b0bvrd7wql/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/kompatibel-mit-philips-lattego-3200-5000-milchbeha-b0gl75fxtw/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51ZaOjfKT6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Kompatibel mit Philips LatteGo 3200 5000 Milchbehälter" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/kompatibel-mit-philips-lattego-3200-5000-milchbeha-b0gl75fxtw/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51ZaOjfKT6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Kompatibel mit Philips LatteGo 3200 5000 Milchbehälter" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Milchsysteme &amp; Karaffen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Milchsysteme &amp; Karaffen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/kompatibel-mit-philips-lattego-3200-5000-milchbeha-b0gl75fxtw/">Kompatibel mit Philips LatteGo 3200 5000 Milchbehälter</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/kompatibel-mit-philips-lattego-3200-5000-milchbeha-b0gl75fxtw/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/kompatibel-mit-philips-lattego-3200-5000-milchbeha-b0gl75fxtw/">Kompatibel mit Philips LatteGo 3200 5000 Milchbehälter</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/kompatibel-mit-philips-lattego-3200-5000-milchbeha-b0gl75fxtw/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-doppelpac-b074m9dz4m/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61lf71xP0UL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Original AquaClean Wasser-Filter Doppelpack für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-doppelpac-b074m9dz4m/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61lf71xP0UL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Philips Original AquaClean Wasser-Filter Doppelpack für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-doppelpac-b074m9dz4m/">Philips Original AquaClean Wasser-Filter Doppelpack für Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-doppelpac-b074m9dz4m/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-doppelpac-b074m9dz4m/">Philips Original AquaClean Wasser-Filter Doppelpack für Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-doppelpac-b074m9dz4m/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/aquafloow-reinigungsset-fuer-philips-saeco-kaffeev-b09twgmj7j/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61oQuKvEftL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Aquafloow Reinigungsset für Philips, Saeco Kaffeevollautomaten – Entkalker 1000 ml, 20 x 2g Reinigungstabletten, 4× Filter kompatibel mit AquaClean CA6903, Reinigungsbürste &amp; Silikonfett" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/aquafloow-reinigungsset-fuer-philips-saeco-kaffeev-b09twgmj7j/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61oQuKvEftL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Aquafloow Reinigungsset für Philips, Saeco Kaffeevollautomaten – Entkalker 1000 ml, 20 x 2g Reinigungstabletten, 4× Filter kompatibel mit AquaClean CA6903, Reinigungsbürste &amp; Silikonfett" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/aquafloow-reinigungsset-fuer-philips-saeco-kaffeev-b09twgmj7j/">Aquafloow Reinigungsset für Philips, Saeco Kaffeevollautomaten – Entkalker 1000 ml, 20 x 2g Reinigungstabletten, 4× Filter kompatibel mit AquaClean CA6903, Reinigungsbürste &amp; Silikonfett</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/aquafloow-reinigungsset-fuer-philips-saeco-kaffeev-b09twgmj7j/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/aquafloow-reinigungsset-fuer-philips-saeco-kaffeev-b09twgmj7j/">Aquafloow Reinigungsset für Philips, Saeco Kaffeevollautomaten – Entkalker 1000 ml, 20 x 2g Reinigungstabletten, 4× Filter kompatibel mit AquaClean CA6903, Reinigungsbürste &amp; Silikonfett</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/aquafloow-reinigungsset-fuer-philips-saeco-kaffeev-b09twgmj7j/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/wessper-rundum-pflegeset-fuer-philips-saeco-kaffee-b093pxvvqv/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/612x1k196AL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Wessper Rundum-Pflegeset für Philips &amp; Saeco Kaffeevollautomaten (2x AquaClean Filter, komp. mit CA6903, Entkalker 500ml, 10x 2g Reinigungstabletten, Silikonfett &amp; Bürste) Optimale Pflege und Wartung" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/wessper-rundum-pflegeset-fuer-philips-saeco-kaffee-b093pxvvqv/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/612x1k196AL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Wessper Rundum-Pflegeset für Philips &amp; Saeco Kaffeevollautomaten (2x AquaClean Filter, komp. mit CA6903, Entkalker 500ml, 10x 2g Reinigungstabletten, Silikonfett &amp; Bürste) Optimale Pflege und Wartung" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/wessper-rundum-pflegeset-fuer-philips-saeco-kaffee-b093pxvvqv/">Wessper Rundum-Pflegeset für Philips &amp; Saeco Kaffeevollautomaten (2x AquaClean Filter, komp. mit CA6903, Entkalker 500ml, 10x 2g Reinigungstabletten, Silikonfett &amp; Bürste) Optimale Pflege und Wartung</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/wessper-rundum-pflegeset-fuer-philips-saeco-kaffee-b093pxvvqv/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/wessper-rundum-pflegeset-fuer-philips-saeco-kaffee-b093pxvvqv/">Wessper Rundum-Pflegeset für Philips &amp; Saeco Kaffeevollautomaten (2x AquaClean Filter, komp. mit CA6903, Entkalker 500ml, 10x 2g Reinigungstabletten, Silikonfett &amp; Bürste) Optimale Pflege und Wartung</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/wessper-rundum-pflegeset-fuer-philips-saeco-kaffee-b093pxvvqv/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrjnv7m/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51n+qbRAIoL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 6 Pack" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrjnv7m/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51n+qbRAIoL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 6 Pack" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrjnv7m/">Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 6 Pack</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrjnv7m/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrjnv7m/">Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 6 Pack</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrjnv7m/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-einzelpac-b074m9dz4n/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61afIe6cIpL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-einzelpac-b074m9dz4n/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61afIe6cIpL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-einzelpac-b074m9dz4n/">Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-einzelpac-b074m9dz4n/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-einzelpac-b074m9dz4n/">Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-einzelpac-b074m9dz4n/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/aqua-crest-filter-ersatz-fuer-philips-aquaclean-ca-b0blvm1q9b/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51TO4MC6oSL._AC_SL1500_.jpg" class="prod-card-thumb" alt="AQUA CREST Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22 (4)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/aqua-crest-filter-ersatz-fuer-philips-aquaclean-ca-b0blvm1q9b/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51TO4MC6oSL._AC_SL1500_.jpg" class="ios-card-thumb" alt="AQUA CREST Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22 (4)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/aqua-crest-filter-ersatz-fuer-philips-aquaclean-ca-b0blvm1q9b/">AQUA CREST Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22 (4)</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/aqua-crest-filter-ersatz-fuer-philips-aquaclean-ca-b0blvm1q9b/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/aqua-crest-filter-ersatz-fuer-philips-aquaclean-ca-b0blvm1q9b/">AQUA CREST Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22 (4)</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/aqua-crest-filter-ersatz-fuer-philips-aquaclean-ca-b0blvm1q9b/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/2-x-saeco-aquaclean-kalk-und-wasserfilter-b01hmnue5i/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71G0JarZAxL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 x Saeco AquaClean Kalk- und Wasserfilter" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/2-x-saeco-aquaclean-kalk-und-wasserfilter-b01hmnue5i/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71G0JarZAxL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 x Saeco AquaClean Kalk- und Wasserfilter" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/2-x-saeco-aquaclean-kalk-und-wasserfilter-b01hmnue5i/">2 x Saeco AquaClean Kalk- und Wasserfilter</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/2-x-saeco-aquaclean-kalk-und-wasserfilter-b01hmnue5i/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/2-x-saeco-aquaclean-kalk-und-wasserfilter-b01hmnue5i/">2 x Saeco AquaClean Kalk- und Wasserfilter</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/2-x-saeco-aquaclean-kalk-und-wasserfilter-b01hmnue5i/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/premium-wasserfilter-kompatibel-mit-philips-aquacl-b0h9hrm4bm/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51DGQNOYGHL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 1 Stück, Filter, Ersatzteile, Zubehör" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/premium-wasserfilter-kompatibel-mit-philips-aquacl-b0h9hrm4bm/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51DGQNOYGHL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 1 Stück, Filter, Ersatzteile, Zubehör" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/premium-wasserfilter-kompatibel-mit-philips-aquacl-b0h9hrm4bm/">Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 1 Stück, Filter, Ersatzteile, Zubehör</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/premium-wasserfilter-kompatibel-mit-philips-aquacl-b0h9hrm4bm/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/premium-wasserfilter-kompatibel-mit-philips-aquacl-b0h9hrm4bm/">Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 1 Stück, Filter, Ersatzteile, Zubehör</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/premium-wasserfilter-kompatibel-mit-philips-aquacl-b0h9hrm4bm/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/2x-premium-wasserfilter-kompatibel-mit-philips-aqu-b0h9htrdkc/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61y9J6Sy0lL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2x Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 2 Stück, Filter, Ersatzteile, Zubehör" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/2x-premium-wasserfilter-kompatibel-mit-philips-aqu-b0h9htrdkc/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61y9J6Sy0lL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2x Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 2 Stück, Filter, Ersatzteile, Zubehör" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/2x-premium-wasserfilter-kompatibel-mit-philips-aqu-b0h9htrdkc/">2x Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 2 Stück, Filter, Ersatzteile, Zubehör</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/2x-premium-wasserfilter-kompatibel-mit-philips-aqu-b0h9htrdkc/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/2x-premium-wasserfilter-kompatibel-mit-philips-aqu-b0h9htrdkc/">2x Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 2 Stück, Filter, Ersatzteile, Zubehör</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/2x-premium-wasserfilter-kompatibel-mit-philips-aqu-b0h9htrdkc/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/wasserfilter-fuer-philips-aquaclean-ca6903-10-22-f-b0fgphyn2q/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61HGsPK-LsL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Wasserfilter für Philips AquaClean CA6903/10/22 Filterpatrone (4X)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/wasserfilter-fuer-philips-aquaclean-ca6903-10-22-f-b0fgphyn2q/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61HGsPK-LsL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Wasserfilter für Philips AquaClean CA6903/10/22 Filterpatrone (4X)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/wasserfilter-fuer-philips-aquaclean-ca6903-10-22-f-b0fgphyn2q/">Wasserfilter für Philips AquaClean CA6903/10/22 Filterpatrone (4X)</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/wasserfilter-fuer-philips-aquaclean-ca6903-10-22-f-b0fgphyn2q/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/wasserfilter-fuer-philips-aquaclean-ca6903-10-22-f-b0fgphyn2q/">Wasserfilter für Philips AquaClean CA6903/10/22 Filterpatrone (4X)</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/wasserfilter-fuer-philips-aquaclean-ca6903-10-22-f-b0fgphyn2q/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/maxblue-filter-ersatz-fuer-philips-aquaclean-ca690-b0gfn25hrb/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61heom2XVDL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Maxblue Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 6 Stück" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/maxblue-filter-ersatz-fuer-philips-aquaclean-ca690-b0gfn25hrb/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61heom2XVDL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Maxblue Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 6 Stück" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/maxblue-filter-ersatz-fuer-philips-aquaclean-ca690-b0gfn25hrb/">Maxblue Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 6 Stück</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/maxblue-filter-ersatz-fuer-philips-aquaclean-ca690-b0gfn25hrb/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/maxblue-filter-ersatz-fuer-philips-aquaclean-ca690-b0gfn25hrb/">Maxblue Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 6 Stück</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/maxblue-filter-ersatz-fuer-philips-aquaclean-ca690-b0gfn25hrb/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0bwm34hkw/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61K2LrM7NcL._AC_SL1500_.jpg" class="prod-card-thumb" alt="ARETHONE Wasserfilter für Philips AquaClean CA6903/10 CA6903/22, 6 Stück" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0bwm34hkw/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61K2LrM7NcL._AC_SL1500_.jpg" class="ios-card-thumb" alt="ARETHONE Wasserfilter für Philips AquaClean CA6903/10 CA6903/22, 6 Stück" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0bwm34hkw/">ARETHONE Wasserfilter für Philips AquaClean CA6903/10 CA6903/22, 6 Stück</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0bwm34hkw/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0bwm34hkw/">ARETHONE Wasserfilter für Philips AquaClean CA6903/10 CA6903/22, 6 Stück</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0bwm34hkw/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/mutital-4er-pack-kaffeemaschinen-wasserfilter-ersa-b0ff4ck4hl/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51DnknyzYZL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Mutital 4er-Pack Kaffeemaschinen-Wasserfilter Ersatz für Philips AquaClean" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/mutital-4er-pack-kaffeemaschinen-wasserfilter-ersa-b0ff4ck4hl/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51DnknyzYZL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Mutital 4er-Pack Kaffeemaschinen-Wasserfilter Ersatz für Philips AquaClean" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/mutital-4er-pack-kaffeemaschinen-wasserfilter-ersa-b0ff4ck4hl/">Mutital 4er-Pack Kaffeemaschinen-Wasserfilter Ersatz für Philips AquaClean</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/mutital-4er-pack-kaffeemaschinen-wasserfilter-ersa-b0ff4ck4hl/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/mutital-4er-pack-kaffeemaschinen-wasserfilter-ersa-b0ff4ck4hl/">Mutital 4er-Pack Kaffeemaschinen-Wasserfilter Ersatz für Philips AquaClean</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/mutital-4er-pack-kaffeemaschinen-wasserfilter-ersa-b0ff4ck4hl/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/set-4x-premium-wasserfilter-kompatibel-mit-philips-b0h9hl9t7t/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61aOMqcdhjL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Set 4x Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 4 Stück, Filter, Ersatzteile, Zubehör" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/set-4x-premium-wasserfilter-kompatibel-mit-philips-b0h9hl9t7t/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61aOMqcdhjL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Set 4x Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 4 Stück, Filter, Ersatzteile, Zubehör" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/set-4x-premium-wasserfilter-kompatibel-mit-philips-b0h9hl9t7t/">Set 4x Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 4 Stück, Filter, Ersatzteile, Zubehör</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/set-4x-premium-wasserfilter-kompatibel-mit-philips-b0h9hl9t7t/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/set-4x-premium-wasserfilter-kompatibel-mit-philips-b0h9hl9t7t/">Set 4x Premium Wasserfilter kompatibel mit Philips AquaClean CA6903/22, AquaClean Filter CA6903/00 Kaffeevollautomat, Espressomaschine | 4 Stück, Filter, Ersatzteile, Zubehör</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/set-4x-premium-wasserfilter-kompatibel-mit-philips-b0h9hl9t7t/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/sillar-rundum-pflegeset-fuer-kaffeevollautomaten-p-b0cqrkwz5d/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61I7T17CjXL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Sillar Rundum-Pflegeset für Kaffeevollautomaten Philips, Saeco (3x AquaClean Filter, komp. mit CA6903, Entkalker 500ml, 20 x 2g Reinigungstabletten, Reinigungsbürste)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/sillar-rundum-pflegeset-fuer-kaffeevollautomaten-p-b0cqrkwz5d/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61I7T17CjXL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Sillar Rundum-Pflegeset für Kaffeevollautomaten Philips, Saeco (3x AquaClean Filter, komp. mit CA6903, Entkalker 500ml, 20 x 2g Reinigungstabletten, Reinigungsbürste)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/sillar-rundum-pflegeset-fuer-kaffeevollautomaten-p-b0cqrkwz5d/">Sillar Rundum-Pflegeset für Kaffeevollautomaten Philips, Saeco (3x AquaClean Filter, komp. mit CA6903, Entkalker 500ml, 20 x 2g Reinigungstabletten, Reinigungsbürste)</a></h3>
-      <div class="prod-card-rating">★ 3.9 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/sillar-rundum-pflegeset-fuer-kaffeevollautomaten-p-b0cqrkwz5d/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/sillar-rundum-pflegeset-fuer-kaffeevollautomaten-p-b0cqrkwz5d/">Sillar Rundum-Pflegeset für Kaffeevollautomaten Philips, Saeco (3x AquaClean Filter, komp. mit CA6903, Entkalker 500ml, 20 x 2g Reinigungstabletten, Reinigungsbürste)</a></h3>
+      <div class="ios-card-rating">★ 3.9 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/sillar-rundum-pflegeset-fuer-kaffeevollautomaten-p-b0cqrkwz5d/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/overbest-filter-ersatz-fuer-philips-aquaclean-ca69-b0gs9jnt7j/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61i9y9AyWQL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Overbest Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 6 Stück" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/overbest-filter-ersatz-fuer-philips-aquaclean-ca69-b0gs9jnt7j/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61i9y9AyWQL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Overbest Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 6 Stück" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/overbest-filter-ersatz-fuer-philips-aquaclean-ca69-b0gs9jnt7j/">Overbest Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 6 Stück</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/overbest-filter-ersatz-fuer-philips-aquaclean-ca69-b0gs9jnt7j/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/overbest-filter-ersatz-fuer-philips-aquaclean-ca69-b0gs9jnt7j/">Overbest Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 6 Stück</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/overbest-filter-ersatz-fuer-philips-aquaclean-ca69-b0gs9jnt7j/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/3-x-saeco-aquaclean-kalk-und-wasserfilter-b01i59cflo/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/717RbFLe5XL._AC_SL1500_.jpg" class="prod-card-thumb" alt="3 x Saeco AquaClean Kalk- und Wasserfilter" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/3-x-saeco-aquaclean-kalk-und-wasserfilter-b01i59cflo/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/717RbFLe5XL._AC_SL1500_.jpg" class="ios-card-thumb" alt="3 x Saeco AquaClean Kalk- und Wasserfilter" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/3-x-saeco-aquaclean-kalk-und-wasserfilter-b01i59cflo/">3 x Saeco AquaClean Kalk- und Wasserfilter</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/3-x-saeco-aquaclean-kalk-und-wasserfilter-b01i59cflo/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/3-x-saeco-aquaclean-kalk-und-wasserfilter-b01i59cflo/">3 x Saeco AquaClean Kalk- und Wasserfilter</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/3-x-saeco-aquaclean-kalk-und-wasserfilter-b01i59cflo/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b08dr2kqcm/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/513W0H6m-rL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 3 Pack" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b08dr2kqcm/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/513W0H6m-rL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 3 Pack" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b08dr2kqcm/">Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 3 Pack</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b08dr2kqcm/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b08dr2kqcm/">Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/22 CA6903/10, 3 Pack</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b08dr2kqcm/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b0cjlwsn16/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51ftHaINNAL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 5 Pack" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b0cjlwsn16/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51ftHaINNAL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 5 Pack" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b0cjlwsn16/">Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 5 Pack</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b0cjlwsn16/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b0cjlwsn16/">Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 5 Pack</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b0cjlwsn16/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0d3cvx1vp/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/6104Gt7pgOL._AC_SL1500_.jpg" class="prod-card-thumb" alt="ARETHONE Wasserfilter für Philips AquaClean CA6903/10 CA6903/22, 3 Stück" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0d3cvx1vp/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/6104Gt7pgOL._AC_SL1500_.jpg" class="ios-card-thumb" alt="ARETHONE Wasserfilter für Philips AquaClean CA6903/10 CA6903/22, 3 Stück" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0d3cvx1vp/">ARETHONE Wasserfilter für Philips AquaClean CA6903/10 CA6903/22, 3 Stück</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0d3cvx1vp/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0d3cvx1vp/">ARETHONE Wasserfilter für Philips AquaClean CA6903/10 CA6903/22, 3 Stück</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/arethone-wasserfilter-fuer-philips-aquaclean-ca690-b0d3cvx1vp/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/wessper-wasserfilter-kartuschen-kompatibel-mit-phi-b093tbmkv3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71CcYosTRbL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Wessper Wasserfilter Kartuschen Kompatibel mit Philips Aquaclean CA6903/10 CA6903/22 CA6903 und Saeco Kaffeemaschine, Filterpatrone mit Aktivkohle für Kaffeevollautomat - 4er Pack" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/wessper-wasserfilter-kartuschen-kompatibel-mit-phi-b093tbmkv3/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71CcYosTRbL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Wessper Wasserfilter Kartuschen Kompatibel mit Philips Aquaclean CA6903/10 CA6903/22 CA6903 und Saeco Kaffeemaschine, Filterpatrone mit Aktivkohle für Kaffeevollautomat - 4er Pack" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/wessper-wasserfilter-kartuschen-kompatibel-mit-phi-b093tbmkv3/">Wessper Wasserfilter Kartuschen Kompatibel mit Philips Aquaclean CA6903/10 CA6903/22 CA6903 und Saeco Kaffeemaschine, Filterpatrone mit Aktivkohle für Kaffeevollautomat - 4er Pack</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/wessper-wasserfilter-kartuschen-kompatibel-mit-phi-b093tbmkv3/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/wessper-wasserfilter-kartuschen-kompatibel-mit-phi-b093tbmkv3/">Wessper Wasserfilter Kartuschen Kompatibel mit Philips Aquaclean CA6903/10 CA6903/22 CA6903 und Saeco Kaffeemaschine, Filterpatrone mit Aktivkohle für Kaffeevollautomat - 4er Pack</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/wessper-wasserfilter-kartuschen-kompatibel-mit-phi-b093tbmkv3/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrhs4ss/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51e2WUBh1RL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 4 Pack" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrhs4ss/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51e2WUBh1RL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 4 Pack" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Wasserfilter &amp; Entkalker</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Wasserfilter &amp; Entkalker</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrhs4ss/">Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 4 Pack</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrhs4ss/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrhs4ss/">Waterdrop Filter Ersatz für Philips® AquaClean® CA6903/10 CA6903/22, 4 Pack</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/waterdrop-filter-ersatz-fuer-philips-aquaclean-ca6-b09nrhs4ss/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/brueheinheit-bruehgruppe-8gr-8bar-v4-smr-passend-f-b0ccykzkqz/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61ZTGKSMv6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Brüheinheit Brühgruppe 8GR 8BAR V4 SMR passend für Saeco Philips 421944052461 für Kaffeevollautomat Kaffeemaschine wie Incanto Minuto Xelsis Talea Odea" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/brueheinheit-bruehgruppe-8gr-8bar-v4-smr-passend-f-b0ccykzkqz/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61ZTGKSMv6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Brüheinheit Brühgruppe 8GR 8BAR V4 SMR passend für Saeco Philips 421944052461 für Kaffeevollautomat Kaffeemaschine wie Incanto Minuto Xelsis Talea Odea" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Brühgruppen &amp; Dichtungen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Brühgruppen &amp; Dichtungen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/brueheinheit-bruehgruppe-8gr-8bar-v4-smr-passend-f-b0ccykzkqz/">Brüheinheit Brühgruppe 8GR 8BAR V4 SMR passend für Saeco Philips 421944052461 für Kaffeevollautomat Kaffeemaschine wie Incanto Minuto Xelsis Talea Odea</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/brueheinheit-bruehgruppe-8gr-8bar-v4-smr-passend-f-b0ccykzkqz/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/brueheinheit-bruehgruppe-8gr-8bar-v4-smr-passend-f-b0ccykzkqz/">Brüheinheit Brühgruppe 8GR 8BAR V4 SMR passend für Saeco Philips 421944052461 für Kaffeevollautomat Kaffeemaschine wie Incanto Minuto Xelsis Talea Odea</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/brueheinheit-bruehgruppe-8gr-8bar-v4-smr-passend-f-b0ccykzkqz/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/philips/dl-pro-bruehgruppe-8gr-8bar-v3-421944092331-passen-b09xtz6szf/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71v4RnPAzhL._AC_SL1500_.jpg" class="prod-card-thumb" alt="DL-pro Brühgruppe 8GR 8BAR V3 421944092331 passend für Saeco und Philips" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/dl-pro-bruehgruppe-8gr-8bar-v3-421944092331-passen-b09xtz6szf/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71v4RnPAzhL._AC_SL1500_.jpg" class="ios-card-thumb" alt="DL-pro Brühgruppe 8GR 8BAR V3 421944092331 passend für Saeco und Philips" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Philips</span>
-        <span class="badge-cat">Brühgruppen &amp; Dichtungen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Philips</span>
+        <span class="ios-pill ios-pill-purple">Brühgruppen &amp; Dichtungen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/philips/dl-pro-bruehgruppe-8gr-8bar-v3-421944092331-passen-b09xtz6szf/">DL-pro Brühgruppe 8GR 8BAR V3 421944092331 passend für Saeco und Philips</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/philips/dl-pro-bruehgruppe-8gr-8bar-v3-421944092331-passen-b09xtz6szf/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/philips/dl-pro-bruehgruppe-8gr-8bar-v3-421944092331-passen-b09xtz6szf/">DL-pro Brühgruppe 8GR 8BAR V3 421944092331 passend für Saeco und Philips</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/dl-pro-bruehgruppe-8gr-8bar-v3-421944092331-passen-b09xtz6szf/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
     </div>
   </main>
 
   
-  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:56px; border-top:1px solid #292524;">
+  <nav class="ios-tab-bar" aria-label="App Navigation">
+    <a href="https://kaffeereparatur.github.io/" class="ios-tab-item ">
+      <span class="ios-tab-icon">🏠</span>
+      <span class="ios-tab-label">Start</span>
+    </a>
+    <a href="https://kaffeereparatur.github.io/#marken" class="ios-tab-item active">
+      <span class="ios-tab-icon">☕</span>
+      <span class="ios-tab-label">Marken</span>
+    </a>
+    <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-tab-item ">
+      <span class="ios-tab-icon">⚙️</span>
+      <span class="ios-tab-label">Baugruppen</span>
+    </a>
+    <button type="button" class="ios-tab-item" onclick="if(window.focusIosSearch)window.focusIosSearch();" aria-label="Suche öffnen">
+      <span class="ios-tab-icon">🔍</span>
+      <span class="ios-tab-label">Suche</span>
+    </button>
+  </nav>
+  
+  <footer style="background:#1c1c1e; color:#8e8e93; padding:44px 0 24px; margin-top:56px; border-top:0.5px solid rgba(255,255,255,0.1);">
     <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:28px; padding-bottom:28px;">
       <div>
         <div style="font-weight:800; font-size:17px; color:#ffffff; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-          ☕ KaffeeReparatur<span style="color:#eab308;">.de</span>
+          ☕ KaffeeReparatur<span style="color:#0071e3;">.de</span>
         </div>
-        <p style="font-size:12.5px; line-height:1.6; color:#78716c;">
+        <p style="font-size:12.5px; line-height:1.6; color:#8e8e93;">
           Deutsches Fach- und Reparaturportal für Kaffeevollautomaten-Ersatzteile. 100% verifizierte Original- und OEM-Komponenten mit mechatronischer Funktionsanalyse und direkter Verfügbarkeitsprüfung auf Amazon.de.
         </p>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Top-Hersteller</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#a8a29e;">Siemens EQ-Serie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#a8a29e;">Jura Impressa &amp; E/Z/ENA</a></li>
-          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#a8a29e;">Philips LatteGo &amp; 2200/3200</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#a8a29e;">Sage Barista Express</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#8e8e93;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#8e8e93;">Siemens EQ-Serie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#8e8e93;">Jura Impressa &amp; E/Z/ENA</a></li>
+          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#8e8e93;">Philips LatteGo &amp; 2200/3200</a></li>
+          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#8e8e93;">Sage Barista Express</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Baugruppen</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#a8a29e;">Mahlwerke &amp; Mahlkegel</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#a8a29e;">Drainageventile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#a8a29e;">Milchsysteme &amp; Karaffen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#a8a29e;">Wasserfilter &amp; Entkalker</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#8e8e93;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#8e8e93;">Mahlwerke &amp; Mahlkegel</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#8e8e93;">Drainageventile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#8e8e93;">Milchsysteme &amp; Karaffen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#8e8e93;">Wasserfilter &amp; Entkalker</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Transparenz</div>
-        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+        <p style="line-height:1.5; color:#8e8e93; font-size:12px; margin:0;">
           Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Alle Preise, Verfügbarkeiten und Lieferfristen werden live von Amazon.de bereitgestellt.
         </p>
       </div>
     </div>
-    <div class="wrap" style="border-top:1px solid #292524; padding-top:18px; text-align:center; font-size:12px; color:#57534e;">
+    <div class="wrap" style="border-top:0.5px solid rgba(255,255,255,0.1); padding-top:18px; text-align:center; font-size:12px; color:#636366;">
       © 2026 KaffeeReparatur. Alle Rechte vorbehalten. Unabhängiges Fachportal.
     </div>
   </footer>

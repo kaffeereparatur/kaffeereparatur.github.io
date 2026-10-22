@@ -11,720 +11,833 @@
 </head>
 <body>
   
-  <header class="app-header">
-    <div class="header-inner">
-      <a href="https://kaffeereparatur.github.io/" class="brand-logo">
-        <span class="logo-icon">☕</span>
-        <span>KaffeeReparatur<span class="tld">.de</span></span>
-        <span class="badge-pro">Silo Hub</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="https://kaffeereparatur.github.io/#marken" class="nav-link">Hersteller</a>
-        <a href="https://kaffeereparatur.github.io/#kategorien" class="nav-link">Baugruppen</a>
-      </nav>
-
-      <div class="header-search">
-        <div class="search-input-wrap">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="site-search" class="search-input" placeholder="Ersatzteil, Modell oder ASIN suchen..." autocomplete="off">
-          <button id="search-clear" class="search-clear" aria-label="Suche leeren">✕</button>
+  <header class="ios-nav-header">
+    <div class="ios-nav-container">
+      <div class="ios-nav-top">
+        <a href="https://kaffeereparatur.github.io/" class="ios-nav-brand">
+          <span class="ios-nav-logo">☕</span>
+          <span class="ios-brand-name">KaffeeReparatur<span class="ios-brand-sub">.de</span></span>
+        </a>
+        <div class="ios-nav-shortcuts">
+          <a href="https://kaffeereparatur.github.io/#marken" class="ios-nav-chip">Hersteller</a>
+          <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-nav-chip">Baugruppen</a>
         </div>
-        <div id="search-dropdown" class="search-dropdown"></div>
+      </div>
+
+      <div class="ios-search-wrapper">
+        <div class="ios-search-bar">
+          <svg class="ios-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" id="site-search" class="ios-search-input" placeholder="Suchen nach Modell, Marke oder Teil..." autocomplete="off">
+          <button id="search-clear" class="ios-search-clear" aria-label="Löschen" type="button">✕</button>
+        </div>
+        <div id="search-dropdown" class="ios-search-dropdown"></div>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="ios-nav-back-bar">
+      <a href="https://kaffeereparatur.github.io/" class="ios-nav-back-btn">
+        <span class="ios-nav-back-chevron">‹</span> Startseite
+      </a>
+    </div>
+
+    <nav class="ios-breadcrumb" aria-label="Breadcrumb">
       <a href="https://kaffeereparatur.github.io/">Startseite</a>
       <span class="sep">›</span>
       <span aria-current="page">Saeco</span>
     </nav>
 
-    <div style="background:#ffffff; border:1px solid var(--border-color); border-radius:16px; padding:28px 18px; margin:16px 0 28px; text-align:center;">
-      <h1 style="font-size:26px; font-weight:800; color:var(--text-main); margin-bottom:8px;">Saeco Ersatzteile &amp; Komponenten</h1>
-      <p style="font-size:14.5px; color:var(--text-muted); max-width:650px; margin:0 auto; line-height:1.6;">
-        Entdecken Sie 36 verifizierte Original- und OEM-Ersatzteile für Saeco Kaffeevollautomaten mit mechatronischer Einbauanleitung und direkter Verfügbarkeitsprüfung auf Amazon.de.
+    <div class="ios-hero-card">
+      <span class="ios-pill ios-pill-blue" style="font-weight:700; margin-bottom:8px; display:inline-block;">HERSTELLER-HUB</span>
+      <h1 class="ios-hero-title">Saeco Ersatzteile &amp; Komponenten</h1>
+      <p class="ios-hero-sub">
+        36 verifizierte Original- und OEM-Ersatzteile für Saeco Kaffeevollautomaten mit mechatronischer Einbauanleitung und direkter Verfügbarkeitsprüfung auf Amazon.de.
       </p>
     </div>
 
     
     <!-- Model Silos for this Brand -->
-    <section style="margin-bottom: 32px;">
-      <h2 style="font-size: 19px; font-weight: 800; margin-bottom: 12px;">Saeco Modellreihen</h2>
-      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(200px, 1fr)); gap:12px;">
+    <section style="margin-bottom: 28px;">
+      <div class="ios-section-title-bar">
+        <h2 class="ios-section-heading">Saeco Modellreihen</h2>
+        <span class="ios-section-count">2 Serien</span>
+      </div>
+      <div class="ios-hub-grid">
         
-        <a href="https://kaffeereparatur.github.io/saeco/xelsis/" style="background:#ffffff; border:1px solid var(--border-color); border-radius:10px; padding:14px; text-decoration:none; color:var(--text-main); display:flex; align-items:center; justify-content:space-between; transition:all 0.15s ease;">
-          <span style="font-weight:700; font-size:13.5px;">Xelsis &amp; GranAroma Serie</span>
-          <span style="font-size:12px; color:var(--primary); font-weight:700;">›</span>
+        <a href="https://kaffeereparatur.github.io/saeco/xelsis/" class="ios-hub-card">
+          <div class="ios-hub-icon-box">☕</div>
+          <div class="ios-hub-info">
+            <div class="ios-hub-name">Xelsis &amp; GranAroma Serie</div>
+            <div class="ios-hub-sub">Modell-Guide &amp; Teile</div>
+          </div>
+          <span class="ios-hub-arrow">›</span>
         </a>
 
-        <a href="https://kaffeereparatur.github.io/saeco/picobaristo/" style="background:#ffffff; border:1px solid var(--border-color); border-radius:10px; padding:14px; text-decoration:none; color:var(--text-main); display:flex; align-items:center; justify-content:space-between; transition:all 0.15s ease;">
-          <span style="font-weight:700; font-size:13.5px;">PicoBaristo &amp; Incanto</span>
-          <span style="font-size:12px; color:var(--primary); font-weight:700;">›</span>
+        <a href="https://kaffeereparatur.github.io/saeco/picobaristo/" class="ios-hub-card">
+          <div class="ios-hub-icon-box">☕</div>
+          <div class="ios-hub-info">
+            <div class="ios-hub-name">PicoBaristo &amp; Incanto</div>
+            <div class="ios-hub-sub">Modell-Guide &amp; Teile</div>
+          </div>
+          <span class="ios-hub-arrow">›</span>
         </a>
       </div>
     </section>
 
+    <div class="ios-section-title-bar">
+      <h2 class="ios-section-heading">Alle Saeco Ersatzteile</h2>
+      <span class="ios-section-count">36 Artikel</span>
+    </div>
     <div class="prod-grid">
       
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0h3p9q63g/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61WUEg85+IL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 Stück Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia EP Serie" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0h3p9q63g/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61WUEg85+IL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 Stück Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia EP Serie" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0h3p9q63g/">2 Stück Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia EP Serie</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0h3p9q63g/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0h3p9q63g/">2 Stück Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia EP Serie</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0h3p9q63g/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/keramik-mahlscheibe-fuer-philips-saeco-mahlwerk-gr-b0fxl78jr9/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51MXF2MhyKL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Keramik Mahlscheibe für Philips Saeco Mahlwerk - Grinding Stones, Mahlringe aus Keramik für Mahlwerkmotor Kaffeemaschinen EP Serie, Mahlsteine Ersatzteile für Kaffeevollautomaten Wartung (2 Stk)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/keramik-mahlscheibe-fuer-philips-saeco-mahlwerk-gr-b0fxl78jr9/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51MXF2MhyKL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Keramik Mahlscheibe für Philips Saeco Mahlwerk - Grinding Stones, Mahlringe aus Keramik für Mahlwerkmotor Kaffeemaschinen EP Serie, Mahlsteine Ersatzteile für Kaffeevollautomaten Wartung (2 Stk)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/keramik-mahlscheibe-fuer-philips-saeco-mahlwerk-gr-b0fxl78jr9/">Keramik Mahlscheibe für Philips Saeco Mahlwerk - Grinding Stones, Mahlringe aus Keramik für Mahlwerkmotor Kaffeemaschinen EP Serie, Mahlsteine Ersatzteile für Kaffeevollautomaten Wartung (2 Stk)</a></h3>
-      <div class="prod-card-rating">★ 4.2 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/keramik-mahlscheibe-fuer-philips-saeco-mahlwerk-gr-b0fxl78jr9/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/keramik-mahlscheibe-fuer-philips-saeco-mahlwerk-gr-b0fxl78jr9/">Keramik Mahlscheibe für Philips Saeco Mahlwerk - Grinding Stones, Mahlringe aus Keramik für Mahlwerkmotor Kaffeemaschinen EP Serie, Mahlsteine Ersatzteile für Kaffeevollautomaten Wartung (2 Stk)</a></h3>
+      <div class="ios-card-rating">★ 4.2 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/keramik-mahlscheibe-fuer-philips-saeco-mahlwerk-gr-b0fxl78jr9/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2er-set-keramik-mahlscheiben-kompatibel-mit-philip-b0gxk99n9z/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/614QmkGwvcL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2er-Set Keramik-Mahlscheiben kompatibel mit Philips 5400, 4300, 3200, 2200 &amp; Saeco EP Serie – Hochwertige Mahlsteine für Kaffeevollautomaten – Langlebige Ersatzteile für Kaffeemühle – Präzises" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2er-set-keramik-mahlscheiben-kompatibel-mit-philip-b0gxk99n9z/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/614QmkGwvcL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2er-Set Keramik-Mahlscheiben kompatibel mit Philips 5400, 4300, 3200, 2200 &amp; Saeco EP Serie – Hochwertige Mahlsteine für Kaffeevollautomaten – Langlebige Ersatzteile für Kaffeemühle – Präzises" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2er-set-keramik-mahlscheiben-kompatibel-mit-philip-b0gxk99n9z/">2er-Set Keramik-Mahlscheiben kompatibel mit Philips 5400, 4300, 3200, 2200 &amp; Saeco EP Serie – Hochwertige Mahlsteine für Kaffeevollautomaten – Langlebige Ersatzteile für Kaffeemühle – Präzises</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2er-set-keramik-mahlscheiben-kompatibel-mit-philip-b0gxk99n9z/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2er-set-keramik-mahlscheiben-kompatibel-mit-philip-b0gxk99n9z/">2er-Set Keramik-Mahlscheiben kompatibel mit Philips 5400, 4300, 3200, 2200 &amp; Saeco EP Serie – Hochwertige Mahlsteine für Kaffeevollautomaten – Langlebige Ersatzteile für Kaffeemühle – Präzises</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2er-set-keramik-mahlscheiben-kompatibel-mit-philip-b0gxk99n9z/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlscheiben-28x48x6-5-mm-mahlringe-b0h6zlmddc/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61XaztvjU+L._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 Stk Keramik Mahlscheiben 28x48x6,5 mm, Mahlringe Mahlsteine kompatibel mit Philips Saeco Gaggia EP Serie LatteGo, Ersatzteile für Kaffeevollautomaten Mahlwerk" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlscheiben-28x48x6-5-mm-mahlringe-b0h6zlmddc/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61XaztvjU+L._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 Stk Keramik Mahlscheiben 28x48x6,5 mm, Mahlringe Mahlsteine kompatibel mit Philips Saeco Gaggia EP Serie LatteGo, Ersatzteile für Kaffeevollautomaten Mahlwerk" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlscheiben-28x48x6-5-mm-mahlringe-b0h6zlmddc/">2 Stk Keramik Mahlscheiben 28x48x6,5 mm, Mahlringe Mahlsteine kompatibel mit Philips Saeco Gaggia EP Serie LatteGo, Ersatzteile für Kaffeevollautomaten Mahlwerk</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlscheiben-28x48x6-5-mm-mahlringe-b0h6zlmddc/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlscheiben-28x48x6-5-mm-mahlringe-b0h6zlmddc/">2 Stk Keramik Mahlscheiben 28x48x6,5 mm, Mahlringe Mahlsteine kompatibel mit Philips Saeco Gaggia EP Serie LatteGo, Ersatzteile für Kaffeevollautomaten Mahlwerk</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlscheiben-28x48x6-5-mm-mahlringe-b0h6zlmddc/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/keramik-mahlringe-mahlscheiben-fuer-philips-saeco-b0gczfy1km/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61Pdt4H6z7L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia Kaffeemaschine, Mahlsteine aus Keramik für Philips Kaffeemaschine, Mahlsteine Ersatzteile für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/keramik-mahlringe-mahlscheiben-fuer-philips-saeco-b0gczfy1km/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61Pdt4H6z7L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia Kaffeemaschine, Mahlsteine aus Keramik für Philips Kaffeemaschine, Mahlsteine Ersatzteile für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/keramik-mahlringe-mahlscheiben-fuer-philips-saeco-b0gczfy1km/">Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia Kaffeemaschine, Mahlsteine aus Keramik für Philips Kaffeemaschine, Mahlsteine Ersatzteile für Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/keramik-mahlringe-mahlscheiben-fuer-philips-saeco-b0gczfy1km/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/keramik-mahlringe-mahlscheiben-fuer-philips-saeco-b0gczfy1km/">Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia Kaffeemaschine, Mahlsteine aus Keramik für Philips Kaffeemaschine, Mahlsteine Ersatzteile für Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/keramik-mahlringe-mahlscheiben-fuer-philips-saeco-b0gczfy1km/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/sophisticate-kaffeemaschine-mahlsteine-aus-keramik-b0gd78xqrt/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61ZmhmGqOZL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Sophisticate Kaffeemaschine Mahlsteine aus Keramik,Keramik Mahlscheibe" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/sophisticate-kaffeemaschine-mahlsteine-aus-keramik-b0gd78xqrt/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61ZmhmGqOZL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Sophisticate Kaffeemaschine Mahlsteine aus Keramik,Keramik Mahlscheibe" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/sophisticate-kaffeemaschine-mahlsteine-aus-keramik-b0gd78xqrt/">Sophisticate Kaffeemaschine Mahlsteine aus Keramik,Keramik Mahlscheibe</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/sophisticate-kaffeemaschine-mahlsteine-aus-keramik-b0gd78xqrt/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/sophisticate-kaffeemaschine-mahlsteine-aus-keramik-b0gd78xqrt/">Sophisticate Kaffeemaschine Mahlsteine aus Keramik,Keramik Mahlscheibe</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/sophisticate-kaffeemaschine-mahlsteine-aus-keramik-b0gd78xqrt/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/kenekos-2x-mahlwerk-v5-geeignet-fuer-jura-impressa-b0b14xym35/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51kVQINOC9S._AC_SL1500_.jpg" class="prod-card-thumb" alt="Kenekos - 2x Mahlwerk V5 geeignet für Jura Impressa Kaffeevollautomat. Mahlkegel, Mahlring kompatibel mit Kaffeemaschine Bosch Benvuento, Miele Caffeo, Saeco Royal/Vienna, AEG CaFamosa" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/kenekos-2x-mahlwerk-v5-geeignet-fuer-jura-impressa-b0b14xym35/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51kVQINOC9S._AC_SL1500_.jpg" class="ios-card-thumb" alt="Kenekos - 2x Mahlwerk V5 geeignet für Jura Impressa Kaffeevollautomat. Mahlkegel, Mahlring kompatibel mit Kaffeemaschine Bosch Benvuento, Miele Caffeo, Saeco Royal/Vienna, AEG CaFamosa" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/kenekos-2x-mahlwerk-v5-geeignet-fuer-jura-impressa-b0b14xym35/">Kenekos - 2x Mahlwerk V5 geeignet für Jura Impressa Kaffeevollautomat. Mahlkegel, Mahlring kompatibel mit Kaffeemaschine Bosch Benvuento, Miele Caffeo, Saeco Royal/Vienna, AEG CaFamosa</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/kenekos-2x-mahlwerk-v5-geeignet-fuer-jura-impressa-b0b14xym35/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/kenekos-2x-mahlwerk-v5-geeignet-fuer-jura-impressa-b0b14xym35/">Kenekos - 2x Mahlwerk V5 geeignet für Jura Impressa Kaffeevollautomat. Mahlkegel, Mahlring kompatibel mit Kaffeemaschine Bosch Benvuento, Miele Caffeo, Saeco Royal/Vienna, AEG CaFamosa</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/kenekos-2x-mahlwerk-v5-geeignet-fuer-jura-impressa-b0b14xym35/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/40mm-kaffeemuehlen-mahlscheiben-set-metall-ersatzt-b0fh4vv4b8/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51k2LMGLBJL._AC_SL1500_.jpg" class="prod-card-thumb" alt="40MM Kaffeemühlen Mahlscheiben Set Metall Ersatzteile Mahlwerk Scheibenmahlwerk für Elektrische Kaffeemühle Präzisions Mahlscheiben Ober- und Unterscheibe" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/40mm-kaffeemuehlen-mahlscheiben-set-metall-ersatzt-b0fh4vv4b8/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51k2LMGLBJL._AC_SL1500_.jpg" class="ios-card-thumb" alt="40MM Kaffeemühlen Mahlscheiben Set Metall Ersatzteile Mahlwerk Scheibenmahlwerk für Elektrische Kaffeemühle Präzisions Mahlscheiben Ober- und Unterscheibe" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/40mm-kaffeemuehlen-mahlscheiben-set-metall-ersatzt-b0fh4vv4b8/">40MM Kaffeemühlen Mahlscheiben Set Metall Ersatzteile Mahlwerk Scheibenmahlwerk für Elektrische Kaffeemühle Präzisions Mahlscheiben Ober- und Unterscheibe</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/40mm-kaffeemuehlen-mahlscheiben-set-metall-ersatzt-b0fh4vv4b8/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/40mm-kaffeemuehlen-mahlscheiben-set-metall-ersatzt-b0fh4vv4b8/">40MM Kaffeemühlen Mahlscheiben Set Metall Ersatzteile Mahlwerk Scheibenmahlwerk für Elektrische Kaffeemühle Präzisions Mahlscheiben Ober- und Unterscheibe</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/40mm-kaffeemuehlen-mahlscheiben-set-metall-ersatzt-b0fh4vv4b8/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlscheibe-kompatibel-mit-philip-b0gft5p9w7/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51ntJy-ew6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 Stück Keramik Mahlscheibe Kompatibel mit Philips Saeco Mahlwerk, Mahlsteine Ersatzteile für Kaffeevollautomaten, Hochwertige Aluminiumoxid-Keramik Mahlscheiben für Philips LatteGo Serie" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlscheibe-kompatibel-mit-philip-b0gft5p9w7/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51ntJy-ew6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 Stück Keramik Mahlscheibe Kompatibel mit Philips Saeco Mahlwerk, Mahlsteine Ersatzteile für Kaffeevollautomaten, Hochwertige Aluminiumoxid-Keramik Mahlscheiben für Philips LatteGo Serie" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlscheibe-kompatibel-mit-philip-b0gft5p9w7/">2 Stück Keramik Mahlscheibe Kompatibel mit Philips Saeco Mahlwerk, Mahlsteine Ersatzteile für Kaffeevollautomaten, Hochwertige Aluminiumoxid-Keramik Mahlscheiben für Philips LatteGo Serie</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlscheibe-kompatibel-mit-philip-b0gft5p9w7/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlscheibe-kompatibel-mit-philip-b0gft5p9w7/">2 Stück Keramik Mahlscheibe Kompatibel mit Philips Saeco Mahlwerk, Mahlsteine Ersatzteile für Kaffeevollautomaten, Hochwertige Aluminiumoxid-Keramik Mahlscheiben für Philips LatteGo Serie</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlscheibe-kompatibel-mit-philip-b0gft5p9w7/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlring-mahlscheibe-hochwertige-b0h35vl2j6/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51VOWdtRFRL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 Stück Keramik Mahlring Mahlscheibe, Hochwertige Präzise Gefertigten Mahlringe aus Keramik, Oxidkeramik Mahlscheiben aus Aluminiumoxid, Kompatibel mit Philips Saeco LatteGo Kaffeemaschinen" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlring-mahlscheibe-hochwertige-b0h35vl2j6/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51VOWdtRFRL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 Stück Keramik Mahlring Mahlscheibe, Hochwertige Präzise Gefertigten Mahlringe aus Keramik, Oxidkeramik Mahlscheiben aus Aluminiumoxid, Kompatibel mit Philips Saeco LatteGo Kaffeemaschinen" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlring-mahlscheibe-hochwertige-b0h35vl2j6/">2 Stück Keramik Mahlring Mahlscheibe, Hochwertige Präzise Gefertigten Mahlringe aus Keramik, Oxidkeramik Mahlscheiben aus Aluminiumoxid, Kompatibel mit Philips Saeco LatteGo Kaffeemaschinen</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlring-mahlscheibe-hochwertige-b0h35vl2j6/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlring-mahlscheibe-hochwertige-b0h35vl2j6/">2 Stück Keramik Mahlring Mahlscheibe, Hochwertige Präzise Gefertigten Mahlringe aus Keramik, Oxidkeramik Mahlscheiben aus Aluminiumoxid, Kompatibel mit Philips Saeco LatteGo Kaffeemaschinen</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlring-mahlscheibe-hochwertige-b0h35vl2j6/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2er-pack-keramik-mahlring-mahlscheiben-28-x-48-x-6-b0gs9s9ln6/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51tHsbQG3TL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2er-Pack Keramik-Mahlring Mahlscheiben, 28 x 48 x 6,40 mm, präzise gefertigte Keramik-Mahlringe für Kaffeemaschinen, Ersatzmahlwerk für Philips Saeco LatteGo Serie" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2er-pack-keramik-mahlring-mahlscheiben-28-x-48-x-6-b0gs9s9ln6/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51tHsbQG3TL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2er-Pack Keramik-Mahlring Mahlscheiben, 28 x 48 x 6,40 mm, präzise gefertigte Keramik-Mahlringe für Kaffeemaschinen, Ersatzmahlwerk für Philips Saeco LatteGo Serie" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2er-pack-keramik-mahlring-mahlscheiben-28-x-48-x-6-b0gs9s9ln6/">2er-Pack Keramik-Mahlring Mahlscheiben, 28 x 48 x 6,40 mm, präzise gefertigte Keramik-Mahlringe für Kaffeemaschinen, Ersatzmahlwerk für Philips Saeco LatteGo Serie</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2er-pack-keramik-mahlring-mahlscheiben-28-x-48-x-6-b0gs9s9ln6/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2er-pack-keramik-mahlring-mahlscheiben-28-x-48-x-6-b0gs9s9ln6/">2er-Pack Keramik-Mahlring Mahlscheiben, 28 x 48 x 6,40 mm, präzise gefertigte Keramik-Mahlringe für Kaffeemaschinen, Ersatzmahlwerk für Philips Saeco LatteGo Serie</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2er-pack-keramik-mahlring-mahlscheiben-28-x-48-x-6-b0gs9s9ln6/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2x-keramik-mahlscheibe-kaffeevollautomat-mit-mahlw-b0gp2tg53w/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61OGXsuW-EL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2x Keramik Mahlscheibe Kaffeevollautomat mit Mahlwerk 146520100 für Philips" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2x-keramik-mahlscheibe-kaffeevollautomat-mit-mahlw-b0gp2tg53w/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61OGXsuW-EL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2x Keramik Mahlscheibe Kaffeevollautomat mit Mahlwerk 146520100 für Philips" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2x-keramik-mahlscheibe-kaffeevollautomat-mit-mahlw-b0gp2tg53w/">2x Keramik Mahlscheibe Kaffeevollautomat mit Mahlwerk 146520100 für Philips</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2x-keramik-mahlscheibe-kaffeevollautomat-mit-mahlw-b0gp2tg53w/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2x-keramik-mahlscheibe-kaffeevollautomat-mit-mahlw-b0gp2tg53w/">2x Keramik Mahlscheibe Kaffeevollautomat mit Mahlwerk 146520100 für Philips</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2x-keramik-mahlscheibe-kaffeevollautomat-mit-mahlw-b0gp2tg53w/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlring-mahlscheibe-fuer-philips-sa-b0g4l9wsqy/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61pVRkPfyOL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 Stk Keramik Mahlring Mahlscheibe für Philips Saeco Gaggia, Präzise Gefertigten Mahlringe aus Keramik für Mahlwerkmotor Kaffeemaschinen EP Serie, Mahlsteine Ersatzteile für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlring-mahlscheibe-fuer-philips-sa-b0g4l9wsqy/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61pVRkPfyOL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 Stk Keramik Mahlring Mahlscheibe für Philips Saeco Gaggia, Präzise Gefertigten Mahlringe aus Keramik für Mahlwerkmotor Kaffeemaschinen EP Serie, Mahlsteine Ersatzteile für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlring-mahlscheibe-fuer-philips-sa-b0g4l9wsqy/">2 Stk Keramik Mahlring Mahlscheibe für Philips Saeco Gaggia, Präzise Gefertigten Mahlringe aus Keramik für Mahlwerkmotor Kaffeemaschinen EP Serie, Mahlsteine Ersatzteile für Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlring-mahlscheibe-fuer-philips-sa-b0g4l9wsqy/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlring-mahlscheibe-fuer-philips-sa-b0g4l9wsqy/">2 Stk Keramik Mahlring Mahlscheibe für Philips Saeco Gaggia, Präzise Gefertigten Mahlringe aus Keramik für Mahlwerkmotor Kaffeemaschinen EP Serie, Mahlsteine Ersatzteile für Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlring-mahlscheibe-fuer-philips-sa-b0g4l9wsqy/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0g5n91p85/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61ANDgaHHbL._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 Stück Keramik Mahlringe Mahlscheiben für Philips/Saeco/Latte Go Kaffeemaschinen, Hochwertige Mahlringe aus Aluminiumoxid Keramik, Mahlmotor Wartungszubehör" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0g5n91p85/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61ANDgaHHbL._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 Stück Keramik Mahlringe Mahlscheiben für Philips/Saeco/Latte Go Kaffeemaschinen, Hochwertige Mahlringe aus Aluminiumoxid Keramik, Mahlmotor Wartungszubehör" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0g5n91p85/">2 Stück Keramik Mahlringe Mahlscheiben für Philips/Saeco/Latte Go Kaffeemaschinen, Hochwertige Mahlringe aus Aluminiumoxid Keramik, Mahlmotor Wartungszubehör</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0g5n91p85/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0g5n91p85/">2 Stück Keramik Mahlringe Mahlscheiben für Philips/Saeco/Latte Go Kaffeemaschinen, Hochwertige Mahlringe aus Aluminiumoxid Keramik, Mahlmotor Wartungszubehör</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0g5n91p85/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0gtpxfzxz/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/518ClJkIr4L._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 Stück Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia EP Serie" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0gtpxfzxz/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/518ClJkIr4L._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 Stück Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia EP Serie" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0gtpxfzxz/">2 Stück Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia EP Serie</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0gtpxfzxz/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0gtpxfzxz/">2 Stück Keramik Mahlringe Mahlscheiben für Philips Saeco Gaggia EP Serie</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0gtpxfzxz/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-2x-keramik-mahlscheibe-28-x-48-fu-b0cg3qthsq/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61eCd6Zfi3L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee 2x Keramik Mahlscheibe 28 x 48 für Philips Saeco Gaggia" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-2x-keramik-mahlscheibe-28-x-48-fu-b0cg3qthsq/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61eCd6Zfi3L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee 2x Keramik Mahlscheibe 28 x 48 für Philips Saeco Gaggia" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-2x-keramik-mahlscheibe-28-x-48-fu-b0cg3qthsq/">Snapworld-Kaffee 2x Keramik Mahlscheibe 28 x 48 für Philips Saeco Gaggia</a></h3>
-      <div class="prod-card-rating">★ 4.2 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-2x-keramik-mahlscheibe-28-x-48-fu-b0cg3qthsq/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-2x-keramik-mahlscheibe-28-x-48-fu-b0cg3qthsq/">Snapworld-Kaffee 2x Keramik Mahlscheibe 28 x 48 für Philips Saeco Gaggia</a></h3>
+      <div class="ios-card-rating">★ 4.2 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-2x-keramik-mahlscheibe-28-x-48-fu-b0cg3qthsq/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-keramik-mahlscheibe-48x28-b008w821sq/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/31pWdlpUEzS._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco Keramik Mahlscheibe 48x28" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-keramik-mahlscheibe-48x28-b008w821sq/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/31pWdlpUEzS._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco Keramik Mahlscheibe 48x28" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-keramik-mahlscheibe-48x28-b008w821sq/">Saeco Keramik Mahlscheibe 48x28</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-keramik-mahlscheibe-48x28-b008w821sq/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-keramik-mahlscheibe-48x28-b008w821sq/">Saeco Keramik Mahlscheibe 48x28</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-keramik-mahlscheibe-48x28-b008w821sq/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-6-0-mm-bohrung-kompa-b08zzsgrh5/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/91RYMV+-gIL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Wolfcut INOX Lochscheibe Gr. 8-6,0 mm Bohrung - Kompatibel/Ersatz mit Fleischwolf Jupiter - Bosch - Alexanderwerk" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-6-0-mm-bohrung-kompa-b08zzsgrh5/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/91RYMV+-gIL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Wolfcut INOX Lochscheibe Gr. 8-6,0 mm Bohrung - Kompatibel/Ersatz mit Fleischwolf Jupiter - Bosch - Alexanderwerk" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-6-0-mm-bohrung-kompa-b08zzsgrh5/">Wolfcut INOX Lochscheibe Gr. 8-6,0 mm Bohrung - Kompatibel/Ersatz mit Fleischwolf Jupiter - Bosch - Alexanderwerk</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-6-0-mm-bohrung-kompa-b08zzsgrh5/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-6-0-mm-bohrung-kompa-b08zzsgrh5/">Wolfcut INOX Lochscheibe Gr. 8-6,0 mm Bohrung - Kompatibel/Ersatz mit Fleischwolf Jupiter - Bosch - Alexanderwerk</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-6-0-mm-bohrung-kompa-b08zzsgrh5/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-4-5-mm-bohrung-kompa-b08zzrgryg/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/91kpEh+-OUL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Wolfcut INOX Lochscheibe Gr. 8-4,5 mm Bohrung - Kompatibel/Ersatz mit Fleischwolf Jupiter - Bosch - Alexanderwerk" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-4-5-mm-bohrung-kompa-b08zzrgryg/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/91kpEh+-OUL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Wolfcut INOX Lochscheibe Gr. 8-4,5 mm Bohrung - Kompatibel/Ersatz mit Fleischwolf Jupiter - Bosch - Alexanderwerk" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-4-5-mm-bohrung-kompa-b08zzrgryg/">Wolfcut INOX Lochscheibe Gr. 8-4,5 mm Bohrung - Kompatibel/Ersatz mit Fleischwolf Jupiter - Bosch - Alexanderwerk</a></h3>
-      <div class="prod-card-rating">★ 4.9 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-4-5-mm-bohrung-kompa-b08zzrgryg/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-4-5-mm-bohrung-kompa-b08zzrgryg/">Wolfcut INOX Lochscheibe Gr. 8-4,5 mm Bohrung - Kompatibel/Ersatz mit Fleischwolf Jupiter - Bosch - Alexanderwerk</a></h3>
+      <div class="ios-card-rating">★ 4.9 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-4-5-mm-bohrung-kompa-b08zzrgryg/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/2satz-38-mm-konische-mahlscheiben-fuer-manuelle-ka-b0gx73xyn3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/515kKZYeX-L._AC_SL1500_.jpg" class="prod-card-thumb" alt="2Satz 38 mm Konische Mahlscheiben für Manuelle Kaffeemühle, Süßes, Hochgleichmäßiges Mahlen Von Espresso, Flache Mahlscheiben, Kaffeezubehör" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/2satz-38-mm-konische-mahlscheiben-fuer-manuelle-ka-b0gx73xyn3/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/515kKZYeX-L._AC_SL1500_.jpg" class="ios-card-thumb" alt="2Satz 38 mm Konische Mahlscheiben für Manuelle Kaffeemühle, Süßes, Hochgleichmäßiges Mahlen Von Espresso, Flache Mahlscheiben, Kaffeezubehör" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Mahlwerke &amp; Mahlkegel</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Mahlwerke &amp; Mahlkegel</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/2satz-38-mm-konische-mahlscheiben-fuer-manuelle-ka-b0gx73xyn3/">2Satz 38 mm Konische Mahlscheiben für Manuelle Kaffeemühle, Süßes, Hochgleichmäßiges Mahlen Von Espresso, Flache Mahlscheiben, Kaffeezubehör</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/2satz-38-mm-konische-mahlscheiben-fuer-manuelle-ka-b0gx73xyn3/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/2satz-38-mm-konische-mahlscheiben-fuer-manuelle-ka-b0gx73xyn3/">2Satz 38 mm Konische Mahlscheiben für Manuelle Kaffeemühle, Süßes, Hochgleichmäßiges Mahlen Von Espresso, Flache Mahlscheiben, Kaffeezubehör</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/2satz-38-mm-konische-mahlscheiben-fuer-manuelle-ka-b0gx73xyn3/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61f4pTOuz3L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee Auslaufstutzen für Saeco Philips Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61f4pTOuz3L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee Auslaufstutzen für Saeco Philips Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/">Snapworld-Kaffee Auslaufstutzen für Saeco Philips Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/">Snapworld-Kaffee Auslaufstutzen für Saeco Philips Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61Iisqkul-L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ancable Dichtung O-Ring für Philips Saeco, 7PCS O-Ring Dichtung für Kaffeemaschinen Supportventil Brühgruppe Auslaufventil, kompatibel mit Philips Saeco Gaggia Spidem usw" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61Iisqkul-L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ancable Dichtung O-Ring für Philips Saeco, 7PCS O-Ring Dichtung für Kaffeemaschinen Supportventil Brühgruppe Auslaufventil, kompatibel mit Philips Saeco Gaggia Spidem usw" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/">Ancable Dichtung O-Ring für Philips Saeco, 7PCS O-Ring Dichtung für Kaffeemaschinen Supportventil Brühgruppe Auslaufventil, kompatibel mit Philips Saeco Gaggia Spidem usw</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/">Ancable Dichtung O-Ring für Philips Saeco, 7PCS O-Ring Dichtung für Kaffeemaschinen Supportventil Brühgruppe Auslaufventil, kompatibel mit Philips Saeco Gaggia Spidem usw</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61rn5XLrBgL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtung Wartungssatz O-Ringe für Supportventil Dampfventil Brühgruppe passend für Phillips Saeco Spidem Gaggia Set-19 von Snapworld-Kaffee" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61rn5XLrBgL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtung Wartungssatz O-Ringe für Supportventil Dampfventil Brühgruppe passend für Phillips Saeco Spidem Gaggia Set-19 von Snapworld-Kaffee" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/">Dichtung Wartungssatz O-Ringe für Supportventil Dampfventil Brühgruppe passend für Phillips Saeco Spidem Gaggia Set-19 von Snapworld-Kaffee</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/">Dichtung Wartungssatz O-Ringe für Supportventil Dampfventil Brühgruppe passend für Phillips Saeco Spidem Gaggia Set-19 von Snapworld-Kaffee</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71r+CcVGfbL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco 10x Dichtung Gaggia Siemens Bosch König Solis zu Thermoblock" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71r+CcVGfbL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco 10x Dichtung Gaggia Siemens Bosch König Solis zu Thermoblock" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/">Saeco 10x Dichtung Gaggia Siemens Bosch König Solis zu Thermoblock</a></h3>
-      <div class="prod-card-rating">★ 4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/">Saeco 10x Dichtung Gaggia Siemens Bosch König Solis zu Thermoblock</a></h3>
+      <div class="ios-card-rating">★ 4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61X+zseBu2L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee Auslaufstutzen für Saeco Philips Gaggia" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61X+zseBu2L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee Auslaufstutzen für Saeco Philips Gaggia" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/">Snapworld-Kaffee Auslaufstutzen für Saeco Philips Gaggia</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/">Snapworld-Kaffee Auslaufstutzen für Saeco Philips Gaggia</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71Zeqwuhp6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ancable Dichtung O-Ringe für Philips Saeco, 30PCS Silikon O-Ring Dichtung kompatibel mit Philips Kaffeemaschinen Enthält Reinigungsbürstenset, für Supportventil Dampfventil Brühgruppe Auslaufventil" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71Zeqwuhp6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ancable Dichtung O-Ringe für Philips Saeco, 30PCS Silikon O-Ring Dichtung kompatibel mit Philips Kaffeemaschinen Enthält Reinigungsbürstenset, für Supportventil Dampfventil Brühgruppe Auslaufventil" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/">Ancable Dichtung O-Ringe für Philips Saeco, 30PCS Silikon O-Ring Dichtung kompatibel mit Philips Kaffeemaschinen Enthält Reinigungsbürstenset, für Supportventil Dampfventil Brühgruppe Auslaufventil</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/">Ancable Dichtung O-Ringe für Philips Saeco, 30PCS Silikon O-Ring Dichtung kompatibel mit Philips Kaffeemaschinen Enthält Reinigungsbürstenset, für Supportventil Dampfventil Brühgruppe Auslaufventil</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/714FRXNpe6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtung O-Ringe für Philips Kaffeevollautomat, 30PCS Dichtungsringe Brühgruppe Enthält Reinigungset, O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/714FRXNpe6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtung O-Ringe für Philips Kaffeevollautomat, 30PCS Dichtungsringe Brühgruppe Enthält Reinigungset, O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/">Dichtung O-Ringe für Philips Kaffeevollautomat, 30PCS Dichtungsringe Brühgruppe Enthält Reinigungset, O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/">Dichtung O-Ringe für Philips Kaffeevollautomat, 30PCS Dichtungsringe Brühgruppe Enthält Reinigungset, O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71kAROEOADL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco 17x Dichtung für Tchibo Spidem Krups Solis Amaroy zu Thermoblock" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71kAROEOADL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco 17x Dichtung für Tchibo Spidem Krups Solis Amaroy zu Thermoblock" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/">Saeco 17x Dichtung für Tchibo Spidem Krups Solis Amaroy zu Thermoblock</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/">Saeco 17x Dichtung für Tchibo Spidem Krups Solis Amaroy zu Thermoblock</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/81AFmG8sIML._AC_SL1500_.jpg" class="prod-card-thumb" alt="85 Stücke Kaffeemaschinen O-Ringe Bausatz, Siliko Dichtungsringe Brühgruppe, Kompatibel mit Philips Saeco Spidem Gaggia" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/81AFmG8sIML._AC_SL1500_.jpg" class="ios-card-thumb" alt="85 Stücke Kaffeemaschinen O-Ringe Bausatz, Siliko Dichtungsringe Brühgruppe, Kompatibel mit Philips Saeco Spidem Gaggia" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/">85 Stücke Kaffeemaschinen O-Ringe Bausatz, Siliko Dichtungsringe Brühgruppe, Kompatibel mit Philips Saeco Spidem Gaggia</a></h3>
-      <div class="prod-card-rating">★ 4.2 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/">85 Stücke Kaffeemaschinen O-Ringe Bausatz, Siliko Dichtungsringe Brühgruppe, Kompatibel mit Philips Saeco Spidem Gaggia</a></h3>
+      <div class="ios-card-rating">★ 4.2 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71SpXzRSf1L._AC_SL1500_.jpg" class="prod-card-thumb" alt="15 Stück ​Dichtungsringe für ​Saeco xelsis dichtungssatz mit 4 ​Edelstahl Reinigungsbürste Set, ​O-Ring Set mit ​Silikon Dichtungsringe und Bürste, für Supportventil Dampfventil Brühgruppe" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71SpXzRSf1L._AC_SL1500_.jpg" class="ios-card-thumb" alt="15 Stück ​Dichtungsringe für ​Saeco xelsis dichtungssatz mit 4 ​Edelstahl Reinigungsbürste Set, ​O-Ring Set mit ​Silikon Dichtungsringe und Bürste, für Supportventil Dampfventil Brühgruppe" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/">15 Stück ​Dichtungsringe für ​Saeco xelsis dichtungssatz mit 4 ​Edelstahl Reinigungsbürste Set, ​O-Ring Set mit ​Silikon Dichtungsringe und Bürste, für Supportventil Dampfventil Brühgruppe</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/">15 Stück ​Dichtungsringe für ​Saeco xelsis dichtungssatz mit 4 ​Edelstahl Reinigungsbürste Set, ​O-Ring Set mit ​Silikon Dichtungsringe und Bürste, für Supportventil Dampfventil Brühgruppe</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61q9E2wXjLL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee Einlaufstutzen + O-Ring für Philips Saeco &amp; Gaggia" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61q9E2wXjLL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee Einlaufstutzen + O-Ring für Philips Saeco &amp; Gaggia" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/">Snapworld-Kaffee Einlaufstutzen + O-Ring für Philips Saeco &amp; Gaggia</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/">Snapworld-Kaffee Einlaufstutzen + O-Ring für Philips Saeco &amp; Gaggia</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51KPjYSw20L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Wartungsset Dichtungssatz O-Ringe für Kaffeevollautomaten von Philips, Saeco, Spidem, Gaggia – Brühgruppe, Supportventil, Auslaufventil, Auslaufstutzen" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51KPjYSw20L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Wartungsset Dichtungssatz O-Ringe für Kaffeevollautomaten von Philips, Saeco, Spidem, Gaggia – Brühgruppe, Supportventil, Auslaufventil, Auslaufstutzen" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/">Wartungsset Dichtungssatz O-Ringe für Kaffeevollautomaten von Philips, Saeco, Spidem, Gaggia – Brühgruppe, Supportventil, Auslaufventil, Auslaufstutzen</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/">Wartungsset Dichtungssatz O-Ringe für Kaffeevollautomaten von Philips, Saeco, Spidem, Gaggia – Brühgruppe, Supportventil, Auslaufventil, Auslaufstutzen</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61uA159mT3L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco Set Crema Ventil Kugel Feder Dichtung für Brühgruppe Magic Royal Vienna" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61uA159mT3L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco Set Crema Ventil Kugel Feder Dichtung für Brühgruppe Magic Royal Vienna" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/">Saeco Set Crema Ventil Kugel Feder Dichtung für Brühgruppe Magic Royal Vienna</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/">Saeco Set Crema Ventil Kugel Feder Dichtung für Brühgruppe Magic Royal Vienna</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61r2R6412YL._AC_SL1500_.jpg" class="prod-card-thumb" alt="45 Stück Philips Latte go Dichtungsringe und 5 Stück Reinigungsset, Philips Kaffeevollautomat Dichtung O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61r2R6412YL._AC_SL1500_.jpg" class="ios-card-thumb" alt="45 Stück Philips Latte go Dichtungsringe und 5 Stück Reinigungsset, Philips Kaffeevollautomat Dichtung O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/">45 Stück Philips Latte go Dichtungsringe und 5 Stück Reinigungsset, Philips Kaffeevollautomat Dichtung O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/">45 Stück Philips Latte go Dichtungsringe und 5 Stück Reinigungsset, Philips Kaffeevollautomat Dichtung O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/21vlklxS5zL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ventilstift kompatibel mit/Ersatzteil für Philips Saeco 421944081491 Kaffeevollautomaten Espressomaschinen" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/21vlklxS5zL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ventilstift kompatibel mit/Ersatzteil für Philips Saeco 421944081491 Kaffeevollautomaten Espressomaschinen" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/">Ventilstift kompatibel mit/Ersatzteil für Philips Saeco 421944081491 Kaffeevollautomaten Espressomaschinen</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/">Ventilstift kompatibel mit/Ersatzteil für Philips Saeco 421944081491 Kaffeevollautomaten Espressomaschinen</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61lQphfeJ2L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco - Ersatzteile - Cappuccinatore schwarz" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61lQphfeJ2L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco - Ersatzteile - Cappuccinatore schwarz" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/">Saeco - Ersatzteile - Cappuccinatore schwarz</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/">Saeco - Ersatzteile - Cappuccinatore schwarz</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
     </div>
   </main>
 
   
-  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:56px; border-top:1px solid #292524;">
+  <nav class="ios-tab-bar" aria-label="App Navigation">
+    <a href="https://kaffeereparatur.github.io/" class="ios-tab-item ">
+      <span class="ios-tab-icon">🏠</span>
+      <span class="ios-tab-label">Start</span>
+    </a>
+    <a href="https://kaffeereparatur.github.io/#marken" class="ios-tab-item active">
+      <span class="ios-tab-icon">☕</span>
+      <span class="ios-tab-label">Marken</span>
+    </a>
+    <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-tab-item ">
+      <span class="ios-tab-icon">⚙️</span>
+      <span class="ios-tab-label">Baugruppen</span>
+    </a>
+    <button type="button" class="ios-tab-item" onclick="if(window.focusIosSearch)window.focusIosSearch();" aria-label="Suche öffnen">
+      <span class="ios-tab-icon">🔍</span>
+      <span class="ios-tab-label">Suche</span>
+    </button>
+  </nav>
+  
+  <footer style="background:#1c1c1e; color:#8e8e93; padding:44px 0 24px; margin-top:56px; border-top:0.5px solid rgba(255,255,255,0.1);">
     <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:28px; padding-bottom:28px;">
       <div>
         <div style="font-weight:800; font-size:17px; color:#ffffff; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-          ☕ KaffeeReparatur<span style="color:#eab308;">.de</span>
+          ☕ KaffeeReparatur<span style="color:#0071e3;">.de</span>
         </div>
-        <p style="font-size:12.5px; line-height:1.6; color:#78716c;">
+        <p style="font-size:12.5px; line-height:1.6; color:#8e8e93;">
           Deutsches Fach- und Reparaturportal für Kaffeevollautomaten-Ersatzteile. 100% verifizierte Original- und OEM-Komponenten mit mechatronischer Funktionsanalyse und direkter Verfügbarkeitsprüfung auf Amazon.de.
         </p>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Top-Hersteller</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#a8a29e;">Siemens EQ-Serie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#a8a29e;">Jura Impressa &amp; E/Z/ENA</a></li>
-          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#a8a29e;">Philips LatteGo &amp; 2200/3200</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#a8a29e;">Sage Barista Express</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#8e8e93;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#8e8e93;">Siemens EQ-Serie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#8e8e93;">Jura Impressa &amp; E/Z/ENA</a></li>
+          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#8e8e93;">Philips LatteGo &amp; 2200/3200</a></li>
+          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#8e8e93;">Sage Barista Express</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Baugruppen</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#a8a29e;">Mahlwerke &amp; Mahlkegel</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#a8a29e;">Drainageventile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#a8a29e;">Milchsysteme &amp; Karaffen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#a8a29e;">Wasserfilter &amp; Entkalker</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#8e8e93;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#8e8e93;">Mahlwerke &amp; Mahlkegel</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#8e8e93;">Drainageventile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#8e8e93;">Milchsysteme &amp; Karaffen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#8e8e93;">Wasserfilter &amp; Entkalker</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Transparenz</div>
-        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+        <p style="line-height:1.5; color:#8e8e93; font-size:12px; margin:0;">
           Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Alle Preise, Verfügbarkeiten und Lieferfristen werden live von Amazon.de bereitgestellt.
         </p>
       </div>
     </div>
-    <div class="wrap" style="border-top:1px solid #292524; padding-top:18px; text-align:center; font-size:12px; color:#57534e;">
+    <div class="wrap" style="border-top:0.5px solid rgba(255,255,255,0.1); padding-top:18px; text-align:center; font-size:12px; color:#636366;">
       © 2026 KaffeeReparatur. Alle Rechte vorbehalten. Unabhängiges Fachportal.
     </div>
   </footer>

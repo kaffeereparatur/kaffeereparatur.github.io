@@ -49,33 +49,39 @@
 </head>
 <body>
   
-  <header class="app-header">
-    <div class="header-inner">
-      <a href="https://kaffeereparatur.github.io/" class="brand-logo">
-        <span class="logo-icon">☕</span>
-        <span>KaffeeReparatur<span class="tld">.de</span></span>
-        <span class="badge-pro">Silo Hub</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="https://kaffeereparatur.github.io/#marken" class="nav-link">Hersteller</a>
-        <a href="https://kaffeereparatur.github.io/#kategorien" class="nav-link">Baugruppen</a>
-      </nav>
-
-      <div class="header-search">
-        <div class="search-input-wrap">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="site-search" class="search-input" placeholder="Ersatzteil, Modell oder ASIN suchen..." autocomplete="off">
-          <button id="search-clear" class="search-clear" aria-label="Suche leeren">✕</button>
+  <header class="ios-nav-header">
+    <div class="ios-nav-container">
+      <div class="ios-nav-top">
+        <a href="https://kaffeereparatur.github.io/" class="ios-nav-brand">
+          <span class="ios-nav-logo">☕</span>
+          <span class="ios-brand-name">KaffeeReparatur<span class="ios-brand-sub">.de</span></span>
+        </a>
+        <div class="ios-nav-shortcuts">
+          <a href="https://kaffeereparatur.github.io/#marken" class="ios-nav-chip">Hersteller</a>
+          <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-nav-chip">Baugruppen</a>
         </div>
-        <div id="search-dropdown" class="search-dropdown"></div>
+      </div>
+
+      <div class="ios-search-wrapper">
+        <div class="ios-search-bar">
+          <svg class="ios-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" id="site-search" class="ios-search-input" placeholder="Suchen nach Modell, Marke oder Teil..." autocomplete="off">
+          <button id="search-clear" class="ios-search-clear" aria-label="Löschen" type="button">✕</button>
+        </div>
+        <div id="search-dropdown" class="ios-search-dropdown"></div>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <!-- Pure Silo Breadcrumb -->
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <!-- iOS Navigation Back Button & Breadcrumbs -->
+    <div class="ios-nav-back-bar">
+      <a href="https://kaffeereparatur.github.io/sage/" class="ios-nav-back-btn">
+        <span class="ios-nav-back-chevron">‹</span> Sage
+      </a>
+    </div>
+
+    <nav class="ios-breadcrumb" aria-label="Breadcrumb">
       <a href="https://kaffeereparatur.github.io/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://kaffeereparatur.github.io/sage/">Sage</a>
@@ -83,141 +89,196 @@
       <a href="https://kaffeereparatur.github.io/sage/barista-express/">Barista Express (SES875)</a><span class="sep">›</span>
       <a href="https://kaffeereparatur.github.io/kategorie/magnetventil/">Magnetventile &amp; Solenoid</a>
       <span class="sep">›</span>
-      <span aria-current="page">QWORK® Magnetventil 220V, 3/4&#39;...</span>
+      <span aria-current="page">QWORK® Magnetventil 220V, ...</span>
     </nav>
 
-    <!-- Product Detail Hero -->
-    <div class="detail-hero-grid">
-      <div class="gallery-container">
-        <div class="main-img-box">
-          <img id="mainimg" src="https://m.media-amazon.com/images/I/71WMQ+YFf8L._AC_SL1500_.jpg" alt="QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20" onerror="this.style.opacity='0.8'">
-        </div>
+    <!-- Product Detail Hero (iOS App Card Grid) -->
+    <div class="ios-detail-grid">
+      <div class="ios-gallery-card">
+        <img id="mainimg" src="https://m.media-amazon.com/images/I/71WMQ+YFf8L._AC_SL1500_.jpg" alt="QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20" onerror="this.style.opacity='0.8'">
       </div>
 
-      <div class="detail-specs-box">
-        <div class="badge-row">
-          <span class="badge-brand">Sage</span>
-          <span class="badge-cat">Magnetventile &amp; Solenoid</span>
-          <span class="badge-brand">Barista Express (SES875)</span>
+      <div class="ios-specs-card">
+        <div class="ios-card-pills">
+          <span class="ios-pill ios-pill-blue">Sage</span>
+          <span class="ios-pill ios-pill-purple">Magnetventile &amp; Solenoid</span>
+          <span class="ios-pill ios-pill-green">Barista Express (SES875)</span>
         </div>
-        <div class="product-rating">★ 4.3 (145 Bewertungen auf Amazon.de)</div>
-        <div class="product-oem">OEM / Ref-Nr.: OEM-MV-52132 | ASIN: B0BRCQG8L3</div>
-        <h1 class="product-h1">QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20</h1>
+        <div class="ios-card-rating">★ 4.3 (145 Bewertungen auf Amazon.de)</div>
+        <h1 class="ios-product-h1">QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20</h1>
 
-        <ul class="bullet-list">
-          <li>⚙️ <span>Elektromagnetischer Schnellschalt-Hubanker 230V / 50Hz</span></li><li>⚙️ <span>Viton-FKM Dichtanker für Dampf- und Heißwassereinsatz bis 140 °C</span></li><li>⚙️ <span>Tropfdichte Umschaltung zwischen Kaffee- und Dampfkreislauf</span></li><li>⚙️ <span>Spulenwicklung nach VDE-Standard isoliert</span></li>
+        <!-- iOS Grouped Specs Table (Settings Style) -->
+        <div class="ios-specs-list">
+          <div class="ios-spec-row">
+            <span class="ios-spec-key">Hersteller</span>
+            <span class="ios-spec-val">Sage</span>
+          </div>
+          <div class="ios-spec-row">
+            <span class="ios-spec-key">Baugruppe</span>
+            <span class="ios-spec-val">Magnetventile &amp; Solenoid</span>
+          </div>
+          
+          <div class="ios-spec-row">
+            <span class="ios-spec-key">Modellreihe</span>
+            <span class="ios-spec-val">Barista Express (SES875)</span>
+          </div>
+          <div class="ios-spec-row">
+            <span class="ios-spec-key">OEM-Referenz</span>
+            <span class="ios-spec-val font-mono">OEM-MV-52132</span>
+          </div>
+          <div class="ios-spec-row">
+            <span class="ios-spec-key">Amazon ASIN</span>
+            <span class="ios-spec-val font-mono">B0BRCQG8L3</span>
+          </div>
+          <div class="ios-spec-row">
+            <span class="ios-spec-key">Zustand</span>
+            <span class="ios-spec-val text-green">100% Original Neuware</span>
+          </div>
+        </div>
+
+        <ul class="ios-bullet-list">
+          <li><span class="ios-check-circle">✓</span> <span>Elektromagnetischer Schnellschalt-Hubanker 230V / 50Hz</span></li><li><span class="ios-check-circle">✓</span> <span>Viton-FKM Dichtanker für Dampf- und Heißwassereinsatz bis 140 °C</span></li><li><span class="ios-check-circle">✓</span> <span>Tropfdichte Umschaltung zwischen Kaffee- und Dampfkreislauf</span></li><li><span class="ios-check-circle">✓</span> <span>Spulenwicklung nach VDE-Standard isoliert</span></li>
         </ul>
 
         <div class="cta-box">
-          <a class="cta" href="https://www.amazon.de/dp/B0BRCQG8L3?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
-            Verfügbarkeit &amp; aktuellen Preis auf Amazon prüfen ↗
+          <a class="cta ios-btn-cta" href="https://www.amazon.de/dp/B0BRCQG8L3?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            <span>Verfügbarkeit auf Amazon prüfen</span>
+            <span style="font-size:16px;">↗</span>
           </a>
-          <div class="note">Direktlink zur Produktseite auf Amazon.de • Schneller Versand &amp; 30 Tage Rückgaberecht</div>
+          <div class="ios-action-note">
+            <span class="ios-dot-green">●</span> Sofort lieferbar • Schneller Prime-Versand &amp; Käuferschutz
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Technical Guide Content with Wikipedia linking -->
-    <div class="content-layout">
-      <div class="main-content">
+    <div class="ios-content-layout">
+      <div class="ios-main-content">
         
-  <section class="content-section" id="funktionsweise">
-    <h2>🔬 Mechatronische Funktionsanalyse &amp; Wirkungsweise</h2>
-    <p>Bei dem Bauteil QWORK® <a href="https://kaffeereparatur.github.io/kategorie/magnetventil/" class="wiki-link" title="Magnetventile &amp; Solenoid">Magnetventil</a> <strong>220V</strong>, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20 handelt es sich um eine hochspezifizierte Kernkomponente für moderne Kaffeevollautomaten der Marke Sage. Innerhalb des hydraulischen und mechanischen Gesamtsystems erfüllt diese Baugruppe (Magnetventile &amp; Solenoid, OEM-Ref: OEM-MV-52132) eine definierte Steuerungs- und Belastungsfunktion.</p>
+  <section class="ios-card" id="funktionsweise">
+    <div class="ios-section-header">
+      <span class="ios-section-icon">🔬</span>
+      <h2>Mechatronische Funktionsanalyse &amp; Wirkungsweise</h2>
+    </div>
+    <div class="ios-card-body">
+      <p>Bei dem Bauteil QWORK® <a href="https://kaffeereparatur.github.io/kategorie/magnetventil/" class="wiki-link" title="Magnetventile &amp; Solenoid">Magnetventil</a> <strong>220V</strong>, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20 handelt es sich um eine hochspezifizierte Kernkomponente für moderne Kaffeevollautomaten der Marke Sage. Innerhalb des hydraulischen und mechanischen Gesamtsystems erfüllt diese Baugruppe (Magnetventile &amp; Solenoid, OEM-Ref: OEM-MV-52132) eine definierte Steuerungs- und Belastungsfunktion.</p>
 <p>Sie stellt sicher, dass der dynamische Brühzyklus unter einem stabilen Druckbereich von 9 bis <strong>15 Bar</strong> prozesssicher abläuft und thermische Verluste im Strömungskanal minimiert werden. Die präzise Fertigungstoleranz garantiert eine hermetische Abdichtung gegen Heißwasser und Dampf bis zu 140 °C.</p>
 <p>Bei Verschleiß der elastomeren Dichtzonen oder abrasiver Materialabnutzung kommt es unweigerlich zu Druckabfall, internen Leckagen oder einer Blockade des Antriebsmotors. Ein rechtzeitiger Austausch stellt das werkseitige Extraktionsprofil und die Langlebigkeit des Kaffeevollautomaten wieder her.</p>
+    </div>
   </section>
 
-  <section class="content-section" id="fehlersymptome">
-    <h2>⚠️ Typische Fehlersymptome &amp; Ursachenanalyse</h2>
-    <p>Im täglichen Einsatz unterliegt das Bauteil QWORK® <a href="https://kaffeereparatur.github.io/kategorie/magnetventil/" class="wiki-link" title="Magnetventile &amp; Solenoid">Magnetventil</a> <strong>220V</strong>, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20 mechanischen Wechselbeanspruchungen, hydrodynamischen Druckstößen sowie thermischen Dehnungszyklen. Typische Anzeichen für einen beginnenden Defekt äußern sich durch atypische Betriebsgeräusche, fehlerhafte Wasserführung in die Tropfschale oder ein unvollständiges Extraktionsergebnis in der Tasse.</p>
+  <section class="ios-card" id="fehlersymptome">
+    <div class="ios-section-header">
+      <span class="ios-section-icon">⚠️</span>
+      <h2>Typische Fehlersymptome &amp; Ursachenanalyse</h2>
+    </div>
+    <div class="ios-card-body">
+      <p>Im täglichen Einsatz unterliegt das Bauteil QWORK® <a href="https://kaffeereparatur.github.io/kategorie/magnetventil/" class="wiki-link" title="Magnetventile &amp; Solenoid">Magnetventil</a> <strong>220V</strong>, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20 mechanischen Wechselbeanspruchungen, hydrodynamischen Druckstößen sowie thermischen Dehnungszyklen. Typische Anzeichen für einen beginnenden Defekt äußern sich durch atypische Betriebsgeräusche, fehlerhafte Wasserführung in die Tropfschale oder ein unvollständiges Extraktionsergebnis in der Tasse.</p>
 <p>Ursächlich für den Funktionsausfall sind meist versprödete Dichtungsringe aus <strong>VMQ</strong> oder <strong>EPDM</strong>, Verkalkungsablagerungen in den engen Durchflusskanälen oder mechatronischer Verschleiß der Führungsschienen. Bei Fortbetrieb mit defektem Bauteil drohen Folgeschäden an der Elektronik oder der <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> durch Überlastabschaltung.</p>
+    </div>
   </section>
 
-  <section class="content-section" id="einbauanleitung">
-    <h2>🔧 Schritt-für-Schritt Reparatur- &amp; Einbauanleitung</h2>
-    <p>Vor Beginn aller Montagearbeiten am Kaffeevollautomaten ist das Gerät zwingend spannungsfrei zu schalten: Ziehen Sie den <strong>230V</strong>-Netzstecker und lassen Sie den <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mindestens 30 Minuten abkühlen. Verschließen Sie die Wasserzufuhr und entnehmen Sie die Abtropfschale sowie den Wassertank.</p>
+  <section class="ios-card" id="einbauanleitung">
+    <div class="ios-section-header">
+      <span class="ios-section-icon">🔧</span>
+      <h2>Schritt-für-Schritt Reparatur- &amp; Einbauanleitung</h2>
+    </div>
+    <div class="ios-card-body">
+      <p>Vor Beginn aller Montagearbeiten am Kaffeevollautomaten ist das Gerät zwingend spannungsfrei zu schalten: Ziehen Sie den <strong>230V</strong>-Netzstecker und lassen Sie den <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mindestens 30 Minuten abkühlen. Verschließen Sie die Wasserzufuhr und entnehmen Sie die Abtropfschale sowie den Wassertank.</p>
 <p>Lösen Sie die Gehäuseschrauben (in der Regel <strong>Torx</strong> <strong>TX10</strong> oder <strong>TX20</strong>) vorsichtig und heben Sie die Seitenverkleidung ab. Markieren Sie vor dem Lösen aller Hydraulikschläuche und elektrischen Steckverbindungen die Anschlüsse fotografisch.</p>
 <p>Setzen Sie das neue Ersatzteil (QWORK® <a href="https://kaffeereparatur.github.io/kategorie/magnetventil/" class="wiki-link" title="Magnetventile &amp; Solenoid">Magnetventil</a> <strong>220V</strong>, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20) exakt fluchtend ein, schmieren Sie alle neuen Dichtungsringe hauchdünn mit lebensmittelechtem Silikonfett (<strong>OKS 1110</strong>) ein und arretieren Sie die Sicherungsklammern hörbar. Führen Sie vor dem Verschließen des Gehäuses einen Probelauf auf Dichtigkeit durch.</p>
-  </section>
-
-  <section class="content-section" id="wartung">
-    <h2>⚙️ Wartungs- &amp; Prüftabelle</h2>
-    <div class="table-wrap">
-      <table class="diag-table">
-        <thead>
-          <tr>
-            <th>Prüfpunkt</th>
-            <th>Sollwert / Kriterium</th>
-            <th>Wartungsintervall</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Dichtheitsprüfung</td>
-            <td>Kein Tropfwasser an den Anschlüssen unter 15 Bar Druck</td>
-            <td>Monatliche Sichtprüfung</td>
-          </tr>
-          <tr>
-            <td>Elastomer-Zustand</td>
-            <td>Rissfrei, elastisch, 70 Shore A Härtegrad</td>
-            <td>Alle 12–18 Monate ersetzen</td>
-          </tr>
-          <tr>
-            <td>Schmierung</td>
-            <td>Gleichmäßiger Film aus lebensmittelechtem Silikonfett</td>
-            <td>Alle 500 Brühzyklen erneuern</td>
-          </tr>
-          <tr>
-            <td>Kalkablagerungen</td>
-            <td>Querschnittsverengung unter 5%, keine weißen Kristalle</td>
-            <td>Regelmäßige Entkalkung (Amidosulfonsäure)</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </section>
 
-  <section class="content-section" id="faq">
-    <h2>❓ Häufige Fragen (FAQ) zu QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20</h2>
-    <div class="faq-box">
-      <div class="faq-item">
-        <div class="faq-q">Ist dieses Ersatzteil für mein Modell von Sage geeignet?</div>
-        <div class="faq-a">Das Bauteil ist exakt auf die Spezifikationen und Anschlussmaße moderner Sage Kaffeevollautomaten ausgelegt. Prüfen Sie die Typennummer auf dem Typenschild Ihres Gerätes oder vergleichen Sie die OEM-Referenznummer (OEM-MV-52132).</div>
+  <!-- iOS Grouped Cells: Replaces table with pure fluid native cards (Zero horizontal scrollbars) -->
+  <section class="ios-card" id="wartung">
+    <div class="ios-section-header">
+      <span class="ios-section-icon">⚙️</span>
+      <h2>Wartungs- &amp; Prüfprotokoll</h2>
+    </div>
+    <div class="ios-cells-group">
+      <div class="ios-cell-row">
+        <div class="ios-cell-title-row">
+          <span class="ios-cell-title">Dichtheitsprüfung</span>
+          <span class="ios-pill ios-pill-blue">Monatlich</span>
+        </div>
+        <div class="ios-cell-desc">Kein Tropfwasser an den Schlauchanschlüssen unter 15 Bar vollem Prüfdruck.</div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Benötige ich für den Austausch Spezialwerkzeug?</div>
-        <div class="faq-a">In den meisten Fällen genügen handelsübliche Torx-Schraubendreher (TX10 / TX20) sowie lebensmittelechtes Silikonfett (z.B. OKS 1110). Für bestimmte Modelle (wie Jura) wird zusätzlich ein Ovalkopfschlüssel benötigt.</div>
+      <div class="ios-cell-row">
+        <div class="ios-cell-title-row">
+          <span class="ios-cell-title">Elastomer-Zustand</span>
+          <span class="ios-pill ios-pill-amber">12–18 Monate</span>
+        </div>
+        <div class="ios-cell-desc">Rissfrei, dauerelastisch, 70 Shore A Härtegrad nach ISO-Standard.</div>
       </div>
-      <div class="faq-item">
-        <div class="faq-q">Wie lange dauert die Reparatur in Eigenregie?</div>
-        <div class="faq-a">Der Austausch dieses Bauteils nimmt erfahrungsgemäß etwa 20 bis 45 Minuten in Anspruch. Dank unserer Schritt-für-Schritt-Anleitung ist die Durchführung auch für versierte Heimanwender problemlos machbar.</div>
+      <div class="ios-cell-row">
+        <div class="ios-cell-title-row">
+          <span class="ios-cell-title">Schmierung &amp; Gleitflächen</span>
+          <span class="ios-pill ios-pill-green">Alle 500 Zyklen</span>
+        </div>
+        <div class="ios-cell-desc">Gleichmäßiger dünner Film aus lebensmittelechtem Silikonfett (OKS 1110 / Glissa).</div>
+      </div>
+      <div class="ios-cell-row">
+        <div class="ios-cell-title-row">
+          <span class="ios-cell-title">Kalkablagerungen</span>
+          <span class="ios-pill ios-pill-purple">Turnusmäßig</span>
+        </div>
+        <div class="ios-cell-desc">Querschnittsverengung unter 5%, keine weißen Kristalle in den Fluidkanälen.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ios-card" id="faq">
+    <div class="ios-section-header">
+      <span class="ios-section-icon">❓</span>
+      <h2>Häufige Fragen (FAQ) zu QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20</h2>
+    </div>
+    <div class="ios-cells-group">
+      <div class="ios-cell-row">
+        <div class="ios-cell-title" style="margin-bottom:4px;">Ist dieses Ersatzteil für mein Modell von Sage geeignet?</div>
+        <div class="ios-cell-desc">Das Bauteil ist exakt auf die Spezifikationen und Anschlussmaße moderner Sage Kaffeevollautomaten ausgelegt. Prüfen Sie die Typennummer auf dem Typenschild Ihres Gerätes oder vergleichen Sie die OEM-Referenznummer (OEM-MV-52132).</div>
+      </div>
+      <div class="ios-cell-row">
+        <div class="ios-cell-title" style="margin-bottom:4px;">Benötige ich für den Austausch Spezialwerkzeug?</div>
+        <div class="ios-cell-desc">In den meisten Fällen genügen handelsübliche Torx-Schraubendreher (TX10 / TX20) sowie lebensmittelechtes Silikonfett (z.B. OKS 1110). Für bestimmte Modelle (wie Jura) wird zusätzlich ein Ovalkopfschlüssel benötigt.</div>
+      </div>
+      <div class="ios-cell-row">
+        <div class="ios-cell-title" style="margin-bottom:4px;">Wie lange dauert die Reparatur in Eigenregie?</div>
+        <div class="ios-cell-desc">Der Austausch dieses Bauteils nimmt erfahrungsgemäß etwa 20 bis 45 Minuten in Anspruch. Dank unserer Schritt-für-Schritt-Anleitung ist die Durchführung auch für versierte Heimanwender problemlos machbar.</div>
       </div>
     </div>
   </section>
       </div>
 
-      <aside class="sidebar">
-        <div class="sidebar-box">
-          <h3>Sage Silo-Navigation</h3>
-          <ul class="sidebar-list">
-            <li><a href="https://kaffeereparatur.github.io/sage/">Alle Sage Teile <span>›</span></a></li>
-            <li><a href="https://kaffeereparatur.github.io/sage/barista-express/">Modell: Barista Express (SES875) <span>›</span></a></li>
-            <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/">Brühgruppen <span>›</span></a></li>
-            <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/">Mahlwerke <span>›</span></a></li>
-            <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/">Drainageventile <span>›</span></a></li>
-            <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/">Milchsysteme <span>›</span></a></li>
-            <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/">Wasserfilter <span>›</span></a></li>
-          </ul>
+      <aside class="ios-sidebar">
+        <div class="ios-card ios-sidebar-card">
+          <h3 class="ios-sidebar-title">Sage Navigation</h3>
+          <div class="ios-sidebar-links">
+            <a href="https://kaffeereparatur.github.io/sage/" class="ios-sidebar-link">
+              <span>Alle Sage Teile</span>
+              <span class="ios-arrow">›</span>
+            </a>
+            
+            <a href="https://kaffeereparatur.github.io/sage/barista-express/" class="ios-sidebar-link">
+              <span>Modell: Barista Express (SES875)</span>
+              <span class="ios-arrow">›</span>
+            </a>
+            <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="ios-sidebar-link"><span>Brühgruppen</span><span class="ios-arrow">›</span></a>
+            <a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" class="ios-sidebar-link"><span>Mahlwerke</span><span class="ios-arrow">›</span></a>
+            <a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" class="ios-sidebar-link"><span>Drainageventile</span><span class="ios-arrow">›</span></a>
+            <a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" class="ios-sidebar-link"><span>Milchsysteme</span><span class="ios-arrow">›</span></a>
+            <a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" class="ios-sidebar-link"><span>Wasserfilter</span><span class="ios-arrow">›</span></a>
+          </div>
         </div>
 
-        <div class="sidebar-box">
-          <h3>Direkt auf Amazon prüfen</h3>
-          <p style="font-size:12.5px; color:#57534e; margin-bottom:12px; line-height:1.5;">
-            Prüfen Sie live die aktuelle Lieferbarkeit und Händlerpreise für <strong>QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, fü</strong>.
+        <div class="ios-card ios-sidebar-card">
+          <h3 class="ios-sidebar-title">Amazon Direktprüfung</h3>
+          <p style="font-size:13px; color:var(--ios-secondary); line-height:1.5; margin:0 0 12px 0;">
+            Prüfen Sie live die aktuelle Lieferbarkeit und Händlerpreise für <strong>QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messin</strong>.
           </p>
-          <a class="cta" style="padding:9px 14px; font-size:12.5px;" href="https://www.amazon.de/dp/B0BRCQG8L3?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
-            Amazon.de aufrufen ↗
+          <a class="cta ios-btn-cta" style="padding:10px 14px; font-size:13px;" href="https://www.amazon.de/dp/B0BRCQG8L3?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Auf Amazon.de öffnen ↗
           </a>
         </div>
       </aside>
@@ -226,133 +287,143 @@
     <!-- Related Genuine Parts Grid -->
     
     <section style="margin: 28px 0;">
-      <h2 style="font-size: 19px; font-weight: 800; margin-bottom: 14px;">Passende Sage Komponenten &amp; Revisions-Kits</h2>
+      <div class="ios-section-title-bar">
+        <h2 class="ios-section-heading">Passende Sage Komponenten &amp; Revisions-Kits</h2>
+      </div>
       <div class="prod-grid">
         
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/sage/54-mm-cafelat-rot-12silikondichtung-fuer-breville-b0bshdh9hy/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61LMyv3b3EL._AC_SL1500_.jpg" class="prod-card-thumb" alt="54 mm Cafelat Rot 12Silikondichtung für Breville Sage Espressomaschinen Express, Bambino, Bambino Plus, Barista Pro BES450, BES500, BES880, BES810BSS, BES860XL, BES870XL, BES878" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/sage/54-mm-cafelat-rot-12silikondichtung-fuer-breville-b0bshdh9hy/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61LMyv3b3EL._AC_SL1500_.jpg" class="ios-card-thumb" alt="54 mm Cafelat Rot 12Silikondichtung für Breville Sage Espressomaschinen Express, Bambino, Bambino Plus, Barista Pro BES450, BES500, BES880, BES810BSS, BES860XL, BES870XL, BES878" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Sage</span>
-        <span class="badge-cat">Brühgruppen &amp; Dichtungen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Sage</span>
+        <span class="ios-pill ios-pill-purple">Brühgruppen &amp; Dichtungen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/sage/54-mm-cafelat-rot-12silikondichtung-fuer-breville-b0bshdh9hy/">54 mm Cafelat Rot 12Silikondichtung für Breville Sage Espressomaschinen Express, Bambino, Bambino Plus, Barista Pro BES450, BES500, BES880, BES810BSS, BES860XL, BES870XL, BES878</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/sage/54-mm-cafelat-rot-12silikondichtung-fuer-breville-b0bshdh9hy/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/sage/54-mm-cafelat-rot-12silikondichtung-fuer-breville-b0bshdh9hy/">54 mm Cafelat Rot 12Silikondichtung für Breville Sage Espressomaschinen Express, Bambino, Bambino Plus, Barista Pro BES450, BES500, BES880, BES810BSS, BES860XL, BES870XL, BES878</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/sage/54-mm-cafelat-rot-12silikondichtung-fuer-breville-b0bshdh9hy/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/sage/3-stueck-54mm-sage-barista-express-dichtung-siliko-b0fq2dkcj8/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61WKXRhBJgL._AC_SL1500_.jpg" class="prod-card-thumb" alt="3 Stück 54mm Sage Barista Express Dichtung,Silikon-Dampfring,Sage Kaffeemaschine Zubehör,BPA-Silikondichtung,Kompatibel mit Sage The Barista Express BES875UK SES875BKS SES875 SES875BTR2GUK1" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/sage/3-stueck-54mm-sage-barista-express-dichtung-siliko-b0fq2dkcj8/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61WKXRhBJgL._AC_SL1500_.jpg" class="ios-card-thumb" alt="3 Stück 54mm Sage Barista Express Dichtung,Silikon-Dampfring,Sage Kaffeemaschine Zubehör,BPA-Silikondichtung,Kompatibel mit Sage The Barista Express BES875UK SES875BKS SES875 SES875BTR2GUK1" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Sage</span>
-        <span class="badge-cat">Brühgruppen &amp; Dichtungen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Sage</span>
+        <span class="ios-pill ios-pill-purple">Brühgruppen &amp; Dichtungen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/sage/3-stueck-54mm-sage-barista-express-dichtung-siliko-b0fq2dkcj8/">3 Stück 54mm Sage Barista Express Dichtung,Silikon-Dampfring,Sage Kaffeemaschine Zubehör,BPA-Silikondichtung,Kompatibel mit Sage The Barista Express BES875UK SES875BKS SES875 SES875BTR2GUK1</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/sage/3-stueck-54mm-sage-barista-express-dichtung-siliko-b0fq2dkcj8/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/sage/3-stueck-54mm-sage-barista-express-dichtung-siliko-b0fq2dkcj8/">3 Stück 54mm Sage Barista Express Dichtung,Silikon-Dampfring,Sage Kaffeemaschine Zubehör,BPA-Silikondichtung,Kompatibel mit Sage The Barista Express BES875UK SES875BKS SES875 SES875BTR2GUK1</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/sage/3-stueck-54mm-sage-barista-express-dichtung-siliko-b0fq2dkcj8/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/sage/2-stk-dichtungsringe-fuer-sage-barista-express-sil-b0dqv3kk9x/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61mW5K6xh7L._AC_SL1500_.jpg" class="prod-card-thumb" alt="2 Stk Dichtungsringe für Sage Barista Express, Silikon Ersatz" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/sage/2-stk-dichtungsringe-fuer-sage-barista-express-sil-b0dqv3kk9x/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61mW5K6xh7L._AC_SL1500_.jpg" class="ios-card-thumb" alt="2 Stk Dichtungsringe für Sage Barista Express, Silikon Ersatz" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Sage</span>
-        <span class="badge-cat">Brühgruppen &amp; Dichtungen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Sage</span>
+        <span class="ios-pill ios-pill-purple">Brühgruppen &amp; Dichtungen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/sage/2-stk-dichtungsringe-fuer-sage-barista-express-sil-b0dqv3kk9x/">2 Stk Dichtungsringe für Sage Barista Express, Silikon Ersatz</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/sage/2-stk-dichtungsringe-fuer-sage-barista-express-sil-b0dqv3kk9x/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/sage/2-stk-dichtungsringe-fuer-sage-barista-express-sil-b0dqv3kk9x/">2 Stk Dichtungsringe für Sage Barista Express, Silikon Ersatz</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/sage/2-stk-dichtungsringe-fuer-sage-barista-express-sil-b0dqv3kk9x/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/sage/reinigungsscheibe-cleaning-disc-fuer-breville-sage-b0h4qcb2ns/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61qqfmkVQ5L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Reinigungsscheibe Cleaning Disc für Breville Sage 54mm 4er Espresso Reinigungsscheibe mit Siebträger Zubehör für Sage Barista Express hitzebeständige Silikon Scheiben für Kaffeemaschine 54mm Backflush" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/sage/reinigungsscheibe-cleaning-disc-fuer-breville-sage-b0h4qcb2ns/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61qqfmkVQ5L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Reinigungsscheibe Cleaning Disc für Breville Sage 54mm 4er Espresso Reinigungsscheibe mit Siebträger Zubehör für Sage Barista Express hitzebeständige Silikon Scheiben für Kaffeemaschine 54mm Backflush" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Sage</span>
-        <span class="badge-cat">Brühgruppen &amp; Dichtungen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Sage</span>
+        <span class="ios-pill ios-pill-purple">Brühgruppen &amp; Dichtungen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/sage/reinigungsscheibe-cleaning-disc-fuer-breville-sage-b0h4qcb2ns/">Reinigungsscheibe Cleaning Disc für Breville Sage 54mm 4er Espresso Reinigungsscheibe mit Siebträger Zubehör für Sage Barista Express hitzebeständige Silikon Scheiben für Kaffeemaschine 54mm Backflush</a></h3>
-      <div class="prod-card-rating">★ 4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/sage/reinigungsscheibe-cleaning-disc-fuer-breville-sage-b0h4qcb2ns/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/sage/reinigungsscheibe-cleaning-disc-fuer-breville-sage-b0h4qcb2ns/">Reinigungsscheibe Cleaning Disc für Breville Sage 54mm 4er Espresso Reinigungsscheibe mit Siebträger Zubehör für Sage Barista Express hitzebeständige Silikon Scheiben für Kaffeemaschine 54mm Backflush</a></h3>
+      <div class="ios-card-rating">★ 4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/sage/reinigungsscheibe-cleaning-disc-fuer-breville-sage-b0h4qcb2ns/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
       </div>
     </section>
   </main>
 
-  <!-- Mobile Sticky Bottom CTA -->
-  <div class="mobile-sticky-cta">
-    <div class="sticky-info">
-      <span class="sticky-title">QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20</span>
-      <span class="sticky-sub">★ 4.3 auf Amazon.de</span>
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="ios-sticky-action-bar">
+    <div class="ios-sticky-info">
+      <span class="ios-sticky-title">QWORK® Magnetventil 220V, 3/4&#39;&#39;G, Messing, für Wasser Luft Gas Öl, DN20</span>
+      <span class="ios-sticky-rating">★ 4.3 auf Amazon.de</span>
     </div>
-    <a href="https://www.amazon.de/dp/B0BRCQG8L3?tag=kaffeereparatur-21" class="btn-sticky-amazon" target="_blank" rel="sponsored nofollow noopener">
+    <a href="https://www.amazon.de/dp/B0BRCQG8L3?tag=kaffeereparatur-21" class="btn-sticky-amazon ios-sticky-btn" target="_blank" rel="sponsored nofollow noopener">
       Bei Amazon prüfen ↗
     </a>
   </div>
 
   
-  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:56px; border-top:1px solid #292524;">
+  <footer style="background:#1c1c1e; color:#8e8e93; padding:44px 0 24px; margin-top:56px; border-top:0.5px solid rgba(255,255,255,0.1);">
     <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:28px; padding-bottom:28px;">
       <div>
         <div style="font-weight:800; font-size:17px; color:#ffffff; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-          ☕ KaffeeReparatur<span style="color:#eab308;">.de</span>
+          ☕ KaffeeReparatur<span style="color:#0071e3;">.de</span>
         </div>
-        <p style="font-size:12.5px; line-height:1.6; color:#78716c;">
+        <p style="font-size:12.5px; line-height:1.6; color:#8e8e93;">
           Deutsches Fach- und Reparaturportal für Kaffeevollautomaten-Ersatzteile. 100% verifizierte Original- und OEM-Komponenten mit mechatronischer Funktionsanalyse und direkter Verfügbarkeitsprüfung auf Amazon.de.
         </p>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Top-Hersteller</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#a8a29e;">Siemens EQ-Serie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#a8a29e;">Jura Impressa &amp; E/Z/ENA</a></li>
-          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#a8a29e;">Philips LatteGo &amp; 2200/3200</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#a8a29e;">Sage Barista Express</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#8e8e93;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#8e8e93;">Siemens EQ-Serie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#8e8e93;">Jura Impressa &amp; E/Z/ENA</a></li>
+          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#8e8e93;">Philips LatteGo &amp; 2200/3200</a></li>
+          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#8e8e93;">Sage Barista Express</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Baugruppen</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#a8a29e;">Mahlwerke &amp; Mahlkegel</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#a8a29e;">Drainageventile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#a8a29e;">Milchsysteme &amp; Karaffen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#a8a29e;">Wasserfilter &amp; Entkalker</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#8e8e93;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#8e8e93;">Mahlwerke &amp; Mahlkegel</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#8e8e93;">Drainageventile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#8e8e93;">Milchsysteme &amp; Karaffen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#8e8e93;">Wasserfilter &amp; Entkalker</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Transparenz</div>
-        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+        <p style="line-height:1.5; color:#8e8e93; font-size:12px; margin:0;">
           Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Alle Preise, Verfügbarkeiten und Lieferfristen werden live von Amazon.de bereitgestellt.
         </p>
       </div>
     </div>
-    <div class="wrap" style="border-top:1px solid #292524; padding-top:18px; text-align:center; font-size:12px; color:#57534e;">
+    <div class="wrap" style="border-top:0.5px solid rgba(255,255,255,0.1); padding-top:18px; text-align:center; font-size:12px; color:#636366;">
       © 2026 KaffeeReparatur. Alle Rechte vorbehalten. Unabhängiges Fachportal.
     </div>
   </footer>

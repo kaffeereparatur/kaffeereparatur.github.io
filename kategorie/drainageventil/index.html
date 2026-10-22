@@ -11,32 +11,38 @@
 </head>
 <body>
   
-  <header class="app-header">
-    <div class="header-inner">
-      <a href="https://kaffeereparatur.github.io/" class="brand-logo">
-        <span class="logo-icon">☕</span>
-        <span>KaffeeReparatur<span class="tld">.de</span></span>
-        <span class="badge-pro">Silo Hub</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="https://kaffeereparatur.github.io/#marken" class="nav-link">Hersteller</a>
-        <a href="https://kaffeereparatur.github.io/#kategorien" class="nav-link">Baugruppen</a>
-      </nav>
-
-      <div class="header-search">
-        <div class="search-input-wrap">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="site-search" class="search-input" placeholder="Ersatzteil, Modell oder ASIN suchen..." autocomplete="off">
-          <button id="search-clear" class="search-clear" aria-label="Suche leeren">✕</button>
+  <header class="ios-nav-header">
+    <div class="ios-nav-container">
+      <div class="ios-nav-top">
+        <a href="https://kaffeereparatur.github.io/" class="ios-nav-brand">
+          <span class="ios-nav-logo">☕</span>
+          <span class="ios-brand-name">KaffeeReparatur<span class="ios-brand-sub">.de</span></span>
+        </a>
+        <div class="ios-nav-shortcuts">
+          <a href="https://kaffeereparatur.github.io/#marken" class="ios-nav-chip">Hersteller</a>
+          <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-nav-chip">Baugruppen</a>
         </div>
-        <div id="search-dropdown" class="search-dropdown"></div>
+      </div>
+
+      <div class="ios-search-wrapper">
+        <div class="ios-search-bar">
+          <svg class="ios-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" id="site-search" class="ios-search-input" placeholder="Suchen nach Modell, Marke oder Teil..." autocomplete="off">
+          <button id="search-clear" class="ios-search-clear" aria-label="Löschen" type="button">✕</button>
+        </div>
+        <div id="search-dropdown" class="ios-search-dropdown"></div>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="ios-nav-back-bar">
+      <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-nav-back-btn">
+        <span class="ios-nav-back-chevron">‹</span> Baugruppen
+      </a>
+    </div>
+
+    <nav class="ios-breadcrumb" aria-label="Breadcrumb">
       <a href="https://kaffeereparatur.github.io/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://kaffeereparatur.github.io/#kategorien">Baugruppen</a>
@@ -44,1062 +50,1204 @@
       <span aria-current="page">Drainageventile &amp; Kappen</span>
     </nav>
 
-    <div style="background:#ffffff; border:1px solid var(--border-color); border-radius:16px; padding:28px 18px; margin:16px 0 28px; text-align:center;">
-      <h1 style="font-size:26px; font-weight:800; color:var(--text-main); margin-bottom:8px;">💧 Drainageventile &amp; Kappen</h1>
-      <p style="font-size:14.5px; color:var(--text-muted); max-width:650px; margin:0 auto; line-height:1.6;">
+    <div class="ios-hero-card">
+      <span class="ios-pill ios-pill-purple" style="font-weight:700; margin-bottom:8px; display:inline-block;">BAUGRUPPE</span>
+      <h1 class="ios-hero-title">💧 Drainageventile &amp; Kappen</h1>
+      <p class="ios-hero-sub">
         59 geprüfte Ersatzteile und Reparatur-Kits in der Kategorie Drainageventile &amp; Kappen für alle gängigen Kaffeevollautomaten.
       </p>
     </div>
 
+    <div class="ios-section-title-bar">
+      <h2 class="ios-section-heading">Verifizierte Drainageventile &amp; Kappen</h2>
+      <span class="ios-section-count">59 Artikel</span>
+    </div>
     <div class="prod-grid">
       
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/keramikventil-komplett-mit-schlauch-kompatibel-mit-b0gs7qml1h/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61UvMSzwA5L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Keramikventil komplett mit Schlauch kompatibel mit Bosch Siemens 12015639 – Ersatzteil für Siemens EQ.6 Kaffeevollautomat &amp; Bosch VeroAroma Kaffeemaschine" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/keramikventil-komplett-mit-schlauch-kompatibel-mit-b0gs7qml1h/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61UvMSzwA5L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Keramikventil komplett mit Schlauch kompatibel mit Bosch Siemens 12015639 – Ersatzteil für Siemens EQ.6 Kaffeevollautomat &amp; Bosch VeroAroma Kaffeemaschine" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/keramikventil-komplett-mit-schlauch-kompatibel-mit-b0gs7qml1h/">Keramikventil komplett mit Schlauch kompatibel mit Bosch Siemens 12015639 – Ersatzteil für Siemens EQ.6 Kaffeevollautomat &amp; Bosch VeroAroma Kaffeemaschine</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/keramikventil-komplett-mit-schlauch-kompatibel-mit-b0gs7qml1h/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/keramikventil-komplett-mit-schlauch-kompatibel-mit-b0gs7qml1h/">Keramikventil komplett mit Schlauch kompatibel mit Bosch Siemens 12015639 – Ersatzteil für Siemens EQ.6 Kaffeevollautomat &amp; Bosch VeroAroma Kaffeemaschine</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/keramikventil-komplett-mit-schlauch-kompatibel-mit-b0gs7qml1h/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/bosch-11014117-bruehgruppe-schwarz-fuer-kaffeevoll-b07bpgyz6c/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51GZR62JKbL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Bosch / 11014117 Brühgruppe schwarz für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/bosch-11014117-bruehgruppe-schwarz-fuer-kaffeevoll-b07bpgyz6c/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51GZR62JKbL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Bosch / 11014117 Brühgruppe schwarz für Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/bosch-11014117-bruehgruppe-schwarz-fuer-kaffeevoll-b07bpgyz6c/">Bosch / 11014117 Brühgruppe schwarz für Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/bosch-11014117-bruehgruppe-schwarz-fuer-kaffeevoll-b07bpgyz6c/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/bosch-11014117-bruehgruppe-schwarz-fuer-kaffeevoll-b07bpgyz6c/">Bosch / 11014117 Brühgruppe schwarz für Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/bosch-11014117-bruehgruppe-schwarz-fuer-kaffeevoll-b07bpgyz6c/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-drainageventil-passend-fuer-bosch-siemens-0-b08hr5gnm8/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51DE6WpzD+L._AC_SL1500_.jpg" class="prod-card-thumb" alt="DL-pro Drainageventil passend für Bosch Siemens 00622540 Brühgruppe" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-drainageventil-passend-fuer-bosch-siemens-0-b08hr5gnm8/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51DE6WpzD+L._AC_SL1500_.jpg" class="ios-card-thumb" alt="DL-pro Drainageventil passend für Bosch Siemens 00622540 Brühgruppe" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/dl-pro-drainageventil-passend-fuer-bosch-siemens-0-b08hr5gnm8/">DL-pro Drainageventil passend für Bosch Siemens 00622540 Brühgruppe</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/dl-pro-drainageventil-passend-fuer-bosch-siemens-0-b08hr5gnm8/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/dl-pro-drainageventil-passend-fuer-bosch-siemens-0-b08hr5gnm8/">DL-pro Drainageventil passend für Bosch Siemens 00622540 Brühgruppe</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/dl-pro-drainageventil-passend-fuer-bosch-siemens-0-b08hr5gnm8/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b0b1jb9v2b/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51nEnwkm2kL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Blende (Kaffeeauslauf) kompatibel mit/Ersatzteil für Bosch Siemens 12004560 EQ.6 Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b0b1jb9v2b/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51nEnwkm2kL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Blende (Kaffeeauslauf) kompatibel mit/Ersatzteil für Bosch Siemens 12004560 EQ.6 Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b0b1jb9v2b/">Blende (Kaffeeauslauf) kompatibel mit/Ersatzteil für Bosch Siemens 12004560 EQ.6 Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b0b1jb9v2b/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b0b1jb9v2b/">Blende (Kaffeeauslauf) kompatibel mit/Ersatzteil für Bosch Siemens 12004560 EQ.6 Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b0b1jb9v2b/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-wassertankgriff-griff-transparentgrau-fuer-b08t9zhw77/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51GMLpb3n-L._AC_SL1500_.jpg" class="prod-card-thumb" alt="DL-pro Wassertankgriff Griff transparentgrau für Bosch Siemens 00653064 653064 EQ5 EQ6 VeroAroma VeroCafe Kaffeemaschine" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-wassertankgriff-griff-transparentgrau-fuer-b08t9zhw77/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51GMLpb3n-L._AC_SL1500_.jpg" class="ios-card-thumb" alt="DL-pro Wassertankgriff Griff transparentgrau für Bosch Siemens 00653064 653064 EQ5 EQ6 VeroAroma VeroCafe Kaffeemaschine" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/dl-pro-wassertankgriff-griff-transparentgrau-fuer-b08t9zhw77/">DL-pro Wassertankgriff Griff transparentgrau für Bosch Siemens 00653064 653064 EQ5 EQ6 VeroAroma VeroCafe Kaffeemaschine</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/dl-pro-wassertankgriff-griff-transparentgrau-fuer-b08t9zhw77/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/dl-pro-wassertankgriff-griff-transparentgrau-fuer-b08t9zhw77/">DL-pro Wassertankgriff Griff transparentgrau für Bosch Siemens 00653064 653064 EQ5 EQ6 VeroAroma VeroCafe Kaffeemaschine</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/dl-pro-wassertankgriff-griff-transparentgrau-fuer-b08t9zhw77/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq-6-ver-b08sqpslng/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51KLLusY7LL._AC_SL1500_.jpg" class="prod-card-thumb" alt="DL-pro Kaffeeauslauf passend für Siemens EQ.6 / VeroAroma, Ersatz 12004726" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq-6-ver-b08sqpslng/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51KLLusY7LL._AC_SL1500_.jpg" class="ios-card-thumb" alt="DL-pro Kaffeeauslauf passend für Siemens EQ.6 / VeroAroma, Ersatz 12004726" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq-6-ver-b08sqpslng/">DL-pro Kaffeeauslauf passend für Siemens EQ.6 / VeroAroma, Ersatz 12004726</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq-6-ver-b08sqpslng/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq-6-ver-b08sqpslng/">DL-pro Kaffeeauslauf passend für Siemens EQ.6 / VeroAroma, Ersatz 12004726</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq-6-ver-b08sqpslng/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/drainageventil-passend-fuer-melitta-6769601-fuer-a-b09k4m6nt9/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41-zu3np+uL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Drainageventil passend für Melitta 6769601 für Antrieb Brühgruppe Kaffeemaschine" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/drainageventil-passend-fuer-melitta-6769601-fuer-a-b09k4m6nt9/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41-zu3np+uL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Drainageventil passend für Melitta 6769601 für Antrieb Brühgruppe Kaffeemaschine" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/drainageventil-passend-fuer-melitta-6769601-fuer-a-b09k4m6nt9/">Drainageventil passend für Melitta 6769601 für Antrieb Brühgruppe Kaffeemaschine</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/drainageventil-passend-fuer-melitta-6769601-fuer-a-b09k4m6nt9/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/drainageventil-passend-fuer-melitta-6769601-fuer-a-b09k4m6nt9/">Drainageventil passend für Melitta 6769601 für Antrieb Brühgruppe Kaffeemaschine</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/drainageventil-passend-fuer-melitta-6769601-fuer-a-b09k4m6nt9/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/dichtungssatz-fuer-brueheinheit-wassertank-dampfro-b0ctyp28p6/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61+L+RJdH6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtungssatz für Brüheinheit Wassertank Dampfrohr und Pumpe" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/dichtungssatz-fuer-brueheinheit-wassertank-dampfro-b0ctyp28p6/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61+L+RJdH6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtungssatz für Brüheinheit Wassertank Dampfrohr und Pumpe" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/dichtungssatz-fuer-brueheinheit-wassertank-dampfro-b0ctyp28p6/">Dichtungssatz für Brüheinheit Wassertank Dampfrohr und Pumpe</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/dichtungssatz-fuer-brueheinheit-wassertank-dampfro-b0ctyp28p6/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/dichtungssatz-fuer-brueheinheit-wassertank-dampfro-b0ctyp28p6/">Dichtungssatz für Brüheinheit Wassertank Dampfrohr und Pumpe</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/dichtungssatz-fuer-brueheinheit-wassertank-dampfro-b0ctyp28p6/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-12tlg-dichtungen-fuer-jura-impres-b0ckw362hj/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/716FyWhKtvL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee 12tlg., Dichtungen für Jura Impressa AEG Krups Brühgruppe" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-12tlg-dichtungen-fuer-jura-impres-b0ckw362hj/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/716FyWhKtvL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee 12tlg., Dichtungen für Jura Impressa AEG Krups Brühgruppe" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-12tlg-dichtungen-fuer-jura-impres-b0ckw362hj/">Snapworld-Kaffee 12tlg., Dichtungen für Jura Impressa AEG Krups Brühgruppe</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-12tlg-dichtungen-fuer-jura-impres-b0ckw362hj/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-12tlg-dichtungen-fuer-jura-impres-b0ckw362hj/">Snapworld-Kaffee 12tlg., Dichtungen für Jura Impressa AEG Krups Brühgruppe</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-12tlg-dichtungen-fuer-jura-impres-b0ckw362hj/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09n9q3v27/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41TZaFpV+ML._AC_SL1500_.jpg" class="prod-card-thumb" alt="Drainageventil kompatibel mit/Ersatzteil für Melitta 6769602 (=6757926) Caffeo Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09n9q3v27/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41TZaFpV+ML._AC_SL1500_.jpg" class="ios-card-thumb" alt="Drainageventil kompatibel mit/Ersatzteil für Melitta 6769602 (=6757926) Caffeo Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09n9q3v27/">Drainageventil kompatibel mit/Ersatzteil für Melitta 6769602 (=6757926) Caffeo Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09n9q3v27/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09n9q3v27/">Drainageventil kompatibel mit/Ersatzteil für Melitta 6769602 (=6757926) Caffeo Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09n9q3v27/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/siemens-kaffeeauslauf-621811-inkl-piebert-reinigun-b01n0xq6dj/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71idn7p08HL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Siemens Kaffeeauslauf 621811 inkl. Piebert Reinigungsbürste 2mm für Siemens EQ5, Bosch VeroCafe, Gagenau CM, Neff C77V60N2 Kaffeevollautomaten inkl. Einbau-Anleitung (QR-Code)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/siemens-kaffeeauslauf-621811-inkl-piebert-reinigun-b01n0xq6dj/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71idn7p08HL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Siemens Kaffeeauslauf 621811 inkl. Piebert Reinigungsbürste 2mm für Siemens EQ5, Bosch VeroCafe, Gagenau CM, Neff C77V60N2 Kaffeevollautomaten inkl. Einbau-Anleitung (QR-Code)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/siemens-kaffeeauslauf-621811-inkl-piebert-reinigun-b01n0xq6dj/">Siemens Kaffeeauslauf 621811 inkl. Piebert Reinigungsbürste 2mm für Siemens EQ5, Bosch VeroCafe, Gagenau CM, Neff C77V60N2 Kaffeevollautomaten inkl. Einbau-Anleitung (QR-Code)</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/siemens-kaffeeauslauf-621811-inkl-piebert-reinigun-b01n0xq6dj/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/siemens-kaffeeauslauf-621811-inkl-piebert-reinigun-b01n0xq6dj/">Siemens Kaffeeauslauf 621811 inkl. Piebert Reinigungsbürste 2mm für Siemens EQ5, Bosch VeroCafe, Gagenau CM, Neff C77V60N2 Kaffeevollautomaten inkl. Einbau-Anleitung (QR-Code)</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/siemens-kaffeeauslauf-621811-inkl-piebert-reinigun-b01n0xq6dj/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-5tlg-dichtung-fuer-siemens-bosch-b09wmy2jzz/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71D+nzpuIiL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee 5tlg., Dichtung für Siemens Bosch Melitta Miele Brühgruppe" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-5tlg-dichtung-fuer-siemens-bosch-b09wmy2jzz/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71D+nzpuIiL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee 5tlg., Dichtung für Siemens Bosch Melitta Miele Brühgruppe" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-5tlg-dichtung-fuer-siemens-bosch-b09wmy2jzz/">Snapworld-Kaffee 5tlg., Dichtung für Siemens Bosch Melitta Miele Brühgruppe</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-5tlg-dichtung-fuer-siemens-bosch-b09wmy2jzz/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-5tlg-dichtung-fuer-siemens-bosch-b09wmy2jzz/">Snapworld-Kaffee 5tlg., Dichtung für Siemens Bosch Melitta Miele Brühgruppe</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/snapworld-kaffee-5tlg-dichtung-fuer-siemens-bosch-b09wmy2jzz/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09mjjq58d/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51AbiVIZHTL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Drainageventil kompatibel mit/Ersatzteil für Melitta 6769600 Caffeo Kaffeevollautomaten (Beschreibung)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09mjjq58d/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51AbiVIZHTL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Drainageventil kompatibel mit/Ersatzteil für Melitta 6769600 Caffeo Kaffeevollautomaten (Beschreibung)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09mjjq58d/">Drainageventil kompatibel mit/Ersatzteil für Melitta 6769600 Caffeo Kaffeevollautomaten (Beschreibung)</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09mjjq58d/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09mjjq58d/">Drainageventil kompatibel mit/Ersatzteil für Melitta 6769600 Caffeo Kaffeevollautomaten (Beschreibung)</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/drainageventil-kompatibel-mit-ersatzteil-fuer-meli-b09mjjq58d/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq7-eq-7-b09ky6sslj/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61-QAxstKeL._AC_SL1500_.jpg" class="prod-card-thumb" alt="DL-pro Kaffeeauslauf passend für Siemens EQ7 EQ.7 Plus extraKlasse aromaSense 12011804 00647218 647218 zweifache Auslaufdüse Kaffeeauslaufverteiler Düse schwarz für Kaffeemaschine Kaffeevollautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq7-eq-7-b09ky6sslj/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61-QAxstKeL._AC_SL1500_.jpg" class="ios-card-thumb" alt="DL-pro Kaffeeauslauf passend für Siemens EQ7 EQ.7 Plus extraKlasse aromaSense 12011804 00647218 647218 zweifache Auslaufdüse Kaffeeauslaufverteiler Düse schwarz für Kaffeemaschine Kaffeevollautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq7-eq-7-b09ky6sslj/">DL-pro Kaffeeauslauf passend für Siemens EQ7 EQ.7 Plus extraKlasse aromaSense 12011804 00647218 647218 zweifache Auslaufdüse Kaffeeauslaufverteiler Düse schwarz für Kaffeemaschine Kaffeevollautomat</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq7-eq-7-b09ky6sslj/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq7-eq-7-b09ky6sslj/">DL-pro Kaffeeauslauf passend für Siemens EQ7 EQ.7 Plus extraKlasse aromaSense 12011804 00647218 647218 zweifache Auslaufdüse Kaffeeauslaufverteiler Düse schwarz für Kaffeemaschine Kaffeevollautomat</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/dl-pro-kaffeeauslauf-passend-fuer-siemens-eq7-eq-7-b09ky6sslj/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/vioks-ablassventil-mit-feder-kaffeemaschine-ersatz-b07prqr6yn/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51quWqJOdOL._AC_SL1500_.jpg" class="prod-card-thumb" alt="VIOKS Ablassventil mit Feder Kaffeemaschine Ersatz für Mеlitta 6769601" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/vioks-ablassventil-mit-feder-kaffeemaschine-ersatz-b07prqr6yn/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51quWqJOdOL._AC_SL1500_.jpg" class="ios-card-thumb" alt="VIOKS Ablassventil mit Feder Kaffeemaschine Ersatz für Mеlitta 6769601" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/vioks-ablassventil-mit-feder-kaffeemaschine-ersatz-b07prqr6yn/">VIOKS Ablassventil mit Feder Kaffeemaschine Ersatz für Mеlitta 6769601</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/vioks-ablassventil-mit-feder-kaffeemaschine-ersatz-b07prqr6yn/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/vioks-ablassventil-mit-feder-kaffeemaschine-ersatz-b07prqr6yn/">VIOKS Ablassventil mit Feder Kaffeemaschine Ersatz für Mеlitta 6769601</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/vioks-ablassventil-mit-feder-kaffeemaschine-ersatz-b07prqr6yn/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/drainageventil-ms-0697943-kompatibel-mit-krups-xp7-b00czpemio/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51uWTObFFGL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Drainageventil MS-0697943 kompatibel mit Krups XP7... / EA8... Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/drainageventil-ms-0697943-kompatibel-mit-krups-xp7-b00czpemio/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51uWTObFFGL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Drainageventil MS-0697943 kompatibel mit Krups XP7... / EA8... Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/drainageventil-ms-0697943-kompatibel-mit-krups-xp7-b00czpemio/">Drainageventil MS-0697943 kompatibel mit Krups XP7... / EA8... Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/drainageventil-ms-0697943-kompatibel-mit-krups-xp7-b00czpemio/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/drainageventil-ms-0697943-kompatibel-mit-krups-xp7-b00czpemio/">Drainageventil MS-0697943 kompatibel mit Krups XP7... / EA8... Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/drainageventil-ms-0697943-kompatibel-mit-krups-xp7-b00czpemio/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/dichtungssatz-brueheinheit-wassertank-dampfrohr-pu-b0h3chrkd1/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/719YSa3G0zL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtungssatz Brüheinheit Wassertank Dampfrohr Pumpe passend für Miele Bosch Melitta Krups Siemens Nivona Kaffeeautomaten (Packung mit 2)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/dichtungssatz-brueheinheit-wassertank-dampfrohr-pu-b0h3chrkd1/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/719YSa3G0zL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtungssatz Brüheinheit Wassertank Dampfrohr Pumpe passend für Miele Bosch Melitta Krups Siemens Nivona Kaffeeautomaten (Packung mit 2)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/dichtungssatz-brueheinheit-wassertank-dampfrohr-pu-b0h3chrkd1/">Dichtungssatz Brüheinheit Wassertank Dampfrohr Pumpe passend für Miele Bosch Melitta Krups Siemens Nivona Kaffeeautomaten (Packung mit 2)</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/dichtungssatz-brueheinheit-wassertank-dampfrohr-pu-b0h3chrkd1/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/dichtungssatz-brueheinheit-wassertank-dampfrohr-pu-b0h3chrkd1/">Dichtungssatz Brüheinheit Wassertank Dampfrohr Pumpe passend für Miele Bosch Melitta Krups Siemens Nivona Kaffeeautomaten (Packung mit 2)</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/dichtungssatz-brueheinheit-wassertank-dampfrohr-pu-b0h3chrkd1/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/einlaufstutzen-bruehgruppe-kompatibel-mit-ersatzte-b0f8nbmxsz/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41w1x7lCsAL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Einlaufstutzen (Brühgruppe) kompatibel mit/Ersatzteil für Bosch Siemens 00636487 Einbau-Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/einlaufstutzen-bruehgruppe-kompatibel-mit-ersatzte-b0f8nbmxsz/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41w1x7lCsAL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Einlaufstutzen (Brühgruppe) kompatibel mit/Ersatzteil für Bosch Siemens 00636487 Einbau-Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/einlaufstutzen-bruehgruppe-kompatibel-mit-ersatzte-b0f8nbmxsz/">Einlaufstutzen (Brühgruppe) kompatibel mit/Ersatzteil für Bosch Siemens 00636487 Einbau-Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/einlaufstutzen-bruehgruppe-kompatibel-mit-ersatzte-b0f8nbmxsz/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/einlaufstutzen-bruehgruppe-kompatibel-mit-ersatzte-b0f8nbmxsz/">Einlaufstutzen (Brühgruppe) kompatibel mit/Ersatzteil für Bosch Siemens 00636487 Einbau-Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/einlaufstutzen-bruehgruppe-kompatibel-mit-ersatzte-b0f8nbmxsz/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/tropfableitung-kompatibel-mit-ersatzteil-fuer-bosc-b0gvs9st7z/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61UrZMWrOvL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Tropfableitung kompatibel mit/Ersatzteil für Bosch Siemens 12011712 Kaffeevollautomaten (Beschreibung)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/tropfableitung-kompatibel-mit-ersatzteil-fuer-bosc-b0gvs9st7z/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61UrZMWrOvL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Tropfableitung kompatibel mit/Ersatzteil für Bosch Siemens 12011712 Kaffeevollautomaten (Beschreibung)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/tropfableitung-kompatibel-mit-ersatzteil-fuer-bosc-b0gvs9st7z/">Tropfableitung kompatibel mit/Ersatzteil für Bosch Siemens 12011712 Kaffeevollautomaten (Beschreibung)</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/tropfableitung-kompatibel-mit-ersatzteil-fuer-bosc-b0gvs9st7z/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/tropfableitung-kompatibel-mit-ersatzteil-fuer-bosc-b0gvs9st7z/">Tropfableitung kompatibel mit/Ersatzteil für Bosch Siemens 12011712 Kaffeevollautomaten (Beschreibung)</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/tropfableitung-kompatibel-mit-ersatzteil-fuer-bosc-b0gvs9st7z/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/original-duese-auslauf-verteiler-2-fach-kaffeeauto-b00tqpwts6/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41bdhA3GmoS._AC_SL1500_.jpg" class="prod-card-thumb" alt="ORIGINAL Düse Auslauf Verteiler 2-fach Kaffeeautomat Bosch 12011917 / 648354" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/original-duese-auslauf-verteiler-2-fach-kaffeeauto-b00tqpwts6/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41bdhA3GmoS._AC_SL1500_.jpg" class="ios-card-thumb" alt="ORIGINAL Düse Auslauf Verteiler 2-fach Kaffeeautomat Bosch 12011917 / 648354" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/original-duese-auslauf-verteiler-2-fach-kaffeeauto-b00tqpwts6/">ORIGINAL Düse Auslauf Verteiler 2-fach Kaffeeautomat Bosch 12011917 / 648354</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/original-duese-auslauf-verteiler-2-fach-kaffeeauto-b00tqpwts6/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/original-duese-auslauf-verteiler-2-fach-kaffeeauto-b00tqpwts6/">ORIGINAL Düse Auslauf Verteiler 2-fach Kaffeeautomat Bosch 12011917 / 648354</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/original-duese-auslauf-verteiler-2-fach-kaffeeauto-b00tqpwts6/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/wassertankkupplung-kompatibel-mit-ersatzteil-fuer-b0f6tlpdqc/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/415Orom4odL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Wassertankkupplung kompatibel mit/Ersatzteil für Bosch Siemens 00617956 Kaffeevollautomaten (Beschreibung)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/wassertankkupplung-kompatibel-mit-ersatzteil-fuer-b0f6tlpdqc/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/415Orom4odL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Wassertankkupplung kompatibel mit/Ersatzteil für Bosch Siemens 00617956 Kaffeevollautomaten (Beschreibung)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/wassertankkupplung-kompatibel-mit-ersatzteil-fuer-b0f6tlpdqc/">Wassertankkupplung kompatibel mit/Ersatzteil für Bosch Siemens 00617956 Kaffeevollautomaten (Beschreibung)</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/wassertankkupplung-kompatibel-mit-ersatzteil-fuer-b0f6tlpdqc/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/wassertankkupplung-kompatibel-mit-ersatzteil-fuer-b0f6tlpdqc/">Wassertankkupplung kompatibel mit/Ersatzteil für Bosch Siemens 00617956 Kaffeevollautomaten (Beschreibung)</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/wassertankkupplung-kompatibel-mit-ersatzteil-fuer-b0f6tlpdqc/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/anschluss-kompatibel-mit-ersatzteil-fuer-bosch-sie-b0fmkj1gls/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41KaGgUVzoL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Anschluss kompatibel mit/Ersatzteil für Bosch Siemens 00633168 Einbau-Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/anschluss-kompatibel-mit-ersatzteil-fuer-bosch-sie-b0fmkj1gls/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41KaGgUVzoL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Anschluss kompatibel mit/Ersatzteil für Bosch Siemens 00633168 Einbau-Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/anschluss-kompatibel-mit-ersatzteil-fuer-bosch-sie-b0fmkj1gls/">Anschluss kompatibel mit/Ersatzteil für Bosch Siemens 00633168 Einbau-Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/anschluss-kompatibel-mit-ersatzteil-fuer-bosch-sie-b0fmkj1gls/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/anschluss-kompatibel-mit-ersatzteil-fuer-bosch-sie-b0fmkj1gls/">Anschluss kompatibel mit/Ersatzteil für Bosch Siemens 00633168 Einbau-Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/anschluss-kompatibel-mit-ersatzteil-fuer-bosch-sie-b0fmkj1gls/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-kaffeevollautomaten-kaffeemaschinen-b09p478xkj/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/713XSSbSZkL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Pflegeset für Kaffeevollautomaten &amp; Kaffeemaschinen. 3-Phasen Reinigungstabletten 80 Stück a 3,5g &amp; Entkalkungstabletten 55 x 16g kompatibel mit Jura Siemens Bosch uvm &quot;Made in Germany&quot;" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-kaffeevollautomaten-kaffeemaschinen-b09p478xkj/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/713XSSbSZkL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Pflegeset für Kaffeevollautomaten &amp; Kaffeemaschinen. 3-Phasen Reinigungstabletten 80 Stück a 3,5g &amp; Entkalkungstabletten 55 x 16g kompatibel mit Jura Siemens Bosch uvm &quot;Made in Germany&quot;" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-kaffeevollautomaten-kaffeemaschinen-b09p478xkj/">Pflegeset für Kaffeevollautomaten &amp; Kaffeemaschinen. 3-Phasen Reinigungstabletten 80 Stück a 3,5g &amp; Entkalkungstabletten 55 x 16g kompatibel mit Jura Siemens Bosch uvm &quot;Made in Germany&quot;</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-kaffeevollautomaten-kaffeemaschinen-b09p478xkj/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-kaffeevollautomaten-kaffeemaschinen-b09p478xkj/">Pflegeset für Kaffeevollautomaten &amp; Kaffeemaschinen. 3-Phasen Reinigungstabletten 80 Stück a 3,5g &amp; Entkalkungstabletten 55 x 16g kompatibel mit Jura Siemens Bosch uvm &quot;Made in Germany&quot;</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-kaffeevollautomaten-kaffeemaschinen-b09p478xkj/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/1-l-universal-entkalker-b082fjg8q3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71VybBEkBqL._AC_SL1500_.jpg" class="prod-card-thumb" alt="1 L Universal Entkalker" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/bosch/1-l-universal-entkalker-b082fjg8q3/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71VybBEkBqL._AC_SL1500_.jpg" class="ios-card-thumb" alt="1 L Universal Entkalker" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Bosch</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Bosch</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/bosch/1-l-universal-entkalker-b082fjg8q3/">1 L Universal Entkalker</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/bosch/1-l-universal-entkalker-b082fjg8q3/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/bosch/1-l-universal-entkalker-b082fjg8q3/">1 L Universal Entkalker</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/bosch/1-l-universal-entkalker-b082fjg8q3/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/jura-magnet-drainageventil-iec-230v-b01gi5kyc4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51b3FWn6PRS._AC_SL1500_.jpg" class="prod-card-thumb" alt="Jura Magnet Drainageventil IEC 230V" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/jura-magnet-drainageventil-iec-230v-b01gi5kyc4/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51b3FWn6PRS._AC_SL1500_.jpg" class="ios-card-thumb" alt="Jura Magnet Drainageventil IEC 230V" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/jura-magnet-drainageventil-iec-230v-b01gi5kyc4/">Jura Magnet Drainageventil IEC 230V</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/jura-magnet-drainageventil-iec-230v-b01gi5kyc4/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/jura-magnet-drainageventil-iec-230v-b01gi5kyc4/">Jura Magnet Drainageventil IEC 230V</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/jura-magnet-drainageventil-iec-230v-b01gi5kyc4/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6778-b0dzp24lxn/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51GxjVbST3L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ventil kompatibel mit/Ersatzteil für Melitta 6778771 E953 E955 E957 E960 E965 Caffeo Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6778-b0dzp24lxn/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51GxjVbST3L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ventil kompatibel mit/Ersatzteil für Melitta 6778771 E953 E955 E957 E960 E965 Caffeo Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6778-b0dzp24lxn/">Ventil kompatibel mit/Ersatzteil für Melitta 6778771 E953 E955 E957 E960 E965 Caffeo Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6778-b0dzp24lxn/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6778-b0dzp24lxn/">Ventil kompatibel mit/Ersatzteil für Melitta 6778771 E953 E955 E957 E960 E965 Caffeo Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6778-b0dzp24lxn/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/ventiloeffner-fuer-wassertank-mit-wassertankdichtu-b01lzlzi67/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51D8BsUvf6S._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ventilöffner für Wassertank mit Wassertankdichtung der Jura Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/ventiloeffner-fuer-wassertank-mit-wassertankdichtu-b01lzlzi67/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51D8BsUvf6S._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ventilöffner für Wassertank mit Wassertankdichtung der Jura Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/ventiloeffner-fuer-wassertank-mit-wassertankdichtu-b01lzlzi67/">Ventilöffner für Wassertank mit Wassertankdichtung der Jura Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/ventiloeffner-fuer-wassertank-mit-wassertankdichtu-b01lzlzi67/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/ventiloeffner-fuer-wassertank-mit-wassertankdichtu-b01lzlzi67/">Ventilöffner für Wassertank mit Wassertankdichtung der Jura Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/ventiloeffner-fuer-wassertank-mit-wassertankdichtu-b01lzlzi67/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-drainageventil-fuer-brueh-b0cldxnctz/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/512kkL5laHL._AC_SL1500_.jpg" class="prod-card-thumb" alt="LUTH Premium Profi Parts Drainageventil für Brühgruppe kompatibel mit Jura 69125 in Kaffeemaschine Kaffeeautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-drainageventil-fuer-brueh-b0cldxnctz/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/512kkL5laHL._AC_SL1500_.jpg" class="ios-card-thumb" alt="LUTH Premium Profi Parts Drainageventil für Brühgruppe kompatibel mit Jura 69125 in Kaffeemaschine Kaffeeautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-drainageventil-fuer-brueh-b0cldxnctz/">LUTH Premium Profi Parts Drainageventil für Brühgruppe kompatibel mit Jura 69125 in Kaffeemaschine Kaffeeautomat</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-drainageventil-fuer-brueh-b0cldxnctz/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-drainageventil-fuer-brueh-b0cldxnctz/">LUTH Premium Profi Parts Drainageventil für Brühgruppe kompatibel mit Jura 69125 in Kaffeemaschine Kaffeeautomat</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-drainageventil-fuer-brueh-b0cldxnctz/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-micro-und-ena-kaff-b0cnbb9vnl/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71VnmWdOZML._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtungssatz passend für Jura Micro und ENA Kaffeeautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-micro-und-ena-kaff-b0cnbb9vnl/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71VnmWdOZML._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtungssatz passend für Jura Micro und ENA Kaffeeautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-micro-und-ena-kaff-b0cnbb9vnl/">Dichtungssatz passend für Jura Micro und ENA Kaffeeautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-micro-und-ena-kaff-b0cnbb9vnl/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-micro-und-ena-kaff-b0cnbb9vnl/">Dichtungssatz passend für Jura Micro und ENA Kaffeeautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-micro-und-ena-kaff-b0cnbb9vnl/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-kaffeeautomaten-b0cw258wc4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71uHpoIrd5L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtungssatz passend für Jura Kaffeeautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-kaffeeautomaten-b0cw258wc4/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71uHpoIrd5L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtungssatz passend für Jura Kaffeeautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-kaffeeautomaten-b0cw258wc4/">Dichtungssatz passend für Jura Kaffeeautomaten</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-kaffeeautomaten-b0cw258wc4/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-kaffeeautomaten-b0cw258wc4/">Dichtungssatz passend für Jura Kaffeeautomaten</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-passend-fuer-jura-kaffeeautomaten-b0cw258wc4/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/melitta-milchlanze-fuer-kaffeevollautomaten-edelst-b07yzk81wc/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41biXQY53+L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Melitta Milchlanze für Kaffeevollautomaten, Edelstahl, Schwarz" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/melitta-milchlanze-fuer-kaffeevollautomaten-edelst-b07yzk81wc/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41biXQY53+L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Melitta Milchlanze für Kaffeevollautomaten, Edelstahl, Schwarz" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/melitta-milchlanze-fuer-kaffeevollautomaten-edelst-b07yzk81wc/">Melitta Milchlanze für Kaffeevollautomaten, Edelstahl, Schwarz</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/melitta-milchlanze-fuer-kaffeevollautomaten-edelst-b07yzk81wc/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/melitta-milchlanze-fuer-kaffeevollautomaten-edelst-b07yzk81wc/">Melitta Milchlanze für Kaffeevollautomaten, Edelstahl, Schwarz</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/melitta-milchlanze-fuer-kaffeevollautomaten-edelst-b07yzk81wc/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-brueheinheit-passend-fuer-jura-kaffe-b0ctyphtkm/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61xdSa2mZGL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtungssatz Brüheinheit passend für Jura Kaffeeautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-brueheinheit-passend-fuer-jura-kaffe-b0ctyphtkm/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61xdSa2mZGL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtungssatz Brüheinheit passend für Jura Kaffeeautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/dichtungssatz-brueheinheit-passend-fuer-jura-kaffe-b0ctyphtkm/">Dichtungssatz Brüheinheit passend für Jura Kaffeeautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.1 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-brueheinheit-passend-fuer-jura-kaffe-b0ctyphtkm/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/dichtungssatz-brueheinheit-passend-fuer-jura-kaffe-b0ctyphtkm/">Dichtungssatz Brüheinheit passend für Jura Kaffeeautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.1 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/dichtungssatz-brueheinheit-passend-fuer-jura-kaffe-b0ctyphtkm/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/6x-dichtungen-drainage-ventil-passend-fuer-die-jur-b0cndfjx9j/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51tDu9lltdL._AC_SL1500_.jpg" class="prod-card-thumb" alt="6x Dichtungen Drainage Ventil passend für die JURA Brüheinheit" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/6x-dichtungen-drainage-ventil-passend-fuer-die-jur-b0cndfjx9j/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51tDu9lltdL._AC_SL1500_.jpg" class="ios-card-thumb" alt="6x Dichtungen Drainage Ventil passend für die JURA Brüheinheit" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/6x-dichtungen-drainage-ventil-passend-fuer-die-jur-b0cndfjx9j/">6x Dichtungen Drainage Ventil passend für die JURA Brüheinheit</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/6x-dichtungen-drainage-ventil-passend-fuer-die-jur-b0cndfjx9j/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/6x-dichtungen-drainage-ventil-passend-fuer-die-jur-b0cndfjx9j/">6x Dichtungen Drainage Ventil passend für die JURA Brüheinheit</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/6x-dichtungen-drainage-ventil-passend-fuer-die-jur-b0cndfjx9j/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-auslaufventil-kompatibel-b0cldvztss/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41NcS5L2UtL._AC_SL1500_.jpg" class="prod-card-thumb" alt="LUTH Premium Profi Parts Auslaufventil kompatibel mit Jura 66360 Mit Schläuchen für Kaffeemaschine" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-auslaufventil-kompatibel-b0cldvztss/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41NcS5L2UtL._AC_SL1500_.jpg" class="ios-card-thumb" alt="LUTH Premium Profi Parts Auslaufventil kompatibel mit Jura 66360 Mit Schläuchen für Kaffeemaschine" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Jura</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-auslaufventil-kompatibel-b0cldvztss/">LUTH Premium Profi Parts Auslaufventil kompatibel mit Jura 66360 Mit Schläuchen für Kaffeemaschine</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-auslaufventil-kompatibel-b0cldvztss/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-auslaufventil-kompatibel-b0cldvztss/">LUTH Premium Profi Parts Auslaufventil kompatibel mit Jura 66360 Mit Schläuchen für Kaffeemaschine</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/jura/luth-premium-profi-parts-auslaufventil-kompatibel-b0cldvztss/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61f4pTOuz3L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee Auslaufstutzen für Saeco Philips Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61f4pTOuz3L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee Auslaufstutzen für Saeco Philips Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/">Snapworld-Kaffee Auslaufstutzen für Saeco Philips Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/">Snapworld-Kaffee Auslaufstutzen für Saeco Philips Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61Iisqkul-L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ancable Dichtung O-Ring für Philips Saeco, 7PCS O-Ring Dichtung für Kaffeemaschinen Supportventil Brühgruppe Auslaufventil, kompatibel mit Philips Saeco Gaggia Spidem usw" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61Iisqkul-L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ancable Dichtung O-Ring für Philips Saeco, 7PCS O-Ring Dichtung für Kaffeemaschinen Supportventil Brühgruppe Auslaufventil, kompatibel mit Philips Saeco Gaggia Spidem usw" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/">Ancable Dichtung O-Ring für Philips Saeco, 7PCS O-Ring Dichtung für Kaffeemaschinen Supportventil Brühgruppe Auslaufventil, kompatibel mit Philips Saeco Gaggia Spidem usw</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/">Ancable Dichtung O-Ring für Philips Saeco, 7PCS O-Ring Dichtung für Kaffeemaschinen Supportventil Brühgruppe Auslaufventil, kompatibel mit Philips Saeco Gaggia Spidem usw</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61rn5XLrBgL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtung Wartungssatz O-Ringe für Supportventil Dampfventil Brühgruppe passend für Phillips Saeco Spidem Gaggia Set-19 von Snapworld-Kaffee" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61rn5XLrBgL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtung Wartungssatz O-Ringe für Supportventil Dampfventil Brühgruppe passend für Phillips Saeco Spidem Gaggia Set-19 von Snapworld-Kaffee" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/">Dichtung Wartungssatz O-Ringe für Supportventil Dampfventil Brühgruppe passend für Phillips Saeco Spidem Gaggia Set-19 von Snapworld-Kaffee</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/">Dichtung Wartungssatz O-Ringe für Supportventil Dampfventil Brühgruppe passend für Phillips Saeco Spidem Gaggia Set-19 von Snapworld-Kaffee</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71r+CcVGfbL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco 10x Dichtung Gaggia Siemens Bosch König Solis zu Thermoblock" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71r+CcVGfbL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco 10x Dichtung Gaggia Siemens Bosch König Solis zu Thermoblock" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/">Saeco 10x Dichtung Gaggia Siemens Bosch König Solis zu Thermoblock</a></h3>
-      <div class="prod-card-rating">★ 4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/">Saeco 10x Dichtung Gaggia Siemens Bosch König Solis zu Thermoblock</a></h3>
+      <div class="ios-card-rating">★ 4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61X+zseBu2L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee Auslaufstutzen für Saeco Philips Gaggia" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61X+zseBu2L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee Auslaufstutzen für Saeco Philips Gaggia" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/">Snapworld-Kaffee Auslaufstutzen für Saeco Philips Gaggia</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/">Snapworld-Kaffee Auslaufstutzen für Saeco Philips Gaggia</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71Zeqwuhp6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ancable Dichtung O-Ringe für Philips Saeco, 30PCS Silikon O-Ring Dichtung kompatibel mit Philips Kaffeemaschinen Enthält Reinigungsbürstenset, für Supportventil Dampfventil Brühgruppe Auslaufventil" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71Zeqwuhp6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ancable Dichtung O-Ringe für Philips Saeco, 30PCS Silikon O-Ring Dichtung kompatibel mit Philips Kaffeemaschinen Enthält Reinigungsbürstenset, für Supportventil Dampfventil Brühgruppe Auslaufventil" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/">Ancable Dichtung O-Ringe für Philips Saeco, 30PCS Silikon O-Ring Dichtung kompatibel mit Philips Kaffeemaschinen Enthält Reinigungsbürstenset, für Supportventil Dampfventil Brühgruppe Auslaufventil</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/">Ancable Dichtung O-Ringe für Philips Saeco, 30PCS Silikon O-Ring Dichtung kompatibel mit Philips Kaffeemaschinen Enthält Reinigungsbürstenset, für Supportventil Dampfventil Brühgruppe Auslaufventil</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/714FRXNpe6L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtung O-Ringe für Philips Kaffeevollautomat, 30PCS Dichtungsringe Brühgruppe Enthält Reinigungset, O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/714FRXNpe6L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtung O-Ringe für Philips Kaffeevollautomat, 30PCS Dichtungsringe Brühgruppe Enthält Reinigungset, O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/">Dichtung O-Ringe für Philips Kaffeevollautomat, 30PCS Dichtungsringe Brühgruppe Enthält Reinigungset, O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/">Dichtung O-Ringe für Philips Kaffeevollautomat, 30PCS Dichtungsringe Brühgruppe Enthält Reinigungset, O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71kAROEOADL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco 17x Dichtung für Tchibo Spidem Krups Solis Amaroy zu Thermoblock" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71kAROEOADL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco 17x Dichtung für Tchibo Spidem Krups Solis Amaroy zu Thermoblock" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/">Saeco 17x Dichtung für Tchibo Spidem Krups Solis Amaroy zu Thermoblock</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/">Saeco 17x Dichtung für Tchibo Spidem Krups Solis Amaroy zu Thermoblock</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/81AFmG8sIML._AC_SL1500_.jpg" class="prod-card-thumb" alt="85 Stücke Kaffeemaschinen O-Ringe Bausatz, Siliko Dichtungsringe Brühgruppe, Kompatibel mit Philips Saeco Spidem Gaggia" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/81AFmG8sIML._AC_SL1500_.jpg" class="ios-card-thumb" alt="85 Stücke Kaffeemaschinen O-Ringe Bausatz, Siliko Dichtungsringe Brühgruppe, Kompatibel mit Philips Saeco Spidem Gaggia" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/">85 Stücke Kaffeemaschinen O-Ringe Bausatz, Siliko Dichtungsringe Brühgruppe, Kompatibel mit Philips Saeco Spidem Gaggia</a></h3>
-      <div class="prod-card-rating">★ 4.2 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/">85 Stücke Kaffeemaschinen O-Ringe Bausatz, Siliko Dichtungsringe Brühgruppe, Kompatibel mit Philips Saeco Spidem Gaggia</a></h3>
+      <div class="ios-card-rating">★ 4.2 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71SpXzRSf1L._AC_SL1500_.jpg" class="prod-card-thumb" alt="15 Stück ​Dichtungsringe für ​Saeco xelsis dichtungssatz mit 4 ​Edelstahl Reinigungsbürste Set, ​O-Ring Set mit ​Silikon Dichtungsringe und Bürste, für Supportventil Dampfventil Brühgruppe" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71SpXzRSf1L._AC_SL1500_.jpg" class="ios-card-thumb" alt="15 Stück ​Dichtungsringe für ​Saeco xelsis dichtungssatz mit 4 ​Edelstahl Reinigungsbürste Set, ​O-Ring Set mit ​Silikon Dichtungsringe und Bürste, für Supportventil Dampfventil Brühgruppe" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/">15 Stück ​Dichtungsringe für ​Saeco xelsis dichtungssatz mit 4 ​Edelstahl Reinigungsbürste Set, ​O-Ring Set mit ​Silikon Dichtungsringe und Bürste, für Supportventil Dampfventil Brühgruppe</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/">15 Stück ​Dichtungsringe für ​Saeco xelsis dichtungssatz mit 4 ​Edelstahl Reinigungsbürste Set, ​O-Ring Set mit ​Silikon Dichtungsringe und Bürste, für Supportventil Dampfventil Brühgruppe</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61q9E2wXjLL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Snapworld-Kaffee Einlaufstutzen + O-Ring für Philips Saeco &amp; Gaggia" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61q9E2wXjLL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Snapworld-Kaffee Einlaufstutzen + O-Ring für Philips Saeco &amp; Gaggia" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/">Snapworld-Kaffee Einlaufstutzen + O-Ring für Philips Saeco &amp; Gaggia</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/">Snapworld-Kaffee Einlaufstutzen + O-Ring für Philips Saeco &amp; Gaggia</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51KPjYSw20L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Wartungsset Dichtungssatz O-Ringe für Kaffeevollautomaten von Philips, Saeco, Spidem, Gaggia – Brühgruppe, Supportventil, Auslaufventil, Auslaufstutzen" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51KPjYSw20L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Wartungsset Dichtungssatz O-Ringe für Kaffeevollautomaten von Philips, Saeco, Spidem, Gaggia – Brühgruppe, Supportventil, Auslaufventil, Auslaufstutzen" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/">Wartungsset Dichtungssatz O-Ringe für Kaffeevollautomaten von Philips, Saeco, Spidem, Gaggia – Brühgruppe, Supportventil, Auslaufventil, Auslaufstutzen</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/">Wartungsset Dichtungssatz O-Ringe für Kaffeevollautomaten von Philips, Saeco, Spidem, Gaggia – Brühgruppe, Supportventil, Auslaufventil, Auslaufstutzen</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61uA159mT3L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco Set Crema Ventil Kugel Feder Dichtung für Brühgruppe Magic Royal Vienna" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61uA159mT3L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco Set Crema Ventil Kugel Feder Dichtung für Brühgruppe Magic Royal Vienna" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/">Saeco Set Crema Ventil Kugel Feder Dichtung für Brühgruppe Magic Royal Vienna</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/">Saeco Set Crema Ventil Kugel Feder Dichtung für Brühgruppe Magic Royal Vienna</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61r2R6412YL._AC_SL1500_.jpg" class="prod-card-thumb" alt="45 Stück Philips Latte go Dichtungsringe und 5 Stück Reinigungsset, Philips Kaffeevollautomat Dichtung O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61r2R6412YL._AC_SL1500_.jpg" class="ios-card-thumb" alt="45 Stück Philips Latte go Dichtungsringe und 5 Stück Reinigungsset, Philips Kaffeevollautomat Dichtung O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/">45 Stück Philips Latte go Dichtungsringe und 5 Stück Reinigungsset, Philips Kaffeevollautomat Dichtung O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/">45 Stück Philips Latte go Dichtungsringe und 5 Stück Reinigungsset, Philips Kaffeevollautomat Dichtung O-Ringe für Philips Saeco für Supportventil Dampfventil Auslaufventil Kaffeevollautomat</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/21vlklxS5zL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ventilstift kompatibel mit/Ersatzteil für Philips Saeco 421944081491 Kaffeevollautomaten Espressomaschinen" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/21vlklxS5zL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ventilstift kompatibel mit/Ersatzteil für Philips Saeco 421944081491 Kaffeevollautomaten Espressomaschinen" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/">Ventilstift kompatibel mit/Ersatzteil für Philips Saeco 421944081491 Kaffeevollautomaten Espressomaschinen</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/">Ventilstift kompatibel mit/Ersatzteil für Philips Saeco 421944081491 Kaffeevollautomaten Espressomaschinen</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61lQphfeJ2L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Saeco - Ersatzteile - Cappuccinatore schwarz" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61lQphfeJ2L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Saeco - Ersatzteile - Cappuccinatore schwarz" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Saeco</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Saeco</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/">Saeco - Ersatzteile - Cappuccinatore schwarz</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/">Saeco - Ersatzteile - Cappuccinatore schwarz</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/krups/flowmeter-kompatibel-mit-ersatzteil-fuer-krups-ms-b08n5dspfv/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51ymrkg15zL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Flowmeter kompatibel mit /Ersatzteil für Krups MS-0A10337 EA9000, EA9010, EA9078 Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/krups/flowmeter-kompatibel-mit-ersatzteil-fuer-krups-ms-b08n5dspfv/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51ymrkg15zL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Flowmeter kompatibel mit /Ersatzteil für Krups MS-0A10337 EA9000, EA9010, EA9078 Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Krups</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Krups</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/krups/flowmeter-kompatibel-mit-ersatzteil-fuer-krups-ms-b08n5dspfv/">Flowmeter kompatibel mit /Ersatzteil für Krups MS-0A10337 EA9000, EA9010, EA9078 Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/krups/flowmeter-kompatibel-mit-ersatzteil-fuer-krups-ms-b08n5dspfv/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/krups/flowmeter-kompatibel-mit-ersatzteil-fuer-krups-ms-b08n5dspfv/">Flowmeter kompatibel mit /Ersatzteil für Krups MS-0A10337 EA9000, EA9010, EA9078 Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/krups/flowmeter-kompatibel-mit-ersatzteil-fuer-krups-ms-b08n5dspfv/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/krups/drain-valve-replacement-compatible-with-melitta-67-b0gkdt9qc3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41JtL2NxfwL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Drain Valve Replacement Compatible With Melitta 6716080 0068368" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/krups/drain-valve-replacement-compatible-with-melitta-67-b0gkdt9qc3/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41JtL2NxfwL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Drain Valve Replacement Compatible With Melitta 6716080 0068368" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Krups</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Krups</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/krups/drain-valve-replacement-compatible-with-melitta-67-b0gkdt9qc3/">Drain Valve Replacement Compatible With Melitta 6716080 0068368</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/krups/drain-valve-replacement-compatible-with-melitta-67-b0gkdt9qc3/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/krups/drain-valve-replacement-compatible-with-melitta-67-b0gkdt9qc3/">Drain Valve Replacement Compatible With Melitta 6716080 0068368</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/krups/drain-valve-replacement-compatible-with-melitta-67-b0gkdt9qc3/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/krups/ablaufventil-drainageventil-kompatibel-mit-melitta-b0ghwzccr1/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51Kj131+CdL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ablaufventil Drainageventil kompatibel mit Melitta Caffeo Barista Passione Varianza F53 F55 F57 F58 F73 F74 F75 F76 F77 F78 Antrieb 047 inkl. Feder" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/krups/ablaufventil-drainageventil-kompatibel-mit-melitta-b0ghwzccr1/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51Kj131+CdL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ablaufventil Drainageventil kompatibel mit Melitta Caffeo Barista Passione Varianza F53 F55 F57 F58 F73 F74 F75 F76 F77 F78 Antrieb 047 inkl. Feder" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Krups</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Krups</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/krups/ablaufventil-drainageventil-kompatibel-mit-melitta-b0ghwzccr1/">Ablaufventil Drainageventil kompatibel mit Melitta Caffeo Barista Passione Varianza F53 F55 F57 F58 F73 F74 F75 F76 F77 F78 Antrieb 047 inkl. Feder</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/krups/ablaufventil-drainageventil-kompatibel-mit-melitta-b0ghwzccr1/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/krups/ablaufventil-drainageventil-kompatibel-mit-melitta-b0ghwzccr1/">Ablaufventil Drainageventil kompatibel mit Melitta Caffeo Barista Passione Varianza F53 F55 F57 F58 F73 F74 F75 F76 F77 F78 Antrieb 047 inkl. Feder</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/krups/ablaufventil-drainageventil-kompatibel-mit-melitta-b0ghwzccr1/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/krups/durchflussmesser-kompatibel-mit-ersatzteil-fuer-kr-b0b9spm4m8/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41LRpcoSwLL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Durchflussmesser kompatibel mit/Ersatzteil für Krups MS-624329 XN1101 XN1108 XN110B Essenza Mini Nespresso" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/krups/durchflussmesser-kompatibel-mit-ersatzteil-fuer-kr-b0b9spm4m8/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41LRpcoSwLL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Durchflussmesser kompatibel mit/Ersatzteil für Krups MS-624329 XN1101 XN1108 XN110B Essenza Mini Nespresso" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Krups</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Krups</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/krups/durchflussmesser-kompatibel-mit-ersatzteil-fuer-kr-b0b9spm4m8/">Durchflussmesser kompatibel mit/Ersatzteil für Krups MS-624329 XN1101 XN1108 XN110B Essenza Mini Nespresso</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/krups/durchflussmesser-kompatibel-mit-ersatzteil-fuer-kr-b0b9spm4m8/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/krups/durchflussmesser-kompatibel-mit-ersatzteil-fuer-kr-b0b9spm4m8/">Durchflussmesser kompatibel mit/Ersatzteil für Krups MS-624329 XN1101 XN1108 XN110B Essenza Mini Nespresso</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/krups/durchflussmesser-kompatibel-mit-ersatzteil-fuer-kr-b0b9spm4m8/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/krups/krups-kolben-espressomaschine-ms-0697943-b009ggx97u/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/21XzdXJxs7L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Krups Kolben Espressomaschine, MS-0697943" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/krups/krups-kolben-espressomaschine-ms-0697943-b009ggx97u/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/21XzdXJxs7L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Krups Kolben Espressomaschine, MS-0697943" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Krups</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Krups</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/krups/krups-kolben-espressomaschine-ms-0697943-b009ggx97u/">Krups Kolben Espressomaschine, MS-0697943</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/krups/krups-kolben-espressomaschine-ms-0697943-b009ggx97u/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/krups/krups-kolben-espressomaschine-ms-0697943-b009ggx97u/">Krups Kolben Espressomaschine, MS-0697943</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/krups/krups-kolben-espressomaschine-ms-0697943-b009ggx97u/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/krups/original-krups-ms-623323-nespresso-kaffeemaschinen-b0973dfw22/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41974V-zUZS._AC_SL1500_.jpg" class="prod-card-thumb" alt="Original Krups MS-623323 Nespresso-Kaffeemaschinen-Entleerungsdüse Kopf XN2501, XN2505, XN250A, XN2601, XN410T, XN411T Serie" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/krups/original-krups-ms-623323-nespresso-kaffeemaschinen-b0973dfw22/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41974V-zUZS._AC_SL1500_.jpg" class="ios-card-thumb" alt="Original Krups MS-623323 Nespresso-Kaffeemaschinen-Entleerungsdüse Kopf XN2501, XN2505, XN250A, XN2601, XN410T, XN411T Serie" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Krups</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Krups</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/krups/original-krups-ms-623323-nespresso-kaffeemaschinen-b0973dfw22/">Original Krups MS-623323 Nespresso-Kaffeemaschinen-Entleerungsdüse Kopf XN2501, XN2505, XN250A, XN2601, XN410T, XN411T Serie</a></h3>
-      <div class="prod-card-rating">★ 4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/krups/original-krups-ms-623323-nespresso-kaffeemaschinen-b0973dfw22/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/krups/original-krups-ms-623323-nespresso-kaffeemaschinen-b0973dfw22/">Original Krups MS-623323 Nespresso-Kaffeemaschinen-Entleerungsdüse Kopf XN2501, XN2505, XN250A, XN2601, XN410T, XN411T Serie</a></h3>
+      <div class="ios-card-rating">★ 4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/krups/original-krups-ms-623323-nespresso-kaffeemaschinen-b0973dfw22/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/krups/nivona-ablaufventil-047-fuer-nivona-caferomatica-v-b016x0815q/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41+YaF8iOJL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Nivona Ablaufventil 047 für Nivona CafeRomatica vormontiert" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/krups/nivona-ablaufventil-047-fuer-nivona-caferomatica-v-b016x0815q/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41+YaF8iOJL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Nivona Ablaufventil 047 für Nivona CafeRomatica vormontiert" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Krups</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Krups</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/krups/nivona-ablaufventil-047-fuer-nivona-caferomatica-v-b016x0815q/">Nivona Ablaufventil 047 für Nivona CafeRomatica vormontiert</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/krups/nivona-ablaufventil-047-fuer-nivona-caferomatica-v-b016x0815q/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/krups/nivona-ablaufventil-047-fuer-nivona-caferomatica-v-b016x0815q/">Nivona Ablaufventil 047 für Nivona CafeRomatica vormontiert</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/krups/nivona-ablaufventil-047-fuer-nivona-caferomatica-v-b016x0815q/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/krups/anschluss-milchaufschaeumer-kompatibel-mit-ersatzt-b0cfj8dsvc/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41XlpSGRxwL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Anschluss (Milchaufschäumer) kompatibel mit/Ersatzteil für Krups MS-8030000132 EA89... Evidence Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/krups/anschluss-milchaufschaeumer-kompatibel-mit-ersatzt-b0cfj8dsvc/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41XlpSGRxwL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Anschluss (Milchaufschäumer) kompatibel mit/Ersatzteil für Krups MS-8030000132 EA89... Evidence Kaffeevollautomaten" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Krups</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Krups</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/krups/anschluss-milchaufschaeumer-kompatibel-mit-ersatzt-b0cfj8dsvc/">Anschluss (Milchaufschäumer) kompatibel mit/Ersatzteil für Krups MS-8030000132 EA89... Evidence Kaffeevollautomaten</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/krups/anschluss-milchaufschaeumer-kompatibel-mit-ersatzt-b0cfj8dsvc/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/krups/anschluss-milchaufschaeumer-kompatibel-mit-ersatzt-b0cfj8dsvc/">Anschluss (Milchaufschäumer) kompatibel mit/Ersatzteil für Krups MS-8030000132 EA89... Evidence Kaffeevollautomaten</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/krups/anschluss-milchaufschaeumer-kompatibel-mit-ersatzt-b0cfj8dsvc/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/nivona/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6618-b0f6t9ws7g/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51b-rNNR+XL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Ventil kompatibel mit/Ersatzteil für Melitta 6618254 F270 E970 Avanza Caffeo CI Kaffeevollautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/nivona/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6618-b0f6t9ws7g/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51b-rNNR+XL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Ventil kompatibel mit/Ersatzteil für Melitta 6618254 F270 E970 Avanza Caffeo CI Kaffeevollautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Nivona</span>
-        <span class="badge-cat">Drainageventile &amp; Kappen</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Nivona</span>
+        <span class="ios-pill ios-pill-purple">Drainageventile &amp; Kappen</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/nivona/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6618-b0f6t9ws7g/">Ventil kompatibel mit/Ersatzteil für Melitta 6618254 F270 E970 Avanza Caffeo CI Kaffeevollautomat</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/nivona/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6618-b0f6t9ws7g/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/nivona/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6618-b0f6t9ws7g/">Ventil kompatibel mit/Ersatzteil für Melitta 6618254 F270 E970 Avanza Caffeo CI Kaffeevollautomat</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/nivona/ventil-kompatibel-mit-ersatzteil-fuer-melitta-6618-b0f6t9ws7g/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
     </div>
   </main>
 
   
-  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:56px; border-top:1px solid #292524;">
+  <nav class="ios-tab-bar" aria-label="App Navigation">
+    <a href="https://kaffeereparatur.github.io/" class="ios-tab-item ">
+      <span class="ios-tab-icon">🏠</span>
+      <span class="ios-tab-label">Start</span>
+    </a>
+    <a href="https://kaffeereparatur.github.io/#marken" class="ios-tab-item ">
+      <span class="ios-tab-icon">☕</span>
+      <span class="ios-tab-label">Marken</span>
+    </a>
+    <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-tab-item active">
+      <span class="ios-tab-icon">⚙️</span>
+      <span class="ios-tab-label">Baugruppen</span>
+    </a>
+    <button type="button" class="ios-tab-item" onclick="if(window.focusIosSearch)window.focusIosSearch();" aria-label="Suche öffnen">
+      <span class="ios-tab-icon">🔍</span>
+      <span class="ios-tab-label">Suche</span>
+    </button>
+  </nav>
+  
+  <footer style="background:#1c1c1e; color:#8e8e93; padding:44px 0 24px; margin-top:56px; border-top:0.5px solid rgba(255,255,255,0.1);">
     <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:28px; padding-bottom:28px;">
       <div>
         <div style="font-weight:800; font-size:17px; color:#ffffff; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-          ☕ KaffeeReparatur<span style="color:#eab308;">.de</span>
+          ☕ KaffeeReparatur<span style="color:#0071e3;">.de</span>
         </div>
-        <p style="font-size:12.5px; line-height:1.6; color:#78716c;">
+        <p style="font-size:12.5px; line-height:1.6; color:#8e8e93;">
           Deutsches Fach- und Reparaturportal für Kaffeevollautomaten-Ersatzteile. 100% verifizierte Original- und OEM-Komponenten mit mechatronischer Funktionsanalyse und direkter Verfügbarkeitsprüfung auf Amazon.de.
         </p>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Top-Hersteller</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#a8a29e;">Siemens EQ-Serie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#a8a29e;">Jura Impressa &amp; E/Z/ENA</a></li>
-          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#a8a29e;">Philips LatteGo &amp; 2200/3200</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#a8a29e;">Sage Barista Express</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#8e8e93;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#8e8e93;">Siemens EQ-Serie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#8e8e93;">Jura Impressa &amp; E/Z/ENA</a></li>
+          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#8e8e93;">Philips LatteGo &amp; 2200/3200</a></li>
+          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#8e8e93;">Sage Barista Express</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Baugruppen</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#a8a29e;">Mahlwerke &amp; Mahlkegel</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#a8a29e;">Drainageventile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#a8a29e;">Milchsysteme &amp; Karaffen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#a8a29e;">Wasserfilter &amp; Entkalker</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#8e8e93;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#8e8e93;">Mahlwerke &amp; Mahlkegel</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#8e8e93;">Drainageventile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#8e8e93;">Milchsysteme &amp; Karaffen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#8e8e93;">Wasserfilter &amp; Entkalker</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Transparenz</div>
-        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+        <p style="line-height:1.5; color:#8e8e93; font-size:12px; margin:0;">
           Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Alle Preise, Verfügbarkeiten und Lieferfristen werden live von Amazon.de bereitgestellt.
         </p>
       </div>
     </div>
-    <div class="wrap" style="border-top:1px solid #292524; padding-top:18px; text-align:center; font-size:12px; color:#57534e;">
+    <div class="wrap" style="border-top:0.5px solid rgba(255,255,255,0.1); padding-top:18px; text-align:center; font-size:12px; color:#636366;">
       © 2026 KaffeeReparatur. Alle Rechte vorbehalten. Unabhängiges Fachportal.
     </div>
   </footer>

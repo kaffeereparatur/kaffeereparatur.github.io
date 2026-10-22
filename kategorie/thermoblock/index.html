@@ -11,32 +11,38 @@
 </head>
 <body>
   
-  <header class="app-header">
-    <div class="header-inner">
-      <a href="https://kaffeereparatur.github.io/" class="brand-logo">
-        <span class="logo-icon">☕</span>
-        <span>KaffeeReparatur<span class="tld">.de</span></span>
-        <span class="badge-pro">Silo Hub</span>
-      </a>
-
-      <nav class="nav-links">
-        <a href="https://kaffeereparatur.github.io/#marken" class="nav-link">Hersteller</a>
-        <a href="https://kaffeereparatur.github.io/#kategorien" class="nav-link">Baugruppen</a>
-      </nav>
-
-      <div class="header-search">
-        <div class="search-input-wrap">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="site-search" class="search-input" placeholder="Ersatzteil, Modell oder ASIN suchen..." autocomplete="off">
-          <button id="search-clear" class="search-clear" aria-label="Suche leeren">✕</button>
+  <header class="ios-nav-header">
+    <div class="ios-nav-container">
+      <div class="ios-nav-top">
+        <a href="https://kaffeereparatur.github.io/" class="ios-nav-brand">
+          <span class="ios-nav-logo">☕</span>
+          <span class="ios-brand-name">KaffeeReparatur<span class="ios-brand-sub">.de</span></span>
+        </a>
+        <div class="ios-nav-shortcuts">
+          <a href="https://kaffeereparatur.github.io/#marken" class="ios-nav-chip">Hersteller</a>
+          <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-nav-chip">Baugruppen</a>
         </div>
-        <div id="search-dropdown" class="search-dropdown"></div>
+      </div>
+
+      <div class="ios-search-wrapper">
+        <div class="ios-search-bar">
+          <svg class="ios-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" id="site-search" class="ios-search-input" placeholder="Suchen nach Modell, Marke oder Teil..." autocomplete="off">
+          <button id="search-clear" class="ios-search-clear" aria-label="Löschen" type="button">✕</button>
+        </div>
+        <div id="search-dropdown" class="ios-search-dropdown"></div>
       </div>
     </div>
   </header>
 
   <main class="wrap">
-    <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="ios-nav-back-bar">
+      <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-nav-back-btn">
+        <span class="ios-nav-back-chevron">‹</span> Baugruppen
+      </a>
+    </div>
+
+    <nav class="ios-breadcrumb" aria-label="Breadcrumb">
       <a href="https://kaffeereparatur.github.io/">Startseite</a>
       <span class="sep">›</span>
       <a href="https://kaffeereparatur.github.io/#kategorien">Baugruppen</a>
@@ -44,467 +50,539 @@
       <span aria-current="page">Heizelemente &amp; Thermoblöcke</span>
     </nav>
 
-    <div style="background:#ffffff; border:1px solid var(--border-color); border-radius:16px; padding:28px 18px; margin:16px 0 28px; text-align:center;">
-      <h1 style="font-size:26px; font-weight:800; color:var(--text-main); margin-bottom:8px;">🔥 Heizelemente &amp; Thermoblöcke</h1>
-      <p style="font-size:14.5px; color:var(--text-muted); max-width:650px; margin:0 auto; line-height:1.6;">
+    <div class="ios-hero-card">
+      <span class="ios-pill ios-pill-purple" style="font-weight:700; margin-bottom:8px; display:inline-block;">BAUGRUPPE</span>
+      <h1 class="ios-hero-title">🔥 Heizelemente &amp; Thermoblöcke</h1>
+      <p class="ios-hero-sub">
         24 geprüfte Ersatzteile und Reparatur-Kits in der Kategorie Heizelemente &amp; Thermoblöcke für alle gängigen Kaffeevollautomaten.
       </p>
     </div>
 
+    <div class="ios-section-title-bar">
+      <h2 class="ios-section-heading">Verifizierte Heizelemente &amp; Thermoblöcke</h2>
+      <span class="ios-section-count">24 Artikel</span>
+    </div>
     <div class="prod-grid">
       
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/original-schlauchanschluss-heizelement-5mm-kaffeea-b00tzuri4w/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/31bhygJIunS._AC_SL1500_.jpg" class="prod-card-thumb" alt="ORIGINAL Schlauchanschluss Heizelement 5mmØ Kaffeeautomat De&#39;Longhi 5332239200" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/original-schlauchanschluss-heizelement-5mm-kaffeea-b00tzuri4w/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/31bhygJIunS._AC_SL1500_.jpg" class="ios-card-thumb" alt="ORIGINAL Schlauchanschluss Heizelement 5mmØ Kaffeeautomat De&#39;Longhi 5332239200" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/original-schlauchanschluss-heizelement-5mm-kaffeea-b00tzuri4w/">ORIGINAL Schlauchanschluss Heizelement 5mmØ Kaffeeautomat De&#39;Longhi 5332239200</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/original-schlauchanschluss-heizelement-5mm-kaffeea-b00tzuri4w/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/original-schlauchanschluss-heizelement-5mm-kaffeea-b00tzuri4w/">ORIGINAL Schlauchanschluss Heizelement 5mmØ Kaffeeautomat De&#39;Longhi 5332239200</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/original-schlauchanschluss-heizelement-5mm-kaffeea-b00tzuri4w/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/heizelement-heizung-schnelldampf-kaffeeautomat-de-b01cnkyowy/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41ItAMxaFFL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Heizelement Heizung Schnelldampf Kaffeeautomat De&#39;Longhi 7332196700" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/heizelement-heizung-schnelldampf-kaffeeautomat-de-b01cnkyowy/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41ItAMxaFFL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Heizelement Heizung Schnelldampf Kaffeeautomat De&#39;Longhi 7332196700" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/heizelement-heizung-schnelldampf-kaffeeautomat-de-b01cnkyowy/">Heizelement Heizung Schnelldampf Kaffeeautomat De&#39;Longhi 7332196700</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/heizelement-heizung-schnelldampf-kaffeeautomat-de-b01cnkyowy/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/heizelement-heizung-schnelldampf-kaffeeautomat-de-b01cnkyowy/">Heizelement Heizung Schnelldampf Kaffeeautomat De&#39;Longhi 7332196700</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/heizelement-heizung-schnelldampf-kaffeeautomat-de-b01cnkyowy/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/thermoblock-anschluss-kaffeemaschine-5332239200-fu-b0csdwrvjh/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51nvhdeumLL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Thermoblock Anschluss Kaffeemaschine 5332239200 für DeLonghi MADE IN ITALY" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/thermoblock-anschluss-kaffeemaschine-5332239200-fu-b0csdwrvjh/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51nvhdeumLL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Thermoblock Anschluss Kaffeemaschine 5332239200 für DeLonghi MADE IN ITALY" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/thermoblock-anschluss-kaffeemaschine-5332239200-fu-b0csdwrvjh/">Thermoblock Anschluss Kaffeemaschine 5332239200 für DeLonghi MADE IN ITALY</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/thermoblock-anschluss-kaffeemaschine-5332239200-fu-b0csdwrvjh/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/thermoblock-anschluss-kaffeemaschine-5332239200-fu-b0csdwrvjh/">Thermoblock Anschluss Kaffeemaschine 5332239200 für DeLonghi MADE IN ITALY</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/thermoblock-anschluss-kaffeemaschine-5332239200-fu-b0csdwrvjh/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-fuer-heizelement-kaffeemaschine-b00u65fqdk/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41MFycFxAaS._AC_SL1500_.jpg" class="prod-card-thumb" alt="Schlauchanschluss für Heizelement Kaffeemaschine De Longhi 5313218931" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-fuer-heizelement-kaffeemaschine-b00u65fqdk/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41MFycFxAaS._AC_SL1500_.jpg" class="ios-card-thumb" alt="Schlauchanschluss für Heizelement Kaffeemaschine De Longhi 5313218931" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-fuer-heizelement-kaffeemaschine-b00u65fqdk/">Schlauchanschluss für Heizelement Kaffeemaschine De Longhi 5313218931</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-fuer-heizelement-kaffeemaschine-b00u65fqdk/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-fuer-heizelement-kaffeemaschine-b00u65fqdk/">Schlauchanschluss für Heizelement Kaffeemaschine De Longhi 5313218931</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-fuer-heizelement-kaffeemaschine-b00u65fqdk/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-5332139200-original-sieb-filter-bruehkol-b002dhdx1q/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/5185KDGgoQS._AC_SL1500_.jpg" class="prod-card-thumb" alt="De&#39;Longhi 5332139200 ORIGINAL Sieb Filter Brühkolben Heizung Heizelement Thermoblock ESAM Kaffeeautomat" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-5332139200-original-sieb-filter-bruehkol-b002dhdx1q/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/5185KDGgoQS._AC_SL1500_.jpg" class="ios-card-thumb" alt="De&#39;Longhi 5332139200 ORIGINAL Sieb Filter Brühkolben Heizung Heizelement Thermoblock ESAM Kaffeeautomat" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-5332139200-original-sieb-filter-bruehkol-b002dhdx1q/">De&#39;Longhi 5332139200 ORIGINAL Sieb Filter Brühkolben Heizung Heizelement Thermoblock ESAM Kaffeeautomat</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-5332139200-original-sieb-filter-bruehkol-b002dhdx1q/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-5332139200-original-sieb-filter-bruehkol-b002dhdx1q/">De&#39;Longhi 5332139200 ORIGINAL Sieb Filter Brühkolben Heizung Heizelement Thermoblock ESAM Kaffeeautomat</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-5332139200-original-sieb-filter-bruehkol-b002dhdx1q/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/vioks-schlauchanschluss-kaffeeautomat-ersatz-fuer-b0ggbwx28p/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/512mgJYbidL._AC_SL1500_.jpg" class="prod-card-thumb" alt="VIOKS Schlauchanschluss Kaffeeautomat Ersatz für DeLоnghi 5332239200" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/vioks-schlauchanschluss-kaffeeautomat-ersatz-fuer-b0ggbwx28p/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/512mgJYbidL._AC_SL1500_.jpg" class="ios-card-thumb" alt="VIOKS Schlauchanschluss Kaffeeautomat Ersatz für DeLоnghi 5332239200" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/vioks-schlauchanschluss-kaffeeautomat-ersatz-fuer-b0ggbwx28p/">VIOKS Schlauchanschluss Kaffeeautomat Ersatz für DeLоnghi 5332239200</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/vioks-schlauchanschluss-kaffeeautomat-ersatz-fuer-b0ggbwx28p/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/vioks-schlauchanschluss-kaffeeautomat-ersatz-fuer-b0ggbwx28p/">VIOKS Schlauchanschluss Kaffeeautomat Ersatz für DeLоnghi 5332239200</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/vioks-schlauchanschluss-kaffeeautomat-ersatz-fuer-b0ggbwx28p/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/220v-100w-keramik-luftheizelement-heizelement-isol-b0br3tlkh3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51dCKvwjfFL._AC_SL1500_.jpg" class="prod-card-thumb" alt="220V 100W Keramik Luftheizelement Heizelement Isoliert Keramik Lufterhitzer Elektroheizung" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/220v-100w-keramik-luftheizelement-heizelement-isol-b0br3tlkh3/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51dCKvwjfFL._AC_SL1500_.jpg" class="ios-card-thumb" alt="220V 100W Keramik Luftheizelement Heizelement Isoliert Keramik Lufterhitzer Elektroheizung" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/220v-100w-keramik-luftheizelement-heizelement-isol-b0br3tlkh3/">220V 100W Keramik Luftheizelement Heizelement Isoliert Keramik Lufterhitzer Elektroheizung</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/220v-100w-keramik-luftheizelement-heizelement-isol-b0br3tlkh3/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/220v-100w-keramik-luftheizelement-heizelement-isol-b0br3tlkh3/">220V 100W Keramik Luftheizelement Heizelement Isoliert Keramik Lufterhitzer Elektroheizung</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/220v-100w-keramik-luftheizelement-heizelement-isol-b0br3tlkh3/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/sensor-thermoblock-kompatibel-mit-ersatzteil-fuer-b0c3mnjk1b/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61Fyl1jtP4L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Sensor (Thermoblock) kompatibel mit/Ersatzteil für DeLonghi 5213214061 Kaffeevollautomaten (Beschreibung)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/sensor-thermoblock-kompatibel-mit-ersatzteil-fuer-b0c3mnjk1b/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61Fyl1jtP4L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Sensor (Thermoblock) kompatibel mit/Ersatzteil für DeLonghi 5213214061 Kaffeevollautomaten (Beschreibung)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/sensor-thermoblock-kompatibel-mit-ersatzteil-fuer-b0c3mnjk1b/">Sensor (Thermoblock) kompatibel mit/Ersatzteil für DeLonghi 5213214061 Kaffeevollautomaten (Beschreibung)</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/sensor-thermoblock-kompatibel-mit-ersatzteil-fuer-b0c3mnjk1b/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/sensor-thermoblock-kompatibel-mit-ersatzteil-fuer-b0c3mnjk1b/">Sensor (Thermoblock) kompatibel mit/Ersatzteil für DeLonghi 5213214061 Kaffeevollautomaten (Beschreibung)</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/sensor-thermoblock-kompatibel-mit-ersatzteil-fuer-b0c3mnjk1b/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/vioks-dampfkessel-1000w-230v-ersatz-fuer-d-l-nghi-b0dnnc91wg/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71PNGjJONDL._AC_SL1500_.jpg" class="prod-card-thumb" alt="VIOKS Dampfkessel 1000W 230V Ersatz für DеLоnghi 7332196700 5513227931 Dampfheizelement - Heizelement für Kaffeemaschinen ESAM EAM ECAM Serien" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/vioks-dampfkessel-1000w-230v-ersatz-fuer-d-l-nghi-b0dnnc91wg/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71PNGjJONDL._AC_SL1500_.jpg" class="ios-card-thumb" alt="VIOKS Dampfkessel 1000W 230V Ersatz für DеLоnghi 7332196700 5513227931 Dampfheizelement - Heizelement für Kaffeemaschinen ESAM EAM ECAM Serien" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/vioks-dampfkessel-1000w-230v-ersatz-fuer-d-l-nghi-b0dnnc91wg/">VIOKS Dampfkessel 1000W 230V Ersatz für DеLоnghi 7332196700 5513227931 Dampfheizelement - Heizelement für Kaffeemaschinen ESAM EAM ECAM Serien</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/vioks-dampfkessel-1000w-230v-ersatz-fuer-d-l-nghi-b0dnnc91wg/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/vioks-dampfkessel-1000w-230v-ersatz-fuer-d-l-nghi-b0dnnc91wg/">VIOKS Dampfkessel 1000W 230V Ersatz für DеLоnghi 7332196700 5513227931 Dampfheizelement - Heizelement für Kaffeemaschinen ESAM EAM ECAM Serien</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/vioks-dampfkessel-1000w-230v-ersatz-fuer-d-l-nghi-b0dnnc91wg/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-heizkessel-1400-w-243190-6505-espresso-55-b0b9snygbv/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51oCQhzVXnL._AC_SL1500_.jpg" class="prod-card-thumb" alt="DeLonghi Heizkessel 1400 W (243190-6505) Espresso 5513214291" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-heizkessel-1400-w-243190-6505-espresso-55-b0b9snygbv/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51oCQhzVXnL._AC_SL1500_.jpg" class="ios-card-thumb" alt="DeLonghi Heizkessel 1400 W (243190-6505) Espresso 5513214291" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-heizkessel-1400-w-243190-6505-espresso-55-b0b9snygbv/">DeLonghi Heizkessel 1400 W (243190-6505) Espresso 5513214291</a></h3>
-      <div class="prod-card-rating">★ 4.2 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/delonghi-heizkessel-1400-w-243190-6505-espresso-55-b0b9snygbv/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-heizkessel-1400-w-243190-6505-espresso-55-b0b9snygbv/">DeLonghi Heizkessel 1400 W (243190-6505) Espresso 5513214291</a></h3>
+      <div class="ios-card-rating">★ 4.2 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-heizkessel-1400-w-243190-6505-espresso-55-b0b9snygbv/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-55-fuer-kapsel-kaffeemaschine-ms-b0f62z444c/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/616ol2cVZhL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Schlauchanschluss 55° für Kapsel Kaffeemaschine MS-0063049 für Krups" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-55-fuer-kapsel-kaffeemaschine-ms-b0f62z444c/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/616ol2cVZhL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Schlauchanschluss 55° für Kapsel Kaffeemaschine MS-0063049 für Krups" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-55-fuer-kapsel-kaffeemaschine-ms-b0f62z444c/">Schlauchanschluss 55° für Kapsel Kaffeemaschine MS-0063049 für Krups</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-55-fuer-kapsel-kaffeemaschine-ms-b0f62z444c/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-55-fuer-kapsel-kaffeemaschine-ms-b0f62z444c/">Schlauchanschluss 55° für Kapsel Kaffeemaschine MS-0063049 für Krups</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/schlauchanschluss-55-fuer-kapsel-kaffeemaschine-ms-b0f62z444c/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/dichtung-druckschlauch-heizelement-5313217701kompa-b00czoxha4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41SryLeyVmL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Dichtung (Druckschlauch,Heizelement) 5313217701kompatibel mit /Ersatzteil für DeLonghi Kaffeevollautomaten (siehe Beschreibung)" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/dichtung-druckschlauch-heizelement-5313217701kompa-b00czoxha4/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41SryLeyVmL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Dichtung (Druckschlauch,Heizelement) 5313217701kompatibel mit /Ersatzteil für DeLonghi Kaffeevollautomaten (siehe Beschreibung)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/dichtung-druckschlauch-heizelement-5313217701kompa-b00czoxha4/">Dichtung (Druckschlauch,Heizelement) 5313217701kompatibel mit /Ersatzteil für DeLonghi Kaffeevollautomaten (siehe Beschreibung)</a></h3>
-      <div class="prod-card-rating">★ 4.2 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/dichtung-druckschlauch-heizelement-5313217701kompa-b00czoxha4/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/dichtung-druckschlauch-heizelement-5313217701kompa-b00czoxha4/">Dichtung (Druckschlauch,Heizelement) 5313217701kompatibel mit /Ersatzteil für DeLonghi Kaffeevollautomaten (siehe Beschreibung)</a></h3>
+      <div class="ios-card-rating">★ 4.2 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/dichtung-druckschlauch-heizelement-5313217701kompa-b00czoxha4/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-5513214291-generator-b00kqnpxia/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/811iiCuFgTL._AC_SL1500_.jpg" class="prod-card-thumb" alt="DeLonghi 5513214291 Generator" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-5513214291-generator-b00kqnpxia/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/811iiCuFgTL._AC_SL1500_.jpg" class="ios-card-thumb" alt="DeLonghi 5513214291 Generator" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-5513214291-generator-b00kqnpxia/">DeLonghi 5513214291 Generator</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/delonghi-5513214291-generator-b00kqnpxia/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-5513214291-generator-b00kqnpxia/">DeLonghi 5513214291 Generator</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-5513214291-generator-b00kqnpxia/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-5313218931-thermoblock-anschluss-b00erx2u3q/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51AiOkYAwmL._AC_SL1500_.jpg" class="prod-card-thumb" alt="DeLonghi 5313218931 Thermoblock-Anschluss" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-5313218931-thermoblock-anschluss-b00erx2u3q/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51AiOkYAwmL._AC_SL1500_.jpg" class="ios-card-thumb" alt="DeLonghi 5313218931 Thermoblock-Anschluss" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-5313218931-thermoblock-anschluss-b00erx2u3q/">DeLonghi 5313218931 Thermoblock-Anschluss</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/delonghi-5313218931-thermoblock-anschluss-b00erx2u3q/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-5313218931-thermoblock-anschluss-b00erx2u3q/">DeLonghi 5313218931 Thermoblock-Anschluss</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-5313218931-thermoblock-anschluss-b00erx2u3q/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-ntc-fuehler-5217100200-b00ijzd302/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41c16TMmz3S._AC_SL1500_.jpg" class="prod-card-thumb" alt="DeLonghi – NTC-Fühler - 5217100200" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-ntc-fuehler-5217100200-b00ijzd302/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41c16TMmz3S._AC_SL1500_.jpg" class="ios-card-thumb" alt="DeLonghi – NTC-Fühler - 5217100200" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-ntc-fuehler-5217100200-b00ijzd302/">DeLonghi – NTC-Fühler - 5217100200</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/delonghi-ntc-fuehler-5217100200-b00ijzd302/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-ntc-fuehler-5217100200-b00ijzd302/">DeLonghi – NTC-Fühler - 5217100200</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-ntc-fuehler-5217100200-b00ijzd302/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-7313285899-schlauch-rohr-fuer-heizelemen-b073ww1y8p/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41tmmSjyL2L._AC_SL1500_.jpg" class="prod-card-thumb" alt="De Longhi 7313285899 Schlauch Rohr für Heizelement 230mm Kaffeeautomat Kaffeemaschine auch Electrolux AEG 4071389581" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-7313285899-schlauch-rohr-fuer-heizelemen-b073ww1y8p/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/41tmmSjyL2L._AC_SL1500_.jpg" class="ios-card-thumb" alt="De Longhi 7313285899 Schlauch Rohr für Heizelement 230mm Kaffeeautomat Kaffeemaschine auch Electrolux AEG 4071389581" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-7313285899-schlauch-rohr-fuer-heizelemen-b073ww1y8p/">De Longhi 7313285899 Schlauch Rohr für Heizelement 230mm Kaffeeautomat Kaffeemaschine auch Electrolux AEG 4071389581</a></h3>
-      <div class="prod-card-rating">★ 4.8 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-7313285899-schlauch-rohr-fuer-heizelemen-b073ww1y8p/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-7313285899-schlauch-rohr-fuer-heizelemen-b073ww1y8p/">De Longhi 7313285899 Schlauch Rohr für Heizelement 230mm Kaffeeautomat Kaffeemaschine auch Electrolux AEG 4071389581</a></h3>
+      <div class="ios-card-rating">★ 4.8 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-7313285899-schlauch-rohr-fuer-heizelemen-b073ww1y8p/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/garveelife-siebtraeger-espressomaschine-20-bar-120-b0gy3msrnj/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61QaHaNDf4L._AC_SL1500_.jpg" class="prod-card-thumb" alt="GarveeLife Siebträger-Espressomaschine 20 Bar, 1200W, Edelstahl, Thermoblock-Schnellheizung, 1,7L Wassertank, Milchaufschäumer, Italienisches Design, Einfache Reinigung, Perfekte Crema" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/garveelife-siebtraeger-espressomaschine-20-bar-120-b0gy3msrnj/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61QaHaNDf4L._AC_SL1500_.jpg" class="ios-card-thumb" alt="GarveeLife Siebträger-Espressomaschine 20 Bar, 1200W, Edelstahl, Thermoblock-Schnellheizung, 1,7L Wassertank, Milchaufschäumer, Italienisches Design, Einfache Reinigung, Perfekte Crema" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/garveelife-siebtraeger-espressomaschine-20-bar-120-b0gy3msrnj/">GarveeLife Siebträger-Espressomaschine 20 Bar, 1200W, Edelstahl, Thermoblock-Schnellheizung, 1,7L Wassertank, Milchaufschäumer, Italienisches Design, Einfache Reinigung, Perfekte Crema</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/garveelife-siebtraeger-espressomaschine-20-bar-120-b0gy3msrnj/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/garveelife-siebtraeger-espressomaschine-20-bar-120-b0gy3msrnj/">GarveeLife Siebträger-Espressomaschine 20 Bar, 1200W, Edelstahl, Thermoblock-Schnellheizung, 1,7L Wassertank, Milchaufschäumer, Italienisches Design, Einfache Reinigung, Perfekte Crema</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/garveelife-siebtraeger-espressomaschine-20-bar-120-b0gy3msrnj/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/aeg-espresso-siebtraegermaschine-ec8-1-8bp-dual-th-b0ffbhd551/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71qdYmixqpL._AC_SL1500_.jpg" class="prod-card-thumb" alt="AEG Espresso Siebträgermaschine EC8-1-8BP – Dual Thermoblock, 30 Mahlgrade, 20 Bar Druck, PID Temperaturkontrolle, 58mm Brühkopf, Milchaufschäumer, Tassenwärmer, Black Pearl" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/aeg-espresso-siebtraegermaschine-ec8-1-8bp-dual-th-b0ffbhd551/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71qdYmixqpL._AC_SL1500_.jpg" class="ios-card-thumb" alt="AEG Espresso Siebträgermaschine EC8-1-8BP – Dual Thermoblock, 30 Mahlgrade, 20 Bar Druck, PID Temperaturkontrolle, 58mm Brühkopf, Milchaufschäumer, Tassenwärmer, Black Pearl" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/aeg-espresso-siebtraegermaschine-ec8-1-8bp-dual-th-b0ffbhd551/">AEG Espresso Siebträgermaschine EC8-1-8BP – Dual Thermoblock, 30 Mahlgrade, 20 Bar Druck, PID Temperaturkontrolle, 58mm Brühkopf, Milchaufschäumer, Tassenwärmer, Black Pearl</a></h3>
-      <div class="prod-card-rating">★ 4.4 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/aeg-espresso-siebtraegermaschine-ec8-1-8bp-dual-th-b0ffbhd551/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/aeg-espresso-siebtraegermaschine-ec8-1-8bp-dual-th-b0ffbhd551/">AEG Espresso Siebträgermaschine EC8-1-8BP – Dual Thermoblock, 30 Mahlgrade, 20 Bar Druck, PID Temperaturkontrolle, 58mm Brühkopf, Milchaufschäumer, Tassenwärmer, Black Pearl</a></h3>
+      <div class="ios-card-rating">★ 4.4 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/aeg-espresso-siebtraegermaschine-ec8-1-8bp-dual-th-b0ffbhd551/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-schlauchanschluss-fuer-he-b0f6vv3pkz/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51vO8NXjpFL._AC_SL1500_.jpg" class="prod-card-thumb" alt="LUTH Premium Profi Parts Schlauchanschluss für Heizelement kompatibel mit Delonghi 7313219401 für Kaffeemaschine" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-schlauchanschluss-fuer-he-b0f6vv3pkz/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51vO8NXjpFL._AC_SL1500_.jpg" class="ios-card-thumb" alt="LUTH Premium Profi Parts Schlauchanschluss für Heizelement kompatibel mit Delonghi 7313219401 für Kaffeemaschine" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">DeLonghi</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-schlauchanschluss-fuer-he-b0f6vv3pkz/">LUTH Premium Profi Parts Schlauchanschluss für Heizelement kompatibel mit Delonghi 7313219401 für Kaffeemaschine</a></h3>
-      <div class="prod-card-rating">★ 5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-schlauchanschluss-fuer-he-b0f6vv3pkz/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-schlauchanschluss-fuer-he-b0f6vv3pkz/">LUTH Premium Profi Parts Schlauchanschluss für Heizelement kompatibel mit Delonghi 7313219401 für Kaffeemaschine</a></h3>
+      <div class="ios-card-rating">★ 5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-schlauchanschluss-fuer-he-b0f6vv3pkz/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/durchlauferhitzer-kompatibel-mit-ersatzteil-fuer-b-b09txp744y/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71J-rJveNBL._AC_SL1500_.jpg" class="prod-card-thumb" alt="Durchlauferhitzer kompatibel mit/Ersatzteil für Bosch Siemens 12015169 EQ3 VeroCup100.. Kaffeevollautomate" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/durchlauferhitzer-kompatibel-mit-ersatzteil-fuer-b-b09txp744y/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71J-rJveNBL._AC_SL1500_.jpg" class="ios-card-thumb" alt="Durchlauferhitzer kompatibel mit/Ersatzteil für Bosch Siemens 12015169 EQ3 VeroCup100.. Kaffeevollautomate" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/durchlauferhitzer-kompatibel-mit-ersatzteil-fuer-b-b09txp744y/">Durchlauferhitzer kompatibel mit/Ersatzteil für Bosch Siemens 12015169 EQ3 VeroCup100.. Kaffeevollautomate</a></h3>
-      <div class="prod-card-rating">★ 4.7 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/durchlauferhitzer-kompatibel-mit-ersatzteil-fuer-b-b09txp744y/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/durchlauferhitzer-kompatibel-mit-ersatzteil-fuer-b-b09txp744y/">Durchlauferhitzer kompatibel mit/Ersatzteil für Bosch Siemens 12015169 EQ3 VeroCup100.. Kaffeevollautomate</a></h3>
+      <div class="ios-card-rating">★ 4.7 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/durchlauferhitzer-kompatibel-mit-ersatzteil-fuer-b-b09txp744y/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/bosch-elektronisch-geregelter-durchlauferhitzer-tr-b09vlftk38/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51ESQecmA+L._AC_SL1500_.jpg" class="prod-card-thumb" alt="Bosch elektronisch geregelter Durchlauferhitzer Tronic Comfort Plus 21/24/27 kW - Umschaltbar, druckfest, stufenlose Temperaturwahl, moderne Glas-Optik, weiß [Energieklasse A]" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/bosch-elektronisch-geregelter-durchlauferhitzer-tr-b09vlftk38/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/51ESQecmA+L._AC_SL1500_.jpg" class="ios-card-thumb" alt="Bosch elektronisch geregelter Durchlauferhitzer Tronic Comfort Plus 21/24/27 kW - Umschaltbar, druckfest, stufenlose Temperaturwahl, moderne Glas-Optik, weiß [Energieklasse A]" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/bosch-elektronisch-geregelter-durchlauferhitzer-tr-b09vlftk38/">Bosch elektronisch geregelter Durchlauferhitzer Tronic Comfort Plus 21/24/27 kW - Umschaltbar, druckfest, stufenlose Temperaturwahl, moderne Glas-Optik, weiß [Energieklasse A]</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/bosch-elektronisch-geregelter-durchlauferhitzer-tr-b09vlftk38/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/bosch-elektronisch-geregelter-durchlauferhitzer-tr-b09vlftk38/">Bosch elektronisch geregelter Durchlauferhitzer Tronic Comfort Plus 21/24/27 kW - Umschaltbar, druckfest, stufenlose Temperaturwahl, moderne Glas-Optik, weiß [Energieklasse A]</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/bosch-elektronisch-geregelter-durchlauferhitzer-tr-b09vlftk38/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-lcd-18-2-b001gqjk0s/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61PvVcAJKdL._AC_SL1500_.jpg" class="prod-card-thumb" alt="AEG elektronischer Durchlauferhitzer DDLE LCD 18/21/24 kW umschaltbar, gradgenaue Temperaturwahl, LC-Display, Festanschluss 400V, VDE geprüft, 222394" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-lcd-18-2-b001gqjk0s/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61PvVcAJKdL._AC_SL1500_.jpg" class="ios-card-thumb" alt="AEG elektronischer Durchlauferhitzer DDLE LCD 18/21/24 kW umschaltbar, gradgenaue Temperaturwahl, LC-Display, Festanschluss 400V, VDE geprüft, 222394" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-lcd-18-2-b001gqjk0s/">AEG elektronischer Durchlauferhitzer DDLE LCD 18/21/24 kW umschaltbar, gradgenaue Temperaturwahl, LC-Display, Festanschluss 400V, VDE geprüft, 222394</a></h3>
-      <div class="prod-card-rating">★ 4.6 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-lcd-18-2-b001gqjk0s/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-lcd-18-2-b001gqjk0s/">AEG elektronischer Durchlauferhitzer DDLE LCD 18/21/24 kW umschaltbar, gradgenaue Temperaturwahl, LC-Display, Festanschluss 400V, VDE geprüft, 222394</a></h3>
+      <div class="ios-card-rating">★ 4.6 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-lcd-18-2-b001gqjk0s/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-easy-21-b0020orbns/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61ZSIg41huL._AC_SL1500_.jpg" class="prod-card-thumb" alt="AEG elektronischer Durchlauferhitzer DDLE EASY 21 kW, einfache Temperaturwahl durch 2 Festtemperaturen 42°C und 55°C. Festanschluss 400V, VDE geprüft, 228841" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-easy-21-b0020orbns/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61ZSIg41huL._AC_SL1500_.jpg" class="ios-card-thumb" alt="AEG elektronischer Durchlauferhitzer DDLE EASY 21 kW, einfache Temperaturwahl durch 2 Festtemperaturen 42°C und 55°C. Festanschluss 400V, VDE geprüft, 228841" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-easy-21-b0020orbns/">AEG elektronischer Durchlauferhitzer DDLE EASY 21 kW, einfache Temperaturwahl durch 2 Festtemperaturen 42°C und 55°C. Festanschluss 400V, VDE geprüft, 228841</a></h3>
-      <div class="prod-card-rating">★ 4.3 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-easy-21-b0020orbns/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-easy-21-b0020orbns/">AEG elektronischer Durchlauferhitzer DDLE EASY 21 kW, einfache Temperaturwahl durch 2 Festtemperaturen 42°C und 55°C. Festanschluss 400V, VDE geprüft, 228841</a></h3>
+      <div class="ios-card-rating">★ 4.3 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-easy-21-b0020orbns/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
 
-  <article class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-basis-18-b001gqjk1c/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71pGfjt-SfL._AC_SL1500_.jpg" class="prod-card-thumb" alt="AEG elektronischer Durchlauferhitzer DDLE Basis 18/21/24 kW, umschaltbar, stufenlose Temperaturwahl durch 4 Anwendungssymbole, Festanschluss 400V, VDE geprüft, 222390" onerror="this.style.opacity='0.8'">
+  <article class="ios-prod-card">
+    <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-basis-18-b001gqjk1c/" class="ios-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71pGfjt-SfL._AC_SL1500_.jpg" class="ios-card-thumb" alt="AEG elektronischer Durchlauferhitzer DDLE Basis 18/21/24 kW, umschaltbar, stufenlose Temperaturwahl durch 4 Anwendungssymbole, Festanschluss 400V, VDE geprüft, 222390" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="prod-card-body">
-      <div class="badge-row">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Heizelemente &amp; Thermoblöcke</span>
+    <div class="ios-card-body">
+      <div class="ios-card-pills">
+        <span class="ios-pill ios-pill-blue">Siemens</span>
+        <span class="ios-pill ios-pill-purple">Heizelemente &amp; Thermoblöcke</span>
       </div>
-      <h3 class="prod-card-title"><a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-basis-18-b001gqjk1c/">AEG elektronischer Durchlauferhitzer DDLE Basis 18/21/24 kW, umschaltbar, stufenlose Temperaturwahl durch 4 Anwendungssymbole, Festanschluss 400V, VDE geprüft, 222390</a></h3>
-      <div class="prod-card-rating">★ 4.5 (145 Bewertungen)</div>
-      <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-basis-18-b001gqjk1c/" class="btn-card-details">
-        Reparatur-Guide &amp; Details ›
-      </a>
+      <h3 class="ios-card-title"><a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-basis-18-b001gqjk1c/">AEG elektronischer Durchlauferhitzer DDLE Basis 18/21/24 kW, umschaltbar, stufenlose Temperaturwahl durch 4 Anwendungssymbole, Festanschluss 400V, VDE geprüft, 222390</a></h3>
+      <div class="ios-card-rating">★ 4.5 (145 Bewertungen)</div>
+      <div class="ios-card-footer">
+        <a href="https://kaffeereparatur.github.io/siemens/aeg-elektronischer-durchlauferhitzer-ddle-basis-18-b001gqjk1c/" class="ios-card-link">
+          Reparatur-Guide &amp; Details ›
+        </a>
+      </div>
     </div>
   </article>
     </div>
   </main>
 
   
-  <footer style="background:#1c1917; color:#a8a29e; padding:44px 0 24px; margin-top:56px; border-top:1px solid #292524;">
+  <nav class="ios-tab-bar" aria-label="App Navigation">
+    <a href="https://kaffeereparatur.github.io/" class="ios-tab-item ">
+      <span class="ios-tab-icon">🏠</span>
+      <span class="ios-tab-label">Start</span>
+    </a>
+    <a href="https://kaffeereparatur.github.io/#marken" class="ios-tab-item ">
+      <span class="ios-tab-icon">☕</span>
+      <span class="ios-tab-label">Marken</span>
+    </a>
+    <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-tab-item active">
+      <span class="ios-tab-icon">⚙️</span>
+      <span class="ios-tab-label">Baugruppen</span>
+    </a>
+    <button type="button" class="ios-tab-item" onclick="if(window.focusIosSearch)window.focusIosSearch();" aria-label="Suche öffnen">
+      <span class="ios-tab-icon">🔍</span>
+      <span class="ios-tab-label">Suche</span>
+    </button>
+  </nav>
+  
+  <footer style="background:#1c1c1e; color:#8e8e93; padding:44px 0 24px; margin-top:56px; border-top:0.5px solid rgba(255,255,255,0.1);">
     <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:28px; padding-bottom:28px;">
       <div>
         <div style="font-weight:800; font-size:17px; color:#ffffff; margin-bottom:10px; display:flex; align-items:center; gap:8px;">
-          ☕ KaffeeReparatur<span style="color:#eab308;">.de</span>
+          ☕ KaffeeReparatur<span style="color:#0071e3;">.de</span>
         </div>
-        <p style="font-size:12.5px; line-height:1.6; color:#78716c;">
+        <p style="font-size:12.5px; line-height:1.6; color:#8e8e93;">
           Deutsches Fach- und Reparaturportal für Kaffeevollautomaten-Ersatzteile. 100% verifizierte Original- und OEM-Komponenten mit mechatronischer Funktionsanalyse und direkter Verfügbarkeitsprüfung auf Amazon.de.
         </p>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Top-Hersteller</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#a8a29e;">Siemens EQ-Serie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#a8a29e;">Jura Impressa &amp; E/Z/ENA</a></li>
-          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#a8a29e;">Philips LatteGo &amp; 2200/3200</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#a8a29e;">Sage Barista Express</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#8e8e93;">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#8e8e93;">Siemens EQ-Serie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#8e8e93;">Jura Impressa &amp; E/Z/ENA</a></li>
+          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#8e8e93;">Philips LatteGo &amp; 2200/3200</a></li>
+          <li><a href="https://kaffeereparatur.github.io/sage/" style="color:#8e8e93;">Sage Barista Express</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Baugruppen</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
-          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#a8a29e;">Mahlwerke &amp; Mahlkegel</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#a8a29e;">Drainageventile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#a8a29e;">Milchsysteme &amp; Karaffen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#a8a29e;">Wasserfilter &amp; Entkalker</a></li>
+        <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:7px; font-size:12.5px;">
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#8e8e93;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#8e8e93;">Mahlwerke &amp; Mahlkegel</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#8e8e93;">Drainageventile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#8e8e93;">Milchsysteme &amp; Karaffen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:#8e8e93;">Wasserfilter &amp; Entkalker</a></li>
         </ul>
       </div>
 
       <div>
         <div style="font-weight:700; color:#ffffff; font-size:13.5px; margin-bottom:10px;">Transparenz</div>
-        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+        <p style="line-height:1.5; color:#8e8e93; font-size:12px; margin:0;">
           Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Alle Preise, Verfügbarkeiten und Lieferfristen werden live von Amazon.de bereitgestellt.
         </p>
       </div>
     </div>
-    <div class="wrap" style="border-top:1px solid #292524; padding-top:18px; text-align:center; font-size:12px; color:#57534e;">
+    <div class="wrap" style="border-top:0.5px solid rgba(255,255,255,0.1); padding-top:18px; text-align:center; font-size:12px; color:#636366;">
       © 2026 KaffeeReparatur. Alle Rechte vorbehalten. Unabhängiges Fachportal.
     </div>
   </footer>
