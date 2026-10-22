@@ -7,7 +7,7 @@
 
     if (!searchInput) return;
 
-    fetch('https://roboparca.github.io/kaffeereparatur/search-index.json')
+    fetch('https://kaffeereparatur.github.io/search-index.json')
       .then(r => r.json())
       .then(d => { indexData = d; })
       .catch(e => console.error(e));
@@ -36,7 +36,7 @@
             <div style="display:flex; align-items:center; overflow:hidden;">
               <img src="${r.thumb}" class="search-item-thumb" alt="${r.title}" onerror="this.style.display='none'">
               <div style="overflow:hidden;">
-                <div style="font-size:13px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:260px;">${r.title}</div>
+                <div style="font-size:13px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:240px;">${r.title}</div>
                 <div style="font-size:11px; color:#78716c;">${r.brand} • ${r.category}</div>
               </div>
             </div>
