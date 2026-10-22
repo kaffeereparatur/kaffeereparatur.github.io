@@ -5,10 +5,10 @@
     const searchClear = document.getElementById('search-clear');
     const searchDropdown = document.getElementById('search-dropdown');
 
-    window.focusIosSearch = function() {
+    window.focusFkSearch = function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
       if (searchInput) {
-        setTimeout(function() { searchInput.focus(); }, 250);
+        setTimeout(function() { searchInput.focus(); }, 200);
       }
     };
 
@@ -26,7 +26,7 @@
         searchClear.style.display = 'none';
         return;
       }
-      searchClear.style.display = 'flex';
+      searchClear.style.display = 'block';
 
       const results = indexData.filter(function(item) {
         return item.title.toLowerCase().includes(q) || 
@@ -36,21 +36,23 @@
       }).slice(0, 10);
 
       if (results.length === 0) {
-        searchDropdown.innerHTML = '<div style="padding:16px; text-align:center; font-size:13.5px; color:#8e8e93;">Kein passendes Ersatzteil gefunden.</div>';
+        searchDropdown.innerHTML = '<div style="padding:16px; text-align:center; font-size:13px; color:#878787;">Kein passendes Ersatzteil gefunden.</div>';
       } else {
         searchDropdown.innerHTML = results.map(function(r) {
-          return '<a href="' + r.url + '" class="ios-search-sheet-item">' +
-            '<img src="' + r.thumb + '" class="ios-search-sheet-thumb" alt="' + r.title + '" onerror="this.style.display=\'none\'">' +
-            '<div class="ios-search-sheet-text">' +
-              '<div class="ios-search-sheet-title">' + r.title + '</div>' +
-              '<div class="ios-search-sheet-sub">' + r.brand + ' • ' + r.category + '</div>' +
+          return '<a href="' + r.url + '" class="fk-search-item">' +
+            '<img src="' + r.thumb + '" class="fk-search-thumb" alt="' + r.title + '" onerror="this.style.display=\'none\'">' +
+            '<div style="flex:1; min-width:0;">' +
+              '<div class="fk-search-title">' + r.title + '</div>' +
+              '<div class="fk-search-sub">' + r.brand + ' • ' + r.category + '</div>' +
             '</div>' +
-            '<span class="ios-search-sheet-arrow">›</span>' +
+            '<span style="color:#2874f0; font-weight:700; font-size:14px;">›</span>' +
           '</a>';
         }).join('');
       }
       searchDropdown.classList.add('show');
     }
+
+    window.performFkSearch = performSearch;
 
     searchInput.addEventListener('input', performSearch);
     searchInput.addEventListener('focus', function() {

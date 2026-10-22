@@ -2,10 +2,8 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="theme-color" content="#2874f0">
   <meta name="google-site-verification" content="z1HDX3FFWaHIqyPyOMLwt9sgJg31Is1QxB7Po-DuJBs" />
   <title>LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500 | KaffeeReparatur</title>
   <meta name="description" content="Reparatur-Guide, Einbauanleitung und mechatronische Funktionsanalyse für LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500. Verfügbarkeit, OEM-Nummer und passende Ersatzteile.">
@@ -13,43 +11,34 @@
   <style>
 
 /* ==========================================================================
-   Apple iOS Native App Interface for KaffeeReparatur
+   FLIPKART OFFICIAL UI DESIGN SYSTEM (DESKTOP WEBSITE + MOBILE APP)
    ========================================================================== */
 
 :root {
-  --ios-bg: #f2f2f7;
-  --ios-card: #ffffff;
-  --ios-card-secondary: #f9f9fb;
-  --ios-label: #1c1c1e;
-  --ios-secondary: #8e8e93;
-  --ios-tertiary: #c7c7cc;
-  --ios-border: rgba(60, 60, 67, 0.12);
-  --ios-separator: rgba(60, 60, 67, 0.10);
-  --ios-blue: #007aff;
-  --ios-blue-light: rgba(0, 122, 255, 0.10);
-  --ios-blue-pressed: #0062cc;
-  --ios-green: #34c759;
-  --ios-green-light: rgba(52, 199, 89, 0.12);
-  --ios-amber: #ff9500;
-  --ios-amber-light: rgba(255, 149, 0, 0.12);
-  --ios-purple: #af52de;
-  --ios-purple-light: rgba(175, 82, 222, 0.12);
-  --ios-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --ios-radius-card: 18px;
-  --ios-radius-btn: 14px;
-  --ios-radius-pill: 9999px;
-  --ios-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
-  --ios-shadow-md: 0 4px 14px rgba(0, 0, 0, 0.07);
+  --fk-blue: #2874f0;
+  --fk-blue-dark: #1259c7;
+  --fk-yellow: #ffe500;
+  --fk-orange-buy: #fb641b;
+  --fk-orange-cart: #ff9f00;
+  --fk-green: #388e3c;
+  --fk-bg: #f1f3f6;
+  --fk-card: #ffffff;
+  --fk-text: #212121;
+  --fk-secondary: #878787;
+  --fk-border: #f0f0f0;
+  --fk-border-dark: #e0e0e0;
+  --fk-font: Roboto, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --fk-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+  --fk-shadow-card: 0 1px 3px 0 rgba(0,0,0,.12);
 }
 
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100%;
-  background-color: var(--ios-bg);
-  color: var(--ios-label);
-  font-family: var(--ios-font);
+  background-color: var(--fk-bg);
+  color: var(--fk-text);
+  font-family: var(--fk-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -62,19 +51,20 @@ html, body {
   max-width: 100%;
 }
 
-body {
-  padding-bottom: 96px; /* Clearance for fixed iOS bottom tab bar / action sheet */
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-/* iOS Touch Target & Anti-Zoom Reset (CRITICAL FOR IPHONE) */
+/* Input & Search Reset */
 input, input[type="text"], input[type="search"] {
-  font-family: var(--ios-font) !important;
-  font-size: 16px !important; /* PREVENTS AUTOMATIC IOS SAFARI ZOOM */
+  font-family: var(--fk-font) !important;
+  font-size: 16px !important; /* Prevents auto zoom on iOS */
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
-  border-radius: 10px;
   outline: none;
+  border: none;
   box-sizing: border-box;
 }
 
@@ -83,970 +73,1093 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none !important;
-  -webkit-appearance: none !important;
 }
 
-a {
-  color: var(--ios-blue);
-  text-decoration: none;
-}
-a:active {
-  opacity: 0.7;
-}
-
-/* Safe word break across all elements */
+/* Safe text wrap guarantee */
 h1, h2, h3, h4, p, span, div, li {
   overflow-wrap: break-word;
   word-break: break-word;
 }
 
 /* ==========================================================================
-   Header: Frosted Glass Cupertino Navigation Bar
+   FLIPKART PRIMARY HEADER (Electric Blue #2874f0)
    ========================================================================== */
 
-.ios-app-header {
+.fk-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  border-bottom: 0.5px solid var(--ios-border);
-  padding: 8px 14px 10px;
+  background: var(--fk-blue);
+  color: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.18);
+  padding: 10px 16px;
 }
 
-.ios-header-content {
-  max-width: 680px;
+.fk-header-inner {
+  max-width: 1248px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.ios-header-top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  gap: 16px;
 }
 
-.ios-app-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none !important;
-  color: #1c1c1e;
-  font-weight: 800;
-  font-size: 19px;
-  letter-spacing: -0.02em;
-}
-
-.ios-app-icon {
-  font-size: 22px;
-  line-height: 1;
-}
-
-.ios-app-title {
-  color: #1c1c1e;
-}
-
-.ios-header-actions {
+/* Flipkart Brand Logo */
+.fk-logo-box {
   display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.ios-header-pill {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--ios-blue);
-  background: var(--ios-blue-light);
-  padding: 4px 10px;
-  border-radius: var(--ios-radius-pill);
+  flex-direction: column;
   text-decoration: none !important;
-  transition: all 0.15s ease;
-}
-
-.ios-header-pill:active {
-  background: rgba(0, 122, 255, 0.2);
-  transform: scale(0.96);
-}
-
-/* Dedicated iOS Search Bar */
-.ios-search-container {
-  position: relative;
-  width: 100%;
-}
-
-.ios-search-box {
-  display: flex;
-  align-items: center;
-  background: rgba(118, 118, 128, 0.12);
-  border-radius: 10px;
-  padding: 0 10px;
-  height: 38px;
-  gap: 8px;
-  box-sizing: border-box;
-  width: 100%;
-  transition: background 0.15s ease, box-shadow 0.15s ease;
-}
-
-.ios-search-box:focus-within {
-  background: #ffffff;
-  box-shadow: 0 0 0 2px var(--ios-blue), 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.ios-search-svg {
   flex-shrink: 0;
 }
 
-.ios-search-input {
-  border: none !important;
-  background: transparent !important;
-  width: 100% !important;
-  height: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  font-size: 16px !important; /* CRITICAL: Prevents iOS Zoom */
-  color: var(--ios-label) !important;
-  line-height: 38px !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.ios-search-input::placeholder {
-  color: var(--ios-secondary);
-  font-size: 14px;
-}
-
-.ios-search-clear-btn {
-  display: none;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: var(--ios-secondary);
+.fk-logo-main {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
   color: #ffffff;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fk-logo-sub {
   font-size: 11px;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: -2px;
+}
+
+.fk-plus {
+  color: var(--fk-yellow);
+  font-weight: 700;
+}
+
+/* Flipkart Center Search Bar */
+.fk-search-wrap {
+  position: relative;
+  flex: 1;
+  max-width: 560px;
+}
+
+.fk-search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 2px;
+  height: 38px;
+  padding: 0 12px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+
+.fk-search-input {
+  flex: 1;
+  background: transparent !important;
+  font-size: 14px !important;
+  color: #212121 !important;
+  padding: 0 !important;
+}
+
+.fk-search-input::placeholder {
+  color: var(--fk-secondary);
+}
+
+.fk-search-btn {
+  background: transparent;
   border: none;
+  cursor: pointer;
+  display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  flex-shrink: 0;
   padding: 0;
-  line-height: 1;
+  color: var(--fk-blue);
 }
 
-.ios-search-clear-btn:active {
-  background: #636366;
+.fk-search-clear {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--fk-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0 6px;
 }
 
-/* Floating iOS Sheet Dropdown */
-.ios-search-results-sheet {
+/* Floating Search Dropdown */
+.fk-search-dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 6px);
+  top: calc(100% + 4px);
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
-  border-radius: 14px;
-  border: 0.5px solid var(--ios-border);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-  max-height: 440px;
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
+  border: 1px solid var(--fk-border-dark);
+  max-height: 420px;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   z-index: 1010;
-  padding: 4px;
 }
 
-.ios-search-results-sheet.show {
-  display: block;
-}
+.fk-search-dropdown.show { display: block; }
 
-.ios-search-sheet-item {
+.fk-search-item {
   display: flex;
   align-items: center;
-  padding: 10px 12px;
-  border-radius: 10px;
-  text-decoration: none !important;
-  color: var(--ios-label);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--fk-border);
   gap: 12px;
-  border-bottom: 0.5px solid var(--ios-separator);
-  transition: background 0.1s ease;
+  text-decoration: none !important;
+  color: #212121;
 }
 
-.ios-search-sheet-item:last-child {
-  border-bottom: none;
+.fk-search-item:hover, .fk-search-item:active {
+  background: #f9f9f9;
 }
 
-.ios-search-sheet-item:active {
-  background: rgba(0, 0, 0, 0.05);
-}
-
-.ios-search-sheet-thumb {
-  width: 42px;
-  height: 42px;
+.fk-search-thumb {
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  border-radius: 8px;
-  background: #ffffff;
-  border: 0.5px solid var(--ios-border);
   flex-shrink: 0;
-  padding: 2px;
 }
 
-.ios-search-sheet-text {
-  flex: 1;
-  min-width: 0;
-}
-
-.ios-search-sheet-title {
-  font-size: 13.5px;
-  font-weight: 600;
+.fk-search-title {
+  font-size: 13px;
+  font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: var(--ios-label);
 }
 
-.ios-search-sheet-sub {
-  font-size: 11.5px;
-  color: var(--ios-secondary);
-  margin-top: 2px;
+.fk-search-sub {
+  font-size: 11px;
+  color: var(--fk-secondary);
 }
 
-.ios-search-sheet-arrow {
-  font-size: 18px;
-  color: var(--ios-tertiary);
-  flex-shrink: 0;
+/* Desktop Header Action Buttons */
+.fk-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.fk-nav-link {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+
+.fk-nav-link:hover {
+  color: var(--fk-yellow);
+}
+
+.fk-amazon-badge {
+  background: #ffffff;
+  color: var(--fk-blue) !important;
+  padding: 6px 14px;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 /* ==========================================================================
-   App Container & Native Inset Cards
+   FLIPKART CATEGORY STRIP (White Icon Strip Below Header)
    ========================================================================== */
 
-.ios-app-container {
-  max-width: 680px;
+.fk-cat-strip {
+  background: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.14);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.fk-cat-strip-inner {
+  max-width: 1248px;
   margin: 0 auto;
-  padding: 10px 12px 90px;
-}
-
-@media (min-width: 768px) {
-  .ios-app-container {
-    max-width: 760px;
-    padding: 16px 20px 90px;
-  }
-}
-
-.ios-app-card {
-  background: var(--ios-card);
-  border-radius: var(--ios-radius-card);
-  border: 0.5px solid var(--ios-border);
-  padding: 18px;
-  margin-bottom: 14px;
-  box-shadow: var(--ios-shadow-sm);
-}
-
-.ios-card-header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 0.5px solid var(--ios-separator);
-}
-
-.ios-header-icon {
-  font-size: 18px;
-}
-
-.ios-header-title {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
-  color: var(--ios-label);
-  letter-spacing: -0.01em;
-}
-
-.ios-card-body p {
-  font-size: 14.5px;
-  line-height: 1.6;
-  color: #3a3a3c;
-  margin: 0 0 10px 0;
-}
-
-.ios-card-body p:last-child {
-  margin-bottom: 0;
-}
-
-/* Back Navigation Button */
-.ios-back-nav {
-  padding: 6px 0 2px;
-}
-
-.ios-back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--ios-blue);
-  text-decoration: none !important;
-}
-
-.ios-back-link:active {
-  opacity: 0.6;
-}
-
-.ios-back-chevron {
-  font-size: 20px;
-  line-height: 1;
-}
-
-.ios-breadcrumb-mini {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 11.5px;
-  color: var(--ios-secondary);
-  padding: 2px 0 10px;
+  justify-content: space-between;
+  padding: 0 16px;
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+  gap: 16px;
 }
 
-.ios-breadcrumb-mini a {
-  color: var(--ios-secondary);
-  text-decoration: none;
+.fk-cat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none !important;
+  gap: 4px;
+  flex-shrink: 0;
 }
 
-.ios-breadcrumb-mini .sep {
-  color: var(--ios-tertiary);
-  font-size: 9px;
+.fk-cat-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.fk-cat-text {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--fk-text);
+  transition: color 0.15s ease;
+}
+
+.fk-cat-item:hover .fk-cat-text {
+  color: var(--fk-blue);
 }
 
 /* ==========================================================================
-   Product Detail Hero (Apple Store App Style)
+   FLIPKART DESKTOP PRODUCT DETAIL PAGE (2-Column E-Commerce Layout)
    ========================================================================== */
 
-.ios-hero-img-box {
+.fk-page-wrap {
+  max-width: 1248px;
+  margin: 10px auto 40px;
+  padding: 0 12px;
+}
+
+.fk-detail-desktop-grid {
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+/* Sticky Left Gallery Column */
+.fk-left-col {
+  position: sticky;
+  top: 74px;
   background: #ffffff;
-  border-radius: 14px;
-  height: 280px;
+  padding: 16px;
+  border-radius: 2px;
+  box-shadow: var(--fk-shadow);
+  border: 1px solid var(--fk-border);
+}
+
+.fk-main-img-box {
+  width: 100%;
+  height: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px;
-  border: 0.5px solid var(--ios-border);
-  margin-bottom: 14px;
+  border: 1px solid var(--fk-border);
+  margin-bottom: 16px;
 }
 
-.ios-hero-img-box img {
+.fk-main-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.fk-main-img-box:hover img {
+  transform: scale(1.04);
+}
+
+/* Dual Action Buttons (Flipkart Yellow + Orange) */
+.fk-btn-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.fk-btn-cart {
+  background: var(--fk-orange-cart);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 48px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.fk-btn-cart:hover {
+  background: #f29600;
+}
+
+.fk-btn-buy {
+  background: var(--fk-orange-buy);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 48px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.fk-btn-buy:hover {
+  background: #e65612;
+}
+
+/* Right Detail Column */
+.fk-right-col {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 2px;
+  box-shadow: var(--fk-shadow);
+  border: 1px solid var(--fk-border);
+}
+
+.fk-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--fk-secondary);
+  margin-bottom: 10px;
+}
+
+.fk-breadcrumb a {
+  color: var(--fk-secondary);
+}
+
+.fk-breadcrumb a:hover {
+  color: var(--fk-blue);
+}
+
+.fk-product-h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--fk-text);
+  line-height: 1.35;
+  margin: 0 0 10px 0;
+}
+
+/* Green Rating Badge (Iconic Flipkart Green) */
+.fk-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.fk-rating-badge {
+  background: var(--fk-green);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12.5px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.fk-rating-count {
+  font-size: 13px;
+  color: var(--fk-secondary);
+  font-weight: 500;
+}
+
+.fk-assured-tag {
+  background: #e9f0ff;
+  color: var(--fk-blue);
+  font-size: 11.5px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Flipkart Special Price & Offers Section */
+.fk-price-box {
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--fk-border);
+}
+
+.fk-price-highlight {
+  font-size: 24px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.fk-stock-status {
+  font-size: 13px;
+  color: var(--fk-green);
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+/* Available Offers (Flipkart Green Tag Style) */
+.fk-offers-box {
+  margin-bottom: 20px;
+}
+
+.fk-offers-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 8px;
+}
+
+.fk-offer-item {
+  font-size: 13px;
+  color: #212121;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.fk-tag-icon {
+  color: var(--fk-green);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+/* Highlights Box */
+.fk-highlights-box {
+  margin-bottom: 24px;
+}
+
+.fk-hl-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.fk-hl-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fk-hl-list li {
+  font-size: 13px;
+  color: #212121;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Specifications Table (Flipkart Clean Spec Table) */
+.fk-sec-card {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--fk-border);
+}
+
+.fk-sec-heading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.fk-sec-text p {
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.65;
+  margin: 0 0 10px 0;
+}
+
+.fk-spec-grid {
+  border: 1px solid var(--fk-border-dark);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.fk-spec-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--fk-border);
+  font-size: 13px;
+  align-items: center;
+}
+
+.fk-spec-row:last-child {
+  border-bottom: none;
+}
+
+.fk-spec-row:nth-child(even) {
+  background: #fafafa;
+}
+
+.fk-spec-k {
+  color: var(--fk-secondary);
+  font-weight: 500;
+}
+
+.fk-spec-v {
+  color: #212121;
+  font-weight: 500;
+}
+
+.fk-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.fk-tag-blue { background: #e9f0ff; color: var(--fk-blue); }
+.fk-tag-orange { background: #fff3e0; color: #e65100; }
+.fk-tag-green { background: #e8f5e9; color: var(--fk-green); }
+.fk-tag-purple { background: #f3e5f5; color: #7b1fa2; }
+
+.fk-wiki-link {
+  color: var(--fk-blue);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.fk-code-pill {
+  background: #ffebee;
+  color: #c62828;
+  font-weight: 700;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 2px;
+}
+
+/* ==========================================================================
+   FLIPKART PRODUCT CARDS GRID (Deals Grid)
+   ========================================================================== */
+
+.fk-grid-title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 12px;
+}
+
+.fk-grid-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #212121;
+  margin: 0;
+}
+
+.fk-grid-count {
+  font-size: 13px;
+  color: var(--fk-secondary);
+}
+
+.fk-prod-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.fk-prod-card {
+  background: #ffffff;
+  border: 1px solid var(--fk-border);
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  position: relative;
+}
+
+.fk-prod-card:hover {
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.15);
+  transform: translateY(-2px);
+}
+
+.fk-card-thumb-link {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--fk-border);
+}
+
+.fk-card-thumb {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
-.ios-badge-row {
+.fk-card-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fk-card-badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.fk-card-title {
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.35;
+  margin: 0 0 8px 0;
+  color: #212121;
+}
+
+.fk-card-title a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.fk-card-title a:hover {
+  color: var(--fk-blue);
+}
+
+.fk-card-rating-row {
   display: flex;
   align-items: center;
   gap: 6px;
   margin-bottom: 8px;
-  flex-wrap: wrap;
 }
 
-.ios-badge-pill {
-  font-size: 11px;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: var(--ios-radius-pill);
-  white-space: nowrap;
-}
-
-.ios-badge-blue { background: var(--ios-blue-light); color: var(--ios-blue); }
-.ios-badge-purple { background: var(--ios-purple-light); color: var(--ios-purple); }
-.ios-badge-amber { background: var(--ios-amber-light); color: var(--ios-amber); }
-.ios-badge-green { background: var(--ios-green-light); color: #15803d; }
-
-.ios-product-rating {
-  font-size: 12.5px;
-  color: #b45309;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-
-.ios-product-title-h1 {
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1.35;
-  color: var(--ios-label);
-  margin: 4px 0 12px 0;
-  letter-spacing: -0.015em;
-}
-
-/* iOS Settings Grouped Specs List */
-.ios-specs-table {
-  background: var(--ios-card-secondary);
-  border-radius: 12px;
-  border: 0.5px solid var(--ios-border);
-  margin-bottom: 14px;
-  overflow: hidden;
-}
-
-.ios-spec-item {
+.fk-card-footer {
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid var(--fk-border);
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 9px 12px;
-  border-bottom: 0.5px solid var(--ios-separator);
-  font-size: 13px;
 }
 
-.ios-spec-item:last-child {
-  border-bottom: none;
-}
-
-.ios-spec-key {
-  color: var(--ios-secondary);
-}
-
-.ios-spec-val {
-  font-weight: 600;
-  color: var(--ios-label);
-  text-align: right;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 12px;
-}
-
-.text-green {
-  color: #15803d;
+.fk-card-link {
+  font-size: 12.5px;
   font-weight: 700;
-}
-
-.ios-bullet-points {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 16px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.ios-bullet-points li {
-  font-size: 13px;
-  color: #3a3a3c;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  line-height: 1.4;
-}
-
-.ios-check-icon {
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  background: rgba(52, 199, 89, 0.15);
-  color: #15803d;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  font-weight: 800;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-/* Primary Apple Store Pill Action Button */
-.ios-primary-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  background: var(--ios-blue);
-  color: #ffffff !important;
-  font-size: 15.5px;
-  font-weight: 600;
-  padding: 13px 20px;
-  border-radius: var(--ios-radius-btn);
-  text-decoration: none !important;
-  transition: all 0.15s ease;
-  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.28);
-  text-align: center;
-  width: 100%;
-}
-
-.ios-primary-btn:active {
-  background: var(--ios-blue-pressed);
-  transform: scale(0.98);
-}
-
-.ios-btn-subnote {
-  font-size: 11.5px;
-  color: var(--ios-secondary);
-  text-align: center;
-  margin-top: 7px;
+  color: var(--fk-blue);
 }
 
 /* ==========================================================================
-   iOS Grouped Inset Cells (ZERO Tables, ZERO Horizontal Scrollbars)
+   FLIPKART HOMEPAGE BANNERS & DEALS STRIPS
    ========================================================================== */
 
-.ios-grouped-cells {
-  background: var(--ios-card-secondary);
-  border-radius: 12px;
-  border: 0.5px solid var(--ios-border);
-  overflow: hidden;
-}
-
-.ios-cell-row {
-  padding: 11px 13px;
-  border-bottom: 0.5px solid var(--ios-separator);
-}
-
-.ios-cell-row:last-child {
-  border-bottom: none;
-}
-
-.ios-cell-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 3px;
-}
-
-.ios-cell-label {
-  font-size: 13.5px;
-  font-weight: 700;
-  color: var(--ios-label);
-}
-
-.ios-cell-desc {
-  font-size: 12.5px;
-  color: var(--ios-secondary);
-  line-height: 1.45;
-}
-
-.wiki-link {
-  color: var(--ios-blue);
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: rgba(0, 122, 255, 0.35);
-}
-
-.wiki-link:hover {
-  text-decoration-color: var(--ios-blue);
-}
-
-.code-pill {
-  display: inline-block;
-  background: #fee2e2;
-  color: #991b1b;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 1px 6px;
+.fk-home-banner {
+  background: linear-gradient(135deg, #2874f0 0%, #1259c7 100%);
+  color: #ffffff;
   border-radius: 4px;
-  font-family: ui-monospace, monospace;
-}
-
-/* ==========================================================================
-   Hub Views: Settings-Style Grouped Lists & Banners
-   ========================================================================== */
-
-.ios-app-banner {
-  background: var(--ios-card);
-  border-radius: var(--ios-radius-card);
-  border: 0.5px solid var(--ios-border);
-  padding: 24px 18px;
+  padding: 32px 24px;
   margin-bottom: 16px;
-  text-align: center;
-  box-shadow: var(--ios-shadow-sm);
+  box-shadow: var(--fk-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.ios-banner-badge {
+.fk-banner-left {
+  flex: 1;
+}
+
+.fk-banner-pill {
+  background: var(--fk-yellow);
+  color: #212121;
   font-size: 11px;
-  font-weight: 700;
-  color: var(--ios-blue);
-  background: var(--ios-blue-light);
-  padding: 3px 10px;
-  border-radius: var(--ios-radius-pill);
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 2px;
   display: inline-block;
-  margin-bottom: 8px;
-  letter-spacing: 0.04em;
+  margin-bottom: 10px;
 }
 
-.ios-banner-title {
-  font-size: 24px;
+.fk-banner-h1 {
+  font-size: 28px;
   font-weight: 800;
-  color: var(--ios-label);
-  letter-spacing: -0.02em;
   margin: 0 0 8px 0;
   line-height: 1.25;
 }
 
-.ios-banner-desc {
+.fk-banner-sub {
   font-size: 14px;
-  color: var(--ios-secondary);
-  margin: 0 auto 16px;
+  color: #e0e9fa;
+  margin: 0 0 16px 0;
+  max-width: 600px;
   line-height: 1.5;
-  max-width: 540px;
 }
 
-.ios-segment-control {
-  display: inline-flex;
-  background: rgba(118, 118, 128, 0.12);
-  padding: 3px;
-  border-radius: 10px;
-  gap: 3px;
+.fk-banner-badges-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.ios-seg-item {
-  font-size: 12px;
+.fk-badge-check {
+  font-size: 13px;
+  color: #ffffff;
   font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 8px;
-  color: var(--ios-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Grouped Hubs (Brands & Categories) */
+.fk-hub-list-card {
+  background: #ffffff;
+  border: 1px solid var(--fk-border);
+  border-radius: 2px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: var(--fk-shadow);
+}
+
+.fk-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.fk-hub-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--fk-border);
+  border-radius: 2px;
   text-decoration: none !important;
+  color: #212121;
   transition: all 0.15s ease;
 }
 
-.ios-seg-item.active, .ios-seg-item:active {
-  background: #ffffff;
-  color: var(--ios-label);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+.fk-hub-item:hover {
+  border-color: var(--fk-blue);
+  background: #f8fbff;
 }
 
-/* iOS Grouped Hub Rows (Settings Style) */
-.ios-section-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 18px 4px 8px;
-}
-
-.ios-section-name {
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--ios-label);
-  margin: 0;
-  letter-spacing: -0.015em;
-}
-
-.ios-section-badge {
-  font-size: 12px;
-  color: var(--ios-secondary);
-  font-weight: 500;
-}
-
-.ios-grouped-list-card {
-  background: var(--ios-card);
-  border-radius: var(--ios-radius-card);
-  border: 0.5px solid var(--ios-border);
-  overflow: hidden;
-  box-shadow: var(--ios-shadow-sm);
-  margin-bottom: 16px;
-}
-
-.ios-list-row {
-  display: flex;
-  align-items: center;
-  padding: 12px 14px;
-  border-bottom: 0.5px solid var(--ios-separator);
-  text-decoration: none !important;
-  color: var(--ios-label);
-  gap: 12px;
-  transition: background 0.1s ease;
-}
-
-.ios-list-row:last-child {
-  border-bottom: none;
-}
-
-.ios-list-row:active {
-  background: var(--ios-card-secondary);
-}
-
-.ios-row-icon-squircle {
-  width: 36px;
-  height: 36px;
-  border-radius: 9px;
-  background: rgba(118, 118, 128, 0.10);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
+.fk-hub-icon {
+  font-size: 22px;
   flex-shrink: 0;
 }
 
-.ios-row-main {
-  flex: 1;
-  min-width: 0;
-}
-
-.ios-row-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--ios-label);
+.fk-hub-name {
+  font-size: 13.5px;
+  font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.ios-row-sub {
-  font-size: 11.5px;
-  color: var(--ios-secondary);
-  margin-top: 1px;
-}
-
-.ios-row-arrow {
-  font-size: 17px;
-  color: var(--ios-tertiary);
-  font-weight: 300;
-  flex-shrink: 0;
-}
-
-/* Product Cards Grid (Apple Store Style) */
-.ios-prod-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 12px;
-  margin-bottom: 24px;
-}
-
-@media (max-width: 480px) {
-  .ios-prod-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.ios-prod-item-card {
-  background: var(--ios-card);
-  border-radius: var(--ios-radius-card);
-  border: 0.5px solid var(--ios-border);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: var(--ios-shadow-sm);
-  transition: transform 0.15s ease;
-}
-
-.ios-prod-item-card:active {
-  transform: scale(0.985);
-}
-
-.ios-item-thumb-link {
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #ffffff;
-  padding: 12px;
-  border-bottom: 0.5px solid var(--ios-separator);
-}
-
-.ios-item-thumb {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.ios-item-body {
-  padding: 12px 14px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.ios-item-title {
-  font-size: 13.5px;
-  font-weight: 600;
-  line-height: 1.35;
-  margin: 0 0 6px 0;
-}
-
-.ios-item-title a {
-  color: var(--ios-label);
-  text-decoration: none !important;
-}
-
-.ios-item-rating {
-  font-size: 11.5px;
-  color: #b45309;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.ios-item-footer {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 8px;
-  border-top: 0.5px solid var(--ios-separator);
-}
-
-.ios-item-link {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--ios-blue);
-  text-decoration: none !important;
-  display: inline-flex;
-  align-items: center;
-  gap: 2px;
+.fk-hub-sub {
+  font-size: 11px;
+  color: var(--fk-secondary);
 }
 
 /* ==========================================================================
-   Fixed iOS Bottom Tab Bar & Detail Action Sheet
+   FLIPKART FOOTER (Iconic Flipkart Dark Blue Footer #172337)
    ========================================================================== */
 
-.ios-app-tabbar {
+.fk-footer {
+  background: #172337;
+  color: #878787;
+  font-size: 12px;
+  padding: 40px 0 24px;
+  margin-top: 40px;
+  border-top: 1px solid #28354a;
+}
+
+.fk-footer-inner {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #28354a;
+}
+
+.fk-foot-col-title {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.fk-foot-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fk-foot-list a {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.fk-foot-list a:hover {
+  text-decoration: underline;
+}
+
+.fk-footer-bottom {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 16px 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   MOBILE APP SPECIFIC OVERRIDES (FLIPKART MOBILE APP EXPERIENCE)
+   ========================================================================== */
+
+/* Mobile Bottom Buy Bar (Flipkart Yellow + Orange 50/50 Dual Bar) */
+.fk-mobile-buy-bar {
+  display: none;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 56px;
-  background: rgba(255, 255, 255, 0.90);
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  border-top: 0.5px solid var(--ios-border);
+  height: 50px;
   z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 6px;
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.04);
+  background: #ffffff;
+  box-shadow: 0 -1px 4px 0 rgba(0,0,0,.2);
 }
 
-.ios-tabbar-item {
+.fk-mobile-buy-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13.5px;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  height: 100%;
+}
+
+.fk-mob-cart {
+  background: #ffffff;
+  color: #212121 !important;
+  border-right: 1px solid #e0e0e0;
+}
+
+.fk-mob-buy {
+  background: var(--fk-orange-buy);
+  color: #ffffff !important;
+}
+
+/* Mobile App Bottom Tab Bar (on Home & Hubs) */
+.fk-mobile-tab-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  z-index: 9999;
+  background: #ffffff;
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.12);
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 4px;
+}
+
+.fk-tab-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-decoration: none !important;
-  color: var(--ios-secondary);
+  color: var(--fk-secondary);
   background: transparent;
   border: none;
   padding: 4px 8px;
   cursor: pointer;
   flex: 1;
-  max-width: 80px;
   gap: 2px;
 }
 
-.ios-tabbar-item:active {
-  transform: scale(0.92);
+.fk-tab-btn.active {
+  color: var(--fk-blue);
+  font-weight: 700;
 }
 
-.ios-tabbar-item.active {
-  color: var(--ios-blue);
-}
-
-.ios-tab-icon {
+.fk-tab-icon {
   font-size: 18px;
   line-height: 1;
 }
 
-.ios-tab-text {
+.fk-tab-label {
   font-size: 10px;
   font-weight: 500;
 }
 
-/* Fixed Bottom Action Sheet on Product Detail Page */
-.ios-app-bottom-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
-  border-top: 0.5px solid var(--ios-border);
-  padding: 8px 12px;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.07);
-}
-
-.ios-bottom-thumb-info {
-  display: flex;
+/* Mobile Back Button */
+.fk-mobile-back-row {
+  display: none;
   align-items: center;
   gap: 8px;
-  flex: 1;
-  min-width: 0;
-}
-
-.ios-bottom-thumb {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  border-radius: 8px;
+  padding: 8px 12px;
   background: #ffffff;
-  border: 0.5px solid var(--ios-border);
-  flex-shrink: 0;
-  padding: 2px;
-}
-
-.ios-bottom-text {
-  flex: 1;
-  min-width: 0;
-}
-
-.ios-bottom-title {
-  font-size: 12px;
+  border-bottom: 1px solid var(--fk-border);
+  font-size: 14px;
   font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--ios-label);
+  color: #212121;
 }
 
-.ios-bottom-sub {
-  font-size: 10.5px;
-  color: #b45309;
-  font-weight: 600;
-}
-
-.ios-bottom-cta {
-  background: var(--ios-blue);
-  color: #ffffff !important;
-  font-weight: 600;
-  font-size: 12.5px;
-  padding: 9px 14px;
-  border-radius: 10px;
-  white-space: nowrap;
+.fk-back-arrow {
+  font-size: 20px;
+  line-height: 1;
+  color: var(--fk-blue);
   text-decoration: none !important;
-  flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.25);
 }
 
-.ios-bottom-cta:active {
-  background: var(--ios-blue-pressed);
-  transform: scale(0.97);
-}
+/* ==========================================================================
+   MEDIA QUERY: FLIPKART MOBILE APP VIEW (<= 859px)
+   ========================================================================== */
 
-/* Compact iOS App Footer Info */
-.ios-compact-footer {
-  text-align: center;
-  padding: 24px 12px 12px;
-  color: var(--ios-secondary);
-  font-size: 11.5px;
-  line-height: 1.5;
-}
+@media (max-width: 859px) {
+  body {
+    padding-bottom: 58px; /* Clearance for fixed mobile bars */
+  }
 
-.ios-footer-brand {
-  font-weight: 700;
-  color: var(--ios-label);
-  margin-bottom: 4px;
+  .fk-header-inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .fk-nav-actions {
+    display: none; /* Hidden on mobile header, placed in bottom tabs */
+  }
+
+  .fk-search-wrap {
+    max-width: 100%;
+  }
+
+  .fk-search-box {
+    height: 38px;
+    border-radius: 4px;
+  }
+
+  .fk-cat-strip-inner {
+    padding: 0 10px;
+    gap: 12px;
+  }
+
+  .fk-cat-text {
+    font-size: 11px;
+  }
+
+  .fk-detail-desktop-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .fk-left-col {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  .fk-main-img-box {
+    height: 280px;
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .fk-btn-row {
+    display: none; /* Replaced by sticky mobile buy bar */
+  }
+
+  .fk-right-col {
+    padding: 16px;
+    box-shadow: none;
+    border: none;
+  }
+
+  .fk-spec-row {
+    grid-template-columns: 120px 1fr;
+    padding: 8px 10px;
+    font-size: 12.5px;
+  }
+
+  .fk-prod-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .fk-card-thumb-link {
+    height: 140px;
+    padding: 8px;
+  }
+
+  .fk-card-body {
+    padding: 8px;
+  }
+
+  .fk-card-title {
+    font-size: 12.5px;
+  }
+
+  .fk-home-banner {
+    flex-direction: column;
+    padding: 20px 16px;
+  }
+
+  .fk-banner-h1 {
+    font-size: 20px;
+  }
+
+  .fk-mobile-buy-bar {
+    display: flex;
+  }
+
+  .fk-mobile-tab-bar {
+    display: flex;
+  }
+
+  .fk-mobile-back-row {
+    display: flex;
+  }
+
+  .fk-footer {
+    display: none; /* Replaced by compact mobile footer info */
+  }
 }
 
   </style>
-  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792703543349">
+  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792704264379">
 
   <meta property="og:title" content="LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500">
   <meta property="og:description" content="Mechatronische Funktionsanalyse, Fehlersymptome und Einbauanleitung für Philips Kaffeevollautomaten.">
@@ -1088,308 +1201,441 @@ h1, h2, h3, h4, p, span, div, li {
 </head>
 <body>
   
-  <header class="ios-app-header">
-    <div class="ios-header-content">
-      <div class="ios-header-top-row">
-        <a href="https://kaffeereparatur.github.io/" class="ios-app-brand">
-          <span class="ios-app-icon">☕</span>
-          <span class="ios-app-title">KaffeeReparatur</span>
+  <!-- Flipkart Top Electric Blue Header -->
+  <header class="fk-header">
+    <div class="fk-header-inner">
+      <div style="display:flex; align-items:center; justify-content:space-between; width:100%; max-width:859px; margin-bottom:2px;" class="fk-mobile-top-bar">
+        <a href="https://kaffeereparatur.github.io/" class="fk-logo-box">
+          <div class="fk-logo-main">☕ KaffeeReparatur</div>
+          <div class="fk-logo-sub">Explore <span class="fk-plus">Plus ✦</span></div>
         </a>
-        <div class="ios-header-actions">
-          <a href="https://kaffeereparatur.github.io/#marken" class="ios-header-pill">Marken</a>
-          <a href="https://kaffeereparatur.github.io/#kategorien" class="ios-header-pill">Baugruppen</a>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <a href="https://kaffeereparatur.github.io/#marken" class="fk-nav-link" style="font-size:13px;">Marken</a>
+          <a href="https://kaffeereparatur.github.io/#kategorien" class="fk-nav-link" style="font-size:13px;">Kategorien</a>
         </div>
       </div>
 
-      <div class="ios-search-container">
-        <div class="ios-search-box">
-          <svg class="ios-search-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8e8e93" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="search" id="site-search" class="ios-search-input" placeholder="Suchen nach Modell, Marke oder Teil..." autocomplete="off">
-          <button id="search-clear" class="ios-search-clear-btn" aria-label="Löschen" type="button">✕</button>
+      <!-- Flipkart Center Search Bar -->
+      <div class="fk-search-wrap">
+        <div class="fk-search-box">
+          <input type="search" id="site-search" class="fk-search-input" placeholder="Nach Ersatzteilen, Marken oder Modellen suchen..." autocomplete="off">
+          <button id="search-clear" class="fk-search-clear" aria-label="Löschen" type="button">✕</button>
+          <button class="fk-search-btn" aria-label="Suchen" type="button" onclick="if(window.performFkSearch)window.performFkSearch();">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2874f0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
         </div>
-        <div id="search-dropdown" class="ios-search-results-sheet"></div>
+        <div id="search-dropdown" class="fk-search-dropdown"></div>
+      </div>
+
+      <!-- Desktop Nav Actions -->
+      <div class="fk-nav-actions">
+        <a href="https://kaffeereparatur.github.io/#marken" class="fk-nav-link">Hersteller</a>
+        <a href="https://kaffeereparatur.github.io/#kategorien" class="fk-nav-link">Baugruppen</a>
+        <a href="https://www.amazon.de/?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="fk-amazon-badge">Amazon Partner</a>
       </div>
     </div>
   </header>
 
-  <main class="ios-app-container">
-    <!-- iOS Back Navigation -->
-    <div class="ios-back-nav">
-      <a href="https://kaffeereparatur.github.io/philips/" class="ios-back-link">
-        <span class="ios-back-chevron">‹</span> Philips Übersicht
+  <!-- Flipkart Horizontal Category Strip -->
+  <nav class="fk-cat-strip">
+    <div class="fk-cat-strip-inner">
+      <a href="https://kaffeereparatur.github.io/delonghi/" class="fk-cat-item">
+        <div class="fk-cat-icon">☕</div>
+        <span class="fk-cat-text">De'Longhi</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/siemens/" class="fk-cat-item">
+        <div class="fk-cat-icon">⚡</div>
+        <span class="fk-cat-text">Siemens</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/jura/" class="fk-cat-item">
+        <div class="fk-cat-icon">💎</div>
+        <span class="fk-cat-text">Jura</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/philips/" class="fk-cat-item">
+        <div class="fk-cat-icon">✨</div>
+        <span class="fk-cat-text">Philips</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-cat-item">
+        <div class="fk-cat-icon">⚙️</div>
+        <span class="fk-cat-text">Brühgruppen</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" class="fk-cat-item">
+        <div class="fk-cat-icon">🪨</div>
+        <span class="fk-cat-text">Mahlwerke</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" class="fk-cat-item">
+        <div class="fk-cat-icon">💧</div>
+        <span class="fk-cat-text">Ventile</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" class="fk-cat-item">
+        <div class="fk-cat-icon">🥛</div>
+        <span class="fk-cat-text">Milchsystem</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" class="fk-cat-item">
+        <div class="fk-cat-icon">🌊</div>
+        <span class="fk-cat-text">Filter</span>
+      </a>
+      <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="fk-cat-item">
+        <div class="fk-cat-icon">🔥</div>
+        <span class="fk-cat-text">Heizung</span>
       </a>
     </div>
+  </nav>
 
-    <nav class="ios-breadcrumb-mini" aria-label="Breadcrumb">
-      <a href="https://kaffeereparatur.github.io/">Start</a>
-      <span class="sep">›</span>
-      <a href="https://kaffeereparatur.github.io/philips/">Philips</a>
-      <span class="sep">›</span>
-      <a href="https://kaffeereparatur.github.io/philips/lattego-2200-3200/">LatteGo 2200 &amp; 3200 Serie</a><span class="sep">›</span>
-      <a href="https://kaffeereparatur.github.io/kategorie/milchsystem/">Milchsysteme &amp; Karaffen</a>
-      <span class="sep">›</span>
-      <span>LPPP Milchbehälter Mil...</span>
-    </nav>
+  <!-- Mobile Back Navigation Row -->
+  <div class="fk-mobile-back-row">
+    <a href="https://kaffeereparatur.github.io/philips/" class="fk-back-arrow">←</a>
+    <span style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Philips • Milchsysteme &amp; Karaffen</span>
+  </div>
 
-    <!-- Product Detail Hero Card (iOS App View) -->
-    <div class="ios-app-card">
-      <div class="ios-hero-img-box">
-        <img id="mainimg" src="https://m.media-amazon.com/images/I/51rWvmgAAPL._AC_SL1500_.jpg" alt="LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500" onerror="this.style.opacity='0.8'">
+  <main class="fk-page-wrap">
+    <!-- Desktop 2-Column Flipkart Layout / Fluid Mobile Layout -->
+    <div class="fk-detail-desktop-grid">
+      <!-- Sticky Left Gallery & Dual Buy Buttons Column -->
+      <div class="fk-left-col">
+        <div class="fk-main-img-box">
+          <img id="mainimg" src="https://m.media-amazon.com/images/I/51rWvmgAAPL._AC_SL1500_.jpg" alt="LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500" onerror="this.style.opacity='0.8'">
+        </div>
+
+        <!-- Desktop Dual Action Buttons (Flipkart Yellow + Orange) -->
+        <div class="fk-btn-row">
+          <a class="fk-btn-cart cta" href="https://www.amazon.de/dp/B0BVRD7WQL?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            🛒 AUF AMAZON
+          </a>
+          <a class="fk-btn-buy cta" href="https://www.amazon.de/dp/B0BVRD7WQL?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            ⚡ JETZT KAUFEN
+          </a>
+        </div>
       </div>
 
-      <div class="ios-badge-row">
-        <span class="ios-badge-pill ios-badge-blue">Philips</span>
-        <span class="ios-badge-pill ios-badge-purple">Milchsysteme &amp; Karaffen</span>
-        <span class="ios-badge-pill ios-badge-green">LatteGo 2200 &amp; 3200 Serie</span>
-      </div>
+      <!-- Right Detail & Specs Column -->
+      <div class="fk-right-col">
+        <!-- Breadcrumb -->
+        <nav class="fk-breadcrumb" aria-label="Breadcrumb">
+          <a href="https://kaffeereparatur.github.io/">Home</a>
+          <span>›</span>
+          <a href="https://kaffeereparatur.github.io/philips/">Philips</a>
+          <span>›</span>
+          <a href="https://kaffeereparatur.github.io/philips/lattego-2200-3200/">LatteGo 2200 &amp; 3200 Serie</a><span class="sep">›</span>
+          <a href="https://kaffeereparatur.github.io/kategorie/milchsystem/">Milchsysteme &amp; Karaffen</a>
+        </nav>
 
-      <div class="ios-product-rating">★ 4.5 (145 Bewertungen auf Amazon.de)</div>
-      <h1 class="ios-product-title-h1">LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500</h1>
+        <h1 class="fk-product-h1">LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500</h1>
 
-      <!-- iOS Settings Grouped Specs -->
-      <div class="ios-specs-table">
-        <div class="ios-spec-item">
-          <span class="ios-spec-key">Hersteller</span>
-          <span class="ios-spec-val">Philips</span>
+        <!-- Green Rating Badge & Assured Pill -->
+        <div class="fk-rating-row">
+          <span class="fk-rating-badge">★ 4.5</span>
+          <span class="fk-rating-count">145 Bewertungen &amp; Rezensionen</span>
+          <span class="fk-assured-tag">☕ F-Assured ✓</span>
         </div>
-        <div class="ios-spec-item">
-          <span class="ios-spec-key">Baugruppe</span>
-          <span class="ios-spec-val">Milchsysteme &amp; Karaffen</span>
+
+        <!-- Price & Stock Status Box -->
+        <div class="fk-price-box">
+          <div class="fk-price-highlight">100% Original- / OEM-Komponente</div>
+          <div class="fk-stock-status">✓ Sofort lieferbar • Prime Versand verfügbar</div>
         </div>
+
+        <!-- Available Offers (Flipkart Green Tag Style) -->
+        <div class="fk-offers-box">
+          <div class="fk-offers-title">Verfügbare Partner-Vorteile:</div>
+          <div class="fk-offer-item">
+            <span class="fk-tag-icon">🏷️</span>
+            <span><strong>Prime Versand:</strong> Schnelle Lieferung direkt durch das Amazon Versandnetzwerk.</span>
+          </div>
+          <div class="fk-offer-item">
+            <span class="fk-tag-icon">🏷️</span>
+            <span><strong>Käuferschutz:</strong> 30 Tage Rückgaberecht bei Nichtpassen oder Defekt.</span>
+          </div>
+          <div class="fk-offer-item">
+            <span class="fk-tag-icon">🏷️</span>
+            <span><strong>Passgarantie:</strong> Mechatronisch geprüfte Abmessungen für Philips Vollautomaten.</span>
+          </div>
+        </div>
+
+        <!-- Specifications Table (Flipkart Spec Grid) -->
+        <div class="fk-sec-card" style="margin-top:0; padding-top:0; border-top:none;">
+          <div class="fk-sec-heading">Spezifikationen &amp; Kennzahlen</div>
+          <div class="fk-spec-grid">
+            <div class="fk-spec-row">
+              <div class="fk-spec-k">Hersteller</div>
+              <div class="fk-spec-v">Philips</div>
+            </div>
+            <div class="fk-spec-row">
+              <div class="fk-spec-k">Baugruppe</div>
+              <div class="fk-spec-v">Milchsysteme &amp; Karaffen</div>
+            </div>
+            
+            <div class="fk-spec-row">
+              <div class="fk-spec-k">Modellreihe</div>
+              <div class="fk-spec-v">LatteGo 2200 &amp; 3200 Serie</div>
+            </div>
+            <div class="fk-spec-row">
+              <div class="fk-spec-k">OEM-Referenz</div>
+              <div class="fk-spec-v" style="font-family:monospace; font-weight:700;">11032160</div>
+            </div>
+            <div class="fk-spec-row">
+              <div class="fk-spec-k">Amazon ASIN</div>
+              <div class="fk-spec-v" style="font-family:monospace; font-weight:700;">B0BVRD7WQL</div>
+            </div>
+            <div class="fk-spec-row">
+              <div class="fk-spec-k">Zustand</div>
+              <div class="fk-spec-v" style="color:var(--fk-green); font-weight:700;">100% Neuware Original</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlights List -->
+        <div class="fk-highlights-box" style="margin-top:20px;">
+          <div class="fk-hl-title">Highlights &amp; Qualitätsmerkmale:</div>
+          <ul class="fk-hl-list">
+            <li><span style="color:var(--fk-green); font-weight:700;">✓</span> <span>Optimierte Venturi-Strömungsgeometrie für cremigen Mikroschaum</span></li><li><span style="color:var(--fk-green); font-weight:700;">✓</span> <span>Lebensmittelechter, spülmaschinengeeigneter BPA-freier Werkstoff</span></li><li><span style="color:var(--fk-green); font-weight:700;">✓</span> <span>Dampfdichte Kupplungsanschlüsse gegen Druckverlust</span></li><li><span style="color:var(--fk-green); font-weight:700;">✓</span> <span>Einfache Demontage zur rückstandsfreien Reinigung</span></li>
+          </ul>
+        </div>
+
+        <!-- Technical Editorial Guide Sections -->
         
-        <div class="ios-spec-item">
-          <span class="ios-spec-key">Modellreihe</span>
-          <span class="ios-spec-val">LatteGo 2200 &amp; 3200 Serie</span>
-        </div>
-        <div class="ios-spec-item">
-          <span class="ios-spec-key">OEM-Referenz</span>
-          <span class="ios-spec-val font-mono">11032160</span>
-        </div>
-        <div class="ios-spec-item">
-          <span class="ios-spec-key">Amazon ASIN</span>
-          <span class="ios-spec-val font-mono">B0BVRD7WQL</span>
-        </div>
-        <div class="ios-spec-item">
-          <span class="ios-spec-key">Zustand</span>
-          <span class="ios-spec-val text-green">100% Original Neuware</span>
-        </div>
-      </div>
-
-      <ul class="ios-bullet-points">
-        <li><span class="ios-check-icon">✓</span> <span>Optimierte Venturi-Strömungsgeometrie für cremigen Mikroschaum</span></li><li><span class="ios-check-icon">✓</span> <span>Lebensmittelechter, spülmaschinengeeigneter BPA-freier Werkstoff</span></li><li><span class="ios-check-icon">✓</span> <span>Dampfdichte Kupplungsanschlüsse gegen Druckverlust</span></li><li><span class="ios-check-icon">✓</span> <span>Einfache Demontage zur rückstandsfreien Reinigung</span></li>
-      </ul>
-
-      <a class="ios-primary-btn cta" href="https://www.amazon.de/dp/B0BVRD7WQL?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
-        <span>Auf Amazon.de prüfen</span>
-        <span style="font-size:16px;">↗</span>
-      </a>
-      <div class="ios-btn-subnote">Direktlink zur Produktseite • Schneller Prime-Versand &amp; Käuferschutz</div>
-    </div>
-
-    <!-- Technical Guide Sections in Inset Cards -->
-    
-  <section class="ios-app-card" id="funktionsweise">
-    <div class="ios-card-header">
-      <span class="ios-header-icon">🔬</span>
-      <h2 class="ios-header-title">Mechatronische Funktionsanalyse</h2>
-    </div>
-    <div class="ios-card-body">
-      <p>Bei dem Bauteil LPPP Milchbehälter Milchtank <strong>700 ml</strong> kompatibel mit Siemens 11032160 EQ.500 handelt es sich um eine hochspezifizierte Kernkomponente für moderne Kaffeevollautomaten der Marke Philips. Innerhalb des hydraulischen und mechanischen Gesamtsystems erfüllt diese Baugruppe (<a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" class="wiki-link" title="Milchsysteme &amp; Karaffen">Milchsysteme</a> &amp; Karaffen, OEM-Ref: 11032160) eine definierte Steuerungs- und Belastungsfunktion.</p>
+  <div class="fk-sec-card" id="funktionsweise">
+    <div class="fk-sec-heading">Mechatronische Funktionsanalyse &amp; Wirkungsweise</div>
+    <div class="fk-sec-text">
+      <p>Bei dem Bauteil LPPP Milchbehälter Milchtank <strong>700 ml</strong> kompatibel mit Siemens 11032160 EQ.500 handelt es sich um eine hochspezifizierte Kernkomponente für moderne Kaffeevollautomaten der Marke Philips. Innerhalb des hydraulischen und mechanischen Gesamtsystems erfüllt diese Baugruppe (<a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" class="fk-wiki-link" title="Milchsysteme &amp; Karaffen">Milchsysteme</a> &amp; Karaffen, OEM-Ref: 11032160) eine definierte Steuerungs- und Belastungsfunktion.</p>
 <p>Sie stellt sicher, dass der dynamische Brühzyklus unter einem stabilen Druckbereich von 9 bis <strong>15 Bar</strong> prozesssicher abläuft und thermische Verluste im Strömungskanal minimiert werden. Die präzise Fertigungstoleranz garantiert eine hermetische Abdichtung gegen Heißwasser und Dampf bis zu 140 °C.</p>
 <p>Bei Verschleiß der elastomeren Dichtzonen oder abrasiver Materialabnutzung kommt es unweigerlich zu Druckabfall, internen Leckagen oder einer Blockade des Antriebsmotors. Ein rechtzeitiger Austausch stellt das werkseitige Extraktionsprofil und die Langlebigkeit des Kaffeevollautomaten wieder her.</p>
     </div>
-  </section>
+  </div>
 
-  <section class="ios-app-card" id="fehlersymptome">
-    <div class="ios-card-header">
-      <span class="ios-header-icon">⚠️</span>
-      <h2 class="ios-header-title">Typische Fehlersymptome &amp; Ursachen</h2>
-    </div>
-    <div class="ios-card-body">
+  <div class="fk-sec-card" id="fehlersymptome">
+    <div class="fk-sec-heading">Typische Fehlersymptome &amp; Ursachenanalyse</div>
+    <div class="fk-sec-text">
       <p>Im täglichen Einsatz unterliegt das Bauteil LPPP Milchbehälter Milchtank <strong>700 ml</strong> kompatibel mit Siemens 11032160 EQ.500 mechanischen Wechselbeanspruchungen, hydrodynamischen Druckstößen sowie thermischen Dehnungszyklen. Typische Anzeichen für einen beginnenden Defekt äußern sich durch atypische Betriebsgeräusche, fehlerhafte Wasserführung in die Tropfschale oder ein unvollständiges Extraktionsergebnis in der Tasse.</p>
-<p>Ursächlich für den Funktionsausfall sind meist versprödete Dichtungsringe aus <strong>VMQ</strong> oder <strong>EPDM</strong>, Verkalkungsablagerungen in den engen Durchflusskanälen oder mechatronischer Verschleiß der Führungsschienen. Bei Fortbetrieb mit defektem Bauteil drohen Folgeschäden an der Elektronik oder der <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> durch Überlastabschaltung.</p>
+<p>Ursächlich für den Funktionsausfall sind meist versprödete Dichtungsringe aus <strong>VMQ</strong> oder <strong>EPDM</strong>, Verkalkungsablagerungen in den engen Durchflusskanälen oder mechatronischer Verschleiß der Führungsschienen. Bei Fortbetrieb mit defektem Bauteil drohen Folgeschäden an der Elektronik oder der <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="fk-wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> durch Überlastabschaltung.</p>
     </div>
-  </section>
+  </div>
 
-  <section class="ios-app-card" id="einbauanleitung">
-    <div class="ios-card-header">
-      <span class="ios-header-icon">🔧</span>
-      <h2 class="ios-header-title">Schritt-für-Schritt Reparaturanleitung</h2>
-    </div>
-    <div class="ios-card-body">
-      <p>Vor Beginn aller Montagearbeiten am Kaffeevollautomaten ist das Gerät zwingend spannungsfrei zu schalten: Ziehen Sie den <strong>230V</strong>-Netzstecker und lassen Sie den <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mindestens 30 Minuten abkühlen. Verschließen Sie die Wasserzufuhr und entnehmen Sie die Abtropfschale sowie den Wassertank.</p>
+  <div class="fk-sec-card" id="einbauanleitung">
+    <div class="fk-sec-heading">Schritt-für-Schritt Reparatur- &amp; Einbauanleitung</div>
+    <div class="fk-sec-text">
+      <p>Vor Beginn aller Montagearbeiten am Kaffeevollautomaten ist das Gerät zwingend spannungsfrei zu schalten: Ziehen Sie den <strong>230V</strong>-Netzstecker und lassen Sie den <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="fk-wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mindestens 30 Minuten abkühlen. Verschließen Sie die Wasserzufuhr und entnehmen Sie die Abtropfschale sowie den Wassertank.</p>
 <p>Lösen Sie die Gehäuseschrauben (in der Regel <strong>Torx</strong> <strong>TX10</strong> oder <strong>TX20</strong>) vorsichtig und heben Sie die Seitenverkleidung ab. Markieren Sie vor dem Lösen aller Hydraulikschläuche und elektrischen Steckverbindungen die Anschlüsse fotografisch.</p>
 <p>Setzen Sie das neue Ersatzteil (LPPP Milchbehälter Milchtank <strong>700 ml</strong> kompatibel mit Siemens 11032160 EQ.500) exakt fluchtend ein, schmieren Sie alle neuen Dichtungsringe hauchdünn mit lebensmittelechtem Silikonfett (<strong>OKS 1110</strong>) ein und arretieren Sie die Sicherungsklammern hörbar. Führen Sie vor dem Verschließen des Gehäuses einen Probelauf auf Dichtigkeit durch.</p>
     </div>
-  </section>
+  </div>
 
-  <!-- iOS Grouped Cells: Zero table, Zero scrollbar, 100% fluid mobile cards -->
-  <section class="ios-app-card" id="wartung">
-    <div class="ios-card-header">
-      <span class="ios-header-icon">⚙️</span>
-      <h2 class="ios-header-title">Wartungs- &amp; Prüfprotokoll</h2>
-    </div>
-    <div class="ios-grouped-cells">
-      <div class="ios-cell-row">
-        <div class="ios-cell-top">
-          <span class="ios-cell-label">Dichtheitsprüfung</span>
-          <span class="ios-badge-pill ios-badge-blue">Monatlich</span>
+  <!-- Flipkart Specification Rows for Wartung & Prüfprotokoll (100% Fluid, Zero Scrollbars) -->
+  <div class="fk-sec-card" id="wartung">
+    <div class="fk-sec-heading">Wartungs- &amp; Prüfprotokoll</div>
+    <div class="fk-spec-grid">
+      <div class="fk-spec-row">
+        <div class="fk-spec-k">Dichtheitsprüfung</div>
+        <div class="fk-spec-v">
+          <span class="fk-tag fk-tag-blue">Monatlich</span>
+          <span>Kein Tropfwasser an den Anschlüssen unter 15 Bar vollem Prüfdruck.</span>
         </div>
-        <div class="ios-cell-desc">Kein Tropfwasser an den Anschlüssen unter 15 Bar vollem Prüfdruck.</div>
       </div>
-      <div class="ios-cell-row">
-        <div class="ios-cell-top">
-          <span class="ios-cell-label">Elastomer-Zustand</span>
-          <span class="ios-badge-pill ios-badge-amber">12–18 Monate</span>
+      <div class="fk-spec-row">
+        <div class="fk-spec-k">Elastomer-Zustand</div>
+        <div class="fk-spec-v">
+          <span class="fk-tag fk-tag-orange">12–18 Monate</span>
+          <span>Rissfrei, elastisch, 70 Shore A Härtegrad nach ISO-Standard.</span>
         </div>
-        <div class="ios-cell-desc">Rissfrei, dauerelastisch, 70 Shore A Härtegrad nach ISO-Standard.</div>
       </div>
-      <div class="ios-cell-row">
-        <div class="ios-cell-top">
-          <span class="ios-cell-label">Schmierung</span>
-          <span class="ios-badge-pill ios-badge-green">Alle 500 Zyklen</span>
+      <div class="fk-spec-row">
+        <div class="fk-spec-k">Schmierung</div>
+        <div class="fk-spec-v">
+          <span class="fk-tag fk-tag-green">Alle 500 Zyklen</span>
+          <span>Gleichmäßiger dünner Film aus lebensmittelechtem Silikonfett (OKS 1110).</span>
         </div>
-        <div class="ios-cell-desc">Gleichmäßiger dünner Film aus lebensmittelechtem Silikonfett (OKS 1110 / Glissa).</div>
       </div>
-      <div class="ios-cell-row">
-        <div class="ios-cell-top">
-          <span class="ios-cell-label">Kalkablagerungen</span>
-          <span class="ios-badge-pill ios-badge-purple">Turnusmäßig</span>
+      <div class="fk-spec-row">
+        <div class="fk-spec-k">Kalkablagerungen</div>
+        <div class="fk-spec-v">
+          <span class="fk-tag fk-tag-purple">Turnusmäßig</span>
+          <span>Querschnittsverengung unter 5%, keine Kristalle in den Fluidkanälen.</span>
         </div>
-        <div class="ios-cell-desc">Querschnittsverengung unter 5%, keine Kristalle in den Fluidkanälen.</div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="ios-app-card" id="faq">
-    <div class="ios-card-header">
-      <span class="ios-header-icon">❓</span>
-      <h2 class="ios-header-title">Häufige Fragen (FAQ)</h2>
-    </div>
-    <div class="ios-grouped-cells">
-      <div class="ios-cell-row">
-        <div class="ios-cell-label" style="margin-bottom:4px;">Ist dieses Ersatzteil für mein Modell von Philips geeignet?</div>
-        <div class="ios-cell-desc">Das Bauteil ist exakt auf die Spezifikationen und Anschlussmaße moderner Philips Kaffeevollautomaten ausgelegt. Prüfen Sie die Typennummer auf dem Typenschild Ihres Gerätes oder vergleichen Sie die OEM-Referenznummer (11032160).</div>
+  <div class="fk-sec-card" id="faq">
+    <div class="fk-sec-heading">Häufige Fragen (FAQ)</div>
+    <div class="fk-spec-grid">
+      <div class="fk-spec-row">
+        <div class="fk-spec-k">Kompatibilität</div>
+        <div class="fk-spec-v">Das Bauteil ist exakt auf die Spezifikationen und Anschlussmaße moderner Philips Kaffeevollautomaten ausgelegt. Prüfen Sie die Typennummer auf dem Typenschild oder die OEM-Referenz (11032160).</div>
       </div>
-      <div class="ios-cell-row">
-        <div class="ios-cell-label" style="margin-bottom:4px;">Benötige ich für den Austausch Spezialwerkzeug?</div>
-        <div class="ios-cell-desc">In den meisten Fällen genügen handelsübliche Torx-Schraubendreher (TX10 / TX20) sowie lebensmittelechtes Silikonfett (z.B. OKS 1110). Für bestimmte Modelle (wie Jura) wird zusätzlich ein Ovalkopfschlüssel benötigt.</div>
+      <div class="fk-spec-row">
+        <div class="fk-spec-k">Werkzeugbedarf</div>
+        <div class="fk-spec-v">In der Regel genügen handelsübliche Torx-Schraubendreher (TX10 / TX20) sowie lebensmittelechtes Silikonfett (OKS 1110). Für Jura Modelle wird teils ein Ovalkopfschlüssel benötigt.</div>
       </div>
-      <div class="ios-cell-row">
-        <div class="ios-cell-label" style="margin-bottom:4px;">Wie lange dauert die Reparatur in Eigenregie?</div>
-        <div class="ios-cell-desc">Der Austausch dieses Bauteils nimmt erfahrungsgemäß etwa 20 bis 45 Minuten in Anspruch. Dank unserer Schritt-für-Schritt-Anleitung ist die Durchführung auch für versierte Heimanwender problemlos machbar.</div>
+      <div class="fk-spec-row">
+        <div class="fk-spec-k">Reparaturdauer</div>
+        <div class="fk-spec-v">Der Austausch nimmt erfahrungsgemäß etwa 20 bis 45 Minuten in Anspruch. Mit unserer Schritt-für-Schritt-Anleitung ist die Durchführung auch für Heimanwender problemlos machbar.</div>
       </div>
     </div>
-  </section>
+  </div>
+      </div>
+    </div>
 
-    <!-- Related Components Grid -->
+    <!-- Related Products Grid -->
     
-    <div class="ios-section-bar">
-      <h2 class="ios-section-name">Passende Philips Teile</h2>
-    </div>
-    <div class="ios-prod-grid">
-      
-  <article class="ios-prod-item-card">
-    <a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/" class="ios-item-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61l2a1DJlgL._AC_SL1500_.jpg" class="ios-item-thumb" alt="Saeco LatteGo Milchbehälter-Karaffe-Baugruppe für Philips 5000-Serie" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="ios-item-body">
-      <div class="ios-badge-row">
-        <span class="ios-badge-pill ios-badge-blue">Philips</span>
-        <span class="ios-badge-pill ios-badge-purple">Milchsysteme &amp; Karaffen</span>
+    <div style="margin-top:36px;">
+      <div class="fk-grid-title-bar">
+        <h2 class="fk-grid-title">Passende Philips Komponenten &amp; Zubehör</h2>
       </div>
-      <h3 class="ios-item-title"><a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/">Saeco LatteGo Milchbehälter-Karaffe-Baugruppe für Philips 5000-Serie</a></h3>
-      <div class="ios-item-rating">★ 4.6 (145 Bewertungen)</div>
-      <div class="ios-item-footer">
-        <a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/" class="ios-item-link">
-          Reparatur-Guide &amp; Details ›
+      <div class="fk-prod-grid">
+        
+  <article class="fk-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/" class="fk-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61l2a1DJlgL._AC_SL1500_.jpg" class="fk-card-thumb" alt="Saeco LatteGo Milchbehälter-Karaffe-Baugruppe für Philips 5000-Serie" onerror="this.style.opacity='0.8'">
+    </a>
+    <div class="fk-card-body">
+      <div class="fk-card-badges">
+        <span class="fk-tag fk-tag-blue">Philips</span>
+        <span class="fk-tag fk-tag-green">F-Assured</span>
+      </div>
+      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/">Saeco LatteGo Milchbehälter-Karaffe-Baugruppe für Philips 5000-Serie</a></h3>
+      <div class="fk-card-rating-row">
+        <span class="fk-rating-badge">★ 4.6</span>
+        <span style="font-size:12px; color:#878787;">(145)</span>
+      </div>
+      <div class="fk-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/" class="fk-card-link">
+          Details &amp; Einbau ›
         </a>
       </div>
     </div>
   </article>
 
-  <article class="ios-prod-item-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/" class="ios-item-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/512r-ijQNxL._AC_SL1500_.jpg" class="ios-item-thumb" alt="Philips Milchbehälter (Version C) zu LatteGo Kaffeemaschine, Schwarz, Silver, Transparent" onerror="this.style.opacity='0.8'">
+  <article class="fk-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/" class="fk-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/512r-ijQNxL._AC_SL1500_.jpg" class="fk-card-thumb" alt="Philips Milchbehälter (Version C) zu LatteGo Kaffeemaschine, Schwarz, Silver, Transparent" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="ios-item-body">
-      <div class="ios-badge-row">
-        <span class="ios-badge-pill ios-badge-blue">Philips</span>
-        <span class="ios-badge-pill ios-badge-purple">Milchsysteme &amp; Karaffen</span>
+    <div class="fk-card-body">
+      <div class="fk-card-badges">
+        <span class="fk-tag fk-tag-blue">Philips</span>
+        <span class="fk-tag fk-tag-green">F-Assured</span>
       </div>
-      <h3 class="ios-item-title"><a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/">Philips Milchbehälter (Version C) zu LatteGo Kaffeemaschine, Schwarz, Silver, Transparent</a></h3>
-      <div class="ios-item-rating">★ 4.6 (145 Bewertungen)</div>
-      <div class="ios-item-footer">
-        <a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/" class="ios-item-link">
-          Reparatur-Guide &amp; Details ›
+      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/">Philips Milchbehälter (Version C) zu LatteGo Kaffeemaschine, Schwarz, Silver, Transparent</a></h3>
+      <div class="fk-card-rating-row">
+        <span class="fk-rating-badge">★ 4.6</span>
+        <span style="font-size:12px; color:#878787;">(145)</span>
+      </div>
+      <div class="fk-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/" class="fk-card-link">
+          Details &amp; Einbau ›
         </a>
       </div>
     </div>
   </article>
 
-  <article class="ios-prod-item-card">
-    <a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/" class="ios-item-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71ZHY2aWUtL._AC_SL1500_.jpg" class="ios-item-thumb" alt="VIOKS Milchkaraffe Kaffeevollautomat Ersatz für Phіlips 421945016211" onerror="this.style.opacity='0.8'">
+  <article class="fk-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/" class="fk-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/71ZHY2aWUtL._AC_SL1500_.jpg" class="fk-card-thumb" alt="VIOKS Milchkaraffe Kaffeevollautomat Ersatz für Phіlips 421945016211" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="ios-item-body">
-      <div class="ios-badge-row">
-        <span class="ios-badge-pill ios-badge-blue">Philips</span>
-        <span class="ios-badge-pill ios-badge-purple">Milchsysteme &amp; Karaffen</span>
+    <div class="fk-card-body">
+      <div class="fk-card-badges">
+        <span class="fk-tag fk-tag-blue">Philips</span>
+        <span class="fk-tag fk-tag-green">F-Assured</span>
       </div>
-      <h3 class="ios-item-title"><a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/">VIOKS Milchkaraffe Kaffeevollautomat Ersatz für Phіlips 421945016211</a></h3>
-      <div class="ios-item-rating">★ 4.8 (145 Bewertungen)</div>
-      <div class="ios-item-footer">
-        <a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/" class="ios-item-link">
-          Reparatur-Guide &amp; Details ›
+      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/">VIOKS Milchkaraffe Kaffeevollautomat Ersatz für Phіlips 421945016211</a></h3>
+      <div class="fk-card-rating-row">
+        <span class="fk-rating-badge">★ 4.8</span>
+        <span style="font-size:12px; color:#878787;">(145)</span>
+      </div>
+      <div class="fk-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/" class="fk-card-link">
+          Details &amp; Einbau ›
         </a>
       </div>
     </div>
   </article>
 
-  <article class="ios-prod-item-card">
-    <a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/" class="ios-item-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61K+ncwmX5L._AC_SL1500_.jpg" class="ios-item-thumb" alt="Philips LatteGo Espressomaschine Ersatzkaraffe, Premium Large, Chrom (für EP5447/94, EP4347/94, EP3246/74)" onerror="this.style.opacity='0.8'">
+  <article class="fk-prod-card">
+    <a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/" class="fk-card-thumb-link">
+      <img src="https://m.media-amazon.com/images/I/61K+ncwmX5L._AC_SL1500_.jpg" class="fk-card-thumb" alt="Philips LatteGo Espressomaschine Ersatzkaraffe, Premium Large, Chrom (für EP5447/94, EP4347/94, EP3246/74)" onerror="this.style.opacity='0.8'">
     </a>
-    <div class="ios-item-body">
-      <div class="ios-badge-row">
-        <span class="ios-badge-pill ios-badge-blue">Philips</span>
-        <span class="ios-badge-pill ios-badge-purple">Milchsysteme &amp; Karaffen</span>
+    <div class="fk-card-body">
+      <div class="fk-card-badges">
+        <span class="fk-tag fk-tag-blue">Philips</span>
+        <span class="fk-tag fk-tag-green">F-Assured</span>
       </div>
-      <h3 class="ios-item-title"><a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/">Philips LatteGo Espressomaschine Ersatzkaraffe, Premium Large, Chrom (für EP5447/94, EP4347/94, EP3246/74)</a></h3>
-      <div class="ios-item-rating">★ 4.6 (145 Bewertungen)</div>
-      <div class="ios-item-footer">
-        <a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/" class="ios-item-link">
-          Reparatur-Guide &amp; Details ›
+      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/">Philips LatteGo Espressomaschine Ersatzkaraffe, Premium Large, Chrom (für EP5447/94, EP4347/94, EP3246/74)</a></h3>
+      <div class="fk-card-rating-row">
+        <span class="fk-rating-badge">★ 4.6</span>
+        <span style="font-size:12px; color:#878787;">(145)</span>
+      </div>
+      <div class="fk-card-footer">
+        <a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/" class="fk-card-link">
+          Details &amp; Einbau ›
         </a>
       </div>
     </div>
   </article>
+      </div>
     </div>
-
-    
-  <footer class="ios-compact-footer">
-    <div class="ios-footer-brand">☕ KaffeeReparatur.de • Fach- und Ersatzteilportal</div>
-    <div>Verifizierte Original- &amp; OEM-Bauteile für Kaffeevollautomaten.</div>
-    <div style="margin-top:6px; color:#8e8e93; font-size:10.5px;">
-      Amazon-Partnerangebot • Live-Preise &amp; Verfügbarkeit direkt auf Amazon.de • © 2026
-    </div>
-  </footer>
   </main>
 
-  <!-- Fixed iOS Bottom Action Bar (Mobile Thumb Trigger) -->
-  <div class="ios-app-bottom-bar">
-    <div class="ios-bottom-thumb-info">
-      <img src="https://m.media-amazon.com/images/I/51rWvmgAAPL._AC_SL1500_.jpg" class="ios-bottom-thumb" alt="LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500">
-      <div class="ios-bottom-text">
-        <div class="ios-bottom-title">LPPP Milchbehälter Milchtank 700 ml kompatibel mit Siemens 11032160 EQ.500</div>
-        <div class="ios-bottom-sub">★ 4.5 auf Amazon.de</div>
-      </div>
-    </div>
-    <a href="https://www.amazon.de/dp/B0BVRD7WQL?tag=kaffeereparatur-21" class="ios-bottom-cta cta" target="_blank" rel="sponsored nofollow noopener">
-      Amazon ↗
+  <!-- Flipkart Mobile Sticky Bottom Buy Bar (Yellow + Orange 50/50 Dual Bar) -->
+  <div class="fk-mobile-buy-bar">
+    <a href="https://www.amazon.de/dp/B0BVRD7WQL?tag=kaffeereparatur-21" class="fk-mobile-buy-btn fk-mob-cart cta" target="_blank" rel="sponsored nofollow noopener">
+      🛒 In den Warenkorb
+    </a>
+    <a href="https://www.amazon.de/dp/B0BVRD7WQL?tag=kaffeereparatur-21" class="fk-mobile-buy-btn fk-mob-buy cta" target="_blank" rel="sponsored nofollow noopener">
+      ⚡ JETZT KAUFEN
     </a>
   </div>
 
+  
+  <!-- Flipkart Official Dark Footer (Desktop) -->
+  <footer class="fk-footer">
+    <div class="fk-footer-inner">
+      <div>
+        <div class="fk-foot-col-title">ÜBER UNS</div>
+        <ul class="fk-foot-list">
+          <li><a href="https://kaffeereparatur.github.io/">KaffeeReparatur Portal</a></li>
+          <li><a href="https://kaffeereparatur.github.io/#marken">Hersteller &amp; Baureihen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/#kategorien">Baugruppen &amp; Mechanik</a></li>
+          <li><a href="https://kaffeereparatur.github.io/sitemap.xml">XML Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="fk-foot-col-title">TOP MARKEN</div>
+        <ul class="fk-foot-list">
+          <li><a href="https://kaffeereparatur.github.io/delonghi/">De'Longhi Ersatzteile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/siemens/">Siemens EQ Serie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/jura/">Jura Impressa &amp; E-Linie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/philips/">Philips LatteGo</a></li>
+          <li><a href="https://kaffeereparatur.github.io/sage/">Sage Barista Express</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="fk-foot-col-title">KERN-BAUGRUPPEN</div>
+        <ul class="fk-foot-list">
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/">Mahlwerke &amp; Mahlkegel</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/">Drainageventile</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/">Milchkaraffen &amp; Schläuche</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/">Wasserfilter &amp; Entkalker</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="fk-foot-col-title">TRANSPARENZ</div>
+        <p style="line-height:1.6; color:#878787; font-size:12px; margin:0;">
+          Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Alle Preise, tagesaktuelle Verfügbarkeiten und Lieferzeiten werden live von Amazon.de bereitgestellt.
+        </p>
+      </div>
+    </div>
+
+    <div class="fk-footer-bottom">
+      <div>☕ KaffeeReparatur.de • Unabhängiges Deutsches Fachportal • © 2026</div>
+      <div>Explore <span style="color:#ffe500; font-weight:700;">Plus ✦</span></div>
+    </div>
+  </footer>
+  <div style="text-align:center; padding:12px; font-size:11px; color:#878787;" class="fk-mobile-foot-note">
+    © 2026 KaffeeReparatur • Alle Angaben ohne Gewähr
+  </div>
   <script src="https://kaffeereparatur.github.io/instant-search.js" defer></script>
 </body>
 </html>
