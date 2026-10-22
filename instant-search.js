@@ -17,7 +17,7 @@
     fetch('https://kaffeereparatur.github.io/search-index.json')
       .then(function(r) { return r.json(); })
       .then(function(d) { indexData = d; })
-      .catch(function(e) { console.error('Search index load error:', e); });
+      .catch(function(e) { console.error('Search load error:', e); });
 
     function performSearch() {
       const q = searchInput.value.trim().toLowerCase();
@@ -39,13 +39,13 @@
         searchDropdown.innerHTML = '<div style="padding:16px; text-align:center; font-size:13.5px; color:#8e8e93;">Kein passendes Ersatzteil gefunden.</div>';
       } else {
         searchDropdown.innerHTML = results.map(function(r) {
-          return '<a href="' + r.url + '" class="ios-search-item">' +
-            '<img src="' + r.thumb + '" class="ios-search-thumb" alt="' + r.title + '" onerror="this.style.display=\'none\'">' +
-            '<div class="ios-search-info">' +
-              '<div class="ios-search-title">' + r.title + '</div>' +
-              '<div class="ios-search-meta">' + r.brand + ' • ' + r.category + '</div>' +
+          return '<a href="' + r.url + '" class="ios-search-sheet-item">' +
+            '<img src="' + r.thumb + '" class="ios-search-sheet-thumb" alt="' + r.title + '" onerror="this.style.display=\'none\'">' +
+            '<div class="ios-search-sheet-text">' +
+              '<div class="ios-search-sheet-title">' + r.title + '</div>' +
+              '<div class="ios-search-sheet-sub">' + r.brand + ' • ' + r.category + '</div>' +
             '</div>' +
-            '<span class="ios-search-arrow">›</span>' +
+            '<span class="ios-search-sheet-arrow">›</span>' +
           '</a>';
         }).join('');
       }

@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-   Apple iOS Human Interface Design System for KaffeeReparatur
+   Apple iOS Native App Interface for KaffeeReparatur
    ========================================================================== */
 
 :root {
@@ -8,34 +8,32 @@
   --ios-card: #ffffff;
   --ios-card-secondary: #f9f9fb;
   --ios-label: #1c1c1e;
-  --ios-secondary: #636366;
-  --ios-tertiary: #8e8e93;
-  --ios-separator: rgba(60, 60, 67, 0.12);
-  --ios-border: rgba(60, 60, 67, 0.14);
-  --ios-search-bg: rgba(118, 118, 128, 0.12);
-  --ios-blue: #0071e3;
-  --ios-blue-light: #e8f2ff;
-  --ios-blue-pressed: #005bb5;
+  --ios-secondary: #8e8e93;
+  --ios-tertiary: #c7c7cc;
+  --ios-border: rgba(60, 60, 67, 0.12);
+  --ios-separator: rgba(60, 60, 67, 0.10);
+  --ios-blue: #007aff;
+  --ios-blue-light: rgba(0, 122, 255, 0.10);
+  --ios-blue-pressed: #0062cc;
   --ios-green: #34c759;
-  --ios-green-light: #eaf8ee;
+  --ios-green-light: rgba(52, 199, 89, 0.12);
   --ios-amber: #ff9500;
-  --ios-amber-light: #fff6e8;
+  --ios-amber-light: rgba(255, 149, 0, 0.12);
   --ios-purple: #af52de;
-  --ios-purple-light: #f6ecfc;
-  --ios-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-  --ios-radius-card: 16px;
-  --ios-radius-btn: 12px;
+  --ios-purple-light: rgba(175, 82, 222, 0.12);
+  --ios-font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --ios-radius-card: 18px;
+  --ios-radius-btn: 14px;
   --ios-radius-pill: 9999px;
   --ios-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
-  --ios-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
-  --ios-shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.14);
+  --ios-shadow-md: 0 4px 14px rgba(0, 0, 0, 0.07);
 }
 
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
+  min-height: 100%;
   background-color: var(--ios-bg);
   color: var(--ios-label);
   font-family: var(--ios-font);
@@ -43,6 +41,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
 }
 
 * {
@@ -51,159 +50,168 @@ html, body {
 }
 
 body {
-  padding-bottom: 84px; /* Clearance for iOS bottom navigation bars */
+  padding-bottom: 96px; /* Clearance for fixed iOS bottom tab bar / action sheet */
+}
+
+/* iOS Touch Target & Anti-Zoom Reset (CRITICAL FOR IPHONE) */
+input, input[type="text"], input[type="search"] {
+  font-family: var(--ios-font) !important;
+  font-size: 16px !important; /* PREVENTS AUTOMATIC IOS SAFARI ZOOM */
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none !important;
+  -webkit-appearance: none !important;
 }
 
 a {
   color: var(--ios-blue);
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+a:active {
+  opacity: 0.7;
 }
 
-.wrap {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 16px;
-  width: 100%;
-}
-
-/* Zero overflow & word wrapping guarantee */
+/* Safe word break across all elements */
 h1, h2, h3, h4, p, span, div, li {
   overflow-wrap: break-word;
   word-break: break-word;
 }
 
 /* ==========================================================================
-   Header: iOS Cupertino Frosted Glass Navigation Bar
+   Header: Frosted Glass Cupertino Navigation Bar
    ========================================================================== */
 
-.ios-nav-header {
+.ios-app-header {
   position: sticky;
   top: 0;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 0.5px solid var(--ios-separator);
-  padding: 10px 16px;
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border-bottom: 0.5px solid var(--ios-border);
+  padding: 8px 14px 10px;
 }
 
-.ios-nav-container {
-  max-width: 1140px;
+.ios-header-content {
+  max-width: 680px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
-.ios-nav-top {
+.ios-header-top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-.ios-nav-brand {
+.ios-app-brand {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--ios-label);
   text-decoration: none !important;
+  color: #1c1c1e;
+  font-weight: 800;
+  font-size: 19px;
+  letter-spacing: -0.02em;
 }
 
-.ios-nav-logo {
+.ios-app-icon {
   font-size: 22px;
   line-height: 1;
 }
 
-.ios-brand-name {
-  color: var(--ios-label);
-  font-weight: 800;
+.ios-app-title {
+  color: #1c1c1e;
 }
 
-.ios-brand-sub {
-  color: var(--ios-blue);
-  font-weight: 800;
-}
-
-.ios-nav-shortcuts {
+.ios-header-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
-.ios-nav-chip {
-  font-size: 13px;
+.ios-header-pill {
+  font-size: 12.5px;
   font-weight: 600;
   color: var(--ios-blue);
-  background: rgba(0, 113, 227, 0.08);
-  padding: 5px 12px;
+  background: var(--ios-blue-light);
+  padding: 4px 10px;
   border-radius: var(--ios-radius-pill);
   text-decoration: none !important;
   transition: all 0.15s ease;
 }
 
-.ios-nav-chip:active {
-  background: rgba(0, 113, 227, 0.18);
+.ios-header-pill:active {
+  background: rgba(0, 122, 255, 0.2);
   transform: scale(0.96);
 }
 
-/* iOS Search Bar */
-.ios-search-wrapper {
+/* Dedicated iOS Search Bar */
+.ios-search-container {
   position: relative;
   width: 100%;
 }
 
-.ios-search-bar {
+.ios-search-box {
   display: flex;
   align-items: center;
-  background: var(--ios-search-bg);
+  background: rgba(118, 118, 128, 0.12);
   border-radius: 10px;
   padding: 0 10px;
   height: 38px;
   gap: 8px;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-sizing: border-box;
+  width: 100%;
+  transition: background 0.15s ease, box-shadow 0.15s ease;
 }
 
-.ios-search-bar:focus-within {
+.ios-search-box:focus-within {
   background: #ffffff;
   box-shadow: 0 0 0 2px var(--ios-blue), 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.ios-search-icon {
-  width: 15px;
-  height: 15px;
-  color: var(--ios-tertiary);
+.ios-search-svg {
   flex-shrink: 0;
 }
 
 .ios-search-input {
-  border: none;
-  background: transparent;
-  width: 100%;
-  font-family: var(--ios-font);
-  font-size: 14.5px;
-  color: var(--ios-label);
-  outline: none;
-  padding: 0;
+  border: none !important;
+  background: transparent !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: 16px !important; /* CRITICAL: Prevents iOS Zoom */
+  color: var(--ios-label) !important;
+  line-height: 38px !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .ios-search-input::placeholder {
-  color: var(--ios-tertiary);
+  color: var(--ios-secondary);
   font-size: 14px;
 }
 
-.ios-search-clear {
+.ios-search-clear-btn {
   display: none;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: #8e8e93;
+  background: var(--ios-secondary);
   color: #ffffff;
   font-size: 11px;
   border: none;
@@ -215,12 +223,12 @@ h1, h2, h3, h4, p, span, div, li {
   line-height: 1;
 }
 
-.ios-search-clear:active {
+.ios-search-clear-btn:active {
   background: #636366;
 }
 
 /* Floating iOS Sheet Dropdown */
-.ios-search-dropdown {
+.ios-search-results-sheet {
   display: none;
   position: absolute;
   top: calc(100% + 6px);
@@ -229,21 +237,21 @@ h1, h2, h3, h4, p, span, div, li {
   background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  border-radius: 16px;
+  border-radius: 14px;
   border: 0.5px solid var(--ios-border);
-  box-shadow: var(--ios-shadow-lg);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
   max-height: 440px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   z-index: 1010;
-  padding: 6px;
+  padding: 4px;
 }
 
-.ios-search-dropdown.show {
+.ios-search-results-sheet.show {
   display: block;
 }
 
-.ios-search-item {
+.ios-search-sheet-item {
   display: flex;
   align-items: center;
   padding: 10px 12px;
@@ -255,15 +263,15 @@ h1, h2, h3, h4, p, span, div, li {
   transition: background 0.1s ease;
 }
 
-.ios-search-item:last-child {
+.ios-search-sheet-item:last-child {
   border-bottom: none;
 }
 
-.ios-search-item:active {
+.ios-search-sheet-item:active {
   background: rgba(0, 0, 0, 0.05);
 }
 
-.ios-search-thumb {
+.ios-search-sheet-thumb {
   width: 42px;
   height: 42px;
   object-fit: contain;
@@ -274,12 +282,12 @@ h1, h2, h3, h4, p, span, div, li {
   padding: 2px;
 }
 
-.ios-search-info {
+.ios-search-sheet-text {
   flex: 1;
   min-width: 0;
 }
 
-.ios-search-title {
+.ios-search-sheet-title {
   font-size: 13.5px;
   font-weight: 600;
   white-space: nowrap;
@@ -288,43 +296,82 @@ h1, h2, h3, h4, p, span, div, li {
   color: var(--ios-label);
 }
 
-.ios-search-meta {
+.ios-search-sheet-sub {
   font-size: 11.5px;
   color: var(--ios-secondary);
   margin-top: 2px;
 }
 
-.ios-search-arrow {
+.ios-search-sheet-arrow {
   font-size: 18px;
   color: var(--ios-tertiary);
   flex-shrink: 0;
 }
 
-/* Desktop Header Flex */
-@media (min-width: 768px) {
-  .ios-nav-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .ios-nav-top {
-    width: auto;
-    gap: 24px;
-  }
-  .ios-search-wrapper {
-    max-width: 380px;
-  }
-}
-
 /* ==========================================================================
-   Navigation Back Bar & Breadcrumbs
+   App Container & Native Inset Cards
    ========================================================================== */
 
-.ios-nav-back-bar {
-  padding: 12px 0 4px;
+.ios-app-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 10px 12px 90px;
 }
-.ios-nav-back-btn {
+
+@media (min-width: 768px) {
+  .ios-app-container {
+    max-width: 760px;
+    padding: 16px 20px 90px;
+  }
+}
+
+.ios-app-card {
+  background: var(--ios-card);
+  border-radius: var(--ios-radius-card);
+  border: 0.5px solid var(--ios-border);
+  padding: 18px;
+  margin-bottom: 14px;
+  box-shadow: var(--ios-shadow-sm);
+}
+
+.ios-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 0.5px solid var(--ios-separator);
+}
+
+.ios-header-icon {
+  font-size: 18px;
+}
+
+.ios-header-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ios-label);
+  letter-spacing: -0.01em;
+}
+
+.ios-card-body p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #3a3a3c;
+  margin: 0 0 10px 0;
+}
+
+.ios-card-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Back Navigation Button */
+.ios-back-nav {
+  padding: 6px 0 2px;
+}
+
+.ios-back-link {
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -332,293 +379,255 @@ h1, h2, h3, h4, p, span, div, li {
   font-weight: 500;
   color: var(--ios-blue);
   text-decoration: none !important;
-  transition: opacity 0.15s ease;
 }
-.ios-nav-back-btn:active {
+
+.ios-back-link:active {
   opacity: 0.6;
 }
-.ios-nav-back-chevron {
-  font-size: 22px;
+
+.ios-back-chevron {
+  font-size: 20px;
   line-height: 1;
-  font-weight: 400;
 }
-.ios-breadcrumb {
+
+.ios-breadcrumb-mini {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  color: var(--ios-tertiary);
-  padding: 2px 0 12px;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--ios-secondary);
+  padding: 2px 0 10px;
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
-.ios-breadcrumb a {
+
+.ios-breadcrumb-mini a {
   color: var(--ios-secondary);
   text-decoration: none;
 }
-.ios-breadcrumb a:hover {
-  color: var(--ios-label);
-}
-.ios-breadcrumb .sep {
+
+.ios-breadcrumb-mini .sep {
   color: var(--ios-tertiary);
-  font-size: 10px;
+  font-size: 9px;
 }
 
 /* ==========================================================================
-   Product Detail View (iOS App Style)
+   Product Detail Hero (Apple Store App Style)
    ========================================================================== */
 
-.ios-detail-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-@media (min-width: 860px) {
-  .ios-detail-grid {
-    grid-template-columns: 420px 1fr;
-    gap: 24px;
-  }
-}
-.ios-gallery-card {
+.ios-hero-img-box {
   background: #ffffff;
-  border-radius: var(--ios-radius-card);
-  border: 0.5px solid var(--ios-border);
-  padding: 24px;
+  border-radius: 14px;
+  height: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 340px;
-  box-shadow: var(--ios-shadow-sm);
+  padding: 16px;
+  border: 0.5px solid var(--ios-border);
+  margin-bottom: 14px;
 }
-.ios-gallery-card img {
+
+.ios-hero-img-box img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  transition: transform 0.2s ease;
-}
-.ios-gallery-card:hover img {
-  transform: scale(1.03);
 }
 
-.ios-specs-card {
-  background: #ffffff;
-  border-radius: var(--ios-radius-card);
-  border: 0.5px solid var(--ios-border);
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: var(--ios-shadow-sm);
-}
-.ios-card-pills {
+.ios-badge-row {
   display: flex;
   align-items: center;
   gap: 6px;
   margin-bottom: 8px;
   flex-wrap: wrap;
 }
-.ios-pill {
-  font-size: 11.5px;
+
+.ios-badge-pill {
+  font-size: 11px;
   font-weight: 600;
-  padding: 3px 10px;
+  padding: 3px 9px;
   border-radius: var(--ios-radius-pill);
   white-space: nowrap;
 }
-.ios-pill-blue { background: var(--ios-blue-light); color: var(--ios-blue); }
-.ios-pill-purple { background: var(--ios-purple-light); color: var(--ios-purple); }
-.ios-pill-amber { background: var(--ios-amber-light); color: var(--ios-amber); }
-.ios-pill-green { background: var(--ios-green-light); color: #15803d; }
-.ios-card-rating {
-  font-size: 13px;
+
+.ios-badge-blue { background: var(--ios-blue-light); color: var(--ios-blue); }
+.ios-badge-purple { background: var(--ios-purple-light); color: var(--ios-purple); }
+.ios-badge-amber { background: var(--ios-amber-light); color: var(--ios-amber); }
+.ios-badge-green { background: var(--ios-green-light); color: #15803d; }
+
+.ios-product-rating {
+  font-size: 12.5px;
   color: #b45309;
   font-weight: 700;
   margin-bottom: 6px;
 }
-.ios-product-h1 {
-  font-size: 20px;
+
+.ios-product-title-h1 {
+  font-size: 19px;
   font-weight: 700;
   line-height: 1.35;
   color: var(--ios-label);
-  margin: 4px 0 14px 0;
+  margin: 4px 0 12px 0;
   letter-spacing: -0.015em;
 }
-.ios-specs-list {
+
+/* iOS Settings Grouped Specs List */
+.ios-specs-table {
   background: var(--ios-card-secondary);
   border-radius: 12px;
   border: 0.5px solid var(--ios-border);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   overflow: hidden;
 }
-.ios-spec-row {
+
+.ios-spec-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 14px;
+  padding: 9px 12px;
   border-bottom: 0.5px solid var(--ios-separator);
   font-size: 13px;
 }
-.ios-spec-row:last-child {
+
+.ios-spec-item:last-child {
   border-bottom: none;
 }
+
 .ios-spec-key {
   color: var(--ios-secondary);
 }
+
 .ios-spec-val {
   font-weight: 600;
   color: var(--ios-label);
   text-align: right;
 }
+
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 12px;
 }
+
 .text-green {
   color: #15803d;
   font-weight: 700;
 }
 
-.ios-bullet-list {
+.ios-bullet-points {
   list-style: none;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 16px 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 }
-.ios-bullet-list li {
-  font-size: 13.5px;
+
+.ios-bullet-points li {
+  font-size: 13px;
   color: #3a3a3c;
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  line-height: 1.45;
+  line-height: 1.4;
 }
-.ios-check-circle {
-  width: 18px;
-  height: 18px;
+
+.ios-check-icon {
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   background: rgba(52, 199, 89, 0.15);
   color: #15803d;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
   flex-shrink: 0;
   margin-top: 1px;
 }
 
-/* Primary Apple Action CTA Button */
-.cta-box {
-  margin-top: auto;
-  padding-top: 12px;
-}
-.cta, .ios-btn-cta {
+/* Primary Apple Store Pill Action Button */
+.ios-primary-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   background: var(--ios-blue);
   color: #ffffff !important;
-  font-size: 15px;
+  font-size: 15.5px;
   font-weight: 600;
-  padding: 14px 20px;
+  padding: 13px 20px;
   border-radius: var(--ios-radius-btn);
   text-decoration: none !important;
   transition: all 0.15s ease;
-  box-shadow: 0 4px 12px rgba(0, 113, 227, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.28);
   text-align: center;
   width: 100%;
-  box-sizing: border-box;
 }
-.cta:hover, .ios-btn-cta:hover {
+
+.ios-primary-btn:active {
   background: var(--ios-blue-pressed);
-}
-.cta:active, .ios-btn-cta:active {
   transform: scale(0.98);
 }
-.ios-action-note {
-  font-size: 12px;
+
+.ios-btn-subnote {
+  font-size: 11.5px;
   color: var(--ios-secondary);
   text-align: center;
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-.ios-dot-green {
-  color: var(--ios-green);
-  font-size: 10px;
+  margin-top: 7px;
 }
 
 /* ==========================================================================
-   Content Layout & Inset Cards (Zero Tables, Zero Scrollbars)
+   iOS Grouped Inset Cells (ZERO Tables, ZERO Horizontal Scrollbars)
    ========================================================================== */
 
-.ios-content-layout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-bottom: 32px;
-}
-@media (min-width: 860px) {
-  .ios-content-layout {
-    grid-template-columns: 1fr 320px;
-    gap: 24px;
-  }
-}
-
-.ios-card {
-  background: #ffffff;
-  border-radius: var(--ios-radius-card);
+.ios-grouped-cells {
+  background: var(--ios-card-secondary);
+  border-radius: 12px;
   border: 0.5px solid var(--ios-border);
-  padding: 22px;
-  margin-bottom: 18px;
-  box-shadow: var(--ios-shadow-sm);
-}
-.ios-card:last-child {
-  margin-bottom: 0;
+  overflow: hidden;
 }
 
-.ios-section-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
+.ios-cell-row {
+  padding: 11px 13px;
   border-bottom: 0.5px solid var(--ios-separator);
 }
-.ios-section-icon {
-  font-size: 20px;
+
+.ios-cell-row:last-child {
+  border-bottom: none;
 }
-.ios-section-header h2 {
-  font-size: 17px;
+
+.ios-cell-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.ios-cell-label {
+  font-size: 13.5px;
   font-weight: 700;
-  margin: 0;
   color: var(--ios-label);
-  letter-spacing: -0.01em;
 }
-.ios-card-body p {
-  font-size: 14.5px;
-  line-height: 1.65;
-  color: #3a3a3c;
-  margin: 0 0 12px 0;
-}
-.ios-card-body p:last-child {
-  margin-bottom: 0;
+
+.ios-cell-desc {
+  font-size: 12.5px;
+  color: var(--ios-secondary);
+  line-height: 1.45;
 }
 
 .wiki-link {
   color: var(--ios-blue);
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: rgba(0, 113, 227, 0.4);
+  text-decoration-color: rgba(0, 122, 255, 0.35);
 }
+
 .wiki-link:hover {
   text-decoration-color: var(--ios-blue);
 }
+
 .code-pill {
   display: inline-block;
   background: #fee2e2;
@@ -630,103 +639,193 @@ h1, h2, h3, h4, p, span, div, li {
   font-family: ui-monospace, monospace;
 }
 
-/* iOS Grouped Cell List - ZERO SCROLLBARS */
-.ios-cells-group {
-  background: var(--ios-card-secondary);
-  border-radius: 12px;
-  border: 0.5px solid var(--ios-border);
-  overflow: hidden;
-}
-.ios-cell-row {
-  padding: 12px 14px;
-  border-bottom: 0.5px solid var(--ios-separator);
-}
-.ios-cell-row:last-child {
-  border-bottom: none;
-}
-.ios-cell-title-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 4px;
-}
-.ios-cell-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--ios-label);
-}
-.ios-cell-desc {
-  font-size: 13px;
-  color: var(--ios-secondary);
-  line-height: 1.45;
-}
-
-/* Sidebar */
-.ios-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.ios-sidebar-card {
-  padding: 18px;
-}
-.ios-sidebar-title {
-  font-size: 14.5px;
-  font-weight: 700;
-  margin: 0 0 12px 0;
-  color: var(--ios-label);
-}
-.ios-sidebar-links {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.ios-sidebar-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 10px;
-  border-radius: 8px;
-  font-size: 13px;
-  color: var(--ios-secondary);
-  text-decoration: none !important;
-  transition: background 0.1s ease;
-}
-.ios-sidebar-link:hover, .ios-sidebar-link:active {
-  background: var(--ios-card-secondary);
-  color: var(--ios-label);
-}
-.ios-arrow {
-  font-size: 16px;
-  color: var(--ios-tertiary);
-}
-
 /* ==========================================================================
-   Product Cards Grid
+   Hub Views: Settings-Style Grouped Lists & Banners
    ========================================================================== */
 
-.prod-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 14px;
-  margin: 16px 0 32px;
+.ios-app-banner {
+  background: var(--ios-card);
+  border-radius: var(--ios-radius-card);
+  border: 0.5px solid var(--ios-border);
+  padding: 24px 18px;
+  margin-bottom: 16px;
+  text-align: center;
+  box-shadow: var(--ios-shadow-sm);
 }
-.ios-prod-card {
+
+.ios-banner-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ios-blue);
+  background: var(--ios-blue-light);
+  padding: 3px 10px;
+  border-radius: var(--ios-radius-pill);
+  display: inline-block;
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+}
+
+.ios-banner-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--ios-label);
+  letter-spacing: -0.02em;
+  margin: 0 0 8px 0;
+  line-height: 1.25;
+}
+
+.ios-banner-desc {
+  font-size: 14px;
+  color: var(--ios-secondary);
+  margin: 0 auto 16px;
+  line-height: 1.5;
+  max-width: 540px;
+}
+
+.ios-segment-control {
+  display: inline-flex;
+  background: rgba(118, 118, 128, 0.12);
+  padding: 3px;
+  border-radius: 10px;
+  gap: 3px;
+}
+
+.ios-seg-item {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: var(--ios-secondary);
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+}
+
+.ios-seg-item.active, .ios-seg-item:active {
   background: #ffffff;
+  color: var(--ios-label);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* iOS Grouped Hub Rows (Settings Style) */
+.ios-section-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 18px 4px 8px;
+}
+
+.ios-section-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ios-label);
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.ios-section-badge {
+  font-size: 12px;
+  color: var(--ios-secondary);
+  font-weight: 500;
+}
+
+.ios-grouped-list-card {
+  background: var(--ios-card);
+  border-radius: var(--ios-radius-card);
+  border: 0.5px solid var(--ios-border);
+  overflow: hidden;
+  box-shadow: var(--ios-shadow-sm);
+  margin-bottom: 16px;
+}
+
+.ios-list-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border-bottom: 0.5px solid var(--ios-separator);
+  text-decoration: none !important;
+  color: var(--ios-label);
+  gap: 12px;
+  transition: background 0.1s ease;
+}
+
+.ios-list-row:last-child {
+  border-bottom: none;
+}
+
+.ios-list-row:active {
+  background: var(--ios-card-secondary);
+}
+
+.ios-row-icon-squircle {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: rgba(118, 118, 128, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.ios-row-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.ios-row-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ios-label);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ios-row-sub {
+  font-size: 11.5px;
+  color: var(--ios-secondary);
+  margin-top: 1px;
+}
+
+.ios-row-arrow {
+  font-size: 17px;
+  color: var(--ios-tertiary);
+  font-weight: 300;
+  flex-shrink: 0;
+}
+
+/* Product Cards Grid (Apple Store Style) */
+.ios-prod-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 480px) {
+  .ios-prod-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ios-prod-item-card {
+  background: var(--ios-card);
   border-radius: var(--ios-radius-card);
   border: 0.5px solid var(--ios-border);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   box-shadow: var(--ios-shadow-sm);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease;
 }
-.ios-prod-card:active {
+
+.ios-prod-item-card:active {
   transform: scale(0.985);
 }
-.ios-card-thumb-link {
-  height: 170px;
+
+.ios-item-thumb-link {
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -734,34 +833,40 @@ h1, h2, h3, h4, p, span, div, li {
   padding: 12px;
   border-bottom: 0.5px solid var(--ios-separator);
 }
-.ios-card-thumb {
+
+.ios-item-thumb {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
-.ios-card-body {
-  padding: 14px;
+
+.ios-item-body {
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
   flex: 1;
 }
-.ios-card-title {
+
+.ios-item-title {
   font-size: 13.5px;
   font-weight: 600;
-  line-height: 1.4;
-  margin: 0 0 8px 0;
+  line-height: 1.35;
+  margin: 0 0 6px 0;
 }
-.ios-card-title a {
+
+.ios-item-title a {
   color: var(--ios-label);
   text-decoration: none !important;
 }
-.ios-card-rating {
-  font-size: 12px;
+
+.ios-item-rating {
+  font-size: 11.5px;
   color: #b45309;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
-.ios-card-footer {
+
+.ios-item-footer {
   margin-top: auto;
   display: flex;
   align-items: center;
@@ -769,164 +874,40 @@ h1, h2, h3, h4, p, span, div, li {
   padding-top: 8px;
   border-top: 0.5px solid var(--ios-separator);
 }
-.ios-card-link {
-  font-size: 13px;
+
+.ios-item-link {
+  font-size: 12.5px;
   font-weight: 600;
   color: var(--ios-blue);
   text-decoration: none !important;
   display: inline-flex;
   align-items: center;
-  gap: 3px;
+  gap: 2px;
 }
 
 /* ==========================================================================
-   Hub Views (Brands & Categories on Home & Silo Hubs)
+   Fixed iOS Bottom Tab Bar & Detail Action Sheet
    ========================================================================== */
 
-.ios-section-title-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-}
-.ios-section-heading {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--ios-label);
-  margin: 0;
-  letter-spacing: -0.015em;
-}
-.ios-section-count {
-  font-size: 12.5px;
-  color: var(--ios-secondary);
-  font-weight: 500;
-}
-.ios-hub-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-  margin-bottom: 28px;
-}
-.ios-hub-card {
-  background: #ffffff;
-  border-radius: 12px;
-  border: 0.5px solid var(--ios-border);
-  padding: 12px 14px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none !important;
-  color: var(--ios-label);
-  box-shadow: var(--ios-shadow-sm);
-  transition: all 0.15s ease;
-}
-.ios-hub-card:active {
-  transform: scale(0.98);
-  background: var(--ios-card-secondary);
-}
-.ios-hub-icon-box {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  background: var(--ios-card-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  flex-shrink: 0;
-}
-.ios-hub-info {
-  flex: 1;
-  min-width: 0;
-}
-.ios-hub-name {
-  font-size: 14px;
-  font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.ios-hub-sub {
-  font-size: 11.5px;
-  color: var(--ios-secondary);
-  margin-top: 2px;
-}
-.ios-hub-arrow {
-  font-size: 18px;
-  color: var(--ios-tertiary);
-  font-weight: 300;
-  flex-shrink: 0;
-}
-
-/* Home Banner / App Header Banner */
-.ios-hero-card {
-  background: #ffffff;
-  border-radius: var(--ios-radius-card);
-  border: 0.5px solid var(--ios-border);
-  padding: 28px 20px;
-  margin: 16px 0 28px;
-  text-align: center;
-  box-shadow: var(--ios-shadow-sm);
-}
-.ios-hero-title {
-  font-size: 26px;
-  font-weight: 800;
-  color: var(--ios-label);
-  letter-spacing: -0.02em;
-  margin: 8px 0 10px 0;
-  line-height: 1.25;
-}
-.ios-hero-sub {
-  font-size: 14.5px;
-  color: var(--ios-secondary);
-  max-width: 650px;
-  margin: 0 auto 20px;
-  line-height: 1.55;
-}
-.ios-segmented-control {
-  display: inline-flex;
-  background: var(--ios-search-bg);
-  padding: 3px;
-  border-radius: 10px;
-  gap: 4px;
-}
-.ios-segment {
-  font-size: 12.5px;
-  font-weight: 600;
-  padding: 6px 14px;
-  border-radius: 8px;
-  color: var(--ios-secondary);
-  text-decoration: none !important;
-  transition: all 0.15s ease;
-}
-.ios-segment:active, .ios-segment.active {
-  background: #ffffff;
-  color: var(--ios-label);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-/* ==========================================================================
-   Mobile Bottom Tab Bar & Sticky Action Sheet
-   ========================================================================== */
-
-.ios-tab-bar {
-  display: none;
+.ios-app-tabbar {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: 56px;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
   border-top: 0.5px solid var(--ios-border);
-  z-index: 998;
+  z-index: 9999;
+  display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 8px;
+  padding: 0 6px;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.04);
 }
-.ios-tab-item {
+
+.ios-tabbar-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -935,87 +916,118 @@ h1, h2, h3, h4, p, span, div, li {
   color: var(--ios-secondary);
   background: transparent;
   border: none;
-  padding: 4px 10px;
+  padding: 4px 8px;
   cursor: pointer;
   flex: 1;
-  max-width: 90px;
+  max-width: 80px;
   gap: 2px;
 }
-.ios-tab-item:active {
-  transform: scale(0.93);
+
+.ios-tabbar-item:active {
+  transform: scale(0.92);
 }
-.ios-tab-item.active {
+
+.ios-tabbar-item.active {
   color: var(--ios-blue);
 }
+
 .ios-tab-icon {
   font-size: 18px;
   line-height: 1;
 }
-.ios-tab-label {
-  font-size: 10.5px;
+
+.ios-tab-text {
+  font-size: 10px;
   font-weight: 500;
 }
 
-.ios-sticky-action-bar {
-  display: none;
+/* Fixed Bottom Action Sheet on Product Detail Page */
+.ios-app-bottom-bar {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.90);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
   border-top: 0.5px solid var(--ios-border);
-  padding: 8px 14px;
-  z-index: 999;
+  padding: 8px 12px;
+  z-index: 9999;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.06);
+  gap: 10px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.07);
 }
-.ios-sticky-info {
+
+.ios-bottom-thumb-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   flex: 1;
   min-width: 0;
 }
-.ios-sticky-title {
-  font-size: 12.5px;
+
+.ios-bottom-thumb {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 0.5px solid var(--ios-border);
+  flex-shrink: 0;
+  padding: 2px;
+}
+
+.ios-bottom-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.ios-bottom-title {
+  font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: block;
   color: var(--ios-label);
 }
-.ios-sticky-rating {
-  font-size: 11px;
+
+.ios-bottom-sub {
+  font-size: 10.5px;
   color: #b45309;
   font-weight: 600;
 }
-.ios-sticky-btn {
+
+.ios-bottom-cta {
   background: var(--ios-blue);
   color: #ffffff !important;
   font-weight: 600;
-  font-size: 13px;
-  padding: 9px 16px;
+  font-size: 12.5px;
+  padding: 9px 14px;
   border-radius: 10px;
   white-space: nowrap;
   text-decoration: none !important;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 113, 227, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 122, 255, 0.25);
 }
-.ios-sticky-btn:active {
+
+.ios-bottom-cta:active {
   background: var(--ios-blue-pressed);
   transform: scale(0.97);
 }
 
-@media (max-width: 860px) {
-  .ios-tab-bar {
-    display: flex;
-  }
-  .ios-sticky-action-bar {
-    display: flex;
-  }
-  .ios-nav-shortcuts {
-    display: none;
-  }
+/* Compact iOS App Footer Info */
+.ios-compact-footer {
+  text-align: center;
+  padding: 24px 12px 12px;
+  color: var(--ios-secondary);
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+
+.ios-footer-brand {
+  font-weight: 700;
+  color: var(--ios-label);
+  margin-bottom: 4px;
 }
