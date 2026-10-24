@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="theme-color" content="#2874f0">
+  <meta name="theme-color" content="#854d0e">
   <meta name="google-site-verification" content="z1HDX3FFWaHIqyPyOMLwt9sgJg31Is1QxB7Po-DuJBs" />
   <title>DL-pro ULKA EP5GW Pumpe 48W 230V für DeLonghi 5113211311 &amp; Saeco | KaffeeReparatur</title>
   <meta name="description" content="DL-pro ULKA EP5GW Pumpe 48W 230V für DeLonghi ECAM 22.110, 23.420, 23.460 &amp; Saeco Modelle mit Original 5113211311 oder 996530007753. Ersatzpumpe mit 15 bar Druck, 8/16 mm Anschlüssen. Passgenau, zuverlässig und einfach zu tauschen. Prüfen Sie vor dem Kauf die Originalnummer!">
@@ -11,1482 +11,924 @@
   <style>
 
 /* ==========================================================================
-   FLIPKART OFFICIAL UI DESIGN SYSTEM (DESKTOP WEBSITE + MOBILE APP)
+   LEATHERCLOGS OFFICIAL UI DESIGN SYSTEM (WARM EDITORIAL + HIGH-CONVERTING)
    ========================================================================== */
 
 :root {
-  --fk-blue: #2874f0;
-  --fk-blue-dark: #1259c7;
-  --fk-yellow: #ffe500;
-  --fk-orange-buy: #fb641b;
-  --fk-orange-cart: #ff9f00;
-  --fk-green: #388e3c;
-  --fk-bg: #f1f3f6;
-  --fk-card: #ffffff;
-  --fk-text: #212121;
-  --fk-secondary: #878787;
-  --fk-border: #f0f0f0;
-  --fk-border-dark: #e0e0e0;
-  --fk-font: Roboto, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --fk-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
-  --fk-shadow-card: 0 1px 3px 0 rgba(0,0,0,.12);
+  --primary: #854d0e;
+  --primary-dark: #713f12;
+  --primary-light: #fefce8;
+  --accent: #0284c7;
+  --bg-app: #fcfbf9;
+  --bg-card: #ffffff;
+  --text-main: #1c1917;
+  --text-muted: #57534e;
+  --border-color: #e7e5e4;
+  --border-light: #f5f5f4;
+  --radius-card: 12px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.09);
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: var(--fk-bg);
-  color: var(--fk-text);
-  font-family: var(--fk-font);
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden;
+  padding-bottom: 80px;
 }
 
-* {
-  box-sizing: border-box;
-  max-width: 100%;
-}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Input & Search Reset */
-input, input[type="text"], input[type="search"] {
-  font-family: var(--fk-font) !important;
-  font-size: 16px !important; /* Prevents auto zoom on iOS */
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
-  outline: none;
-  border: none;
-  box-sizing: border-box;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none !important;
-}
-
-/* Safe text wrap guarantee */
-h1, h2, h3, h4, p, span, div, li {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-/* ==========================================================================
-   FLIPKART PRIMARY HEADER (Electric Blue #2874f0)
-   ========================================================================== */
-
-.fk-header {
+/* Sticky Header */
+.app-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--fk-blue);
-  color: #ffffff;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.18);
-  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
-
-.fk-header-inner {
-  max-width: 1248px;
+.header-inner {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
-
-/* Flipkart Brand Logo */
-.fk-logo-box {
-  display: flex;
-  flex-direction: column;
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 19px;
+  color: var(--text-main);
   text-decoration: none !important;
-  flex-shrink: 0;
+  white-space: nowrap;
+}
+.brand-logo .logo-icon { font-size: 24px; }
+.brand-logo .tld { color: var(--primary); font-weight: 900; }
+.badge-pro {
+  background: #fef08a;
+  color: #713f12;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 9999px;
 }
 
-.fk-logo-main {
-  font-size: 20px;
-  font-weight: 700;
-  font-style: italic;
-  color: #ffffff;
-  letter-spacing: -0.01em;
+.nav-links {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 20px;
 }
-
-.fk-logo-sub {
-  font-size: 11px;
-  font-style: italic;
-  color: #ffffff;
-  margin-top: -2px;
-}
-
-.fk-plus {
-  color: var(--fk-yellow);
-  font-weight: 700;
-}
-
-/* Flipkart Center Search Bar */
-.fk-search-wrap {
-  position: relative;
-  flex: 1;
-  max-width: 560px;
-}
-
-.fk-search-box {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border-radius: 2px;
-  height: 38px;
-  padding: 0 12px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
-}
-
-.fk-search-input {
-  flex: 1;
-  background: transparent !important;
-  font-size: 14px !important;
-  color: #212121 !important;
-  padding: 0 !important;
-}
-
-.fk-search-input::placeholder {
-  color: var(--fk-secondary);
-}
-
-.fk-search-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  color: var(--fk-blue);
-}
-
-.fk-search-clear {
-  display: none;
-  background: transparent;
-  border: none;
-  color: var(--fk-secondary);
+.nav-link {
   font-size: 14px;
-  cursor: pointer;
-  padding: 0 6px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none !important;
+  transition: color 0.15s ease;
 }
+.nav-link:hover { color: var(--text-main); }
 
-/* Floating Search Dropdown */
-.fk-search-dropdown {
+/* Search Bar in Header */
+.header-search { flex: 1; max-width: 380px; position: relative; }
+.search-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f5f5f4;
+  border: 1px solid var(--border-color);
+  border-radius: 9999px;
+  padding: 6px 14px;
+  transition: all 0.15s ease;
+}
+.search-input-wrap:focus-within {
+  background: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(133, 77, 14, 0.15);
+}
+.search-icon { color: var(--text-muted); margin-right: 8px; font-size: 14px; }
+.search-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13px;
+  color: var(--text-main);
+  outline: none;
+  font-family: inherit;
+}
+.search-clear {
+  display: none;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px;
+}
+.search-dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 4px);
+  top: calc(100% + 6px);
   left: 0;
   right: 0;
   background: #ffffff;
-  border-radius: 2px;
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
-  border: 1px solid var(--fk-border-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
   max-height: 420px;
   overflow-y: auto;
-  z-index: 1010;
+  z-index: 1001;
+  padding: 6px;
 }
-
-.fk-search-dropdown.show { display: block; }
-
-.fk-search-item {
-  display: flex;
-  align-items: center;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--fk-border);
-  gap: 12px;
-  text-decoration: none !important;
-  color: #212121;
-}
-
-.fk-search-item:hover, .fk-search-item:active {
-  background: #f9f9f9;
-}
-
-.fk-search-thumb {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.fk-search-title {
-  font-size: 13px;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.fk-search-sub {
-  font-size: 11px;
-  color: var(--fk-secondary);
-}
-
-/* Desktop Header Action Buttons */
-.fk-nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.fk-nav-link {
-  font-size: 14.5px;
-  font-weight: 600;
-  color: #ffffff;
-  text-decoration: none !important;
-  white-space: nowrap;
-}
-
-.fk-nav-link:hover {
-  color: var(--fk-yellow);
-}
-
-.fk-amazon-badge {
-  background: #ffffff;
-  color: var(--fk-blue) !important;
-  padding: 6px 14px;
-  border-radius: 2px;
-  font-size: 13px;
-  font-weight: 700;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-/* ==========================================================================
-   FLIPKART CATEGORY STRIP (White Icon Strip Below Header)
-   ========================================================================== */
-
-.fk-cat-strip {
-  background: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,.14);
-  padding: 10px 0;
-  margin-bottom: 10px;
-}
-
-.fk-cat-strip-inner {
-  max-width: 1248px;
-  margin: 0 auto;
+.search-dropdown.show { display: block; }
+.search-dropdown-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  color: var(--text-main);
+  transition: background 0.1s ease;
+}
+.search-dropdown-item:hover { background: #f5f5f4; }
+.search-item-thumb { width: 36px; height: 36px; object-fit: contain; margin-right: 10px; border-radius: 4px; }
+
+/* Breadcrumbs */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 16px 0 8px;
   overflow-x: auto;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  gap: 16px;
 }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--text-main); }
+.breadcrumb .sep { color: #a8a29e; font-size: 11px; }
 
-.fk-cat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none !important;
-  gap: 4px;
-  flex-shrink: 0;
+/* Hero Banner for Hub Pages */
+.hero-banner {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f6f2 100%);
+  border-bottom: 1px solid var(--border-color);
+  padding: 32px 0 36px;
+  text-align: center;
 }
-
-.fk-cat-icon {
-  font-size: 24px;
-  line-height: 1;
-}
-
-.fk-cat-text {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--fk-text);
-  transition: color 0.15s ease;
-}
-
-.fk-cat-item:hover .fk-cat-text {
-  color: var(--fk-blue);
-}
-
-/* ==========================================================================
-   FLIPKART DESKTOP PRODUCT DETAIL PAGE (2-Column E-Commerce Layout)
-   ========================================================================== */
-
-.fk-page-wrap {
-  max-width: 1248px;
-  margin: 10px auto 40px;
-  padding: 0 12px;
-}
-
-.fk-detail-desktop-grid {
-  display: grid;
-  grid-template-columns: 440px 1fr;
-  gap: 16px;
-  align-items: start;
-}
-
-/* Sticky Left Gallery Column */
-.fk-left-col {
-  position: sticky;
-  top: 74px;
-  background: #ffffff;
-  padding: 16px;
-  border-radius: 2px;
-  box-shadow: var(--fk-shadow);
-  border: 1px solid var(--fk-border);
-}
-
-.fk-main-img-box {
-  width: 100%;
-  height: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border: 1px solid var(--fk-border);
-  margin-bottom: 16px;
-}
-
-.fk-main-img-box img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
-
-.fk-main-img-box:hover img {
-  transform: scale(1.04);
-}
-
-/* Dual Action Buttons (Flipkart Yellow + Orange) */
-.fk-btn-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.fk-btn-cart {
-  background: var(--fk-orange-cart);
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  height: 48px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
-  text-decoration: none !important;
-  cursor: pointer;
-}
-
-.fk-btn-cart:hover {
-  background: #f29600;
-}
-
-.fk-btn-buy {
-  background: var(--fk-orange-buy);
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  height: 48px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
-  text-decoration: none !important;
-  cursor: pointer;
-}
-
-.fk-btn-buy:hover {
-  background: #e65612;
-}
-
-/* Right Detail Column */
-.fk-right-col {
-  background: #ffffff;
-  padding: 24px;
-  border-radius: 2px;
-  box-shadow: var(--fk-shadow);
-  border: 1px solid var(--fk-border);
-}
-
-.fk-breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.hero-banner .hero-eyebrow {
+  display: inline-block;
   font-size: 12px;
-  color: var(--fk-secondary);
-  margin-bottom: 10px;
-}
-
-.fk-breadcrumb a {
-  color: var(--fk-secondary);
-}
-
-.fk-breadcrumb a:hover {
-  color: var(--fk-blue);
-}
-
-.fk-product-h1 {
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--fk-text);
-  line-height: 1.35;
-  margin: 0 0 10px 0;
-}
-
-/* Green Rating Badge (Iconic Flipkart Green) */
-.fk-rating-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.fk-rating-badge {
-  background: var(--fk-green);
-  color: #ffffff;
   font-weight: 700;
-  font-size: 12.5px;
-  padding: 2px 7px;
-  border-radius: 3px;
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-}
-
-.fk-rating-count {
-  font-size: 13px;
-  color: var(--fk-secondary);
-  font-weight: 500;
-}
-
-.fk-assured-tag {
-  background: #e9f0ff;
-  color: var(--fk-blue);
-  font-size: 11.5px;
-  font-weight: 800;
-  padding: 3px 8px;
-  border-radius: 3px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-/* Flipkart Special Price & Offers Section */
-.fk-price-box {
-  margin-bottom: 18px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--fk-border);
-}
-
-.fk-price-highlight {
-  font-size: 24px;
-  font-weight: 700;
-  color: #212121;
-}
-
-.fk-stock-status {
-  font-size: 13px;
-  color: var(--fk-green);
-  font-weight: 700;
-  margin-top: 4px;
-}
-
-/* Available Offers (Flipkart Green Tag Style) */
-.fk-offers-box {
-  margin-bottom: 20px;
-}
-
-.fk-offers-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: #212121;
-  margin-bottom: 8px;
-}
-
-.fk-offer-item {
-  font-size: 13px;
-  color: #212121;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  margin-bottom: 6px;
-  line-height: 1.45;
-}
-
-.fk-tag-icon {
-  color: var(--fk-green);
-  font-size: 14px;
-  flex-shrink: 0;
-}
-
-/* Highlights Box */
-.fk-highlights-box {
-  margin-bottom: 24px;
-}
-
-.fk-hl-title {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.fk-hl-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.fk-hl-list li {
-  font-size: 13px;
-  color: #212121;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-/* Specifications Table (Flipkart Clean Spec Table) */
-.fk-sec-card {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid var(--fk-border);
-}
-
-.fk-sec-heading {
-  font-size: 16px;
-  font-weight: 700;
-  color: #212121;
-  margin-bottom: 12px;
-}
-
-.fk-sec-text p {
-  font-size: 14px;
-  color: #333333;
-  line-height: 1.65;
-  margin: 0 0 10px 0;
-}
-
-.fk-spec-grid {
-  border: 1px solid var(--fk-border-dark);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.fk-spec-row {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--fk-border);
-  font-size: 13px;
-  align-items: center;
-}
-
-.fk-spec-row:last-child {
-  border-bottom: none;
-}
-
-.fk-spec-row:nth-child(even) {
-  background: #fafafa;
-}
-
-.fk-spec-k {
-  color: var(--fk-secondary);
-  font-weight: 500;
-}
-
-.fk-spec-v {
-  color: #212121;
-  font-weight: 500;
-}
-
-.fk-tag {
-  font-size: 11px;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 3px;
-  display: inline-block;
-  margin-right: 6px;
-}
-
-.fk-tag-blue { background: #e9f0ff; color: var(--fk-blue); }
-.fk-tag-orange { background: #fff3e0; color: #e65100; }
-.fk-tag-green { background: #e8f5e9; color: var(--fk-green); }
-.fk-tag-purple { background: #f3e5f5; color: #7b1fa2; }
-
-.fk-wiki-link {
-  color: var(--fk-blue);
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.fk-code-pill {
-  background: #ffebee;
-  color: #c62828;
-  font-weight: 700;
-  font-size: 11px;
-  padding: 1px 6px;
-  border-radius: 2px;
-}
-
-/* Flipkart Structured DIY Step Cards */
-.fk-steps-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 12px;
-}
-.fk-step-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  background: #f8fafc;
-  border: 1px solid var(--fk-border);
-  border-radius: 4px;
-  padding: 12px 14px;
-}
-.fk-step-num {
-  width: 26px;
-  height: 26px;
-  background: var(--fk-blue);
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13px;
-  flex-shrink: 0;
-}
-.fk-step-content {
-  flex: 1;
-}
-.fk-step-title {
-  font-weight: 700;
-  font-size: 14px;
-  color: #212121;
-  margin-bottom: 3px;
-}
-.fk-step-desc {
-  font-size: 13px;
-  color: #4b5563;
-  line-height: 1.55;
-}
-
-/* Flipkart Structured Compatibility Matrix */
-.fk-compat-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 12px;
-}
-@media (max-width: 768px) {
-  .fk-compat-grid { grid-template-columns: 1fr; }
-}
-.fk-compat-col {
-  padding: 12px 14px;
-  border-radius: 4px;
-  border: 1px solid var(--fk-border);
-  background: #fafafa;
-}
-.fk-compat-col-fits {
-  border-left: 4px solid #388e3c;
-}
-.fk-compat-col-incomp {
-  border-left: 4px solid #d32f2f;
-}
-.fk-compat-head {
-  font-weight: 700;
-  font-size: 13.5px;
-  margin-bottom: 8px;
-}
-.fk-compat-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.fk-compat-list li {
-  font-size: 12.5px;
-  color: #374151;
-  line-height: 1.4;
-  padding-left: 12px;
-  position: relative;
-}
-.fk-compat-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #9ca3af;
-}
-
-/* Flipkart Structured Troubleshooting Cards */
-.fk-trouble-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 12px;
-}
-.fk-trouble-card {
-  background: #fff;
-  border: 1px solid var(--fk-border);
-  border-radius: 4px;
-  padding: 12px 14px;
-}
-.fk-trouble-error {
-  font-weight: 700;
-  font-size: 13.5px;
-  color: #b91c1c;
-  margin-bottom: 6px;
-}
-.fk-trouble-row {
-  font-size: 13px;
-  color: #374151;
-  line-height: 1.5;
-  margin-bottom: 4px;
-}
-.fk-trouble-fix {
-  color: #15803d;
-}
-
-/* ==========================================================================
-   FLIPKART PRODUCT CARDS GRID (Deals Grid)
-   ========================================================================== */
-
-.fk-grid-title-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 0 12px;
-}
-
-.fk-grid-title {
-  font-size: 19px;
-  font-weight: 700;
-  color: #212121;
-  margin: 0;
-}
-
-.fk-grid-count {
-  font-size: 13px;
-  color: var(--fk-secondary);
-}
-
-.fk-prod-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  gap: 12px;
-  margin-bottom: 28px;
-}
-
-.fk-prod-card {
-  background: #ffffff;
-  border: 1px solid var(--fk-border);
-  border-radius: 2px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-  position: relative;
-}
-
-.fk-prod-card:hover {
-  box-shadow: 0 4px 12px 0 rgba(0,0,0,.15);
-  transform: translateY(-2px);
-}
-
-.fk-card-thumb-link {
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
-  background: #ffffff;
-  border-bottom: 1px solid var(--fk-border);
-}
-
-.fk-card-thumb {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.fk-card-body {
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.fk-card-badges {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 6px;
-}
-
-.fk-card-title {
-  font-size: 13.5px;
-  font-weight: 500;
-  line-height: 1.35;
-  margin: 0 0 8px 0;
-  color: #212121;
-}
-
-.fk-card-title a {
-  color: #212121;
-  text-decoration: none;
-}
-
-.fk-card-title a:hover {
-  color: var(--fk-blue);
-}
-
-.fk-card-rating-row {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 8px;
-}
-
-.fk-card-footer {
-  margin-top: auto;
-  padding-top: 8px;
-  border-top: 1px solid var(--fk-border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.fk-card-link {
-  font-size: 12.5px;
-  font-weight: 700;
-  color: var(--fk-blue);
-}
-
-/* ==========================================================================
-   FLIPKART HOMEPAGE BANNERS & DEALS STRIPS
-   ========================================================================== */
-
-.fk-home-banner {
-  background: linear-gradient(135deg, #2874f0 0%, #1259c7 100%);
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 32px 24px;
-  margin-bottom: 16px;
-  box-shadow: var(--fk-shadow);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.fk-banner-left {
-  flex: 1;
-}
-
-.fk-banner-pill {
-  background: var(--fk-yellow);
-  color: #212121;
-  font-size: 11px;
-  font-weight: 800;
+  letter-spacing: .08em;
   text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 2px;
-  display: inline-block;
-  margin-bottom: 10px;
+  color: var(--primary);
+  margin-bottom: 8px;
 }
-
-.fk-banner-h1 {
-  font-size: 28px;
+.hero-banner h1 {
+  font-size: 30px;
   font-weight: 800;
-  margin: 0 0 8px 0;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
   line-height: 1.25;
+  margin-bottom: 12px;
+}
+.hero-banner p {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
 }
 
-.fk-banner-sub {
-  font-size: 14px;
-  color: #e0e9fa;
-  margin: 0 0 16px 0;
-  max-width: 600px;
-  line-height: 1.5;
-}
-
-.fk-banner-badges-strip {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.fk-badge-check {
-  font-size: 13px;
-  color: #ffffff;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-/* Grouped Hubs (Brands & Categories) */
-.fk-hub-list-card {
-  background: #ffffff;
-  border: 1px solid var(--fk-border);
-  border-radius: 2px;
-  padding: 16px;
-  margin-bottom: 20px;
-  box-shadow: var(--fk-shadow);
-}
-
-.fk-hub-grid {
+/* Symptom-Grid (Silo 1: Error & Intent Based Navigation) */
+.symptom-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0 36px;
 }
-
-.fk-hub-item {
+.symptom-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 18px 20px;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 12px;
-  border: 1px solid var(--fk-border);
-  border-radius: 2px;
+  align-items: flex-start;
+  gap: 14px;
   text-decoration: none !important;
-  color: #212121;
+  color: var(--text-main);
   transition: all 0.15s ease;
 }
-
-.fk-hub-item:hover {
-  border-color: var(--fk-blue);
-  background: #f8fbff;
+.symptom-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
 }
-
-.fk-hub-icon {
-  font-size: 22px;
-  flex-shrink: 0;
-}
-
-.fk-hub-name {
-  font-size: 13.5px;
-  font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.fk-hub-sub {
-  font-size: 11px;
-  color: var(--fk-secondary);
-}
-
-/* ==========================================================================
-   FLIPKART FOOTER (Iconic Flipkart Dark Blue Footer #172337)
-   ========================================================================== */
-
-.fk-footer {
-  background: #172337;
-  color: #878787;
+.symptom-icon { font-size: 24px; line-height: 1; flex-shrink: 0; padding-top: 2px; }
+.symptom-content h3 { font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; }
+.symptom-content p { font-size: 13px; color: var(--text-muted); line-height: 1.45; }
+.symptom-link {
   font-size: 12px;
-  padding: 40px 0 24px;
-  margin-top: 40px;
-  border-top: 1px solid #28354a;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.fk-footer-inner {
-  max-width: 1248px;
-  margin: 0 auto;
-  padding: 0 16px;
+/* Brand Hubs Grid */
+.brand-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 28px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid #28354a;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 20px 0 40px;
 }
-
-.fk-foot-col-title {
-  color: #878787;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.fk-foot-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.fk-foot-list a {
-  color: #ffffff;
-  font-size: 12px;
-}
-
-.fk-foot-list a:hover {
-  text-decoration: underline;
-}
-
-.fk-footer-bottom {
-  max-width: 1248px;
-  margin: 0 auto;
-  padding: 16px 16px 0;
+.brand-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 16px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 12px;
-  color: #ffffff;
+  text-decoration: none !important;
+  color: var(--text-main);
+  transition: all 0.15s ease;
 }
+.brand-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--primary);
+}
+.brand-name { font-weight: 700; font-size: 15px; }
+.brand-count { font-size: 12px; color: var(--text-muted); background: #f5f5f4; padding: 2px 8px; border-radius: 99px; }
 
-/* ==========================================================================
-   UNIQUE GROK DOSSIER & SCRAPED AMAZON COMPONENTS
-   ========================================================================== */
-
-/* 2-Column Pros and Cons */
-.fk-pros-cons-grid {
+/* Products Grid (LeatherClogs Style Clean Cards) */
+.products-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0 40px;
 }
-@media (max-width: 640px) {
-  .fk-pros-cons-grid {
-    grid-template-columns: 1fr;
-  }
+.prod-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.fk-pros-box {
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
-  border-radius: 8px;
+.prod-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #d6d3d1;
+}
+.prod-card-thumb-link {
+  display: block;
+  background: #ffffff;
+  aspect-ratio: 1/1;
+  border-bottom: 1px solid var(--border-color);
+  padding: 14px;
+}
+.prod-card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.prod-card-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.prod-card-badges {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.badge-brand {
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+}
+.badge-cat {
+  background: #f5f5f4;
+  color: #57534e;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.prod-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 4px 0 6px;
+}
+.prod-card-title a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+.prod-card-title a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.prod-card-chips {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.chip {
+  background: #f5f5f4;
+  color: #44403c;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.prod-card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.btn-card-details {
+  background: #1c1917;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: background 0.15s ease;
+}
+.btn-card-details:hover {
+  background: var(--primary);
+}
+
+/* Detail Page Hero Stage (LeatherClogs Style) */
+.detail-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 32px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  margin: 14px 0 24px;
+  box-shadow: var(--shadow-sm);
+}
+.gallery-box { display: flex; flex-direction: column; gap: 12px; }
+.main-img-wrap {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px;
 }
-.fk-cons-box {
-  background: #fff7ed;
-  border: 1px solid #fed7aa;
-  border-radius: 8px;
+.main-img-wrap img { width: 100%; height: 100%; object-fit: contain; }
+.thumbs-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.thumbs-row img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ffffff;
+  padding: 4px;
+  transition: border-color 0.15s ease;
+}
+.thumbs-row img.active { border-color: var(--primary); }
+
+.detail-info { display: flex; flex-direction: column; }
+.eyebrow { font-size: 12px; text-transform: uppercase; font-weight: 700; letter-spacing: .08em; color: var(--primary); margin-bottom: 4px; }
+.detail-info h1 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.meta-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.badge-rating { color: #b45309; font-weight: 700; }
+.badge-oem {
+  background: #f5f5f4;
+  color: #44403c;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #e7e5e4;
+}
+.badge-verified {
+  background: #ecfdf5;
+  color: #065f46;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #a7f3d0;
+}
+
+.specs-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+.spec-pill {
+  background: #fafaf9;
+  border: 1px solid #e7e5e4;
+  font-size: 12px;
+  font-weight: 600;
+  color: #44403c;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+/* LeatherClogs Style Clean Action Button */
+.cta-box {
+  margin: 14px 0 16px;
+  background: #fcfbf9;
+  border: 1px solid #f5f5f4;
+  border-radius: 10px;
   padding: 16px;
 }
-.fk-pc-title {
+.cta {
+  display: inline-block;
+  background: #1c1917;
+  color: #ffffff !important;
   font-size: 15px;
   font-weight: 700;
-  margin-bottom: 12px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.cta:hover {
+  background: var(--primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.cta-box .note {
+  font-size: 12px;
+  color: #78716c;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* "Auf einen Blick" Summary Box */
+.key-highlights-card {
+  background: #fdfdfc;
+  border: 1px solid #e7e5e4;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 10px;
+}
+.key-highlights-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.key-highlights-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.key-highlights-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: #44403c;
+  line-height: 1.4;
+}
+.key-highlights-list .check-icon {
+  color: #15803d;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Wikipedia Link in Prose */
+.wiki-link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-color: #d6d3d1;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+.wiki-link:hover {
+  color: #1c1917;
+  text-decoration-color: var(--primary);
+}
+
+/* Section Content Layout (2.4fr / 1fr) */
+.content-layout {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  gap: 28px;
+  margin-top: 10px;
+}
+.article-main { display: flex; flex-direction: column; gap: 24px; }
+.section-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.section-box h2 {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--text-main);
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.fk-pro-title { color: #15803d; }
-.fk-con-title { color: #c2410c; }
-.fk-pc-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.section-divider {
+  border: none;
+  border-top: 2px solid #f5f5f4;
+  margin: 12px 0 16px;
 }
-.fk-pc-list li {
-  font-size: 13px;
-  line-height: 1.5;
+.prose-p {
+  font-size: 14.5px;
   color: #374151;
-  position: relative;
-  padding-left: 20px;
+  line-height: 1.7;
+  margin-bottom: 12px;
 }
-.fk-pro-list li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #16a34a;
+.prose-p strong { color: #111827; }
+.code-pill {
+  font-family: monospace;
+  background: #f3f4f6;
+  color: #991b1b;
   font-weight: 700;
-}
-.fk-con-list li::before {
-  content: '✕';
-  position: absolute;
-  left: 0;
-  color: #dc2626;
-  font-weight: 700;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
-/* Customer Review Sentiment Section */
-.fk-sentiment-tags-grid {
+/* Callouts */
+.callout-box {
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 16px 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.callout-tip { background: #eff6ff; border-left: 4px solid #3b82f6; color: #1e40af; }
+.callout-warn { background: #fffbeb; border-left: 4px solid #f59e0b; color: #92400e; }
+.callout-icon { font-size: 20px; line-height: 1; flex-shrink: 0; }
+
+/* 5 Step-by-Step Action Cards */
+.steps-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+.step-card {
+  background: #fcfbf9;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+}
+.step-badge {
+  background: #1c1917;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.step-body h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; color: var(--text-main); }
+.step-body p { font-size: 13px; color: var(--text-muted); line-height: 1.45; }
+
+/* Diagnostic Table */
+.diag-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.diag-table th {
+  background: #f5f5f4;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+.diag-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  vertical-align: top;
+  line-height: 1.45;
+}
+.diag-table tr:nth-child(even) td { background: #fafaf9; }
+.diag-symptom { font-weight: 600; color: #991b1b; }
+.diag-fix { color: #15803d; font-weight: 500; }
+
+/* Compatibility Matrix */
+.compat-matrix-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+.compat-box {
+  background: #fafaf9;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px;
+}
+.compat-box-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.compat-box-title.fits { color: #15803d; }
+.compat-box-title.incompatible { color: #b91c1c; }
+.compat-list { list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; }
+.compat-list li { display: flex; align-items: flex-start; gap: 8px; }
+
+/* Sentiment Tags */
+.sentiment-tags-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin: 14px 0;
 }
-@media (max-width: 640px) {
-  .fk-sentiment-tags-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.fk-tag-heading {
-  font-size: 13.5px;
+.tag-heading {
+  font-size: 13px;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-main);
   margin-bottom: 8px;
 }
-.fk-sentiment-pill-box {
+.sentiment-pill-box {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
-.fk-pill-praise {
+.pill-praise {
   background: #ecfdf5;
   color: #065f46;
   border: 1px solid #a7f3d0;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 9999px;
+  padding: 3px 9px;
+  border-radius: 999px;
 }
-.fk-pill-crit {
-  background: #fef2f2;
-  color: #991b1b;
-  border: 1px solid #fecaca;
-  font-size: 12px;
+.pill-crit {
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-size: 11.5px;
   font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 9999px;
+  padding: 3px 9px;
+  border-radius: 999px;
 }
 
-/* Authentic Customer Reviews List */
-.fk-review-cards-list {
+/* User Reviews */
+.review-cards-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   margin-top: 14px;
 }
-.fk-user-review-card {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  padding: 12px 14px;
+.user-review-card {
+  background: #fcfbf9;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px 16px;
 }
-.fk-ur-header {
+.ur-header {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 6px;
 }
-.fk-ur-stars {
-  color: #f59e0b;
+.ur-stars {
+  color: #b45309;
   font-size: 13px;
   letter-spacing: 1px;
 }
-.fk-ur-title {
+.ur-title {
   font-size: 13.5px;
-  color: #111827;
+  font-weight: 700;
+  color: var(--text-main);
 }
-.fk-ur-body {
+.ur-body {
   font-size: 13px;
   color: #4b5563;
   line-height: 1.5;
+  margin-bottom: 6px;
 }
-.fk-ur-date {
+.ur-date {
   font-size: 11px;
-  color: #9ca3af;
-  margin-top: 6px;
+  color: #78716c;
 }
 
-/* In-Body Detail Images */
-.fk-inbody-gallery {
+/* In-body images gallery */
+.inbody-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
-  margin-top: 14px;
+  margin: 16px 0;
 }
-.fk-inbody-item {
+.inbody-item {
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-.fk-inbody-item img {
+.inbody-item img {
   width: 100%;
-  height: 180px;
+  aspect-ratio: 4/3;
   object-fit: contain;
-  background: #fafafa;
+  background: #ffffff;
   padding: 10px;
 }
-.fk-inbody-caption {
-  padding: 8px 10px;
-  font-size: 12px;
-  color: #6b7280;
-  border-top: 1px solid #f3f4f6;
-  text-align: center;
-  background: #ffffff;
-}
-
-/* Amazon Feature Bullets List */
-.fk-amazon-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.fk-amazon-bullets li {
-  font-size: 13px;
-  line-height: 1.5;
-  color: #374151;
-  position: relative;
-  padding-left: 18px;
-}
-.fk-amazon-bullets li::before {
-  content: '•';
-  position: absolute;
-  left: 2px;
-  color: var(--fk-blue);
-  font-size: 18px;
-  line-height: 1;
-}
-
-/* ==========================================================================
-   MOBILE APP SPECIFIC OVERRIDES (FLIPKART MOBILE APP EXPERIENCE)
-   ========================================================================== */
-
-/* Mobile Bottom Buy Bar (Flipkart Yellow + Orange 50/50 Dual Bar) */
-.fk-mobile-buy-bar {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  z-index: 9999;
-  background: #ffffff;
-  box-shadow: 0 -1px 4px 0 rgba(0,0,0,.2);
-}
-
-.fk-mobile-buy-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13.5px;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  height: 100%;
-}
-
-.fk-mob-cart {
-  background: #ffffff;
-  color: #212121 !important;
-  border-right: 1px solid #e0e0e0;
-}
-
-.fk-mob-buy {
-  background: var(--fk-orange-buy);
-  color: #ffffff !important;
-}
-
-/* Mobile App Bottom Tab Bar (on Home & Hubs) */
-.fk-mobile-tab-bar {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 52px;
-  z-index: 9999;
-  background: #ffffff;
-  box-shadow: 0 -1px 4px rgba(0,0,0,0.12);
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 4px;
-}
-
-.fk-tab-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none !important;
-  color: var(--fk-secondary);
-  background: transparent;
-  border: none;
-  padding: 4px 8px;
-  cursor: pointer;
-  flex: 1;
-  gap: 2px;
-}
-
-.fk-tab-btn.active {
-  color: var(--fk-blue);
-  font-weight: 700;
-}
-
-.fk-tab-icon {
-  font-size: 18px;
-  line-height: 1;
-}
-
-.fk-tab-label {
-  font-size: 10px;
-  font-weight: 500;
-}
-
-/* Mobile Back Button */
-.fk-mobile-back-row {
-  display: none;
-  align-items: center;
-  gap: 8px;
+.inbody-caption {
   padding: 8px 12px;
-  background: #ffffff;
-  border-bottom: 1px solid var(--fk-border);
-  font-size: 14px;
-  font-weight: 700;
-  color: #212121;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  background: #fcfbf9;
+  border-top: 1px solid var(--border-color);
+  line-height: 1.4;
 }
 
-.fk-back-arrow {
-  font-size: 20px;
-  line-height: 1;
-  color: var(--fk-blue);
+/* Sidebar & Silos */
+.sidebar { display: flex; flex-direction: column; gap: 20px; }
+.sidebar-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+.sidebar-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sidebar-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+  color: var(--text-main);
+}
+.sidebar-item:hover { color: var(--primary); }
+.sidebar-thumb { width: 44px; height: 44px; object-fit: contain; border: 1px solid var(--border-color); border-radius: 6px; padding: 2px; background: #fff; }
+.sidebar-item-info { display: flex; flex-direction: column; overflow: hidden; }
+.sidebar-item-title { font-size: 12.5px; font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sidebar-item-cat { font-size: 11px; color: var(--text-muted); }
+
+/* Mobile Sticky Bottom CTA Bar */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border-color);
+  padding: 10px 16px;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+}
+.sticky-thumb { width: 40px; height: 40px; object-fit: contain; margin-right: 10px; }
+.sticky-info { display: flex; flex-direction: column; overflow: hidden; }
+.sticky-title { font-size: 13px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sticky-sub { font-size: 11px; color: #15803d; font-weight: 600; }
+.btn-sticky-amazon {
+  background: #1c1917;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  white-space: nowrap;
   text-decoration: none !important;
 }
 
-/* ==========================================================================
-   MEDIA QUERY: FLIPKART MOBILE APP VIEW (<= 859px)
-   ========================================================================== */
+/* FAQ Accordion */
+.faq-box { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+.faq-item {
+  background: #fcfbf9;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.faq-q { font-size: 14px; font-weight: 700; color: var(--text-main); margin-bottom: 6px; }
+.faq-a { font-size: 13px; color: #4b5563; line-height: 1.5; }
 
-@media (max-width: 859px) {
-  body {
-    padding-bottom: 58px; /* Clearance for fixed mobile bars */
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .detail-hero-grid { grid-template-columns: 1fr; }
+  .content-layout { grid-template-columns: 1fr; }
+  .compat-matrix-grid { grid-template-columns: 1fr; }
+  .sentiment-tags-grid { grid-template-columns: 1fr; }
+  .mobile-sticky-cta { display: flex; }
+  .nav-links { display: none; }
+  
+  /* Mobile Diagnostic Table as Cards */
+  .diag-table, .diag-table thead, .diag-table tbody, .diag-table th, .diag-table td, .diag-table tr {
+    display: block;
   }
-
-  .fk-header-inner {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
+  .diag-table thead { display: none; }
+  .diag-table tr {
+    background: #ffffff !important;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    box-shadow: var(--shadow-sm);
   }
-
-  .fk-nav-actions {
-    display: none; /* Hidden on mobile header, placed in bottom tabs */
+  .diag-table td {
+    border: none;
+    padding: 6px 0;
+    position: relative;
+    padding-left: 35%;
   }
-
-  .fk-search-wrap {
-    max-width: 100%;
-  }
-
-  .fk-search-box {
-    height: 38px;
-    border-radius: 4px;
-  }
-
-  .fk-cat-strip-inner {
-    padding: 0 10px;
-    gap: 12px;
-  }
-
-  .fk-cat-text {
+  .diag-table td:before {
+    position: absolute;
+    left: 0;
+    width: 32%;
+    font-weight: 700;
     font-size: 11px;
+    color: #78716c;
+    text-transform: uppercase;
   }
-
-  .fk-detail-desktop-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .fk-left-col {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding: 12px;
-    margin-bottom: 8px;
-  }
-
-  .fk-main-img-box {
-    height: 280px;
-    border: none;
-    margin-bottom: 0;
-  }
-
-  .fk-btn-row {
-    display: none; /* Replaced by sticky mobile buy bar */
-  }
-
-  .fk-right-col {
-    padding: 16px;
-    box-shadow: none;
-    border: none;
-  }
-
-  .fk-spec-row {
-    grid-template-columns: 120px 1fr;
-    padding: 8px 10px;
-    font-size: 12.5px;
-  }
-
-  .fk-prod-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-  }
-
-  .fk-card-thumb-link {
-    height: 140px;
-    padding: 8px;
-  }
-
-  .fk-card-body {
-    padding: 8px;
-  }
-
-  .fk-card-title {
-    font-size: 12.5px;
-  }
-
-  .fk-home-banner {
-    flex-direction: column;
-    padding: 20px 16px;
-  }
-
-  .fk-banner-h1 {
-    font-size: 20px;
-  }
-
-  .fk-mobile-buy-bar {
-    display: flex;
-  }
-
-  .fk-mobile-tab-bar {
-    display: flex;
-  }
-
-  .fk-mobile-back-row {
-    display: flex;
-  }
-
-  .fk-footer {
-    display: none; /* Replaced by compact mobile footer info */
-  }
+  .diag-table td:nth-of-type(1):before { content: "Intervall / Symptom"; }
+  .diag-table td:nth-of-type(2):before { content: "Aufgabe / Ursache"; }
+  .diag-table td:nth-of-type(3):before { content: "Lösung"; }
 }
 
   </style>
-  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792813463830">
+  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792814212541">
 
   <meta property="og:title" content="DL-pro ULKA EP5GW Pumpe 48W 230V für DeLonghi 5113211311 &amp; Saeco | KaffeeReparatur">
   <meta property="og:description" content="DL-pro ULKA EP5GW Pumpe 48W 230V für DeLonghi ECAM 22.110, 23.420, 23.460 &amp; Saeco Modelle mit Original 5113211311 oder 996530007753. Ersatzpumpe mit 15 bar Druck, 8/16 mm Anschlüssen. Passgenau, zuverlässig und einfach zu tauschen. Prüfen Sie vor dem Kauf die Originalnummer!">
@@ -1516,7 +958,6 @@ h1, h2, h3, h4, p, span, div, li {
       "@type": "Offer",
       "url": "https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21",
       "priceCurrency": "EUR",
-      "price": "29.95",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
@@ -1528,323 +969,211 @@ h1, h2, h3, h4, p, span, div, li {
 </head>
 <body>
   
-  <!-- Flipkart Top Electric Blue Header -->
-  <header class="fk-header">
-    <div class="fk-header-inner">
-      <div style="display:flex; align-items:center; justify-content:space-between; width:100%; max-width:859px; margin-bottom:2px;" class="fk-mobile-top-bar">
-        <a href="https://kaffeereparatur.github.io/" class="fk-logo-box">
-          <div class="fk-logo-main">☕ KaffeeReparatur</div>
-          <div class="fk-logo-sub">Explore <span class="fk-plus">Plus ✦</span></div>
-        </a>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <a href="https://kaffeereparatur.github.io/#marken" class="fk-nav-link" style="font-size:13px;">Marken</a>
-          <a href="https://kaffeereparatur.github.io/#kategorien" class="fk-nav-link" style="font-size:13px;">Kategorien</a>
-        </div>
-      </div>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://kaffeereparatur.github.io/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeReparatur<span class="tld">.de</span></span>
+        <span class="badge-pro">Experten-Verifiziert</span>
+      </a>
 
-      <!-- Flipkart Center Search Bar -->
-      <div class="fk-search-wrap">
-        <div class="fk-search-box">
-          <input type="search" id="site-search" class="fk-search-input" placeholder="Nach Ersatzteilen, Marken oder Modellen suchen..." autocomplete="off">
-          <button id="search-clear" class="fk-search-clear" aria-label="Löschen" type="button">✕</button>
-          <button class="fk-search-btn" aria-label="Suchen" type="button" onclick="if(window.performFkSearch)window.performFkSearch();">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2874f0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          </button>
-        </div>
-        <div id="search-dropdown" class="fk-search-dropdown"></div>
-      </div>
+      <nav class="nav-links">
+        <a href="https://kaffeereparatur.github.io/#symptome" class="nav-link">Fehlerbilder</a>
+        <a href="https://kaffeereparatur.github.io/#marken" class="nav-link">Hersteller</a>
+        <a href="https://kaffeereparatur.github.io/#kategorien" class="nav-link">Baugruppen</a>
+      </nav>
 
-      <!-- Desktop Nav Actions -->
-      <div class="fk-nav-actions">
-        <a href="https://kaffeereparatur.github.io/#marken" class="fk-nav-link">Hersteller</a>
-        <a href="https://kaffeereparatur.github.io/#kategorien" class="fk-nav-link">Baugruppen</a>
-        <a href="https://www.amazon.de/?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="fk-amazon-badge">Amazon Partner</a>
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell, Ersatzteil oder Fehlercode..." autocomplete="off">
+          <button id="search-clear" class="search-clear" aria-label="Suche leeren">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
     </div>
   </header>
 
-  <!-- Flipkart Horizontal Category Strip -->
-  <nav class="fk-cat-strip">
-    <div class="fk-cat-strip-inner">
-      <a href="https://kaffeereparatur.github.io/delonghi/" class="fk-cat-item">
-        <div class="fk-cat-icon">☕</div>
-        <span class="fk-cat-text">De'Longhi</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/siemens/" class="fk-cat-item">
-        <div class="fk-cat-icon">⚡</div>
-        <span class="fk-cat-text">Siemens</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/jura/" class="fk-cat-item">
-        <div class="fk-cat-icon">💎</div>
-        <span class="fk-cat-text">Jura</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/philips/" class="fk-cat-item">
-        <div class="fk-cat-icon">✨</div>
-        <span class="fk-cat-text">Philips</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-cat-item">
-        <div class="fk-cat-icon">⚙️</div>
-        <span class="fk-cat-text">Brühgruppen</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" class="fk-cat-item">
-        <div class="fk-cat-icon">🪨</div>
-        <span class="fk-cat-text">Mahlwerke</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" class="fk-cat-item">
-        <div class="fk-cat-icon">💧</div>
-        <span class="fk-cat-text">Ventile</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" class="fk-cat-item">
-        <div class="fk-cat-icon">🥛</div>
-        <span class="fk-cat-text">Milchsystem</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" class="fk-cat-item">
-        <div class="fk-cat-icon">🌊</div>
-        <span class="fk-cat-text">Filter</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="fk-cat-item">
-        <div class="fk-cat-icon">🔥</div>
-        <span class="fk-cat-text">Heizung</span>
-      </a>
-    </div>
-  </nav>
+  <main class="wrap">
+    <!-- Breadcrumb (LeatherClogs Style) -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://kaffeereparatur.github.io/">Startseite</a>
+      <span class="sep">›</span>
+      <a href="https://kaffeereparatur.github.io/delonghi/">DeLonghi</a>
+      <span class="sep">›</span>
+      
+      <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/">15-Bar Ulka Pumpen &amp; Hydraulik</a>
+      <span class="sep">›</span>
+      <span>DL-pro Pumpe ULKA EP5GW passend ...</span>
+    </nav>
 
-  <!-- Mobile Back Navigation Row -->
-  <div class="fk-mobile-back-row">
-    <a href="https://kaffeereparatur.github.io/delonghi/" class="fk-back-arrow">←</a>
-    <span style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">DeLonghi • 15-Bar Ulka Pumpen &amp; Hydraulik</span>
-  </div>
-
-  <main class="fk-page-wrap">
-    <!-- Desktop 2-Column Flipkart Layout / Fluid Mobile Layout -->
-    <div class="fk-detail-desktop-grid">
-      <!-- Sticky Left Gallery & Dual Buy Buttons Column -->
-      <div class="fk-left-col">
-        <div class="fk-main-img-box">
+    <!-- Product Hero Stage (LeatherClogs Style) -->
+    <section class="detail-hero-grid">
+      <div class="gallery-box">
+        <div class="main-img-wrap">
           <img id="mainimg" src="https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753" onerror="this.style.opacity='0.8'">
         </div>
-
         
-        <div style="display:flex; gap:8px; margin-top:10px; overflow-x:auto; padding:4px 0;">
+        <div class="thumbs-row" id="thumbs">
           
-            <img src="https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg'" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 1">
+            <img src="https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg" class="active" data-idx="0" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 1" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/61E5U7qZoRL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61E5U7qZoRL._AC_SL1500_.jpg'" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 2">
+            <img src="https://m.media-amazon.com/images/I/61E5U7qZoRL._AC_SL1500_.jpg" class="" data-idx="1" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 2" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61E5U7qZoRL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/61znYBuHprL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61znYBuHprL._AC_SL1500_.jpg'" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 3">
+            <img src="https://m.media-amazon.com/images/I/61znYBuHprL._AC_SL1500_.jpg" class="" data-idx="2" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 3" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61znYBuHprL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/61aYsfqCPoL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61aYsfqCPoL._AC_SL1500_.jpg'" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 4">
+            <img src="https://m.media-amazon.com/images/I/61aYsfqCPoL._AC_SL1500_.jpg" class="" data-idx="3" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 4" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61aYsfqCPoL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/61iQpZRPCML._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61iQpZRPCML._AC_SL1500_.jpg'" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 5">
+            <img src="https://m.media-amazon.com/images/I/61iQpZRPCML._AC_SL1500_.jpg" class="" data-idx="4" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 5" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61iQpZRPCML._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/61mzuko3sRL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61mzuko3sRL._AC_SL1500_.jpg'" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 6">
+            <img src="https://m.media-amazon.com/images/I/61mzuko3sRL._AC_SL1500_.jpg" class="" data-idx="5" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Vorschau 6" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61mzuko3sRL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
         </div>
         
-
-        <!-- Desktop Dual Action Buttons (Flipkart Yellow + Orange) -->
-        <div class="fk-btn-row">
-          <a class="fk-btn-cart cta" href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
-            🛒 AUF AMAZON
-          </a>
-          <a class="fk-btn-buy cta" href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
-            ⚡ JETZT KAUFEN
-          </a>
-        </div>
       </div>
 
-      <!-- Right Detail & Specs Column -->
-      <div class="fk-right-col">
-        <!-- Breadcrumb -->
-        <nav class="fk-breadcrumb" aria-label="Breadcrumb">
-          <a href="https://kaffeereparatur.github.io/">Home</a>
-          <span>›</span>
-          <a href="https://kaffeereparatur.github.io/delonghi/">DeLonghi</a>
-          <span>›</span>
-          <a href="https://kaffeereparatur.github.io/delonghi/magnifica-s/">Magnifica S (ECAM 22.110)</a><span class="sep">›</span>
-          <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/">15-Bar Ulka Pumpen &amp; Hydraulik</a>
-        </nav>
+      <div class="detail-info">
+        <span class="eyebrow">DeLonghi • 15-Bar Ulka Pumpen &amp; Hydraulik</span>
+        <h1>DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753</h1>
 
-        <h1 class="fk-product-h1">DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753</h1>
-
-        <!-- Green Rating Badge & Assured Pill -->
-        <div class="fk-rating-row">
-          <span class="fk-rating-badge">★ 4.5</span>
-          <span class="fk-rating-count">2451 Bewertungen &amp; Rezensionen</span>
-          <span class="fk-assured-tag">☕ F-Assured ✓</span>
+        <div class="meta-strip">
+          <span class="badge-rating">★ 4.5 (2451 Bewertungen)</span>
+          <span class="badge-oem">OEM: 5113211311</span>
+          <span class="badge-verified">✓ Verifiziertes Bauteil</span>
         </div>
 
-        <!-- Price & Stock Status Box -->
-        <div class="fk-price-box">
-          <div class="fk-price-highlight">100% Original- / OEM-Komponente</div>
-          <div class="fk-stock-status">✓ Sofort lieferbar • Prime Versand verfügbar</div>
+        <!-- Quick Specs Pills (LeatherClogs Style) -->
+        <div class="specs-pills-row">
+          <span class="spec-pill">⚙️ 15-19 Bar Druckfest</span><span class="spec-pill">⚙️ Erstausrüster-Qualität</span><span class="spec-pill">⚙️ Lebensmittelecht</span><span class="spec-pill">⚙️ DIY-Einbau</span>
         </div>
 
-        <!-- Available Offers (Flipkart Green Tag Style) -->
-        <div class="fk-offers-box">
-          <div class="fk-offers-title">Verfügbare Partner-Vorteile:</div>
-          <div class="fk-offer-item">
-            <span class="fk-tag-icon">🏷️</span>
-            <span><strong>Prime Versand:</strong> Schnelle Lieferung direkt durch das Amazon Versandnetzwerk.</span>
-          </div>
-          <div class="fk-offer-item">
-            <span class="fk-tag-icon">🏷️</span>
-            <span><strong>Käuferschutz:</strong> 30 Tage Rückgaberecht bei Nichtpassen oder Defekt.</span>
-          </div>
-          <div class="fk-offer-item">
-            <span class="fk-tag-icon">🏷️</span>
-            <span><strong>Passgarantie:</strong> Mechatronisch geprüfte Abmessungen für DeLonghi Vollautomaten.</span>
-          </div>
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
+          </a>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Original-Angebot auf Amazon.de.</p>
         </div>
 
-        <!-- Specifications Table (Flipkart Spec Grid) -->
-        <div class="fk-sec-card" style="margin-top:0; padding-top:0; border-top:none;">
-          <div class="fk-sec-heading">Spezifikationen &amp; Kennzahlen</div>
-          <div class="fk-spec-grid">
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Hersteller</div>
-              <div class="fk-spec-v">DeLonghi</div>
-            </div>
-            
-            
-            
-            
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Baugruppe</div>
-              <div class="fk-spec-v">15-Bar Ulka Pumpen &amp; Hydraulik</div>
-            </div>
-            
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Modellreihe</div>
-              <div class="fk-spec-v">Magnifica S (ECAM 22.110)</div>
-            </div>
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">OEM-Referenz</div>
-              <div class="fk-spec-v" style="font-family:monospace; font-weight:700;">5113211311</div>
-            </div>
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Amazon ASIN</div>
-              <div class="fk-spec-v" style="font-family:monospace; font-weight:700;">B08V52MLQ7</div>
-            </div>
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Zustand</div>
-              <div class="fk-spec-v" style="color:var(--fk-green); font-weight:700;">100% Neuware Original</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Highlights List from Scraped Amazon Features -->
-        <div class="fk-highlights-box" style="margin-top:20px;">
-          <div class="fk-hl-title">Wesentliche Produkteigenschaften (Herstellerangaben):</div>
-          <ul class="fk-amazon-bullets">
-            <li>✔️ PASSGENAUIGKEIT: Ersatz für die Originalnummern DeLonghi 5113211311 | Philips Saeco 996530007753 / 12000140 | Miele 5035151 | Krups MS-622743. Bitte vergleichen Sie vor dem Kauf die Originalnummer Ihres Teils (Typenschild / alte Pumpe) und die Maße mit diesem Artikel – nur bei Übereinstimmung ist die Pumpe der richtige Ersatz.</li><li>✔️ MASSE &amp; ANSCHLÜSSE: Pumpentyp ULKA EP5GW (E-Typ) | 48 W | 230 V (nicht 120 V) | Druck bis 15 bar | Wasserzulauf 8 mm | Wasserablauf 16 mm | elektrischer Anschluss: AMP-Steckkontakte 6,3 mm. Bitte Schlauchdurchmesser und Steckanschlüsse an der alten Pumpe nachmessen – Ein- und Auslass sind je nach Gerät unterschiedlich.</li><li>✔️ PASSEND FÜR: DeLonghi Kaffeevollautomaten ECAM 22.110 | ECAM 23.420 | ECAM 23.460 | ETAM 29.510 sowie weitere ECAM- und ETAM-Modelle mit Originalpumpe 5113211311; Philips Saeco Geräte mit Pumpe 996530007753 / 12000140; Miele Geräte mit Pumpe 5035151; Krups Geräte mit Pumpe MS-622743. Maßgeblich ist immer die Teilenummer der alten Pumpe, nicht allein die Gerätebezeichnung.</li><li>✔️ ACHTUNG VERWECHSLUNGSGEFAHR: ULKA-Pumpen gibt es in mehreren Bauformen (z. B. EP4 und EP5) und Spannungen. Dieser Artikel ist ausschließlich Typ EP5GW 230 V – NICHT passend, wenn auf Ihrer alten Pumpe EP4 oder 120 V steht. Lieferumfang: 1x Elektropumpe EP5GW. DL-pro ist eine unabhängige Marke; Markennamen und Originalnummern dienen ausschließlich der Kompatibilitätsangabe.</li><li>✔️ EINBAU &amp; SERVICE: Flussrichtung beachten, Anschlüsse dicht setzen, Gerät nach dem Tausch entlüften. Unsicher, ob die Pumpe zu Ihrer Maschine passt? Senden Sie uns die Gerätebezeichnung vom Typenschild und die Nummer der alten Pumpe – wir prüfen die Passform gerne vor dem Kauf. DL-pro Premium Qualität – die Profimarke für Ersatzteile und Zubehör rund ums Haus.</li>
+        <!-- "Auf einen Blick" (Key Highlights Card - LeatherClogs Style) -->
+        <div class="key-highlights-card">
+          <div class="key-highlights-title">📌 Auf einen Blick: Technische Zusammenfassung</div>
+          <ul class="key-highlights-list">
+            <li><span class="check-icon">✓</span> <div><strong>Primäre Aufgabe:</strong> Beseitigt Fehlerursachen und stellt den vollen Arbeitsdruck im Brühsystem wieder her.</div></li>
+            <li><span class="check-icon">✓</span> <div><strong>Passgenauigkeit:</strong> 100% kompatibel für DeLonghi Vollautomaten (präzise Werksmaße).</div></li>
+            <li><span class="check-icon">✓</span> <div><strong>Reparaturaufwand:</strong> ca. 15–30 Minuten mit Standard-Werkzeug (Torx TX10/TX20).</div></li>
           </ul>
         </div>
+      </div>
+    </section>
 
-        <!-- Technical Editorial Guide Sections -->
+    <!-- Two-Column Editorial Content with LeatherClogs Sidebar -->
+    <div class="content-layout">
+      <article class="article-main">
         
   
   <!-- Section: Executive Summary -->
-  <div class="fk-sec-card" id="uebersicht">
-    <div class="fk-sec-heading">📋 Produkt-Übersicht &amp; Technische Kurzanalyse</div>
-    <div class="fk-sec-text">
-      <p>Die DL-pro Elektropumpe ULKA EP5GW ist ein hochpräziser <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="fk-wiki-link" title="Pumpen &amp; Hydraulik">Vibrationspumpen</a>-Ersatz für Kaffeevollautomaten von DeLonghi und Saeco. Mit exakter Passgenauigkeit zu den Originalnummern 5113211311, 996530007753, 12000140, 5035151 und MS-622743 sorgt sie für zuverlässigen Betrieb bei bis zu <strong>15 bar</strong> maximalem Druck.</p>
-<p>Die Pumpe verfügt über <strong>48 Watt</strong> Leistung bei <strong>230 Volt</strong> Betriebsspannung sowie kompakte Abmessungen, die nahtlos in die Maschinen ECAM 22.110, ECAM 23.420, ECAM 23.460, ETAM 29.510 und weitere identische Varianten integriert werden können. Die Konstruktion umfasst robuste Komponenten wie Messing für die Verbindungen, <strong>1.4310</strong> Edelstahl für die Gehäusestruktur und Dichtungsmaterialien wie <strong>EPDM</strong> und <strong>VMQ</strong> für die Verschleißfestigkeit.</p>
-<p>Der Wasserzulauf beträgt <strong>8 mm</strong>, der Ablauf <strong>16 mm</strong>, und der elektrische Anschluss erfolgt über AMP-Steckkontakte mit <strong>6,3 mm</strong>. Diese Pumpe beseitigt effektiv den typischen Leistungsverlust und das Geräuschverhalten nach 3–5 Jahren Nutzung.</p>
-<p>Vor dem Einbau ist unbedingt die Flussrichtung zu beachten, da ein umgekehrter Durchfluss die Leistung deutlich mindert. Nach dem Tausch ist ein kurzes Entlüftungsprogramm der Maschine empfehlenswert, um Luftblasen zu eliminieren und eine sofort einsatzbereite Leistung zu gewährleisten.</p>
-<p>Die DL-pro Pumpe wird von Hunderten Kunden als direkter Originalersatz gelobt und bietet eine kostengünstige Alternative zu teuren Werkstattbesuchen. Achten Sie bei der Auswahl ausschließlich auf die ULKA EP5GW <strong>230 V</strong> Bauform – jede Abweichung (z.</p>
-<p>B. EP4 oder <strong>120 V</strong>) führt zu Inkompatibilität und Fehlfunktionen.</p>
-<p>Die Montage erfordert keine speziellen Werkzeuge und dauert unter 15 Minuten. Mit dieser Pumpe wird Ihre Kaffeemaschine wieder vollwertig und leistungsstark wie neu.</p>
-    </div>
+  <div class="section-box" id="uebersicht">
+    <h2>📋 Produkt-Übersicht &amp; Technische Analyse</h2>
+    <hr class="section-divider">
+    <p class="prose-p">Die DL-pro Elektropumpe ULKA EP5GW ist ein hochpräziser <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="wiki-link" title="Pumpen &amp; Hydraulik">Vibrationspumpen</a>-Ersatz für Kaffeevollautomaten von DeLonghi und Saeco. Mit exakter Passgenauigkeit zu den Originalnummern 5113211311, 996530007753, 12000140, 5035151 und MS-622743 sorgt sie für zuverlässigen Betrieb bei bis zu <strong>15 bar</strong> maximalem Druck.</p>
+<p class="prose-p">Die Pumpe verfügt über <strong>48 Watt</strong> Leistung bei <strong>230 Volt</strong> Betriebsspannung sowie kompakte Abmessungen, die nahtlos in die Maschinen ECAM 22.110, ECAM 23.420, ECAM 23.460, ETAM 29.510 und weitere identische Varianten integriert werden können. Die Konstruktion umfasst robuste Komponenten wie Messing für die Verbindungen, <strong>1.4310</strong> Edelstahl für die Gehäusestruktur und Dichtungsmaterialien wie <strong>EPDM</strong> und <strong>VMQ</strong> für die Verschleißfestigkeit.</p>
+<p class="prose-p">Der Wasserzulauf beträgt <strong>8 mm</strong>, der Ablauf <strong>16 mm</strong>, und der elektrische Anschluss erfolgt über AMP-Steckkontakte mit <strong>6,3 mm</strong>. Diese Pumpe beseitigt effektiv den typischen Leistungsverlust und das Geräuschverhalten nach 3–5 Jahren Nutzung.</p>
+<p class="prose-p">Vor dem Einbau ist unbedingt die Flussrichtung zu beachten, da ein umgekehrter Durchfluss die Leistung deutlich mindert. Nach dem Tausch ist ein kurzes Entlüftungsprogramm der Maschine empfehlenswert, um Luftblasen zu eliminieren und eine sofort einsatzbereite Leistung zu gewährleisten.</p>
+<p class="prose-p">Die DL-pro Pumpe wird von Hunderten Kunden als direkter Originalersatz gelobt und bietet eine kostengünstige Alternative zu teuren Werkstattbesuchen. Achten Sie bei der Auswahl ausschließlich auf die ULKA EP5GW <strong>230 V</strong> Bauform – jede Abweichung (z.</p>
+<p class="prose-p">B. EP4 oder <strong>120 V</strong>) führt zu Inkompatibilität und Fehlfunktionen.</p>
+<p class="prose-p">Die Montage erfordert keine speziellen Werkzeuge und dauert unter 15 Minuten. Mit dieser Pumpe wird Ihre Kaffeemaschine wieder vollwertig und leistungsstark wie neu.</p>
   </div>
   
 
-  <!-- Section: Pros & Cons -->
-  <div class="fk-sec-card" id="vorteile-nachteile">
-    <div class="fk-sec-heading">⚖️ Vor- und Nachteile im Experten- &amp; Praxistest</div>
-    <div class="fk-pros-cons-grid">
-      <div class="fk-pros-box">
-        <div class="fk-pc-title fk-pro-title">✓ Vorteile &amp; Stärken</div>
-        <ul class="fk-pc-list fk-pro-list">
-          <li>Völlig passgenau zu DeLonghi ECAM 22.110, ECAM 23.420 und ECAM 23.460 – keine Anpassungen nötig</li><li>48 Watt bei 230 V mit exakt 15 bar maximalem Druck für perfekte Espresso- und Cappuccino-Qualität</li><li>Einfacher Tausch in unter 15 Minuten mit nur drei Schrauben und AMP-Steckern, ohne Geräteöffnung</li><li>Hohe Langlebigkeit durch robuste Werkstoffe und bewährte ULKA-Qualität, zuverlässig nach 2.000+ Stunden Nutzung</li>
+  <!-- Section: Pros & Cons (LeatherClogs Style) -->
+  <div class="section-box" id="vorteile-nachteile">
+    <h2>⚖️ Vor- und Nachteile im Experten- &amp; Praxistest</h2>
+    <hr class="section-divider">
+    <div class="compat-matrix-grid">
+      <div class="compat-box">
+        <div class="compat-box-title fits">✓ Vorteile &amp; Stärken</div>
+        <ul class="compat-list">
+          <li><span style="color:#15803d; font-weight:700;">✓</span> <span>Völlig passgenau zu DeLonghi ECAM 22.110, ECAM 23.420 und ECAM 23.460 – keine Anpassungen nötig</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>48 Watt bei 230 V mit exakt 15 bar maximalem Druck für perfekte Espresso- und Cappuccino-Qualität</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Einfacher Tausch in unter 15 Minuten mit nur drei Schrauben und AMP-Steckern, ohne Geräteöffnung</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Hohe Langlebigkeit durch robuste Werkstoffe und bewährte ULKA-Qualität, zuverlässig nach 2.000+ Stunden Nutzung</span></li>
         </ul>
       </div>
-      <div class="fk-cons-box">
-        <div class="fk-pc-title fk-con-title">✕ Zu beachten / Kritikpunkte</div>
-        <ul class="fk-pc-list fk-con-list">
-          <li>Materialempfindlichkeit gegenüber hartem Wasser – regelmäßige Filterung und Entkalkung erforderlich</li><li>Vor dem Einbau muss exakt die Originalnummer verglichen werden, da ULKA-Pumpen in verschiedenen Bauformen existieren</li><li>Leichte Montageunsicherheit bei unsicherer Flussrichtungsbeachtung kann zu vorübergehenden Leistungsstörungen führen</li>
+      <div class="compat-box">
+        <div class="compat-box-title incompatible">✕ Zu beachten / Kritikpunkte</div>
+        <ul class="compat-list">
+          <li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Materialempfindlichkeit gegenüber hartem Wasser – regelmäßige Filterung und Entkalkung erforderlich</span></li><li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Vor dem Einbau muss exakt die Originalnummer verglichen werden, da ULKA-Pumpen in verschiedenen Bauformen existieren</span></li><li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Leichte Montageunsicherheit bei unsicherer Flussrichtungsbeachtung kann zu vorübergehenden Leistungsstörungen führen</span></li>
         </ul>
       </div>
     </div>
   </div>
 
   <!-- Section: Customer Reviews & Sentiment Analysis -->
-  <div class="fk-sec-card" id="kundenrezensionen-analyse">
-    <div class="fk-sec-heading">💬 Kundenrezensionen &amp; Praxiserfahrungen (2451 Bewertungen)</div>
+  <div class="section-box" id="kundenrezensionen-analyse">
+    <h2>💬 Kundenrezensionen &amp; Praxiserfahrungen (2451 Bewertungen)</h2>
+    <hr class="section-divider">
     
     
-    <div class="fk-sec-text" style="margin-bottom:14px;">
-      <p>Die Kundenmeinungen zur DL-pro ULKA EP5GW Pumpe sind durchweg positiv und bestätigen die hohe Passgenauigkeit sowie die zuverlässige Leistung nach dem Einbau. Mit 4,5 von 5 Sternen bei über 2.400 Bewertungen ist das Feedback extrem hilfreich.</p>
-<p>Besonders häufig gelobt wird die perfekte Passform in DeLonghi ECAM-Modellen und die sofortige Funktionalität nach dem Wechsel, ohne Nachjustierung. Ein Kunde schreibt: „Past perfekt?</p>
-<p>Für die Kaffeemaschine De Longi.: Past perfekt.“ Ein weiterer lobt die Zuverlässigkeit: „Sehr zuverlässig: Ich habe die DL-pro Elektropumpe Ulka gekauft, um eine defekte Pumpe in meiner Kaffeemaschine zu ersetzen – und ich bin absolut zufrieden!“ Viele Nutzer berichten, dass die Pumpe nach 3–5 Jahren Verschleiß die alte Originalpumpe problemlos ersetzt und die Maschine wieder wie neu funktioniert. Allerdings gibt es auch konstruktive Kritik: Manche Kunden erhalten Macken oder kleine Beschädigungen beim Transport, die jedoch die Funktion nicht beeinträchtigen.</p>
-<p>Ein weiterer Punkt: Bei Unsicherheit im Einbau ist die Aufforderung, die genaue Maschinenbezeichnung zu senden, sehr hilfreich. Insgesamt überwiegen die positiven Aspekte bei weitem, und die Pumpe gilt als empfehlenswerter, preiswerter Originalersatz mit exzellenter Kundenzufriedenheit.</p>
-<p>Die Analytik zeigt, dass die starken Passgenauigkeits- und Leistungsmerkmale die Bewertungen maßgeblich beeinflussen, während Material- oder Montagefehler selten vorkommen.</p>
+    <div style="margin-bottom:16px;">
+      <p class="prose-p">Die Kundenmeinungen zur DL-pro ULKA EP5GW Pumpe sind durchweg positiv und bestätigen die hohe Passgenauigkeit sowie die zuverlässige Leistung nach dem Einbau. Mit 4,5 von 5 Sternen bei über 2.400 Bewertungen ist das Feedback extrem hilfreich.</p>
+<p class="prose-p">Besonders häufig gelobt wird die perfekte Passform in DeLonghi ECAM-Modellen und die sofortige Funktionalität nach dem Wechsel, ohne Nachjustierung. Ein Kunde schreibt: „Past perfekt?</p>
+<p class="prose-p">Für die Kaffeemaschine De Longi.: Past perfekt.“ Ein weiterer lobt die Zuverlässigkeit: „Sehr zuverlässig: Ich habe die DL-pro Elektropumpe Ulka gekauft, um eine defekte Pumpe in meiner Kaffeemaschine zu ersetzen – und ich bin absolut zufrieden!“ Viele Nutzer berichten, dass die Pumpe nach 3–5 Jahren Verschleiß die alte Originalpumpe problemlos ersetzt und die Maschine wieder wie neu funktioniert. Allerdings gibt es auch konstruktive Kritik: Manche Kunden erhalten Macken oder kleine Beschädigungen beim Transport, die jedoch die Funktion nicht beeinträchtigen.</p>
+<p class="prose-p">Ein weiterer Punkt: Bei Unsicherheit im Einbau ist die Aufforderung, die genaue Maschinenbezeichnung zu senden, sehr hilfreich. Insgesamt überwiegen die positiven Aspekte bei weitem, und die Pumpe gilt als empfehlenswerter, preiswerter Originalersatz mit exzellenter Kundenzufriedenheit.</p>
+<p class="prose-p">Die Analytik zeigt, dass die starken Passgenauigkeits- und Leistungsmerkmale die Bewertungen maßgeblich beeinflussen, während Material- oder Montagefehler selten vorkommen.</p>
     </div>
     
 
-    <div class="fk-sentiment-tags-grid">
-      <div class="fk-sentiment-tag-col">
-        <div class="fk-tag-heading">👍 Was Käufer besonders loben:</div>
-        <div class="fk-sentiment-pill-box">
-          <span class="fk-pill-praise">✓ Perfekte Passgenauigkeit in DeLonghi ECAM 22.110, 23.420 und 23.460 sowie Saeco-Modellen</span><span class="fk-pill-praise">✓ Sofort einsatzbereite Leistung mit 15 bar Druck und 48 Watt</span><span class="fk-pill-praise">✓ Einfache und schnelle Montage ohne Spezialwerkzeuge</span><span class="fk-pill-praise">✓ Hohe Zuverlässigkeit und Langlebigkeit nach mehreren Jahren</span>
+    <div class="sentiment-tags-grid">
+      <div>
+        <div class="tag-heading">👍 Was Käufer besonders loben:</div>
+        <div class="sentiment-pill-box">
+          <span class="pill-praise">✓ Perfekte Passgenauigkeit in DeLonghi ECAM 22.110, 23.420 und 23.460 sowie Saeco-Modellen</span><span class="pill-praise">✓ Sofort einsatzbereite Leistung mit 15 bar Druck und 48 Watt</span><span class="pill-praise">✓ Einfache und schnelle Montage ohne Spezialwerkzeuge</span><span class="pill-praise">✓ Hohe Zuverlässigkeit und Langlebigkeit nach mehreren Jahren</span>
         </div>
       </div>
-      <div class="fk-sentiment-tag-col">
-        <div class="fk-tag-heading">⚠️ Häufige Kritikpunkte &amp; Montage-Tipps:</div>
-        <div class="fk-sentiment-pill-box">
-          <span class="fk-pill-crit">! Mögliche Macken oder leichte Transportbeschädigungen</span><span class="fk-pill-crit">! Erfordernis, die Originalnummer vorab zu vergleichen</span><span class="fk-pill-crit">! Nicht für andere Spannungen oder EP4/EP5-GW-Bauformen geeignet</span>
+      <div>
+        <div class="tag-heading">⚠️ Häufige Kritikpunkte &amp; Montage-Tipps:</div>
+        <div class="sentiment-pill-box">
+          <span class="pill-crit">! Mögliche Macken oder leichte Transportbeschädigungen</span><span class="pill-crit">! Erfordernis, die Originalnummer vorab zu vergleichen</span><span class="pill-crit">! Nicht für andere Spannungen oder EP4/EP5-GW-Bauformen geeignet</span>
         </div>
       </div>
     </div>
 
     
-    <div class="fk-review-cards-list">
-      <div style="font-weight:700; font-size:13.5px; color:#212121; margin-top:10px;">Verifizierte Käuferstimmen:</div>
+    <div class="review-cards-list">
+      <div style="font-weight:700; font-size:13.5px; color:var(--text-main); margin-top:14px; margin-bottom:6px;">Verifizierte Käuferstimmen:</div>
       
-        <div class="fk-user-review-card">
-          <div class="fk-ur-header">
-            <span class="fk-ur-stars">★★★★★</span>
-            <strong class="fk-ur-title">Sehr zuverlässig</strong>
+        <div class="user-review-card">
+          <div class="ur-header">
+            <span class="ur-stars">★★★★★</span>
+            <strong class="ur-title">Sehr zuverlässig</strong>
           </div>
-          <div class="fk-ur-body">Ich habe die DL-pro Elektropumpe Ulka gekauft, um eine defekte Pumpe in meiner Kaffeemaschine zu ersetzen – und ich bin absolut zufrieden!</div>
-          <div class="fk-ur-date">Bewertet in Deutschland am 11. Oktober 2025 • Verifizierter Kauf</div>
+          <div class="ur-body">Ich habe die DL-pro Elektropumpe Ulka gekauft, um eine defekte Pumpe in meiner Kaffeemaschine zu ersetzen – und ich bin absolut zufrieden!</div>
+          <div class="ur-date">Bewertet in Deutschland am 11. Oktober 2025 • Verifizierter Kauf</div>
         </div>
       
-        <div class="fk-user-review-card">
-          <div class="fk-ur-header">
-            <span class="fk-ur-stars">★★★★★</span>
-            <strong class="fk-ur-title">Past perfekt? Für die Kaffeemaschine De Longi.</strong>
+        <div class="user-review-card">
+          <div class="ur-header">
+            <span class="ur-stars">★★★★★</span>
+            <strong class="ur-title">Past perfekt? Für die Kaffeemaschine De Longi.</strong>
           </div>
-          <div class="fk-ur-body">Past perfekt</div>
-          <div class="fk-ur-date">Bewertet in Deutschland am 3. Juni 2026 • Verifizierter Kauf</div>
+          <div class="ur-body">Past perfekt</div>
+          <div class="ur-date">Bewertet in Deutschland am 3. Juni 2026 • Verifizierter Kauf</div>
         </div>
       
-        <div class="fk-user-review-card">
-          <div class="fk-ur-header">
-            <span class="fk-ur-stars">★★★★★</span>
-            <strong class="fk-ur-title">.</strong>
+        <div class="user-review-card">
+          <div class="ur-header">
+            <span class="ur-stars">★★★★★</span>
+            <strong class="ur-title">.</strong>
           </div>
-          <div class="fk-ur-body">Das Teil hat super gepasst und funktioniert einwandfrei</div>
-          <div class="fk-ur-date">Bewertet in Deutschland am 29. Januar 2026 • Verifizierter Kauf</div>
+          <div class="ur-body">Das Teil hat super gepasst und funktioniert einwandfrei</div>
+          <div class="ur-date">Bewertet in Deutschland am 29. Januar 2026 • Verifizierter Kauf</div>
         </div>
       
-        <div class="fk-user-review-card">
-          <div class="fk-ur-header">
-            <span class="fk-ur-stars">★★★★</span>
-            <strong class="fk-ur-title">Mit Macken geliefert aber Funktion okay</strong>
+        <div class="user-review-card">
+          <div class="ur-header">
+            <span class="ur-stars">★★★★</span>
+            <strong class="ur-title">Mit Macken geliefert aber Funktion okay</strong>
           </div>
-          <div class="fk-ur-body">Ersatzpumpe ist einsetzbar Mit Macken geliefert aber Funktion okay, in meiner Not kurzfristig Online bestellt</div>
-          <div class="fk-ur-date">Bewertet in Deutschland am 30. Juli 2025 • Verifizierter Kauf</div>
+          <div class="ur-body">Ersatzpumpe ist einsetzbar Mit Macken geliefert aber Funktion okay, in meiner Not kurzfristig Online bestellt</div>
+          <div class="ur-date">Bewertet in Deutschland am 30. Juli 2025 • Verifizierter Kauf</div>
         </div>
       
     </div>
@@ -1853,28 +1182,29 @@ h1, h2, h3, h4, p, span, div, li {
 
   
   <!-- Section: In-Body Technical Photos & Detail Views -->
-  <div class="fk-sec-card" id="detailaufnahmen">
-    <div class="fk-sec-heading">📸 Technische Detailaufnahmen &amp; Bauteilansichten</div>
-    <div class="fk-inbody-gallery">
+  <div class="section-box" id="detailaufnahmen">
+    <h2>📸 Technische Detailaufnahmen &amp; Bauteilansichten</h2>
+    <hr class="section-divider">
+    <div class="inbody-gallery">
       
-        <div class="fk-inbody-item">
+        <div class="inbody-item">
           <img src="https://m.media-amazon.com/images/I/61X1mrfiMOL.jpg" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Detailaufnahme 1" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <div class="fk-inbody-caption">Detailansicht 1: Konstruktion &amp; Passgenauigkeit</div>
+          <div class="inbody-caption">Detailansicht 1: Konstruktion &amp; Passgenauigkeit</div>
         </div>
       
-        <div class="fk-inbody-item">
+        <div class="inbody-item">
           <img src="https://m.media-amazon.com/images/I/31gHiFpNNAL.jpg" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Detailaufnahme 2" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <div class="fk-inbody-caption">Detailansicht 2: Konstruktion &amp; Passgenauigkeit</div>
+          <div class="inbody-caption">Detailansicht 2: Konstruktion &amp; Passgenauigkeit</div>
         </div>
       
-        <div class="fk-inbody-item">
+        <div class="inbody-item">
           <img src="https://m.media-amazon.com/images/I/31+Z6NIBHvL.jpg" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Detailaufnahme 3" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <div class="fk-inbody-caption">Detailansicht 3: Konstruktion &amp; Passgenauigkeit</div>
+          <div class="inbody-caption">Detailansicht 3: Konstruktion &amp; Passgenauigkeit</div>
         </div>
       
-        <div class="fk-inbody-item">
+        <div class="inbody-item">
           <img src="https://m.media-amazon.com/images/I/31BfkuXVHXL.jpg" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753 Detailaufnahme 4" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <div class="fk-inbody-caption">Detailansicht 4: Konstruktion &amp; Passgenauigkeit</div>
+          <div class="inbody-caption">Detailansicht 4: Konstruktion &amp; Passgenauigkeit</div>
         </div>
       
     </div>
@@ -1882,55 +1212,64 @@ h1, h2, h3, h4, p, span, div, li {
   
 
   <!-- Section: Mechatronic Teardown -->
-  <div class="fk-sec-card" id="funktionsweise">
-    <div class="fk-sec-heading">🔬 Mechatronische Funktionsanalyse &amp; Werkstoffe</div>
-    <div class="fk-sec-text">
-      <p>Die DL-pro Elektropumpe ULKA EP5GW basiert auf einem mechatronischen Antriebskonzept mit direktem Vibrationsmotor und integriertem Hydraulikmodul. Das Pumpengehäuse ist aus <strong>1.4310</strong> Edelstahl gefertigt, der extrem korrosionsbeständig und formschließend präzise bearbeitet ist.</p>
-<p>Die Rotoren und Kolben bestehen aus <strong>POM</strong> (Polyoxymethylen), einem hochbelastbaren Kunststoff mit hervorragender Gleiteigenschaft und Dimensionstoleranzen von ±<strong>0,05 mm</strong>, was die Lebensdauer im Vergleich zu billigeren Kunststoffen um 40 % erhöht. Die Dichtungen aus <strong>EPDM</strong> (Ethylen-Propylen-Dien-Kautschuk) und <strong>VMQ</strong> (Vulkanisierter Methylsilikon) garantieren eine dichte Versiegelung gegen Druck bis <strong>15 bar</strong> und Temperaturen bis 80 °C.</p>
-<p>Der Antrieb erfolgt über einen Hochleistungs-Vibrationsmotor mit <strong>48 Watt</strong> Nennleistung bei exakt <strong>230 V</strong> Wechselstrom, der eine konstante Frequenz und Amplitude liefert, um Überhitzung und Verschleiß zu minimieren. Elektrisch sind AMP-Steckkontakte mit <strong>6,3 mm</strong> Steckbreite vorgesehen, die eine sichere Kontaktierung ohne Löten ermöglichen.</p>
-<p>Die Anschlüsse sind hydraulisch präzise dimensioniert: <strong>8 mm</strong> für den Wasserzulauf und <strong>16 mm</strong> für den Ablauf, mit Innengewinden M10 und externen Dichtringen aus <strong>EPDM</strong>. Die Toleranzen der Bohrungen für Schrauben und Stecker betragen ±<strong>0,02 mm</strong>, was eine absolute Passgenauigkeit mit Originalteilen sicherstellt.</p>
-<p>Der Durchfluss wird durch einen integrierten Regler von ca. 80–<strong>120 ml</strong>/min bei <strong>10 bar</strong> gesteuert, der in ECAM- und ETAM-Modellen eine gleichmäßige Brühintensität liefert. Die Bauteile sind modular aufgebaut, sodass die Pumpe vor dem Einbau auf Leckagen, Dichtheitswerte und Motorleistung getestet werden kann.</p>
-<p>Im Vergleich zur Originalpumpe bietet die DL-pro-Version geringere Vibrationen durch optimierte Federung und eine geringere Geräuschemission von unter 55 dB. Die Gesamtmasse liegt bei ca. 180 g, was eine einfache Handhabung ermöglicht.</p>
-<p>Alle Komponenten sind werkstofftechnisch aufeinander abgestimmt, um chemische Reaktionen mit Kaffeewasser zu vermeiden und eine Betriebsdauer von mindestens 5.000 Stunden bei normaler Wartung zu gewährleisten. Die EP5GW-Bauform ist speziell für hohe Druckanforderungen ausgelegt und unterscheidet sich technisch klar von EP4-Modellen durch höhere Leistung und stabileren Lauf.</p>
+  <div class="section-box" id="funktionsweise">
+    <h2>🔬 Mechatronische Funktionsanalyse &amp; Werkstoffe</h2>
+    <hr class="section-divider">
+    <p class="prose-p">Die DL-pro Elektropumpe ULKA EP5GW basiert auf einem mechatronischen Antriebskonzept mit direktem Vibrationsmotor und integriertem Hydraulikmodul. Das Pumpengehäuse ist aus <strong>1.4310</strong> Edelstahl gefertigt, der extrem korrosionsbeständig und formschließend präzise bearbeitet ist.</p>
+<p class="prose-p">Die Rotoren und Kolben bestehen aus <strong>POM</strong> (Polyoxymethylen), einem hochbelastbaren Kunststoff mit hervorragender Gleiteigenschaft und Dimensionstoleranzen von ±<strong>0,05 mm</strong>, was die Lebensdauer im Vergleich zu billigeren Kunststoffen um 40 % erhöht. Die Dichtungen aus <strong>EPDM</strong> (Ethylen-Propylen-Dien-Kautschuk) und <strong>VMQ</strong> (Vulkanisierter Methylsilikon) garantieren eine dichte Versiegelung gegen Druck bis <strong>15 bar</strong> und Temperaturen bis 80 °C.</p>
+<p class="prose-p">Der Antrieb erfolgt über einen Hochleistungs-Vibrationsmotor mit <strong>48 Watt</strong> Nennleistung bei exakt <strong>230 V</strong> Wechselstrom, der eine konstante Frequenz und Amplitude liefert, um Überhitzung und Verschleiß zu minimieren. Elektrisch sind AMP-Steckkontakte mit <strong>6,3 mm</strong> Steckbreite vorgesehen, die eine sichere Kontaktierung ohne Löten ermöglichen.</p>
+<p class="prose-p">Die Anschlüsse sind hydraulisch präzise dimensioniert: <strong>8 mm</strong> für den Wasserzulauf und <strong>16 mm</strong> für den Ablauf, mit Innengewinden M10 und externen Dichtringen aus <strong>EPDM</strong>. Die Toleranzen der Bohrungen für Schrauben und Stecker betragen ±<strong>0,02 mm</strong>, was eine absolute Passgenauigkeit mit Originalteilen sicherstellt.</p>
+<p class="prose-p">Der Durchfluss wird durch einen integrierten Regler von ca. 80–<strong>120 ml</strong>/min bei <strong>10 bar</strong> gesteuert, der in ECAM- und ETAM-Modellen eine gleichmäßige Brühintensität liefert. Die Bauteile sind modular aufgebaut, sodass die Pumpe vor dem Einbau auf Leckagen, Dichtheitswerte und Motorleistung getestet werden kann.</p>
+<p class="prose-p">Im Vergleich zur Originalpumpe bietet die DL-pro-Version geringere Vibrationen durch optimierte Federung und eine geringere Geräuschemission von unter 55 dB. Die Gesamtmasse liegt bei ca. 180 g, was eine einfache Handhabung ermöglicht.</p>
+<p class="prose-p">Alle Komponenten sind werkstofftechnisch aufeinander abgestimmt, um chemische Reaktionen mit Kaffeewasser zu vermeiden und eine Betriebsdauer von mindestens 5.000 Stunden bei normaler Wartung zu gewährleisten. Die EP5GW-Bauform ist speziell für hohe Druckanforderungen ausgelegt und unterscheidet sich technisch klar von EP4-Modellen durch höhere Leistung und stabileren Lauf.</p>
+
+    <div class="callout-box callout-tip">
+      <span class="callout-icon">💡</span>
+      <div>
+        <strong>Experten-Tipp für maximale Dichtigkeit:</strong>
+        Vor der finalen Montage stets die Dichtsitze von verharztem Kaffeefett befreien und O-Ringe mit lebensmittelechtem <strong>OKS 1110 Silikonfett</strong> benetzen, um Mikroleckagen und Schwergängigkeit zu verhindern.
+      </div>
     </div>
   </div>
 
   
 
   <!-- Section: Step-by-Step DIY Guide -->
-  <div class="fk-sec-card" id="einbauanleitung">
-    <div class="fk-sec-heading">🔧 Schritt-für-Schritt Reparaturanleitung</div>
-    <div class="fk-steps-list">
+  <div class="section-box" id="einbauanleitung">
+    <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+    <hr class="section-divider">
+    <p class="prose-p">Befolgen Sie diese aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch:</p>
+    <div class="steps-cards-grid">
       
-        <div class="fk-step-item">
-          <div class="fk-step-num">1</div>
-          <div class="fk-step-content">
-            <div class="fk-step-title">Vorbereitung</div>
-            <div class="fk-step-desc">Strom der Maschine ausschalten und Stecker ziehen. Maschine vollständig entleeren. Alle Schrauben an der Pumpenabdeckung mit einem 3er-Schlüssel lösen und vorsichtig abnehmen. Die alte Pumpe notieren und die Anschlüsse fotografieren.</div>
+        <div class="step-card">
+          <div class="step-badge">1</div>
+          <div class="step-body">
+            <h4>Vorbereitung</h4>
+            <p>Strom der Maschine ausschalten und Stecker ziehen. Maschine vollständig entleeren. Alle Schrauben an der Pumpenabdeckung mit einem 3er-Schlüssel lösen und vorsichtig abnehmen. Die alte Pumpe notieren und die Anschlüsse fotografieren.</p>
           </div>
         </div>
       
-        <div class="fk-step-item">
-          <div class="fk-step-num">2</div>
-          <div class="fk-step-content">
-            <div class="fk-step-title">Alte Pumpe entfernen</div>
-            <div class="fk-step-desc">AMP-Stecker 6,3 mm vorsichtig abziehen. Wasserzulauf 8 mm und Ablauf 16 mm abkoppeln. Alle Schrauben (zwei M4) lösen und die alte Pumpe vorsichtig herausheben. Achten Sie auf die Flussrichtung (Pfeil auf dem Gehäuse).</div>
+        <div class="step-card">
+          <div class="step-badge">2</div>
+          <div class="step-body">
+            <h4>Alte Pumpe entfernen</h4>
+            <p>AMP-Stecker 6,3 mm vorsichtig abziehen. Wasserzulauf 8 mm und Ablauf 16 mm abkoppeln. Alle Schrauben (zwei M4) lösen und die alte Pumpe vorsichtig herausheben. Achten Sie auf die Flussrichtung (Pfeil auf dem Gehäuse).</p>
           </div>
         </div>
       
-        <div class="fk-step-item">
-          <div class="fk-step-num">3</div>
-          <div class="fk-step-content">
-            <div class="fk-step-title">Neue Pumpe montieren</div>
-            <div class="fk-step-desc">Neue ULKA EP5GW Pumpe einsetzen, mit den zwei Schrauben befestigen. AMP-Stecker wieder aufstecken und alle Anschlüsse festziehen. Dichtungen prüfen und bei Bedarf erneuern. Maschine wieder einschalten und kurz laufen lassen.</div>
+        <div class="step-card">
+          <div class="step-badge">3</div>
+          <div class="step-body">
+            <h4>Neue Pumpe montieren</h4>
+            <p>Neue ULKA EP5GW Pumpe einsetzen, mit den zwei Schrauben befestigen. AMP-Stecker wieder aufstecken und alle Anschlüsse festziehen. Dichtungen prüfen und bei Bedarf erneuern. Maschine wieder einschalten und kurz laufen lassen.</p>
           </div>
         </div>
       
-        <div class="fk-step-item">
-          <div class="fk-step-num">4</div>
-          <div class="fk-step-content">
-            <div class="fk-step-title">Entlüftung und Test</div>
-            <div class="fk-step-desc">Entlüftungsprogramm der Kaffeemaschine starten (je nach Modell 1–2 Min. laufen lassen). Testen Sie Espresso, Cappuccino und Hot Water. Druck prüfen und bei Bedarf entlüften. Funktioniert alles einwandfrei, ist die Pumpe einsatzbereit.</div>
+        <div class="step-card">
+          <div class="step-badge">4</div>
+          <div class="step-body">
+            <h4>Entlüftung und Test</h4>
+            <p>Entlüftungsprogramm der Kaffeemaschine starten (je nach Modell 1–2 Min. laufen lassen). Testen Sie Espresso, Cappuccino und Hot Water. Druck prüfen und bei Bedarf entlüften. Funktioniert alles einwandfrei, ist die Pumpe einsatzbereit.</p>
           </div>
         </div>
       
@@ -1938,262 +1277,265 @@ h1, h2, h3, h4, p, span, div, li {
   </div>
 
   <!-- Section: Compatibility Matrix -->
-  <div class="fk-sec-card" id="kompatibilitaet">
-    <div class="fk-sec-heading">📋 Kompatibilitäts-Matrix &amp; Passgenauigkeit</div>
-    <div class="fk-compat-grid">
-      <div class="fk-compat-col fk-compat-col-fits">
-        <div class="fk-compat-head" style="color:var(--fk-green,#388e3c);">✓ Kompatible Geräteserien &amp; Modelle:</div>
-        <ul class="fk-compat-list">
-          <li>DeLonghi ECAM 22.110</li><li>DeLonghi ECAM 23.420</li><li>DeLonghi ECAM 23.460</li><li>DeLonghi ETAM 29.510</li><li>Philips Saeco Modelle mit Pumpe 996530007753 oder 12000140</li>
+  <div class="section-box" id="kompatibilitaet">
+    <h2>📋 Kompatibilitäts-Matrix &amp; Passgenauigkeit</h2>
+    <hr class="section-divider">
+    <div class="compat-matrix-grid">
+      <div class="compat-box">
+        <div class="compat-box-title fits">✓ Kompatible Geräteserien &amp; Modelle:</div>
+        <ul class="compat-list">
+          <li><span style="color:#15803d; font-weight:700;">✓</span> <span>DeLonghi ECAM 22.110</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>DeLonghi ECAM 23.420</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>DeLonghi ECAM 23.460</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>DeLonghi ETAM 29.510</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Philips Saeco Modelle mit Pumpe 996530007753 oder 12000140</span></li>
         </ul>
       </div>
-      <div class="fk-compat-col fk-compat-col-incomp">
-        <div class="fk-compat-head" style="color:#d32f2f;">✕ Nicht kompatibel mit:</div>
-        <ul class="fk-compat-list">
-          <li>DeLonghi ECAM Modelle mit anderer Pumpennummer (z. B. EP4)</li><li>Andere Spannungsversionen (120 V statt 230 V)</li><li>ULKA EP5GW nicht 230 V Bauform</li>
+      <div class="compat-box">
+        <div class="compat-box-title incompatible">✕ Nicht kompatibel mit:</div>
+        <ul class="compat-list">
+          <li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>DeLonghi ECAM Modelle mit anderer Pumpennummer (z. B. EP4)</span></li><li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Andere Spannungsversionen (120 V statt 230 V)</span></li><li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>ULKA EP5GW nicht 230 V Bauform</span></li>
         </ul>
       </div>
     </div>
   </div>
 
   <!-- Section: Maintenance Protocol -->
-  <div class="fk-sec-card" id="wartung">
-    <div class="fk-sec-heading">⚙️ Wartungs- &amp; Prüfprotokoll</div>
-    <div class="fk-spec-grid">
-      
-          <div class="fk-spec-row">
-            <div class="fk-spec-k">Nach jeder Nutzung / Wöchentlich</div>
-            <div class="fk-spec-v">
-              <span class="fk-tag fk-tag-blue">Nach jeder Nutzung / Wöchentlich</span>
-              <span>Filter und Brühgruppe entkalken sowie die Pumpe mit klarem Wasser durchspülen, um Kalkablagerungen zu vermeiden.</span>
-            </div>
-          </div>
+  <div class="section-box" id="wartung">
+    <h2>⚙️ Wartungs- &amp; Prüfprotokoll</h2>
+    <hr class="section-divider">
+    <table class="diag-table">
+      <thead>
+        <tr>
+          <th>Intervall</th>
+          <th>Prüf- &amp; Wartungsaufgabe</th>
+        </tr>
+      </thead>
+      <tbody>
         
-          <div class="fk-spec-row">
-            <div class="fk-spec-k">Monatlich</div>
-            <div class="fk-spec-v">
-              <span class="fk-tag fk-tag-orange">Monatlich</span>
-              <span>Pumpe auf Dichtheit prüfen, Anschlüsse reinigen und bei Bedarf mit entkalkendem Mittel behandeln. Maschine im Ruhemodus laufen lassen, um Rückstände zu lösen.</span>
-            </div>
-          </div>
+          <tr>
+            <td style="font-weight:700; color:var(--primary); white-space:nowrap;">Nach jeder Nutzung / Wöchentlich</td>
+            <td>Filter und Brühgruppe entkalken sowie die Pumpe mit klarem Wasser durchspülen, um Kalkablagerungen zu vermeiden.</td>
+          </tr>
         
-    </div>
+          <tr>
+            <td style="font-weight:700; color:var(--primary); white-space:nowrap;">Monatlich</td>
+            <td>Pumpe auf Dichtheit prüfen, Anschlüsse reinigen und bei Bedarf mit entkalkendem Mittel behandeln. Maschine im Ruhemodus laufen lassen, um Rückstände zu lösen.</td>
+          </tr>
+        
+      </tbody>
+    </table>
   </div>
 
   <!-- Section: Troubleshooting Table -->
   
-  <div class="fk-sec-card" id="stoerungen">
-    <div class="fk-sec-heading">🔍 Technische Fehlersuche &amp; Störungsbehebung</div>
-    <div class="fk-trouble-list">
-      
-        <div class="fk-trouble-card">
-          <div class="fk-trouble-error">⚠️ Keine Leistung, Maschine schaltet nicht ein</div>
-          <div class="fk-trouble-row"><strong>Ursache:</strong> Steckverbindung defekt oder falscher Amp-Stegker</div>
-          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Stecker neu aufstecken und auf festen Sitz prüfen; bei Bedarf neuen AMP-Stecker verwenden</div>
-        </div>
-      
-        <div class="fk-trouble-card">
-          <div class="fk-trouble-error">⚠️ Geräusche oder vibrieren</div>
-          <div class="fk-trouble-row"><strong>Ursache:</strong> Falsche Flussrichtung oder lockere Anschlüsse</div>
-          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Flussrichtung korrigieren und alle Schrauben nachziehen; Pumpe entlüften lassen</div>
-        </div>
-      
-        <div class="fk-trouble-card">
-          <div class="fk-trouble-error">⚠️ Schwacher Druck oder kein Espresso</div>
-          <div class="fk-trouble-row"><strong>Ursache:</strong> Verschmutzung oder Kalk in der Pumpe</div>
-          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Pumpe entkalken und mit klarem Wasser durchspülen; Filter wechseln</div>
-        </div>
-      
-    </div>
+  <div class="section-box" id="stoerungen">
+    <h2>🔍 Technische Fehlersuche &amp; Störungsbehebung</h2>
+    <hr class="section-divider">
+    <table class="diag-table">
+      <thead>
+        <tr>
+          <th>Fehlerbild / Symptom</th>
+          <th>Mögliche Ursache</th>
+          <th>Praxiserprobte Behebung</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td class="diag-symptom">⚠️ Keine Leistung, Maschine schaltet nicht ein</td>
+            <td>Steckverbindung defekt oder falscher Amp-Stegker</td>
+            <td class="diag-fix">✓ Stecker neu aufstecken und auf festen Sitz prüfen; bei Bedarf neuen AMP-Stecker verwenden</td>
+          </tr>
+        
+          <tr>
+            <td class="diag-symptom">⚠️ Geräusche oder vibrieren</td>
+            <td>Falsche Flussrichtung oder lockere Anschlüsse</td>
+            <td class="diag-fix">✓ Flussrichtung korrigieren und alle Schrauben nachziehen; Pumpe entlüften lassen</td>
+          </tr>
+        
+          <tr>
+            <td class="diag-symptom">⚠️ Schwacher Druck oder kein Espresso</td>
+            <td>Verschmutzung oder Kalk in der Pumpe</td>
+            <td class="diag-fix">✓ Pumpe entkalken und mit klarem Wasser durchspülen; Filter wechseln</td>
+          </tr>
+        
+      </tbody>
+    </table>
   </div>
   
 
   <!-- Section: FAQs -->
-  <div class="fk-sec-card" id="faq">
-    <div class="fk-sec-heading">❓ Häufige Fragen (FAQ)</div>
-    <div class="fk-spec-grid">
+  <div class="section-box" id="faq">
+    <h2>❓ Häufige Fragen (FAQ)</h2>
+    <hr class="section-divider">
+    <div class="faq-box">
       
-        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
-          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Passt die DL-pro ULKA EP5GW Pumpe in alle DeLonghi ECAM-Modelle?</div>
-          <div style="font-size:13.5px; color:#555; line-height:1.6;">Ja, exakt in ECAM 22.110, ECAM 23.420, ECAM 23.460 und ETAM 29.510 sowie weitere Modelle mit Originalpumpe 5113211311. Vor dem Kauf die Gerätebezeichnung überprüfen.</div>
+        <div class="faq-item">
+          <div class="faq-q">Q: Passt die DL-pro ULKA EP5GW Pumpe in alle DeLonghi ECAM-Modelle?</div>
+          <div class="faq-a">Ja, exakt in ECAM 22.110, ECAM 23.420, ECAM 23.460 und ETAM 29.510 sowie weitere Modelle mit Originalpumpe 5113211311. Vor dem Kauf die Gerätebezeichnung überprüfen.</div>
         </div>
       
-        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
-          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Welche Spannung und Bauform ist für die EP5GW-Pumpe zwingend erforderlich?</div>
-          <div style="font-size:13.5px; color:#555; line-height:1.6;">Die Pumpe ist ausschließlich für 230 V bei ULKA EP5GW ausgelegt. Jede Abweichung zu EP4 oder 120 V führt zu Fehlfunktion und beschädigt die Maschine.</div>
+        <div class="faq-item">
+          <div class="faq-q">Q: Welche Spannung und Bauform ist für die EP5GW-Pumpe zwingend erforderlich?</div>
+          <div class="faq-a">Die Pumpe ist ausschließlich für 230 V bei ULKA EP5GW ausgelegt. Jede Abweichung zu EP4 oder 120 V führt zu Fehlfunktion und beschädigt die Maschine.</div>
         </div>
       
-        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
-          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Wie lange dauert die Montage und welche Werkzeuge werden benötigt?</div>
-          <div style="font-size:13.5px; color:#555; line-height:1.6;">Die gesamte Montage dauert maximal 15 Minuten. Benötigt werden nur ein 3er-Schlüssel und ein Kreuzschlitz-Schraubendreher. Keine Lötwerkzeuge oder speziellen Adapter erforderlich.</div>
+        <div class="faq-item">
+          <div class="faq-q">Q: Wie lange dauert die Montage und welche Werkzeuge werden benötigt?</div>
+          <div class="faq-a">Die gesamte Montage dauert maximal 15 Minuten. Benötigt werden nur ein 3er-Schlüssel und ein Kreuzschlitz-Schraubendreher. Keine Lötwerkzeuge oder speziellen Adapter erforderlich.</div>
         </div>
       
     </div>
   </div>
-      </div>
-    </div>
+      </article>
 
-    <!-- Related Products Grid -->
+      
+  <aside class="sidebar">
     
-    <div style="margin-top:36px;">
-      <div class="fk-grid-title-bar">
-        <h2 class="fk-grid-title">Passende DeLonghi Komponenten &amp; Zubehör</h2>
-      </div>
-      <div class="fk-prod-grid">
+    <div class="sidebar-box">
+      <div class="sidebar-title">⚙️ Passende DeLonghi Teile</div>
+      <div class="sidebar-list">
         
-  <article class="fk-prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-brueheinheit-7313251451-brueheinheit-fuer-b07cnw1wlc/" class="fk-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61odfgh4STL._AC_SL1500_.jpg" class="fk-card-thumb" alt="DeLonghi Brüheinheit 7313251451 Brüheinheit für ECAM und ETAM Kaffeevollautomaten (1 Packung)" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="fk-card-body">
-      <div class="fk-card-badges">
-        <span class="fk-tag fk-tag-blue">DeLonghi</span>
-        <span class="fk-tag fk-tag-green">F-Assured</span>
-      </div>
-      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-brueheinheit-7313251451-brueheinheit-fuer-b07cnw1wlc/">DeLonghi Brüheinheit 7313251451 Brüheinheit für ECAM und ETAM Kaffeevollautomaten (1 Packung)</a></h3>
-      <div class="fk-card-rating-row">
-        <span class="fk-rating-badge">★ 4.7</span>
-        <span style="font-size:12px; color:#878787;">(145)</span>
-      </div>
-      <div class="fk-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-brueheinheit-7313251451-brueheinheit-fuer-b07cnw1wlc/" class="fk-card-link">
-          Details &amp; Einbau ›
-        </a>
+          <a href="https://kaffeereparatur.github.io/delonghi/delonghi-brueheinheit-7313251451-brueheinheit-fuer-b07cnw1wlc/" class="sidebar-item">
+            <img src="https://m.media-amazon.com/images/I/61odfgh4STL._AC_SL1500_.jpg" alt="DeLonghi Brüheinheit 7313251451 Brüheinheit für ECAM und ETAM Kaffeevollautomaten (1 Packung)" class="sidebar-thumb" loading="lazy">
+            <div class="sidebar-item-info">
+              <span class="sidebar-item-title">DeLonghi Brüheinheit 7313251451 Brüheinheit für ECAM und ETAM Kaffeevollautomaten (1 Packung)</span>
+              <span class="sidebar-item-cat">Brühgruppen &amp; Dichtungen</span>
+            </div>
+          </a>
+        
+          <a href="https://kaffeereparatur.github.io/delonghi/dl-pro-bruehgruppe-passend-fuer-de-longhi-ecam-eta-b08q4fnpw5/" class="sidebar-item">
+            <img src="https://m.media-amazon.com/images/I/618-jrihB4L._AC_SL1500_.jpg" alt="DL-pro Brühgruppe passend für De&#39;Longhi ECAM ETAM ersetzt 5513227891" class="sidebar-thumb" loading="lazy">
+            <div class="sidebar-item-info">
+              <span class="sidebar-item-title">DL-pro Brühgruppe passend für De&#39;Longhi ECAM ETAM ersetzt 5513227891</span>
+              <span class="sidebar-item-cat">Brühgruppen &amp; Dichtungen</span>
+            </div>
+          </a>
+        
+          <a href="https://kaffeereparatur.github.io/delonghi/vioks-bruehkolben-mit-ventil-kaffeemaschine-ersatz-b0h6mdhx5s/" class="sidebar-item">
+            <img src="https://m.media-amazon.com/images/I/71XN+gpi3SL._AC_SL1500_.jpg" alt="VIOKS Brühkolben mit Ventil Kaffeemaschine Ersatz für DeLоnghi 7313292714" class="sidebar-thumb" loading="lazy">
+            <div class="sidebar-item-info">
+              <span class="sidebar-item-title">VIOKS Brühkolben mit Ventil Kaffeemaschine Ersatz für DeLоnghi 7313292714</span>
+              <span class="sidebar-item-cat">Brühgruppen &amp; Dichtungen</span>
+            </div>
+          </a>
+        
+          <a href="https://kaffeereparatur.github.io/delonghi/delonghi-7332222900-bruehgruppe-b00dc4qi66/" class="sidebar-item">
+            <img src="https://m.media-amazon.com/images/I/81vxdiGpvAL._AC_SL1500_.jpg" alt="DeLonghi 7332222900 Brühgruppe" class="sidebar-thumb" loading="lazy">
+            <div class="sidebar-item-info">
+              <span class="sidebar-item-title">DeLonghi 7332222900 Brühgruppe</span>
+              <span class="sidebar-item-cat">Brühgruppen &amp; Dichtungen</span>
+            </div>
+          </a>
+        
       </div>
     </div>
-  </article>
 
-  <article class="fk-prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/dl-pro-bruehgruppe-passend-fuer-de-longhi-ecam-eta-b08q4fnpw5/" class="fk-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/618-jrihB4L._AC_SL1500_.jpg" class="fk-card-thumb" alt="DL-pro Brühgruppe passend für De&#39;Longhi ECAM ETAM ersetzt 5513227891" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="fk-card-body">
-      <div class="fk-card-badges">
-        <span class="fk-tag fk-tag-blue">DeLonghi</span>
-        <span class="fk-tag fk-tag-green">F-Assured</span>
-      </div>
-      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/delonghi/dl-pro-bruehgruppe-passend-fuer-de-longhi-ecam-eta-b08q4fnpw5/">DL-pro Brühgruppe passend für De&#39;Longhi ECAM ETAM ersetzt 5513227891</a></h3>
-      <div class="fk-card-rating-row">
-        <span class="fk-rating-badge">★ 4.5</span>
-        <span style="font-size:12px; color:#878787;">(145)</span>
-      </div>
-      <div class="fk-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/dl-pro-bruehgruppe-passend-fuer-de-longhi-ecam-eta-b08q4fnpw5/" class="fk-card-link">
-          Details &amp; Einbau ›
-        </a>
-      </div>
+    <div class="sidebar-box">
+      <div class="sidebar-title">🚨 Diagnose nach Symptom</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:13px;">
+        <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:var(--text-main); font-weight:600;">› Brühgruppe klemmt / quietscht</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" style="color:var(--text-main); font-weight:600;">› Pumpe brummt laut &amp; kein Druck</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:var(--text-main); font-weight:600;">› Milchschaum fällt zusammen / spritzt</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:var(--text-main); font-weight:600;">› Wasser in Abtropfschale / Trester nass</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:var(--text-main); font-weight:600;">› Mahlwerk blockiert oder mahlt zu grob</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" style="color:var(--text-main); font-weight:600;">› Kaffee nur lauwarm / Heizt nicht</a></li>
+      </ul>
     </div>
-  </article>
 
-  <article class="fk-prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/vioks-bruehkolben-mit-ventil-kaffeemaschine-ersatz-b0h6mdhx5s/" class="fk-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71XN+gpi3SL._AC_SL1500_.jpg" class="fk-card-thumb" alt="VIOKS Brühkolben mit Ventil Kaffeemaschine Ersatz für DeLоnghi 7313292714" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="fk-card-body">
-      <div class="fk-card-badges">
-        <span class="fk-tag fk-tag-blue">DeLonghi</span>
-        <span class="fk-tag fk-tag-green">F-Assured</span>
-      </div>
-      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/delonghi/vioks-bruehkolben-mit-ventil-kaffeemaschine-ersatz-b0h6mdhx5s/">VIOKS Brühkolben mit Ventil Kaffeemaschine Ersatz für DeLоnghi 7313292714</a></h3>
-      <div class="fk-card-rating-row">
-        <span class="fk-rating-badge">★ 3</span>
-        <span style="font-size:12px; color:#878787;">(145)</span>
-      </div>
-      <div class="fk-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/vioks-bruehkolben-mit-ventil-kaffeemaschine-ersatz-b0h6mdhx5s/" class="fk-card-link">
-          Details &amp; Einbau ›
-        </a>
-      </div>
+    <div class="sidebar-box">
+      <div class="sidebar-title">🔩 Baugruppen-Silos</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:6px; font-size:13px;">
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:var(--text-muted);">⚙️ Brühgruppen &amp; Dichtungen</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:var(--text-muted);">🪨 Mahlwerke &amp; Mahlkegel</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:var(--text-muted);">💧 Drainageventile &amp; Kappen</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:var(--text-muted);">🥛 Milchsysteme &amp; Karaffen</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:var(--text-muted);">🌊 Wasserfilter &amp; Entkalker</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" style="color:var(--text-muted);">🔥 Heizelemente &amp; Thermoblöcke</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" style="color:var(--text-muted);">⚡ 15-Bar Ulka Pumpen &amp; Hydraulik</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/magnetventil/" style="color:var(--text-muted);">🧲 Magnetventile &amp; Solenoid</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/kaffeeauslauf/" style="color:var(--text-muted);">☕ Kaffeeauslauf &amp; Verteiler</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/reinigung/" style="color:var(--text-muted);">✨ Pflegesets &amp; Spezial-Entkalker</a></li>
+        
+      </ul>
     </div>
-  </article>
 
-  <article class="fk-prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-7332222900-bruehgruppe-b00dc4qi66/" class="fk-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/81vxdiGpvAL._AC_SL1500_.jpg" class="fk-card-thumb" alt="DeLonghi 7332222900 Brühgruppe" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="fk-card-body">
-      <div class="fk-card-badges">
-        <span class="fk-tag fk-tag-blue">DeLonghi</span>
-        <span class="fk-tag fk-tag-green">F-Assured</span>
-      </div>
-      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/delonghi/delonghi-7332222900-bruehgruppe-b00dc4qi66/">DeLonghi 7332222900 Brühgruppe</a></h3>
-      <div class="fk-card-rating-row">
-        <span class="fk-rating-badge">★ 4.6</span>
-        <span style="font-size:12px; color:#878787;">(145)</span>
-      </div>
-      <div class="fk-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-7332222900-bruehgruppe-b00dc4qi66/" class="fk-card-link">
-          Details &amp; Einbau ›
-        </a>
-      </div>
+    <div class="sidebar-box" style="background:#fcfbf9; border-left:4px solid var(--primary);">
+      <div style="font-weight:700; font-size:13.5px; color:var(--text-main); margin-bottom:6px;">🛡️ Verifizierte OEM-Qualität</div>
+      <p style="font-size:12px; color:var(--text-muted); line-height:1.5;">
+        Alle auf KaffeeReparatur gelisteten Bauteile erfüllen deutsche Mechatronik-Prüfstandards für Lebensmittelkontakt (BfR/FDA) und Druckbeständigkeit bis 19 Bar.
+      </p>
     </div>
-  </article>
-      </div>
+  </aside>
     </div>
   </main>
 
-  <!-- Flipkart Mobile Sticky Bottom Buy Bar (Yellow + Orange 50/50 Dual Bar) -->
-  <div class="fk-mobile-buy-bar">
-    <a href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" class="fk-mobile-buy-btn fk-mob-cart cta" target="_blank" rel="sponsored nofollow noopener">
-      🛒 In den Warenkorb
-    </a>
-    <a href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" class="fk-mobile-buy-btn fk-mob-buy cta" target="_blank" rel="sponsored nofollow noopener">
-      ⚡ JETZT KAUFEN
+  <!-- Mobile Sticky Bottom CTA Bar (LeatherClogs Style) -->
+  <div class="mobile-sticky-cta">
+    <div style="display:flex; align-items:center; overflow:hidden;">
+      <img src="https://m.media-amazon.com/images/I/61X1mrfiMOL._AC_SL1500_.jpg" alt="DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753" class="sticky-thumb">
+      <div class="sticky-info">
+        <span class="sticky-title">DL-pro Pumpe ULKA EP5GW passend für DeLonghi 5113211311 Saeco 996530007753</span>
+        <span class="sticky-sub">✓ Auf Lager • Amazon.de</span>
+      </div>
+    </div>
+    <a href="https://www.amazon.de/dp/B08V52MLQ7?tag=kaffeereparatur-21" class="btn-sticky-amazon cta" target="_blank" rel="sponsored nofollow noopener">
+      Preis prüfen ↗
     </a>
   </div>
 
   
-  <!-- Flipkart Official Dark Footer (Desktop) -->
-  <footer class="fk-footer">
-    <div class="fk-footer-inner">
+  <footer style="background:#1c1917; color:#a8a29e; padding:48px 0 24px; margin-top:64px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; padding-bottom:32px;">
       <div>
-        <div class="fk-foot-col-title">ÜBER UNS</div>
-        <ul class="fk-foot-list">
-          <li><a href="https://kaffeereparatur.github.io/">KaffeeReparatur Portal</a></li>
-          <li><a href="https://kaffeereparatur.github.io/#marken">Hersteller &amp; Baureihen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/#kategorien">Baugruppen &amp; Mechanik</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sitemap.xml">XML Sitemap</a></li>
+        <div style="font-weight:800; font-size:18px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          ☕ KaffeeReparatur<span style="color:#eab308;">.de</span>
+        </div>
+        <p style="font-size:13px; line-height:1.6; color:#78716c;">
+          Unabhängiges deutsches Referenz- und Reparaturportal für mechatronische Kaffeevollautomaten-Instandsetzung, Explosionszeichnungen und Original-Ersatzteilidentifikation.
+        </p>
+      </div>
+
+      <div>
+        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Führende Hersteller</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:13px;">
+          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile &amp; Guides</a></li>
+          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#a8a29e;">Siemens EQ-Serie Reparatur</a></li>
+          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+          <li><a href="https://kaffeereparatur.github.io/bosch/" style="color:#a8a29e;">Bosch VeroBar &amp; VeroCup</a></li>
         </ul>
       </div>
 
       <div>
-        <div class="fk-foot-col-title">TOP MARKEN</div>
-        <ul class="fk-foot-list">
-          <li><a href="https://kaffeereparatur.github.io/delonghi/">De'Longhi Ersatzteile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/siemens/">Siemens EQ Serie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/jura/">Jura Impressa &amp; E-Linie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/philips/">Philips LatteGo</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sage/">Sage Barista Express</a></li>
+        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Top Baugruppen-Silos</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:13px;">
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen &amp; Hydraulik</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#a8a29e;">Mahlwerke &amp; Mahlkegel</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#a8a29e;">Drainageventile &amp; Kappen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#a8a29e;">Milchsysteme &amp; Karaffen</a></li>
         </ul>
       </div>
 
       <div>
-        <div class="fk-foot-col-title">KERN-BAUGRUPPEN</div>
-        <ul class="fk-foot-list">
-          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/">Brühgruppen &amp; Dichtungen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/">Mahlwerke &amp; Mahlkegel</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/">Drainageventile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/">Milchkaraffen &amp; Schläuche</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/">Wasserfilter &amp; Entkalker</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="fk-foot-col-title">TRANSPARENZ</div>
-        <p style="line-height:1.6; color:#878787; font-size:12px; margin:0;">
-          Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Alle Preise, tagesaktuelle Verfügbarkeiten und Lieferzeiten werden live von Amazon.de bereitgestellt.
+        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Hinweis &amp; Transparenz</div>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal prüfen wir Ersatzteilkompatibilitäten und verlinken auf Originalangebote führender Anbieter. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
         </p>
       </div>
     </div>
-
-    <div class="fk-footer-bottom">
-      <div>☕ KaffeeReparatur.de • Unabhängiges Deutsches Fachportal • © 2026</div>
-      <div>Explore <span style="color:#ffe500; font-weight:700;">Plus ✦</span></div>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeReparatur.de. Alle Rechte vorbehalten. Unabhängiges Reparatur- und Informationsportal.
     </div>
   </footer>
-  <div style="text-align:center; padding:12px; font-size:11px; color:#878787;" class="fk-mobile-foot-note">
-    © 2026 KaffeeReparatur • Alle Angaben ohne Gewähr
-  </div>
   <script src="https://kaffeereparatur.github.io/instant-search.js" defer></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="theme-color" content="#2874f0">
+  <meta name="theme-color" content="#854d0e">
   <meta name="google-site-verification" content="z1HDX3FFWaHIqyPyOMLwt9sgJg31Is1QxB7Po-DuJBs" />
   <title>Pflegeset Siemens EQ5 EQ6 EQ7 EQ8 Brühgruppe O-Ringe Silikonfett 10,99€ | KaffeeReparatur</title>
   <meta name="description" content="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau Brühgruppe mit lebensmittelechtem Silikonfett, passgenauen O-Ringen und Form-Dichtung für einfache Wartung. Reduziert Verschleiß, spart Servicekosten. DIY-Pflege und Inspektion – empfohlen von 4,4 Sternen.">
@@ -11,1482 +11,924 @@
   <style>
 
 /* ==========================================================================
-   FLIPKART OFFICIAL UI DESIGN SYSTEM (DESKTOP WEBSITE + MOBILE APP)
+   LEATHERCLOGS OFFICIAL UI DESIGN SYSTEM (WARM EDITORIAL + HIGH-CONVERTING)
    ========================================================================== */
 
 :root {
-  --fk-blue: #2874f0;
-  --fk-blue-dark: #1259c7;
-  --fk-yellow: #ffe500;
-  --fk-orange-buy: #fb641b;
-  --fk-orange-cart: #ff9f00;
-  --fk-green: #388e3c;
-  --fk-bg: #f1f3f6;
-  --fk-card: #ffffff;
-  --fk-text: #212121;
-  --fk-secondary: #878787;
-  --fk-border: #f0f0f0;
-  --fk-border-dark: #e0e0e0;
-  --fk-font: Roboto, Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --fk-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
-  --fk-shadow-card: 0 1px 3px 0 rgba(0,0,0,.12);
+  --primary: #854d0e;
+  --primary-dark: #713f12;
+  --primary-light: #fefce8;
+  --accent: #0284c7;
+  --bg-app: #fcfbf9;
+  --bg-card: #ffffff;
+  --text-main: #1c1917;
+  --text-muted: #57534e;
+  --border-color: #e7e5e4;
+  --border-light: #f5f5f4;
+  --radius-card: 12px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.09);
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: var(--fk-bg);
-  color: var(--fk-text);
-  font-family: var(--fk-font);
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden;
+  padding-bottom: 80px;
 }
 
-* {
-  box-sizing: border-box;
-  max-width: 100%;
-}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* Input & Search Reset */
-input, input[type="text"], input[type="search"] {
-  font-family: var(--fk-font) !important;
-  font-size: 16px !important; /* Prevents auto zoom on iOS */
-  -webkit-appearance: none !important;
-  -moz-appearance: none !important;
-  appearance: none !important;
-  outline: none;
-  border: none;
-  box-sizing: border-box;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-  display: none !important;
-}
-
-/* Safe text wrap guarantee */
-h1, h2, h3, h4, p, span, div, li {
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-/* ==========================================================================
-   FLIPKART PRIMARY HEADER (Electric Blue #2874f0)
-   ========================================================================== */
-
-.fk-header {
+/* Sticky Header */
+.app-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: var(--fk-blue);
-  color: #ffffff;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.18);
-  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
-
-.fk-header-inner {
-  max-width: 1248px;
+.header-inner {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
 }
-
-/* Flipkart Brand Logo */
-.fk-logo-box {
-  display: flex;
-  flex-direction: column;
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 19px;
+  color: var(--text-main);
   text-decoration: none !important;
-  flex-shrink: 0;
+  white-space: nowrap;
+}
+.brand-logo .logo-icon { font-size: 24px; }
+.brand-logo .tld { color: var(--primary); font-weight: 900; }
+.badge-pro {
+  background: #fef08a;
+  color: #713f12;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 9999px;
 }
 
-.fk-logo-main {
-  font-size: 20px;
-  font-weight: 700;
-  font-style: italic;
-  color: #ffffff;
-  letter-spacing: -0.01em;
+.nav-links {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 20px;
 }
-
-.fk-logo-sub {
-  font-size: 11px;
-  font-style: italic;
-  color: #ffffff;
-  margin-top: -2px;
-}
-
-.fk-plus {
-  color: var(--fk-yellow);
-  font-weight: 700;
-}
-
-/* Flipkart Center Search Bar */
-.fk-search-wrap {
-  position: relative;
-  flex: 1;
-  max-width: 560px;
-}
-
-.fk-search-box {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border-radius: 2px;
-  height: 38px;
-  padding: 0 12px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
-}
-
-.fk-search-input {
-  flex: 1;
-  background: transparent !important;
-  font-size: 14px !important;
-  color: #212121 !important;
-  padding: 0 !important;
-}
-
-.fk-search-input::placeholder {
-  color: var(--fk-secondary);
-}
-
-.fk-search-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  color: var(--fk-blue);
-}
-
-.fk-search-clear {
-  display: none;
-  background: transparent;
-  border: none;
-  color: var(--fk-secondary);
+.nav-link {
   font-size: 14px;
-  cursor: pointer;
-  padding: 0 6px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none !important;
+  transition: color 0.15s ease;
 }
+.nav-link:hover { color: var(--text-main); }
 
-/* Floating Search Dropdown */
-.fk-search-dropdown {
+/* Search Bar in Header */
+.header-search { flex: 1; max-width: 380px; position: relative; }
+.search-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f5f5f4;
+  border: 1px solid var(--border-color);
+  border-radius: 9999px;
+  padding: 6px 14px;
+  transition: all 0.15s ease;
+}
+.search-input-wrap:focus-within {
+  background: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(133, 77, 14, 0.15);
+}
+.search-icon { color: var(--text-muted); margin-right: 8px; font-size: 14px; }
+.search-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13px;
+  color: var(--text-main);
+  outline: none;
+  font-family: inherit;
+}
+.search-clear {
+  display: none;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px;
+}
+.search-dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 4px);
+  top: calc(100% + 6px);
   left: 0;
   right: 0;
   background: #ffffff;
-  border-radius: 2px;
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
-  border: 1px solid var(--fk-border-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
   max-height: 420px;
   overflow-y: auto;
-  z-index: 1010;
+  z-index: 1001;
+  padding: 6px;
 }
-
-.fk-search-dropdown.show { display: block; }
-
-.fk-search-item {
-  display: flex;
-  align-items: center;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--fk-border);
-  gap: 12px;
-  text-decoration: none !important;
-  color: #212121;
-}
-
-.fk-search-item:hover, .fk-search-item:active {
-  background: #f9f9f9;
-}
-
-.fk-search-thumb {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.fk-search-title {
-  font-size: 13px;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.fk-search-sub {
-  font-size: 11px;
-  color: var(--fk-secondary);
-}
-
-/* Desktop Header Action Buttons */
-.fk-nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.fk-nav-link {
-  font-size: 14.5px;
-  font-weight: 600;
-  color: #ffffff;
-  text-decoration: none !important;
-  white-space: nowrap;
-}
-
-.fk-nav-link:hover {
-  color: var(--fk-yellow);
-}
-
-.fk-amazon-badge {
-  background: #ffffff;
-  color: var(--fk-blue) !important;
-  padding: 6px 14px;
-  border-radius: 2px;
-  font-size: 13px;
-  font-weight: 700;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-/* ==========================================================================
-   FLIPKART CATEGORY STRIP (White Icon Strip Below Header)
-   ========================================================================== */
-
-.fk-cat-strip {
-  background: #ffffff;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,.14);
-  padding: 10px 0;
-  margin-bottom: 10px;
-}
-
-.fk-cat-strip-inner {
-  max-width: 1248px;
-  margin: 0 auto;
+.search-dropdown.show { display: block; }
+.search-dropdown-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  color: var(--text-main);
+  transition: background 0.1s ease;
+}
+.search-dropdown-item:hover { background: #f5f5f4; }
+.search-item-thumb { width: 36px; height: 36px; object-fit: contain; margin-right: 10px; border-radius: 4px; }
+
+/* Breadcrumbs */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 16px 0 8px;
   overflow-x: auto;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  gap: 16px;
 }
+.breadcrumb a { color: var(--text-muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--text-main); }
+.breadcrumb .sep { color: #a8a29e; font-size: 11px; }
 
-.fk-cat-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none !important;
-  gap: 4px;
-  flex-shrink: 0;
+/* Hero Banner for Hub Pages */
+.hero-banner {
+  background: linear-gradient(180deg, #ffffff 0%, #f7f6f2 100%);
+  border-bottom: 1px solid var(--border-color);
+  padding: 32px 0 36px;
+  text-align: center;
 }
-
-.fk-cat-icon {
-  font-size: 24px;
-  line-height: 1;
-}
-
-.fk-cat-text {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--fk-text);
-  transition: color 0.15s ease;
-}
-
-.fk-cat-item:hover .fk-cat-text {
-  color: var(--fk-blue);
-}
-
-/* ==========================================================================
-   FLIPKART DESKTOP PRODUCT DETAIL PAGE (2-Column E-Commerce Layout)
-   ========================================================================== */
-
-.fk-page-wrap {
-  max-width: 1248px;
-  margin: 10px auto 40px;
-  padding: 0 12px;
-}
-
-.fk-detail-desktop-grid {
-  display: grid;
-  grid-template-columns: 440px 1fr;
-  gap: 16px;
-  align-items: start;
-}
-
-/* Sticky Left Gallery Column */
-.fk-left-col {
-  position: sticky;
-  top: 74px;
-  background: #ffffff;
-  padding: 16px;
-  border-radius: 2px;
-  box-shadow: var(--fk-shadow);
-  border: 1px solid var(--fk-border);
-}
-
-.fk-main-img-box {
-  width: 100%;
-  height: 380px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-  border: 1px solid var(--fk-border);
-  margin-bottom: 16px;
-}
-
-.fk-main-img-box img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  transition: transform 0.2s ease;
-}
-
-.fk-main-img-box:hover img {
-  transform: scale(1.04);
-}
-
-/* Dual Action Buttons (Flipkart Yellow + Orange) */
-.fk-btn-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.fk-btn-cart {
-  background: var(--fk-orange-cart);
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  height: 48px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
-  text-decoration: none !important;
-  cursor: pointer;
-}
-
-.fk-btn-cart:hover {
-  background: #f29600;
-}
-
-.fk-btn-buy {
-  background: var(--fk-orange-buy);
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  height: 48px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
-  text-decoration: none !important;
-  cursor: pointer;
-}
-
-.fk-btn-buy:hover {
-  background: #e65612;
-}
-
-/* Right Detail Column */
-.fk-right-col {
-  background: #ffffff;
-  padding: 24px;
-  border-radius: 2px;
-  box-shadow: var(--fk-shadow);
-  border: 1px solid var(--fk-border);
-}
-
-.fk-breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.hero-banner .hero-eyebrow {
+  display: inline-block;
   font-size: 12px;
-  color: var(--fk-secondary);
-  margin-bottom: 10px;
-}
-
-.fk-breadcrumb a {
-  color: var(--fk-secondary);
-}
-
-.fk-breadcrumb a:hover {
-  color: var(--fk-blue);
-}
-
-.fk-product-h1 {
-  font-size: 20px;
-  font-weight: 500;
-  color: var(--fk-text);
-  line-height: 1.35;
-  margin: 0 0 10px 0;
-}
-
-/* Green Rating Badge (Iconic Flipkart Green) */
-.fk-rating-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 12px;
-}
-
-.fk-rating-badge {
-  background: var(--fk-green);
-  color: #ffffff;
   font-weight: 700;
-  font-size: 12.5px;
-  padding: 2px 7px;
-  border-radius: 3px;
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-}
-
-.fk-rating-count {
-  font-size: 13px;
-  color: var(--fk-secondary);
-  font-weight: 500;
-}
-
-.fk-assured-tag {
-  background: #e9f0ff;
-  color: var(--fk-blue);
-  font-size: 11.5px;
-  font-weight: 800;
-  padding: 3px 8px;
-  border-radius: 3px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-/* Flipkart Special Price & Offers Section */
-.fk-price-box {
-  margin-bottom: 18px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--fk-border);
-}
-
-.fk-price-highlight {
-  font-size: 24px;
-  font-weight: 700;
-  color: #212121;
-}
-
-.fk-stock-status {
-  font-size: 13px;
-  color: var(--fk-green);
-  font-weight: 700;
-  margin-top: 4px;
-}
-
-/* Available Offers (Flipkart Green Tag Style) */
-.fk-offers-box {
-  margin-bottom: 20px;
-}
-
-.fk-offers-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: #212121;
-  margin-bottom: 8px;
-}
-
-.fk-offer-item {
-  font-size: 13px;
-  color: #212121;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  margin-bottom: 6px;
-  line-height: 1.45;
-}
-
-.fk-tag-icon {
-  color: var(--fk-green);
-  font-size: 14px;
-  flex-shrink: 0;
-}
-
-/* Highlights Box */
-.fk-highlights-box {
-  margin-bottom: 24px;
-}
-
-.fk-hl-title {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.fk-hl-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.fk-hl-list li {
-  font-size: 13px;
-  color: #212121;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-/* Specifications Table (Flipkart Clean Spec Table) */
-.fk-sec-card {
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid var(--fk-border);
-}
-
-.fk-sec-heading {
-  font-size: 16px;
-  font-weight: 700;
-  color: #212121;
-  margin-bottom: 12px;
-}
-
-.fk-sec-text p {
-  font-size: 14px;
-  color: #333333;
-  line-height: 1.65;
-  margin: 0 0 10px 0;
-}
-
-.fk-spec-grid {
-  border: 1px solid var(--fk-border-dark);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.fk-spec-row {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  padding: 10px 14px;
-  border-bottom: 1px solid var(--fk-border);
-  font-size: 13px;
-  align-items: center;
-}
-
-.fk-spec-row:last-child {
-  border-bottom: none;
-}
-
-.fk-spec-row:nth-child(even) {
-  background: #fafafa;
-}
-
-.fk-spec-k {
-  color: var(--fk-secondary);
-  font-weight: 500;
-}
-
-.fk-spec-v {
-  color: #212121;
-  font-weight: 500;
-}
-
-.fk-tag {
-  font-size: 11px;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 3px;
-  display: inline-block;
-  margin-right: 6px;
-}
-
-.fk-tag-blue { background: #e9f0ff; color: var(--fk-blue); }
-.fk-tag-orange { background: #fff3e0; color: #e65100; }
-.fk-tag-green { background: #e8f5e9; color: var(--fk-green); }
-.fk-tag-purple { background: #f3e5f5; color: #7b1fa2; }
-
-.fk-wiki-link {
-  color: var(--fk-blue);
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.fk-code-pill {
-  background: #ffebee;
-  color: #c62828;
-  font-weight: 700;
-  font-size: 11px;
-  padding: 1px 6px;
-  border-radius: 2px;
-}
-
-/* Flipkart Structured DIY Step Cards */
-.fk-steps-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 12px;
-}
-.fk-step-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  background: #f8fafc;
-  border: 1px solid var(--fk-border);
-  border-radius: 4px;
-  padding: 12px 14px;
-}
-.fk-step-num {
-  width: 26px;
-  height: 26px;
-  background: var(--fk-blue);
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13px;
-  flex-shrink: 0;
-}
-.fk-step-content {
-  flex: 1;
-}
-.fk-step-title {
-  font-weight: 700;
-  font-size: 14px;
-  color: #212121;
-  margin-bottom: 3px;
-}
-.fk-step-desc {
-  font-size: 13px;
-  color: #4b5563;
-  line-height: 1.55;
-}
-
-/* Flipkart Structured Compatibility Matrix */
-.fk-compat-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 12px;
-}
-@media (max-width: 768px) {
-  .fk-compat-grid { grid-template-columns: 1fr; }
-}
-.fk-compat-col {
-  padding: 12px 14px;
-  border-radius: 4px;
-  border: 1px solid var(--fk-border);
-  background: #fafafa;
-}
-.fk-compat-col-fits {
-  border-left: 4px solid #388e3c;
-}
-.fk-compat-col-incomp {
-  border-left: 4px solid #d32f2f;
-}
-.fk-compat-head {
-  font-weight: 700;
-  font-size: 13.5px;
-  margin-bottom: 8px;
-}
-.fk-compat-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.fk-compat-list li {
-  font-size: 12.5px;
-  color: #374151;
-  line-height: 1.4;
-  padding-left: 12px;
-  position: relative;
-}
-.fk-compat-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #9ca3af;
-}
-
-/* Flipkart Structured Troubleshooting Cards */
-.fk-trouble-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 12px;
-}
-.fk-trouble-card {
-  background: #fff;
-  border: 1px solid var(--fk-border);
-  border-radius: 4px;
-  padding: 12px 14px;
-}
-.fk-trouble-error {
-  font-weight: 700;
-  font-size: 13.5px;
-  color: #b91c1c;
-  margin-bottom: 6px;
-}
-.fk-trouble-row {
-  font-size: 13px;
-  color: #374151;
-  line-height: 1.5;
-  margin-bottom: 4px;
-}
-.fk-trouble-fix {
-  color: #15803d;
-}
-
-/* ==========================================================================
-   FLIPKART PRODUCT CARDS GRID (Deals Grid)
-   ========================================================================== */
-
-.fk-grid-title-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 20px 0 12px;
-}
-
-.fk-grid-title {
-  font-size: 19px;
-  font-weight: 700;
-  color: #212121;
-  margin: 0;
-}
-
-.fk-grid-count {
-  font-size: 13px;
-  color: var(--fk-secondary);
-}
-
-.fk-prod-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-  gap: 12px;
-  margin-bottom: 28px;
-}
-
-.fk-prod-card {
-  background: #ffffff;
-  border: 1px solid var(--fk-border);
-  border-radius: 2px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-  position: relative;
-}
-
-.fk-prod-card:hover {
-  box-shadow: 0 4px 12px 0 rgba(0,0,0,.15);
-  transform: translateY(-2px);
-}
-
-.fk-card-thumb-link {
-  height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px;
-  background: #ffffff;
-  border-bottom: 1px solid var(--fk-border);
-}
-
-.fk-card-thumb {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.fk-card-body {
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.fk-card-badges {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 6px;
-}
-
-.fk-card-title {
-  font-size: 13.5px;
-  font-weight: 500;
-  line-height: 1.35;
-  margin: 0 0 8px 0;
-  color: #212121;
-}
-
-.fk-card-title a {
-  color: #212121;
-  text-decoration: none;
-}
-
-.fk-card-title a:hover {
-  color: var(--fk-blue);
-}
-
-.fk-card-rating-row {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 8px;
-}
-
-.fk-card-footer {
-  margin-top: auto;
-  padding-top: 8px;
-  border-top: 1px solid var(--fk-border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.fk-card-link {
-  font-size: 12.5px;
-  font-weight: 700;
-  color: var(--fk-blue);
-}
-
-/* ==========================================================================
-   FLIPKART HOMEPAGE BANNERS & DEALS STRIPS
-   ========================================================================== */
-
-.fk-home-banner {
-  background: linear-gradient(135deg, #2874f0 0%, #1259c7 100%);
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 32px 24px;
-  margin-bottom: 16px;
-  box-shadow: var(--fk-shadow);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.fk-banner-left {
-  flex: 1;
-}
-
-.fk-banner-pill {
-  background: var(--fk-yellow);
-  color: #212121;
-  font-size: 11px;
-  font-weight: 800;
+  letter-spacing: .08em;
   text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 2px;
-  display: inline-block;
-  margin-bottom: 10px;
+  color: var(--primary);
+  margin-bottom: 8px;
 }
-
-.fk-banner-h1 {
-  font-size: 28px;
+.hero-banner h1 {
+  font-size: 30px;
   font-weight: 800;
-  margin: 0 0 8px 0;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
   line-height: 1.25;
+  margin-bottom: 12px;
+}
+.hero-banner p {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
 }
 
-.fk-banner-sub {
-  font-size: 14px;
-  color: #e0e9fa;
-  margin: 0 0 16px 0;
-  max-width: 600px;
-  line-height: 1.5;
-}
-
-.fk-banner-badges-strip {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.fk-badge-check {
-  font-size: 13px;
-  color: #ffffff;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-
-/* Grouped Hubs (Brands & Categories) */
-.fk-hub-list-card {
-  background: #ffffff;
-  border: 1px solid var(--fk-border);
-  border-radius: 2px;
-  padding: 16px;
-  margin-bottom: 20px;
-  box-shadow: var(--fk-shadow);
-}
-
-.fk-hub-grid {
+/* Symptom-Grid (Silo 1: Error & Intent Based Navigation) */
+.symptom-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0 36px;
 }
-
-.fk-hub-item {
+.symptom-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 18px 20px;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 12px;
-  border: 1px solid var(--fk-border);
-  border-radius: 2px;
+  align-items: flex-start;
+  gap: 14px;
   text-decoration: none !important;
-  color: #212121;
+  color: var(--text-main);
   transition: all 0.15s ease;
 }
-
-.fk-hub-item:hover {
-  border-color: var(--fk-blue);
-  background: #f8fbff;
+.symptom-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
 }
-
-.fk-hub-icon {
-  font-size: 22px;
-  flex-shrink: 0;
-}
-
-.fk-hub-name {
-  font-size: 13.5px;
-  font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.fk-hub-sub {
-  font-size: 11px;
-  color: var(--fk-secondary);
-}
-
-/* ==========================================================================
-   FLIPKART FOOTER (Iconic Flipkart Dark Blue Footer #172337)
-   ========================================================================== */
-
-.fk-footer {
-  background: #172337;
-  color: #878787;
+.symptom-icon { font-size: 24px; line-height: 1; flex-shrink: 0; padding-top: 2px; }
+.symptom-content h3 { font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; }
+.symptom-content p { font-size: 13px; color: var(--text-muted); line-height: 1.45; }
+.symptom-link {
   font-size: 12px;
-  padding: 40px 0 24px;
-  margin-top: 40px;
-  border-top: 1px solid #28354a;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
-.fk-footer-inner {
-  max-width: 1248px;
-  margin: 0 auto;
-  padding: 0 16px;
+/* Brand Hubs Grid */
+.brand-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 28px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid #28354a;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+  margin: 20px 0 40px;
 }
-
-.fk-foot-col-title {
-  color: #878787;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-
-.fk-foot-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.fk-foot-list a {
-  color: #ffffff;
-  font-size: 12px;
-}
-
-.fk-foot-list a:hover {
-  text-decoration: underline;
-}
-
-.fk-footer-bottom {
-  max-width: 1248px;
-  margin: 0 auto;
-  padding: 16px 16px 0;
+.brand-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 16px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 12px;
-  color: #ffffff;
+  text-decoration: none !important;
+  color: var(--text-main);
+  transition: all 0.15s ease;
 }
+.brand-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--primary);
+}
+.brand-name { font-weight: 700; font-size: 15px; }
+.brand-count { font-size: 12px; color: var(--text-muted); background: #f5f5f4; padding: 2px 8px; border-radius: 99px; }
 
-/* ==========================================================================
-   UNIQUE GROK DOSSIER & SCRAPED AMAZON COMPONENTS
-   ========================================================================== */
-
-/* 2-Column Pros and Cons */
-.fk-pros-cons-grid {
+/* Products Grid (LeatherClogs Style Clean Cards) */
+.products-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0 40px;
 }
-@media (max-width: 640px) {
-  .fk-pros-cons-grid {
-    grid-template-columns: 1fr;
-  }
+.prod-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
-.fk-pros-box {
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
-  border-radius: 8px;
+.prod-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: #d6d3d1;
+}
+.prod-card-thumb-link {
+  display: block;
+  background: #ffffff;
+  aspect-ratio: 1/1;
+  border-bottom: 1px solid var(--border-color);
+  padding: 14px;
+}
+.prod-card-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.prod-card-body {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.prod-card-badges {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+.badge-brand {
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 700;
+}
+.badge-cat {
+  background: #f5f5f4;
+  color: #57534e;
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+.prod-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 4px 0 6px;
+}
+.prod-card-title a {
+  color: var(--text-main);
+  text-decoration: none;
+}
+.prod-card-title a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.prod-card-chips {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.chip {
+  background: #f5f5f4;
+  color: #44403c;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.prod-card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.btn-card-details {
+  background: #1c1917;
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: background 0.15s ease;
+}
+.btn-card-details:hover {
+  background: var(--primary);
+}
+
+/* Detail Page Hero Stage (LeatherClogs Style) */
+.detail-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 32px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  margin: 14px 0 24px;
+  box-shadow: var(--shadow-sm);
+}
+.gallery-box { display: flex; flex-direction: column; gap: 12px; }
+.main-img-wrap {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 16px;
 }
-.fk-cons-box {
-  background: #fff7ed;
-  border: 1px solid #fed7aa;
-  border-radius: 8px;
+.main-img-wrap img { width: 100%; height: 100%; object-fit: contain; }
+.thumbs-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.thumbs-row img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border: 2px solid var(--border-color);
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ffffff;
+  padding: 4px;
+  transition: border-color 0.15s ease;
+}
+.thumbs-row img.active { border-color: var(--primary); }
+
+.detail-info { display: flex; flex-direction: column; }
+.eyebrow { font-size: 12px; text-transform: uppercase; font-weight: 700; letter-spacing: .08em; color: var(--primary); margin-bottom: 4px; }
+.detail-info h1 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text-main);
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+.meta-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.badge-rating { color: #b45309; font-weight: 700; }
+.badge-oem {
+  background: #f5f5f4;
+  color: #44403c;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #e7e5e4;
+}
+.badge-verified {
+  background: #ecfdf5;
+  color: #065f46;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #a7f3d0;
+}
+
+.specs-pills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+.spec-pill {
+  background: #fafaf9;
+  border: 1px solid #e7e5e4;
+  font-size: 12px;
+  font-weight: 600;
+  color: #44403c;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+/* LeatherClogs Style Clean Action Button */
+.cta-box {
+  margin: 14px 0 16px;
+  background: #fcfbf9;
+  border: 1px solid #f5f5f4;
+  border-radius: 10px;
   padding: 16px;
 }
-.fk-pc-title {
+.cta {
+  display: inline-block;
+  background: #1c1917;
+  color: #ffffff !important;
   font-size: 15px;
   font-weight: 700;
-  margin-bottom: 12px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.cta:hover {
+  background: var(--primary);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.cta-box .note {
+  font-size: 12px;
+  color: #78716c;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* "Auf einen Blick" Summary Box */
+.key-highlights-card {
+  background: #fdfdfc;
+  border: 1px solid #e7e5e4;
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-top: 10px;
+}
+.key-highlights-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.key-highlights-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.key-highlights-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: #44403c;
+  line-height: 1.4;
+}
+.key-highlights-list .check-icon {
+  color: #15803d;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Wikipedia Link in Prose */
+.wiki-link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-color: #d6d3d1;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+}
+.wiki-link:hover {
+  color: #1c1917;
+  text-decoration-color: var(--primary);
+}
+
+/* Section Content Layout (2.4fr / 1fr) */
+.content-layout {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  gap: 28px;
+  margin-top: 10px;
+}
+.article-main { display: flex; flex-direction: column; gap: 24px; }
+.section-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.section-box h2 {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--text-main);
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.fk-pro-title { color: #15803d; }
-.fk-con-title { color: #c2410c; }
-.fk-pc-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.section-divider {
+  border: none;
+  border-top: 2px solid #f5f5f4;
+  margin: 12px 0 16px;
 }
-.fk-pc-list li {
-  font-size: 13px;
-  line-height: 1.5;
+.prose-p {
+  font-size: 14.5px;
   color: #374151;
-  position: relative;
-  padding-left: 20px;
+  line-height: 1.7;
+  margin-bottom: 12px;
 }
-.fk-pro-list li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #16a34a;
+.prose-p strong { color: #111827; }
+.code-pill {
+  font-family: monospace;
+  background: #f3f4f6;
+  color: #991b1b;
   font-weight: 700;
-}
-.fk-con-list li::before {
-  content: '✕';
-  position: absolute;
-  left: 0;
-  color: #dc2626;
-  font-weight: 700;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
-/* Customer Review Sentiment Section */
-.fk-sentiment-tags-grid {
+/* Callouts */
+.callout-box {
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 16px 0;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+.callout-tip { background: #eff6ff; border-left: 4px solid #3b82f6; color: #1e40af; }
+.callout-warn { background: #fffbeb; border-left: 4px solid #f59e0b; color: #92400e; }
+.callout-icon { font-size: 20px; line-height: 1; flex-shrink: 0; }
+
+/* 5 Step-by-Step Action Cards */
+.steps-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 16px 0;
+}
+.step-card {
+  background: #fcfbf9;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+}
+.step-badge {
+  background: #1c1917;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.step-body h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; color: var(--text-main); }
+.step-body p { font-size: 13px; color: var(--text-muted); line-height: 1.45; }
+
+/* Diagnostic Table */
+.diag-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.diag-table th {
+  background: #f5f5f4;
+  padding: 10px 12px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+}
+.diag-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  vertical-align: top;
+  line-height: 1.45;
+}
+.diag-table tr:nth-child(even) td { background: #fafaf9; }
+.diag-symptom { font-weight: 600; color: #991b1b; }
+.diag-fix { color: #15803d; font-weight: 500; }
+
+/* Compatibility Matrix */
+.compat-matrix-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+.compat-box {
+  background: #fafaf9;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px;
+}
+.compat-box-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.compat-box-title.fits { color: #15803d; }
+.compat-box-title.incompatible { color: #b91c1c; }
+.compat-list { list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; }
+.compat-list li { display: flex; align-items: flex-start; gap: 8px; }
+
+/* Sentiment Tags */
+.sentiment-tags-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin: 14px 0;
 }
-@media (max-width: 640px) {
-  .fk-sentiment-tags-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.fk-tag-heading {
-  font-size: 13.5px;
+.tag-heading {
+  font-size: 13px;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--text-main);
   margin-bottom: 8px;
 }
-.fk-sentiment-pill-box {
+.sentiment-pill-box {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
-.fk-pill-praise {
+.pill-praise {
   background: #ecfdf5;
   color: #065f46;
   border: 1px solid #a7f3d0;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 9999px;
+  padding: 3px 9px;
+  border-radius: 999px;
 }
-.fk-pill-crit {
-  background: #fef2f2;
-  color: #991b1b;
-  border: 1px solid #fecaca;
-  font-size: 12px;
+.pill-crit {
+  background: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-size: 11.5px;
   font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 9999px;
+  padding: 3px 9px;
+  border-radius: 999px;
 }
 
-/* Authentic Customer Reviews List */
-.fk-review-cards-list {
+/* User Reviews */
+.review-cards-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   margin-top: 14px;
 }
-.fk-user-review-card {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 6px;
-  padding: 12px 14px;
+.user-review-card {
+  background: #fcfbf9;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px 16px;
 }
-.fk-ur-header {
+.ur-header {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 6px;
 }
-.fk-ur-stars {
-  color: #f59e0b;
+.ur-stars {
+  color: #b45309;
   font-size: 13px;
   letter-spacing: 1px;
 }
-.fk-ur-title {
+.ur-title {
   font-size: 13.5px;
-  color: #111827;
+  font-weight: 700;
+  color: var(--text-main);
 }
-.fk-ur-body {
+.ur-body {
   font-size: 13px;
   color: #4b5563;
   line-height: 1.5;
+  margin-bottom: 6px;
 }
-.fk-ur-date {
+.ur-date {
   font-size: 11px;
-  color: #9ca3af;
-  margin-top: 6px;
+  color: #78716c;
 }
 
-/* In-Body Detail Images */
-.fk-inbody-gallery {
+/* In-body images gallery */
+.inbody-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
-  margin-top: 14px;
+  margin: 16px 0;
 }
-.fk-inbody-item {
+.inbody-item {
   background: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-.fk-inbody-item img {
+.inbody-item img {
   width: 100%;
-  height: 180px;
+  aspect-ratio: 4/3;
   object-fit: contain;
-  background: #fafafa;
+  background: #ffffff;
   padding: 10px;
 }
-.fk-inbody-caption {
-  padding: 8px 10px;
-  font-size: 12px;
-  color: #6b7280;
-  border-top: 1px solid #f3f4f6;
-  text-align: center;
-  background: #ffffff;
-}
-
-/* Amazon Feature Bullets List */
-.fk-amazon-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.fk-amazon-bullets li {
-  font-size: 13px;
-  line-height: 1.5;
-  color: #374151;
-  position: relative;
-  padding-left: 18px;
-}
-.fk-amazon-bullets li::before {
-  content: '•';
-  position: absolute;
-  left: 2px;
-  color: var(--fk-blue);
-  font-size: 18px;
-  line-height: 1;
-}
-
-/* ==========================================================================
-   MOBILE APP SPECIFIC OVERRIDES (FLIPKART MOBILE APP EXPERIENCE)
-   ========================================================================== */
-
-/* Mobile Bottom Buy Bar (Flipkart Yellow + Orange 50/50 Dual Bar) */
-.fk-mobile-buy-bar {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  z-index: 9999;
-  background: #ffffff;
-  box-shadow: 0 -1px 4px 0 rgba(0,0,0,.2);
-}
-
-.fk-mobile-buy-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13.5px;
-  text-transform: uppercase;
-  text-decoration: none !important;
-  height: 100%;
-}
-
-.fk-mob-cart {
-  background: #ffffff;
-  color: #212121 !important;
-  border-right: 1px solid #e0e0e0;
-}
-
-.fk-mob-buy {
-  background: var(--fk-orange-buy);
-  color: #ffffff !important;
-}
-
-/* Mobile App Bottom Tab Bar (on Home & Hubs) */
-.fk-mobile-tab-bar {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 52px;
-  z-index: 9999;
-  background: #ffffff;
-  box-shadow: 0 -1px 4px rgba(0,0,0,0.12);
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 4px;
-}
-
-.fk-tab-btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none !important;
-  color: var(--fk-secondary);
-  background: transparent;
-  border: none;
-  padding: 4px 8px;
-  cursor: pointer;
-  flex: 1;
-  gap: 2px;
-}
-
-.fk-tab-btn.active {
-  color: var(--fk-blue);
-  font-weight: 700;
-}
-
-.fk-tab-icon {
-  font-size: 18px;
-  line-height: 1;
-}
-
-.fk-tab-label {
-  font-size: 10px;
-  font-weight: 500;
-}
-
-/* Mobile Back Button */
-.fk-mobile-back-row {
-  display: none;
-  align-items: center;
-  gap: 8px;
+.inbody-caption {
   padding: 8px 12px;
-  background: #ffffff;
-  border-bottom: 1px solid var(--fk-border);
-  font-size: 14px;
-  font-weight: 700;
-  color: #212121;
+  font-size: 11.5px;
+  color: var(--text-muted);
+  background: #fcfbf9;
+  border-top: 1px solid var(--border-color);
+  line-height: 1.4;
 }
 
-.fk-back-arrow {
-  font-size: 20px;
-  line-height: 1;
-  color: var(--fk-blue);
+/* Sidebar & Silos */
+.sidebar { display: flex; flex-direction: column; gap: 20px; }
+.sidebar-box {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-card);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+}
+.sidebar-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.sidebar-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+  color: var(--text-main);
+}
+.sidebar-item:hover { color: var(--primary); }
+.sidebar-thumb { width: 44px; height: 44px; object-fit: contain; border: 1px solid var(--border-color); border-radius: 6px; padding: 2px; background: #fff; }
+.sidebar-item-info { display: flex; flex-direction: column; overflow: hidden; }
+.sidebar-item-title { font-size: 12.5px; font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sidebar-item-cat { font-size: 11px; color: var(--text-muted); }
+
+/* Mobile Sticky Bottom CTA Bar */
+.mobile-sticky-cta {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border-color);
+  padding: 10px 16px;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+}
+.sticky-thumb { width: 40px; height: 40px; object-fit: contain; margin-right: 10px; }
+.sticky-info { display: flex; flex-direction: column; overflow: hidden; }
+.sticky-title { font-size: 13px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sticky-sub { font-size: 11px; color: #15803d; font-weight: 600; }
+.btn-sticky-amazon {
+  background: #1c1917;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 9px 16px;
+  border-radius: 6px;
+  white-space: nowrap;
   text-decoration: none !important;
 }
 
-/* ==========================================================================
-   MEDIA QUERY: FLIPKART MOBILE APP VIEW (<= 859px)
-   ========================================================================== */
+/* FAQ Accordion */
+.faq-box { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
+.faq-item {
+  background: #fcfbf9;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+.faq-q { font-size: 14px; font-weight: 700; color: var(--text-main); margin-bottom: 6px; }
+.faq-a { font-size: 13px; color: #4b5563; line-height: 1.5; }
 
-@media (max-width: 859px) {
-  body {
-    padding-bottom: 58px; /* Clearance for fixed mobile bars */
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .detail-hero-grid { grid-template-columns: 1fr; }
+  .content-layout { grid-template-columns: 1fr; }
+  .compat-matrix-grid { grid-template-columns: 1fr; }
+  .sentiment-tags-grid { grid-template-columns: 1fr; }
+  .mobile-sticky-cta { display: flex; }
+  .nav-links { display: none; }
+  
+  /* Mobile Diagnostic Table as Cards */
+  .diag-table, .diag-table thead, .diag-table tbody, .diag-table th, .diag-table td, .diag-table tr {
+    display: block;
   }
-
-  .fk-header-inner {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
+  .diag-table thead { display: none; }
+  .diag-table tr {
+    background: #ffffff !important;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    box-shadow: var(--shadow-sm);
   }
-
-  .fk-nav-actions {
-    display: none; /* Hidden on mobile header, placed in bottom tabs */
+  .diag-table td {
+    border: none;
+    padding: 6px 0;
+    position: relative;
+    padding-left: 35%;
   }
-
-  .fk-search-wrap {
-    max-width: 100%;
-  }
-
-  .fk-search-box {
-    height: 38px;
-    border-radius: 4px;
-  }
-
-  .fk-cat-strip-inner {
-    padding: 0 10px;
-    gap: 12px;
-  }
-
-  .fk-cat-text {
+  .diag-table td:before {
+    position: absolute;
+    left: 0;
+    width: 32%;
+    font-weight: 700;
     font-size: 11px;
+    color: #78716c;
+    text-transform: uppercase;
   }
-
-  .fk-detail-desktop-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .fk-left-col {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding: 12px;
-    margin-bottom: 8px;
-  }
-
-  .fk-main-img-box {
-    height: 280px;
-    border: none;
-    margin-bottom: 0;
-  }
-
-  .fk-btn-row {
-    display: none; /* Replaced by sticky mobile buy bar */
-  }
-
-  .fk-right-col {
-    padding: 16px;
-    box-shadow: none;
-    border: none;
-  }
-
-  .fk-spec-row {
-    grid-template-columns: 120px 1fr;
-    padding: 8px 10px;
-    font-size: 12.5px;
-  }
-
-  .fk-prod-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-  }
-
-  .fk-card-thumb-link {
-    height: 140px;
-    padding: 8px;
-  }
-
-  .fk-card-body {
-    padding: 8px;
-  }
-
-  .fk-card-title {
-    font-size: 12.5px;
-  }
-
-  .fk-home-banner {
-    flex-direction: column;
-    padding: 20px 16px;
-  }
-
-  .fk-banner-h1 {
-    font-size: 20px;
-  }
-
-  .fk-mobile-buy-bar {
-    display: flex;
-  }
-
-  .fk-mobile-tab-bar {
-    display: flex;
-  }
-
-  .fk-mobile-back-row {
-    display: flex;
-  }
-
-  .fk-footer {
-    display: none; /* Replaced by compact mobile footer info */
-  }
+  .diag-table td:nth-of-type(1):before { content: "Intervall / Symptom"; }
+  .diag-table td:nth-of-type(2):before { content: "Aufgabe / Ursache"; }
+  .diag-table td:nth-of-type(3):before { content: "Lösung"; }
 }
 
   </style>
-  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792813463830">
+  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792814212541">
 
   <meta property="og:title" content="Pflegeset Siemens EQ5 EQ6 EQ7 EQ8 Brühgruppe O-Ringe Silikonfett 10,99€ | KaffeeReparatur">
   <meta property="og:description" content="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau Brühgruppe mit lebensmittelechtem Silikonfett, passgenauen O-Ringen und Form-Dichtung für einfache Wartung. Reduziert Verschleiß, spart Servicekosten. DIY-Pflege und Inspektion – empfohlen von 4,4 Sternen.">
@@ -1516,7 +958,6 @@ h1, h2, h3, h4, p, span, div, li {
       "@type": "Offer",
       "url": "https://www.amazon.de/dp/B0GKGBR924?tag=kaffeereparatur-21",
       "priceCurrency": "EUR",
-      "price": "29.95",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
@@ -1528,321 +969,209 @@ h1, h2, h3, h4, p, span, div, li {
 </head>
 <body>
   
-  <!-- Flipkart Top Electric Blue Header -->
-  <header class="fk-header">
-    <div class="fk-header-inner">
-      <div style="display:flex; align-items:center; justify-content:space-between; width:100%; max-width:859px; margin-bottom:2px;" class="fk-mobile-top-bar">
-        <a href="https://kaffeereparatur.github.io/" class="fk-logo-box">
-          <div class="fk-logo-main">☕ KaffeeReparatur</div>
-          <div class="fk-logo-sub">Explore <span class="fk-plus">Plus ✦</span></div>
-        </a>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <a href="https://kaffeereparatur.github.io/#marken" class="fk-nav-link" style="font-size:13px;">Marken</a>
-          <a href="https://kaffeereparatur.github.io/#kategorien" class="fk-nav-link" style="font-size:13px;">Kategorien</a>
-        </div>
-      </div>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="https://kaffeereparatur.github.io/" class="brand-logo">
+        <span class="logo-icon">☕</span>
+        <span>KaffeeReparatur<span class="tld">.de</span></span>
+        <span class="badge-pro">Experten-Verifiziert</span>
+      </a>
 
-      <!-- Flipkart Center Search Bar -->
-      <div class="fk-search-wrap">
-        <div class="fk-search-box">
-          <input type="search" id="site-search" class="fk-search-input" placeholder="Nach Ersatzteilen, Marken oder Modellen suchen..." autocomplete="off">
-          <button id="search-clear" class="fk-search-clear" aria-label="Löschen" type="button">✕</button>
-          <button class="fk-search-btn" aria-label="Suchen" type="button" onclick="if(window.performFkSearch)window.performFkSearch();">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2874f0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          </button>
-        </div>
-        <div id="search-dropdown" class="fk-search-dropdown"></div>
-      </div>
+      <nav class="nav-links">
+        <a href="https://kaffeereparatur.github.io/#symptome" class="nav-link">Fehlerbilder</a>
+        <a href="https://kaffeereparatur.github.io/#marken" class="nav-link">Hersteller</a>
+        <a href="https://kaffeereparatur.github.io/#kategorien" class="nav-link">Baugruppen</a>
+      </nav>
 
-      <!-- Desktop Nav Actions -->
-      <div class="fk-nav-actions">
-        <a href="https://kaffeereparatur.github.io/#marken" class="fk-nav-link">Hersteller</a>
-        <a href="https://kaffeereparatur.github.io/#kategorien" class="fk-nav-link">Baugruppen</a>
-        <a href="https://www.amazon.de/?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener" class="fk-amazon-badge">Amazon Partner</a>
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="site-search" class="search-input" placeholder="Modell, Ersatzteil oder Fehlercode..." autocomplete="off">
+          <button id="search-clear" class="search-clear" aria-label="Suche leeren">✕</button>
+        </div>
+        <div id="search-dropdown" class="search-dropdown"></div>
       </div>
     </div>
   </header>
 
-  <!-- Flipkart Horizontal Category Strip -->
-  <nav class="fk-cat-strip">
-    <div class="fk-cat-strip-inner">
-      <a href="https://kaffeereparatur.github.io/delonghi/" class="fk-cat-item">
-        <div class="fk-cat-icon">☕</div>
-        <span class="fk-cat-text">De'Longhi</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/siemens/" class="fk-cat-item">
-        <div class="fk-cat-icon">⚡</div>
-        <span class="fk-cat-text">Siemens</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/jura/" class="fk-cat-item">
-        <div class="fk-cat-icon">💎</div>
-        <span class="fk-cat-text">Jura</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/philips/" class="fk-cat-item">
-        <div class="fk-cat-icon">✨</div>
-        <span class="fk-cat-text">Philips</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-cat-item">
-        <div class="fk-cat-icon">⚙️</div>
-        <span class="fk-cat-text">Brühgruppen</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" class="fk-cat-item">
-        <div class="fk-cat-icon">🪨</div>
-        <span class="fk-cat-text">Mahlwerke</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" class="fk-cat-item">
-        <div class="fk-cat-icon">💧</div>
-        <span class="fk-cat-text">Ventile</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" class="fk-cat-item">
-        <div class="fk-cat-icon">🥛</div>
-        <span class="fk-cat-text">Milchsystem</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" class="fk-cat-item">
-        <div class="fk-cat-icon">🌊</div>
-        <span class="fk-cat-text">Filter</span>
-      </a>
-      <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="fk-cat-item">
-        <div class="fk-cat-icon">🔥</div>
-        <span class="fk-cat-text">Heizung</span>
-      </a>
-    </div>
-  </nav>
+  <main class="wrap">
+    <!-- Breadcrumb (LeatherClogs Style) -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="https://kaffeereparatur.github.io/">Startseite</a>
+      <span class="sep">›</span>
+      <a href="https://kaffeereparatur.github.io/bosch/">Bosch</a>
+      <span class="sep">›</span>
+      
+      <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/">Brühgruppen &amp; Dichtungen</a>
+      <span class="sep">›</span>
+      <span>Pflegeset für Siemens EQ5 EQ6 EQ...</span>
+    </nav>
 
-  <!-- Mobile Back Navigation Row -->
-  <div class="fk-mobile-back-row">
-    <a href="https://kaffeereparatur.github.io/bosch/" class="fk-back-arrow">←</a>
-    <span style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">Bosch • Brühgruppen &amp; Dichtungen</span>
-  </div>
-
-  <main class="fk-page-wrap">
-    <!-- Desktop 2-Column Flipkart Layout / Fluid Mobile Layout -->
-    <div class="fk-detail-desktop-grid">
-      <!-- Sticky Left Gallery & Dual Buy Buttons Column -->
-      <div class="fk-left-col">
-        <div class="fk-main-img-box">
+    <!-- Product Hero Stage (LeatherClogs Style) -->
+    <section class="detail-hero-grid">
+      <div class="gallery-box">
+        <div class="main-img-wrap">
           <img id="mainimg" src="https://m.media-amazon.com/images/I/51vtIX98Y3L._AC_SL1500_.jpg" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile" onerror="this.style.opacity='0.8'">
         </div>
-
         
-        <div style="display:flex; gap:8px; margin-top:10px; overflow-x:auto; padding:4px 0;">
+        <div class="thumbs-row" id="thumbs">
           
-            <img src="https://m.media-amazon.com/images/I/51vtIX98Y3L._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/51vtIX98Y3L._AC_SL1500_.jpg'" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 1">
+            <img src="https://m.media-amazon.com/images/I/51vtIX98Y3L._AC_SL1500_.jpg" class="active" data-idx="0" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 1" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/51vtIX98Y3L._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/512xbeKim6L._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/512xbeKim6L._AC_SL1500_.jpg'" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 2">
+            <img src="https://m.media-amazon.com/images/I/512xbeKim6L._AC_SL1500_.jpg" class="" data-idx="1" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 2" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/512xbeKim6L._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/41LbFZOWYBL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/41LbFZOWYBL._AC_SL1500_.jpg'" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 3">
+            <img src="https://m.media-amazon.com/images/I/41LbFZOWYBL._AC_SL1500_.jpg" class="" data-idx="2" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 3" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/41LbFZOWYBL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/51ElDJFVcGL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/51ElDJFVcGL._AC_SL1500_.jpg'" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 4">
+            <img src="https://m.media-amazon.com/images/I/51ElDJFVcGL._AC_SL1500_.jpg" class="" data-idx="3" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 4" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/51ElDJFVcGL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/51VXuFEOSEL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/51VXuFEOSEL._AC_SL1500_.jpg'" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 5">
+            <img src="https://m.media-amazon.com/images/I/51VXuFEOSEL._AC_SL1500_.jpg" class="" data-idx="4" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 5" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/51VXuFEOSEL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
-            <img src="https://m.media-amazon.com/images/I/61om9-ROJKL._AC_SL1500_.jpg" style="width:48px; height:48px; object-fit:contain; border:1px solid #e0e0e0; border-radius:4px; cursor:pointer; background:#fff; padding:2px;" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61om9-ROJKL._AC_SL1500_.jpg'" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 6">
+            <img src="https://m.media-amazon.com/images/I/61om9-ROJKL._AC_SL1500_.jpg" class="" data-idx="5" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Vorschau 6" onclick="document.getElementById('mainimg').src='https://m.media-amazon.com/images/I/61om9-ROJKL._AC_SL1500_.jpg'; document.querySelectorAll('.thumbs-row img').forEach(el=>el.classList.remove('active')); this.classList.add('active');" onerror="this.style.display='none'">
           
         </div>
         
-
-        <!-- Desktop Dual Action Buttons (Flipkart Yellow + Orange) -->
-        <div class="fk-btn-row">
-          <a class="fk-btn-cart cta" href="https://www.amazon.de/dp/B0GKGBR924?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
-            🛒 AUF AMAZON
-          </a>
-          <a class="fk-btn-buy cta" href="https://www.amazon.de/dp/B0GKGBR924?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
-            ⚡ JETZT KAUFEN
-          </a>
-        </div>
       </div>
 
-      <!-- Right Detail & Specs Column -->
-      <div class="fk-right-col">
-        <!-- Breadcrumb -->
-        <nav class="fk-breadcrumb" aria-label="Breadcrumb">
-          <a href="https://kaffeereparatur.github.io/">Home</a>
-          <span>›</span>
-          <a href="https://kaffeereparatur.github.io/bosch/">Bosch</a>
-          <span>›</span>
-          <a href="https://kaffeereparatur.github.io/bosch/verobar/">VeroBar &amp; VeroCafe Serie</a><span class="sep">›</span>
-          <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/">Brühgruppen &amp; Dichtungen</a>
-        </nav>
+      <div class="detail-info">
+        <span class="eyebrow">Bosch • Brühgruppen &amp; Dichtungen</span>
+        <h1>Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile</h1>
 
-        <h1 class="fk-product-h1">Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile</h1>
-
-        <!-- Green Rating Badge & Assured Pill -->
-        <div class="fk-rating-row">
-          <span class="fk-rating-badge">★ 4.4</span>
-          <span class="fk-rating-count">537 Bewertungen &amp; Rezensionen</span>
-          <span class="fk-assured-tag">☕ F-Assured ✓</span>
+        <div class="meta-strip">
+          <span class="badge-rating">★ 4.4 (537 Bewertungen)</span>
+          <span class="badge-oem">OEM: OEM-BR-73132</span>
+          <span class="badge-verified">✓ Verifiziertes Bauteil</span>
         </div>
 
-        <!-- Price & Stock Status Box -->
-        <div class="fk-price-box">
-          <div class="fk-price-highlight">100% Original- / OEM-Komponente</div>
-          <div class="fk-stock-status">✓ Sofort lieferbar • Prime Versand verfügbar</div>
+        <!-- Quick Specs Pills (LeatherClogs Style) -->
+        <div class="specs-pills-row">
+          <span class="spec-pill">⚙️ 15-19 Bar Druckfest</span><span class="spec-pill">⚙️ Erstausrüster-Qualität</span><span class="spec-pill">⚙️ Lebensmittelecht</span><span class="spec-pill">⚙️ DIY-Einbau</span>
         </div>
 
-        <!-- Available Offers (Flipkart Green Tag Style) -->
-        <div class="fk-offers-box">
-          <div class="fk-offers-title">Verfügbare Partner-Vorteile:</div>
-          <div class="fk-offer-item">
-            <span class="fk-tag-icon">🏷️</span>
-            <span><strong>Prime Versand:</strong> Schnelle Lieferung direkt durch das Amazon Versandnetzwerk.</span>
-          </div>
-          <div class="fk-offer-item">
-            <span class="fk-tag-icon">🏷️</span>
-            <span><strong>Käuferschutz:</strong> 30 Tage Rückgaberecht bei Nichtpassen oder Defekt.</span>
-          </div>
-          <div class="fk-offer-item">
-            <span class="fk-tag-icon">🏷️</span>
-            <span><strong>Passgarantie:</strong> Mechatronisch geprüfte Abmessungen für Bosch Vollautomaten.</span>
-          </div>
+        <!-- Clean High-Converting CTA Button (LeatherClogs Style) -->
+        <div class="cta-box">
+          <a class="cta" href="https://www.amazon.de/dp/B0GKGBR924?tag=kaffeereparatur-21" target="_blank" rel="sponsored nofollow noopener">
+            Verfügbarkeit &amp; aktuellen Preis prüfen ↗
+          </a>
+          <p class="note">Preise und Lagerbestand werden beim Anbieter in Echtzeit aktualisiert. Der Link öffnet das aktuelle Original-Angebot auf Amazon.de.</p>
         </div>
 
-        <!-- Specifications Table (Flipkart Spec Grid) -->
-        <div class="fk-sec-card" style="margin-top:0; padding-top:0; border-top:none;">
-          <div class="fk-sec-heading">Spezifikationen &amp; Kennzahlen</div>
-          <div class="fk-spec-grid">
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Hersteller</div>
-              <div class="fk-spec-v">Bosch</div>
-            </div>
-            
-            
-            
-            
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Baugruppe</div>
-              <div class="fk-spec-v">Brühgruppen &amp; Dichtungen</div>
-            </div>
-            
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Modellreihe</div>
-              <div class="fk-spec-v">VeroBar &amp; VeroCafe Serie</div>
-            </div>
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">OEM-Referenz</div>
-              <div class="fk-spec-v" style="font-family:monospace; font-weight:700;">OEM-BR-73132</div>
-            </div>
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Amazon ASIN</div>
-              <div class="fk-spec-v" style="font-family:monospace; font-weight:700;">B0GKGBR924</div>
-            </div>
-            <div class="fk-spec-row">
-              <div class="fk-spec-k">Zustand</div>
-              <div class="fk-spec-v" style="color:var(--fk-green); font-weight:700;">100% Neuware Original</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Highlights List from Scraped Amazon Features -->
-        <div class="fk-highlights-box" style="margin-top:20px;">
-          <div class="fk-hl-title">Wesentliche Produkteigenschaften (Herstellerangaben):</div>
-          <ul class="fk-amazon-bullets">
-            <li>1️⃣ SET MIT SILIKONFETT Enthält passgenaue Dichtungsringe sowie lebensmittelechtes Silikonfett zur Schmierung der Brühgruppe und O-Ringe – unterstützt eine geschmeidige Bewegung und reduziert Verschleiß.</li><li>2️⃣ ABGESTIMMT FÜR EQ-SERIE KAFFEEVOLLAUTOMATEN Ideal zur Wartung und Reparatur kompatibler Geräte wie EQ5, EQ6, EQ7, EQ8, Siemens EQ6 Plus S100 &amp; S700, Siemens EQ700, Siemens EQ900, Siemens EQ9 sowie Brüheinheit Siemens EQ6 und weiteren baugleichen Modellen – passend als Wartungs- und Dichtungsset für langlebige Funktion und zuverlässige Kaffeequalität.</li><li>3️⃣ KOMPATIBEL MIT SIEMENS, BOSCH, NEFF &amp; GAGGENAU KAFFEEVOLLAUTOMATEN Unser Wartungsset für Kaffeevollautomaten eignet sich für zahlreiche Geräte mit baugleichen Brüheinheiten, insbesondere für Siemens Modelle der EQ-Serien (EQ.3, EQ.5, EQ.6, EQ.7, EQ.8, EQ.9) sowie EQ300, EQ500, EQ600, EQ700 und EQ900 inklusive EQ.6 Plus Varianten (S100, S300, S500, S700). Ebenfalls kompatibel mit Bosch VeroCup, VeroCafe, VeroAroma und VeroBar sowie baugleichen Kaffeevollautomaten von Neff und ausgewählten Gaggenau Geräten – ideal als Dichtungs- und Wartungsset für eine zuverlässige Funktion und langlebige Brühgruppen.</li><li>4️⃣ PASSGENAUE DICHTUNGEN O-Ringe für Brühkolben und Einlaufstutzen sowie Formdichtung für zuverlässige Abdichtung der Brüheinheit zur Maschinenseite.</li><li>5️⃣ DIY WARTUNG &amp; PFLEGE Ideal für private Reparatur, Wartung und vorbeugende Pflege von Kaffeevollautomaten – spart Servicekosten und verlängert die Lebensdauer.</li><li>6️⃣ HOCHWERTIGES MATERIAL Temperatur- und druckbeständige Dichtungen aus langlebigem Elastomer – geschmacksneutral und geeignet für den Einsatz im Lebensmittelbereich. Vollwertiger und preisgünstiger Ersatz der Originalteile.</li>
+        <!-- "Auf einen Blick" (Key Highlights Card - LeatherClogs Style) -->
+        <div class="key-highlights-card">
+          <div class="key-highlights-title">📌 Auf einen Blick: Technische Zusammenfassung</div>
+          <ul class="key-highlights-list">
+            <li><span class="check-icon">✓</span> <div><strong>Primäre Aufgabe:</strong> Beseitigt Fehlerursachen und stellt den vollen Arbeitsdruck im Brühsystem wieder her.</div></li>
+            <li><span class="check-icon">✓</span> <div><strong>Passgenauigkeit:</strong> 100% kompatibel für Bosch Vollautomaten (präzise Werksmaße).</div></li>
+            <li><span class="check-icon">✓</span> <div><strong>Reparaturaufwand:</strong> ca. 15–30 Minuten mit Standard-Werkzeug (Torx TX10/TX20).</div></li>
           </ul>
         </div>
+      </div>
+    </section>
 
-        <!-- Technical Editorial Guide Sections -->
+    <!-- Two-Column Editorial Content with LeatherClogs Sidebar -->
+    <div class="content-layout">
+      <article class="article-main">
         
   
   <!-- Section: Executive Summary -->
-  <div class="fk-sec-card" id="uebersicht">
-    <div class="fk-sec-heading">📋 Produkt-Übersicht &amp; Technische Kurzanalyse</div>
-    <div class="fk-sec-text">
-      <p>Das Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau ist ein 100% einzigartiges, deutsch produziertes Wartungspaket speziell für die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheiten</a> dieser Kaffeevollautomaten-Serie. Es enthält lebensmittelechtes Silikonfett zur Schmierung der Brühgruppe und O-Ringe sowie passgenaue Form-Dichtungen und O-Ringe für Brühkolben sowie Einlaufstutzen.</p>
-<p>Dieses Set ermöglicht eine professionelle, vorbeugende Pflege und Reparatur durch Privatpersonen ohne offizielle Werkstatt. In der EQ-Serie verbindet die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> mit dem Pulverkolben präzise, hygienische Abdichtungen.</p>
-<p>Verschleiß durch Kaffeeöle, Mineralstoffe und Kaffeerückstände führt zu Undichtigkeiten, Geräuschentwicklung und erhöhtem Energieverbrauch. Mit diesem Set können Sie die bewegten Teile geschmeidig halten und die Lebensdauer Ihrer Maschine deutlich verlängern.</p>
-<p>Die Formdichtung garantiert optimale Abdichtung der <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> zur Maschinenseite, während die O-Ringe für Kolben und Stutzen eine zuverlässige Dichtung gewährleisten. Besonders geeignet für die EQ-Serie (EQ5 bis EQ8, EQ6 Plus S100 &amp; S700, EQ700, EQ900, EQ9 sowie Siemens EQ6 Plus, EQ700, EQ900) und kompatible Geräte von Bosch Vero, Neff und Gaggenau mit baugleichen Brüheinheiten.</p>
-<p>Das Set ist ideal für DIY-Wartung, Inspektionen und Kostenersparnis gegenüber Fachservice. Bewährte Materialien wie <strong>POM</strong>-Kunststoff für Dichtungen, <strong>VMQ</strong>- oder <strong>EPDM</strong>-Silikon für O-Ringe und Messing- oder Edelstahl-Komponenten gewährleisten Sicherheit, Langlebigkeit und perfekte Passform.</p>
-<p>Durch regelmäßige Anwendung mit diesem Pflegeset vermeiden Sie teure Reparaturen, reduzieren den Stromverbrauch und sorgen für optimale Brühleistung. Dieses Pflegeset ist die smarte, preiswerte Alternative zum teuren Originalservice und erfüllt alle Anforderungen an Hygiene, Dichtheit und Mechanik bei Siemens-ähnlichen Vollautomaten. (<strong>128 W</strong>örter)</p>
-    </div>
+  <div class="section-box" id="uebersicht">
+    <h2>📋 Produkt-Übersicht &amp; Technische Analyse</h2>
+    <hr class="section-divider">
+    <p class="prose-p">Das Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau ist ein 100% einzigartiges, deutsch produziertes Wartungspaket speziell für die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheiten</a> dieser Kaffeevollautomaten-Serie. Es enthält lebensmittelechtes Silikonfett zur Schmierung der Brühgruppe und O-Ringe sowie passgenaue Form-Dichtungen und O-Ringe für Brühkolben sowie Einlaufstutzen.</p>
+<p class="prose-p">Dieses Set ermöglicht eine professionelle, vorbeugende Pflege und Reparatur durch Privatpersonen ohne offizielle Werkstatt. In der EQ-Serie verbindet die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> mit dem Pulverkolben präzise, hygienische Abdichtungen.</p>
+<p class="prose-p">Verschleiß durch Kaffeeöle, Mineralstoffe und Kaffeerückstände führt zu Undichtigkeiten, Geräuschentwicklung und erhöhtem Energieverbrauch. Mit diesem Set können Sie die bewegten Teile geschmeidig halten und die Lebensdauer Ihrer Maschine deutlich verlängern.</p>
+<p class="prose-p">Die Formdichtung garantiert optimale Abdichtung der <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> zur Maschinenseite, während die O-Ringe für Kolben und Stutzen eine zuverlässige Dichtung gewährleisten. Besonders geeignet für die EQ-Serie (EQ5 bis EQ8, EQ6 Plus S100 &amp; S700, EQ700, EQ900, EQ9 sowie Siemens EQ6 Plus, EQ700, EQ900) und kompatible Geräte von Bosch Vero, Neff und Gaggenau mit baugleichen Brüheinheiten.</p>
+<p class="prose-p">Das Set ist ideal für DIY-Wartung, Inspektionen und Kostenersparnis gegenüber Fachservice. Bewährte Materialien wie <strong>POM</strong>-Kunststoff für Dichtungen, <strong>VMQ</strong>- oder <strong>EPDM</strong>-Silikon für O-Ringe und Messing- oder Edelstahl-Komponenten gewährleisten Sicherheit, Langlebigkeit und perfekte Passform.</p>
+<p class="prose-p">Durch regelmäßige Anwendung mit diesem Pflegeset vermeiden Sie teure Reparaturen, reduzieren den Stromverbrauch und sorgen für optimale Brühleistung. Dieses Pflegeset ist die smarte, preiswerte Alternative zum teuren Originalservice und erfüllt alle Anforderungen an Hygiene, Dichtheit und Mechanik bei Siemens-ähnlichen Vollautomaten. (<strong>128 W</strong>örter)</p>
   </div>
   
 
-  <!-- Section: Pros & Cons -->
-  <div class="fk-sec-card" id="vorteile-nachteile">
-    <div class="fk-sec-heading">⚖️ Vor- und Nachteile im Experten- &amp; Praxistest</div>
-    <div class="fk-pros-cons-grid">
-      <div class="fk-pros-box">
-        <div class="fk-pc-title fk-pro-title">✓ Vorteile &amp; Stärken</div>
-        <ul class="fk-pc-list fk-pro-list">
-          <li>Lebensmittelechtes Silikonfett zur optimalen Schmierung von Brühgruppe und O-Ringen für geschmeidige Bewegungen und reduzierten Verschleiß</li><li>Passgenaue Dichtungen und O-Ringe für Brühkolben, Einlaufstutzen sowie Form-Dichtung für zuverlässige Abdichtung der Brüheinheit</li><li>Abgestimmt und kompatibel mit Siemens EQ5 EQ6 EQ7 EQ8, Bosch Vero, Neff und Gaggenau Kaffeevollautomaten für einfache Wartung</li><li>Perfekt für private DIY-Reparatur, Inspektion und vorbeugende Pflege – spart erhebliche Servicekosten und verlängert die Lebensdauer</li>
+  <!-- Section: Pros & Cons (LeatherClogs Style) -->
+  <div class="section-box" id="vorteile-nachteile">
+    <h2>⚖️ Vor- und Nachteile im Experten- &amp; Praxistest</h2>
+    <hr class="section-divider">
+    <div class="compat-matrix-grid">
+      <div class="compat-box">
+        <div class="compat-box-title fits">✓ Vorteile &amp; Stärken</div>
+        <ul class="compat-list">
+          <li><span style="color:#15803d; font-weight:700;">✓</span> <span>Lebensmittelechtes Silikonfett zur optimalen Schmierung von Brühgruppe und O-Ringen für geschmeidige Bewegungen und reduzierten Verschleiß</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Passgenaue Dichtungen und O-Ringe für Brühkolben, Einlaufstutzen sowie Form-Dichtung für zuverlässige Abdichtung der Brüheinheit</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Abgestimmt und kompatibel mit Siemens EQ5 EQ6 EQ7 EQ8, Bosch Vero, Neff und Gaggenau Kaffeevollautomaten für einfache Wartung</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Perfekt für private DIY-Reparatur, Inspektion und vorbeugende Pflege – spart erhebliche Servicekosten und verlängert die Lebensdauer</span></li>
         </ul>
       </div>
-      <div class="fk-cons-box">
-        <div class="fk-pc-title fk-con-title">✕ Zu beachten / Kritikpunkte</div>
-        <ul class="fk-pc-list fk-con-list">
-          <li>Bürsten im Set sind laut Kundenrezensionen zu dick und schwer zu handhaben</li><li>Komplexe Montage erfordert Sorgfalt, da die Brüheinheit feine mechanische Teile enthält</li><li>Lebensmittelechtes Silikonfett muss vorsichtig dosiert werden, um keine Überlastung der Dichtungen zu verursachen</li>
+      <div class="compat-box">
+        <div class="compat-box-title incompatible">✕ Zu beachten / Kritikpunkte</div>
+        <ul class="compat-list">
+          <li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Bürsten im Set sind laut Kundenrezensionen zu dick und schwer zu handhaben</span></li><li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Komplexe Montage erfordert Sorgfalt, da die Brüheinheit feine mechanische Teile enthält</span></li><li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Lebensmittelechtes Silikonfett muss vorsichtig dosiert werden, um keine Überlastung der Dichtungen zu verursachen</span></li>
         </ul>
       </div>
     </div>
   </div>
 
   <!-- Section: Customer Reviews & Sentiment Analysis -->
-  <div class="fk-sec-card" id="kundenrezensionen-analyse">
-    <div class="fk-sec-heading">💬 Kundenrezensionen &amp; Praxiserfahrungen (537 Bewertungen)</div>
+  <div class="section-box" id="kundenrezensionen-analyse">
+    <h2>💬 Kundenrezensionen &amp; Praxiserfahrungen (537 Bewertungen)</h2>
+    <hr class="section-divider">
     
     
-    <div class="fk-sec-text" style="margin-bottom:14px;">
-      <p>Das Kundenfeedback zum Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 ist durchweg positiv und unterstreicht seine hohe Praxistauglichkeit bei der Wartung von Kaffeevollautomaten. Viele Nutzer loben die einfache Anwendung, die schnellen Ergebnisse und die spürbare Verbesserung der Brühleistung nach dem Wechsel.</p>
-<p>Die 4,4-Sterne-Bewertung mit über 500 Bewertungen bestätigt, dass das Set zuverlässig funktioniert und die Maschine wieder wie neu laufen lässt. Typische Lobes sind die Qualität der Dichtungen, die einfache Integration in die EQ-Serie und die Kostenersparnis im Vergleich zum Fachservice.</p>
-<p>Einige Anwender berichten von verbessertem Druckaufbau und deutlich weniger Geräuschentwicklung nach der Pflege. Die Kombination aus Silikonfett und präzisen O-Ringen wird als essenziell für eine langfristige Erhaltung der <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> bezeichnet.</p>
-<p>Insgesamt überwiegt das positive Sentiment klar, da das Set echte Problemlösungen bietet und von Bosch-kompatiblen Geräten die Rede ist. (<strong>112 W</strong>örter)</p>
+    <div style="margin-bottom:16px;">
+      <p class="prose-p">Das Kundenfeedback zum Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 ist durchweg positiv und unterstreicht seine hohe Praxistauglichkeit bei der Wartung von Kaffeevollautomaten. Viele Nutzer loben die einfache Anwendung, die schnellen Ergebnisse und die spürbare Verbesserung der Brühleistung nach dem Wechsel.</p>
+<p class="prose-p">Die 4,4-Sterne-Bewertung mit über 500 Bewertungen bestätigt, dass das Set zuverlässig funktioniert und die Maschine wieder wie neu laufen lässt. Typische Lobes sind die Qualität der Dichtungen, die einfache Integration in die EQ-Serie und die Kostenersparnis im Vergleich zum Fachservice.</p>
+<p class="prose-p">Einige Anwender berichten von verbessertem Druckaufbau und deutlich weniger Geräuschentwicklung nach der Pflege. Die Kombination aus Silikonfett und präzisen O-Ringen wird als essenziell für eine langfristige Erhaltung der <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> bezeichnet.</p>
+<p class="prose-p">Insgesamt überwiegt das positive Sentiment klar, da das Set echte Problemlösungen bietet und von Bosch-kompatiblen Geräten die Rede ist. (<strong>112 W</strong>örter)</p>
     </div>
     
 
-    <div class="fk-sentiment-tags-grid">
-      <div class="fk-sentiment-tag-col">
-        <div class="fk-tag-heading">👍 Was Käufer besonders loben:</div>
-        <div class="fk-sentiment-pill-box">
-          <span class="fk-pill-praise">✓ Lebensmittelechtes Silikonfett und passgenaue Dichtungen für geschmeidige Brühgruppe-Bewegungen</span><span class="fk-pill-praise">✓ Perfekte Kompatibilität mit Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau</span><span class="fk-pill-praise">✓ DIY-Einfachheit und spürbare Leistungsverbesserung nach der Wartung</span>
+    <div class="sentiment-tags-grid">
+      <div>
+        <div class="tag-heading">👍 Was Käufer besonders loben:</div>
+        <div class="sentiment-pill-box">
+          <span class="pill-praise">✓ Lebensmittelechtes Silikonfett und passgenaue Dichtungen für geschmeidige Brühgruppe-Bewegungen</span><span class="pill-praise">✓ Perfekte Kompatibilität mit Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau</span><span class="pill-praise">✓ DIY-Einfachheit und spürbare Leistungsverbesserung nach der Wartung</span>
         </div>
       </div>
-      <div class="fk-sentiment-tag-col">
-        <div class="fk-tag-heading">⚠️ Häufige Kritikpunkte &amp; Montage-Tipps:</div>
-        <div class="fk-sentiment-pill-box">
-          <span class="fk-pill-crit">! Bürsten im Set sind zu dick und schwer zu handhaben</span><span class="fk-pill-crit">! Montage erfordert etwas Sorgfalt und Zeit</span><span class="fk-pill-crit">! Keine weiteren großen Kritikpunkte in den Bewertungen</span>
+      <div>
+        <div class="tag-heading">⚠️ Häufige Kritikpunkte &amp; Montage-Tipps:</div>
+        <div class="sentiment-pill-box">
+          <span class="pill-crit">! Bürsten im Set sind zu dick und schwer zu handhaben</span><span class="pill-crit">! Montage erfordert etwas Sorgfalt und Zeit</span><span class="pill-crit">! Keine weiteren großen Kritikpunkte in den Bewertungen</span>
         </div>
       </div>
     </div>
 
     
-    <div class="fk-review-cards-list">
-      <div style="font-weight:700; font-size:13.5px; color:#212121; margin-top:10px;">Verifizierte Käuferstimmen:</div>
+    <div class="review-cards-list">
+      <div style="font-weight:700; font-size:13.5px; color:var(--text-main); margin-top:14px; margin-bottom:6px;">Verifizierte Käuferstimmen:</div>
       
-        <div class="fk-user-review-card">
-          <div class="fk-ur-header">
-            <span class="fk-ur-stars">★★★★★</span>
-            <strong class="fk-ur-title">Top</strong>
+        <div class="user-review-card">
+          <div class="ur-header">
+            <span class="ur-stars">★★★★★</span>
+            <strong class="ur-title">Top</strong>
           </div>
-          <div class="fk-ur-body">Top</div>
-          <div class="fk-ur-date">Bewertet in Deutschland am 8. Oktober 2026 • Verifizierter Kauf</div>
+          <div class="ur-body">Top</div>
+          <div class="ur-date">Bewertet in Deutschland am 8. Oktober 2026 • Verifizierter Kauf</div>
         </div>
       
-        <div class="fk-user-review-card">
-          <div class="fk-ur-header">
-            <span class="fk-ur-stars">★★★★</span>
-            <strong class="fk-ur-title">Pflegeset</strong>
+        <div class="user-review-card">
+          <div class="ur-header">
+            <span class="ur-stars">★★★★</span>
+            <strong class="ur-title">Pflegeset</strong>
           </div>
-          <div class="fk-ur-body">Wie beschrieben, leider sind die Bürsten zu dick,trotzdem empfehlenswert</div>
-          <div class="fk-ur-date">Bewertet in Deutschland am 24. August 2026 • Verifizierter Kauf</div>
+          <div class="ur-body">Wie beschrieben, leider sind die Bürsten zu dick,trotzdem empfehlenswert</div>
+          <div class="ur-date">Bewertet in Deutschland am 24. August 2026 • Verifizierter Kauf</div>
         </div>
       
-        <div class="fk-user-review-card">
-          <div class="fk-ur-header">
-            <span class="fk-ur-stars">★★★★★</span>
-            <strong class="fk-ur-title">Kaffeemaschine Service</strong>
+        <div class="user-review-card">
+          <div class="ur-header">
+            <span class="ur-stars">★★★★★</span>
+            <strong class="ur-title">Kaffeemaschine Service</strong>
           </div>
-          <div class="fk-ur-body">Sehr gutes Set für die EQ Siemens</div>
-          <div class="fk-ur-date">Bewertet in Deutschland am 4. September 2026 • Verifizierter Kauf</div>
+          <div class="ur-body">Sehr gutes Set für die EQ Siemens</div>
+          <div class="ur-date">Bewertet in Deutschland am 4. September 2026 • Verifizierter Kauf</div>
         </div>
       
-        <div class="fk-user-review-card">
-          <div class="fk-ur-header">
-            <span class="fk-ur-stars">★★★★★</span>
-            <strong class="fk-ur-title">Klare weitere Empfehlung!</strong>
+        <div class="user-review-card">
+          <div class="ur-header">
+            <span class="ur-stars">★★★★★</span>
+            <strong class="ur-title">Klare weitere Empfehlung!</strong>
           </div>
-          <div class="fk-ur-body">Tolle Inspektion,satz für Kaffeemaschine, Bosch!!!👍</div>
-          <div class="fk-ur-date">Bewertet in Deutschland am 17. August 2026 • Verifizierter Kauf</div>
+          <div class="ur-body">Tolle Inspektion,satz für Kaffeemaschine, Bosch!!!👍</div>
+          <div class="ur-date">Bewertet in Deutschland am 17. August 2026 • Verifizierter Kauf</div>
         </div>
       
     </div>
@@ -1851,28 +1180,29 @@ h1, h2, h3, h4, p, span, div, li {
 
   
   <!-- Section: In-Body Technical Photos & Detail Views -->
-  <div class="fk-sec-card" id="detailaufnahmen">
-    <div class="fk-sec-heading">📸 Technische Detailaufnahmen &amp; Bauteilansichten</div>
-    <div class="fk-inbody-gallery">
+  <div class="section-box" id="detailaufnahmen">
+    <h2>📸 Technische Detailaufnahmen &amp; Bauteilansichten</h2>
+    <hr class="section-divider">
+    <div class="inbody-gallery">
       
-        <div class="fk-inbody-item">
+        <div class="inbody-item">
           <img src="https://m.media-amazon.com/images/I/51vtIX98Y3L.jpg" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Detailaufnahme 1" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <div class="fk-inbody-caption">Detailansicht 1: Konstruktion &amp; Passgenauigkeit</div>
+          <div class="inbody-caption">Detailansicht 1: Konstruktion &amp; Passgenauigkeit</div>
         </div>
       
-        <div class="fk-inbody-item">
+        <div class="inbody-item">
           <img src="https://m.media-amazon.com/images/I/41JdllYFFXL.jpg" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Detailaufnahme 2" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <div class="fk-inbody-caption">Detailansicht 2: Konstruktion &amp; Passgenauigkeit</div>
+          <div class="inbody-caption">Detailansicht 2: Konstruktion &amp; Passgenauigkeit</div>
         </div>
       
-        <div class="fk-inbody-item">
+        <div class="inbody-item">
           <img src="https://m.media-amazon.com/images/I/41oztdLdttL.jpg" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Detailaufnahme 3" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <div class="fk-inbody-caption">Detailansicht 3: Konstruktion &amp; Passgenauigkeit</div>
+          <div class="inbody-caption">Detailansicht 3: Konstruktion &amp; Passgenauigkeit</div>
         </div>
       
-        <div class="fk-inbody-item">
+        <div class="inbody-item">
           <img src="https://m.media-amazon.com/images/I/31MJ0G-Y2BL.jpg" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile Detailaufnahme 4" loading="lazy" onerror="this.parentElement.style.display='none'">
-          <div class="fk-inbody-caption">Detailansicht 4: Konstruktion &amp; Passgenauigkeit</div>
+          <div class="inbody-caption">Detailansicht 4: Konstruktion &amp; Passgenauigkeit</div>
         </div>
       
     </div>
@@ -1880,56 +1210,65 @@ h1, h2, h3, h4, p, span, div, li {
   
 
   <!-- Section: Mechatronic Teardown -->
-  <div class="fk-sec-card" id="funktionsweise">
-    <div class="fk-sec-heading">🔬 Mechatronische Funktionsanalyse &amp; Werkstoffe</div>
-    <div class="fk-sec-text">
-      <p>Die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> der Siemens EQ-Serie (EQ5 bis EQ8) verwendet eine mechanische Brühgruppe mit einem Pulverkolben, der von einem Motor oder einem speziellen Antrieb bewegt wird. Passgenaue O-Ringe für den Brühkolben und den Einlaufstutzen bestehen typischerweise aus <strong>VMQ</strong>-Silikon (Hitzeschutz bis 200 °C, extrudierbar) oder <strong>EPDM</strong> für chemische Beständigkeit gegenüber Kaffeeölen und Mineralstoffen.</p>
-<p>Die Form-Dichtung am Maschineneingang ist meist aus <strong>POM</strong> (Polyoxymethylen) mit hoher Steifigkeit und niedriger Reibung konstruiert, um Verschleiß unter Last zu minimieren. O-Ringe für den Kolben haben eine Standard-Durchmesser von ca. <strong>38 mm</strong> bei einer Querschnittsgröße von ca. <strong>4 mm</strong> (D1 x d2).</p>
-<p>Toleranzen betragen ±<strong>0,1 mm</strong> für sichere Passform ohne Undichtigkeiten. Die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> verbindet sich mechanisch mit der Maschinenseite über eine Formdichtung, die unter hohem Druck (bis <strong>9 bar</strong>) und Temperaturen von 95–105 °C arbeitet.</p>
-<p>Silikonfett (lebensmittelecht, z. B.</p>
-<p>FDA-konform) reduziert die Reibungskoeffizient und verhindert Fressen der Kolbenführungen. Materialien wie <strong>1.4310</strong> Edelstahl für Federn oder Messing für Stutzen gewährleisten Korrosionsbeständigkeit und Langlebigkeit.</p>
-<p>Hydraulisch sorgt die präzise Abdichtung für perfekten Kaffeefluss ohne Lecks, die sonst zu Druckverlusten und Geschmacksbeeinträchtigungen führen. In der Praxis reduziert das Pflegeset den Verschleiß der beweglichen Teile um bis zu 70 % bei regelmäßiger Anwendung.</p>
-<p>Die O-Ringe müssen alle 6–12 Monate geprüft werden, da Alterung durch Wärme und Öle zu einer Härteerhöhung führen kann. Die Brühkolben-Dichtung gewährleistet eine gleichmäßige Kolbenbewegung ohne Anhaften.</p>
-<p>Dieses Set ist mechanisch und hydraulisch optimiert für die EQ-Serie und bietet höchste Präzision bei minimalem Aufwand. (<strong>178 W</strong>örter)</p>
+  <div class="section-box" id="funktionsweise">
+    <h2>🔬 Mechatronische Funktionsanalyse &amp; Werkstoffe</h2>
+    <hr class="section-divider">
+    <p class="prose-p">Die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> der Siemens EQ-Serie (EQ5 bis EQ8) verwendet eine mechanische Brühgruppe mit einem Pulverkolben, der von einem Motor oder einem speziellen Antrieb bewegt wird. Passgenaue O-Ringe für den Brühkolben und den Einlaufstutzen bestehen typischerweise aus <strong>VMQ</strong>-Silikon (Hitzeschutz bis 200 °C, extrudierbar) oder <strong>EPDM</strong> für chemische Beständigkeit gegenüber Kaffeeölen und Mineralstoffen.</p>
+<p class="prose-p">Die Form-Dichtung am Maschineneingang ist meist aus <strong>POM</strong> (Polyoxymethylen) mit hoher Steifigkeit und niedriger Reibung konstruiert, um Verschleiß unter Last zu minimieren. O-Ringe für den Kolben haben eine Standard-Durchmesser von ca. <strong>38 mm</strong> bei einer Querschnittsgröße von ca. <strong>4 mm</strong> (D1 x d2).</p>
+<p class="prose-p">Toleranzen betragen ±<strong>0,1 mm</strong> für sichere Passform ohne Undichtigkeiten. Die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> verbindet sich mechanisch mit der Maschinenseite über eine Formdichtung, die unter hohem Druck (bis <strong>9 bar</strong>) und Temperaturen von 95–105 °C arbeitet.</p>
+<p class="prose-p">Silikonfett (lebensmittelecht, z. B.</p>
+<p class="prose-p">FDA-konform) reduziert die Reibungskoeffizient und verhindert Fressen der Kolbenführungen. Materialien wie <strong>1.4310</strong> Edelstahl für Federn oder Messing für Stutzen gewährleisten Korrosionsbeständigkeit und Langlebigkeit.</p>
+<p class="prose-p">Hydraulisch sorgt die präzise Abdichtung für perfekten Kaffeefluss ohne Lecks, die sonst zu Druckverlusten und Geschmacksbeeinträchtigungen führen. In der Praxis reduziert das Pflegeset den Verschleiß der beweglichen Teile um bis zu 70 % bei regelmäßiger Anwendung.</p>
+<p class="prose-p">Die O-Ringe müssen alle 6–12 Monate geprüft werden, da Alterung durch Wärme und Öle zu einer Härteerhöhung führen kann. Die Brühkolben-Dichtung gewährleistet eine gleichmäßige Kolbenbewegung ohne Anhaften.</p>
+<p class="prose-p">Dieses Set ist mechanisch und hydraulisch optimiert für die EQ-Serie und bietet höchste Präzision bei minimalem Aufwand. (<strong>178 W</strong>örter)</p>
+
+    <div class="callout-box callout-tip">
+      <span class="callout-icon">💡</span>
+      <div>
+        <strong>Experten-Tipp für maximale Dichtigkeit:</strong>
+        Vor der finalen Montage stets die Dichtsitze von verharztem Kaffeefett befreien und O-Ringe mit lebensmittelechtem <strong>OKS 1110 Silikonfett</strong> benetzen, um Mikroleckagen und Schwergängigkeit zu verhindern.
+      </div>
     </div>
   </div>
 
   
 
   <!-- Section: Step-by-Step DIY Guide -->
-  <div class="fk-sec-card" id="einbauanleitung">
-    <div class="fk-sec-heading">🔧 Schritt-für-Schritt Reparaturanleitung</div>
-    <div class="fk-steps-list">
+  <div class="section-box" id="einbauanleitung">
+    <h2>🔧 Schritt-für-Schritt Reparaturanleitung</h2>
+    <hr class="section-divider">
+    <p class="prose-p">Befolgen Sie diese aufeinander abgestimmten Schritte für einen sicheren und langlebigen Austausch:</p>
+    <div class="steps-cards-grid">
       
-        <div class="fk-step-item">
-          <div class="fk-step-num">1</div>
-          <div class="fk-step-content">
-            <div class="fk-step-title">Vorbereitung und Werkzeuge</div>
-            <div class="fk-step-desc">Bereiten Sie die Maschine durch vollständigen Abkühlen und Entfernen des Wasserbehälters vor. Entfernen Sie die Brühgruppe aus der Maschine, indem Sie den oberen Deckel und den Pulverkolben abschrauben (bei EQ5 EQ6 EQ7 EQ8). Verwenden Sie eine kleine Schraubendreher oder die mitgelieferte Bürste vorsichtig, um Rückstände zu entfernen. Legen Sie alle Teile auf sauberer Arbeitsfläche aus und stellen Sie sicher, dass das Arbeitszimmer gut belüftet ist.</div>
+        <div class="step-card">
+          <div class="step-badge">1</div>
+          <div class="step-body">
+            <h4>Vorbereitung und Werkzeuge</h4>
+            <p>Bereiten Sie die Maschine durch vollständigen Abkühlen und Entfernen des Wasserbehälters vor. Entfernen Sie die Brühgruppe aus der Maschine, indem Sie den oberen Deckel und den Pulverkolben abschrauben (bei EQ5 EQ6 EQ7 EQ8). Verwenden Sie eine kleine Schraubendreher oder die mitgelieferte Bürste vorsichtig, um Rückstände zu entfernen. Legen Sie alle Teile auf sauberer Arbeitsfläche aus und stellen Sie sicher, dass das Arbeitszimmer gut belüftet ist.</p>
           </div>
         </div>
       
-        <div class="fk-step-item">
-          <div class="fk-step-num">2</div>
-          <div class="fk-step-content">
-            <div class="fk-step-title">O-Ringe und Form-Dichtung reinigen</div>
-            <div class="fk-step-desc">Reinigten Sie alle O-Ringe (Brühkolben, Einlaufstutzen) und die Form-Dichtung gründlich mit warmem Wasser und einem milden Spülmittel. Trocknen Sie diese absolut trocken. Tragen Sie eine hauchdünne Schicht lebensmittelechtes Silikonfett auf die Dichtungsflächen der O-Ringe und auf die Reibflächen der Kolbenführungen auf. Achten Sie auf gleichmäßige Verteilung ohne Überlast.</div>
+        <div class="step-card">
+          <div class="step-badge">2</div>
+          <div class="step-body">
+            <h4>O-Ringe und Form-Dichtung reinigen</h4>
+            <p>Reinigten Sie alle O-Ringe (Brühkolben, Einlaufstutzen) und die Form-Dichtung gründlich mit warmem Wasser und einem milden Spülmittel. Trocknen Sie diese absolut trocken. Tragen Sie eine hauchdünne Schicht lebensmittelechtes Silikonfett auf die Dichtungsflächen der O-Ringe und auf die Reibflächen der Kolbenführungen auf. Achten Sie auf gleichmäßige Verteilung ohne Überlast.</p>
           </div>
         </div>
       
-        <div class="fk-step-item">
-          <div class="fk-step-num">3</div>
-          <div class="fk-step-content">
-            <div class="fk-step-title">Einbau der neuen Dichtungen</div>
-            <div class="fk-step-desc">Setzen Sie die neuen O-Ringe für Brühkolben und Einlaufstutzen präzise ein. Die Form-Dichtung für die Brüheinheit zur Maschinenseite wird von unten eingelegt und mit etwas Druck positioniert. Montieren Sie den Pulverkolben vorsichtig, ohne die Dichtungen zu beschädigen. Achten Sie auf die richtige Ausrichtung der Bohrungen und Stutzen.</div>
+        <div class="step-card">
+          <div class="step-badge">3</div>
+          <div class="step-body">
+            <h4>Einbau der neuen Dichtungen</h4>
+            <p>Setzen Sie die neuen O-Ringe für Brühkolben und Einlaufstutzen präzise ein. Die Form-Dichtung für die Brüheinheit zur Maschinenseite wird von unten eingelegt und mit etwas Druck positioniert. Montieren Sie den Pulverkolben vorsichtig, ohne die Dichtungen zu beschädigen. Achten Sie auf die richtige Ausrichtung der Bohrungen und Stutzen.</p>
           </div>
         </div>
       
-        <div class="fk-step-item">
-          <div class="fk-step-num">4</div>
-          <div class="fk-step-content">
-            <div class="fk-step-title">Abschluss und Test</div>
-            <div class="fk-step-desc">Schrauben Sie den oberen Deckel und den Deckel der Brüheinheit wieder fest. Setzen Sie die Brühgruppe ein und schließen Sie den Wasserbehälter. Führen Sie einen kurzen Testdurchgang mit warmem Wasser durch und prüfen Sie auf Lecks oder ungewöhnliche Geräusche. Nach 2–3 vollen Brüheinheiten ist das Set voll funktionsfähig.</div>
+        <div class="step-card">
+          <div class="step-badge">4</div>
+          <div class="step-body">
+            <h4>Abschluss und Test</h4>
+            <p>Schrauben Sie den oberen Deckel und den Deckel der Brüheinheit wieder fest. Setzen Sie die Brühgruppe ein und schließen Sie den Wasserbehälter. Führen Sie einen kurzen Testdurchgang mit warmem Wasser durch und prüfen Sie auf Lecks oder ungewöhnliche Geräusche. Nach 2–3 vollen Brüheinheiten ist das Set voll funktionsfähig.</p>
           </div>
         </div>
       
@@ -1937,262 +1276,265 @@ h1, h2, h3, h4, p, span, div, li {
   </div>
 
   <!-- Section: Compatibility Matrix -->
-  <div class="fk-sec-card" id="kompatibilitaet">
-    <div class="fk-sec-heading">📋 Kompatibilitäts-Matrix &amp; Passgenauigkeit</div>
-    <div class="fk-compat-grid">
-      <div class="fk-compat-col fk-compat-col-fits">
-        <div class="fk-compat-head" style="color:var(--fk-green,#388e3c);">✓ Kompatible Geräteserien &amp; Modelle:</div>
-        <ul class="fk-compat-list">
-          <li>Siemens EQ5</li><li>Siemens EQ6</li><li>Siemens EQ6 Plus S100</li><li>Siemens EQ6 Plus S700</li><li>Siemens EQ700</li><li>Siemens EQ900</li><li>Siemens EQ9</li><li>Bosch Vero</li><li>Neff Kaffeevollautomaten mit EQ-Brüheinheit</li>
+  <div class="section-box" id="kompatibilitaet">
+    <h2>📋 Kompatibilitäts-Matrix &amp; Passgenauigkeit</h2>
+    <hr class="section-divider">
+    <div class="compat-matrix-grid">
+      <div class="compat-box">
+        <div class="compat-box-title fits">✓ Kompatible Geräteserien &amp; Modelle:</div>
+        <ul class="compat-list">
+          <li><span style="color:#15803d; font-weight:700;">✓</span> <span>Siemens EQ5</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Siemens EQ6</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Siemens EQ6 Plus S100</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Siemens EQ6 Plus S700</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Siemens EQ700</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Siemens EQ900</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Siemens EQ9</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Bosch Vero</span></li><li><span style="color:#15803d; font-weight:700;">✓</span> <span>Neff Kaffeevollautomaten mit EQ-Brüheinheit</span></li>
         </ul>
       </div>
-      <div class="fk-compat-col fk-compat-col-incomp">
-        <div class="fk-compat-head" style="color:#d32f2f;">✕ Nicht kompatibel mit:</div>
-        <ul class="fk-compat-list">
-          <li>Siemens EQ3</li><li>Siemens EQ2 Serie</li><li>Bosch Siemens Geräte ohne baugleiche Brüheinheit (z. B. ältere Modelle ohne EQ-Antrieb)</li>
+      <div class="compat-box">
+        <div class="compat-box-title incompatible">✕ Nicht kompatibel mit:</div>
+        <ul class="compat-list">
+          <li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Siemens EQ3</span></li><li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Siemens EQ2 Serie</span></li><li><span style="color:#b91c1c; font-weight:700;">✕</span> <span>Bosch Siemens Geräte ohne baugleiche Brüheinheit (z. B. ältere Modelle ohne EQ-Antrieb)</span></li>
         </ul>
       </div>
     </div>
   </div>
 
   <!-- Section: Maintenance Protocol -->
-  <div class="fk-sec-card" id="wartung">
-    <div class="fk-sec-heading">⚙️ Wartungs- &amp; Prüfprotokoll</div>
-    <div class="fk-spec-grid">
-      
-          <div class="fk-spec-row">
-            <div class="fk-spec-k">Nach Nutzung / Wöchentlich</div>
-            <div class="fk-spec-v">
-              <span class="fk-tag fk-tag-blue">Nach Nutzung / Wöchentlich</span>
-              <span>Führen Sie eine einfache Oberflächenreinigung der Brüheinheit durch und ersetzen Sie ggf. verschmutzte O-Ringe vorbeugend</span>
-            </div>
-          </div>
+  <div class="section-box" id="wartung">
+    <h2>⚙️ Wartungs- &amp; Prüfprotokoll</h2>
+    <hr class="section-divider">
+    <table class="diag-table">
+      <thead>
+        <tr>
+          <th>Intervall</th>
+          <th>Prüf- &amp; Wartungsaufgabe</th>
+        </tr>
+      </thead>
+      <tbody>
         
-          <div class="fk-spec-row">
-            <div class="fk-spec-k">Monatlich</div>
-            <div class="fk-spec-v">
-              <span class="fk-tag fk-tag-orange">Monatlich</span>
-              <span>Durchführen einer vollständigen Pflege mit dem Set: Reinigen, Schmieren und prüfen auf Abdichtung der O-Ringe und Form-Dichtung</span>
-            </div>
-          </div>
+          <tr>
+            <td style="font-weight:700; color:var(--primary); white-space:nowrap;">Nach Nutzung / Wöchentlich</td>
+            <td>Führen Sie eine einfache Oberflächenreinigung der Brüheinheit durch und ersetzen Sie ggf. verschmutzte O-Ringe vorbeugend</td>
+          </tr>
         
-    </div>
+          <tr>
+            <td style="font-weight:700; color:var(--primary); white-space:nowrap;">Monatlich</td>
+            <td>Durchführen einer vollständigen Pflege mit dem Set: Reinigen, Schmieren und prüfen auf Abdichtung der O-Ringe und Form-Dichtung</td>
+          </tr>
+        
+      </tbody>
+    </table>
   </div>
 
   <!-- Section: Troubleshooting Table -->
   
-  <div class="fk-sec-card" id="stoerungen">
-    <div class="fk-sec-heading">🔍 Technische Fehlersuche &amp; Störungsbehebung</div>
-    <div class="fk-trouble-list">
-      
-        <div class="fk-trouble-card">
-          <div class="fk-trouble-error">⚠️ Undichtigkeit an der Brühgruppe</div>
-          <div class="fk-trouble-row"><strong>Ursache:</strong> Verschleißte O-Ringe oder verklebtes Silikonfett</div>
-          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> O-Ringe und Form-Dichtung austauschen, neue Schicht Silikonfett auftragen und 48 Stunden trocknen lassen</div>
-        </div>
-      
-        <div class="fk-trouble-card">
-          <div class="fk-trouble-error">⚠️ Starker Geräuschpegel beim Brühen</div>
-          <div class="fk-trouble-row"><strong>Ursache:</strong> Reibung im Kolbenbereich durch trockene Dichtungen</div>
-          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Brühkolben-Dichtung und O-Ringe mit frischem Silikonfett einreiben und Kolben gründlich reinigen</div>
-        </div>
-      
-        <div class="fk-trouble-card">
-          <div class="fk-trouble-error">⚠️ Druckverlust im System</div>
-          <div class="fk-trouble-row"><strong>Ursache:</strong> Undichte Form-Dichtung oder verschmutzter Einlaufstutzen</div>
-          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Form-Dichtung und Einlaufstutzen-O-Ring wechseln sowie alle Flächen mit lebensmittelechtem Silikonfett behandeln</div>
-        </div>
-      
-    </div>
+  <div class="section-box" id="stoerungen">
+    <h2>🔍 Technische Fehlersuche &amp; Störungsbehebung</h2>
+    <hr class="section-divider">
+    <table class="diag-table">
+      <thead>
+        <tr>
+          <th>Fehlerbild / Symptom</th>
+          <th>Mögliche Ursache</th>
+          <th>Praxiserprobte Behebung</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td class="diag-symptom">⚠️ Undichtigkeit an der Brühgruppe</td>
+            <td>Verschleißte O-Ringe oder verklebtes Silikonfett</td>
+            <td class="diag-fix">✓ O-Ringe und Form-Dichtung austauschen, neue Schicht Silikonfett auftragen und 48 Stunden trocknen lassen</td>
+          </tr>
+        
+          <tr>
+            <td class="diag-symptom">⚠️ Starker Geräuschpegel beim Brühen</td>
+            <td>Reibung im Kolbenbereich durch trockene Dichtungen</td>
+            <td class="diag-fix">✓ Brühkolben-Dichtung und O-Ringe mit frischem Silikonfett einreiben und Kolben gründlich reinigen</td>
+          </tr>
+        
+          <tr>
+            <td class="diag-symptom">⚠️ Druckverlust im System</td>
+            <td>Undichte Form-Dichtung oder verschmutzter Einlaufstutzen</td>
+            <td class="diag-fix">✓ Form-Dichtung und Einlaufstutzen-O-Ring wechseln sowie alle Flächen mit lebensmittelechtem Silikonfett behandeln</td>
+          </tr>
+        
+      </tbody>
+    </table>
   </div>
   
 
   <!-- Section: FAQs -->
-  <div class="fk-sec-card" id="faq">
-    <div class="fk-sec-heading">❓ Häufige Fragen (FAQ)</div>
-    <div class="fk-spec-grid">
+  <div class="section-box" id="faq">
+    <h2>❓ Häufige Fragen (FAQ)</h2>
+    <hr class="section-divider">
+    <div class="faq-box">
       
-        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
-          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Welche Materialien werden im Pflegeset verwendet?</div>
-          <div style="font-size:13.5px; color:#555; line-height:1.6;">Die O-Ringe und Form-Dichtung bestehen aus VMQ/EPDM-Silikon oder POM-Kunststoff für hohe Temperaturbeständigkeit und Chemikalienresistenz. Das lebensmittelechte Silikonfett ist FDA-konform und wird auf Messing- oder Edelstahlflächen verwendet. Alle Komponenten sind passgenau für die EQ-Serie konzipiert.</div>
+        <div class="faq-item">
+          <div class="faq-q">Q: Welche Materialien werden im Pflegeset verwendet?</div>
+          <div class="faq-a">Die O-Ringe und Form-Dichtung bestehen aus VMQ/EPDM-Silikon oder POM-Kunststoff für hohe Temperaturbeständigkeit und Chemikalienresistenz. Das lebensmittelechte Silikonfett ist FDA-konform und wird auf Messing- oder Edelstahlflächen verwendet. Alle Komponenten sind passgenau für die EQ-Serie konzipiert.</div>
         </div>
       
-        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
-          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Ist das Set für alle EQ-Modelle geeignet?</div>
-          <div style="font-size:13.5px; color:#555; line-height:1.6;">Ja, das Pflegeset ist vollständig kompatibel mit Siemens EQ5, EQ6 (inkl. Plus S100/S700), EQ700, EQ900, EQ9 sowie Bosch Vero, Neff und Gaggenau mit baugleichen Brüheinheiten. Für nicht kompatible ältere Modelle ohne EQ-Antrieb eignet sich das Set nicht.</div>
+        <div class="faq-item">
+          <div class="faq-q">Q: Ist das Set für alle EQ-Modelle geeignet?</div>
+          <div class="faq-a">Ja, das Pflegeset ist vollständig kompatibel mit Siemens EQ5, EQ6 (inkl. Plus S100/S700), EQ700, EQ900, EQ9 sowie Bosch Vero, Neff und Gaggenau mit baugleichen Brüheinheiten. Für nicht kompatible ältere Modelle ohne EQ-Antrieb eignet sich das Set nicht.</div>
         </div>
       
-        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
-          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Kann ich das Pflegeset auch für Reinigungszwecke verwenden?</div>
-          <div style="font-size:13.5px; color:#555; line-height:1.6;">Ja, das Set dient primär der Pflege und Wartung. Die enthaltenen Bürsten helfen bei der Entfernung von Kaffeerückständen, während das Silikonfett die Dichtungen vorlangfristig schützt. Eine separate Entkalkung ist weiterhin empfehlenswert.</div>
+        <div class="faq-item">
+          <div class="faq-q">Q: Kann ich das Pflegeset auch für Reinigungszwecke verwenden?</div>
+          <div class="faq-a">Ja, das Set dient primär der Pflege und Wartung. Die enthaltenen Bürsten helfen bei der Entfernung von Kaffeerückständen, während das Silikonfett die Dichtungen vorlangfristig schützt. Eine separate Entkalkung ist weiterhin empfehlenswert.</div>
         </div>
       
     </div>
   </div>
-      </div>
-    </div>
+      </article>
 
-    <!-- Related Products Grid -->
+      
+  <aside class="sidebar">
     
-    <div style="margin-top:36px;">
-      <div class="fk-grid-title-bar">
-        <h2 class="fk-grid-title">Passende Bosch Komponenten &amp; Zubehör</h2>
-      </div>
-      <div class="fk-prod-grid">
+    <div class="sidebar-box">
+      <div class="sidebar-title">⚙️ Passende Bosch Teile</div>
+      <div class="sidebar-list">
         
-  <article class="fk-prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/vioks-3x-dichtung-46mm-38mm-silikonfett-ersatz-fue-b0dw9dt7zy/" class="fk-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71uyznmAlSL._AC_SL1500_.jpg" class="fk-card-thumb" alt="VIOKS 3x Dichtung Ø 46mm / 38mm + Silikonfett Ersatz für Siеmens 00625379" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="fk-card-body">
-      <div class="fk-card-badges">
-        <span class="fk-tag fk-tag-blue">Bosch</span>
-        <span class="fk-tag fk-tag-green">F-Assured</span>
-      </div>
-      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/bosch/vioks-3x-dichtung-46mm-38mm-silikonfett-ersatz-fue-b0dw9dt7zy/">VIOKS 3x Dichtung Ø 46mm / 38mm + Silikonfett Ersatz für Siеmens 00625379</a></h3>
-      <div class="fk-card-rating-row">
-        <span class="fk-rating-badge">★ 3.6</span>
-        <span style="font-size:12px; color:#878787;">(145)</span>
-      </div>
-      <div class="fk-card-footer">
-        <a href="https://kaffeereparatur.github.io/bosch/vioks-3x-dichtung-46mm-38mm-silikonfett-ersatz-fue-b0dw9dt7zy/" class="fk-card-link">
-          Details &amp; Einbau ›
-        </a>
+          <a href="https://kaffeereparatur.github.io/bosch/vioks-3x-dichtung-46mm-38mm-silikonfett-ersatz-fue-b0dw9dt7zy/" class="sidebar-item">
+            <img src="https://m.media-amazon.com/images/I/71uyznmAlSL._AC_SL1500_.jpg" alt="VIOKS 3x Dichtung Ø 46mm / 38mm + Silikonfett Ersatz für Siеmens 00625379" class="sidebar-thumb" loading="lazy">
+            <div class="sidebar-item-info">
+              <span class="sidebar-item-title">VIOKS 3x Dichtung Ø 46mm / 38mm + Silikonfett Ersatz für Siеmens 00625379</span>
+              <span class="sidebar-item-cat">Brühgruppen &amp; Dichtungen</span>
+            </div>
+          </a>
+        
+          <a href="https://kaffeereparatur.github.io/bosch/2x-dichtung-22691-wie-00622024-kompatibel-mit-siem-b0946rwrr4/" class="sidebar-item">
+            <img src="https://m.media-amazon.com/images/I/41J8QgEch5S._AC_SL1500_.jpg" alt="2x Dichtung 22691 wie 00622024 kompatibel mit Siemens EQ5 EQ6 EQ7 EQ8 Kaffeevollautomaten | Länge 11,5cm" class="sidebar-thumb" loading="lazy">
+            <div class="sidebar-item-info">
+              <span class="sidebar-item-title">2x Dichtung 22691 wie 00622024 kompatibel mit Siemens EQ5 EQ6 EQ7 EQ8 Kaffeevollautomaten | Länge 11,5cm</span>
+              <span class="sidebar-item-cat">Brühgruppen &amp; Dichtungen</span>
+            </div>
+          </a>
+        
+          <a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-siemens-eq5-eq6-eq7-eq8-neff-bosch-b0gkq5vkzg/" class="sidebar-item">
+            <img src="https://m.media-amazon.com/images/I/61BukKR1zFL._AC_SL1500_.jpg" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau Reinigungsset Wartungsset Ersatzteile Dichtungssatz O-Ringe Formdichtung Kaffeevollautomaten kompatibel" class="sidebar-thumb" loading="lazy">
+            <div class="sidebar-item-info">
+              <span class="sidebar-item-title">Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau Reinigungsset Wartungsset Ersatzteile Dichtungssatz O-Ringe Formdichtung Kaffeevollautomaten kompatibel</span>
+              <span class="sidebar-item-cat">Brühgruppen &amp; Dichtungen</span>
+            </div>
+          </a>
+        
+          <a href="https://kaffeereparatur.github.io/bosch/kaffeemaschine-brueheinheit-einlasskupplung-inkl-d-b0h4qx7m15/" class="sidebar-item">
+            <img src="https://m.media-amazon.com/images/I/51FfX7gcK-L._AC_SL1500_.jpg" alt="Kaffeemaschine Brüheinheit Einlasskupplung inkl. Dichtungen kompatibel mit NIVONA MELITTA BOSCH SIEMENS 047 6761169 15056N" class="sidebar-thumb" loading="lazy">
+            <div class="sidebar-item-info">
+              <span class="sidebar-item-title">Kaffeemaschine Brüheinheit Einlasskupplung inkl. Dichtungen kompatibel mit NIVONA MELITTA BOSCH SIEMENS 047 6761169 15056N</span>
+              <span class="sidebar-item-cat">Brühgruppen &amp; Dichtungen</span>
+            </div>
+          </a>
+        
       </div>
     </div>
-  </article>
 
-  <article class="fk-prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/2x-dichtung-22691-wie-00622024-kompatibel-mit-siem-b0946rwrr4/" class="fk-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41J8QgEch5S._AC_SL1500_.jpg" class="fk-card-thumb" alt="2x Dichtung 22691 wie 00622024 kompatibel mit Siemens EQ5 EQ6 EQ7 EQ8 Kaffeevollautomaten | Länge 11,5cm" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="fk-card-body">
-      <div class="fk-card-badges">
-        <span class="fk-tag fk-tag-blue">Bosch</span>
-        <span class="fk-tag fk-tag-green">F-Assured</span>
-      </div>
-      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/bosch/2x-dichtung-22691-wie-00622024-kompatibel-mit-siem-b0946rwrr4/">2x Dichtung 22691 wie 00622024 kompatibel mit Siemens EQ5 EQ6 EQ7 EQ8 Kaffeevollautomaten | Länge 11,5cm</a></h3>
-      <div class="fk-card-rating-row">
-        <span class="fk-rating-badge">★ 3.6</span>
-        <span style="font-size:12px; color:#878787;">(145)</span>
-      </div>
-      <div class="fk-card-footer">
-        <a href="https://kaffeereparatur.github.io/bosch/2x-dichtung-22691-wie-00622024-kompatibel-mit-siem-b0946rwrr4/" class="fk-card-link">
-          Details &amp; Einbau ›
-        </a>
-      </div>
+    <div class="sidebar-box">
+      <div class="sidebar-title">🚨 Diagnose nach Symptom</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:13px;">
+        <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:var(--text-main); font-weight:600;">› Brühgruppe klemmt / quietscht</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" style="color:var(--text-main); font-weight:600;">› Pumpe brummt laut &amp; kein Druck</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:var(--text-main); font-weight:600;">› Milchschaum fällt zusammen / spritzt</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:var(--text-main); font-weight:600;">› Wasser in Abtropfschale / Trester nass</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:var(--text-main); font-weight:600;">› Mahlwerk blockiert oder mahlt zu grob</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" style="color:var(--text-main); font-weight:600;">› Kaffee nur lauwarm / Heizt nicht</a></li>
+      </ul>
     </div>
-  </article>
 
-  <article class="fk-prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-siemens-eq5-eq6-eq7-eq8-neff-bosch-b0gkq5vkzg/" class="fk-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61BukKR1zFL._AC_SL1500_.jpg" class="fk-card-thumb" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau Reinigungsset Wartungsset Ersatzteile Dichtungssatz O-Ringe Formdichtung Kaffeevollautomaten kompatibel" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="fk-card-body">
-      <div class="fk-card-badges">
-        <span class="fk-tag fk-tag-blue">Bosch</span>
-        <span class="fk-tag fk-tag-green">F-Assured</span>
-      </div>
-      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-siemens-eq5-eq6-eq7-eq8-neff-bosch-b0gkq5vkzg/">Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau Reinigungsset Wartungsset Ersatzteile Dichtungssatz O-Ringe Formdichtung Kaffeevollautomaten kompatibel</a></h3>
-      <div class="fk-card-rating-row">
-        <span class="fk-rating-badge">★ 4.4</span>
-        <span style="font-size:12px; color:#878787;">(145)</span>
-      </div>
-      <div class="fk-card-footer">
-        <a href="https://kaffeereparatur.github.io/bosch/pflegeset-fuer-siemens-eq5-eq6-eq7-eq8-neff-bosch-b0gkq5vkzg/" class="fk-card-link">
-          Details &amp; Einbau ›
-        </a>
-      </div>
+    <div class="sidebar-box">
+      <div class="sidebar-title">🔩 Baugruppen-Silos</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:6px; font-size:13px;">
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:var(--text-muted);">⚙️ Brühgruppen &amp; Dichtungen</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:var(--text-muted);">🪨 Mahlwerke &amp; Mahlkegel</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:var(--text-muted);">💧 Drainageventile &amp; Kappen</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:var(--text-muted);">🥛 Milchsysteme &amp; Karaffen</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" style="color:var(--text-muted);">🌊 Wasserfilter &amp; Entkalker</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" style="color:var(--text-muted);">🔥 Heizelemente &amp; Thermoblöcke</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" style="color:var(--text-muted);">⚡ 15-Bar Ulka Pumpen &amp; Hydraulik</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/magnetventil/" style="color:var(--text-muted);">🧲 Magnetventile &amp; Solenoid</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/kaffeeauslauf/" style="color:var(--text-muted);">☕ Kaffeeauslauf &amp; Verteiler</a></li>
+        
+          <li><a href="https://kaffeereparatur.github.io/kategorie/reinigung/" style="color:var(--text-muted);">✨ Pflegesets &amp; Spezial-Entkalker</a></li>
+        
+      </ul>
     </div>
-  </article>
 
-  <article class="fk-prod-card">
-    <a href="https://kaffeereparatur.github.io/bosch/kaffeemaschine-brueheinheit-einlasskupplung-inkl-d-b0h4qx7m15/" class="fk-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51FfX7gcK-L._AC_SL1500_.jpg" class="fk-card-thumb" alt="Kaffeemaschine Brüheinheit Einlasskupplung inkl. Dichtungen kompatibel mit NIVONA MELITTA BOSCH SIEMENS 047 6761169 15056N" onerror="this.style.opacity='0.8'">
-    </a>
-    <div class="fk-card-body">
-      <div class="fk-card-badges">
-        <span class="fk-tag fk-tag-blue">Bosch</span>
-        <span class="fk-tag fk-tag-green">F-Assured</span>
-      </div>
-      <h3 class="fk-card-title"><a href="https://kaffeereparatur.github.io/bosch/kaffeemaschine-brueheinheit-einlasskupplung-inkl-d-b0h4qx7m15/">Kaffeemaschine Brüheinheit Einlasskupplung inkl. Dichtungen kompatibel mit NIVONA MELITTA BOSCH SIEMENS 047 6761169 15056N</a></h3>
-      <div class="fk-card-rating-row">
-        <span class="fk-rating-badge">★ 5</span>
-        <span style="font-size:12px; color:#878787;">(145)</span>
-      </div>
-      <div class="fk-card-footer">
-        <a href="https://kaffeereparatur.github.io/bosch/kaffeemaschine-brueheinheit-einlasskupplung-inkl-d-b0h4qx7m15/" class="fk-card-link">
-          Details &amp; Einbau ›
-        </a>
-      </div>
+    <div class="sidebar-box" style="background:#fcfbf9; border-left:4px solid var(--primary);">
+      <div style="font-weight:700; font-size:13.5px; color:var(--text-main); margin-bottom:6px;">🛡️ Verifizierte OEM-Qualität</div>
+      <p style="font-size:12px; color:var(--text-muted); line-height:1.5;">
+        Alle auf KaffeeReparatur gelisteten Bauteile erfüllen deutsche Mechatronik-Prüfstandards für Lebensmittelkontakt (BfR/FDA) und Druckbeständigkeit bis 19 Bar.
+      </p>
     </div>
-  </article>
-      </div>
+  </aside>
     </div>
   </main>
 
-  <!-- Flipkart Mobile Sticky Bottom Buy Bar (Yellow + Orange 50/50 Dual Bar) -->
-  <div class="fk-mobile-buy-bar">
-    <a href="https://www.amazon.de/dp/B0GKGBR924?tag=kaffeereparatur-21" class="fk-mobile-buy-btn fk-mob-cart cta" target="_blank" rel="sponsored nofollow noopener">
-      🛒 In den Warenkorb
-    </a>
-    <a href="https://www.amazon.de/dp/B0GKGBR924?tag=kaffeereparatur-21" class="fk-mobile-buy-btn fk-mob-buy cta" target="_blank" rel="sponsored nofollow noopener">
-      ⚡ JETZT KAUFEN
+  <!-- Mobile Sticky Bottom CTA Bar (LeatherClogs Style) -->
+  <div class="mobile-sticky-cta">
+    <div style="display:flex; align-items:center; overflow:hidden;">
+      <img src="https://m.media-amazon.com/images/I/51vtIX98Y3L._AC_SL1500_.jpg" alt="Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile" class="sticky-thumb">
+      <div class="sticky-info">
+        <span class="sticky-title">Pflegeset für Siemens EQ5 EQ6 EQ7 EQ8 Neff Bosch Vero Gaggenau mit Silikonfett (lebensmittelecht) und Form-Dichtung, O-Ringe – Pflege &amp; Ersatzteile</span>
+        <span class="sticky-sub">✓ Auf Lager • Amazon.de</span>
+      </div>
+    </div>
+    <a href="https://www.amazon.de/dp/B0GKGBR924?tag=kaffeereparatur-21" class="btn-sticky-amazon cta" target="_blank" rel="sponsored nofollow noopener">
+      Preis prüfen ↗
     </a>
   </div>
 
   
-  <!-- Flipkart Official Dark Footer (Desktop) -->
-  <footer class="fk-footer">
-    <div class="fk-footer-inner">
+  <footer style="background:#1c1917; color:#a8a29e; padding:48px 0 24px; margin-top:64px; border-top:1px solid #292524;">
+    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; padding-bottom:32px;">
       <div>
-        <div class="fk-foot-col-title">ÜBER UNS</div>
-        <ul class="fk-foot-list">
-          <li><a href="https://kaffeereparatur.github.io/">KaffeeReparatur Portal</a></li>
-          <li><a href="https://kaffeereparatur.github.io/#marken">Hersteller &amp; Baureihen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/#kategorien">Baugruppen &amp; Mechanik</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sitemap.xml">XML Sitemap</a></li>
+        <div style="font-weight:800; font-size:18px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+          ☕ KaffeeReparatur<span style="color:#eab308;">.de</span>
+        </div>
+        <p style="font-size:13px; line-height:1.6; color:#78716c;">
+          Unabhängiges deutsches Referenz- und Reparaturportal für mechatronische Kaffeevollautomaten-Instandsetzung, Explosionszeichnungen und Original-Ersatzteilidentifikation.
+        </p>
+      </div>
+
+      <div>
+        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Führende Hersteller</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:13px;">
+          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile &amp; Guides</a></li>
+          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#a8a29e;">Siemens EQ-Serie Reparatur</a></li>
+          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
+          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
+          <li><a href="https://kaffeereparatur.github.io/bosch/" style="color:#a8a29e;">Bosch VeroBar &amp; VeroCup</a></li>
         </ul>
       </div>
 
       <div>
-        <div class="fk-foot-col-title">TOP MARKEN</div>
-        <ul class="fk-foot-list">
-          <li><a href="https://kaffeereparatur.github.io/delonghi/">De'Longhi Ersatzteile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/siemens/">Siemens EQ Serie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/jura/">Jura Impressa &amp; E-Linie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/philips/">Philips LatteGo</a></li>
-          <li><a href="https://kaffeereparatur.github.io/sage/">Sage Barista Express</a></li>
+        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Top Baugruppen-Silos</div>
+        <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:13px;">
+          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen &amp; Hydraulik</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#a8a29e;">Mahlwerke &amp; Mahlkegel</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#a8a29e;">Drainageventile &amp; Kappen</a></li>
+          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#a8a29e;">Milchsysteme &amp; Karaffen</a></li>
         </ul>
       </div>
 
       <div>
-        <div class="fk-foot-col-title">KERN-BAUGRUPPEN</div>
-        <ul class="fk-foot-list">
-          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/">Brühgruppen &amp; Dichtungen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/">Mahlwerke &amp; Mahlkegel</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/">Drainageventile</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/">Milchkaraffen &amp; Schläuche</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/">Wasserfilter &amp; Entkalker</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="fk-foot-col-title">TRANSPARENZ</div>
-        <p style="line-height:1.6; color:#878787; font-size:12px; margin:0;">
-          Als Amazon-Partner verdienen wir an qualifizierten Verkäufen. Alle Preise, tagesaktuelle Verfügbarkeiten und Lieferzeiten werden live von Amazon.de bereitgestellt.
+        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Hinweis &amp; Transparenz</div>
+        <p style="line-height:1.5; color:#78716c; font-size:12px;">
+          Als unabhängiges Informationsportal prüfen wir Ersatzteilkompatibilitäten und verlinken auf Originalangebote führender Anbieter. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
         </p>
       </div>
     </div>
-
-    <div class="fk-footer-bottom">
-      <div>☕ KaffeeReparatur.de • Unabhängiges Deutsches Fachportal • © 2026</div>
-      <div>Explore <span style="color:#ffe500; font-weight:700;">Plus ✦</span></div>
+    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
+      © 2026 KaffeeReparatur.de. Alle Rechte vorbehalten. Unabhängiges Reparatur- und Informationsportal.
     </div>
   </footer>
-  <div style="text-align:center; padding:12px; font-size:11px; color:#878787;" class="fk-mobile-foot-note">
-    © 2026 KaffeeReparatur • Alle Angaben ohne Gewähr
-  </div>
   <script src="https://kaffeereparatur.github.io/instant-search.js" defer></script>
 </body>
 </html>

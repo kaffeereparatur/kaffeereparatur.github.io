@@ -5,13 +5,6 @@
     const searchClear = document.getElementById('search-clear');
     const searchDropdown = document.getElementById('search-dropdown');
 
-    window.focusFkSearch = function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      if (searchInput) {
-        setTimeout(function() { searchInput.focus(); }, 200);
-      }
-    };
-
     if (!searchInput) return;
 
     fetch('https://kaffeereparatur.github.io/search-index.json')
@@ -28,42 +21,39 @@
       }
       searchClear.style.display = 'block';
 
-      const results = indexData.filter(function(item) {
-        return item.title.toLowerCase().includes(q) || 
-               item.category.toLowerCase().includes(q) ||
-               item.brand.toLowerCase().includes(q) ||
-               (item.asin && item.asin.toLowerCase().includes(q));
-      }).slice(0, 10);
+      const terms = q.split(/\s+/);
+      const matches = indexData.filter(function(item) {
+        const hay = (item.title + ' ' + (item.category || '') + ' ' + (item.asin || '')).toLowerCase();
+        return terms.every(function(t) { return hay.indexOf(t) !== -1; });
+      }).slice(0, 8);
 
-      if (results.length === 0) {
-        searchDropdown.innerHTML = '<div style="padding:16px; text-align:center; font-size:13px; color:#878787;">Kein passendes Ersatzteil gefunden.</div>';
-      } else {
-        searchDropdown.innerHTML = results.map(function(r) {
-          return '<a href="' + r.url + '" class="fk-search-item">' +
-            '<img src="' + r.thumb + '" class="fk-search-thumb" alt="' + r.title + '" onerror="this.style.display=\'none\'">' +
-            '<div style="flex:1; min-width:0;">' +
-              '<div class="fk-search-title">' + r.title + '</div>' +
-              '<div class="fk-search-sub">' + r.brand + ' • ' + r.category + '</div>' +
-            '</div>' +
-            '<span style="color:#2874f0; font-weight:700; font-size:14px;">›</span>' +
-          '</a>';
-        }).join('');
+      if (matches.length === 0) {
+        searchDropdown.innerHTML = '<div style="padding:12px; font-size:13px; color:#78716c;">Keine passenden Ersatzteile gefunden.</div>';
+        searchDropdown.classList.add('show');
+        return;
       }
+
+      searchDropdown.innerHTML = matches.map(function(m) {
+        return '<a href="' + m.url + '" class="search-dropdown-item">' +
+          '<div style="display:flex; align-items:center; overflow:hidden;">' +
+            '<img src="' + m.thumb + '" class="search-item-thumb" alt="' + m.title + '">' +
+            '<div style="display:flex; flex-direction:column; overflow:hidden;">' +
+              '<span style="font-weight:700; font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">' + m.title + '</span>' +
+              '<span style="font-size:11px; color:#78716c;">' + m.category + ' • ASIN: ' + m.asin + '</span>' +
+            '</div>' +
+          '</div>' +
+          '<span style="color:#854d0e; font-weight:700; font-size:12px; margin-left:8px;">›</span>' +
+        '</a>';
+      }).join('');
       searchDropdown.classList.add('show');
     }
 
-    window.performFkSearch = performSearch;
-
     searchInput.addEventListener('input', performSearch);
     searchInput.addEventListener('focus', function() {
-      if (this.value.trim().length > 0) {
-        searchDropdown.classList.add('show');
-      }
+      if (searchInput.value.trim()) searchDropdown.classList.add('show');
     });
 
-    searchClear.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
+    searchClear.addEventListener('click', function() {
       searchInput.value = '';
       searchDropdown.classList.remove('show');
       searchClear.style.display = 'none';
@@ -73,13 +63,6 @@
     document.addEventListener('click', function(e) {
       if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
         searchDropdown.classList.remove('show');
-      }
-    });
-
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        searchDropdown.classList.remove('show');
-        searchInput.blur();
       }
     });
   })();
