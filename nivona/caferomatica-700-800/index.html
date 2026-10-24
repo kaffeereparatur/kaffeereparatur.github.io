@@ -1059,6 +1059,211 @@ h1, h2, h3, h4, p, span, div, li {
 }
 
 /* ==========================================================================
+   UNIQUE GROK DOSSIER & SCRAPED AMAZON COMPONENTS
+   ========================================================================== */
+
+/* 2-Column Pros and Cons */
+.fk-pros-cons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 14px;
+}
+@media (max-width: 640px) {
+  .fk-pros-cons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.fk-pros-box {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  padding: 16px;
+}
+.fk-cons-box {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+  padding: 16px;
+}
+.fk-pc-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.fk-pro-title { color: #15803d; }
+.fk-con-title { color: #c2410c; }
+.fk-pc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fk-pc-list li {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #374151;
+  position: relative;
+  padding-left: 20px;
+}
+.fk-pro-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: 700;
+}
+.fk-con-list li::before {
+  content: '✕';
+  position: absolute;
+  left: 0;
+  color: #dc2626;
+  font-weight: 700;
+}
+
+/* Customer Review Sentiment Section */
+.fk-sentiment-tags-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 14px 0;
+}
+@media (max-width: 640px) {
+  .fk-sentiment-tags-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.fk-tag-heading {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+.fk-sentiment-pill-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.fk-pill-praise {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+.fk-pill-crit {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 9999px;
+}
+
+/* Authentic Customer Reviews List */
+.fk-review-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+.fk-user-review-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+.fk-ur-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.fk-ur-stars {
+  color: #f59e0b;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.fk-ur-title {
+  font-size: 13.5px;
+  color: #111827;
+}
+.fk-ur-body {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.5;
+}
+.fk-ur-date {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-top: 6px;
+}
+
+/* In-Body Detail Images */
+.fk-inbody-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+.fk-inbody-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.fk-inbody-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background: #fafafa;
+  padding: 10px;
+}
+.fk-inbody-caption {
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #6b7280;
+  border-top: 1px solid #f3f4f6;
+  text-align: center;
+  background: #ffffff;
+}
+
+/* Amazon Feature Bullets List */
+.fk-amazon-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fk-amazon-bullets li {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #374151;
+  position: relative;
+  padding-left: 18px;
+}
+.fk-amazon-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 2px;
+  color: var(--fk-blue);
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ==========================================================================
    MOBILE APP SPECIFIC OVERRIDES (FLIPKART MOBILE APP EXPERIENCE)
    ========================================================================== */
 
@@ -1281,7 +1486,7 @@ h1, h2, h3, h4, p, span, div, li {
 }
 
   </style>
-  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792808775657">
+  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792810478608">
 </head>
 <body>
   
