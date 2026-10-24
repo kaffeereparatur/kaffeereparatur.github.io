@@ -60,11 +60,13 @@ p{margin:0 0 1.1em}
 
 /* search */
 .srch{position:relative;flex:1 1 210px;max-width:290px}
-.srch input{width:100%;padding:9px 14px;border-radius:99px;border:1px solid rgba(255,255,255,.28);
+.srch-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.6);pointer-events:none;z-index:2}
+.srch input{width:100%;padding:9px 14px 9px 36px;border-radius:99px;border:1px solid rgba(255,255,255,.28);
   background:rgba(255,255,255,.1);color:#fff;font:inherit;font-size:.92rem}
 .srch input::placeholder{color:rgba(255,255,255,.62)}
 .srch input:focus{background:#fff;color:var(--ink);outline:2px solid var(--oak)}
 .srch input:focus::placeholder{color:var(--stone)}
+.srch input:focus ~ .srch-icon{color:var(--stone)}
 #qres{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;
   border:1px solid var(--rule);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.16);
   max-height:66vh;overflow-y:auto;z-index:60}
@@ -77,7 +79,12 @@ p{margin:0 0 1.1em}
 #qres .b{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--oak-d);
   font-weight:700}
 #qres .none{padding:14px;color:var(--stone);font-size:.88rem}
-@media(max-width:640px){.srch{order:3;max-width:none;flex-basis:100%}}
+
+/* Mobile App Bottom Dock - ONLY FOR MOBILE VERSION, NO DESKTOP */
+.mobile-app-dock{display:none !important}
+
+/* Mobile Sticky Product CTA - ONLY FOR MOBILE VERSION, NO DESKTOP */
+.mobile-sticky-cta{display:none !important}
 
 /* breadcrumbs */
 .crumbs{font-size:.83rem;color:var(--stone);padding:16px 0 0}
@@ -89,6 +96,34 @@ p{margin:0 0 1.1em}
 .hero{padding:34px 0 26px;border-bottom:1px solid var(--rule)}
 .hero p.sub{font-size:1.05rem;max-width:62ch;color:var(--body)}
 @media(max-width:640px){
+  body{padding-bottom:66px}
+  .wrap{padding:0 14px}
+  
+  /* Mobile Header: Clean Logo + Full Search + Horizontal Swipe Chips */
+  .topbar{display:flex;flex-direction:column;align-items:stretch;gap:8px;padding:10px 0 8px}
+  .brand{font-size:1.25rem}
+  .srch{order:2;max-width:none;flex-basis:auto;width:100%}
+  .srch input{padding:9px 14px 9px 38px;font-size:0.88rem;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.25)}
+  .nav{order:3;display:flex;gap:7px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:2px -14px 0;padding:2px 14px 6px}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{display:inline-flex;align-items:center;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);border-radius:99px;padding:5px 12px;font-size:0.78rem;font-weight:600;color:#ffffff;opacity:1;text-decoration:none;flex-shrink:0}
+  .nav a:active{background:var(--oak);border-color:var(--oak)}
+
+  /* Mobile App Bottom Dock (ONLY ON MOBILE) */
+  .mobile-app-dock{display:flex !important;position:fixed;bottom:0;left:0;right:0;height:60px;background:#ffffff;border-top:1px solid var(--rule);box-shadow:0 -4px 18px rgba(0,0,0,0.07);z-index:9999;align-items:center;justify-content:space-around;padding-bottom:env(safe-area-inset-bottom, 0px)}
+  .mobile-app-dock .dock-item{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-decoration:none;color:var(--stone);font-size:0.68rem;font-weight:600;flex:1;padding:6px 0;transition:color 0.15s;-webkit-tap-highlight-color:transparent}
+  .mobile-app-dock .dock-item svg{stroke:var(--stone);transition:stroke 0.15s}
+  .mobile-app-dock .dock-item:active,.mobile-app-dock .dock-item.active{color:var(--pine)}
+  .mobile-app-dock .dock-item:active svg,.mobile-app-dock .dock-item.active svg{stroke:var(--pine)}
+
+  /* Mobile Sticky Product CTA Bar (ONLY ON MOBILE PRODUCT PAGES) */
+  .mobile-sticky-cta{display:flex !important;position:fixed;bottom:0;left:0;right:0;height:68px;background:#ffffff;border-top:1px solid var(--rule);box-shadow:0 -4px 20px rgba(0,0,0,0.12);z-index:10000;align-items:center;justify-content:space-between;padding:8px 14px calc(8px + env(safe-area-inset-bottom, 0px));gap:12px}
+  .sticky-info{display:flex;flex-direction:column;overflow:hidden;flex:1}
+  .sticky-title{font-size:0.82rem;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);line-height:1.3}
+  .sticky-sub{font-size:0.72rem;color:#059669;font-weight:600}
+  .btn-sticky-amazon{background:var(--pine);color:#ffffff !important;padding:10px 15px;border-radius:8px;font-weight:700;font-size:0.82rem;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:5px;box-shadow:0 2px 8px rgba(31,77,58,0.22);flex-shrink:0}
+  .btn-sticky-amazon:active{background:var(--pine-d)}
+
   .hero{padding:22px 0 18px}
   .hero p.sub{font-size:.99rem;line-height:1.55}
   h1{font-size:1.65rem}
@@ -97,8 +132,6 @@ p{margin:0 0 1.1em}
   .card .body{padding:10px 10px 12px}
   .card h3{font-size:.86rem;line-height:1.28;min-height:2.6em}
   .card-action{display:none}
-  .wrap{padding:0 14px}
-  .nav{gap:14px;font-size:.88rem}
   .sec{padding:24px 0}
 }
 .eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
@@ -692,7 +725,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792818877996">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792819718292">
 </head>
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -710,6 +743,7 @@ footer a:hover{text-decoration:underline}
       <a href="/#symptome">Diagnose</a>
     </nav>
     <div class="srch">
+      <svg class="srch-icon" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
       <input type="search" id="q" placeholder="Ersatzteil, Modell suchen…" autocomplete="off" aria-label="Suche">
       <div id="qres" role="listbox" hidden></div>
     </div>
@@ -2081,6 +2115,30 @@ footer a:hover{text-decoration:underline}
     © 2026 KaffeeReparatur.de. Alle Rechte vorbehalten. Unabhängiges Reparatur- und Informationsportal.
   </div>
 </footer>
+
+<!-- Mobile App Bottom Dock (ONLY FOR MOBILE VERSION, NO DESKTOP) -->
+<nav class="mobile-app-dock" aria-label="Mobile Navigation">
+  <a href="https://kaffeereparatur.github.io/" class="dock-item">
+    <svg width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1h-5v-6h-4v6H4a1 1 0 01-1-1V9.5z"/></svg>
+    <span>Start</span>
+  </a>
+  <a href="https://kaffeereparatur.github.io/#marken" class="dock-item">
+    <svg width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><path d="M6 1v3M10 1v3M14 1v3"/></svg>
+    <span>Hersteller</span>
+  </a>
+  <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="dock-item">
+    <svg width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+    <span>Baugruppen</span>
+  </a>
+  <a href="https://kaffeereparatur.github.io/#symptome" class="dock-item">
+    <svg width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+    <span>Diagnose</span>
+  </a>
+  <a href="#q" class="dock-item" onclick="var el=document.getElementById('q'); if(el){el.focus(); el.scrollIntoView({behavior:'smooth', block:'center'});} return false;">
+    <svg width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+    <span>Suche</span>
+  </a>
+</nav>
 <script src="https://kaffeereparatur.github.io/instant-search.js" defer></script>
 </body>
 </html>
