@@ -234,5 +234,22 @@
         }
       }, { passive: true });
     }
+
+    // 4. Modern Exclusive FAQ Accordions Fallback (Only one remains open)
+    document.addEventListener('click', function(e) {
+      var summary = e.target.closest('.faq summary');
+      if (!summary) return;
+      var clickedDetails = summary.parentElement;
+      var container = clickedDetails.closest('.faq');
+      if (!container) return;
+
+      if (!clickedDetails.open) {
+        container.querySelectorAll('details').forEach(function(d) {
+          if (d !== clickedDetails && d.open) {
+            d.open = false;
+          }
+        });
+      }
+    });
   })();
   

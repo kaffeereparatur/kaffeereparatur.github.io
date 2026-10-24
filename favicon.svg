@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4434"/>
+      <stop offset="100%" stop-color="#102B20"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Modern App Icon Squircle Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Golden Aroma Spark / Precision Droplet -->
+  <path d="M 256,92 C 256,92 216,146 216,176 C 216,198 234,216 256,216 C 278,216 296,198 296,176 C 296,146 256,92 256,92 Z" fill="url(#goldGrad)"/>
+
+  <!-- Minimalist Geometric Coffee Cup Body -->
+  <!-- Wide top rim, rounded base -->
+  <path d="M 132,236 L 332,236 C 332,236 330,356 232,356 C 134,356 132,236 132,236 Z" fill="#FFFFFF"/>
+
+  <!-- Bold Geometric Cup Handle -->
+  <path d="M 324,252 L 348,252 C 374,252 396,274 396,300 C 396,326 374,348 348,348 L 316,348" 
+        fill="none" stroke="#FFFFFF" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Subtle Saucer / Precision Foundation Line -->
+  <line x1="164" y1="392" x2="300" y2="392" stroke="url(#goldGrad)" stroke-width="24" stroke-linecap="round"/>
+</svg>

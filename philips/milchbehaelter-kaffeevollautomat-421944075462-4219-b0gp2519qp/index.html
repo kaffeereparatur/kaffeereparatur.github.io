@@ -13,7 +13,14 @@
 <meta property="og:description" content="Original Milchbehälter für Philips Kaffeevollautomaten 421944075462 &amp; 421944075461 in Erstausrüster-Qualität. Exakte Passform, perfekte Dichtigkeit, langlebiger Milchschäumer. Ideal für Milchsysteme. Jetzt bestellen!">
 <meta property="og:url" content="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/">
 <meta property="og:image" content="https://m.media-amazon.com/images/I/71RmPwqRw6L._AC_SL1500_.jpg">
-<meta name="theme-color" content="#1F4D3A">
+
+<link rel="icon" type="image/svg+xml" href="https://kaffeereparatur.github.io/favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="https://kaffeereparatur.github.io/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kaffeereparatur.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://kaffeereparatur.github.io/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kaffeereparatur.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#16382B">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Karla:wght@400;700&display=swap">
@@ -670,14 +677,86 @@ body.header-hidden .p-sidebar {
   background: var(--wash);
 }
 
-.faq details{border-bottom:1px solid var(--rule);padding:2px 0}
-.faq summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(--ink);
-  font-size:1.02rem;list-style:none;position:relative;padding-right:28px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:4px;top:12px;
-  font-size:1.4rem;color:var(--oak);line-height:1}
-.faq details[open] summary::after{content:"−"}
-.faq details p{margin:0 0 16px;color:var(--body)}
+/* Modern Accordions (Clean Rounded Panels + Smooth Icon Rotation) */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+.faq details {
+  background: #ffffff;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.faq details:hover {
+  border-color: rgba(31, 77, 58, 0.35);
+  box-shadow: 0 4px 16px rgba(21, 32, 27, 0.05);
+}
+.faq details[open] {
+  border-color: var(--pine);
+  box-shadow: 0 4px 20px rgba(31, 77, 58, 0.08);
+}
+.faq summary {
+  cursor: pointer;
+  padding: 16px 20px;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.4;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  user-select: none;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.faq summary::-webkit-details-marker,
+.faq summary::marker {
+  display: none !important;
+}
+.faq summary:hover {
+  color: var(--pine);
+}
+.faq details[open] summary {
+  color: var(--pine);
+  font-weight: 700;
+  background: var(--wash);
+  border-bottom: 1px solid var(--rule);
+}
+.faq .faq-q {
+  flex: 1;
+}
+.faq .faq-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(31, 77, 58, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--pine);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+}
+.faq details[open] .faq-icon {
+  transform: rotate(180deg);
+  background: var(--pine);
+  color: #ffffff;
+}
+.faq .faq-body {
+  padding: 16px 20px 18px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--body);
+  background: #ffffff;
+}
+.faq .faq-body p {
+  margin: 0;
+}
 .disc{background:var(--wash);border-left:3px solid var(--oak);
   padding:14px 18px;font-size:.89rem;border-radius:0 8px 8px 0;margin:22px 0}
 
@@ -1038,7 +1117,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822332373">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822741697">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Milchbehälter 421944075462 421944075461 Philips - Original ESE Qualität","sku":"B0GP2519QP","brand":{"@type":"Brand","name":"Philips"},"description":"Original Milchbehälter für Philips Kaffeevollautomaten 421944075462 &amp; 421944075461 in Erstausrüster-Qualität. Exakte Passform, perfekte Dichtigkeit, langlebiger Milchschäumer. Ideal für Milchsysteme. Jetzt bestellen!","image":["https://m.media-amazon.com/images/I/71RmPwqRw6L._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/"}</script>
 </head>
 <body>
@@ -1277,21 +1356,42 @@ footer a:hover{text-decoration:underline}
           <!-- Section: FAQ -->
           <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
             <h2>Häufige Fragen (FAQ)</h2>
-            <div class="faq" style="margin-top:12px;">
+            <div class="faq" style="margin-top:14px;">
               
-                <details>
-                  <summary>Welche Philips-Kaffeemaschinen sind mit diesem Milchbehälter kompatibel?</summary>
-                  <p>Der Milchbehälter 421944075462 / 421944075461 ist 100 % kompatibel mit allen Philips EP-, SA- und LatteGo-Modellen mit integriertem Milchsystem. Dies umfasst die Serien EP3241, EP3200, EP2100, EP1200, EP1100 und alle B10/B11-Modelle. Er passt exakt ins Originalgehäuse und ersetzt das Originalteil ohne Anpassungen.</p>
+                <details name="prod-faq" open>
+                  <summary>
+                    <span class="faq-q">Welche Philips-Kaffeemaschinen sind mit diesem Milchbehälter kompatibel?</span>
+                    <span class="faq-icon" aria-hidden="true">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                  </summary>
+                  <div class="faq-body">
+                    <p>Der Milchbehälter 421944075462 / 421944075461 ist 100 % kompatibel mit allen Philips EP-, SA- und LatteGo-Modellen mit integriertem Milchsystem. Dies umfasst die Serien EP3241, EP3200, EP2100, EP1200, EP1100 und alle B10/B11-Modelle. Er passt exakt ins Originalgehäuse und ersetzt das Originalteil ohne Anpassungen.</p>
+                  </div>
                 </details>
               
-                <details>
-                  <summary>Wie lange hält der Milchbehälter?</summary>
-                  <p>Bei normaler Nutzung beträgt die Lebensdauer 5 bis 7 Jahre. Durch Verschleiß der Dichtungen und des Sensors kommt es zu einem Wechselbedarf. Mit wöchentlicher Reinigung und monatlicher Pflege verlängert sich die Haltbarkeit erheblich.</p>
+                <details name="prod-faq">
+                  <summary>
+                    <span class="faq-q">Wie lange hält der Milchbehälter?</span>
+                    <span class="faq-icon" aria-hidden="true">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                  </summary>
+                  <div class="faq-body">
+                    <p>Bei normaler Nutzung beträgt die Lebensdauer 5 bis 7 Jahre. Durch Verschleiß der Dichtungen und des Sensors kommt es zu einem Wechselbedarf. Mit wöchentlicher Reinigung und monatlicher Pflege verlängert sich die Haltbarkeit erheblich.</p>
+                  </div>
                 </details>
               
-                <details>
-                  <summary>Ist die Montage schwierig oder erfordert sie Werkzeuge?</summary>
-                  <p>Die Montage des Milchbehälters ist absolut einfach und erfordert keine speziellen Werkzeuge. Nur vier Schrauben müssen gedreht werden. Die Anleitung ist in vier Schritten beschrieben und kann von jedem Nutzer problemlos durchgeführt werden. Keine Fachkenntnisse nötig.</p>
+                <details name="prod-faq">
+                  <summary>
+                    <span class="faq-q">Ist die Montage schwierig oder erfordert sie Werkzeuge?</span>
+                    <span class="faq-icon" aria-hidden="true">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                  </summary>
+                  <div class="faq-body">
+                    <p>Die Montage des Milchbehälters ist absolut einfach und erfordert keine speziellen Werkzeuge. Nur vier Schrauben müssen gedreht werden. Die Anleitung ist in vier Schritten beschrieben und kann von jedem Nutzer problemlos durchgeführt werden. Keine Fachkenntnisse nötig.</p>
+                  </div>
                 </details>
               
             </div>
@@ -1603,6 +1703,6 @@ footer a:hover{text-decoration:underline}
   }, { passive: true });
 })();
 </script>
-<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822332373" defer></script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822741697" defer></script>
 </body>
 </html>

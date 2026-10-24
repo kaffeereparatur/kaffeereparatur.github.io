@@ -13,7 +13,14 @@
 <meta property="og:description" content="fancility 6-teiliges Reinigungsset für DeLonghi &amp; AEG Brüheinheiten ECAM/ESAM/ETAM etc.: 3 premium O-Ringe (35/43 mm), 25g lebensmittelechtes Silikonfett MADE IN GERMANY, 2 XL-Reinigungsbürsten 21cm. Perfekte Passform, langlebig, hygienisch. 4.5 Sterne bei 2451 Bewertungen. (152 Zeichen)">
 <meta property="og:url" content="https://kaffeereparatur.github.io/delonghi/6-teiliges-reinigungsset-brueheinheit-delonghi-aeg-b0d3l1wm73/">
 <meta property="og:image" content="https://m.media-amazon.com/images/I/71-vQ4iP7TL._AC_SL1500_.jpg">
-<meta name="theme-color" content="#1F4D3A">
+
+<link rel="icon" type="image/svg+xml" href="https://kaffeereparatur.github.io/favicon.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="https://kaffeereparatur.github.io/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://kaffeereparatur.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://kaffeereparatur.github.io/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://kaffeereparatur.github.io/apple-touch-icon.png">
+<meta name="theme-color" content="#16382B">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Karla:wght@400;700&display=swap">
@@ -670,14 +677,86 @@ body.header-hidden .p-sidebar {
   background: var(--wash);
 }
 
-.faq details{border-bottom:1px solid var(--rule);padding:2px 0}
-.faq summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(--ink);
-  font-size:1.02rem;list-style:none;position:relative;padding-right:28px}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:4px;top:12px;
-  font-size:1.4rem;color:var(--oak);line-height:1}
-.faq details[open] summary::after{content:"−"}
-.faq details p{margin:0 0 16px;color:var(--body)}
+/* Modern Accordions (Clean Rounded Panels + Smooth Icon Rotation) */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+.faq details {
+  background: #ffffff;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.faq details:hover {
+  border-color: rgba(31, 77, 58, 0.35);
+  box-shadow: 0 4px 16px rgba(21, 32, 27, 0.05);
+}
+.faq details[open] {
+  border-color: var(--pine);
+  box-shadow: 0 4px 20px rgba(31, 77, 58, 0.08);
+}
+.faq summary {
+  cursor: pointer;
+  padding: 16px 20px;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.4;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  user-select: none;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.faq summary::-webkit-details-marker,
+.faq summary::marker {
+  display: none !important;
+}
+.faq summary:hover {
+  color: var(--pine);
+}
+.faq details[open] summary {
+  color: var(--pine);
+  font-weight: 700;
+  background: var(--wash);
+  border-bottom: 1px solid var(--rule);
+}
+.faq .faq-q {
+  flex: 1;
+}
+.faq .faq-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(31, 77, 58, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--pine);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+}
+.faq details[open] .faq-icon {
+  transform: rotate(180deg);
+  background: var(--pine);
+  color: #ffffff;
+}
+.faq .faq-body {
+  padding: 16px 20px 18px;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--body);
+  background: #ffffff;
+}
+.faq .faq-body p {
+  margin: 0;
+}
 .disc{background:var(--wash);border-left:3px solid var(--oak);
   padding:14px 18px;font-size:.89rem;border-radius:0 8px 8px 0;margin:22px 0}
 
@@ -1038,7 +1117,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822332373">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822741697">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"fancility 6-teiliges Reinigungsset Brüheinheit DeLonghi ECAM ESAM - O-Ringe 25g","sku":"B0D3L1WM73","brand":{"@type":"Brand","name":"DeLonghi"},"description":"fancility 6-teiliges Reinigungsset für DeLonghi &amp; AEG Brüheinheiten ECAM/ESAM/ETAM etc.: 3 premium O-Ringe (35/43 mm), 25g lebensmittelechtes Silikonfett MADE IN GERMANY, 2 XL-Reinigungsbürsten 21cm. Perfekte Passform, langlebig, hygienisch. 4.5 Sterne bei 2451 Bewertungen. (152 Zeichen)","image":["https://m.media-amazon.com/images/I/71-vQ4iP7TL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/81I830yH4CL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/9157vE+o3ZL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/81N5fsPLggL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/81BiqX55AXL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/81Hsk1Bk3xL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/81z3cDsmToL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71dSIzC0TAL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/81bEdiO8vvL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/81WcLjiZgVL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61kNr2kIetL._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/delonghi/6-teiliges-reinigungsset-brueheinheit-delonghi-aeg-b0d3l1wm73/"}</script>
 </head>
 <body>
@@ -1358,21 +1437,42 @@ footer a:hover{text-decoration:underline}
           <!-- Section: FAQ -->
           <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
             <h2>Häufige Fragen (FAQ)</h2>
-            <div class="faq" style="margin-top:12px;">
+            <div class="faq" style="margin-top:14px;">
               
-                <details>
-                  <summary>Welche DeLonghi-Modelle sind mit diesem Set kompatibel?</summary>
-                  <p>Das Set ist vollständig kompatibel mit ECAM, ESAM, ETAM, ECA, EAM, EPAM, EABI und baugleichen AEG-Modellen (Magnifica, Perfecta, Dinamica etc.). Identische Durchmesser der O-Ringe und Kolben sorgen für perfekte Passform. Achten Sie auf die Gruppennummer 7313251441/7313251451.</p>
+                <details name="prod-faq" open>
+                  <summary>
+                    <span class="faq-q">Welche DeLonghi-Modelle sind mit diesem Set kompatibel?</span>
+                    <span class="faq-icon" aria-hidden="true">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                  </summary>
+                  <div class="faq-body">
+                    <p>Das Set ist vollständig kompatibel mit ECAM, ESAM, ETAM, ECA, EAM, EPAM, EABI und baugleichen AEG-Modellen (Magnifica, Perfecta, Dinamica etc.). Identische Durchmesser der O-Ringe und Kolben sorgen für perfekte Passform. Achten Sie auf die Gruppennummer 7313251441/7313251451.</p>
+                  </div>
                 </details>
               
-                <details>
-                  <summary>Wie oft sollte ich das Reinigungsset einsetzen?</summary>
-                  <p>Bei intensivem Dauerbetrieb alle 12–24 Monate eine komplette Pflege mit dem 25 g Fett und O-Ring-Wechsel. Nach jeder Nutzung reicht ein einfacher Spülvorgang. Das Set ist so dimensioniert, dass es den Maschinenbetrieb optimal schützt.</p>
+                <details name="prod-faq">
+                  <summary>
+                    <span class="faq-q">Wie oft sollte ich das Reinigungsset einsetzen?</span>
+                    <span class="faq-icon" aria-hidden="true">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                  </summary>
+                  <div class="faq-body">
+                    <p>Bei intensivem Dauerbetrieb alle 12–24 Monate eine komplette Pflege mit dem 25 g Fett und O-Ring-Wechsel. Nach jeder Nutzung reicht ein einfacher Spülvorgang. Das Set ist so dimensioniert, dass es den Maschinenbetrieb optimal schützt.</p>
+                  </div>
                 </details>
               
-                <details>
-                  <summary>Ist das Silikonfett wirklich made in Germany und lebensmittelecht?</summary>
-                  <p>Ja, das hochwertige Spezialfett ist in Deutschland hergestellt, 100 % lebensmittelecht und speziell für Kaffeevollautomaten entwickelt. Es funktioniert auch im Sanitärbereich und schützt vor Verschleiß, Ausbluten und chemischer Degradation.</p>
+                <details name="prod-faq">
+                  <summary>
+                    <span class="faq-q">Ist das Silikonfett wirklich made in Germany und lebensmittelecht?</span>
+                    <span class="faq-icon" aria-hidden="true">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </span>
+                  </summary>
+                  <div class="faq-body">
+                    <p>Ja, das hochwertige Spezialfett ist in Deutschland hergestellt, 100 % lebensmittelecht und speziell für Kaffeevollautomaten entwickelt. Es funktioniert auch im Sanitärbereich und schützt vor Verschleiß, Ausbluten und chemischer Degradation.</p>
+                  </div>
                 </details>
               
             </div>
@@ -1684,6 +1784,6 @@ footer a:hover{text-decoration:underline}
   }, { passive: true });
 })();
 </script>
-<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822332373" defer></script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822741697" defer></script>
 </body>
 </html>
