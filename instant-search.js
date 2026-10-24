@@ -85,5 +85,44 @@
         qres.hidden = true;
       }
     });
+
+    // 3. Mobile Product Page: Scroll down -> show CTA button; Scroll up -> show bottom dock
+    var cta = document.querySelector('.mobile-sticky-cta');
+    var dock = document.querySelector('.mobile-app-dock');
+    if (cta && dock) {
+      var lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
+      var scrollTicking = false;
+
+      // On initial mobile view of product page: show CTA button, hide dock
+      if (window.innerWidth <= 640) {
+        cta.classList.remove('bar-hidden');
+        dock.classList.add('bar-hidden');
+      }
+
+      window.addEventListener('scroll', function() {
+        if (!scrollTicking) {
+          window.requestAnimationFrame(function() {
+            if (window.innerWidth <= 640) {
+              var currY = window.pageYOffset || document.documentElement.scrollTop;
+              var diff = currY - lastScrollY;
+              if (Math.abs(diff) > 5) {
+                if (diff > 0) {
+                  // Scrolling DOWN: show product purchase button, hide bottom dock
+                  cta.classList.remove('bar-hidden');
+                  dock.classList.add('bar-hidden');
+                } else {
+                  // Scrolling UP: show bottom dock, hide product purchase button
+                  dock.classList.remove('bar-hidden');
+                  cta.classList.add('bar-hidden');
+                }
+              }
+              lastScrollY = currY;
+            }
+            scrollTicking = false;
+          });
+          scrollTicking = true;
+        }
+      }, { passive: true });
+    }
   })();
   
