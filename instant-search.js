@@ -1,8 +1,40 @@
 
   (function() {
-    let indexData = [];
-    const qInput = document.getElementById('q');
-    const qres = document.getElementById('qres');
+    // 1. Smart Auto-Hiding / Showing Sticky Navigation Header
+    var header = document.querySelector('.top');
+    if (header) {
+      var lastY = window.pageYOffset || document.documentElement.scrollTop;
+      var ticking = false;
+
+      window.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(function() {
+            var currentY = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentY > 60) {
+              header.classList.add('nav-scrolled');
+              if (currentY > lastY + 8 && currentY > 150) {
+                // Scrolling down -> hide menu
+                header.classList.add('nav-hidden');
+              } else if (currentY < lastY - 6) {
+                // Scrolling up -> show menu smoothly
+                header.classList.remove('nav-hidden');
+              }
+            } else {
+              header.classList.remove('nav-scrolled');
+              header.classList.remove('nav-hidden');
+            }
+            lastY = currentY;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    }
+
+    // 2. Instant Search Autocomplete
+    var indexData = [];
+    var qInput = document.getElementById('q');
+    var qres = document.getElementById('qres');
 
     if (!qInput || !qres) return;
 
@@ -12,16 +44,16 @@
       .catch(function(e) { console.error('Search load error:', e); });
 
     function performSearch() {
-      const q = qInput.value.trim().toLowerCase();
+      var q = qInput.value.trim().toLowerCase();
       if (!q) {
         qres.hidden = true;
         qres.innerHTML = '';
         return;
       }
 
-      const terms = q.split(/\s+/);
-      const matches = indexData.filter(function(item) {
-        const hay = (item.title + ' ' + (item.category || '') + ' ' + (item.asin || '')).toLowerCase();
+      var terms = q.split(/\s+/);
+      var matches = indexData.filter(function(item) {
+        var hay = (item.title + ' ' + (item.h1 || '') + ' ' + (item.category || '') + ' ' + (item.asin || '')).toLowerCase();
         return terms.every(function(t) { return hay.indexOf(t) !== -1; });
       }).slice(0, 8);
 

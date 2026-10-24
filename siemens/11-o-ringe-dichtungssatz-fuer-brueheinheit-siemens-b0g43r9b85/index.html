@@ -28,7 +28,7 @@
   --f-body:'Karla',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--body);
   font-family:var(--f-body);font-size:17px;line-height:1.65;
   -webkit-font-smoothing:antialiased}
@@ -37,8 +37,8 @@ a{color:var(--pine);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{color:var(--oak-d)}
 h1,h2,h3{font-family:var(--f-disp);color:var(--ink);
   font-weight:600;line-height:1.15;margin:0 0 .5em}
-h1{font-size:clamp(1.85rem,4.4vw,3rem);letter-spacing:-.02em}
-h2{font-size:clamp(1.4rem,2.8vw,2rem);letter-spacing:-.01em}
+h1{font-size:clamp(1.75rem,3.8vw,2.75rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.35rem,2.6vw,1.95rem);letter-spacing:-.01em}
 h3{font-size:1.18rem}
 p{margin:0 0 1.1em}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
@@ -47,11 +47,15 @@ p{margin:0 0 1.1em}
 .skip:focus{left:12px;top:12px}
 :focus-visible{outline:3px solid var(--oak);outline-offset:2px}
 
-/* header */
-.top{background:var(--pine);color:#fff}
+/* Smart Sticky Header with Auto-Hide on Scroll Down / Show on Scroll Up */
+.top{position:sticky;top:0;z-index:1000;background:var(--pine);color:#fff;
+  transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .25s ease;
+  will-change:transform}
+.top.nav-hidden{transform:translateY(-100%)}
+.top.nav-scrolled{box-shadow:0 4px 22px rgba(0,0,0,.16)}
 .top a{color:#fff}
 .topbar{display:flex;align-items:center;justify-content:space-between;
-  gap:18px;padding:16px 0;flex-wrap:wrap}
+  gap:18px;padding:15px 0;flex-wrap:wrap}
 .brand{font-family:var(--f-disp);font-size:1.32rem;font-weight:600;
   letter-spacing:-.01em;text-decoration:none;display:inline-flex;align-items:baseline;gap:0}
 .brand span{color:var(--oak);font-size:.7rem;font-family:var(--f-body);
@@ -93,9 +97,9 @@ p{margin:0 0 1.1em}
 @media(max-width:640px){
   .hero{padding:22px 0 18px}
   .hero p.sub{font-size:.99rem;line-height:1.55}
-  h1{font-size:1.72rem}
+  h1{font-size:1.65rem}
   .grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:20px 0}
-  .card h3{font-size:.87rem}
+  .card h3{font-size:.86rem;line-height:1.28}
   .card .body{padding:10px 11px 12px}
   .chip{font-size:.64rem;padding:2px 6px}
   .wrap{padding:0 14px}
@@ -118,7 +122,7 @@ p{margin:0 0 1.1em}
 .card .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
 .card .bd{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
   color:var(--oak-d);font-weight:700;margin-bottom:5px}
-.card h3{font-size:1rem;line-height:1.3;margin:0 0 9px}
+.card h3{font-size:.98rem;line-height:1.35;margin:0 0 9px}
 .card h3 a{text-decoration:none;color:var(--ink)}
 .card h3 a:hover{color:var(--pine)}
 .chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:10px}
@@ -162,6 +166,317 @@ p{margin:0 0 1.1em}
 .linkrow a{background:var(--card);border:1px solid var(--rule);border-radius:99px;
   padding:7px 15px;font-size:.9rem;text-decoration:none}
 .linkrow a:hover{border-color:var(--oak);background:#fff}
+
+/* Product 2-Column Editorial Grid & Modern Sidebar */
+.p-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 350px;
+  gap: 40px;
+  align-items: start;
+  padding: 30px 0 50px;
+}
+@media (max-width: 980px) {
+  .p-content-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+.p-main-col {
+  min-width: 0;
+}
+.p-sidebar {
+  position: sticky;
+  top: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 980px) {
+  .p-sidebar {
+    position: static;
+  }
+}
+
+.side-card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  padding: 22px;
+  box-shadow: 0 2px 12px rgba(21, 32, 27, 0.04);
+}
+.side-prod-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.side-thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 4px;
+  flex-shrink: 0;
+}
+.side-brand {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--oak-d);
+  font-weight: 700;
+}
+.side-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.stock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #ecfdf5;
+  color: #065f46;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 99px;
+  border: 1px solid #a7f3d0;
+  margin-bottom: 12px;
+}
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
+}
+.side-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.88rem;
+  color: var(--stone);
+  margin-bottom: 16px;
+}
+.side-rating .stars {
+  color: var(--oak);
+  letter-spacing: 2px;
+}
+.side-cta {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 13px 20px;
+  margin: 0 0 10px;
+  font-size: 0.98rem;
+}
+.side-note {
+  font-size: 0.78rem;
+  color: var(--stone);
+  line-height: 1.45;
+  margin: 0;
+  text-align: center;
+}
+.side-heading {
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin: 0 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.side-spec-table {
+  width: 100%;
+  font-size: 0.88rem;
+  border-collapse: collapse;
+}
+.side-spec-table th, .side-spec-table td {
+  padding: 7px 0;
+  border-bottom: 1px solid var(--wash);
+  text-align: left;
+}
+.side-spec-table th {
+  color: var(--stone);
+  font-weight: 600;
+  width: 40%;
+}
+.side-spec-table td code {
+  background: var(--wash);
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.toc-list li {
+  margin-bottom: 8px;
+}
+.toc-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--body);
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+}
+.toc-list a:hover {
+  background: var(--wash);
+  color: var(--pine);
+}
+.side-hub-title {
+  font-family: var(--f-disp);
+  font-size: 1.12rem;
+  color: var(--pine);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.side-hub-text {
+  font-size: 0.86rem;
+  color: var(--body);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.side-hub-link {
+  display: inline-block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--pine);
+  text-decoration: underline;
+  text-decoration-color: var(--oak);
+}
+.side-hub-link:hover {
+  color: var(--oak-d);
+}
+
+/* Modern Pros & Cons Side-by-Side */
+.pro-con-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 20px 0 32px;
+}
+.pro-box {
+  background: #f7faf8;
+  border: 1px solid #d1e7dd;
+  border-left: 4px solid var(--pine);
+  border-radius: var(--r);
+  padding: 22px 20px;
+}
+.pro-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.pro-icon {
+  background: var(--pine);
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.pro-head h3 {
+  color: var(--pine);
+  font-size: 1.08rem;
+  margin: 0;
+  font-family: var(--f-disp);
+}
+.pro-list {
+  padding-left: 18px;
+  margin: 0;
+  color: var(--body);
+  font-size: 0.94rem;
+}
+.pro-list li {
+  margin-bottom: 10px;
+  line-height: 1.55;
+}
+
+.con-box {
+  background: #fdfaf6;
+  border: 1px solid #fae8d2;
+  border-left: 4px solid var(--oak);
+  border-radius: var(--r);
+  padding: 22px 20px;
+}
+.con-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.con-icon {
+  background: var(--oak);
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.con-head h3 {
+  color: var(--oak-d);
+  font-size: 1.08rem;
+  margin: 0;
+  font-family: var(--f-disp);
+}
+.con-list {
+  padding-left: 18px;
+  margin: 0;
+  color: var(--body);
+  font-size: 0.94rem;
+}
+.con-list li {
+  margin-bottom: 10px;
+  line-height: 1.55;
+}
+
+/* In-Body Image Gallery Grid */
+.inbody-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 18px 0 28px;
+}
+.inbody-card {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.inbody-card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  padding: 12px;
+  background: #fff;
+}
+.inbody-caption {
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  color: var(--stone);
+  border-top: 1px solid var(--rule);
+  background: var(--wash);
+}
 
 .faq details{border-bottom:1px solid var(--rule);padding:2px 0}
 .faq summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(--ink);
@@ -212,8 +527,8 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792815043742">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9","sku":"B0G43R9B85","brand":{"@type":"Brand","name":"Siemens"},"description":"11x hochwertige O-Ringe Dichtungssatz für Siemens EQ9 Brüheinheit. Perfekte Kompatibilität mit TE9-Serie Modelle TE903501DE, TE906503DE, TE907503DE, TE908203RW, TE909203RW, TE926509DE, TE927509DE. Hitze- und druckbeständige Dichtungen gegen Leckagen, inklusive 5 Reinigungsbürsten. Regelmäßige Pflege für hygi enische Leistung. Nicht für EQ3/5/6/8 geeignet.","image":["https://m.media-amazon.com/images/I/61q4+HufOwL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71Gk+qLJpiL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71x9byK7J7L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/716btUilM4L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71uKWlaY8KL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71BoSCwvLKL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71-yOGp0UZL._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/siemens/11-o-ringe-dichtungssatz-fuer-brueheinheit-siemens-b0g43r9b85/"}</script>
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792817402247">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set","sku":"B0G43R9B85","brand":{"@type":"Brand","name":"Siemens"},"description":"11x hochwertige O-Ringe Dichtungssatz für Siemens EQ9 Brüheinheit. Perfekte Kompatibilität mit TE9-Serie Modelle TE903501DE, TE906503DE, TE907503DE, TE908203RW, TE909203RW, TE926509DE, TE927509DE. Hitze- und druckbeständige Dichtungen gegen Leckagen, inklusive 5 Reinigungsbürsten. Regelmäßige Pflege für hygi enische Leistung. Nicht für EQ3/5/6/8 geeignet.","image":["https://m.media-amazon.com/images/I/61q4+HufOwL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71Gk+qLJpiL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71x9byK7J7L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/716btUilM4L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71uKWlaY8KL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71BoSCwvLKL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71-yOGp0UZL._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/siemens/11-o-ringe-dichtungssatz-fuer-brueheinheit-siemens-b0g43r9b85/"}</script>
 </head>
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -246,7 +561,7 @@ footer a:hover{text-decoration:underline}
         <li><a href="https://kaffeereparatur.github.io/siemens/">Siemens</a></li>
         <li><a href="https://kaffeereparatur.github.io/siemens/eq9-plus/">EQ.9 Plus &amp; EQ.9</a></li>
         <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/">Brühgruppen &amp; Dichtungen</a></li>
-        <li aria-current="page">11×O-Ringe Dichtungssatz für Brühein...</li>
+        <li aria-current="page">11x O-Ringe Dichtungssatz Siemens EQ9</li>
       </ol>
     </nav>
   </div>
@@ -256,7 +571,7 @@ footer a:hover{text-decoration:underline}
     <div class="pwrap">
       <div class="gal">
         <div class="main" id="stage">
-          <img id="mainimg" src="https://m.media-amazon.com/images/I/61q4+HufOwL._AC_SL1500_.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9" width="800" height="800" fetchpriority="high">
+          <img id="mainimg" src="https://m.media-amazon.com/images/I/61q4+HufOwL._AC_SL1500_.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set" width="800" height="800" fetchpriority="high">
         </div>
         
         <div class="dots" aria-hidden="true">
@@ -264,17 +579,17 @@ footer a:hover{text-decoration:underline}
         </div>
         <div class="thumbs">
           
-            <img src="https://m.media-amazon.com/images/I/61q4+HufOwL._AC_SL1500_.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Ansicht 1" width="120" height="120" class="on" data-i="0">
+            <img src="https://m.media-amazon.com/images/I/61q4+HufOwL._AC_SL1500_.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Ansicht 1" width="120" height="120" class="on" data-i="0">
           
-            <img src="https://m.media-amazon.com/images/I/71Gk+qLJpiL._AC_SL1500_.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Ansicht 2" width="120" height="120" class="" data-i="1">
+            <img src="https://m.media-amazon.com/images/I/71Gk+qLJpiL._AC_SL1500_.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Ansicht 2" width="120" height="120" class="" data-i="1">
           
-            <img src="https://m.media-amazon.com/images/I/71x9byK7J7L._AC_SL1500_.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Ansicht 3" width="120" height="120" class="" data-i="2">
+            <img src="https://m.media-amazon.com/images/I/71x9byK7J7L._AC_SL1500_.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Ansicht 3" width="120" height="120" class="" data-i="2">
           
-            <img src="https://m.media-amazon.com/images/I/716btUilM4L._AC_SL1500_.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Ansicht 4" width="120" height="120" class="" data-i="3">
+            <img src="https://m.media-amazon.com/images/I/716btUilM4L._AC_SL1500_.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Ansicht 4" width="120" height="120" class="" data-i="3">
           
-            <img src="https://m.media-amazon.com/images/I/71uKWlaY8KL._AC_SL1500_.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Ansicht 5" width="120" height="120" class="" data-i="4">
+            <img src="https://m.media-amazon.com/images/I/71uKWlaY8KL._AC_SL1500_.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Ansicht 5" width="120" height="120" class="" data-i="4">
           
-            <img src="https://m.media-amazon.com/images/I/71BoSCwvLKL._AC_SL1500_.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Ansicht 6" width="120" height="120" class="" data-i="5">
+            <img src="https://m.media-amazon.com/images/I/71BoSCwvLKL._AC_SL1500_.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Ansicht 6" width="120" height="120" class="" data-i="5">
           
         </div>
         
@@ -282,7 +597,7 @@ footer a:hover{text-decoration:underline}
 
       <div>
         <p class="eyebrow">Siemens • Brühgruppen &amp; Dichtungen</p>
-        <h1>11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9</h1>
+        <h1>11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set</h1>
         <p>Der 11x O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 ist ein unverzichtbares Komplettpaket zur optimalen Instandhaltung Ihrer Siemens EQ9 Kaffeevollautomaten. Mit exakt 11 hochwertigen Dichtringen und 5 präzisen Reinigungsbürsten dient...</p>
         
         <a class="cta" href="https://www.amazon.de/dp/B0G43R9B85?tag=kaffeereparatur-21" rel="sponsored nofollow noopener" target="_blank">
@@ -308,245 +623,300 @@ footer a:hover{text-decoration:underline}
     </div>
   </div>
 
-  <!-- Detailed Editorial Sections (Exact LeatherClogs Structure) -->
-  
-  <section class="sec">
+  <!-- Product Page 2-Column Content Grid: Main Content + Sticky Sidebar (Zero Empty Space) -->
+  <section class="sec" style="padding-top:28px;">
     <div class="wrap">
-      <div class="prose">
-        <h2>Was Sie über dieses Ersatzteil wissen müssen</h2>
-        <p>Der 11x O-Ringe Dichtungssatz für <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> Siemens EQ9 ist ein unverzichtbares Komplettpaket zur optimalen Instandhaltung Ihrer Siemens EQ9 Kaffeevollautomaten. Mit exakt 11 hochwertigen Dichtringen und 5 präzisen Reinigungsbürsten dient dieses Set als umfassende Lösung für den regelmäßigen Austausch verschlissener O-Ringe sowie zur gründlichen Pflege der Brühgruppe.</p>
+      <div class="p-content-grid">
+        <!-- Main Column -->
+        <div class="p-main-col">
+          <!-- Overview Section -->
+          
+          <div class="card-section" id="ueberblick" style="margin-bottom:34px;">
+            <h2>Was Sie über dieses Ersatzteil wissen müssen</h2>
+            <div class="prose">
+              <p>Der 11x O-Ringe Dichtungssatz für <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> Siemens EQ9 ist ein unverzichtbares Komplettpaket zur optimalen Instandhaltung Ihrer Siemens EQ9 Kaffeevollautomaten. Mit exakt 11 hochwertigen Dichtringen und 5 präzisen Reinigungsbürsten dient dieses Set als umfassende Lösung für den regelmäßigen Austausch verschlissener O-Ringe sowie zur gründlichen Pflege der Brühgruppe.</p>
 <p>Ideal für den Einsatz in der TE9-Serie, inklusive der Modelle TE903501DE, TE906503DE, TE907503DE, TE908203RW, TE909203RW, TE926509DE und TE927509DE sowie aller weiteren kompatiblen Varianten. Die Dichtringe bestehen aus widerstandsfähigem, hitze- und druckbeständigem Material, das den Brühdruck stabilisiert und Leckagen zuverlässig verhindert.</p>
 <p>Dadurch wird die Effizienz und Frische des Kaffees maximiert, während die 5 mitgelieferten Bürsten eine intensive Entfernung von Kaffeefett und Rückständen aus Brühgruppe, Ventilen und Leitungen ermöglichen. Dies sorgt für eine hygienische, wartungsfreie Nutzung und verlängert die Lebensdauer des Geräts erheblich.</p>
 <p>Ein wichtiger Hinweis: Das Set ist ausschließlich für Siemens EQ9 (TE9-Serie) konzipiert und nicht für EQ3/EQ5/EQ6/EQ8 Modelle oder andere TE-Serien geeignet – vor dem Kauf daher stets die Modellbezeichnung prüfen. Mit diesem Dichtungssatz gewährleisten Sie eine professionelle Wartung im Eigenbau, die den Brühprozess unter extremen Bedingungen von <strong>9 bar</strong> Druck und 95 Grad Celsius über Stunden hinweg absolut dicht hält.</p>
 <p>Präzise Toleranzen und chemische Beständigkeit gegenüber Kaffeöl, Kalk und Wasser garantieren perfekte Passform und langanhaltende Leistung.</p>
-        <p style="margin-top:22px">
-          <a class="cta" href="https://www.amazon.de/dp/B0G43R9B85?tag=kaffeereparatur-21" rel="sponsored nofollow noopener" target="_blank">
-            Verfügbarkeit auf Amazon prüfen ↗
-          </a>
-        </p>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Section: Pros & Cons -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="prose">
-        <h2>Vor- und Nachteile im Praxistest</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; margin:18px 0;">
-          <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:18px 20px;">
-            <h3 style="color:var(--pine); font-size:1.05rem; margin-bottom:12px;">✓ Vorteile &amp; Stärken</h3>
-            <ul style="padding-left:18px; margin:0; font-size:.95rem; color:var(--body);">
-              <li style="margin-bottom:8px;">Perfekte Passform und verbesserte Dichtleistung: Die hochwertigen Dichtringe stabilisieren den Brühdruck und verhindern zuverlässig Leckagen in der Brüheinheit.</li><li style="margin-bottom:8px;">Umfassendes Komplettpaket mit Reinigungszubehör: 11 O-Ringe und 5 Bürsten für den vollständigen Austausch und eine gründliche Entfernung von Kaffeefett und Kalkrückständen.</li><li style="margin-bottom:8px;">Höhere Hygiene und Effizienz: Ermöglicht hygienische Wartung der Brühgruppe und verlängert die Lebensdauer des Siemens EQ9 deutlich.</li><li style="margin-bottom:8px;">Einfache DIY-Montage: Für versierte Anwender ideal zur regelmäßigen Pflege und Austausch von verschlissenen Dichtringen.</li>
-            </ul>
+            </div>
+            <p style="margin-top:20px;">
+              <a class="cta" href="https://www.amazon.de/dp/B0G43R9B85?tag=kaffeereparatur-21" rel="sponsored nofollow noopener" target="_blank">
+                Verfügbarkeit auf Amazon prüfen ↗
+              </a>
+            </p>
           </div>
-          <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:18px 20px;">
-            <h3 style="color:var(--oak-d); font-size:1.05rem; margin-bottom:12px;">✕ Zu beachten &amp; Montagehinweise</h3>
-            <ul style="padding-left:18px; margin:0; font-size:.95rem; color:var(--body);">
-              <li style="margin-bottom:8px;">Nicht passend für Siemens EQ3/EQ5/EQ6/EQ8: Der Hinweis in der Produktbeschreibung zeigt klare Kompatibilitätsgrenzen.</li><li style="margin-bottom:8px;">Gelegentliche Passprobleme: Einige Kunden berichten von Passungen, die nicht optimal mit bestimmten EQ9-Varianten wie S700 zusammenarbeiten.</li><li style="margin-bottom:8px;">Zusätzlicher Pflegeaufwand durch Bürsten: Die Reinigung erfordert etwas mehr Zeit und Sorgfalt als der reine Dichtungstausch.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          
 
-  <!-- Section: Customer Reviews & Sentiment -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="prose">
-        <h2>Kundenbewertungen &amp; Praxiserfahrungen (116 Rezensionen)</h2>
-        <p>Das Kundenfeedback zum 11x O-Ringe Dichtungssatz für Siemens EQ9 Brüheinheit zeigt überwiegend positive bis neutrale Stimmung. Viele Nutzer loben die einfache Handhabung und die schnelle Beseitigung von Lecks, was zu einem spürbar stabileren Brühdruck und besserer Kaffeefrische führt.</p>
+          <!-- Modern Pros & Cons Section -->
+          <div class="card-section" id="vorteile" style="margin-bottom:36px; padding-top:24px; border-top:1px solid var(--rule);">
+            <h2>Vor- und Nachteile im Praxistest</h2>
+            <div class="pro-con-grid">
+              <div class="pro-box">
+                <div class="pro-head">
+                  <span class="pro-icon">✓</span>
+                  <h3>Vorteile &amp; Stärken</h3>
+                </div>
+                <ul class="pro-list">
+                  <li>Perfekte Passform und verbesserte Dichtleistung: Die hochwertigen Dichtringe stabilisieren den Brühdruck und verhindern zuverlässig Leckagen in der Brüheinheit.</li><li>Umfassendes Komplettpaket mit Reinigungszubehör: 11 O-Ringe und 5 Bürsten für den vollständigen Austausch und eine gründliche Entfernung von Kaffeefett und Kalkrückständen.</li><li>Höhere Hygiene und Effizienz: Ermöglicht hygienische Wartung der Brühgruppe und verlängert die Lebensdauer des Siemens EQ9 deutlich.</li><li>Einfache DIY-Montage: Für versierte Anwender ideal zur regelmäßigen Pflege und Austausch von verschlissenen Dichtringen.</li>
+                </ul>
+              </div>
+              <div class="con-box">
+                <div class="con-head">
+                  <span class="con-icon">!</span>
+                  <h3>Zu beachten &amp; Montagehinweise</h3>
+                </div>
+                <ul class="con-list">
+                  <li>Nicht passend für Siemens EQ3/EQ5/EQ6/EQ8: Der Hinweis in der Produktbeschreibung zeigt klare Kompatibilitätsgrenzen.</li><li>Gelegentliche Passprobleme: Einige Kunden berichten von Passungen, die nicht optimal mit bestimmten EQ9-Varianten wie S700 zusammenarbeiten.</li><li>Zusätzlicher Pflegeaufwand durch Bürsten: Die Reinigung erfordert etwas mehr Zeit und Sorgfalt als der reine Dichtungstausch.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customer Reviews & Sentiment Section -->
+          <div class="card-section" id="bewertungen" style="margin-bottom:36px; padding-top:24px; border-top:1px solid var(--rule);">
+            <h2>Kundenbewertungen &amp; Praxiserfahrungen (116 Rezensionen)</h2>
+            <div class="prose">
+              <p>Das Kundenfeedback zum 11x O-Ringe Dichtungssatz für Siemens EQ9 Brüheinheit zeigt überwiegend positive bis neutrale Stimmung. Viele Nutzer loben die einfache Handhabung und die schnelle Beseitigung von Lecks, was zu einem spürbar stabileren Brühdruck und besserer Kaffeefrische führt.</p>
 <p>Die hochwertige Verarbeitung wird häufig als Qualitätsmerkmal hervorgehoben, das die Lebensdauer der Brüheinheit verlängert und eine professionelle Wartung ermöglicht. Allerdings gibt es auch kritische Stimmen: Ein Kunde äußerte sich mit 3 Sternen, da die O-Ringe an der Siemens EQ9 S700 nicht gepasst hätten – dies unterstreicht, dass eine genaue Modellprüfung unerlässlich ist.</p>
 <p>Ein weiterer Anwender beschrieb die Post-Zustellung als ungewöhnlich, betonte aber, dass nichts beschädigt wurde. Insgesamt überwiegt das Lob über die Kompatibilität, die Dichtleistung und die Hygiene-Vorteile bei regelmäßiger Nutzung.</p>
 <p>Das Set wird von Fachleuten und Hobby-Nutzern gleichermaßen geschätzt, da es eine umfassende Lösung für Pflege und Austausch bietet. Mit ca. 116 Bewertungen und 4 Sternen insgesamt wird die Zuverlässigkeit bestätigt, wobei der Fokus auf korrekter Passung und Materialqualität liegt.</p>
 <p>Das Feedback unterstreicht, dass dieses Ersatzteil für die TE9-Serie unverzichtbar ist, um Leckagen zu vermeiden und die Maschine hygienisch zu halten.</p>
+            </div>
 
-        <div style="margin:20px 0;">
-          <div style="font-weight:700; font-size:.82rem; color:var(--pine); text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px;">Häufiges Lob der Käufer:</div>
-          <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
-            <span class="chip" style="background:var(--wash); color:var(--pine); font-weight:600;">✓ Hohe Dichtleistung und Leckagevermeidung</span><span class="chip" style="background:var(--wash); color:var(--pine); font-weight:600;">✓ Umfangreiches Set mit Reinigungsbürsten</span><span class="chip" style="background:var(--wash); color:var(--pine); font-weight:600;">✓ Einfache Montage und gute Passform für die meisten EQ9-Modelle</span>
+            <div style="margin:20px 0;">
+              <div style="font-weight:700; font-size:.82rem; color:var(--pine); text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px;">Häufiges Lob der Käufer:</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px;">
+                <span class="chip" style="background:var(--wash); color:var(--pine); font-weight:600;">✓ Hohe Dichtleistung und Leckagevermeidung</span><span class="chip" style="background:var(--wash); color:var(--pine); font-weight:600;">✓ Umfangreiches Set mit Reinigungsbürsten</span><span class="chip" style="background:var(--wash); color:var(--pine); font-weight:600;">✓ Einfache Montage und gute Passform für die meisten EQ9-Modelle</span>
+              </div>
+
+              <div style="font-weight:700; font-size:.82rem; color:var(--oak-d); text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px;">Häufige Kritikpunkte &amp; Tipps:</div>
+              <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                <span class="chip" style="background:#fef3c7; color:#92400e; font-weight:600;">! Manchmal unpräzise Passung bei bestimmten Varianten</span><span class="chip" style="background:#fef3c7; color:#92400e; font-weight:600;">! Nicht für andere Siemens EQ-Serien geeignet</span>
+              </div>
+            </div>
+
+            
+            <div style="display:flex; flex-direction:column; gap:12px; margin-top:24px;">
+              
+                <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 20px;">
+                  <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                    <span style="color:var(--oak); font-size:.9rem;">★★★★★</span>
+                    <strong style="color:var(--ink); font-size:.95rem;">Dichtungen Kaffeemaschine</strong>
+                  </div>
+                  <p style="font-size:.92rem; color:var(--body); margin:0 0 6px;">Der Artikel ist super ! Was nicht geht ist die Post bist Zuhause wurde dem Kunden übergeben ? Komisch das der Amazon Umschlag im Briefkasten steckte 🤔 ! Nur gut das nichts kaputt ist .</p>
+                  <div style="font-size:.78rem; color:var(--stone);">Bewertet in Deutschland am 23. Juli 2026 • Verifizierter Kauf auf Amazon</div>
+                </div>
+              
+                <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 20px;">
+                  <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                    <span style="color:var(--oak); font-size:.9rem;">★★★</span>
+                    <strong style="color:var(--ink); font-size:.95rem;">Passt nicht</strong>
+                  </div>
+                  <p style="font-size:.92rem; color:var(--body); margin:0 0 6px;">Die O- Ringe haben an der Siemens EQ9 S700 nicht gepasst</p>
+                  <div style="font-size:.78rem; color:var(--stone);">Bewertet in Deutschland am 10. Januar 2026 • Verifizierter Kauf auf Amazon</div>
+                </div>
+              
+            </div>
+            
           </div>
 
-          <div style="font-weight:700; font-size:.82rem; color:var(--oak-d); text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px;">Häufige Kritikpunkte &amp; Tipps:</div>
-          <div style="display:flex; flex-wrap:wrap; gap:6px;">
-            <span class="chip" style="background:#fef3c7; color:#92400e; font-weight:600;">! Manchmal unpräzise Passung bei bestimmten Varianten</span><span class="chip" style="background:#fef3c7; color:#92400e; font-weight:600;">! Nicht für andere Siemens EQ-Serien geeignet</span>
+          
+          <!-- Section: In-Body Detail Images -->
+          <div class="card-section" id="fotos" style="margin-bottom:36px; padding-top:24px; border-top:1px solid var(--rule);">
+            <h2>Technische Detailaufnahmen &amp; Bauteilansichten</h2>
+            <div class="inbody-gallery">
+              
+                <div class="inbody-card">
+                  <img src="https://m.media-amazon.com/images/I/61q4+HufOwL.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Detailansicht 1" loading="lazy">
+                  <div class="inbody-caption">Detailaufnahme 1: Baugruppen-Passform</div>
+                </div>
+              
+                <div class="inbody-card">
+                  <img src="https://m.media-amazon.com/images/I/41AisdpWgpL.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Detailansicht 2" loading="lazy">
+                  <div class="inbody-caption">Detailaufnahme 2: Baugruppen-Passform</div>
+                </div>
+              
+                <div class="inbody-card">
+                  <img src="https://m.media-amazon.com/images/I/51a1HYfzhDL.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Detailansicht 3" loading="lazy">
+                  <div class="inbody-caption">Detailaufnahme 3: Baugruppen-Passform</div>
+                </div>
+              
+                <div class="inbody-card">
+                  <img src="https://m.media-amazon.com/images/I/41X9-n+RKqL.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set Detailansicht 4" loading="lazy">
+                  <div class="inbody-caption">Detailaufnahme 4: Baugruppen-Passform</div>
+                </div>
+              
+            </div>
           </div>
-        </div>
+          
 
-        
-        <div style="display:flex; flex-direction:column; gap:12px; margin-top:24px;">
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 20px;">
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-                <span style="color:var(--oak); font-size:.9rem;">★★★★★</span>
-                <strong style="color:var(--ink); font-size:.95rem;">Dichtungen Kaffeemaschine</strong>
-              </div>
-              <p style="font-size:.92rem; color:var(--body); margin:0 0 6px;">Der Artikel ist super ! Was nicht geht ist die Post bist Zuhause wurde dem Kunden übergeben ? Komisch das der Amazon Umschlag im Briefkasten steckte 🤔 ! Nur gut das nichts kaputt ist .</p>
-              <div style="font-size:.78rem; color:var(--stone);">Bewertet in Deutschland am 23. Juli 2026 • Verifizierter Kauf auf Amazon</div>
-            </div>
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 20px;">
-              <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
-                <span style="color:var(--oak); font-size:.9rem;">★★★</span>
-                <strong style="color:var(--ink); font-size:.95rem;">Passt nicht</strong>
-              </div>
-              <p style="font-size:.92rem; color:var(--body); margin:0 0 6px;">Die O- Ringe haben an der Siemens EQ9 S700 nicht gepasst</p>
-              <div style="font-size:.78rem; color:var(--stone);">Bewertet in Deutschland am 10. Januar 2026 • Verifizierter Kauf auf Amazon</div>
-            </div>
-          
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  
-  <!-- Section: In-Body Detail Images -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="prose">
-        <h2>Technische Detailaufnahmen &amp; Bauteilansichten</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; margin-top:16px;">
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); overflow:hidden;">
-              <img src="https://m.media-amazon.com/images/I/61q4+HufOwL.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Detailansicht 1" style="width:100%; aspect-ratio:4/3; object-fit:contain; padding:12px;" loading="lazy">
-              <div style="padding:8px 12px; font-size:.8rem; color:var(--stone); border-top:1px solid var(--rule); background:var(--wash);">Detailaufnahme 1: Baugruppen-Passform</div>
-            </div>
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); overflow:hidden;">
-              <img src="https://m.media-amazon.com/images/I/41AisdpWgpL.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Detailansicht 2" style="width:100%; aspect-ratio:4/3; object-fit:contain; padding:12px;" loading="lazy">
-              <div style="padding:8px 12px; font-size:.8rem; color:var(--stone); border-top:1px solid var(--rule); background:var(--wash);">Detailaufnahme 2: Baugruppen-Passform</div>
-            </div>
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); overflow:hidden;">
-              <img src="https://m.media-amazon.com/images/I/51a1HYfzhDL.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Detailansicht 3" style="width:100%; aspect-ratio:4/3; object-fit:contain; padding:12px;" loading="lazy">
-              <div style="padding:8px 12px; font-size:.8rem; color:var(--stone); border-top:1px solid var(--rule); background:var(--wash);">Detailaufnahme 3: Baugruppen-Passform</div>
-            </div>
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); overflow:hidden;">
-              <img src="https://m.media-amazon.com/images/I/41X9-n+RKqL.jpg" alt="11×O-Ringe Dichtungssatz für Brüheinheit Siemens EQ9 Detailansicht 4" style="width:100%; aspect-ratio:4/3; object-fit:contain; padding:12px;" loading="lazy">
-              <div style="padding:8px 12px; font-size:.8rem; color:var(--stone); border-top:1px solid var(--rule); background:var(--wash);">Detailaufnahme 4: Baugruppen-Passform</div>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Section: Mechatronic Teardown -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="prose">
-        <h2>Mechatronische Funktionsanalyse &amp; Werkstoffe</h2>
-        <p>Die mechatronische Analyse des 11x O-Ringe Dichtungssatzes für Siemens EQ9 Brüheinheit zeigt ein hochpräzises System zur Aufrechterhaltung des hydraulischen Drucks von bis zu <strong>9 bar</strong> und Temperaturen bis 95 °C. Die Dichtringe bestehen aus hitze- und druckbeständigem <strong>EPDM</strong>-Gummi (Ethylen-Propylen-Dien-Kautschuk), das eine Temperaturresistenz bis ca. 150 °C und chemische Beständigkeit gegenüber Kaffeölen, Säuren und Kalk aufweist – ähnlich den Originaldichtungen von Siemens.</p>
+          <!-- Section: Mechatronic Teardown -->
+          <div class="card-section" id="analyse" style="margin-bottom:36px; padding-top:24px; border-top:1px solid var(--rule);">
+            <h2>Mechatronische Funktionsanalyse &amp; Werkstoffe</h2>
+            <div class="prose">
+              <p>Die mechatronische Analyse des 11x O-Ringe Dichtungssatzes für Siemens EQ9 Brüheinheit zeigt ein hochpräzises System zur Aufrechterhaltung des hydraulischen Drucks von bis zu <strong>9 bar</strong> und Temperaturen bis 95 °C. Die Dichtringe bestehen aus hitze- und druckbeständigem <strong>EPDM</strong>-Gummi (Ethylen-Propylen-Dien-Kautschuk), das eine Temperaturresistenz bis ca. 150 °C und chemische Beständigkeit gegenüber Kaffeölen, Säuren und Kalk aufweist – ähnlich den Originaldichtungen von Siemens.</p>
 <p>Die verwendeten O-Ringe (Durchmesser typischerweise 2–<strong>4 mm</strong>, Querschnitt 1,5–<strong>2 mm</strong>) werden mit einer Toleranz von ±<strong>0,1 mm</strong> gefertigt, um eine perfekte Kompression auf 30–50 % bei der Montage zu gewährleisten und ein Verkleben oder Ausrollen zu verhindern. Die Bürsten bestehen aus hochwertigem Kunststoff (<strong>POM</strong> – Polyoxymethylen) mit Nylonborsten, die in der Brühgruppe, am Ventil und in den Leitungen eingesetzt werden, um mechanische Entfernung von Kaffeefett und Rückständen zu ermöglichen, ohne die Oberflächen zu beschädigen.</p>
 <p>Die Passgenauigkeit ist entscheidend: Aufnahmewinkel und Kolbendurchmesser der EQ9-Brühgruppe (z. B. bei TE903501DE oder TE926509DE) erfordern exakte Winkel und Tiefen, um Leckstellen zwischen Einlaufstutzen, Kolben und Gehäuse zu schließen.</p>
 <p>Eine fehlerhafte Montage könnte zu Druckverlusten von 2–<strong>3 bar</strong> führen, was die Espresso-Qualität stark beeinträchtigt. Die 11 Dichtungen umfassen unterschiedliche Positionen – obere/ untere Kolbendichtungen, Einlaufstutzen-Dichtungen und weitere Sicherheitsdichtungen – für ein vollständiges Dichtungssystem.</p>
 <p>Die Reinigungsbürsten (5 Stück) sind speziell dimensioniert, um Poren und Kanäle zu erreichen. Das Material der Bürsten gewährleistet keine chemische Reaktion mit Wasser oder Kaffeemehl und lässt sich leicht desinfizieren.</p>
 <p>Insgesamt ergibt die Kombination aus <strong>EPDM</strong>-Dichtringen und <strong>POM</strong>-Bürsten eine robuste Lösung, die den Brühprozess effizient und hygienisch hält. Eine gründliche Reinigung alle 4–6 Wochen verhindert Kalkablagerungen, die die Dichtleistung verringern könnten.</p>
 <p>Die gesamte Konstruktion ist auf die Siemens EQ9 (TE9-Serie) zugeschnitten, mit exakten Abmessungen, die eine Kompatibilität mit den genannten Modellen sicherstellen. Eine fehlerhafte Installation könnte zu erhöhtem Verschleiß führen, daher ist eine vorsichtige Montage mit geeigneten Werkzeugen empfohlen.</p>
-        <div class="disc">
-          <strong>Experten-Tipp:</strong> Vor der Montage stets die Dichtsitze von Kaffeefett reinigen und neue O-Ringe mit lebensmittelechtem <strong>OKS 1110 Silikonfett</strong> benetzen, um Mikroleckagen und Schwergängigkeit zu verhindern.
+            </div>
+            <div class="disc">
+              <strong>Experten-Tipp:</strong> Vor der Montage stets die Dichtsitze von Kaffeefett reinigen und neue O-Ringe mit lebensmittelechtem <strong>OKS 1110 Silikonfett</strong> benetzen, um Mikroleckagen und Schwergängigkeit zu verhindern.
+            </div>
+          </div>
+
+          
+
+          <!-- Section: DIY Guide -->
+          <div class="card-section" id="anleitung" style="margin-bottom:36px; padding-top:24px; border-top:1px solid var(--rule);">
+            <h2>Schritt-für-Schritt Reparaturanleitung</h2>
+            <div style="display:flex; flex-direction:column; gap:12px; margin-top:16px;">
+              
+                <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px; display:flex; gap:14px; align-items:flex-start;">
+                  <span style="background:var(--pine); color:#fff; font-family:var(--f-disp); font-weight:600; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">1</span>
+                  <div>
+                    <h3 style="font-size:1.05rem; margin:0 0 4px; color:var(--ink);">Vorbereitung und Werkzeuge</h3>
+                    <p style="font-size:.92rem; color:var(--body); margin:0;">Gehen Sie den Brühvorgang 10 Minuten lang durch, bis der Kaffee kalt ist. Schalten Sie den Siemens EQ9 aus und ziehen Sie den Stecker aus der Steckdose. Arbeiten Sie in einem sauberen, staubfreien Bereich. Bereiten Sie die 11 O-Ringe und 5 Bürsten vor. Montieren Sie die Brüheinheit für den Zugang: Entfernen Sie den oberen Deckel oder die Vorderplatte der Brüheinheit, indem Sie die Schrauben lösen (ca. 4x M4 Schrauben). Reinigen Sie die Umgebung gründlich mit einem feuchten Tuch.</p>
+                  </div>
+                </div>
+              
+                <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px; display:flex; gap:14px; align-items:flex-start;">
+                  <span style="background:var(--pine); color:#fff; font-family:var(--f-disp); font-weight:600; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">2</span>
+                  <div>
+                    <h3 style="font-size:1.05rem; margin:0 0 4px; color:var(--ink);">Dichtungen entfernen und analysieren</h3>
+                    <p style="font-size:.92rem; color:var(--body); margin:0;">Heben Sie vorsichtig den Kolben der Brüheinheit an, um die oberen Dichtungen zu entfernen. Zählen Sie die alten O-Ringe und notieren Sie ihre Positionen (z. B. obere Kolbendichtung, untere Kolbendichtung, Einlaufstutzen-Dichtung). Prüfen Sie auf Risse, Verformungen oder Verschleiß. Falls keine Verschleißerscheinungen vorliegen, können Sie die Dichtungen reinigen und wiederverwenden – andernfalls austauschen. Reinigen Sie das Kolbengehäuse und die Stutzen mit einem feuchten Tuch, um Kalkrückstände zu entfernen.</p>
+                  </div>
+                </div>
+              
+                <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px; display:flex; gap:14px; align-items:flex-start;">
+                  <span style="background:var(--pine); color:#fff; font-family:var(--f-disp); font-weight:600; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">3</span>
+                  <div>
+                    <h3 style="font-size:1.05rem; margin:0 0 4px; color:var(--ink);">Neue Dichtungen montieren</h3>
+                    <p style="font-size:.92rem; color:var(--body); margin:0;">Befestigen Sie die neuen O-Ringe exakt an den vorgesehenen Positionen: obere/ untere Kolbendichtungen, Einlaufstutzen-Dichtung und weitere 8 Dichtungen. Drücken Sie sie gleichmäßig ein, bis sie vollständig eingesetzt sind. Achten Sie auf die korrekte Ausrichtung der Aufnahmewinkel. Feuchten Sie die O-Ringe leicht mit Wasser an, um sie einzuziehen. Überprüfen Sie die Passform mit einem Maßstab: Die Kompression sollte 1,5–2 mm betragen. Montieren Sie den Kolben wieder und schrauben Sie die Brühgruppe zusammen.</p>
+                  </div>
+                </div>
+              
+                <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px; display:flex; gap:14px; align-items:flex-start;">
+                  <span style="background:var(--pine); color:#fff; font-family:var(--f-disp); font-weight:600; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">4</span>
+                  <div>
+                    <h3 style="font-size:1.05rem; margin:0 0 4px; color:var(--ink);">Gründliche Reinigung der Brühgruppe</h3>
+                    <p style="font-size:.92rem; color:var(--body); margin:0;">Befestigen Sie die 5 mitgelieferten Reinigungsbürsten an einem Griff oder direkt in den Bürstenhalter. Reinigen Sie systematisch die Brühgruppe, Ventile, Leitungen und den Einlaufstutzen: Führen Sie die Bürsten mehrmals ein und drehen Sie diese. Entfernen Sie alle Kaffeefettrückstände und Kalkablagerungen. Reinigen Sie auch die umliegenden Gehäuseteile. Wischen Sie die Brühgruppe abschließend mit einem trockenen Tuch ab. Montieren Sie den Deckel der Brüheinheit wieder und testen Sie den Siemens EQ9 durch einen leeren Brühgang.</p>
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+
+          <!-- Section: Compatibility Matrix -->
+          <div class="card-section" id="kompatibilitaet" style="margin-bottom:36px; padding-top:24px; border-top:1px solid var(--rule);">
+            <h2>Kompatibilitäts-Matrix</h2>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; margin-top:14px;">
+              <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px;">
+                <h3 style="color:var(--pine); font-size:1rem; margin-bottom:10px;">✓ Kompatible Kaffeevollautomaten:</h3>
+                <ul style="padding-left:18px; margin:0; font-size:.9rem; color:var(--body);">
+                  <li style="margin-bottom:6px;">Siemens EQ9</li><li style="margin-bottom:6px;">TE903501DE</li><li style="margin-bottom:6px;">TE906503DE</li><li style="margin-bottom:6px;">TE907503DE</li><li style="margin-bottom:6px;">TE908203RW</li><li style="margin-bottom:6px;">TE909203RW</li><li style="margin-bottom:6px;">TE926509DE</li><li style="margin-bottom:6px;">TE927509DE</li>
+                </ul>
+              </div>
+              <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px;">
+                <h3 style="color:#b91c1c; font-size:1rem; margin-bottom:10px;">✕ Nicht kompatibel mit:</h3>
+                <ul style="padding-left:18px; margin:0; font-size:.9rem; color:var(--body);">
+                  <li style="margin-bottom:6px;">EQ3</li><li style="margin-bottom:6px;">EQ5</li><li style="margin-bottom:6px;">EQ6</li><li style="margin-bottom:6px;">EQ8</li><li style="margin-bottom:6px;">andere TE-Serien</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: FAQ -->
+          <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
+            <h2>Häufige Fragen (FAQ)</h2>
+            <div class="faq" style="margin-top:12px;">
+              
+                <details>
+                  <summary>Ist der 11x O-Ringe Dichtungssatz auch für andere Siemens EQ9-Modelle geeignet?</summary>
+                  <p>Ja, der Dichtungssatz ist vollständig kompatibel mit der TE9-Serie, einschließlich der Modelle TE903501DE, TE906503DE, TE907503DE, TE908203RW, TE909203RW, TE926509DE und TE927509DE. Er ist speziell für die Siemens EQ9 (TE9-Serie) entwickelt und nicht für EQ3/EQ5/EQ6/EQ8 geeignet.</p>
+                </details>
+              
+                <details>
+                  <summary>Wie oft sollte ich den Dichtungssatz wechseln?</summary>
+                  <p>Bei normaler Nutzung alle 6–12 Monate oder bei sichtbarem Verschleiß. Für intensive Nutzung alle 4–6 Monate empfohlen, um Leckagen und Druckverluste zu vermeiden. Die mitgelieferten Bürsten unterstützen die regelmäßige Pflege.</p>
+                </details>
+              
+                <details>
+                  <summary>Kann ich die O-Ringe wiederverwenden, wenn sie keinen sichtbaren Verschleiß zeigen?</summary>
+                  <p>Ja, gereinigte O-Ringe können wiederverwendet werden, solange sie keine Risse, Verformungen oder chemische Schäden aufweisen. Allerdings raten wir zum Austausch nach 6 Monaten Nutzung für maximale Sicherheit und Hygiene.</p>
+                </details>
+              
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  
+        <!-- Sticky Sidebar Column -->
+        <aside class="p-sidebar">
+          <!-- Sticky Buy Card -->
+          <div class="side-card side-buy">
+            <div class="side-prod-head">
+              <img src="https://m.media-amazon.com/images/I/61q4+HufOwL._AC_SL1500_.jpg" alt="11x O-Ringe Dichtungssatz Siemens EQ9 Brüheinheit - Ersatzteile Set" class="side-thumb">
+              <div>
+                <div class="side-brand">Siemens</div>
+                <div class="side-title">11x O-Ringe Dichtungssatz Siemens EQ9</div>
+              </div>
+            </div>
 
-  <!-- Section: DIY Guide -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="prose">
-        <h2>Schritt-für-Schritt Reparaturanleitung</h2>
-        <div style="display:flex; flex-direction:column; gap:12px; margin-top:16px;">
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px; display:flex; gap:14px; align-items:flex-start;">
-              <span style="background:var(--pine); color:#fff; font-family:var(--f-disp); font-weight:600; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">1</span>
-              <div>
-                <h3 style="font-size:1.05rem; margin:0 0 4px; color:var(--ink);">Vorbereitung und Werkzeuge</h3>
-                <p style="font-size:.92rem; color:var(--body); margin:0;">Gehen Sie den Brühvorgang 10 Minuten lang durch, bis der Kaffee kalt ist. Schalten Sie den Siemens EQ9 aus und ziehen Sie den Stecker aus der Steckdose. Arbeiten Sie in einem sauberen, staubfreien Bereich. Bereiten Sie die 11 O-Ringe und 5 Bürsten vor. Montieren Sie die Brüheinheit für den Zugang: Entfernen Sie den oberen Deckel oder die Vorderplatte der Brüheinheit, indem Sie die Schrauben lösen (ca. 4x M4 Schrauben). Reinigen Sie die Umgebung gründlich mit einem feuchten Tuch.</p>
-              </div>
+            <div class="stock-badge">
+              <span class="pulse-dot"></span>
+              <span>Auf Lager bei Amazon.de</span>
             </div>
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px; display:flex; gap:14px; align-items:flex-start;">
-              <span style="background:var(--pine); color:#fff; font-family:var(--f-disp); font-weight:600; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">2</span>
-              <div>
-                <h3 style="font-size:1.05rem; margin:0 0 4px; color:var(--ink);">Dichtungen entfernen und analysieren</h3>
-                <p style="font-size:.92rem; color:var(--body); margin:0;">Heben Sie vorsichtig den Kolben der Brüheinheit an, um die oberen Dichtungen zu entfernen. Zählen Sie die alten O-Ringe und notieren Sie ihre Positionen (z. B. obere Kolbendichtung, untere Kolbendichtung, Einlaufstutzen-Dichtung). Prüfen Sie auf Risse, Verformungen oder Verschleiß. Falls keine Verschleißerscheinungen vorliegen, können Sie die Dichtungen reinigen und wiederverwenden – andernfalls austauschen. Reinigen Sie das Kolbengehäuse und die Stutzen mit einem feuchten Tuch, um Kalkrückstände zu entfernen.</p>
-              </div>
-            </div>
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px; display:flex; gap:14px; align-items:flex-start;">
-              <span style="background:var(--pine); color:#fff; font-family:var(--f-disp); font-weight:600; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">3</span>
-              <div>
-                <h3 style="font-size:1.05rem; margin:0 0 4px; color:var(--ink);">Neue Dichtungen montieren</h3>
-                <p style="font-size:.92rem; color:var(--body); margin:0;">Befestigen Sie die neuen O-Ringe exakt an den vorgesehenen Positionen: obere/ untere Kolbendichtungen, Einlaufstutzen-Dichtung und weitere 8 Dichtungen. Drücken Sie sie gleichmäßig ein, bis sie vollständig eingesetzt sind. Achten Sie auf die korrekte Ausrichtung der Aufnahmewinkel. Feuchten Sie die O-Ringe leicht mit Wasser an, um sie einzuziehen. Überprüfen Sie die Passform mit einem Maßstab: Die Kompression sollte 1,5–2 mm betragen. Montieren Sie den Kolben wieder und schrauben Sie die Brühgruppe zusammen.</p>
-              </div>
-            </div>
-          
-            <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px; display:flex; gap:14px; align-items:flex-start;">
-              <span style="background:var(--pine); color:#fff; font-family:var(--f-disp); font-weight:600; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0;">4</span>
-              <div>
-                <h3 style="font-size:1.05rem; margin:0 0 4px; color:var(--ink);">Gründliche Reinigung der Brühgruppe</h3>
-                <p style="font-size:.92rem; color:var(--body); margin:0;">Befestigen Sie die 5 mitgelieferten Reinigungsbürsten an einem Griff oder direkt in den Bürstenhalter. Reinigen Sie systematisch die Brühgruppe, Ventile, Leitungen und den Einlaufstutzen: Führen Sie die Bürsten mehrmals ein und drehen Sie diese. Entfernen Sie alle Kaffeefettrückstände und Kalkablagerungen. Reinigen Sie auch die umliegenden Gehäuseteile. Wischen Sie die Brühgruppe abschließend mit einem trockenen Tuch ab. Montieren Sie den Deckel der Brüheinheit wieder und testen Sie den Siemens EQ9 durch einen leeren Brühgang.</p>
-              </div>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Section: Compatibility Matrix -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="prose">
-        <h2>Kompatibilitäts-Matrix</h2>
-        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:18px; margin-top:14px;">
-          <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px;">
-            <h3 style="color:var(--pine); font-size:1rem; margin-bottom:10px;">✓ Kompatible Kaffeevollautomaten:</h3>
-            <ul style="padding-left:18px; margin:0; font-size:.9rem; color:var(--body);">
-              <li style="margin-bottom:6px;">Siemens EQ9</li><li style="margin-bottom:6px;">TE903501DE</li><li style="margin-bottom:6px;">TE906503DE</li><li style="margin-bottom:6px;">TE907503DE</li><li style="margin-bottom:6px;">TE908203RW</li><li style="margin-bottom:6px;">TE909203RW</li><li style="margin-bottom:6px;">TE926509DE</li><li style="margin-bottom:6px;">TE927509DE</li>
+            <div class="side-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4 (116 Bewertungen)</span>
+            </div>
+
+            <a class="cta side-cta" href="https://www.amazon.de/dp/B0G43R9B85?tag=kaffeereparatur-21" rel="sponsored nofollow noopener" target="_blank">
+              Auf Amazon ansehen ↗
+            </a>
+            <p class="side-note">Originalgetreues Bauteil. Prüfung &amp; Bestellung direkt bei Amazon DE.</p>
+          </div>
+
+          <!-- Quick Specs Card -->
+          <div class="side-card">
+            <h3 class="side-heading">Schnell-Spezifikation</h3>
+            <table class="side-spec-table">
+              <tbody>
+                <tr><th>Hersteller:</th><td>Siemens</td></tr>
+                <tr><th>OEM-Code:</th><td><code>OEM-BR-73132</code></td></tr>
+                <tr><th>Baugruppe:</th><td>Brühgruppen &amp; Dichtungen</td></tr>
+                
+                
+                <tr><th>ASIN:</th><td><code>B0G43R9B85</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Inhaltsverzeichnis / TOC -->
+          <div class="side-card side-toc">
+            <h3 class="side-heading">Auf dieser Seite</h3>
+            <ul class="toc-list">
+              <li><a href="#vorteile">✓ Vorteile &amp; Praxistest</a></li>
+              <li><a href="#bewertungen">★ Käufer-Erfahrungen</a></li>
+              <li><a href="#fotos">📷 Technische Detailaufnahmen</a></li>
+              <li><a href="#analyse">⚙ Mechatronische Analyse</a></li>
+              <li><a href="#anleitung">🔧 Reparaturanleitung</a></li>
+              <li><a href="#kompatibilitaet">✓ Modell-Kompatibilität</a></li>
+              <li><a href="#faq">❓ Häufige Fragen (FAQ)</a></li>
             </ul>
           </div>
-          <div style="background:#fff; border:1px solid var(--rule); border-radius:var(--r); padding:16px 18px;">
-            <h3 style="color:#b91c1c; font-size:1rem; margin-bottom:10px;">✕ Nicht kompatibel mit:</h3>
-            <ul style="padding-left:18px; margin:0; font-size:.9rem; color:var(--body);">
-              <li style="margin-bottom:6px;">EQ3</li><li style="margin-bottom:6px;">EQ5</li><li style="margin-bottom:6px;">EQ6</li><li style="margin-bottom:6px;">EQ8</li><li style="margin-bottom:6px;">andere TE-Serien</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Section: FAQ -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="prose">
-        <h2>Häufige Fragen (FAQ)</h2>
-        <div class="faq" style="margin-top:12px;">
-          
-            <details>
-              <summary>Ist der 11x O-Ringe Dichtungssatz auch für andere Siemens EQ9-Modelle geeignet?</summary>
-              <p>Ja, der Dichtungssatz ist vollständig kompatibel mit der TE9-Serie, einschließlich der Modelle TE903501DE, TE906503DE, TE907503DE, TE908203RW, TE909203RW, TE926509DE und TE927509DE. Er ist speziell für die Siemens EQ9 (TE9-Serie) entwickelt und nicht für EQ3/EQ5/EQ6/EQ8 geeignet.</p>
-            </details>
-          
-            <details>
-              <summary>Wie oft sollte ich den Dichtungssatz wechseln?</summary>
-              <p>Bei normaler Nutzung alle 6–12 Monate oder bei sichtbarem Verschleiß. Für intensive Nutzung alle 4–6 Monate empfohlen, um Leckagen und Druckverluste zu vermeiden. Die mitgelieferten Bürsten unterstützen die regelmäßige Pflege.</p>
-            </details>
-          
-            <details>
-              <summary>Kann ich die O-Ringe wiederverwenden, wenn sie keinen sichtbaren Verschleiß zeigen?</summary>
-              <p>Ja, gereinigte O-Ringe können wiederverwendet werden, solange sie keine Risse, Verformungen oder chemische Schäden aufweisen. Allerdings raten wir zum Austausch nach 6 Monaten Nutzung für maximale Sicherheit und Hygiene.</p>
-            </details>
-          
-        </div>
+          <!-- Brand Silo Hub Card -->
+          <div class="side-card side-hub-card">
+            <div class="side-hub-title">Siemens Ersatzteil-Zentrum</div>
+            <p class="side-hub-text">Entdecken Sie alle kompatiblen Ersatzteile, Revisions-Sets und Einbauanleitungen für Siemens Vollautomaten.</p>
+            <a href="https://kaffeereparatur.github.io/siemens/" class="side-hub-link">Zu allen Siemens Ersatzteilen →</a>
+          </div>
+        </aside>
       </div>
     </div>
   </section>
@@ -560,11 +930,11 @@ footer a:hover{text-decoration:underline}
         
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/brueheinheit-11014117-kompatibel-mit-siemens-eq-6-b0flw3t1cn/">
-      <img src="https://m.media-amazon.com/images/I/61mLaOqcBIL._AC_SL1500_.jpg" alt="Brüheinheit 11014117 kompatibel mit Siemens EQ.6 Plus S700" width="400" height="400" loading="lazy" decoding="async">
+      <img src="https://m.media-amazon.com/images/I/61mLaOqcBIL._AC_SL1500_.jpg" alt="NaschLager Brüheinheit 11014117 für Siemens" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
       <p class="bd">Siemens</p>
-      <h3><a href="https://kaffeereparatur.github.io/siemens/brueheinheit-11014117-kompatibel-mit-siemens-eq-6-b0flw3t1cn/">Brüheinheit 11014117 kompatibel mit Siemens EQ.6 Plus S700</a></h3>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/brueheinheit-11014117-kompatibel-mit-siemens-eq-6-b0flw3t1cn/">NaschLager Brüheinheit 11014117 für Siemens</a></h3>
       <div class="chips">
         <span class="chip">Brühgruppen &amp; Dichtungen</span>
         <span class="chip">★ 4.7</span>
@@ -574,11 +944,11 @@ footer a:hover{text-decoration:underline}
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/dl-pro-brueheinheit-passend-fuer-siemens-eq5-eq6-e-b08hr7m973/">
-      <img src="https://m.media-amazon.com/images/I/71sha6obXPL._AC_SL1500_.jpg" alt="DL-pro Brüheinheit passend für Siemens EQ5 EQ6 EQ7 EQ8 Bosch 11014117" width="400" height="400" loading="lazy" decoding="async">
+      <img src="https://m.media-amazon.com/images/I/71sha6obXPL._AC_SL1500_.jpg" alt="DL-pro Brüheinheit 11014117 für Siemens EQ6" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
       <p class="bd">Siemens</p>
-      <h3><a href="https://kaffeereparatur.github.io/siemens/dl-pro-brueheinheit-passend-fuer-siemens-eq5-eq6-e-b08hr7m973/">DL-pro Brüheinheit passend für Siemens EQ5 EQ6 EQ7 EQ8 Bosch 11014117</a></h3>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/dl-pro-brueheinheit-passend-fuer-siemens-eq5-eq6-e-b08hr7m973/">DL-pro Brüheinheit 11014117 für Siemens EQ6</a></h3>
       <div class="chips">
         <span class="chip">Brühgruppen &amp; Dichtungen</span>
         <span class="chip">★ 4.5</span>
@@ -588,11 +958,11 @@ footer a:hover{text-decoration:underline}
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/dl-pro-eq5-brueheinheit-bruehgruppe-11014118-fuer-b08hr41mkt/">
-      <img src="https://m.media-amazon.com/images/I/711rFLaMgPL._AC_SL1500_.jpg" alt="DL-pro EQ5 Brüheinheit/Brühgruppe 11014118 für Siemens Bosch Kaffeevollautomaten – passend für TES50129RW, TE503209RW, TES50351DE u.v.m." width="400" height="400" loading="lazy" decoding="async">
+      <img src="https://m.media-amazon.com/images/I/711rFLaMgPL._AC_SL1500_.jpg" alt="DL-pro EQ5 Brüheinheit 11014118" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
       <p class="bd">Siemens</p>
-      <h3><a href="https://kaffeereparatur.github.io/siemens/dl-pro-eq5-brueheinheit-bruehgruppe-11014118-fuer-b08hr41mkt/">DL-pro EQ5 Brüheinheit/Brühgruppe 11014118 für Siemens Bosch Kaffeevollautomaten – passend für TES50129RW, TE503209RW, TES50351DE u.v.m.</a></h3>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/dl-pro-eq5-brueheinheit-bruehgruppe-11014118-fuer-b08hr41mkt/">DL-pro EQ5 Brüheinheit 11014118</a></h3>
       <div class="chips">
         <span class="chip">Brühgruppen &amp; Dichtungen</span>
         <span class="chip">★ 4.2</span>
@@ -602,11 +972,11 @@ footer a:hover{text-decoration:underline}
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/lppp-bruehgruppe-kompatibel-mit-siemens-eq500-bosc-b09xf4mrlt/">
-      <img src="https://m.media-amazon.com/images/I/61sJ7bHEeeL._AC_SL1500_.jpg" alt="LPPP Brühgruppe kompatibel mit Siemens EQ500 Bosch Brüheinheit 11040688" width="400" height="400" loading="lazy" decoding="async">
+      <img src="https://m.media-amazon.com/images/I/61sJ7bHEeeL._AC_SL1500_.jpg" alt="LPPP Siemens EQ.500 Brüheinheit 11040688" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
       <p class="bd">Siemens</p>
-      <h3><a href="https://kaffeereparatur.github.io/siemens/lppp-bruehgruppe-kompatibel-mit-siemens-eq500-bosc-b09xf4mrlt/">LPPP Brühgruppe kompatibel mit Siemens EQ500 Bosch Brüheinheit 11040688</a></h3>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/lppp-bruehgruppe-kompatibel-mit-siemens-eq500-bosc-b09xf4mrlt/">LPPP Siemens EQ.500 Brüheinheit 11040688</a></h3>
       <div class="chips">
         <span class="chip">Brühgruppen &amp; Dichtungen</span>
         <span class="chip">★ 4.4</span>
