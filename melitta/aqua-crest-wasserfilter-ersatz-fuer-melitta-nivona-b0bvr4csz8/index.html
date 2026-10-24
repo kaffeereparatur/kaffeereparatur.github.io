@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#2874f0">
   <meta name="google-site-verification" content="z1HDX3FFWaHIqyPyOMLwt9sgJg31Is1QxB7Po-DuJBs" />
   <title>AQUA CREST Wasserfilter Ersatz für Melitta®, Nivona® Wasserfilterpatrone（2） | KaffeeReparatur</title>
-  <meta name="description" content="Reparatur-Guide, Einbauanleitung und mechatronische Funktionsanalyse für AQUA CREST Wasserfilter Ersatz für Melitta®, Nivona® Wasserfilterpatrone（2）. Verfügbarkeit, OEM-Nummer und passende Ersatzteile.">
+  <meta name="description" content="Technische Analyse &amp; Einbau der Melitta Pro Aqua Filterpatrone für Caffeo Barista &amp; CI Touch. Hydraulik, Durchflussrate, Entlüftung &amp; Fehlerdiagnose.">
   <link rel="canonical" href="https://kaffeereparatur.github.io/melitta/aqua-crest-wasserfilter-ersatz-fuer-melitta-nivona-b0bvr4csz8/">
   <style>
 
@@ -645,6 +645,128 @@ h1, h2, h3, h4, p, span, div, li {
   border-radius: 2px;
 }
 
+/* Flipkart Structured DIY Step Cards */
+.fk-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.fk-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid var(--fk-border);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.fk-step-num {
+  width: 26px;
+  height: 26px;
+  background: var(--fk-blue);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.fk-step-content {
+  flex: 1;
+}
+.fk-step-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #212121;
+  margin-bottom: 3px;
+}
+.fk-step-desc {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+/* Flipkart Structured Compatibility Matrix */
+.fk-compat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+@media (max-width: 768px) {
+  .fk-compat-grid { grid-template-columns: 1fr; }
+}
+.fk-compat-col {
+  padding: 12px 14px;
+  border-radius: 4px;
+  border: 1px solid var(--fk-border);
+  background: #fafafa;
+}
+.fk-compat-col-fits {
+  border-left: 4px solid #388e3c;
+}
+.fk-compat-col-incomp {
+  border-left: 4px solid #d32f2f;
+}
+.fk-compat-head {
+  font-weight: 700;
+  font-size: 13.5px;
+  margin-bottom: 8px;
+}
+.fk-compat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fk-compat-list li {
+  font-size: 12.5px;
+  color: #374151;
+  line-height: 1.4;
+  padding-left: 12px;
+  position: relative;
+}
+.fk-compat-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #9ca3af;
+}
+
+/* Flipkart Structured Troubleshooting Cards */
+.fk-trouble-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.fk-trouble-card {
+  background: #fff;
+  border: 1px solid var(--fk-border);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.fk-trouble-error {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: #b91c1c;
+  margin-bottom: 6px;
+}
+.fk-trouble-row {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+.fk-trouble-fix {
+  color: #15803d;
+}
+
 /* ==========================================================================
    FLIPKART PRODUCT CARDS GRID (Deals Grid)
    ========================================================================== */
@@ -1159,10 +1281,10 @@ h1, h2, h3, h4, p, span, div, li {
 }
 
   </style>
-  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792704264379">
+  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792807878850">
 
   <meta property="og:title" content="AQUA CREST Wasserfilter Ersatz für Melitta®, Nivona® Wasserfilterpatrone（2）">
-  <meta property="og:description" content="Mechatronische Funktionsanalyse, Fehlersymptome und Einbauanleitung für Melitta Kaffeevollautomaten.">
+  <meta property="og:description" content="Technische Analyse &amp; Einbau der Melitta Pro Aqua Filterpatrone für Caffeo Barista &amp; CI Touch. Hydraulik, Durchflussrate, Entlüftung &amp; Fehlerdiagnose.">
   <meta property="og:image" content="https://m.media-amazon.com/images/I/51RZUoiDqjL._AC_SL1500_.jpg">
   <meta property="og:url" content="https://kaffeereparatur.github.io/melitta/aqua-crest-wasserfilter-ersatz-fuer-melitta-nivona-b0bvr4csz8/">
   <meta property="og:type" content="article">
@@ -1394,82 +1516,187 @@ h1, h2, h3, h4, p, span, div, li {
 
         <!-- Technical Editorial Guide Sections -->
         
+  <!-- Section 1: Mechatronic Teardown -->
   <div class="fk-sec-card" id="funktionsweise">
-    <div class="fk-sec-heading">Mechatronische Funktionsanalyse &amp; Wirkungsweise</div>
+    <div class="fk-sec-heading">🔬 Mechatronische Funktionsanalyse &amp; Wirkungsweise</div>
     <div class="fk-sec-text">
-      <p>Bei dem Bauteil AQUA CREST <a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" class="fk-wiki-link" title="Wasserfilter &amp; Entkalkung">Wasserfilter</a> Ersatz für Melitta®, Nivona® Wasserfilterpatrone（2） handelt es sich um eine hochspezifizierte Kernkomponente für moderne Kaffeevollautomaten der Marke Melitta. Innerhalb des hydraulischen und mechanischen Gesamtsystems erfüllt diese Baugruppe (Wasserfilter &amp; Entkalker, OEM-Ref: OEM-WF-SER30) eine definierte Steuerungs- und Belastungsfunktion.</p>
-<p>Sie stellt sicher, dass der dynamische Brühzyklus unter einem stabilen Druckbereich von 9 bis <strong>15 Bar</strong> prozesssicher abläuft und thermische Verluste im Strömungskanal minimiert werden. Die präzise Fertigungstoleranz garantiert eine hermetische Abdichtung gegen Heißwasser und Dampf bis zu 140 °C.</p>
-<p>Bei Verschleiß der elastomeren Dichtzonen oder abrasiver Materialabnutzung kommt es unweigerlich zu Druckabfall, internen Leckagen oder einer Blockade des Antriebsmotors. Ein rechtzeitiger Austausch stellt das werkseitige Extraktionsprofil und die Langlebigkeit des Kaffeevollautomaten wieder her.</p>
+      <p>Die Melitta Pro Aqua Filterpatrone (ASIN B0F9FSY8PF) fungiert als primäres fluidmechanisches Schutzorgan im Niederdruckbereich der Melitta Caffeo Barista- und CI Touch-Plattformen. Das Filtergehäuse besteht aus thermoplastischem, physiologisch unbedenklichem Polypropylen (PP) im Präzisions-Spritzgussverfahren, während das Anschlussgewinde exakt auf das Innengewinde der Tankaufnahme aus Styrol-Acrylnitril (SAN) bzw.</p>
+<p>Polyoxymethylen (<strong>POM</strong>) kalibriert ist. Die saugseitige Abdichtung zum Kaffeemaschinensystem erfolgt über einen elastomeren O-Ring aus Ethylen-Propylen-Dien-Kautschuk (<strong>EPDM</strong>) oder Vinyl-Methyl-Silikon (<strong>VMQ</strong>) mit einer Materialhärte von ca. 70 Shore A.</p>
+<p>Im Inneren der Patrone arbeitet ein Zweikomponenten-Filtrationsbett: Ein stark saurer Kationenaustauscher auf Basis makroporösen sulfonierten Polystyrolharzes bindet selektiv Calcium- (Ca²⁺) und Magnesiumionen (Mg²⁺) im stöchiometrischen Ionenaustauschverfahren gegen Wasserstoff- oder Natriumionen. Parallel dazu adsorbiert granulierte Aktivkohle auf Kokosnussschalenbasis Chloramine, Pestizidrückstände und organische Aromastörer.</p>
+<p>Das Gesamtsystem operiert bei einem relativen saugseitigen Unterdruck von ca. -0,05 bis maximal -<strong>0,2 bar</strong>, welcher durch die nachgeschaltete <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="fk-wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> (Fabrikat Ulka EX5 oder Invensys CP4, <strong>230 V</strong>, <strong>48 W</strong>) aufgebaut wird. Die reguläre Durchflussrate im ungedrosselten Bezug liegt bei 150 bis <strong>240 ml</strong>/min und wird laufend über ein Turbinen-Flowmeter (Digmesa FHKSC mit integriertem Hall-Sensor) überwacht.</p>
+<p>Zu den kritischen mechanischen Versagensursachen zählen Scherspannungsbrüche am Gewindefuß bei Überschreitung des maximalen Anzugsdrehmoments von <strong>2,0 Nm</strong>, Verblockungen des integrierten 50-Mikrometer-PP-Schutzvlieses durch feine Sedimente sowie das Auftreten von Channeling im Harzbett infolge mangelhafter Vorentlüftung. Bei einer Verhärtung des <strong>EPDM</strong>-O-Rings kommt es zu Falschluftansaugung, was die Pumpenkavitation forciert und den Systemdruck von regulär bis zu <strong>15 bar</strong> kollabieren lässt.</p>
     </div>
   </div>
 
+  <!-- Section 2: Symptoms & Root Causes -->
   <div class="fk-sec-card" id="fehlersymptome">
-    <div class="fk-sec-heading">Typische Fehlersymptome &amp; Ursachenanalyse</div>
+    <div class="fk-sec-heading">⚠️ Typische Fehlersymptome &amp; Ursachenanalyse</div>
     <div class="fk-sec-text">
-      <p>Im täglichen Einsatz unterliegt das Bauteil AQUA CREST <a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" class="fk-wiki-link" title="Wasserfilter &amp; Entkalkung">Wasserfilter</a> Ersatz für Melitta®, Nivona® Wasserfilterpatrone（2） mechanischen Wechselbeanspruchungen, hydrodynamischen Druckstößen sowie thermischen Dehnungszyklen. Typische Anzeichen für einen beginnenden Defekt äußern sich durch atypische Betriebsgeräusche, fehlerhafte Wasserführung in die Tropfschale oder ein unvollständiges Extraktionsergebnis in der Tasse.</p>
-<p>Ursächlich für den Funktionsausfall sind meist versprödete Dichtungsringe aus <strong>VMQ</strong> oder <strong>EPDM</strong>, Verkalkungsablagerungen in den engen Durchflusskanälen oder mechatronischer Verschleiß der Führungsschienen. Bei Fortbetrieb mit defektem Bauteil drohen Folgeschäden an der Elektronik oder der <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="fk-wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> durch Überlastabschaltung.</p>
+      <p>Versagt die Filterpatrone oder kommt es zu installationsbedingten Strömungswiderständen, reagiert die Melitta Caffeo Barista / CI Touch mit reproduzierbaren Störbildern. Akustisch dominiert ein auffallend hochfrequentes, metallisch-rauen Pumpengeräusch.</p>
+<p>Dieses Phänomen ist auf massive Kavitation im Schwingkolben zurückzuführen: Reißt durch ein blockiertes Granulatbett oder ein Luftpolster der saugseitige Volumenstrom ab, bilden sich im Unterdruckbereich Dampfblasen, die im Hochdruckteil der Pumpe schlagartig implodieren. Auf der Elektronikebene registriert die Steuerplatine das Ausbleiben der Hall-Impulse des Flowmeters.</p>
+<p>Fällt die Pulsfrequenz unter den softwareseitigen Schwellenwert von typischerweise 12 Impulsen pro Sekunde, stoppt das Gerät die Brühung und wirft die Fehlermeldung &#39;System füllen&#39; oder &#39;Wassertank füllen&#39; aus, obwohl das Wasserreservoir mechanisch gefüllt ist. Weitere Primärsymptome sind ein unregelmäßiges Tröpfeln am <a href="https://kaffeereparatur.github.io/kategorie/kaffeeauslauf/" class="fk-wiki-link" title="Kaffeeauslauf &amp; Düsen">Kaffeeauslauf</a>, ein vollständiger Abriss der Crema-Schicht sowie thermische Inkonsistenzen im Edelstahl-Rohrheizkörper-<a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="fk-wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a>, da die elektronische NTC-Temperaturregelung auf kontinuierliche Wärmeabfuhr durch nominellen Durchfluss ausgelegt ist.</p>
+<p>Als primäre Ursache gilt die fehlerhafte Trockenmontage ohne hydrostatische Entlüftung, bei der Luft im Harz gefangen bleibt. Sekundär führen chemische Erschöpfung des Kationenaustauschers nach ca. 50 Litern Durchsatz oder Überschreitung der Einsatzzeit von 60 Tagen zu unbemerktem Karbonatdurchbruch, gefolgt von massiver Kalkausscheidung in Ventilsitzen, <a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" class="fk-wiki-link" title="Drainageventile &amp; Messingkappen">Drainageventil</a> und Fluidleitungen.</p>
     </div>
   </div>
 
+  <!-- Section 3: Step-by-Step DIY Guide -->
   <div class="fk-sec-card" id="einbauanleitung">
-    <div class="fk-sec-heading">Schritt-für-Schritt Reparatur- &amp; Einbauanleitung</div>
-    <div class="fk-sec-text">
-      <p>Vor Beginn aller Montagearbeiten am Kaffeevollautomaten ist das Gerät zwingend spannungsfrei zu schalten: Ziehen Sie den <strong>230V</strong>-Netzstecker und lassen Sie den <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="fk-wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mindestens 30 Minuten abkühlen. Verschließen Sie die Wasserzufuhr und entnehmen Sie die Abtropfschale sowie den Wassertank.</p>
-<p>Lösen Sie die Gehäuseschrauben (in der Regel <strong>Torx</strong> <strong>TX10</strong> oder <strong>TX20</strong>) vorsichtig und heben Sie die Seitenverkleidung ab. Markieren Sie vor dem Lösen aller Hydraulikschläuche und elektrischen Steckverbindungen die Anschlüsse fotografisch.</p>
-<p>Setzen Sie das neue Ersatzteil (AQUA CREST <a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" class="fk-wiki-link" title="Wasserfilter &amp; Entkalkung">Wasserfilter</a> Ersatz für Melitta®, Nivona® Wasserfilterpatrone（2）) exakt fluchtend ein, schmieren Sie alle neuen Dichtungsringe hauchdünn mit lebensmittelechtem Silikonfett (<strong>OKS 1110</strong>) ein und arretieren Sie die Sicherungsklammern hörbar. Führen Sie vor dem Verschließen des Gehäuses einen Probelauf auf Dichtigkeit durch.</p>
+    <div class="fk-sec-heading">🔧 Schritt-für-Schritt Reparaturanleitung</div>
+    <div class="fk-steps-list">
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">1</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Elektrische Trennung und Vorbereitung</div>
+            <div class="fk-step-desc">Kaffeevollautomaten über den Hauptnetzschalter ausschalten und Netzstecker ziehen. Wassertank entnehmen, Restwasser entleeren und Innenraum mit weichem Tuch von Biofilm und Partikeln reinigen.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">2</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Hydrostatische Entlüftung der Patrone</div>
+            <div class="fk-step-desc">Neue Pro Aqua Patrone vollständig in ein Gefäß mit kaltem Leitungswasser tauchen, um 180 Grad kippen und leicht schütteln, bis sämtliche Luftblasen aus den Vliesöffnungen entwichen sind.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">3</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Inspektion und Schmierung der Dichtzone</div>
+            <div class="fk-step-desc">Tankanschlussmuffe und EPDM-O-Ring an der Filterbasis prüfen. Den O-Ring hauchdünn mit NSF-H1-zertifiziertem Silikonfett (z. B. OKS 1110) benetzen, um Torsionsspannungen beim Eindrehen zu verhindern.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">4</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Drehmomentkontrollierte Montage</div>
+            <div class="fk-step-desc">Patrone senkrecht in die Gewindeaufnahme des Wassertanks einsetzen und mittels der Melitta-Einschraubhilfe oder handfest mit maximal 1,5 bis 2,0 Nm anziehen. Niemals verkanten oder überdrehen.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">5</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Elektronische Initialisierung und Spülzyklus</div>
+            <div class="fk-step-desc">Wassertank füllen, einsetzen, Netzstecker verbinden. Im Menü &#39;Pflege&#39; den Punkt &#39;Filter&#39; wählen, &#39;Filter einsetzen&#39; aktivieren und den automatischen Spülvorgang mit Auffangbehälter (min. 500 ml) starten.</div>
+          </div>
+        </div>
+      
+    </div>
+    
+      <div class="fk-sec-text" style="margin-top:16px;">
+        <p>Zur fachgerechten Durchführung des Filterwechsels an einer Melitta Caffeo Barista oder CI Touch sind Präzision und das richtige Werkzeug unerlässlich. Bereitzustellen sind die originale Melitta Einschraubhilfe (alternativ der Kaffeelöffel-Stiel mit Werkzeugkontur), hochviskoses lebensmittelechtes Schmierfett (<strong>OKS 1110</strong>, <strong>NSF-H1</strong>), fusselfreie Reinigungstücher sowie ein Auffanggefäß mit mindestens <strong>600 ml</strong> Fassungsvermögen.</p>
+<p>Zur präventiven Wartung des Geräteanschlusses empfiehlt sich zudem ein <strong>Torx</strong> <strong>TX10</strong> und <strong>TX20</strong> Schraubendreher, falls das Tankaufnahmeventil demontiert werden muss. Trennen Sie das Gerät vor Beginn allpolig vom Stromnetz, um unkontrollierte Ventilsteuerungen zu vermeiden.</p>
+<p>Entnehmen Sie den SAN-Wassertank und schrauben Sie die alte Filterpatrone gegen den Uhrzeigersinn heraus. Untersuchen Sie das gefederte Auslaufventil am Tankboden: Die Ventilfeder aus Edelstahl <strong>1.4310</strong> muss freigängig sein und der Ventilstößel darf keine Kalkausscheidungen aufweisen.</p>
+<p>Die neue Pro Aqua Patrone darf unter keinen Umständen trocken installiert werden. Tauchen Sie die Patrone kopfüber in frisches Wasser, bis keine Mikrobläschen mehr austreten; verbleibende Restluft im Kationenaustauscherbett führt unweigerlich zu Unterdruckabrissen im Flowmeter.</p>
+<p>Vor dem Eindrehen wird der <strong>EPDM</strong>-Dichtring am Patronenstutzen mikroskopisch dünn mit <strong>OKS 1110</strong> gefettet, um ein Einrollen des Dichtungsquerschnitts zu unterbinden. Drehen Sie den Filter im Uhrzeigersinn vorsichtig ein.</p>
+<p>Das Endmoment liegt bei moderaten 1,5 bis maximal <strong>2,0 Nm</strong> – ein Überdrehen beschädigt unwiderruflich die Kunststoffstege des Tankbodens. Setzen Sie den befüllten Tank ein, navigieren Sie im TFT-Display zum Menü &#39;Pflege &gt; Filter &gt; Einsetzen&#39; und starten Sie das Spülprogramm.</p>
+<p>Das System fördert nun ca. <strong>500 ml</strong> Wasser primär über das Heißwasserventil. Prüfen Sie währenddessen den Tankanschlussbereich visuell auf Tropfverluste und achten Sie akustisch auf einen gleichmäßigen, homogenen Pumpenlauf ohne metallisches Schlürfen.</p>
+      </div>
+    
+  </div>
+
+  <!-- Section 4: Compatibility Matrix -->
+  <div class="fk-sec-card" id="kompatibilitaet">
+    <div class="fk-sec-heading">📋 Kompatibilitäts-Matrix &amp; Passgenauigkeit</div>
+    <div class="fk-compat-grid">
+      <div class="fk-compat-col fk-compat-col-fits">
+        <div class="fk-compat-head" style="color:var(--fk-green,#388e3c);">✓ Kompatible Geräteserien &amp; Modelle:</div>
+        <ul class="fk-compat-list">
+          <li>Melitta Caffeo Barista T (F730, F731, F740)</li><li>Melitta Caffeo Barista TS / TSP (F750, F760, F770, F780, F830, F850)</li><li>Melitta Caffeo CI / CI Touch (E970, F630-101, F630-102)</li><li>Melitta Caffeo Passione / Passione OT (F530, F531)</li><li>Melitta Caffeo Varianza CSP (F570, F580)</li><li>Melitta Avanza Series 600</li><li>Melitta Purista Series 300</li>
+        </ul>
+      </div>
+      <div class="fk-compat-col fk-compat-col-incomp">
+        <div class="fk-compat-head" style="color:#d32f2f;">✕ Nicht kompatibel mit:</div>
+        <ul class="fk-compat-list">
+          <li>Jura Impressa / ENA / Giga (Claris Blue, White, Smart mit sechskantiger Bajonettaufnahme)</li><li>DeLonghi ECAM / ETAM / EPAM Plattformen (DLS C002 Stecksystem mit O-Ring-Kopplung)</li><li>Philips / Saeco Kaffeevollautomaten mit AquaClean CA6903 Klicksystem</li><li>Siemens EQ.Series / Bosch VeroBar (Brita Intenza Bajonettkupplung)</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <!-- Flipkart Specification Rows for Wartung & Prüfprotokoll (100% Fluid, Zero Scrollbars) -->
+  <!-- Section 5: Maintenance Protocol -->
   <div class="fk-sec-card" id="wartung">
-    <div class="fk-sec-heading">Wartungs- &amp; Prüfprotokoll</div>
+    <div class="fk-sec-heading">⚙️ Wartungs- &amp; Prüfprotokoll</div>
     <div class="fk-spec-grid">
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Dichtheitsprüfung</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-blue">Monatlich</span>
-          <span>Kein Tropfwasser an den Anschlüssen unter 15 Bar vollem Prüfdruck.</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Elastomer-Zustand</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-orange">12–18 Monate</span>
-          <span>Rissfrei, elastisch, 70 Shore A Härtegrad nach ISO-Standard.</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Schmierung</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-green">Alle 500 Zyklen</span>
-          <span>Gleichmäßiger dünner Film aus lebensmittelechtem Silikonfett (OKS 1110).</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Kalkablagerungen</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-purple">Turnusmäßig</span>
-          <span>Querschnittsverengung unter 5%, keine Kristalle in den Fluidkanälen.</span>
-        </div>
-      </div>
+      
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Wöchentlich</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-blue">Wöchentlich</span>
+              <span>Entnahme des Wassertanks, Inspektion des Ansaugsiebs am Gehäuseboden und Abspülen des Filters unter fließendem Kaltwasser gegen Biofilmbildung.</span>
+            </div>
+          </div>
+        
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Monatlich</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-orange">Monatlich</span>
+              <span>Überprüfung des O-Rings an der Filterbasis auf Versprödung, mikroskopische Nachfettung mit OKS 1110 und Sichtprüfung auf Lufteinschlüsse im Granulatbett.</span>
+            </div>
+          </div>
+        
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Alle 6-12 Monate</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-green">Alle 6-12 Monate</span>
+              <span>Chemische Grundentkalkung des Hydrauliksystems mit Amidosulfonsäure-Basis ohne eingesetzten Filter, kombiniert mit Erneuerung der Tankmuffendichtung (Lippendichtung).</span>
+            </div>
+          </div>
+        
     </div>
   </div>
 
+  <!-- Section 6: Troubleshooting Table -->
+  
+  <div class="fk-sec-card" id="stoerungen">
+    <div class="fk-sec-heading">🔍 Technische Fehlersuche &amp; Störungsbehebung</div>
+    <div class="fk-trouble-list">
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Meldung &#39;System füllen&#39; trotz voll gefülltem Wassertank</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> Lufteinschlüsse in der Filterpatrone erzeugen Strömungsabriss; Flowmeter erfasst keine Rotordrehung (&lt; 12 Hz).</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Patrone ausschrauben, unter Wasser durch Schwenken vollständig entlüften, wieder einschrauben und manuelles Heißwasserspülen initiieren.</div>
+        </div>
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Schwingkolbenpumpe kreischt mit abnormal hoher Frequenz</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> Kavitation durch übermäßigen saugseitigen Strömungswiderstand infolge verstopften PP-Filtervlieses oder verbackenem Harz.</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Filterpatrone sofort demontieren. Tritt das Geräusch ohne Filter nicht mehr auf, Filterpatrone ersetzen; Wassereinlassventil im Tank auf Verunreinigung prüfen.</div>
+        </div>
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Wasseransammlung unter der Tankaufnahme im Gehäuse</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> Torsionsriss oder Deformierung des EPDM-O-Rings am Filtergewinde oder Aushebeln der Tankstutzendichtung durch zu festes Anziehen.</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> O-Ring der Filterpatrone kontrollieren und ggf. ersetzen. Dichtungssitz säubern, mit OKS 1110 benetzen und Filter mit maximal 2,0 Nm eindrehen.</div>
+        </div>
+      
+    </div>
+  </div>
+  
+
+  <!-- Section 7: FAQs -->
   <div class="fk-sec-card" id="faq">
-    <div class="fk-sec-heading">Häufige Fragen (FAQ)</div>
+    <div class="fk-sec-heading">❓ Häufige Fragen (FAQ)</div>
     <div class="fk-spec-grid">
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Kompatibilität</div>
-        <div class="fk-spec-v">Das Bauteil ist exakt auf die Spezifikationen und Anschlussmaße moderner Melitta Kaffeevollautomaten ausgelegt. Prüfen Sie die Typennummer auf dem Typenschild oder die OEM-Referenz (OEM-WF-SER30).</div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Werkzeugbedarf</div>
-        <div class="fk-spec-v">In der Regel genügen handelsübliche Torx-Schraubendreher (TX10 / TX20) sowie lebensmittelechtes Silikonfett (OKS 1110). Für Jura Modelle wird teils ein Ovalkopfschlüssel benötigt.</div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Reparaturdauer</div>
-        <div class="fk-spec-v">Der Austausch nimmt erfahrungsgemäß etwa 20 bis 45 Minuten in Anspruch. Mit unserer Schritt-für-Schritt-Anleitung ist die Durchführung auch für Heimanwender problemlos machbar.</div>
-      </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Warum muss die Melitta Pro Aqua Filterpatrone vor dem Festschrauben zwingend unter Wasser getaucht werden?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">Das dichte Granulatgemisch aus mikroporösem Ionenaustauscherharz und feiner Aktivkohle schließt herstellungsbedingt Luft in den Hohlräumen ein. Wird die Patrone trocken montiert, zieht die Ulka-Schwingkolbenpumpe diese Luftpolster direkt in den Ansaugtrakt. Die Folge ist eine massive Blockade des Turbinenrades im Digmesa-Flowmeter sowie Kavitation im Pumpenzylinder. Durch das Untertauchen und vorsichtige Schwenken verdrängt das Wasser die Luft vollständig nach oben über die Austrittsschlitze, sodass eine blasenfreie hydraulische Kontinuität gewährleistet ist.</div>
+        </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Welche konkreten Schäden drohen bei einem Überdrehen der Patrone im Wassertank?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">Die Gewindepaarung besteht am Filter aus Polypropylen und am Tankboden aus SAN- bzw. POM-Kunststoff. Bei Überschreiten des maximal zulässigen Drehmoments von ca. 2,0 bis 2,5 Nm kommt es entweder zum Scherbruch der Gewindegänge oder zum Verzug der Dichtfläche. Infolgedessen dichtet der elastomere O-Ring nicht mehr plan auf dem Ventilsitz ab. Die Pumpe saugt am Gewinde Falschluft an, was zu permanenten Fehlermeldungen (&#39;System füllen&#39;), unzureichendem Brühdruck unter 9 bar und im Extremfall zu Leckagen in den Geräteboden führt.</div>
+        </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Muss die Melitta Barista oder CI Touch trotz dauerhafter Pro Aqua Nutzung noch entkalkt werden?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">Ja, eine regelmäßige Entkalkung bleibt zwingend erforderlich, wenngleich sich die Intervalle deutlich verlängern. Die Pro Aqua Patrone reduziert die Karbonathärte stöchiometrisch, bindet jedoch ab einem Schwellenwert von ca. 50 Litern oder 60 Tagen Standzeit keine Härtebildner mehr zuverlässig. Nicht ausgetauschte Calcium- und Magnesiumionen fallen im heißen Thermoblock dennoch als Kesselstein aus. Wichtig: Vor dem Start eines chemischen Entkalkungsprogramms auf Amidosulfonsäurebasis muss die Patrone zwingend entnommen werden, da die Säure das Filterharz irreversibel zersetzt.</div>
+        </div>
+      
     </div>
   </div>
       </div>

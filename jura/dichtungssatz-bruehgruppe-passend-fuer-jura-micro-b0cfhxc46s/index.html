@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#2874f0">
   <meta name="google-site-verification" content="z1HDX3FFWaHIqyPyOMLwt9sgJg31Is1QxB7Po-DuJBs" />
   <title>Dichtungssatz Brühgruppe passend für Jura Micro und ENA | KaffeeReparatur</title>
-  <meta name="description" content="Reparatur-Guide, Einbauanleitung und mechatronische Funktionsanalyse für Dichtungssatz Brühgruppe passend für Jura Micro und ENA. Verfügbarkeit, OEM-Nummer und passende Ersatzteile.">
+  <meta name="description" content="Ausführliche technische Anleitung zur Revision der Jura ENA 8 Touch VC-Kompakt-Brüheinheit: Zylinderdichtung wechseln, Störung 8 beheben und Wartung.">
   <link rel="canonical" href="https://kaffeereparatur.github.io/jura/dichtungssatz-bruehgruppe-passend-fuer-jura-micro-b0cfhxc46s/">
   <style>
 
@@ -645,6 +645,128 @@ h1, h2, h3, h4, p, span, div, li {
   border-radius: 2px;
 }
 
+/* Flipkart Structured DIY Step Cards */
+.fk-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.fk-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid var(--fk-border);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.fk-step-num {
+  width: 26px;
+  height: 26px;
+  background: var(--fk-blue);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.fk-step-content {
+  flex: 1;
+}
+.fk-step-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #212121;
+  margin-bottom: 3px;
+}
+.fk-step-desc {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+/* Flipkart Structured Compatibility Matrix */
+.fk-compat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+@media (max-width: 768px) {
+  .fk-compat-grid { grid-template-columns: 1fr; }
+}
+.fk-compat-col {
+  padding: 12px 14px;
+  border-radius: 4px;
+  border: 1px solid var(--fk-border);
+  background: #fafafa;
+}
+.fk-compat-col-fits {
+  border-left: 4px solid #388e3c;
+}
+.fk-compat-col-incomp {
+  border-left: 4px solid #d32f2f;
+}
+.fk-compat-head {
+  font-weight: 700;
+  font-size: 13.5px;
+  margin-bottom: 8px;
+}
+.fk-compat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fk-compat-list li {
+  font-size: 12.5px;
+  color: #374151;
+  line-height: 1.4;
+  padding-left: 12px;
+  position: relative;
+}
+.fk-compat-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #9ca3af;
+}
+
+/* Flipkart Structured Troubleshooting Cards */
+.fk-trouble-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.fk-trouble-card {
+  background: #fff;
+  border: 1px solid var(--fk-border);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.fk-trouble-error {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: #b91c1c;
+  margin-bottom: 6px;
+}
+.fk-trouble-row {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+.fk-trouble-fix {
+  color: #15803d;
+}
+
 /* ==========================================================================
    FLIPKART PRODUCT CARDS GRID (Deals Grid)
    ========================================================================== */
@@ -1159,10 +1281,10 @@ h1, h2, h3, h4, p, span, div, li {
 }
 
   </style>
-  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792704264379">
+  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792807878850">
 
   <meta property="og:title" content="Dichtungssatz Brühgruppe passend für Jura Micro und ENA">
-  <meta property="og:description" content="Mechatronische Funktionsanalyse, Fehlersymptome und Einbauanleitung für Jura Kaffeevollautomaten.">
+  <meta property="og:description" content="Ausführliche technische Anleitung zur Revision der Jura ENA 8 Touch VC-Kompakt-Brüheinheit: Zylinderdichtung wechseln, Störung 8 beheben und Wartung.">
   <meta property="og:image" content="https://m.media-amazon.com/images/I/61UAoI6UJvL._AC_SL1500_.jpg">
   <meta property="og:url" content="https://kaffeereparatur.github.io/jura/dichtungssatz-bruehgruppe-passend-fuer-jura-micro-b0cfhxc46s/">
   <meta property="og:type" content="article">
@@ -1394,82 +1516,192 @@ h1, h2, h3, h4, p, span, div, li {
 
         <!-- Technical Editorial Guide Sections -->
         
+  <!-- Section 1: Mechatronic Teardown -->
   <div class="fk-sec-card" id="funktionsweise">
-    <div class="fk-sec-heading">Mechatronische Funktionsanalyse &amp; Wirkungsweise</div>
+    <div class="fk-sec-heading">🔬 Mechatronische Funktionsanalyse &amp; Wirkungsweise</div>
     <div class="fk-sec-text">
-      <p>Bei dem Bauteil Dichtungssatz <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> passend für Jura Micro und ENA handelt es sich um eine hochspezifizierte Kernkomponente für moderne Kaffeevollautomaten der Marke Jura. Innerhalb des hydraulischen und mechanischen Gesamtsystems erfüllt diese Baugruppe (Brühgruppen &amp; Dichtungen, OEM-Ref: OEM-BR-73132) eine definierte Steuerungs- und Belastungsfunktion.</p>
-<p>Sie stellt sicher, dass der dynamische Brühzyklus unter einem stabilen Druckbereich von 9 bis <strong>15 Bar</strong> prozesssicher abläuft und thermische Verluste im Strömungskanal minimiert werden. Die präzise Fertigungstoleranz garantiert eine hermetische Abdichtung gegen Heißwasser und Dampf bis zu 140 °C.</p>
-<p>Bei Verschleiß der elastomeren Dichtzonen oder abrasiver Materialabnutzung kommt es unweigerlich zu Druckabfall, internen Leckagen oder einer Blockade des Antriebsmotors. Ein rechtzeitiger Austausch stellt das werkseitige Extraktionsprofil und die Langlebigkeit des Kaffeevollautomaten wieder her.</p>
+      <p>Die Jura ENA 8 Touch nutzt die proprietäre VC-Kompakt-<a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> (Vacuum Clean), eine hochintegrierte Baugruppe, die für reduzierte Einbaumaße und Brühkammerkapazitäten von 6 bis 10 Gramm Kaffeemehl konstruiert wurde. Das tragende Gehäuse und die mechanischen Führungsschlitten bestehen aus teilkristallinem Polyoxymethylen (<strong>POM</strong>, Handelsname Hostaform C), welches sich durch hohe Steifigkeit, herausragende Reibungs-Verschleiß-Eigenschaften sowie thermische Beständigkeit bei Dauertemperaturen von bis zu 90 °C auszeichnet.</p>
+<p>Das Herzstück der hydraulischen Abdichtung bildet die Zylinder- bzw. Kolbendichtung am Brühkolben.</p>
+<p>Hier kommen modifizierte Lippendichtungen aus lebensmittelzertifiziertem Vinyl-Methyl-Silikon (<strong>VMQ</strong>) oder vernetztem Ethylen-Propylen-Dien-Kautschuk (<strong>EPDM</strong>) mit einer Härte von 70 Shore A zum Einsatz. Diese Werkstoffe sind resistent gegen hydrolytischen Abbau und Kaffeesäuren, unterliegen jedoch bei mangelnder Schmierung erheblichem Reibungsverschleiß.</p>
+<p>Die Filtersiebe bestehen aus korrosionsbeständigem austenitischem Edelstahl der Güte <strong>1.4310</strong> (X10CrNi18-8) mit einer präzisionsgeätzten Lochmatrix (Lochweite ca. 200 µm). Hydraulisch operiert die Einheit in einem transienten Druckbereich von 9 bis <strong>16 bar</strong>, generiert durch eine frequenzgesteuerte Ulka-<a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="fk-wiki-link" title="Pumpen &amp; Hydraulik">Vibrationspumpe</a>.</p>
+<p>Der Durchfluss liegt während der Extraktion bei präzisen 120 bis <strong>180 ml</strong>/min. Das integrierte Cremaventil öffnet bei einem hydrostatischen Öffnungsdruck von etwa 3,5 bis <strong>4,2 bar</strong>, um eine reproduzierbare Emulsionsbildung zu erzwingen.</p>
+<p>Mechanische Führungstoleranzen zwischen Zylinderinnenwand und Kolbenführung sind auf maximal ±<strong>0,15 mm</strong> kalibriert. Kritische Versagensmechanismen manifestieren sich durch thermische Versprödung der <strong>VMQ</strong>-Dichtlippen, Riefenbildung auf der <strong>POM</strong>-Zylinderlaufbahn infolge abrasiver Kaffeepulver-Infiltration sowie Dauerbruch der federnden Rastelemente (<strong>1.4310</strong> Federstahl) des VC-Auswurfmechanismus unter repetitiver Stoßbelastung.</p>
     </div>
   </div>
 
+  <!-- Section 2: Symptoms & Root Causes -->
   <div class="fk-sec-card" id="fehlersymptome">
-    <div class="fk-sec-heading">Typische Fehlersymptome &amp; Ursachenanalyse</div>
+    <div class="fk-sec-heading">⚠️ Typische Fehlersymptome &amp; Ursachenanalyse</div>
     <div class="fk-sec-text">
-      <p>Im täglichen Einsatz unterliegt das Bauteil Dichtungssatz <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> passend für Jura Micro und ENA mechanischen Wechselbeanspruchungen, hydrodynamischen Druckstößen sowie thermischen Dehnungszyklen. Typische Anzeichen für einen beginnenden Defekt äußern sich durch atypische Betriebsgeräusche, fehlerhafte Wasserführung in die Tropfschale oder ein unvollständiges Extraktionsergebnis in der Tasse.</p>
-<p>Ursächlich für den Funktionsausfall sind meist versprödete Dichtungsringe aus <strong>VMQ</strong> oder <strong>EPDM</strong>, Verkalkungsablagerungen in den engen Durchflusskanälen oder mechatronischer Verschleiß der Führungsschienen. Bei Fortbetrieb mit defektem Bauteil drohen Folgeschäden an der Elektronik oder der <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="fk-wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> durch Überlastabschaltung.</p>
+      <p>Degenerative Prozesse an der VC-<a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> der Jura ENA 8 äußern sich durch charakteristische akustische, hydraulische und systemelektronische Fehlermuster. Das prominenteste Leitsymptom ist ein wässriger, instabiler Kaffeepuck im Tresterbehälter: Anstatt einer formstabilen, trockenen Tablette findet sich matschiger Kaffeesatz, oft begleitet von einem signifikant reduzierten Tassenvolumen und dünner Crema.</p>
+<p>Dies resultiert aus einem Druckverlust an der Kolbenlippendichtung, wodurch das Brühwasser während der Kompressionsphase am Zylinder vorbeiströmt und direkt in die Auffangschale divergiert wird. Akustisch fällt die Maschine durch lautes Knarzen, hochfrequentes Quietschen oder ein gequältes Motorstöhnen während der Hubbewegung auf.</p>
+<p>Dieses Geräusch entsteht, wenn Kaffeefettablagerungen die werksseitige Schmierung ausgewaschen haben und der Reibungskoeffizient zwischen der <strong>VMQ</strong>-Dichtung und der <strong>POM</strong>-Zylinderwand sprunghaft ansteigt. Elektronisch mündet dies unweigerlich in &#39;Störung 8&#39; (<span class="fk-code-pill">Error 8</span>).</p>
+<p>Die Steuerungselektronik misst über einen Hall-Sensor oder optischen Inkrementalgeber am Gleichstromantrieb die Drehzahl und die Stromaufnahme. Übersteigt die Stromaufnahme infolge mechanischer Schwergängigkeit den Schwellenwert von typischerweise 1,8 Ampere oder erreicht die <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> die Endlagenschalter nicht innerhalb eines fest definierten Zeitfensters von maximal 4,5 Sekunden, bricht der Mikrocontroller den Initialisierungslauf ab.</p>
+<p>Ursächlich hierfür sind neben gequollenen Dichtungen auch verbackene Kaffeemehlkrusten auf den Antriebszahnstangen und eine verstopfte Drainageeinheit, welche den Unterdruckabbau nach dem Brühvorgang verhindert.</p>
     </div>
   </div>
 
+  <!-- Section 3: Step-by-Step DIY Guide -->
   <div class="fk-sec-card" id="einbauanleitung">
-    <div class="fk-sec-heading">Schritt-für-Schritt Reparatur- &amp; Einbauanleitung</div>
-    <div class="fk-sec-text">
-      <p>Vor Beginn aller Montagearbeiten am Kaffeevollautomaten ist das Gerät zwingend spannungsfrei zu schalten: Ziehen Sie den <strong>230V</strong>-Netzstecker und lassen Sie den <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="fk-wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mindestens 30 Minuten abkühlen. Verschließen Sie die Wasserzufuhr und entnehmen Sie die Abtropfschale sowie den Wassertank.</p>
-<p>Lösen Sie die Gehäuseschrauben (in der Regel <strong>Torx</strong> <strong>TX10</strong> oder <strong>TX20</strong>) vorsichtig und heben Sie die Seitenverkleidung ab. Markieren Sie vor dem Lösen aller Hydraulikschläuche und elektrischen Steckverbindungen die Anschlüsse fotografisch.</p>
-<p>Setzen Sie das neue Ersatzteil (Dichtungssatz <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppe</a> passend für Jura Micro und ENA) exakt fluchtend ein, schmieren Sie alle neuen Dichtungsringe hauchdünn mit lebensmittelechtem Silikonfett (<strong>OKS 1110</strong>) ein und arretieren Sie die Sicherungsklammern hörbar. Führen Sie vor dem Verschließen des Gehäuses einen Probelauf auf Dichtigkeit durch.</p>
+    <div class="fk-sec-heading">🔧 Schritt-für-Schritt Reparaturanleitung</div>
+    <div class="fk-steps-list">
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">1</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Netztrennung &amp; Gehäusedemontage</div>
+            <div class="fk-step-desc">Netzstecker ziehen, Wassertank und Bohnenbehälter entleeren. Rückwand und rechte Gehäuseflanke mit Torx TX10 sowie dem Jura-Ovalkopfbit vorsichtig lösen und nach hinten abziehen.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">2</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Ausbau der VC-Brüheinheit</div>
+            <div class="fk-step-desc">Druckschlauch-Sicherungsfeder am oberen Brühkopf mit einer Spitzzange entfernen, PTFE-Druckleitung abziehen. Mikroschalter-Steckkontakte trennen und die vier TX20-Befestigungsschrauben des Brühgruppen-Trägerrahmens herausdrehen.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">3</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Demontage des Brühzylinders</div>
+            <div class="fk-step-desc">Verriegelungslaschen des Zylinders vorsichtig spreizen, Zahnstangensegmente aushängen und den Brühzylinder entlang der POM-Schienen herausfahren. Oberen und unteren Kolben mit Sieb freilegen.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">4</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Dichtungswechsel &amp; Tiefenreinigung</div>
+            <div class="fk-step-desc">Verschlissene VMQ-Zylinderdichtung mit einem abgerundeten Kunststoff-Pickel abhebeln. Edelstahlsieb 1.4310 abschrauben und entfetten. Zylinderlauffläche säubern, neue Dichtung einsetzen und hauchdünn mit OKS 1110 Schmierstoff benetzen.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">5</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Nullpunkt-Justage, Remontage &amp; Testlauf</div>
+            <div class="fk-step-desc">Brüheinheit exakt in Grundstellung zusammenbauen, Markierungen fluchten. Baugruppe ins Chassis einsetzen, Schläuche mit neuen EPDM-O-Ringen montieren, Gehäuse schließen und Spülzyklus mit Referenzbezug durchführen.</div>
+          </div>
+        </div>
+      
+    </div>
+    
+      <div class="fk-sec-text" style="margin-top:16px;">
+        <p>Die Instandsetzung der Jura ENA 8 Touch VC-<a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> erfordert höchste handwerkliche Präzision und dediziertes Spezialwerkzeug. Bereitzustellen sind: <strong>Torx</strong>-Schraubendreher der Größen <strong>TX10</strong>, <strong>TX15</strong> und <strong>TX20</strong>, ein Jura-Ovalkopfschlüssel für die Rückwandverriegelung, ein Messing- oder Kunststoff-O-Ring-Demontierhaken sowie lebensmittelechtes Schmierfett gemäß <strong>NSF-H1</strong> (zwingend <strong>OKS 1110</strong>).</p>
+<p>Vor Arbeitsbeginn ist das Gerät zwingend allpolig vom 230-V-Netz zu trennen. Nach Entnahme von Wassertank, Tropfschale und Kaffeesatzbehälter wird die rückseitige Gehäuseblende über das Lösen der Ovalkopfschrauben entfernt.</p>
+<p>Die rechte Gehäuseseite lässt sich durch leichtes Anheben und horizontales Verschieben aus den Rastnasen befreien. Nun liegt der <a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brühgruppen</a>-Kompaktantrieb frei.</p>
+<p>Lösen Sie die Fluidschlauchklemmen mit einer feinen Flachzange und ziehen Sie die <strong>PTFE</strong>-Druckleitungen axial heraus, um ein Abscheren der Dichtflächen zu vermeiden. Ziehen Sie die elektrischen Flachstecker des Endlagenschalters ab.</p>
+<p>Lösen Sie die vier <strong>TX20</strong>-Schrauben, welche das Trägerchassis fixieren, und heben Sie die VC-<a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" class="fk-wiki-link" title="Brühgruppen &amp; Dichtungen">Brüheinheit</a> vorsichtig aus dem Bajonettführungsbereich. Zerlegen Sie die Einheit, indem Sie die seitlichen Führungsbacken aushängen und den beweglichen Brühzylinder entnehmen.</p>
+<p>Ziehen Sie die gealterte <strong>VMQ</strong>-Zylinderdichtung ab. Säubern Sie die <strong>1.4310</strong>-Edelstahlsiebe im Ultraschallbad oder unter Zuhilfenahme eines organischen Kaffeefettlösers.</p>
+<p>Untersuchen Sie die <strong>POM</strong>-Zylinderwandung mittels Streiflicht auf Mikroriefen; tiefe Riefen erfordern den Tausch des Zylinders. Die neue Lippendichtung wird mit der geschlossenen Flanke voran spannungsfrei auf den Kolben aufgezogen.</p>
+<p>Tragen Sie eine mikroskopisch dünne Schicht <strong>OKS 1110</strong> auf die Dichtungslippe und die <strong>POM</strong>-Gleitbahnen auf. Überschüssiges Fett ist zwingend mit einem fusselfreien Tuch abzuwischen, da Schmierstoffüberschüsse Kaffeemehl binden und als Schleifpaste wirken.</p>
+<p>Achten Sie bei der Remontage peinlich genau darauf, dass die Getriebezahnstangen und die Kolbenkulisse in der markierten Nullpunkt-Referenzposition stehen. Nach dem Einsetzen in das Maschinengehäuse ziehen Sie die <strong>TX20</strong>-Schrauben mit maximal <strong>1,2 Nm</strong> Drehmoment über Kreuz an, um Verzug im Chassis zu vermeiden.</p>
+<p>Nach Anschluss aller Druckleitungen und Gehäuseteile erfolgt der Funktionstest: Schalten Sie das Gerät ein, verifizieren Sie den leisen, ruckfreien Initialisierungslauf und führen Sie drei Probebezüge durch, um das Tropfschalenvolumen und das Trockengewicht des Tresters auf Werksspezifikation zu überprüfen.</p>
+      </div>
+    
+  </div>
+
+  <!-- Section 4: Compatibility Matrix -->
+  <div class="fk-sec-card" id="kompatibilitaet">
+    <div class="fk-sec-heading">📋 Kompatibilitäts-Matrix &amp; Passgenauigkeit</div>
+    <div class="fk-compat-grid">
+      <div class="fk-compat-col fk-compat-col-fits">
+        <div class="fk-compat-head" style="color:var(--fk-green,#388e3c);">✓ Kompatible Geräteserien &amp; Modelle:</div>
+        <ul class="fk-compat-list">
+          <li>Jura ENA 8 (Sämtliche Modelle inkl. Touch, Massive Aluminium &amp; Metropolitan Black)</li><li>Jura ENA 4 (Zweite Generation mit VC-Kompaktbrüheinheit)</li><li>Jura A-Serie (A1, A5, A7, A9 Kompaktbrühsystem)</li><li>Jura ENA Micro Serie (ENA Micro 1, Micro 5, Micro 8, Micro 9, Micro 90)</li>
+        </ul>
+      </div>
+      <div class="fk-compat-col fk-compat-col-incomp">
+        <div class="fk-compat-head" style="color:#d32f2f;">✕ Nicht kompatibel mit:</div>
+        <ul class="fk-compat-list">
+          <li>Jura E-Serie (E6, E8, E60, E80 mit 16g-Standard-Brüheinheit)</li><li>Jura J-Serie, S-Serie &amp; Z-Serie (Z6, Z8, Z10 mit variabler Großraum-Brühgruppe)</li><li>Jura GIGA Serie (GIGA 5, GIGA 6, GIGA X3 mit Doppelmahlwerk-Spezialbrüheinheit)</li><li>DeLonghi, Saeco, Philips oder Nivona Brüheinheiten fremder Bauart</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <!-- Flipkart Specification Rows for Wartung & Prüfprotokoll (100% Fluid, Zero Scrollbars) -->
+  <!-- Section 5: Maintenance Protocol -->
   <div class="fk-sec-card" id="wartung">
-    <div class="fk-sec-heading">Wartungs- &amp; Prüfprotokoll</div>
+    <div class="fk-sec-heading">⚙️ Wartungs- &amp; Prüfprotokoll</div>
     <div class="fk-spec-grid">
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Dichtheitsprüfung</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-blue">Monatlich</span>
-          <span>Kein Tropfwasser an den Anschlüssen unter 15 Bar vollem Prüfdruck.</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Elastomer-Zustand</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-orange">12–18 Monate</span>
-          <span>Rissfrei, elastisch, 70 Shore A Härtegrad nach ISO-Standard.</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Schmierung</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-green">Alle 500 Zyklen</span>
-          <span>Gleichmäßiger dünner Film aus lebensmittelechtem Silikonfett (OKS 1110).</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Kalkablagerungen</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-purple">Turnusmäßig</span>
-          <span>Querschnittsverengung unter 5%, keine Kristalle in den Fluidkanälen.</span>
-        </div>
-      </div>
+      
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Wöchentlich</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-blue">Wöchentlich</span>
+              <span>Manuelle Heißwasserspülung der Auffangschale, Sichtreinigung des Kaffeepulverschachts mit Pinsel und feuchtem Tuch zur Vermeidung von Schimmel- und Schmiermittelkontamination.</span>
+            </div>
+          </div>
+        
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Monatlich</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-orange">Monatlich</span>
+              <span>Automatisches Reinigungsprogramm mit Jura 2-Phasen-Reinigungstabletten durchführen, um Kaffeefett-Oxidationsschichten vom 1.4310-Sieb und der Zylinderdichtung chemisch zu lösen.</span>
+            </div>
+          </div>
+        
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Alle 6-12 Monate</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-green">Alle 6-12 Monate</span>
+              <span>Gehäuse öffnen, mechanische POM-Gleitführungen auf Kaffeemehlreste inspizieren, Zylinderlaufbahn reinigen, OKS 1110 Schmierfilm erneuern und nach ca. 3.500 Bezügen Kolbendichtungen präventiv tauschen.</span>
+            </div>
+          </div>
+        
     </div>
   </div>
 
+  <!-- Section 6: Troubleshooting Table -->
+  
+  <div class="fk-sec-card" id="stoerungen">
+    <div class="fk-sec-heading">🔍 Technische Fehlersuche &amp; Störungsbehebung</div>
+    <div class="fk-trouble-list">
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Störung 8 / Error 8 im Display</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> Überhöhte mechanische Reibung im Brühzylinder durch trockene/gequollene Zylinderdichtung oder blockierte POM-Zahnstange führt zur Motorstrom-Abschaltung.</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Brüheinheit demontieren, VC-Führungsbahnen reinigen, Zylinderdichtung erneuern, mit OKS 1110 dünn einfetten und Getriebezahnräder auf mechanische Grundstellung kalibrieren.</div>
+        </div>
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Kaffee tröpfelt nur, Tresterbehälter enthält schlammigen Brei</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> Kolbenlippendichtung erodiert oder verhärtet; Brühdruck von 15 bar kann nicht gehalten werden, Wasser entweicht über die Entlastungsbohrung in die Auffangschale.</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Zylinderdichtung sowie O-Ringe des Fluid-Steigrohrs austauschen. Mikrosieb auf Kaffeefett-Verkokung kontrollieren und im Ultraschallbad reinigen.</div>
+        </div>
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Extrem lautes Quietschen und Knarzen beim Vor- und Rücklauf</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> Vollständiger Verlust des Schmierfilms an der POM-Laufbuchse infolge aggressiver Entkalkungs- oder Reinigungsmittelchemie; Stick-Slip-Effekt an der Dichtlippe.</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Brühkammer öffnen, Laufflächen von abrasiven Ablagerungen befreien und gezielt einen geschlossenen Schmierfilm aus hochviskosem OKS 1110 Silikonfett applizieren.</div>
+        </div>
+      
+    </div>
+  </div>
+  
+
+  <!-- Section 7: FAQs -->
   <div class="fk-sec-card" id="faq">
-    <div class="fk-sec-heading">Häufige Fragen (FAQ)</div>
+    <div class="fk-sec-heading">❓ Häufige Fragen (FAQ)</div>
     <div class="fk-spec-grid">
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Kompatibilität</div>
-        <div class="fk-spec-v">Das Bauteil ist exakt auf die Spezifikationen und Anschlussmaße moderner Jura Kaffeevollautomaten ausgelegt. Prüfen Sie die Typennummer auf dem Typenschild oder die OEM-Referenz (OEM-BR-73132).</div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Werkzeugbedarf</div>
-        <div class="fk-spec-v">In der Regel genügen handelsübliche Torx-Schraubendreher (TX10 / TX20) sowie lebensmittelechtes Silikonfett (OKS 1110). Für Jura Modelle wird teils ein Ovalkopfschlüssel benötigt.</div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Reparaturdauer</div>
-        <div class="fk-spec-v">Der Austausch nimmt erfahrungsgemäß etwa 20 bis 45 Minuten in Anspruch. Mit unserer Schritt-für-Schritt-Anleitung ist die Durchführung auch für Heimanwender problemlos machbar.</div>
-      </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Warum führt eine verschlissene Zylinderdichtung bei der Jura ENA 8 Touch häufig zur Fehlermeldung &#39;Störung 8&#39;?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">Die Fehlermeldung Störung 8 signalisiert eine Zeitüberschreitung oder eine Stromüberlastung des Brühgruppen-Antriebsmotors. Wenn die VMQ- oder EPDM-Zylinderdichtung altert, quillt sie durch den Kontakt mit Kaffeeölen auf und verliert ihre Elastizität. Gleichzeitig wäscht heißes Brühwasser den Schmierfilm ab. Der dynamische Reibungskoeffizient zwischen Dichtlippe und POM-Zylinderwand steigt drastisch an. Der DC-Antriebsmotor benötigt mehr Drehmoment, wodurch die Stromaufnahme den Grenzwert auf der Steuerplatine überschreitet. Erkennt der Encoder, dass der Kolben nicht innerhalb von 4,5 Sekunden die definierte Endlage erreicht, schaltet die Steuerung aus Motorschutzgründen ab und wirft Störung 8 aus.</div>
+        </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Welches Schmiermittel ist für die VC-Kompakt-Brüheinheit zwingend vorgeschrieben und warum?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">Für die VC-Brüheinheit darf ausschließlich ein hochreines, physiologisch unbedenkliches Silikonfett mit NSF-H1-Zulassung gemäß FDA 21 CFR 178.3570 verwendet werden, vorzugsweise OKS 1110. Mineralölbasierte Schmierstoffe, technisches Lagerfett oder Sprühöle wie WD-40 sind strengstens verboten. Sie zersetzen die Molekülketten der VMQ- und EPDM-Elastomere innerhalb kürzester Zeit, führen zu unumkehrbarer Quellung der Dichtungen und greifen das Polyoxymethylen (POM) an. OKS 1110 zeichnet sich durch extrem hohe Heißwasserbeständigkeit, Dampffestigkeit und chemische Inertheit gegenüber Kaffeesäuren aus und gewährleistet über hunderte Zyklen einen stabilen Schmierkeil ohne Geschmacksbeeinträchtigung.</div>
+        </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Worin unterscheidet sich die VC-Brüheinheit der ENA-Reihe grundlegend von Standard-Jura-Brühgruppen?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">Die VC-Brüheinheit (Vacuum Clean) ist eine bauraumoptimierte Downsizing-Konstruktion. Während Standard-Jura-Brüheinheiten (wie in der E8 oder J-Serie) Brühkammern für 5 bis 16 Gramm Pulver aufweisen und über ein separates, mechanisch zwangsgesteuertes Drainageventil am unteren Gehäuseschenkel verfügen, integriert die VC-Einheit das Entlastungs- und Vakuumsystem direkt in den fluidischen Kolbenkreislauf. Sie ist für kompakte 6 bis maximal 10 Gramm Dosiermenge ausgelegt. Durch das VC-Prinzip wird nach dem Bezug mittels Unterdruck Restfeuchtigkeit aktiv aus der Brühkammer und dem Puck abgesaugt. Dies ermöglicht ultra-kompakte Geräteabmessungen, bedingt jedoch engere mechanische Toleranzen und eine höhere Anfälligkeit gegenüber Reibungswiderständen verschlissener Dichtungen.</div>
+        </div>
+      
     </div>
   </div>
       </div>

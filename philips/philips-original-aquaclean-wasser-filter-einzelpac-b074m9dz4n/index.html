@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#2874f0">
   <meta name="google-site-verification" content="z1HDX3FFWaHIqyPyOMLwt9sgJg31Is1QxB7Po-DuJBs" />
   <title>Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten | KaffeeReparatur</title>
-  <meta name="description" content="Reparatur-Guide, Einbauanleitung und mechatronische Funktionsanalyse für Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten. Verfügbarkeit, OEM-Nummer und passende Ersatzteile.">
+  <meta name="description" content="Philips LatteGo 5400 AquaClean CA6903/10 Filter im Ingenieurs-Check: Hydraulik, Kavitationsanalyse, Fehler E05 &amp; professionelle Montage.">
   <link rel="canonical" href="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-einzelpac-b074m9dz4n/">
   <style>
 
@@ -645,6 +645,128 @@ h1, h2, h3, h4, p, span, div, li {
   border-radius: 2px;
 }
 
+/* Flipkart Structured DIY Step Cards */
+.fk-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.fk-step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid var(--fk-border);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.fk-step-num {
+  width: 26px;
+  height: 26px;
+  background: var(--fk-blue);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.fk-step-content {
+  flex: 1;
+}
+.fk-step-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #212121;
+  margin-bottom: 3px;
+}
+.fk-step-desc {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+/* Flipkart Structured Compatibility Matrix */
+.fk-compat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+@media (max-width: 768px) {
+  .fk-compat-grid { grid-template-columns: 1fr; }
+}
+.fk-compat-col {
+  padding: 12px 14px;
+  border-radius: 4px;
+  border: 1px solid var(--fk-border);
+  background: #fafafa;
+}
+.fk-compat-col-fits {
+  border-left: 4px solid #388e3c;
+}
+.fk-compat-col-incomp {
+  border-left: 4px solid #d32f2f;
+}
+.fk-compat-head {
+  font-weight: 700;
+  font-size: 13.5px;
+  margin-bottom: 8px;
+}
+.fk-compat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.fk-compat-list li {
+  font-size: 12.5px;
+  color: #374151;
+  line-height: 1.4;
+  padding-left: 12px;
+  position: relative;
+}
+.fk-compat-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #9ca3af;
+}
+
+/* Flipkart Structured Troubleshooting Cards */
+.fk-trouble-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+.fk-trouble-card {
+  background: #fff;
+  border: 1px solid var(--fk-border);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+.fk-trouble-error {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: #b91c1c;
+  margin-bottom: 6px;
+}
+.fk-trouble-row {
+  font-size: 13px;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+.fk-trouble-fix {
+  color: #15803d;
+}
+
 /* ==========================================================================
    FLIPKART PRODUCT CARDS GRID (Deals Grid)
    ========================================================================== */
@@ -1159,10 +1281,10 @@ h1, h2, h3, h4, p, span, div, li {
 }
 
   </style>
-  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792704264379">
+  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792807878850">
 
   <meta property="og:title" content="Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten">
-  <meta property="og:description" content="Mechatronische Funktionsanalyse, Fehlersymptome und Einbauanleitung für Philips Kaffeevollautomaten.">
+  <meta property="og:description" content="Philips LatteGo 5400 AquaClean CA6903/10 Filter im Ingenieurs-Check: Hydraulik, Kavitationsanalyse, Fehler E05 &amp; professionelle Montage.">
   <meta property="og:image" content="https://m.media-amazon.com/images/I/61afIe6cIpL._AC_SL1500_.jpg">
   <meta property="og:url" content="https://kaffeereparatur.github.io/philips/philips-original-aquaclean-wasser-filter-einzelpac-b074m9dz4n/">
   <meta property="og:type" content="article">
@@ -1394,82 +1516,206 @@ h1, h2, h3, h4, p, span, div, li {
 
         <!-- Technical Editorial Guide Sections -->
         
+  <!-- Section 1: Mechatronic Teardown -->
   <div class="fk-sec-card" id="funktionsweise">
-    <div class="fk-sec-heading">Mechatronische Funktionsanalyse &amp; Wirkungsweise</div>
+    <div class="fk-sec-heading">🔬 Mechatronische Funktionsanalyse &amp; Wirkungsweise</div>
     <div class="fk-sec-text">
-      <p>Bei dem Bauteil Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten handelt es sich um eine hochspezifizierte Kernkomponente für moderne Kaffeevollautomaten der Marke Philips. Innerhalb des hydraulischen und mechanischen Gesamtsystems erfüllt diese Baugruppe (<a href="https://kaffeereparatur.github.io/kategorie/wasserfilter/" class="fk-wiki-link" title="Wasserfilter &amp; Entkalkung">Wasserfilter</a> &amp; Entkalker, OEM-Ref: OEM-WF-SER30) eine definierte Steuerungs- und Belastungsfunktion.</p>
-<p>Sie stellt sicher, dass der dynamische Brühzyklus unter einem stabilen Druckbereich von 9 bis <strong>15 Bar</strong> prozesssicher abläuft und thermische Verluste im Strömungskanal minimiert werden. Die präzise Fertigungstoleranz garantiert eine hermetische Abdichtung gegen Heißwasser und Dampf bis zu 140 °C.</p>
-<p>Bei Verschleiß der elastomeren Dichtzonen oder abrasiver Materialabnutzung kommt es unweigerlich zu Druckabfall, internen Leckagen oder einer Blockade des Antriebsmotors. Ein rechtzeitiger Austausch stellt das werkseitige Extraktionsprofil und die Langlebigkeit des Kaffeevollautomaten wieder her.</p>
+      <p>Die hydraulische Architektur der Philips <a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" class="fk-wiki-link" title="Milchsysteme &amp; Karaffen">LatteGo</a> 5400 (EP5447/90) stützt sich auf eine zweistufige Drucksektion, beginnend mit dem Niederdruck-Ansaugtrakt. Die Schnittstelle zwischen Wassertank und Chassis bildet ein federbelastetes Tellerventil aus Polyoxymethylen (<strong>POM</strong>-C) mit einem Schließfeder-Element aus korrosionsbeständigem <strong>1.4310</strong>-Federstahl.</p>
+<p>Die dynamische Abdichtung erfolgt über eine modifizierte Formdichtung aus Ethylen-Propylen-Dien-Kautschuk (<strong>EPDM</strong>) oder Fluorsilikonkautschuk (<strong>FKM</strong>/<strong>VMQ</strong>) mit Shore-A-Härte 70. Der AquaClean-Filter CA6903/10 dockt über eine konische <strong>POM</strong>-Steckaufnahme direkt an diese Ansaugleitung an.</p>
+<p>Das Innere der Kartusche besitzt ein patentiertes Strömungslabyrinth: Das Rohwasser passiert zunächst ein mikroporöses Polypropylen-Vlies (Porengröße 0,1 bis 0,2 µm), welches partikuläre Schwebstoffe zurückhält. Anschließend durchströmt das Fluid im Gegenstromverfahren ein Bett aus schwachsaurem Kationenaustauscherharz (Macroporous Acrylic Matrix) und säuregewaschener Aktivkohle auf Kokosnussbasis.</p>
+<p>Der Kationenaustauscher tauscht selektiv Ca2+- und Mg2+-Ionen gegen H+-Ionen aus, während die Aktivkohle Chlorverbindungen und organische Moleküle adsorbiert. Die nachgeschaltete Hochdrucksektion wird von einer Ulka Schwingankerpumpe des Typs EP5/HF (<strong>230 V</strong>, <strong>50 Hz</strong>, <strong>48 W</strong>) gespeist, die einen maximalen Nullförderdruck von 15 bis <strong>19 bar</strong> aufbaut.</p>
+<p>Der Arbeitsbereich während der Kaffee-Extraktion liegt bei 9 bis <strong>11,5 bar</strong> mit einer Durchflussrate von 1,2 bis <strong>2,4 ml</strong>/s. Unmittelbar vor der Pumpe überwacht ein Digmesa-Turbinen-Durchflussmesser (Flowmeter) mit Hall-Sensor und <strong>POM</strong>-Flügelrad das Ansaugvolumen im Niederdruckbereich (typisch 200 bis 450 Impulse pro Sekunde).</p>
+<p>Kritische mechanische Schwachstellen sind Lufteinschlüsse in der Filterpackung, die durch Oberflächenspannung einen Ansaugwiderstand von über -<strong>0,35 bar</strong> erzeugen. Dies führt zum sofortigen Abreißen der Wassersäule, da die Ulka-Pumpe nicht selbstansaugend gegen hohe Vakuumwerte arbeiten kann.</p>
+<p>Versprödete Dichtungen am Ventilsitz oder Mikrorisse im <strong>POM</strong>-Dockingflansch führen überdies zu Falschlufteintrag.</p>
     </div>
   </div>
 
+  <!-- Section 2: Symptoms & Root Causes -->
   <div class="fk-sec-card" id="fehlersymptome">
-    <div class="fk-sec-heading">Typische Fehlersymptome &amp; Ursachenanalyse</div>
+    <div class="fk-sec-heading">⚠️ Typische Fehlersymptome &amp; Ursachenanalyse</div>
     <div class="fk-sec-text">
-      <p>Im täglichen Einsatz unterliegt das Bauteil Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten mechanischen Wechselbeanspruchungen, hydrodynamischen Druckstößen sowie thermischen Dehnungszyklen. Typische Anzeichen für einen beginnenden Defekt äußern sich durch atypische Betriebsgeräusche, fehlerhafte Wasserführung in die Tropfschale oder ein unvollständiges Extraktionsergebnis in der Tasse.</p>
-<p>Ursächlich für den Funktionsausfall sind meist versprödete Dichtungsringe aus <strong>VMQ</strong> oder <strong>EPDM</strong>, Verkalkungsablagerungen in den engen Durchflusskanälen oder mechatronischer Verschleiß der Führungsschienen. Bei Fortbetrieb mit defektem Bauteil drohen Folgeschäden an der Elektronik oder der <a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" class="fk-wiki-link" title="Pumpen &amp; Hydraulik">Schwingkolbenpumpe</a> durch Überlastabschaltung.</p>
+      <p>Tritt eine Störung im Bereich des AquaClean-Filters CA6903/10 auf, manifestiert sich dies primär über hydraulische und akustische Anomalien sowie Fehlercodes auf dem TFT-Display der EP5447/90. Das Leitsymptom ist der Fehlercode E05 (&#39;Wasserkreislauf blockiert&#39; bzw. &#39;Wasserkreislauf entlüften&#39;).</p>
+<p>Auf Sensorebene bedeutet dies: Die MCU (Main Control Unit) steuert die Schwingankerpumpe an, registriert jedoch über den Hall-Sensor des Flowmeters keine oder zu wenige Impulse (&lt; 15 Impulse/Sekunde über ein Zeitfenster von 4 Sekunden). Akustisch verändert sich das Betriebsgeräusch der Maschine drastisch: Während der normale Brühvorgang ein sonores, gedämpftes Pumpengeräusch bei circa 55 bis 60 dB(A) erzeugt, schlägt das Geräusch bei verstopftem Filter oder Lufteinschluss in ein hochfrequentes, metallisch-aggressives Schnarren um.</p>
+<p>Dies resultiert aus extremer Kavitation im Pumpenzylinder, da der oszillierende Edelstahlkolben gegen ein Vakuum arbeitet und dampfförmige Kavitationsblasen implodieren. Bleibt die Wasserzufuhr vollständig aus, fällt das Geräusch nach einigen Sekunden in ein fast lautloses Summen ab, weil der Kolben ohne hydraulische Last im Magnetfeld schwingt.</p>
+<p>Sekundäre Symptome sind ein stark verlangsamter, tropfenweiser Kaffeebezug, unvollständig gepresste Tresterkuchen im Kaffeesatzbehälter (matschige Pucks durch Druckabfall in der Pre-Infusion) sowie Dampfstöße anstelle eines kontinuierlichen Heißwasserstrahls beim Spülzyklus. Ursächlich hierfür sind neben dem Zusetzen des Vlieses durch feine Kalkanlagerungen meist Bedienungsfehler: Wird der Filter vor dem Einsetzen nicht vorentlüftet, blockiert die komprimierte Luft im Inneren der Aktivkohlekartusche den hydrostatischen Durchfluss.</p>
     </div>
   </div>
 
+  <!-- Section 3: Step-by-Step DIY Guide -->
   <div class="fk-sec-card" id="einbauanleitung">
-    <div class="fk-sec-heading">Schritt-für-Schritt Reparatur- &amp; Einbauanleitung</div>
-    <div class="fk-sec-text">
-      <p>Vor Beginn aller Montagearbeiten am Kaffeevollautomaten ist das Gerät zwingend spannungsfrei zu schalten: Ziehen Sie den <strong>230V</strong>-Netzstecker und lassen Sie den <a href="https://kaffeereparatur.github.io/kategorie/thermoblock/" class="fk-wiki-link" title="Heizelemente &amp; Thermoblöcke">Thermoblock</a> mindestens 30 Minuten abkühlen. Verschließen Sie die Wasserzufuhr und entnehmen Sie die Abtropfschale sowie den Wassertank.</p>
-<p>Lösen Sie die Gehäuseschrauben (in der Regel <strong>Torx</strong> <strong>TX10</strong> oder <strong>TX20</strong>) vorsichtig und heben Sie die Seitenverkleidung ab. Markieren Sie vor dem Lösen aller Hydraulikschläuche und elektrischen Steckverbindungen die Anschlüsse fotografisch.</p>
-<p>Setzen Sie das neue Ersatzteil (Philips Original AquaClean Wasser-Filter Einzelpack für Kaffeevollautomaten) exakt fluchtend ein, schmieren Sie alle neuen Dichtungsringe hauchdünn mit lebensmittelechtem Silikonfett (<strong>OKS 1110</strong>) ein und arretieren Sie die Sicherungsklammern hörbar. Führen Sie vor dem Verschließen des Gehäuses einen Probelauf auf Dichtigkeit durch.</p>
+    <div class="fk-sec-heading">🔧 Schritt-für-Schritt Reparaturanleitung</div>
+    <div class="fk-steps-list">
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">1</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Netztrennung und Arbeitsbereich-Sicherung</div>
+            <div class="fk-step-desc">Schalten Sie die Philips 5400 am Hauptschalter aus, ziehen Sie den Schuko-Netzstecker und lassen Sie den Thermoblock mindestens 30 Minuten abkühlen.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">2</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Wassertank entnehmen und Systeminspektion</div>
+            <div class="fk-step-desc">Entnehmen Sie den Wassertank, leeren Sie das Restwasser und demontieren Sie den alten Filter durch senkrechtes Abziehen nach oben aus der POM-Aufnahme.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">3</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Ventil- und Dichtungsreinigung</div>
+            <div class="fk-step-desc">Reinigen Sie den Tankboden, das federbelastete Auslaufventil und das Einlaufsieb im Maschinenchassis mit warmem Wasser und einem fusselfreien Tuch. Entfernen Sie Biofilm und Kriechsedimente.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">4</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">AquaClean-Hydraulik-Evakuierung</div>
+            <div class="fk-step-desc">Schütteln Sie den neuen CA6903/10 Filter ca. 5 Sekunden kräftig. Tauchen Sie die Kartusche kopfüber in ein Gefäß mit kaltem Wasser, bis sämtliche Luftblasen vollständig entwichen sind.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">5</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Passgenaue Montage und Arretierung</div>
+            <div class="fk-step-desc">Setzen Sie den vorentlüfteten Filter exakt vertikal auf den Dockingstutzen im Wassertank und drücken Sie ihn kraftvoll an, bis er fühlbar und mechanisch spielfrei einrastet.</div>
+          </div>
+        </div>
+      
+        <div class="fk-step-item">
+          <div class="fk-step-num">6</div>
+          <div class="fk-step-content">
+            <div class="fk-step-title">Software-Initialisierung und Spülkalibrierung</div>
+            <div class="fk-step-desc">Füllen Sie den Tank mit Frischwasser, setzen Sie ihn ein, schalten Sie die Maschine an, navigieren Sie ins Menü &#39;AquaClean&#39; und aktivieren Sie den Filter via Heißwasserausgabe.</div>
+          </div>
+        </div>
+      
+    </div>
+    
+      <div class="fk-sec-text" style="margin-top:16px;">
+        <p>Für eine professionelle Instandsetzung und den Filtertausch an der Philips 5400 EP5447/90 benötigen Sie ein sauberes Gefäß mit mindestens 2 Litern Fassungsvermögen, fusselfreie Mikrofasertücher, einen <strong>Torx</strong>-Schraubendreher <strong>TX10</strong> (falls Gehäuseteile zur Sichtprüfung des Niederdruckschlauchs demontiert werden müssen) sowie <strong>NSF-H1</strong>-zertifiziertes Silikonfett (z. B.</p>
+<p><strong>OKS 1110</strong>). Beginnen Sie zwingend mit der allpoligen Netztrennung durch Ziehen des Netzsteckers, um Kurzschlüsse an der Steuerungselektronik oder Fehlauslösungen des Mahlwerks zu verhindern.</p>
+<p>Entnehmen Sie den Wassertank und ziehen Sie die alte Filterkartusche senkrecht ab. Untersuchen Sie den Ventilsitz am Boden des Tanks: Das <strong>POM</strong>-Ventil mit seiner <strong>1.4310</strong>-Edelstahlfeder muss sich leichtgängig gegen den Federdruck nach oben bewegen lassen.</p>
+<p>Weist der dortige <strong>EPDM</strong>-Dichtring (Abmessung ca. 9 x <strong>2 mm</strong>) Risse, Deformationen oder Kalkinkrustationen auf, hebeln Sie diesen vorsichtig mit einem Kunststoff-Spatel aus und ersetzen Sie ihn. Tragen Sie einen mikrometerdünnen Film <strong>OKS 1110</strong> auf den O-Ring auf; vermeiden Sie mineralölbasierte Schmierstoffe, da diese das Elastomer unweigerlich zersetzen.</p>
+<p>Die Vorbereitung des neuen CA6903/10 ist der entscheidende hydraulische Schritt: Da trockenes Aktivkohlegranulat und mikroporöse Vliese eine hydrophobe Oberflächenspannung aufweisen, schütteln Sie die Kartusche 5 Sekunden lang horizontal und tauchen sie anschließend komplett unter Wasser. Drehen Sie den Filter unter Wasser mehrmals um 180 Grad, bis absolut keine Luftblasen mehr aus den Entlastungsbohrungen austreten.</p>
+<p>Stecken Sie die Kartusche nun exakt axial auf den Bodenstutzen des Tanks, bis der Klickmechanismus greift. Setzen Sie den gefüllten Tank ein.</p>
+<p>Schalten Sie das Gerät ein und rufen Sie über das Display das Menü &#39;AquaClean&#39; auf. Bestätigen Sie die Aktivierung.</p>
+<p>Die Maschine pumpt nun automatisiert ca. 100 bis <strong>150 ml</strong> Heißwasser durch das System, um die Ansaugstrecke zu füllen, das Granulat zu verdichten und den Flowmeter-Nullpunkt in der MCU-Firmware einzukalibrieren.</p>
+      </div>
+    
+  </div>
+
+  <!-- Section 4: Compatibility Matrix -->
+  <div class="fk-sec-card" id="kompatibilitaet">
+    <div class="fk-sec-heading">📋 Kompatibilitäts-Matrix &amp; Passgenauigkeit</div>
+    <div class="fk-compat-grid">
+      <div class="fk-compat-col fk-compat-col-fits">
+        <div class="fk-compat-head" style="color:var(--fk-green,#388e3c);">✓ Kompatible Geräteserien &amp; Modelle:</div>
+        <ul class="fk-compat-list">
+          <li>Philips LatteGo 5400 Serie (EP5447/90, EP5444/90, EP5441/50, EP5443/70)</li><li>Philips LatteGo 4300 Serie (EP4346/70, EP4341/50, EP4343/70)</li><li>Philips LatteGo 3200 Serie (EP3246/70, EP3221/40)</li><li>Philips LatteGo 2200 Serie (EP2220/10, EP2231/40)</li><li>Saeco GranAroma (SM6580, SM6582, SM6585)</li><li>Saeco Xelsis &amp; PicoBaristo (mit AquaClean-Symbol auf Wassertank)</li>
+        </ul>
+      </div>
+      <div class="fk-compat-col fk-compat-col-incomp">
+        <div class="fk-compat-head" style="color:#d32f2f;">✕ Nicht kompatibel mit:</div>
+        <ul class="fk-compat-list">
+          <li>Philips &amp; Saeco Modelle mit Brita Intenza+ System (z.B. HD8829, HD8834, RI9840)</li><li>De&#39;Longhi Magnifica / PrimaDonna Serien (DLSC002 Filtersystem)</li><li>Jura E-Serie, J-Serie, Z-Serie (Claris Smart / Claris Blue Bajonett)</li><li>Melitta Caffeo &amp; Barista Serien (Melitta Pro Aqua Einschraubfilter)</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <!-- Flipkart Specification Rows for Wartung & Prüfprotokoll (100% Fluid, Zero Scrollbars) -->
+  <!-- Section 5: Maintenance Protocol -->
   <div class="fk-sec-card" id="wartung">
-    <div class="fk-sec-heading">Wartungs- &amp; Prüfprotokoll</div>
+    <div class="fk-sec-heading">⚙️ Wartungs- &amp; Prüfprotokoll</div>
     <div class="fk-spec-grid">
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Dichtheitsprüfung</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-blue">Monatlich</span>
-          <span>Kein Tropfwasser an den Anschlüssen unter 15 Bar vollem Prüfdruck.</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Elastomer-Zustand</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-orange">12–18 Monate</span>
-          <span>Rissfrei, elastisch, 70 Shore A Härtegrad nach ISO-Standard.</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Schmierung</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-green">Alle 500 Zyklen</span>
-          <span>Gleichmäßiger dünner Film aus lebensmittelechtem Silikonfett (OKS 1110).</span>
-        </div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Kalkablagerungen</div>
-        <div class="fk-spec-v">
-          <span class="fk-tag fk-tag-purple">Turnusmäßig</span>
-          <span>Querschnittsverengung unter 5%, keine Kristalle in den Fluidkanälen.</span>
-        </div>
-      </div>
+      
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Wöchentlich</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-blue">Wöchentlich</span>
+              <span>Entnahme des Wassertanks, gründliches Spülen mit klarem Wasser und visuelle Kontrolle des Ansaugsiebs auf Schleimbildung oder Algenbeläge.</span>
+            </div>
+          </div>
+        
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Monatlich</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-orange">Monatlich</span>
+              <span>Reinigung des Wassertank-Ventilsitzes, Inspektion des Dichtungsrings auf Elastizität und Sichtprüfung auf Lufteintrag in der Saugleitung.</span>
+            </div>
+          </div>
+        
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Alle 3 Monate (max. 5000 Tassen)</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-green">Alle 3 Monate (max. 5000 Tassen)</span>
+              <span>Regulärer Austausch des AquaClean CA6903/10 Filters mit Re-Kalibrierung der Elektronik über das Einstellungsmenü.</span>
+            </div>
+          </div>
+        
+          <div class="fk-spec-row">
+            <div class="fk-spec-k">Alle 6 bis 12 Monate / nach 8 Filtern</div>
+            <div class="fk-spec-v">
+              <span class="fk-tag fk-tag-purple">Alle 6 bis 12 Monate / nach 8 Filtern</span>
+              <span>Vollständige Entkalkung der Hydraulik mit amidosulfonsäurebasiertem Entkalker, Austausch der EPDM-Dichtlippe und Schmierung mit OKS 1110.</span>
+            </div>
+          </div>
+        
     </div>
   </div>
 
+  <!-- Section 6: Troubleshooting Table -->
+  
+  <div class="fk-sec-card" id="stoerungen">
+    <div class="fk-sec-heading">🔍 Technische Fehlersuche &amp; Störungsbehebung</div>
+    <div class="fk-trouble-list">
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Fehlercode E05 / &#39;Kreislauf entlüften&#39;</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> Lufteinschluss im Filterbett verhindert hydrostatische Vorfüllung; Schwingankerpumpe fällt in Kavitationszustand.</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> Filter demontieren, 30 Sekunden im Wasserbad vollständig untertauchen und komprimierte Luft entweichen lassen. System über Heißwasserausgabe spülen, Filter wieder einsetzen.</div>
+        </div>
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Extrem lautes Schnarren / Kreischen beim Brühstart</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> Starker Unterdruck im Ansaugtrakt durch zugesetztes Mikrovlies oder verbackenes Ionenaustauscherharz.</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> AquaClean-Filter entfernen und Probelauf ohne Filter durchführen. Läuft die Maschine leise, ist der Filter verbraucht und muss ersetzt werden.</div>
+        </div>
+      
+        <div class="fk-trouble-card">
+          <div class="fk-trouble-error">⚠️ Wasseransammlung unter der Maschine / am Tankboden</div>
+          <div class="fk-trouble-row"><strong>Ursache:</strong> EPDM-Dichtung des Tankbodenventils ist spröde, rissig, verunreinigt oder nicht formschlüssig zentriert.</div>
+          <div class="fk-trouble-row fk-trouble-fix"><strong>Behebung:</strong> O-Ring am Tankauslaufventil entnehmen, Nut säubern, neue EPDM-Dichtung einsetzen und mit lebensmittelechtem Silikonfett (OKS 1110) dünn benetzen.</div>
+        </div>
+      
+    </div>
+  </div>
+  
+
+  <!-- Section 7: FAQs -->
   <div class="fk-sec-card" id="faq">
-    <div class="fk-sec-heading">Häufige Fragen (FAQ)</div>
+    <div class="fk-sec-heading">❓ Häufige Fragen (FAQ)</div>
     <div class="fk-spec-grid">
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Kompatibilität</div>
-        <div class="fk-spec-v">Das Bauteil ist exakt auf die Spezifikationen und Anschlussmaße moderner Philips Kaffeevollautomaten ausgelegt. Prüfen Sie die Typennummer auf dem Typenschild oder die OEM-Referenz (OEM-WF-SER30).</div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Werkzeugbedarf</div>
-        <div class="fk-spec-v">In der Regel genügen handelsübliche Torx-Schraubendreher (TX10 / TX20) sowie lebensmittelechtes Silikonfett (OKS 1110). Für Jura Modelle wird teils ein Ovalkopfschlüssel benötigt.</div>
-      </div>
-      <div class="fk-spec-row">
-        <div class="fk-spec-k">Reparaturdauer</div>
-        <div class="fk-spec-v">Der Austausch nimmt erfahrungsgemäß etwa 20 bis 45 Minuten in Anspruch. Mit unserer Schritt-für-Schritt-Anleitung ist die Durchführung auch für Heimanwender problemlos machbar.</div>
-      </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Warum blockiert ein nicht korrekt vorentlüfteter AquaClean-Filter die Pumpe und erzeugt Fehler E05?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">Die im Philips LatteGo 5400 verbaute Ulka EP5/HF Schwingankerpumpe ist ein Verdrängersystem, dessen Saugvermögen konstruktionsbedingt stark von der Vorflutung abhängt. Trockenes Aktivkohlevlies besitzt eine hohe Kapillar- und Oberflächenspannung. Befindet sich Luft im Gehäuse des CA6903/10, steigt der dynamische Ansaugwiderstand auf über -0,35 bar Unterdruck an. Die Pumpe vermag dieses Vakuum nicht zu überwinden, wodurch die Wassersäule abreißt und Kavitation entsteht. Da das Digmesa-Flowmeter keine Durchflussimpulse mehr registriert, schaltet die MCU aus Sicherheitsgründen ab und signalisiert E05.</div>
+        </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Muss die Philips 5400 trotz durchgängigem Einsatz des AquaClean-Filters regelmäßig entkalkt werden?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">Ja, eine Entkalkung ist trotz CA6903/10 unumgänglich. Der Filter arbeitet mit einem Kationenaustauscherharz, dessen Selektivität und Bindungskapazität für Kalzium- und Magnesium-Ionen mit zunehmendem Wasserdurchsatz degressiv abfällt. Bei hartem Ausgangswasser verbleibt eine Resthärte im Wasser, welche im 140 °C heißen Aluminium-Edelstahl-Thermoblock thermisch ausfällt. Philips limitiert den Filterbetrieb firmwareseitig auf maximal 8 aufeinanderfolgende Kartuschen (ca. 5.000 Tassen). Nach diesem Zyklus fordert die Maschinensteuerung zwingend eine vollständige Entkalkung mit einem Amidosulfonsäure-Präparat, um Querschnittsverengungen in den PTFE-Schläuchen und Magnetventilen zu verhindern.</div>
+        </div>
+      
+        <div class="fk-spec-row" style="grid-template-columns: 1fr;">
+          <div style="font-weight:700; color:#212121; margin-bottom:4px;">Q: Welches Schmiermittel darf für die Dichtungen des Filters und des Wassertankventils verwendet werden?</div>
+          <div style="font-size:13.5px; color:#555; line-height:1.6;">An allen hydraulischen Dichtstellen des Tanksystems darf ausnahmslos NSF-H1-zertifiziertes, physiologisch unbedenkliches Silikonfett wie OKS 1110 oder Glisseal eingesetzt werden. Die Dichtelemente bestehen aus EPDM (Ethylen-Propylen-Dien-Kautschuk) oder VMQ-Silikon. Mineralölbasierte Schmierstoffe, Haushaltsfette, WD-40 oder technische Vaseline sind absolut unzulässig: Sie penetrieren das Polymernetzwerk von EPDM, führen innerhalb kurzer Zeit zu starker Quellung, Elastizitätsverlust und Versprödung des Materials. Dies verursacht gravierende Leckagen, Falschlufteintrag in die Saugstrecke und kann im schlimmsten Fall mechanische Zerstörungen am POM-Ventilsitz nach sich ziehen.</div>
+        </div>
+      
     </div>
   </div>
       </div>
