@@ -4,39 +4,64 @@
     var qInput = document.getElementById('q');
     var qres = document.getElementById('qres');
 
-    // 1. Smart Auto-Hiding / Showing Sticky Navigation Header
+    // 1. Smart Auto-Hiding / Showing Sticky Navigation Header (STRICTLY DESKTOP ONLY > 640px)
     if (header) {
-      var lastY = window.pageYOffset || document.documentElement.scrollTop;
-      var ticking = false;
+      var lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+      var scrollThreshold = 8;
+      var isHeaderTicking = false;
 
       window.addEventListener('scroll', function() {
-        if (!ticking) {
+        if (!isHeaderTicking) {
           window.requestAnimationFrame(function() {
-            // Keep header visible if search input is focused or search results are open
-            if (document.activeElement === qInput || (qres && !qres.hidden && qres.style.display !== 'none')) {
+            // Strictly DESKTOP ONLY: does not apply to mobile view (<= 640px)
+            if (window.innerWidth <= 640) {
               header.classList.remove('nav-hidden');
-              ticking = false;
+              document.body.classList.remove('header-hidden');
+              isHeaderTicking = false;
               return;
             }
 
-            var currentY = window.pageYOffset || document.documentElement.scrollTop;
-            if (currentY > 60) {
+            // Keep header visible if search input is focused or search results are open
+            if (document.activeElement === qInput || (qres && !qres.hidden && qres.style.display !== 'none')) {
+              header.classList.remove('nav-hidden');
+              document.body.classList.remove('header-hidden');
+              isHeaderTicking = false;
+              return;
+            }
+
+            var currentScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+            if (currentScrollY < 0) currentScrollY = 0;
+
+            // Header elevation shadow
+            if (currentScrollY > 20) {
               header.classList.add('nav-scrolled');
-              if (currentY > lastY + 8 && currentY > 150) {
-                // Scrolling down -> hide menu
-                header.classList.add('nav-hidden');
-              } else if (currentY < lastY - 6) {
-                // Scrolling up -> show menu smoothly
-                header.classList.remove('nav-hidden');
-              }
             } else {
               header.classList.remove('nav-scrolled');
-              header.classList.remove('nav-hidden');
             }
-            lastY = currentY;
-            ticking = false;
+
+            var diff = currentScrollY - lastScrollY;
+
+            // When at top of page (<= 80px), always show header
+            if (currentScrollY <= 80) {
+              header.classList.remove('nav-hidden');
+              document.body.classList.remove('header-hidden');
+              lastScrollY = currentScrollY;
+            } else if (Math.abs(diff) >= scrollThreshold) {
+              if (diff > 0) {
+                // Scrolling DOWN -> HIDE menu
+                header.classList.add('nav-hidden');
+                document.body.classList.add('header-hidden');
+              } else {
+                // Scrolling UP -> SHOW menu
+                header.classList.remove('nav-hidden');
+                document.body.classList.remove('header-hidden');
+              }
+              lastScrollY = currentScrollY;
+            }
+
+            isHeaderTicking = false;
           });
-          ticking = true;
+          isHeaderTicking = true;
         }
       }, { passive: true });
     }
