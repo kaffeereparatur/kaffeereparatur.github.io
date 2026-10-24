@@ -1,1843 +1,820 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="theme-color" content="#854d0e">
-  <meta name="google-site-verification" content="z1HDX3FFWaHIqyPyOMLwt9sgJg31Is1QxB7Po-DuJBs" />
-  <title>Kaffeeauslauf &amp; Verteiler für Kaffeevollautomaten | KaffeeReparatur</title>
-  <meta name="description" content="Übersicht aller Kaffeeauslauf &amp; Verteiler für De'Longhi, Siemens, Jura, Philips und Bosch mit Einbauanleitungen.">
-  <link rel="canonical" href="https://kaffeereparatur.github.io/kategorie/kaffeeauslauf/">
-  <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kaffeeauslauf &amp; Verteiler für Kaffeevollautomaten | KaffeeReparatur</title>
+<meta name="description" content="Übersicht aller Kaffeeauslauf &amp; Verteiler für De'Longhi, Siemens, Jura, Philips und Bosch mit Einbauanleitungen.">
+<link rel="canonical" href="https://kaffeereparatur.github.io/kategorie/kaffeeauslauf/">
+<meta name="google-site-verification" content="z1HDX3FFWaHIqyPyOMLwt9sgJg31Is1QxB7Po-DuJBs" />
+<meta name="theme-color" content="#1F4D3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Karla:wght@400;700&display=swap">
+<style>
 
-/* ==========================================================================
-   LEATHERCLOGS OFFICIAL UI DESIGN SYSTEM (WARM EDITORIAL + HIGH-CONVERTING)
-   ========================================================================== */
+:root{
+  --pine:#1F4D3A; --pine-d:#163828; --oak:#C08A4E; --oak-d:#9A6C39;
+  --paper:#FAF8F4; --card:#FFFFFF; --ink:#15201B; --body:#3A4741;
+  --stone:#5A645F; --rule:#E4E0D7; --wash:#F1EEE7;
+  --r:10px; --wrap:1180px;
+  --f-disp:'Fraunces',Georgia,'Times New Roman',serif;
+  --f-body:'Karla',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);
+  font-family:var(--f-body);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--pine);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--oak-d)}
+h1,h2,h3{font-family:var(--f-disp);color:var(--ink);
+  font-weight:600;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(1.85rem,4.4vw,3rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.4rem,2.8vw,2rem);letter-spacing:-.01em}
+h3{font-size:1.18rem}
+p{margin:0 0 1.1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-9999px;background:var(--pine);color:#fff;
+  padding:12px 18px;z-index:99}
+.skip:focus{left:12px;top:12px}
+:focus-visible{outline:3px solid var(--oak);outline-offset:2px}
 
-:root {
-  --primary: #854d0e;
-  --primary-dark: #713f12;
-  --primary-light: #fefce8;
-  --accent: #0284c7;
-  --bg-app: #fcfbf9;
-  --bg-card: #ffffff;
-  --text-main: #1c1917;
-  --text-muted: #57534e;
-  --border-color: #e7e5e4;
-  --border-light: #f5f5f4;
-  --radius-card: 12px;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.09);
-}
+/* header */
+.top{background:var(--pine);color:#fff}
+.top a{color:#fff}
+.topbar{display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:16px 0;flex-wrap:wrap}
+.brand{font-family:var(--f-disp);font-size:1.32rem;font-weight:600;
+  letter-spacing:-.01em;text-decoration:none;display:inline-flex;align-items:baseline;gap:0}
+.brand span{color:var(--oak);font-size:.7rem;font-family:var(--f-body);
+  letter-spacing:.04em;text-transform:uppercase;font-weight:700;margin-left:2px}
+.nav{display:flex;gap:20px;flex-wrap:wrap;font-size:.93rem}
+.nav a{text-decoration:none;opacity:.9}
+.nav a:hover{opacity:1;text-decoration:underline}
 
-* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+/* search */
+.srch{position:relative;flex:1 1 210px;max-width:290px}
+.srch input{width:100%;padding:9px 14px;border-radius:99px;border:1px solid rgba(255,255,255,.28);
+  background:rgba(255,255,255,.1);color:#fff;font:inherit;font-size:.92rem}
+.srch input::placeholder{color:rgba(255,255,255,.62)}
+.srch input:focus{background:#fff;color:var(--ink);outline:2px solid var(--oak)}
+.srch input:focus::placeholder{color:var(--stone)}
+#qres{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;
+  border:1px solid var(--rule);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.16);
+  max-height:66vh;overflow-y:auto;z-index:60}
+#qres a{display:flex;gap:10px;align-items:center;padding:9px 12px;text-decoration:none;
+  border-bottom:1px solid var(--rule);color:var(--ink)}
+#qres a:last-child{border-bottom:none}
+#qres a:hover,#qres a.sel{background:var(--wash)}
+#qres img{width:40px;height:40px;object-fit:contain;flex:none;background:#fff}
+#qres .t{font-size:.86rem;line-height:1.25}
+#qres .b{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--oak-d);
+  font-weight:700}
+#qres .none{padding:14px;color:var(--stone);font-size:.88rem}
+@media(max-width:640px){.srch{order:3;max-width:none;flex-basis:100%}}
 
-body {
-  font-family: var(--font-sans);
-  background-color: var(--bg-app);
-  color: var(--text-main);
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
-  padding-bottom: 80px;
-}
+/* breadcrumbs */
+.crumbs{font-size:.83rem;color:var(--stone);padding:16px 0 0}
+.crumbs ol{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0}
+.crumbs li::after{content:"/";margin-left:6px;color:var(--rule)}
+.crumbs li:last-child::after{content:""}
 
-a { color: var(--primary); text-decoration: none; }
-a:hover { text-decoration: underline; }
-.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+/* hero */
+.hero{padding:34px 0 26px;border-bottom:1px solid var(--rule)}
+.hero p.sub{font-size:1.05rem;max-width:62ch;color:var(--body)}
+@media(max-width:640px){
+  .hero{padding:22px 0 18px}
+  .hero p.sub{font-size:.99rem;line-height:1.55}
+  h1{font-size:1.72rem}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:20px 0}
+  .card h3{font-size:.87rem}
+  .card .body{padding:10px 11px 12px}
+  .chip{font-size:.64rem;padding:2px 6px}
+  .wrap{padding:0 14px}
+  .nav{gap:14px;font-size:.88rem}
+  .sec{padding:26px 0}
+}
+.eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--oak-d);font-weight:700;margin:0 0 10px}
 
-/* Sticky Header */
-.app-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-color);
-  padding: 12px 16px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-}
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-.brand-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 800;
-  font-size: 19px;
-  color: var(--text-main);
-  text-decoration: none !important;
-  white-space: nowrap;
-}
-.brand-logo .logo-icon { font-size: 24px; }
-.brand-logo .tld { color: var(--primary); font-weight: 900; }
-.badge-pro {
-  background: #fef08a;
-  color: #713f12;
-  font-size: 10px;
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 2px 8px;
-  border-radius: 9999px;
-}
+/* grid */
+.grid{display:grid;gap:22px;padding:30px 0;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:box-shadow .18s ease,transform .18s ease}
+.card:hover{box-shadow:0 6px 22px rgba(21,32,27,.09);transform:translateY(-2px)}
+.card .ph{background:#fff;aspect-ratio:1/1;display:block;
+  border-bottom:1px solid var(--rule)}
+.card .ph img{width:100%;height:100%;object-fit:contain;padding:10px}
+.card .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+.card .bd{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--oak-d);font-weight:700;margin-bottom:5px}
+.card h3{font-size:1rem;line-height:1.3;margin:0 0 9px}
+.card h3 a{text-decoration:none;color:var(--ink)}
+.card h3 a:hover{color:var(--pine)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:10px}
+.chip{font-size:.7rem;background:var(--wash);color:var(--stone);
+  padding:3px 8px;border-radius:99px;white-space:nowrap}
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.nav-link {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-muted);
-  text-decoration: none !important;
-  transition: color 0.15s ease;
-}
-.nav-link:hover { color: var(--text-main); }
+/* product */
+.pwrap{display:grid;gap:38px;padding:26px 0 10px;grid-template-columns:1fr}
+@media(min-width:900px){.pwrap{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}}
+.gal .main{background:#fff;border:1px solid var(--rule);
+  border-radius:var(--r);aspect-ratio:1/1;overflow:hidden;position:relative;
+  touch-action:pan-y}
+.gal .main img{width:100%;height:100%;object-fit:contain;padding:16px}
+.gal .dots{display:flex;justify-content:center;gap:6px;margin-top:10px}
+.gal .dots i{width:7px;height:7px;border-radius:50%;background:var(--rule);
+  display:block;transition:background .2s}
+.gal .dots i.on{background:var(--oak)}
+.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
+.thumbs img{background:#fff;border:1px solid var(--rule);
+  border-radius:6px;aspect-ratio:1/1;object-fit:contain;cursor:pointer;padding:5px}
+.thumbs img:hover,.thumbs img.on{border-color:var(--oak);border-width:2px}
+@media(max-width:640px){.thumbs{display:none}}
 
-/* Search Bar in Header */
-.header-search { flex: 1; max-width: 380px; position: relative; }
-.search-input-wrap {
-  position: relative;
-  display: flex;
-  align-items: center;
-  background: #f5f5f4;
-  border: 1px solid var(--border-color);
-  border-radius: 9999px;
-  padding: 6px 14px;
-  transition: all 0.15s ease;
-}
-.search-input-wrap:focus-within {
-  background: #ffffff;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(133, 77, 14, 0.15);
-}
-.search-icon { color: var(--text-muted); margin-right: 8px; font-size: 14px; }
-.search-input {
-  border: none;
-  background: transparent;
-  width: 100%;
-  font-size: 13px;
-  color: var(--text-main);
-  outline: none;
-  font-family: inherit;
-}
-.search-clear {
-  display: none;
-  border: none;
-  background: transparent;
-  color: var(--text-muted);
-  cursor: pointer;
-  padding: 2px;
-}
-.search-dropdown {
-  display: none;
-  position: absolute;
-  top: calc(100% + 6px);
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  box-shadow: var(--shadow-lg);
-  max-height: 420px;
-  overflow-y: auto;
-  z-index: 1001;
-  padding: 6px;
-}
-.search-dropdown.show { display: block; }
-.search-dropdown-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 12px;
-  border-radius: 8px;
-  text-decoration: none !important;
-  color: var(--text-main);
-  transition: background 0.1s ease;
-}
-.search-dropdown-item:hover { background: #f5f5f4; }
-.search-item-thumb { width: 36px; height: 36px; object-fit: contain; margin-right: 10px; border-radius: 4px; }
+.cta{display:inline-block;background:var(--oak);color:#fff !important;font-weight:700;
+  padding:15px 28px;border-radius:8px;text-decoration:none;font-size:1.03rem;
+  margin:6px 0 10px;transition:background .16s;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+.cta:hover{background:var(--oak-d);color:#fff !important}
+.note{font-size:.83rem;color:var(--stone);margin:0 0 22px}
 
-/* Breadcrumbs */
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  color: var(--text-muted);
-  padding: 16px 0 8px;
-  overflow-x: auto;
-  white-space: nowrap;
-}
-.breadcrumb a { color: var(--text-muted); text-decoration: none; }
-.breadcrumb a:hover { color: var(--text-main); }
-.breadcrumb .sep { color: #a8a29e; font-size: 11px; }
+.spec{width:100%;border-collapse:collapse;margin:8px 0 24px;font-size:.94rem}
+.spec th,.spec td{text-align:left;padding:10px 0;border-bottom:1px solid var(--rule);
+  vertical-align:top}
+.spec th{width:38%;color:var(--stone);font-weight:600}
 
-/* Hero Banner for Hub Pages */
-.hero-banner {
-  background: linear-gradient(180deg, #ffffff 0%, #f7f6f2 100%);
-  border-bottom: 1px solid var(--border-color);
-  padding: 32px 0 36px;
-  text-align: center;
-}
-.hero-banner .hero-eyebrow {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: var(--primary);
-  margin-bottom: 8px;
-}
-.hero-banner h1 {
-  font-size: 30px;
-  font-weight: 800;
-  color: var(--text-main);
-  letter-spacing: -0.02em;
-  line-height: 1.25;
-  margin-bottom: 12px;
-}
-.hero-banner p {
-  max-width: 680px;
-  margin: 0 auto;
-  font-size: 15px;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
+/* sections */
+.sec{padding:38px 0;border-top:1px solid var(--rule)}
+.prose{max-width:76ch}
+.prose ul{padding-left:20px}
+.prose li{margin-bottom:.45em}
+.linkrow{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0 0}
+.linkrow a{background:var(--card);border:1px solid var(--rule);border-radius:99px;
+  padding:7px 15px;font-size:.9rem;text-decoration:none}
+.linkrow a:hover{border-color:var(--oak);background:#fff}
 
-/* Symptom-Grid (Silo 1: Error & Intent Based Navigation) */
-.symptom-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
-  margin: 20px 0 36px;
-}
-.symptom-card {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-card);
-  padding: 18px 20px;
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-  text-decoration: none !important;
-  color: var(--text-main);
-  transition: all 0.15s ease;
-}
-.symptom-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--primary);
-}
-.symptom-icon { font-size: 24px; line-height: 1; flex-shrink: 0; padding-top: 2px; }
-.symptom-content h3 { font-size: 15px; font-weight: 700; color: var(--text-main); margin-bottom: 4px; }
-.symptom-content p { font-size: 13px; color: var(--text-muted); line-height: 1.45; }
-.symptom-link {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--primary);
-  margin-top: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
+.faq details{border-bottom:1px solid var(--rule);padding:2px 0}
+.faq summary{cursor:pointer;padding:14px 0;font-weight:600;color:var(--ink);
+  font-size:1.02rem;list-style:none;position:relative;padding-right:28px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:12px;
+  font-size:1.4rem;color:var(--oak);line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:0 0 16px;color:var(--body)}
+.disc{background:var(--wash);border-left:3px solid var(--oak);
+  padding:14px 18px;font-size:.89rem;border-radius:0 8px 8px 0;margin:22px 0}
 
-/* Brand Hubs Grid */
-.brand-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 14px;
-  margin: 20px 0 40px;
-}
-.brand-card {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-card);
-  padding: 16px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-decoration: none !important;
-  color: var(--text-main);
-  transition: all 0.15s ease;
-}
-.brand-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-sm);
-  border-color: var(--primary);
-}
-.brand-name { font-weight: 700; font-size: 15px; }
-.brand-count { font-size: 12px; color: var(--text-muted); background: #f5f5f4; padding: 2px 8px; border-radius: 99px; }
+/* footer */
+footer{background:var(--pine-d);color:#D8E2DC;margin-top:56px;padding:44px 0 30px;
+  font-size:.92rem}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.fcols{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.fcols h2{color:#fff;font-size:.78rem;margin:0 0 12px;letter-spacing:.15em;text-transform:uppercase;
+  font-family:var(--f-body);font-weight:700;margin-bottom:12px}
+.fcols ul{list-style:none;margin:0;padding:0}
+.fcols li{margin-bottom:7px}
+.fbot{border-top:1px solid rgba(255,255,255,.16);margin-top:32px;padding-top:20px;
+  font-size:.85rem;color:#A9BDB2}
 
-/* Products Grid (LeatherClogs Style Clean Cards) */
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  margin: 20px 0 40px;
-}
-.prod-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-card);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-.prod-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: #d6d3d1;
-}
-.prod-card-thumb-link {
-  display: block;
-  background: #ffffff;
-  aspect-ratio: 1/1;
-  border-bottom: 1px solid var(--border-color);
-  padding: 14px;
-}
-.prod-card-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.prod-card-body {
-  padding: 14px 16px 16px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.prod-card-badges {
-  display: flex;
-  gap: 6px;
-  margin-bottom: 6px;
-  flex-wrap: wrap;
-}
-.badge-brand {
-  font-size: 11px;
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--primary);
-  font-weight: 700;
-}
-.badge-cat {
-  background: #f5f5f4;
-  color: #57534e;
-  font-size: 11px;
-  padding: 2px 7px;
-  border-radius: 999px;
-  font-weight: 600;
-}
-.prod-card-title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.35;
-  margin: 4px 0 6px;
-}
-.prod-card-title a {
-  color: var(--text-main);
-  text-decoration: none;
-}
-.prod-card-title a:hover {
-  color: var(--primary);
-  text-decoration: underline;
-}
-.prod-card-chips {
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
-  margin-bottom: 12px;
-}
-.chip {
-  background: #f5f5f4;
-  color: #44403c;
-  font-size: 11px;
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-.prod-card-footer {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.btn-card-details {
-  background: #1c1917;
-  color: #ffffff !important;
-  font-weight: 600;
-  font-size: 12px;
-  padding: 7px 12px;
-  border-radius: 6px;
-  text-decoration: none !important;
-  transition: background 0.15s ease;
-}
-.btn-card-details:hover {
-  background: var(--primary);
-}
-
-/* Detail Page Hero Stage (LeatherClogs Style) */
-.detail-hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 32px;
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-card);
-  padding: 28px;
-  margin: 14px 0 24px;
-  box-shadow: var(--shadow-sm);
-}
-.gallery-box { display: flex; flex-direction: column; gap: 12px; }
-.main-img-wrap {
-  width: 100%;
-  aspect-ratio: 1/1;
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
-.main-img-wrap img { width: 100%; height: 100%; object-fit: contain; }
-.thumbs-row { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
-.thumbs-row img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  border: 2px solid var(--border-color);
-  border-radius: 6px;
-  cursor: pointer;
-  background: #ffffff;
-  padding: 4px;
-  transition: border-color 0.15s ease;
-}
-.thumbs-row img.active { border-color: var(--primary); }
-
-.detail-info { display: flex; flex-direction: column; }
-.eyebrow { font-size: 12px; text-transform: uppercase; font-weight: 700; letter-spacing: .08em; color: var(--primary); margin-bottom: 4px; }
-.detail-info h1 {
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 1.25;
-  color: var(--text-main);
-  letter-spacing: -0.01em;
-  margin-bottom: 10px;
-}
-.meta-strip {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 13px;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-  flex-wrap: wrap;
-}
-.badge-rating { color: #b45309; font-weight: 700; }
-.badge-oem {
-  background: #f5f5f4;
-  color: #44403c;
-  font-family: monospace;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 4px;
-  border: 1px solid #e7e5e4;
-}
-.badge-verified {
-  background: #ecfdf5;
-  color: #065f46;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 4px;
-  border: 1px solid #a7f3d0;
-}
-
-.specs-pills-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 8px 0 16px;
-}
-.spec-pill {
-  background: #fafaf9;
-  border: 1px solid #e7e5e4;
-  font-size: 12px;
-  font-weight: 600;
-  color: #44403c;
-  padding: 4px 10px;
-  border-radius: 9999px;
-}
-
-/* LeatherClogs Style Clean Action Button */
-.cta-box {
-  margin: 14px 0 16px;
-  background: #fcfbf9;
-  border: 1px solid #f5f5f4;
-  border-radius: 10px;
-  padding: 16px;
-}
-.cta {
-  display: inline-block;
-  background: #1c1917;
-  color: #ffffff !important;
-  font-size: 15px;
-  font-weight: 700;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none !important;
-  transition: all 0.15s ease;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.cta:hover {
-  background: var(--primary);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-.cta-box .note {
-  font-size: 12px;
-  color: #78716c;
-  margin-top: 8px;
-  line-height: 1.4;
-}
-
-/* "Auf einen Blick" Summary Box */
-.key-highlights-card {
-  background: #fdfdfc;
-  border: 1px solid #e7e5e4;
-  border-radius: 10px;
-  padding: 14px 16px;
-  margin-top: 10px;
-}
-.key-highlights-title {
-  font-size: 13px;
-  font-weight: 700;
-  color: #1c1917;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.key-highlights-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
-.key-highlights-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-size: 12px;
-  color: #44403c;
-  line-height: 1.4;
-}
-.key-highlights-list .check-icon {
-  color: #15803d;
-  font-weight: 800;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-/* Wikipedia Link in Prose */
+/* Wikipedia Silo Internal Link Styles */
 .wiki-link {
-  color: var(--primary);
+  color: var(--pine);
   text-decoration: underline;
-  text-decoration-color: #d6d3d1;
+  text-decoration-color: var(--oak);
   text-underline-offset: 3px;
   font-weight: 600;
-  transition: all 0.15s ease;
+  transition: color .15s ease;
 }
 .wiki-link:hover {
-  color: #1c1917;
-  text-decoration-color: var(--primary);
+  color: var(--oak-d);
 }
 
-/* Section Content Layout (2.4fr / 1fr) */
-.content-layout {
-  display: grid;
-  grid-template-columns: 2.4fr 1fr;
-  gap: 28px;
-  margin-top: 10px;
-}
-.article-main { display: flex; flex-direction: column; gap: 24px; }
-.section-box {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-card);
-  padding: 24px;
-  box-shadow: var(--shadow-sm);
-}
-.section-box h2 {
-  font-size: 19px;
-  font-weight: 800;
-  color: var(--text-main);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.section-divider {
-  border: none;
-  border-top: 2px solid #f5f5f4;
-  margin: 12px 0 16px;
-}
-.prose-p {
-  font-size: 14.5px;
-  color: #374151;
-  line-height: 1.7;
-  margin-bottom: 12px;
-}
-.prose-p strong { color: #111827; }
 .code-pill {
-  font-family: monospace;
-  background: #f3f4f6;
+  font-family: var(--f-body);
+  background: var(--wash);
   color: #991b1b;
+  border: 1px solid var(--rule);
   font-weight: 700;
-  font-size: 12px;
-  padding: 2px 6px;
+  font-size: .82rem;
+  padding: 2px 7px;
   border-radius: 4px;
 }
 
-/* Callouts */
-.callout-box {
-  border-radius: 8px;
-  padding: 14px 16px;
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin: 16px 0;
-  font-size: 13.5px;
-  line-height: 1.5;
-}
-.callout-tip { background: #eff6ff; border-left: 4px solid #3b82f6; color: #1e40af; }
-.callout-warn { background: #fffbeb; border-left: 4px solid #f59e0b; color: #92400e; }
-.callout-icon { font-size: 20px; line-height: 1; flex-shrink: 0; }
-
-/* 5 Step-by-Step Action Cards */
-.steps-cards-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-  margin: 16px 0;
-}
-.step-card {
-  background: #fcfbf9;
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  padding: 16px;
-  display: flex;
-  gap: 14px;
-}
-.step-badge {
-  background: #1c1917;
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 13px;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-.step-body h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; color: var(--text-main); }
-.step-body p { font-size: 13px; color: var(--text-muted); line-height: 1.45; }
-
-/* Diagnostic Table */
-.diag-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 16px 0;
-  font-size: 13px;
-}
-.diag-table th {
-  background: #f5f5f4;
-  padding: 10px 12px;
-  text-align: left;
-  font-weight: 700;
-  color: var(--text-main);
-  border: 1px solid var(--border-color);
-}
-.diag-table td {
-  padding: 10px 12px;
-  border: 1px solid var(--border-color);
-  vertical-align: top;
-  line-height: 1.45;
-}
-.diag-table tr:nth-child(even) td { background: #fafaf9; }
-.diag-symptom { font-weight: 600; color: #991b1b; }
-.diag-fix { color: #15803d; font-weight: 500; }
-
-/* Compatibility Matrix */
-.compat-matrix-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 16px 0;
-}
-.compat-box {
-  background: #fafaf9;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 14px;
-}
-.compat-box-title {
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.compat-box-title.fits { color: #15803d; }
-.compat-box-title.incompatible { color: #b91c1c; }
-.compat-list { list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; }
-.compat-list li { display: flex; align-items: flex-start; gap: 8px; }
-
-/* Sentiment Tags */
-.sentiment-tags-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin: 14px 0;
-}
-.tag-heading {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text-main);
-  margin-bottom: 8px;
-}
-.sentiment-pill-box {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.pill-praise {
-  background: #ecfdf5;
-  color: #065f46;
-  border: 1px solid #a7f3d0;
-  font-size: 11.5px;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: 999px;
-}
-.pill-crit {
-  background: #fffbeb;
-  color: #92400e;
-  border: 1px solid #fde68a;
-  font-size: 11.5px;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: 999px;
-}
-
-/* User Reviews */
-.review-cards-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 14px;
-}
-.user-review-card {
-  background: #fcfbf9;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 14px 16px;
-}
-.ur-header {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 6px;
-}
-.ur-stars {
-  color: #b45309;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-.ur-title {
-  font-size: 13.5px;
-  font-weight: 700;
-  color: var(--text-main);
-}
-.ur-body {
-  font-size: 13px;
-  color: #4b5563;
-  line-height: 1.5;
-  margin-bottom: 6px;
-}
-.ur-date {
-  font-size: 11px;
-  color: #78716c;
-}
-
-/* In-body images gallery */
-.inbody-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin: 16px 0;
-}
-.inbody-item {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.inbody-item img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: contain;
-  background: #ffffff;
-  padding: 10px;
-}
-.inbody-caption {
-  padding: 8px 12px;
-  font-size: 11.5px;
-  color: var(--text-muted);
-  background: #fcfbf9;
-  border-top: 1px solid var(--border-color);
-  line-height: 1.4;
-}
-
-/* Sidebar & Silos */
-.sidebar { display: flex; flex-direction: column; gap: 20px; }
-.sidebar-box {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-card);
-  padding: 18px 20px;
-  box-shadow: var(--shadow-sm);
-}
-.sidebar-title {
-  font-size: 15px;
-  font-weight: 800;
-  color: var(--text-main);
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border-light);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.sidebar-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-.sidebar-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none !important;
-  color: var(--text-main);
-}
-.sidebar-item:hover { color: var(--primary); }
-.sidebar-thumb { width: 44px; height: 44px; object-fit: contain; border: 1px solid var(--border-color); border-radius: 6px; padding: 2px; background: #fff; }
-.sidebar-item-info { display: flex; flex-direction: column; overflow: hidden; }
-.sidebar-item-title { font-size: 12.5px; font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sidebar-item-cat { font-size: 11px; color: var(--text-muted); }
-
-/* Mobile Sticky Bottom CTA Bar */
-.mobile-sticky-cta {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(255, 255, 255, 0.98);
-  backdrop-filter: blur(8px);
-  border-top: 1px solid var(--border-color);
-  padding: 10px 16px;
-  z-index: 999;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
-}
-.sticky-thumb { width: 40px; height: 40px; object-fit: contain; margin-right: 10px; }
-.sticky-info { display: flex; flex-direction: column; overflow: hidden; }
-.sticky-title { font-size: 13px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sticky-sub { font-size: 11px; color: #15803d; font-weight: 600; }
-.btn-sticky-amazon {
-  background: #1c1917;
-  color: #ffffff !important;
-  font-weight: 700;
-  font-size: 13px;
-  padding: 9px 16px;
-  border-radius: 6px;
-  white-space: nowrap;
-  text-decoration: none !important;
-}
-
-/* FAQ Accordion */
-.faq-box { display: flex; flex-direction: column; gap: 10px; margin-top: 12px; }
-.faq-item {
-  background: #fcfbf9;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 14px 16px;
-}
-.faq-q { font-size: 14px; font-weight: 700; color: var(--text-main); margin-bottom: 6px; }
-.faq-a { font-size: 13px; color: #4b5563; line-height: 1.5; }
-
-/* Responsive Adjustments */
-@media (max-width: 900px) {
-  .detail-hero-grid { grid-template-columns: 1fr; }
-  .content-layout { grid-template-columns: 1fr; }
-  .compat-matrix-grid { grid-template-columns: 1fr; }
-  .sentiment-tags-grid { grid-template-columns: 1fr; }
-  .mobile-sticky-cta { display: flex; }
-  .nav-links { display: none; }
-  
-  /* Mobile Diagnostic Table as Cards */
-  .diag-table, .diag-table thead, .diag-table tbody, .diag-table th, .diag-table td, .diag-table tr {
-    display: block;
-  }
-  .diag-table thead { display: none; }
-  .diag-table tr {
-    background: #ffffff !important;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    margin-bottom: 12px;
-    padding: 10px 14px;
-    box-shadow: var(--shadow-sm);
-  }
-  .diag-table td {
-    border: none;
-    padding: 6px 0;
-    position: relative;
-    padding-left: 35%;
-  }
-  .diag-table td:before {
-    position: absolute;
-    left: 0;
-    width: 32%;
-    font-weight: 700;
-    font-size: 11px;
-    color: #78716c;
-    text-transform: uppercase;
-  }
-  .diag-table td:nth-of-type(1):before { content: "Intervall / Symptom"; }
-  .diag-table td:nth-of-type(2):before { content: "Aufgabe / Ursache"; }
-  .diag-table td:nth-of-type(3):before { content: "Lösung"; }
-}
-
-  </style>
-  <link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792814212541">
+</style>
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792815043742">
 </head>
 <body>
-  
-  <header class="app-header">
-    <div class="header-inner">
-      <a href="https://kaffeereparatur.github.io/" class="brand-logo">
-        <span class="logo-icon">☕</span>
-        <span>KaffeeReparatur<span class="tld">.de</span></span>
-        <span class="badge-pro">Experten-Verifiziert</span>
-      </a>
+<a class="skip" href="#main">Zum Inhalt springen</a>
 
-      <nav class="nav-links">
-        <a href="https://kaffeereparatur.github.io/#symptome" class="nav-link">Fehlerbilder</a>
-        <a href="https://kaffeereparatur.github.io/#marken" class="nav-link">Hersteller</a>
-        <a href="https://kaffeereparatur.github.io/#kategorien" class="nav-link">Baugruppen</a>
-      </nav>
-
-      <div class="header-search">
-        <div class="search-input-wrap">
-          <span class="search-icon">🔍</span>
-          <input type="text" id="site-search" class="search-input" placeholder="Modell, Ersatzteil oder Fehlercode..." autocomplete="off">
-          <button id="search-clear" class="search-clear" aria-label="Suche leeren">✕</button>
-        </div>
-        <div id="search-dropdown" class="search-dropdown"></div>
-      </div>
+<header class="top">
+  <div class="wrap topbar">
+    <a class="brand" href="/">KaffeeReparatur<span>.de</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="/kategorie/bruehgruppe/">Brühgruppen</a>
+      <a href="/kategorie/vibrationspumpe/">Pumpen</a>
+      <a href="/kategorie/mahlwerk/">Mahlwerke</a>
+      <a href="/kategorie/milchsystem/">Milchsysteme</a>
+      <a href="/kategorie/wasserfilter/">Wasserfilter</a>
+      <a href="/#marken">Hersteller</a>
+      <a href="/#symptome">Diagnose</a>
+    </nav>
+    <div class="srch">
+      <input type="search" id="q" placeholder="Ersatzteil, Modell suchen…" autocomplete="off" aria-label="Suche">
+      <div id="qres" role="listbox" hidden></div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section class="hero-banner">
+<main id="main">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="https://kaffeereparatur.github.io/">Home</a></li>
+        <li aria-current="page">Kaffeeauslauf &amp; Verteiler</li>
+      </ol>
+    </nav>
+  </div>
+
+  <section class="hero">
     <div class="wrap">
-      <nav class="breadcrumb" style="justify-content:center; padding-top:0;" aria-label="Breadcrumb">
-        <a href="https://kaffeereparatur.github.io/">Startseite</a>
-        <span class="sep">›</span>
-        <span>Kaffeeauslauf &amp; Verteiler</span>
-      </nav>
-      <span class="hero-eyebrow">Bauteil-Kategorie</span>
+      <p class="eyebrow">Bauteil-Kategorie</p>
       <h1>Kaffeeauslauf &amp; Verteiler für Kaffeevollautomaten</h1>
-      <p>Passgenaue Originalteile, Dichtungssätze und mechatronische Instandsetzungsanleitungen für alle führenden Kaffeevollautomaten-Hersteller.</p>
+      <p class="sub">Passgenaue Originalteile, Dichtungssätze und mechatronische Instandsetzungsanleitungen für alle führenden Kaffeevollautomaten-Hersteller.</p>
     </div>
   </section>
 
-  <main class="wrap">
-    <div style="margin: 32px 0 16px;">
-      <h2 style="font-size:20px; font-weight:800; color:var(--text-main);">Geprüfte Kaffeeauslauf &amp; Verteiler (37)</h2>
-    </div>
-
-    <div class="products-grid">
-      
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-kaffeeauslauf-esam-5400-5500-5600-5700-p-b07dcbhpvx/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61gIm1lAPSL._AC_SL1500_.jpg" alt="De&#39;Longhi Kaffeeauslauf ESAM 5400-5500-5600-5700 Perfecta" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <section class="sec" style="border-top:none">
+    <div class="wrap">
+      <h2>Geprüfte Kaffeeauslauf &amp; Verteiler (37)</h2>
+      <div class="grid">
+        
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-kaffeeauslauf-esam-5400-5500-5600-5700-p-b07dcbhpvx/">
+      <img src="https://m.media-amazon.com/images/I/61gIm1lAPSL._AC_SL1500_.jpg" alt="De&#39;Longhi Kaffeeauslauf ESAM 5400-5500-5600-5700 Perfecta" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-kaffeeauslauf-esam-5400-5500-5600-5700-p-b07dcbhpvx/">De&#39;Longhi Kaffeeauslauf ESAM 5400-5500-5600-5700 Perfecta</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-kaffeeauslauf-esam-5400-5500-5600-5700-p-b07dcbhpvx/">De&#39;Longhi Kaffeeauslauf ESAM 5400-5500-5600-5700 Perfecta</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.8</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-kaffeeauslauf-esam-5400-5500-5600-5700-p-b07dcbhpvx/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-nespresso-duese-ausguss-serie-pulse-prodi-b0749s1pmx/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51mhvSwct-L._AC_SL1500_.jpg" alt="Delonghi Nespresso Düse Ausguss, Serie Pulse Prodigio EN110 EN210 EN270 EN170" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-nespresso-duese-ausguss-serie-pulse-prodi-b0749s1pmx/">
+      <img src="https://m.media-amazon.com/images/I/51mhvSwct-L._AC_SL1500_.jpg" alt="Delonghi Nespresso Düse Ausguss, Serie Pulse Prodigio EN110 EN210 EN270 EN170" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-nespresso-duese-ausguss-serie-pulse-prodi-b0749s1pmx/">Delonghi Nespresso Düse Ausguss, Serie Pulse Prodigio EN110 EN210 EN270 EN170</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-nespresso-duese-ausguss-serie-pulse-prodi-b0749s1pmx/">Delonghi Nespresso Düse Ausguss, Serie Pulse Prodigio EN110 EN210 EN270 EN170</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.4</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-nespresso-duese-ausguss-serie-pulse-prodi-b0749s1pmx/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/tuer-kaffeeauslauf-7313220621-kompatibel-mit-delon-b07g1268lb/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/81AYxUK4cTL._AC_SL1500_.jpg" alt="Tür, Kaffeeauslauf 7313220621 kompatibel mit DeLonghi EAM2500, EAM3000, EAM3100, EAM3200, ECA13000, ECA13100, ECA13200, ESAM2200, ESAM3000, ESAM3100, ESAM3200, ESAM3550 Kaffeevollautomat" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/tuer-kaffeeauslauf-7313220621-kompatibel-mit-delon-b07g1268lb/">
+      <img src="https://m.media-amazon.com/images/I/81AYxUK4cTL._AC_SL1500_.jpg" alt="Tür, Kaffeeauslauf 7313220621 kompatibel mit DeLonghi EAM2500, EAM3000, EAM3100, EAM3200, ECA13000, ECA13100, ECA13200, ESAM2200, ESAM3000, ESAM3100, ESAM3200, ESAM3550 Kaffeevollautomat" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/tuer-kaffeeauslauf-7313220621-kompatibel-mit-delon-b07g1268lb/">Tür, Kaffeeauslauf 7313220621 kompatibel mit DeLonghi EAM2500, EAM3000, EAM3100, EAM3200, ECA13000, ECA13100, ECA13200, ESAM2200, ESAM3000, ESAM3100, ESAM3200, ESAM3550 Kaffeevollautomat</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/tuer-kaffeeauslauf-7313220621-kompatibel-mit-delon-b07g1268lb/">Tür, Kaffeeauslauf 7313220621 kompatibel mit DeLonghi EAM2500, EAM3000, EAM3100, EAM3200, ECA13000, ECA13100, ECA13200, ESAM2200, ESAM3000, ESAM3100, ESAM3200, ESAM3550 Kaffeevollautomat</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.8</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/tuer-kaffeeauslauf-7313220621-kompatibel-mit-delon-b07g1268lb/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-perfecta-esam-5400-5450-550-b07dgvb5dw/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61cKOH4vNfL._AC_SL1500_.jpg" alt="DeLonghi Kaffeeauslauf Perfecta ESAM 5400 5450 5500 5600 5700" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-perfecta-esam-5400-5450-550-b07dgvb5dw/">
+      <img src="https://m.media-amazon.com/images/I/61cKOH4vNfL._AC_SL1500_.jpg" alt="DeLonghi Kaffeeauslauf Perfecta ESAM 5400 5450 5500 5600 5700" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-perfecta-esam-5400-5450-550-b07dgvb5dw/">DeLonghi Kaffeeauslauf Perfecta ESAM 5400 5450 5500 5600 5700</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-perfecta-esam-5400-5450-550-b07dgvb5dw/">DeLonghi Kaffeeauslauf Perfecta ESAM 5400 5450 5500 5600 5700</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.6</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-perfecta-esam-5400-5450-550-b07dgvb5dw/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-chromblende-kaffeeauslauf-perfecta-esam-5-b07dgwpyc9/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61fbXLluDcL._AC_SL1500_.jpg" alt="DeLonghi Chromblende Kaffeeauslauf Perfecta ESAM 5400 5450 5500 5600 5700" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-chromblende-kaffeeauslauf-perfecta-esam-5-b07dgwpyc9/">
+      <img src="https://m.media-amazon.com/images/I/61fbXLluDcL._AC_SL1500_.jpg" alt="DeLonghi Chromblende Kaffeeauslauf Perfecta ESAM 5400 5450 5500 5600 5700" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-chromblende-kaffeeauslauf-perfecta-esam-5-b07dgwpyc9/">DeLonghi Chromblende Kaffeeauslauf Perfecta ESAM 5400 5450 5500 5600 5700</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-chromblende-kaffeeauslauf-perfecta-esam-5-b07dgwpyc9/">DeLonghi Chromblende Kaffeeauslauf Perfecta ESAM 5400 5450 5500 5600 5700</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.8</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-chromblende-kaffeeauslauf-perfecta-esam-5-b07dgwpyc9/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-magnifica-eam-esam-2000-220-b07djnnhjt/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71hsftIQJVL._AC_SL1500_.jpg" alt="DeLonghi Kaffeeauslauf Magnifica EAM - ESAM 2000 2200 2500 2600 2900 3000 3100 3200 3300 3400 3500 3600" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-magnifica-eam-esam-2000-220-b07djnnhjt/">
+      <img src="https://m.media-amazon.com/images/I/71hsftIQJVL._AC_SL1500_.jpg" alt="DeLonghi Kaffeeauslauf Magnifica EAM - ESAM 2000 2200 2500 2600 2900 3000 3100 3200 3300 3400 3500 3600" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-magnifica-eam-esam-2000-220-b07djnnhjt/">DeLonghi Kaffeeauslauf Magnifica EAM - ESAM 2000 2200 2500 2600 2900 3000 3100 3200 3300 3400 3500 3600</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-magnifica-eam-esam-2000-220-b07djnnhjt/">DeLonghi Kaffeeauslauf Magnifica EAM - ESAM 2000 2200 2500 2600 2900 3000 3100 3200 3300 3400 3500 3600</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.6</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/delonghi-kaffeeauslauf-magnifica-eam-esam-2000-220-b07djnnhjt/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/4x-reinigungsbuerste-kaffeevollautomat-4-6-15-19-m-b0bpj18rx1/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71ziEBvJ3kL._AC_SL1500_.jpg" alt="4X Reinigungsbürste Kaffeevollautomat 4, 6, 15 &amp; 19 mm (u.a. für DeLonghi) Kaffeeauslauf &amp; Milchschlauch-Bürste, kleine Bürste zum Strohhalm &amp; Kühlschrank reinigen, Flaschenbürste (21cm)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/4x-reinigungsbuerste-kaffeevollautomat-4-6-15-19-m-b0bpj18rx1/">
+      <img src="https://m.media-amazon.com/images/I/71ziEBvJ3kL._AC_SL1500_.jpg" alt="4X Reinigungsbürste Kaffeevollautomat 4, 6, 15 &amp; 19 mm (u.a. für DeLonghi) Kaffeeauslauf &amp; Milchschlauch-Bürste, kleine Bürste zum Strohhalm &amp; Kühlschrank reinigen, Flaschenbürste (21cm)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/4x-reinigungsbuerste-kaffeevollautomat-4-6-15-19-m-b0bpj18rx1/">4X Reinigungsbürste Kaffeevollautomat 4, 6, 15 &amp; 19 mm (u.a. für DeLonghi) Kaffeeauslauf &amp; Milchschlauch-Bürste, kleine Bürste zum Strohhalm &amp; Kühlschrank reinigen, Flaschenbürste (21cm)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/4x-reinigungsbuerste-kaffeevollautomat-4-6-15-19-m-b0bpj18rx1/">4X Reinigungsbürste Kaffeevollautomat 4, 6, 15 &amp; 19 mm (u.a. für DeLonghi) Kaffeeauslauf &amp; Milchschlauch-Bürste, kleine Bürste zum Strohhalm &amp; Kühlschrank reinigen, Flaschenbürste (21cm)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.4</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/4x-reinigungsbuerste-kaffeevollautomat-4-6-15-19-m-b0bpj18rx1/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/kaffeeverteiler-51-53-58-35-mm-gravity-adaptive-ka-b0h5r86xh4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61w0d7cvZWL._AC_SL1500_.jpg" alt="Kaffeeverteiler 51/53/58,35 mm, Gravity Adaptive Kaffeeverteiler Espresso, Stahl Ground Leveler Home, Grau (51 mm)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/kaffeeverteiler-51-53-58-35-mm-gravity-adaptive-ka-b0h5r86xh4/">
+      <img src="https://m.media-amazon.com/images/I/61w0d7cvZWL._AC_SL1500_.jpg" alt="Kaffeeverteiler 51/53/58,35 mm, Gravity Adaptive Kaffeeverteiler Espresso, Stahl Ground Leveler Home, Grau (51 mm)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeverteiler-51-53-58-35-mm-gravity-adaptive-ka-b0h5r86xh4/">Kaffeeverteiler 51/53/58,35 mm, Gravity Adaptive Kaffeeverteiler Espresso, Stahl Ground Leveler Home, Grau (51 mm)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/kaffeeverteiler-51-53-58-35-mm-gravity-adaptive-ka-b0h5r86xh4/">Kaffeeverteiler 51/53/58,35 mm, Gravity Adaptive Kaffeeverteiler Espresso, Stahl Ground Leveler Home, Grau (51 mm)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.7</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeverteiler-51-53-58-35-mm-gravity-adaptive-ka-b0h5r86xh4/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b01ip3i3ys/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/510I6ddUrPL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi FL29301 Krups MS-623323 | SUPPORTS FILTRE A CAFE POUR MACHINE A CAFE" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b01ip3i3ys/">
+      <img src="https://m.media-amazon.com/images/I/510I6ddUrPL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi FL29301 Krups MS-623323 | SUPPORTS FILTRE A CAFE POUR MACHINE A CAFE" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b01ip3i3ys/">Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi FL29301 Krups MS-623323 | SUPPORTS FILTRE A CAFE POUR MACHINE A CAFE</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b01ip3i3ys/">Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi FL29301 Krups MS-623323 | SUPPORTS FILTRE A CAFE POUR MACHINE A CAFE</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b01ip3i3ys/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/dl-pro-auslaufduese-fuer-delonghi-krups-en110-en21-b09v5f64kc/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/610JFIS1jJL._AC_SL1500_.jpg" alt="DL-pro Auslaufdüse für DeLonghi Krups EN110 EN210 EN170 EN270 FL29301 Getränkeauslaufdüse Kaffeeauslauf Auslaufhahn Düse für Pulse Prodigio &amp; Milk U Milk Kaffeemaschine Kapselmaschine" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/dl-pro-auslaufduese-fuer-delonghi-krups-en110-en21-b09v5f64kc/">
+      <img src="https://m.media-amazon.com/images/I/610JFIS1jJL._AC_SL1500_.jpg" alt="DL-pro Auslaufdüse für DeLonghi Krups EN110 EN210 EN170 EN270 FL29301 Getränkeauslaufdüse Kaffeeauslauf Auslaufhahn Düse für Pulse Prodigio &amp; Milk U Milk Kaffeemaschine Kapselmaschine" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/dl-pro-auslaufduese-fuer-delonghi-krups-en110-en21-b09v5f64kc/">DL-pro Auslaufdüse für DeLonghi Krups EN110 EN210 EN170 EN270 FL29301 Getränkeauslaufdüse Kaffeeauslauf Auslaufhahn Düse für Pulse Prodigio &amp; Milk U Milk Kaffeemaschine Kapselmaschine</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/dl-pro-auslaufduese-fuer-delonghi-krups-en110-en21-b09v5f64kc/">DL-pro Auslaufdüse für DeLonghi Krups EN110 EN210 EN170 EN270 FL29301 Getränkeauslaufdüse Kaffeeauslauf Auslaufhahn Düse für Pulse Prodigio &amp; Milk U Milk Kaffeemaschine Kapselmaschine</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/dl-pro-auslaufduese-fuer-delonghi-krups-en110-en21-b09v5f64kc/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0dk7mjqp4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51+DTsB+trL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi 5313242141 EN750MB Lattissima Pro Nespresso" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0dk7mjqp4/">
+      <img src="https://m.media-amazon.com/images/I/51+DTsB+trL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi 5313242141 EN750MB Lattissima Pro Nespresso" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0dk7mjqp4/">Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi 5313242141 EN750MB Lattissima Pro Nespresso</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0dk7mjqp4/">Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi 5313242141 EN750MB Lattissima Pro Nespresso</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.8</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0dk7mjqp4/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-fuer-kaffeemaschine-5313242141-fuer-b0d78644vt/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61J6RJahEML._AC_SL1500_.jpg" alt="Kaffeeauslauf für Kaffeemaschine 5313242141 für DeLonghi Lattissima Pro" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-fuer-kaffeemaschine-5313242141-fuer-b0d78644vt/">
+      <img src="https://m.media-amazon.com/images/I/61J6RJahEML._AC_SL1500_.jpg" alt="Kaffeeauslauf für Kaffeemaschine 5313242141 für DeLonghi Lattissima Pro" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-fuer-kaffeemaschine-5313242141-fuer-b0d78644vt/">Kaffeeauslauf für Kaffeemaschine 5313242141 für DeLonghi Lattissima Pro</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-fuer-kaffeemaschine-5313242141-fuer-b0d78644vt/">Kaffeeauslauf für Kaffeemaschine 5313242141 für DeLonghi Lattissima Pro</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-fuer-kaffeemaschine-5313242141-fuer-b0d78644vt/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-delonghi-7313224141-tuer-kaffeeauslauf-f-b07fzzmv69/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/81fxWQOe9AL._AC_SL1500_.jpg" alt="De’Longhi DeLonghi 7313224141 Tür, Kaffeeauslauf für ESAM5500 ESAM5550 Perfecta Cappuccino Kaffeevollautomat" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-delonghi-7313224141-tuer-kaffeeauslauf-f-b07fzzmv69/">
+      <img src="https://m.media-amazon.com/images/I/81fxWQOe9AL._AC_SL1500_.jpg" alt="De’Longhi DeLonghi 7313224141 Tür, Kaffeeauslauf für ESAM5500 ESAM5550 Perfecta Cappuccino Kaffeevollautomat" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-delonghi-7313224141-tuer-kaffeeauslauf-f-b07fzzmv69/">De’Longhi DeLonghi 7313224141 Tür, Kaffeeauslauf für ESAM5500 ESAM5550 Perfecta Cappuccino Kaffeevollautomat</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-delonghi-7313224141-tuer-kaffeeauslauf-f-b07fzzmv69/">De’Longhi DeLonghi 7313224141 Tür, Kaffeeauslauf für ESAM5500 ESAM5550 Perfecta Cappuccino Kaffeevollautomat</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.6</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/de-longhi-delonghi-7313224141-tuer-kaffeeauslauf-f-b07fzzmv69/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b09ww16yrz/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51cu5BgL5nL._AC_SL1500_.jpg" alt="Blende (Kaffeeauslauf) kompatibel mit/Ersatzteil für DeLonghi 5313224281 ECAM22.110 Kaffeevollautomat" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b09ww16yrz/">
+      <img src="https://m.media-amazon.com/images/I/51cu5BgL5nL._AC_SL1500_.jpg" alt="Blende (Kaffeeauslauf) kompatibel mit/Ersatzteil für DeLonghi 5313224281 ECAM22.110 Kaffeevollautomat" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b09ww16yrz/">Blende (Kaffeeauslauf) kompatibel mit/Ersatzteil für DeLonghi 5313224281 ECAM22.110 Kaffeevollautomat</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b09ww16yrz/">Blende (Kaffeeauslauf) kompatibel mit/Ersatzteil für DeLonghi 5313224281 ECAM22.110 Kaffeevollautomat</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.4</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/blende-kaffeeauslauf-kompatibel-mit-ersatzteil-fue-b09ww16yrz/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0d3hvlv3y/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61x1RMChwML._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi 7313253581 Dinamica Plus Kaffeevollautomat" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0d3hvlv3y/">
+      <img src="https://m.media-amazon.com/images/I/61x1RMChwML._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi 7313253581 Dinamica Plus Kaffeevollautomat" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0d3hvlv3y/">Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi 7313253581 Dinamica Plus Kaffeevollautomat</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0d3hvlv3y/">Kaffeeauslauf kompatibel mit/Ersatzteil für DeLonghi 7313253581 Dinamica Plus Kaffeevollautomat</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-delon-b0d3hvlv3y/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/51mm-siebtraeger-fuer-delonghi-dedica-ec680-ec685-b0h8ss7w31/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71L2d-I1vBL._AC_SL1500_.jpg" alt="51mm Siebträger für DeLonghi Dedica EC680/EC685/EC885, Edelstahl, Holzgriff" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/51mm-siebtraeger-fuer-delonghi-dedica-ec680-ec685-b0h8ss7w31/">
+      <img src="https://m.media-amazon.com/images/I/71L2d-I1vBL._AC_SL1500_.jpg" alt="51mm Siebträger für DeLonghi Dedica EC680/EC685/EC885, Edelstahl, Holzgriff" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/51mm-siebtraeger-fuer-delonghi-dedica-ec680-ec685-b0h8ss7w31/">51mm Siebträger für DeLonghi Dedica EC680/EC685/EC885, Edelstahl, Holzgriff</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/51mm-siebtraeger-fuer-delonghi-dedica-ec680-ec685-b0h8ss7w31/">51mm Siebträger für DeLonghi Dedica EC680/EC685/EC885, Edelstahl, Holzgriff</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/51mm-siebtraeger-fuer-delonghi-dedica-ec680-ec685-b0h8ss7w31/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/delonghi/kaffee-siebtraeger-adapter-konverter-von-bodenlos-b0g8jq58tk/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/611Odc+bGvL._AC_SL1500_.jpg" alt="Kaffee-Siebträger-Adapter – Konverter von Bodenlos zu Bodenauslauf | Einzel-Doppelauslauf-Umsteller | Espresso-Zubehör aus Edelstahl" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/delonghi/kaffee-siebtraeger-adapter-konverter-von-bodenlos-b0g8jq58tk/">
+      <img src="https://m.media-amazon.com/images/I/611Odc+bGvL._AC_SL1500_.jpg" alt="Kaffee-Siebträger-Adapter – Konverter von Bodenlos zu Bodenauslauf | Einzel-Doppelauslauf-Umsteller | Espresso-Zubehör aus Edelstahl" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">DeLonghi</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffee-siebtraeger-adapter-konverter-von-bodenlos-b0g8jq58tk/">Kaffee-Siebträger-Adapter – Konverter von Bodenlos zu Bodenauslauf | Einzel-Doppelauslauf-Umsteller | Espresso-Zubehör aus Edelstahl</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">DeLonghi</p>
+      <h3><a href="https://kaffeereparatur.github.io/delonghi/kaffee-siebtraeger-adapter-konverter-von-bodenlos-b0g8jq58tk/">Kaffee-Siebträger-Adapter – Konverter von Bodenlos zu Bodenauslauf | Einzel-Doppelauslauf-Umsteller | Espresso-Zubehör aus Edelstahl</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.7</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/delonghi/kaffee-siebtraeger-adapter-konverter-von-bodenlos-b0g8jq58tk/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/bsh-milchaufschaeumer-kaffeeauslauf-fuer-siemens-u-b00uhmzxo4/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51Gnia1Mv6L._AC_SL1500_.jpg" alt="BSH Milchaufschäumer, Kaffeeauslauf für Siemens- und Bosch-Kaffeemaschinen, Schwarz, 12004726" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/siemens/bsh-milchaufschaeumer-kaffeeauslauf-fuer-siemens-u-b00uhmzxo4/">
+      <img src="https://m.media-amazon.com/images/I/51Gnia1Mv6L._AC_SL1500_.jpg" alt="BSH Milchaufschäumer, Kaffeeauslauf für Siemens- und Bosch-Kaffeemaschinen, Schwarz, 12004726" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/siemens/bsh-milchaufschaeumer-kaffeeauslauf-fuer-siemens-u-b00uhmzxo4/">BSH Milchaufschäumer, Kaffeeauslauf für Siemens- und Bosch-Kaffeemaschinen, Schwarz, 12004726</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Siemens</p>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/bsh-milchaufschaeumer-kaffeeauslauf-fuer-siemens-u-b00uhmzxo4/">BSH Milchaufschäumer, Kaffeeauslauf für Siemens- und Bosch-Kaffeemaschinen, Schwarz, 12004726</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.6</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/siemens/bsh-milchaufschaeumer-kaffeeauslauf-fuer-siemens-u-b00uhmzxo4/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/daniplus-klappe-fuer-bosch-siemens-kaffeemaschine-b0f2fzpvv5/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71kJgimCDnL._AC_SL1500_.jpg" alt="daniplus Klappe für Bosch Siemens Kaffeemaschine Kaffeeautomat Brühgruppe EQ5 EQ6 - Nr.: 703294" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/siemens/daniplus-klappe-fuer-bosch-siemens-kaffeemaschine-b0f2fzpvv5/">
+      <img src="https://m.media-amazon.com/images/I/71kJgimCDnL._AC_SL1500_.jpg" alt="daniplus Klappe für Bosch Siemens Kaffeemaschine Kaffeeautomat Brühgruppe EQ5 EQ6 - Nr.: 703294" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/siemens/daniplus-klappe-fuer-bosch-siemens-kaffeemaschine-b0f2fzpvv5/">daniplus Klappe für Bosch Siemens Kaffeemaschine Kaffeeautomat Brühgruppe EQ5 EQ6 - Nr.: 703294</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Siemens</p>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/daniplus-klappe-fuer-bosch-siemens-kaffeemaschine-b0f2fzpvv5/">daniplus Klappe für Bosch Siemens Kaffeemaschine Kaffeeautomat Brühgruppe EQ5 EQ6 - Nr.: 703294</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.8</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/siemens/daniplus-klappe-fuer-bosch-siemens-kaffeemaschine-b0f2fzpvv5/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/dl-pro-abtropfgitter-gitter-fuer-bosch-siemens-eq6-b097c7gfvm/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/613ZGGfMqZL._AC_SL1500_.jpg" alt="DL-pro Abtropfgitter Gitter für Bosch Siemens EQ6 Plus S100 S300 S400 S500 S4700 12020236 Tropfgitter Abtropfschalenabdeckung braun für Kaffeemaschine Kaffeeautomat Kaffeevollautomat" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/siemens/dl-pro-abtropfgitter-gitter-fuer-bosch-siemens-eq6-b097c7gfvm/">
+      <img src="https://m.media-amazon.com/images/I/613ZGGfMqZL._AC_SL1500_.jpg" alt="DL-pro Abtropfgitter Gitter für Bosch Siemens EQ6 Plus S100 S300 S400 S500 S4700 12020236 Tropfgitter Abtropfschalenabdeckung braun für Kaffeemaschine Kaffeeautomat Kaffeevollautomat" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/siemens/dl-pro-abtropfgitter-gitter-fuer-bosch-siemens-eq6-b097c7gfvm/">DL-pro Abtropfgitter Gitter für Bosch Siemens EQ6 Plus S100 S300 S400 S500 S4700 12020236 Tropfgitter Abtropfschalenabdeckung braun für Kaffeemaschine Kaffeeautomat Kaffeevollautomat</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Siemens</p>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/dl-pro-abtropfgitter-gitter-fuer-bosch-siemens-eq6-b097c7gfvm/">DL-pro Abtropfgitter Gitter für Bosch Siemens EQ6 Plus S100 S300 S400 S500 S4700 12020236 Tropfgitter Abtropfschalenabdeckung braun für Kaffeemaschine Kaffeeautomat Kaffeevollautomat</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.6</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/siemens/dl-pro-abtropfgitter-gitter-fuer-bosch-siemens-eq6-b097c7gfvm/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0gvsc56tj/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51xIBgnTFeL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für Bosch Siemens 00633292 Kaffeevollautomaten (Beschreibung)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0gvsc56tj/">
+      <img src="https://m.media-amazon.com/images/I/51xIBgnTFeL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für Bosch Siemens 00633292 Kaffeevollautomaten (Beschreibung)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0gvsc56tj/">Kaffeeauslauf kompatibel mit/Ersatzteil für Bosch Siemens 00633292 Kaffeevollautomaten (Beschreibung)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Siemens</p>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0gvsc56tj/">Kaffeeauslauf kompatibel mit/Ersatzteil für Bosch Siemens 00633292 Kaffeevollautomaten (Beschreibung)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0gvsc56tj/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/service-tuer-klappe-fuer-siemens-bosch-00703294-70-b0bv74ghmh/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61XfRUwl9ML._AC_SL1500_.jpg" alt="Service-Tür Klappe für Siemens Bosch 00703294 703294 für Brühgruppe in EQ5 EQ6 Kaffeemaschine Kaffeevollautomat" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/siemens/service-tuer-klappe-fuer-siemens-bosch-00703294-70-b0bv74ghmh/">
+      <img src="https://m.media-amazon.com/images/I/61XfRUwl9ML._AC_SL1500_.jpg" alt="Service-Tür Klappe für Siemens Bosch 00703294 703294 für Brühgruppe in EQ5 EQ6 Kaffeemaschine Kaffeevollautomat" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/siemens/service-tuer-klappe-fuer-siemens-bosch-00703294-70-b0bv74ghmh/">Service-Tür Klappe für Siemens Bosch 00703294 703294 für Brühgruppe in EQ5 EQ6 Kaffeemaschine Kaffeevollautomat</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Siemens</p>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/service-tuer-klappe-fuer-siemens-bosch-00703294-70-b0bv74ghmh/">Service-Tür Klappe für Siemens Bosch 00703294 703294 für Brühgruppe in EQ5 EQ6 Kaffeemaschine Kaffeevollautomat</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.3</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/siemens/service-tuer-klappe-fuer-siemens-bosch-00703294-70-b0bv74ghmh/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/bsh-kaffeeauslass-636975-fuer-siemens-eq-9-kaffeev-b01by2fvre/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51NRmFeQ8lL._AC_SL1500_.jpg" alt="BSH Kaffeeauslass (636975) für SIEMENS EQ.9 Kaffeevollautomaten" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/siemens/bsh-kaffeeauslass-636975-fuer-siemens-eq-9-kaffeev-b01by2fvre/">
+      <img src="https://m.media-amazon.com/images/I/51NRmFeQ8lL._AC_SL1500_.jpg" alt="BSH Kaffeeauslass (636975) für SIEMENS EQ.9 Kaffeevollautomaten" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/siemens/bsh-kaffeeauslass-636975-fuer-siemens-eq-9-kaffeev-b01by2fvre/">BSH Kaffeeauslass (636975) für SIEMENS EQ.9 Kaffeevollautomaten</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Siemens</p>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/bsh-kaffeeauslass-636975-fuer-siemens-eq-9-kaffeev-b01by2fvre/">BSH Kaffeeauslass (636975) für SIEMENS EQ.9 Kaffeevollautomaten</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.8</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/siemens/bsh-kaffeeauslass-636975-fuer-siemens-eq-9-kaffeev-b01by2fvre/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/bosch-siemens-12006144-original-abtropfschalenabde-b07mdg7wwk/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51sXQjcGpPS._AC_SL1500_.jpg" alt="Bosch Siemens 12006144 ORIGINAL Abtropfschalenabdeckung Tassenabstellfläche Tropfgitter für EQ6 Plus Kaffeemaschine Kaffeeautomat" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/siemens/bosch-siemens-12006144-original-abtropfschalenabde-b07mdg7wwk/">
+      <img src="https://m.media-amazon.com/images/I/51sXQjcGpPS._AC_SL1500_.jpg" alt="Bosch Siemens 12006144 ORIGINAL Abtropfschalenabdeckung Tassenabstellfläche Tropfgitter für EQ6 Plus Kaffeemaschine Kaffeeautomat" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/siemens/bosch-siemens-12006144-original-abtropfschalenabde-b07mdg7wwk/">Bosch Siemens 12006144 ORIGINAL Abtropfschalenabdeckung Tassenabstellfläche Tropfgitter für EQ6 Plus Kaffeemaschine Kaffeeautomat</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Siemens</p>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/bosch-siemens-12006144-original-abtropfschalenabde-b07mdg7wwk/">Bosch Siemens 12006144 ORIGINAL Abtropfschalenabdeckung Tassenabstellfläche Tropfgitter für EQ6 Plus Kaffeemaschine Kaffeeautomat</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.3</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/siemens/bosch-siemens-12006144-original-abtropfschalenabde-b07mdg7wwk/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0f7fj4czk/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51yqA2MZLeL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für Bosch Siemens 12006132 Einbau-Kaffeevollautomaten" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0f7fj4czk/">
+      <img src="https://m.media-amazon.com/images/I/51yqA2MZLeL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für Bosch Siemens 12006132 Einbau-Kaffeevollautomaten" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Siemens</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0f7fj4czk/">Kaffeeauslauf kompatibel mit/Ersatzteil für Bosch Siemens 12006132 Einbau-Kaffeevollautomaten</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Siemens</p>
+      <h3><a href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0f7fj4czk/">Kaffeeauslauf kompatibel mit/Ersatzteil für Bosch Siemens 12006132 Einbau-Kaffeevollautomaten</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/siemens/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-bosch-b0f7fj4czk/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/auslaufventil-kompatibel-mit-ersatzteil-fuer-jura-b0f3ln7yv3/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51TZim5h+WL._AC_SL1500_.jpg" alt="Auslaufventil kompatibel mit/Ersatzteil für Jura 66627 Kaffeevollautomaten (Beschreibung)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/auslaufventil-kompatibel-mit-ersatzteil-fuer-jura-b0f3ln7yv3/">
+      <img src="https://m.media-amazon.com/images/I/51TZim5h+WL._AC_SL1500_.jpg" alt="Auslaufventil kompatibel mit/Ersatzteil für Jura 66627 Kaffeevollautomaten (Beschreibung)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/auslaufventil-kompatibel-mit-ersatzteil-fuer-jura-b0f3ln7yv3/">Auslaufventil kompatibel mit/Ersatzteil für Jura 66627 Kaffeevollautomaten (Beschreibung)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/auslaufventil-kompatibel-mit-ersatzteil-fuer-jura-b0f3ln7yv3/">Auslaufventil kompatibel mit/Ersatzteil für Jura 66627 Kaffeevollautomaten (Beschreibung)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.6</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/auslaufventil-kompatibel-mit-ersatzteil-fuer-jura-b0f3ln7yv3/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0f1fv8mb8/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51JM5WLxohL._AC_SL1500_.jpg" alt="Auslaufventil (Thermoblock) kompatibel mit/Ersatzteil für Jura 66289 Kaffeevollautomaten (Beschreibung)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0f1fv8mb8/">
+      <img src="https://m.media-amazon.com/images/I/51JM5WLxohL._AC_SL1500_.jpg" alt="Auslaufventil (Thermoblock) kompatibel mit/Ersatzteil für Jura 66289 Kaffeevollautomaten (Beschreibung)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0f1fv8mb8/">Auslaufventil (Thermoblock) kompatibel mit/Ersatzteil für Jura 66289 Kaffeevollautomaten (Beschreibung)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0f1fv8mb8/">Auslaufventil (Thermoblock) kompatibel mit/Ersatzteil für Jura 66289 Kaffeevollautomaten (Beschreibung)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.7</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0f1fv8mb8/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-jura-b0clh31865/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61EzJANBmWL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für Jura 67961 ENA 5 ENA 7 ENA X1 Kaffeevollautomaten" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-jura-b0clh31865/">
+      <img src="https://m.media-amazon.com/images/I/61EzJANBmWL._AC_SL1500_.jpg" alt="Kaffeeauslauf kompatibel mit/Ersatzteil für Jura 67961 ENA 5 ENA 7 ENA X1 Kaffeevollautomaten" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-jura-b0clh31865/">Kaffeeauslauf kompatibel mit/Ersatzteil für Jura 67961 ENA 5 ENA 7 ENA X1 Kaffeevollautomaten</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-jura-b0clh31865/">Kaffeeauslauf kompatibel mit/Ersatzteil für Jura 67961 ENA 5 ENA 7 ENA X1 Kaffeevollautomaten</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-jura-b0clh31865/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/griff-kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-b0f6c2qkpl/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51FQPcDWR+L._AC_SL1500_.jpg" alt="Griff (Kaffeeauslauf) kompatibel mit/Ersatzteil für Jura 72473 E6 E8 E60 E80 E600... Kaffeevollautomaten" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/griff-kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-b0f6c2qkpl/">
+      <img src="https://m.media-amazon.com/images/I/51FQPcDWR+L._AC_SL1500_.jpg" alt="Griff (Kaffeeauslauf) kompatibel mit/Ersatzteil für Jura 72473 E6 E8 E60 E80 E600... Kaffeevollautomaten" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/griff-kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-b0f6c2qkpl/">Griff (Kaffeeauslauf) kompatibel mit/Ersatzteil für Jura 72473 E6 E8 E60 E80 E600... Kaffeevollautomaten</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/griff-kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-b0f6c2qkpl/">Griff (Kaffeeauslauf) kompatibel mit/Ersatzteil für Jura 72473 E6 E8 E60 E80 E600... Kaffeevollautomaten</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/griff-kaffeeauslauf-kompatibel-mit-ersatzteil-fuer-b0f6c2qkpl/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0gwgwzp2b/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/31FAH0MaaML._AC_SL1500_.jpg" alt="Auslaufventil (Thermoblock) kompatibel mit/Ersatzteil für Jura 66289 Kaffeevollautomaten (Beschreibung) (Packung mit 2)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0gwgwzp2b/">
+      <img src="https://m.media-amazon.com/images/I/31FAH0MaaML._AC_SL1500_.jpg" alt="Auslaufventil (Thermoblock) kompatibel mit/Ersatzteil für Jura 66289 Kaffeevollautomaten (Beschreibung) (Packung mit 2)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0gwgwzp2b/">Auslaufventil (Thermoblock) kompatibel mit/Ersatzteil für Jura 66289 Kaffeevollautomaten (Beschreibung) (Packung mit 2)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0gwgwzp2b/">Auslaufventil (Thermoblock) kompatibel mit/Ersatzteil für Jura 66289 Kaffeevollautomaten (Beschreibung) (Packung mit 2)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.7</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0gwgwzp2b/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/swtyext-ovalkopfschluessel-mit-schluesselring-21-s-b0d3x7fky5/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61boMiLkT9L._AC_SL1500_.jpg" alt="SWTYExt Ovalkopfschlüssel mit Schlüsselring 21 Stück Dichtungsringe Kaffeevollautomat Ersatzteile Ovalkopfbit Reparatur Kompatibel für Jura/Krups Siziliana/AEG Vollautomaten Kaffeeautomaten" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/swtyext-ovalkopfschluessel-mit-schluesselring-21-s-b0d3x7fky5/">
+      <img src="https://m.media-amazon.com/images/I/61boMiLkT9L._AC_SL1500_.jpg" alt="SWTYExt Ovalkopfschlüssel mit Schlüsselring 21 Stück Dichtungsringe Kaffeevollautomat Ersatzteile Ovalkopfbit Reparatur Kompatibel für Jura/Krups Siziliana/AEG Vollautomaten Kaffeeautomaten" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/swtyext-ovalkopfschluessel-mit-schluesselring-21-s-b0d3x7fky5/">SWTYExt Ovalkopfschlüssel mit Schlüsselring 21 Stück Dichtungsringe Kaffeevollautomat Ersatzteile Ovalkopfbit Reparatur Kompatibel für Jura/Krups Siziliana/AEG Vollautomaten Kaffeeautomaten</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/swtyext-ovalkopfschluessel-mit-schluesselring-21-s-b0d3x7fky5/">SWTYExt Ovalkopfschlüssel mit Schlüsselring 21 Stück Dichtungsringe Kaffeevollautomat Ersatzteile Ovalkopfbit Reparatur Kompatibel für Jura/Krups Siziliana/AEG Vollautomaten Kaffeeautomaten</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/swtyext-ovalkopfschluessel-mit-schluesselring-21-s-b0d3x7fky5/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/milchauslauf-kompatibel-mit-ersatzteil-fuer-jura-7-b0f1gfbp43/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41cj4Bn0MNL._AC_SL1500_.jpg" alt="Milchauslauf kompatibel mit/Ersatzteil für Jura 72346 Kaffeevollautomaten (siehe Beschreibung)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/milchauslauf-kompatibel-mit-ersatzteil-fuer-jura-7-b0f1gfbp43/">
+      <img src="https://m.media-amazon.com/images/I/41cj4Bn0MNL._AC_SL1500_.jpg" alt="Milchauslauf kompatibel mit/Ersatzteil für Jura 72346 Kaffeevollautomaten (siehe Beschreibung)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/milchauslauf-kompatibel-mit-ersatzteil-fuer-jura-7-b0f1gfbp43/">Milchauslauf kompatibel mit/Ersatzteil für Jura 72346 Kaffeevollautomaten (siehe Beschreibung)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/milchauslauf-kompatibel-mit-ersatzteil-fuer-jura-7-b0f1gfbp43/">Milchauslauf kompatibel mit/Ersatzteil für Jura 72346 Kaffeevollautomaten (siehe Beschreibung)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/milchauslauf-kompatibel-mit-ersatzteil-fuer-jura-7-b0f1gfbp43/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/luftventil-kompatibel-mit-ersatzteil-fuer-jura-722-b0f1ftqbxx/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/41FnNQ2lW3L._AC_SL1500_.jpg" alt="Luftventil kompatibel mit/Ersatzteil für Jura 72239 IMPRESSA Z6 Z8 Z10 Kaffeevollautomat" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/luftventil-kompatibel-mit-ersatzteil-fuer-jura-722-b0f1ftqbxx/">
+      <img src="https://m.media-amazon.com/images/I/41FnNQ2lW3L._AC_SL1500_.jpg" alt="Luftventil kompatibel mit/Ersatzteil für Jura 72239 IMPRESSA Z6 Z8 Z10 Kaffeevollautomat" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/luftventil-kompatibel-mit-ersatzteil-fuer-jura-722-b0f1ftqbxx/">Luftventil kompatibel mit/Ersatzteil für Jura 72239 IMPRESSA Z6 Z8 Z10 Kaffeevollautomat</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/luftventil-kompatibel-mit-ersatzteil-fuer-jura-722-b0f1ftqbxx/">Luftventil kompatibel mit/Ersatzteil für Jura 72239 IMPRESSA Z6 Z8 Z10 Kaffeevollautomat</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/luftventil-kompatibel-mit-ersatzteil-fuer-jura-722-b0f1ftqbxx/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/vioks-auslaufventil-kaffeemaschine-ersatz-fuer-phi-b0ddcmdrr7/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/71UKDbywOGL._AC_SL1500_.jpg" alt="VIOKS Auslaufventil Kaffeemaschine Ersatz für Philiрs Saeco 421946011491" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/vioks-auslaufventil-kaffeemaschine-ersatz-fuer-phi-b0ddcmdrr7/">
+      <img src="https://m.media-amazon.com/images/I/71UKDbywOGL._AC_SL1500_.jpg" alt="VIOKS Auslaufventil Kaffeemaschine Ersatz für Philiрs Saeco 421946011491" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/vioks-auslaufventil-kaffeemaschine-ersatz-fuer-phi-b0ddcmdrr7/">VIOKS Auslaufventil Kaffeemaschine Ersatz für Philiрs Saeco 421946011491</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/vioks-auslaufventil-kaffeemaschine-ersatz-fuer-phi-b0ddcmdrr7/">VIOKS Auslaufventil Kaffeemaschine Ersatz für Philiрs Saeco 421946011491</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/vioks-auslaufventil-kaffeemaschine-ersatz-fuer-phi-b0ddcmdrr7/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/milchschlauch-vollautomatische-kaffeemaschine-sili-b0ft2wvhyx/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/61b05D2LSBL._AC_SL1500_.jpg" alt="Milchschlauch Vollautomatische Kaffeemaschine Silikonschlauch 3x Ersatz + HP1 Anschlussnippel - kompatibel mit Jura Kaffeemaschine Geräten" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/milchschlauch-vollautomatische-kaffeemaschine-sili-b0ft2wvhyx/">
+      <img src="https://m.media-amazon.com/images/I/61b05D2LSBL._AC_SL1500_.jpg" alt="Milchschlauch Vollautomatische Kaffeemaschine Silikonschlauch 3x Ersatz + HP1 Anschlussnippel - kompatibel mit Jura Kaffeemaschine Geräten" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/milchschlauch-vollautomatische-kaffeemaschine-sili-b0ft2wvhyx/">Milchschlauch Vollautomatische Kaffeemaschine Silikonschlauch 3x Ersatz + HP1 Anschlussnippel - kompatibel mit Jura Kaffeemaschine Geräten</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/milchschlauch-vollautomatische-kaffeemaschine-sili-b0ft2wvhyx/">Milchschlauch Vollautomatische Kaffeemaschine Silikonschlauch 3x Ersatz + HP1 Anschlussnippel - kompatibel mit Jura Kaffeemaschine Geräten</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.7</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/milchschlauch-vollautomatische-kaffeemaschine-sili-b0ft2wvhyx/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/mikroschalter-kompatibel-mit-ersatzteil-fuer-jura-b0f1gclkx9/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51urLMp-9ZL._AC_SL1500_.jpg" alt="Mikroschalter kompatibel mit/Ersatzteil für Jura 66623 Kaffeevollautomaten (siehe Beschreibung)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/mikroschalter-kompatibel-mit-ersatzteil-fuer-jura-b0f1gclkx9/">
+      <img src="https://m.media-amazon.com/images/I/51urLMp-9ZL._AC_SL1500_.jpg" alt="Mikroschalter kompatibel mit/Ersatzteil für Jura 66623 Kaffeevollautomaten (siehe Beschreibung)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/mikroschalter-kompatibel-mit-ersatzteil-fuer-jura-b0f1gclkx9/">Mikroschalter kompatibel mit/Ersatzteil für Jura 66623 Kaffeevollautomaten (siehe Beschreibung)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/mikroschalter-kompatibel-mit-ersatzteil-fuer-jura-b0f1gclkx9/">Mikroschalter kompatibel mit/Ersatzteil für Jura 66623 Kaffeevollautomaten (siehe Beschreibung)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 4.5</span>
-        <span class="chip">OEM Passgenau</span>
-      </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/mikroschalter-kompatibel-mit-ersatzteil-fuer-jura-b0f1gclkx9/" class="btn-card-details">Details ansehen ›</a>
       </div>
     </div>
-  </div>
+  </article>
 
-  <div class="prod-card">
-    <a href="https://kaffeereparatur.github.io/jura/kaffee-auslauf-aufsatz-einzel-doppel-design-siebtr-b0fl2ybbry/" class="prod-card-thumb-link">
-      <img src="https://m.media-amazon.com/images/I/51pd2Hq2IKL._AC_SL1500_.jpg" alt="Kaffee-Auslauf-Aufsatz, Einzel-Doppel-Design, Siebträger-Teil, Edelstahl-Konstruktion, kompatibel mit E61-Gruppenkopf, 58 mm, 54 mm, 53 mm, 51 mm (einzeln)" class="prod-card-thumb" loading="lazy" onerror="this.style.opacity='0.8'">
+  <article class="card">
+    <a class="ph" href="https://kaffeereparatur.github.io/jura/kaffee-auslauf-aufsatz-einzel-doppel-design-siebtr-b0fl2ybbry/">
+      <img src="https://m.media-amazon.com/images/I/51pd2Hq2IKL._AC_SL1500_.jpg" alt="Kaffee-Auslauf-Aufsatz, Einzel-Doppel-Design, Siebträger-Teil, Edelstahl-Konstruktion, kompatibel mit E61-Gruppenkopf, 58 mm, 54 mm, 53 mm, 51 mm (einzeln)" width="400" height="400" loading="lazy" decoding="async">
     </a>
-    <div class="prod-card-body">
-      <div class="prod-card-badges">
-        <span class="badge-brand">Jura</span>
-        <span class="badge-cat">Kaffeeauslauf &amp; Verteiler</span>
-      </div>
-      <h3 class="prod-card-title">
-        <a href="https://kaffeereparatur.github.io/jura/kaffee-auslauf-aufsatz-einzel-doppel-design-siebtr-b0fl2ybbry/">Kaffee-Auslauf-Aufsatz, Einzel-Doppel-Design, Siebträger-Teil, Edelstahl-Konstruktion, kompatibel mit E61-Gruppenkopf, 58 mm, 54 mm, 53 mm, 51 mm (einzeln)</a>
-      </h3>
-      <div class="prod-card-chips">
+    <div class="body">
+      <p class="bd">Jura</p>
+      <h3><a href="https://kaffeereparatur.github.io/jura/kaffee-auslauf-aufsatz-einzel-doppel-design-siebtr-b0fl2ybbry/">Kaffee-Auslauf-Aufsatz, Einzel-Doppel-Design, Siebträger-Teil, Edelstahl-Konstruktion, kompatibel mit E61-Gruppenkopf, 58 mm, 54 mm, 53 mm, 51 mm (einzeln)</a></h3>
+      <div class="chips">
+        <span class="chip">Kaffeeauslauf &amp; Verteiler</span>
         <span class="chip">★ 5</span>
-        <span class="chip">OEM Passgenau</span>
       </div>
-      <div class="prod-card-footer">
-        <a href="https://kaffeereparatur.github.io/jura/kaffee-auslauf-aufsatz-einzel-doppel-design-siebtr-b0fl2ybbry/" class="btn-card-details">Details ansehen ›</a>
+    </div>
+  </article>
       </div>
+    </div>
+  </section>
+</main>
+
+
+<footer>
+  <div class="wrap fcols">
+    <div>
+      <h2>KaffeeReparatur.de</h2>
+      <p style="font-size:.88rem; line-height:1.6; color:#A9BDB2;">
+        Unabhängiges deutsches Expertenportal für mechatronische Kaffeevollautomaten-Reparatur, Explosionszeichnungen und Original-Ersatzteilidentifikation.
+      </p>
+    </div>
+    <div>
+      <h2>Führende Hersteller</h2>
+      <ul>
+        <li><a href="https://kaffeereparatur.github.io/delonghi/">De'Longhi Ersatzteile</a></li>
+        <li><a href="https://kaffeereparatur.github.io/siemens/">Siemens EQ-Serie</a></li>
+        <li><a href="https://kaffeereparatur.github.io/jura/">Jura Impressa &amp; E-Serie</a></li>
+        <li><a href="https://kaffeereparatur.github.io/philips/">Philips LatteGo &amp; Saeco</a></li>
+        <li><a href="https://kaffeereparatur.github.io/bosch/">Bosch VeroBar &amp; VeroCup</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Top Baugruppen-Silos</h2>
+      <ul>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/">Brühgruppen &amp; Dichtungen</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/">15-Bar Ulka Pumpen</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/">Mahlwerke &amp; Mahlkegel</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/">Drainageventile</a></li>
+        <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/">Milchsysteme &amp; Karaffen</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Transparenz &amp; Hinweis</h2>
+      <p style="font-size:.82rem; color:#A9BDB2; line-height:1.5;">
+        Als unabhängiges Informationsportal prüfen wir Ersatzteilkompatibilitäten und verlinken auf Originalangebote führender Anbieter. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
+      </p>
     </div>
   </div>
-    </div>
-  </main>
-
-  
-  <footer style="background:#1c1917; color:#a8a29e; padding:48px 0 24px; margin-top:64px; border-top:1px solid #292524;">
-    <div class="wrap" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:32px; padding-bottom:32px;">
-      <div>
-        <div style="font-weight:800; font-size:18px; color:#ffffff; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
-          ☕ KaffeeReparatur<span style="color:#eab308;">.de</span>
-        </div>
-        <p style="font-size:13px; line-height:1.6; color:#78716c;">
-          Unabhängiges deutsches Referenz- und Reparaturportal für mechatronische Kaffeevollautomaten-Instandsetzung, Explosionszeichnungen und Original-Ersatzteilidentifikation.
-        </p>
-      </div>
-
-      <div>
-        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Führende Hersteller</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:13px;">
-          <li><a href="https://kaffeereparatur.github.io/delonghi/" style="color:#a8a29e;">De'Longhi Ersatzteile &amp; Guides</a></li>
-          <li><a href="https://kaffeereparatur.github.io/siemens/" style="color:#a8a29e;">Siemens EQ-Serie Reparatur</a></li>
-          <li><a href="https://kaffeereparatur.github.io/jura/" style="color:#a8a29e;">Jura Impressa &amp; E-Serie</a></li>
-          <li><a href="https://kaffeereparatur.github.io/philips/" style="color:#a8a29e;">Philips LatteGo &amp; Saeco</a></li>
-          <li><a href="https://kaffeereparatur.github.io/bosch/" style="color:#a8a29e;">Bosch VeroBar &amp; VeroCup</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Top Baugruppen-Silos</div>
-        <ul style="list-style:none; display:flex; flex-direction:column; gap:8px; font-size:13px;">
-          <li><a href="https://kaffeereparatur.github.io/kategorie/bruehgruppe/" style="color:#a8a29e;">Brühgruppen &amp; Dichtungen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/vibrationspumpe/" style="color:#a8a29e;">15-Bar Ulka Pumpen &amp; Hydraulik</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/mahlwerk/" style="color:#a8a29e;">Mahlwerke &amp; Mahlkegel</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/drainageventil/" style="color:#a8a29e;">Drainageventile &amp; Kappen</a></li>
-          <li><a href="https://kaffeereparatur.github.io/kategorie/milchsystem/" style="color:#a8a29e;">Milchsysteme &amp; Karaffen</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div style="font-weight:700; color:#ffffff; font-size:14px; margin-bottom:12px;">Hinweis &amp; Transparenz</div>
-        <p style="line-height:1.5; color:#78716c; font-size:12px;">
-          Als unabhängiges Informationsportal prüfen wir Ersatzteilkompatibilitäten und verlinken auf Originalangebote führender Anbieter. Alle Preis- und Verfügbarkeitsangaben ohne Gewähr.
-        </p>
-      </div>
-    </div>
-    <div class="wrap" style="border-top:1px solid #292524; padding-top:20px; text-align:center; font-size:12px; color:#57534e;">
-      © 2026 KaffeeReparatur.de. Alle Rechte vorbehalten. Unabhängiges Reparatur- und Informationsportal.
-    </div>
-  </footer>
-  <script src="https://kaffeereparatur.github.io/instant-search.js" defer></script>
+  <div class="wrap fbot">
+    © 2026 KaffeeReparatur.de. Alle Rechte vorbehalten. Unabhängiges Reparatur- und Informationsportal.
+  </div>
+</footer>
+<script src="https://kaffeereparatur.github.io/instant-search.js" defer></script>
 </body>
 </html>
