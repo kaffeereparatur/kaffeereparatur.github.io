@@ -677,84 +677,91 @@ body.header-hidden .p-sidebar {
   background: var(--wash);
 }
 
-/* Modern Accordions (Clean Rounded Panels + Smooth Icon Rotation) */
+/* Modern Accordions (Single Active, Smooth 60fps Grid Animation) */
 .faq {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
-.faq details {
+.faq-item {
   background: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
-.faq details:hover {
-  border-color: rgba(31, 77, 58, 0.35);
-  box-shadow: 0 4px 16px rgba(21, 32, 27, 0.05);
+.faq-item:hover {
+  border-color: rgba(31, 77, 58, 0.4);
 }
-.faq details[open] {
+.faq-item.is-open {
   border-color: var(--pine);
   box-shadow: 0 4px 20px rgba(31, 77, 58, 0.08);
 }
-.faq summary {
-  cursor: pointer;
-  padding: 16px 20px;
-  font-weight: 600;
-  color: var(--ink);
-  font-size: 1.02rem;
-  line-height: 1.4;
-  list-style: none;
+.faq-btn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
-  user-select: none;
-  transition: color 0.15s ease, background 0.15s ease;
+  gap: 16px;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  transition: color 0.15s ease, background-color 0.2s ease;
 }
-.faq summary::-webkit-details-marker,
-.faq summary::marker {
-  display: none !important;
-}
-.faq summary:hover {
-  color: var(--pine);
-}
-.faq details[open] summary {
+.faq-item.is-open .faq-btn {
   color: var(--pine);
   font-weight: 700;
   background: var(--wash);
   border-bottom: 1px solid var(--rule);
 }
-.faq .faq-q {
+.faq-q {
   flex: 1;
 }
-.faq .faq-icon {
-  width: 26px;
-  height: 26px;
+.faq-icon {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: rgba(31, 77, 58, 0.08);
+  color: var(--pine);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--pine);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, color 0.25s ease;
 }
-.faq details[open] .faq-icon {
+.faq-item.is-open .faq-icon {
   transform: rotate(180deg);
   background: var(--pine);
   color: #ffffff;
 }
-.faq .faq-body {
-  padding: 16px 20px 18px;
+/* Modern CSS Grid 60fps collapse/expand transition */
+.faq-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-item.is-open .faq-collapse {
+  grid-template-rows: 1fr;
+}
+.faq-collapse-inner {
+  overflow: hidden;
+}
+.faq-body {
+  padding: 16px 20px 20px;
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--body);
   background: #ffffff;
 }
-.faq .faq-body p {
+.faq-body p {
   margin: 0;
 }
 .disc{background:var(--wash);border-left:3px solid var(--oak);
@@ -1117,7 +1124,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822741697">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792823338365">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Waterdrop Wasserfilter","sku":"B09CYZ859M","brand":{"@type":"Brand","name":"Jura"},"description":"Waterdrop Wasserfilter Kompatibel mit 71312 Blue für Jura-Maschinen. TÜV SÜD-zertifizierte Lebensmittelqualität, reduziert Chlor, Kalk und Verunreinigungen. Perfekte Dichtung, lange Lebensdauer und frisches Kaffee-Aroma. 100% kompatibel mit Impressa, C5, C60 und mehr - keine Smart-Erweiterung. Jetzt bestellen!","image":["https://m.media-amazon.com/images/I/61vtLvccxVL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71hpipmlJEL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71MM5PEjcsL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61y2j9i6uFL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61RcOT3jNuL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61c2Qt+CLWL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71kAIdL-HCL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/81NAs4Ub0XL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61T3uhHEa7L._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/jura/waterdrop-wasserfilter-kompatibel-mit-blue-71312-b-b09cyz859m/"}</script>
 </head>
 <body>
@@ -1395,46 +1402,58 @@ footer a:hover{text-decoration:underline}
             </div>
           </div>
 
-          <!-- Section: FAQ -->
+          <!-- Section: Modern FAQ Accordion (Strictly Single Active) -->
           <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
             <h2>Häufige Fragen (FAQ)</h2>
-            <div class="faq" style="margin-top:14px;">
+            <div class="faq" style="margin-top:16px;" role="region" aria-label="Häufige Fragen">
               
-                <details name="prod-faq" open>
-                  <summary>
+                <div class="faq-item is-open">
+                  <button type="button" class="faq-btn" aria-expanded="true">
                     <span class="faq-q">Ist der Waterdrop Filter 71312 Blue kompatibel mit der Smart-Erweiterung?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Nein, der Waterdrop Wasserfilter ist ausschließlich für die klassischen Jura-Modelle wie Impressa A1 bis C75 und F50 vorgesehen und darf nicht mit der Smart-Erweiterung kombiniert werden, da die mechanische Schnittstelle nicht übereinstimmt.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Nein, der Waterdrop Wasserfilter ist ausschließlich für die klassischen Jura-Modelle wie Impressa A1 bis C75 und F50 vorgesehen und darf nicht mit der Smart-Erweiterung kombiniert werden, da die mechanische Schnittstelle nicht übereinstimmt.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Wie oft muss der Filter gewechselt werden?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Der Wechsel erfolgt alle zwei Monate oder nach maximal 100 Litern Nutzung, je nachdem, was zuerst eintritt, um eine gleichbleibende Reduktionsleistung zu gewährleisten.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Der Wechsel erfolgt alle zwei Monate oder nach maximal 100 Litern Nutzung, je nachdem, was zuerst eintritt, um eine gleichbleibende Reduktionsleistung zu gewährleisten.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Welche Modelle sind mit diesem Filter voll kompatibel?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Voll kompatibel sind die Impressa-Serien A1, A5, A7, A9, C5, C50, C55, C60, C65, C70, C75, C9 und F50 sowie alle vergleichbaren Jura-Impressa-Modelle ohne Smart-Erweiterung.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Voll kompatibel sind die Impressa-Serien A1, A5, A7, A9, C5, C50, C55, C60, C65, C70, C75, C9 und F50 sowie alle vergleichbaren Jura-Impressa-Modelle ohne Smart-Erweiterung.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
             </div>
           </div>
@@ -1745,6 +1764,6 @@ footer a:hover{text-decoration:underline}
   }, { passive: true });
 })();
 </script>
-<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822741697" defer></script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792823338365" defer></script>
 </body>
 </html>

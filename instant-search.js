@@ -235,21 +235,31 @@
       }, { passive: true });
     }
 
-    // 4. Modern Exclusive FAQ Accordions Fallback (Only one remains open)
+    // 4. Modern Exclusive Accordions: Strictly one remains open at all times
     document.addEventListener('click', function(e) {
-      var summary = e.target.closest('.faq summary');
-      if (!summary) return;
-      var clickedDetails = summary.parentElement;
-      var container = clickedDetails.closest('.faq');
+      var btn = e.target.closest('.faq-btn');
+      if (!btn) return;
+      var item = btn.closest('.faq-item');
+      var container = item.closest('.faq');
       if (!container) return;
 
-      if (!clickedDetails.open) {
-        container.querySelectorAll('details').forEach(function(d) {
-          if (d !== clickedDetails && d.open) {
-            d.open = false;
-          }
-        });
+      // STRICT REQUIREMENT: If this item is ALREADY open, do not close it! It remains open!
+      if (item.classList.contains('is-open')) {
+        return;
       }
+
+      // Close all other items in this accordion container
+      container.querySelectorAll('.faq-item').forEach(function(other) {
+        if (other !== item) {
+          other.classList.remove('is-open');
+          var otherBtn = other.querySelector('.faq-btn');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Open the clicked item
+      item.classList.add('is-open');
+      btn.setAttribute('aria-expanded', 'true');
     });
   })();
   

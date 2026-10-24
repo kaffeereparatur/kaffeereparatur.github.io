@@ -677,84 +677,91 @@ body.header-hidden .p-sidebar {
   background: var(--wash);
 }
 
-/* Modern Accordions (Clean Rounded Panels + Smooth Icon Rotation) */
+/* Modern Accordions (Single Active, Smooth 60fps Grid Animation) */
 .faq {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
-.faq details {
+.faq-item {
   background: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
-.faq details:hover {
-  border-color: rgba(31, 77, 58, 0.35);
-  box-shadow: 0 4px 16px rgba(21, 32, 27, 0.05);
+.faq-item:hover {
+  border-color: rgba(31, 77, 58, 0.4);
 }
-.faq details[open] {
+.faq-item.is-open {
   border-color: var(--pine);
   box-shadow: 0 4px 20px rgba(31, 77, 58, 0.08);
 }
-.faq summary {
-  cursor: pointer;
-  padding: 16px 20px;
-  font-weight: 600;
-  color: var(--ink);
-  font-size: 1.02rem;
-  line-height: 1.4;
-  list-style: none;
+.faq-btn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
-  user-select: none;
-  transition: color 0.15s ease, background 0.15s ease;
+  gap: 16px;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  transition: color 0.15s ease, background-color 0.2s ease;
 }
-.faq summary::-webkit-details-marker,
-.faq summary::marker {
-  display: none !important;
-}
-.faq summary:hover {
-  color: var(--pine);
-}
-.faq details[open] summary {
+.faq-item.is-open .faq-btn {
   color: var(--pine);
   font-weight: 700;
   background: var(--wash);
   border-bottom: 1px solid var(--rule);
 }
-.faq .faq-q {
+.faq-q {
   flex: 1;
 }
-.faq .faq-icon {
-  width: 26px;
-  height: 26px;
+.faq-icon {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: rgba(31, 77, 58, 0.08);
+  color: var(--pine);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--pine);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, color 0.25s ease;
 }
-.faq details[open] .faq-icon {
+.faq-item.is-open .faq-icon {
   transform: rotate(180deg);
   background: var(--pine);
   color: #ffffff;
 }
-.faq .faq-body {
-  padding: 16px 20px 18px;
+/* Modern CSS Grid 60fps collapse/expand transition */
+.faq-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-item.is-open .faq-collapse {
+  grid-template-rows: 1fr;
+}
+.faq-collapse-inner {
+  overflow: hidden;
+}
+.faq-body {
+  padding: 16px 20px 20px;
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--body);
   background: #ffffff;
 }
-.faq .faq-body p {
+.faq-body p {
   margin: 0;
 }
 .disc{background:var(--wash);border-left:3px solid var(--oak);
@@ -1117,7 +1124,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822741697">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792823338365">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"2X Milchansaugrohre DeLonghi 5313232961 + Reinigungsbürste | Autentica Dinamica","sku":"B0FVJQD54G","brand":{"@type":"Brand","name":"DeLonghi"},"description":"2X Milchansaugrohre passend für DeLonghi 5313232961 inklusive MDS-Pro Reinigungsbürste. Kompatibel mit Autentica, Dinamica, Eletta, Primadonna, ECAM- und ETAM-Modellen. Perfekte, hygienische Milchzufuhr und einfache Reinigung für maximalen Milchschaum. Langlebig und passgenau. 5 Sterne von 272 Käufern.","image":["https://m.media-amazon.com/images/I/41Ug7x4dioL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/41A3Y+3wGOL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/41b1GQXRXFL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/418SIrslUHL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/41-U32BzzuL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/41QTZSsXaCL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/31BFFy4+BvL._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/delonghi/2x-milchansaugrohre-passend-fuer-delonghi-53132329-b0fvjqd54g/"}</script>
 </head>
 <body>
@@ -1413,46 +1420,58 @@ footer a:hover{text-decoration:underline}
             </div>
           </div>
 
-          <!-- Section: FAQ -->
+          <!-- Section: Modern FAQ Accordion (Strictly Single Active) -->
           <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
             <h2>Häufige Fragen (FAQ)</h2>
-            <div class="faq" style="margin-top:14px;">
+            <div class="faq" style="margin-top:16px;" role="region" aria-label="Häufige Fragen">
               
-                <details name="prod-faq" open>
-                  <summary>
+                <div class="faq-item is-open">
+                  <button type="button" class="faq-btn" aria-expanded="true">
                     <span class="faq-q">Sind die Milchansaugrohre 2X DeLonghi 5313232961 originalgetreu kompatibel?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Ja, die Rohre sind exakt passend zu DeLonghi 5313232961 mit originalen Maßen, Materialien und Verbindungstechnik. Sie funktionieren identisch wie das Originalteil und sorgen für perfekte Integration in alle genannten Modelle.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Ja, die Rohre sind exakt passend zu DeLonghi 5313232961 mit originalen Maßen, Materialien und Verbindungstechnik. Sie funktionieren identisch wie das Originalteil und sorgen für perfekte Integration in alle genannten Modelle.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Wie lange halten die Rohre und die Reinigungsbürste?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Die Milchansaugrohre halten bei normaler Pflege 1–2 Jahre, je nach Nutzung und Reinigung. Die MDS-Pro Bürste ist langlebig und kann mehrere Hundert Reinigungen überstehen, solange sie pfleglich behandelt wird.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Die Milchansaugrohre halten bei normaler Pflege 1–2 Jahre, je nach Nutzung und Reinigung. Die MDS-Pro Bürste ist langlebig und kann mehrere Hundert Reinigungen überstehen, solange sie pfleglich behandelt wird.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Brauche ich spezielle Werkzeuge zum Einbau?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Nein, der Austausch ist komplett werkzeugfrei. Nur die mitgelieferte Reinigungsbürste und ein feuchtes Tuch sind hilfreich. Bei Unsicherheit einfach die genaue Anleitung oder einen Service nutzen.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Nein, der Austausch ist komplett werkzeugfrei. Nur die mitgelieferte Reinigungsbürste und ein feuchtes Tuch sind hilfreich. Bei Unsicherheit einfach die genaue Anleitung oder einen Service nutzen.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
             </div>
           </div>
@@ -1763,6 +1782,6 @@ footer a:hover{text-decoration:underline}
   }, { passive: true });
 })();
 </script>
-<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822741697" defer></script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792823338365" defer></script>
 </body>
 </html>

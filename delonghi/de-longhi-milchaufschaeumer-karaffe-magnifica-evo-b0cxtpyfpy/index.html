@@ -677,84 +677,91 @@ body.header-hidden .p-sidebar {
   background: var(--wash);
 }
 
-/* Modern Accordions (Clean Rounded Panels + Smooth Icon Rotation) */
+/* Modern Accordions (Single Active, Smooth 60fps Grid Animation) */
 .faq {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
-.faq details {
+.faq-item {
   background: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
-.faq details:hover {
-  border-color: rgba(31, 77, 58, 0.35);
-  box-shadow: 0 4px 16px rgba(21, 32, 27, 0.05);
+.faq-item:hover {
+  border-color: rgba(31, 77, 58, 0.4);
 }
-.faq details[open] {
+.faq-item.is-open {
   border-color: var(--pine);
   box-shadow: 0 4px 20px rgba(31, 77, 58, 0.08);
 }
-.faq summary {
-  cursor: pointer;
-  padding: 16px 20px;
-  font-weight: 600;
-  color: var(--ink);
-  font-size: 1.02rem;
-  line-height: 1.4;
-  list-style: none;
+.faq-btn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
-  user-select: none;
-  transition: color 0.15s ease, background 0.15s ease;
+  gap: 16px;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  transition: color 0.15s ease, background-color 0.2s ease;
 }
-.faq summary::-webkit-details-marker,
-.faq summary::marker {
-  display: none !important;
-}
-.faq summary:hover {
-  color: var(--pine);
-}
-.faq details[open] summary {
+.faq-item.is-open .faq-btn {
   color: var(--pine);
   font-weight: 700;
   background: var(--wash);
   border-bottom: 1px solid var(--rule);
 }
-.faq .faq-q {
+.faq-q {
   flex: 1;
 }
-.faq .faq-icon {
-  width: 26px;
-  height: 26px;
+.faq-icon {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: rgba(31, 77, 58, 0.08);
+  color: var(--pine);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--pine);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, color 0.25s ease;
 }
-.faq details[open] .faq-icon {
+.faq-item.is-open .faq-icon {
   transform: rotate(180deg);
   background: var(--pine);
   color: #ffffff;
 }
-.faq .faq-body {
-  padding: 16px 20px 18px;
+/* Modern CSS Grid 60fps collapse/expand transition */
+.faq-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-item.is-open .faq-collapse {
+  grid-template-rows: 1fr;
+}
+.faq-collapse-inner {
+  overflow: hidden;
+}
+.faq-body {
+  padding: 16px 20px 20px;
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--body);
   background: #ffffff;
 }
-.faq .faq-body p {
+.faq-body p {
   margin: 0;
 }
 .disc{background:var(--wash);border-left:3px solid var(--oak);
@@ -1117,7 +1124,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822741697">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792823338365">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"De&#39;Longhi Milchaufschäumer Karaffe Magnifica Evo ECAM290.22.0 Silber","sku":"B0CXTPYFPY","brand":{"@type":"Brand","name":"DeLonghi"},"description":"Original De&#39;Longhi Milchaufschäumer Karaffe für Magnifica Evo ECAM290.22.0 Silber. Kompatibel mit ECAM 220.60 bis 290.83. LatteCrema-System für cremigen Milchschaum, Selbstreinigungsfunktion und Kühlungsaufbewahrung. 100% passend, einfache Montage und Hygiene.","image":["https://m.media-amazon.com/images/I/71x1J1vv2UL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/710yV1WewmL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61xKe+m8XVL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61wE+NHLmkL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/814dpcKcnZL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71ss-R8EUzL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/617hG3t98DL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61XLSX1Y6-L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71BJ8mJrl-L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/719MSn0z1CL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71Rc4prAQdL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61xFmZI+YrL._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/delonghi/de-longhi-milchaufschaeumer-karaffe-magnifica-evo-b0cxtpyfpy/"}</script>
 </head>
 <body>
@@ -1437,58 +1444,74 @@ footer a:hover{text-decoration:underline}
             </div>
           </div>
 
-          <!-- Section: FAQ -->
+          <!-- Section: Modern FAQ Accordion (Strictly Single Active) -->
           <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
             <h2>Häufige Fragen (FAQ)</h2>
-            <div class="faq" style="margin-top:14px;">
+            <div class="faq" style="margin-top:16px;" role="region" aria-label="Häufige Fragen">
               
-                <details name="prod-faq" open>
-                  <summary>
+                <div class="faq-item is-open">
+                  <button type="button" class="faq-btn" aria-expanded="true">
                     <span class="faq-q">Ist die De&#39;Longhi Milchaufschäumer Karaffe Magnifica Evo ECAM290.22.0 Silber wirklich original und kompatibel?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Ja, es handelt sich um ein 100 % originalgetreues De&#39;Longhi-Ersatzteil (P/N: 7313268961). Es ist exakt passend an den Steam-Tube-Anschluss und kompatibel mit allen in den Highights genannten ECAM-Modellen. Die Passgenauigkeit wird von über 3377 Kunden mit 4,4 Sternen bestätigt.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Ja, es handelt sich um ein 100 % originalgetreues De&#39;Longhi-Ersatzteil (P/N: 7313268961). Es ist exakt passend an den Steam-Tube-Anschluss und kompatibel mit allen in den Highights genannten ECAM-Modellen. Die Passgenauigkeit wird von über 3377 Kunden mit 4,4 Sternen bestätigt.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Wie oft muss die Karaffe gereinigt werden und welche Pflegemittel sind geeignet?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Nach jeder Nutzung die Selbstreinigungsfunktion nutzen. Wöchentlich mit warmem Wasser und mildem Spülmittel spülen. Monatlich mit Wasserstoffperoxid-Wasser-Mischung desinfizieren. Niemals mit aggressiven Reinigern oder Kalklösern, da diese die Dichtungen (EPDM/VMQ) schädigen können.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Nach jeder Nutzung die Selbstreinigungsfunktion nutzen. Wöchentlich mit warmem Wasser und mildem Spülmittel spülen. Monatlich mit Wasserstoffperoxid-Wasser-Mischung desinfizieren. Niemals mit aggressiven Reinigern oder Kalklösern, da diese die Dichtungen (EPDM/VMQ) schädigen können.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Kann die Karaffe im Kühlschrank aufbewahrt werden und was ist die optimale Milchtemperatur?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Ja, die abnehmbare Karaffe kann bis zu 48 Stunden bei 4–6 °C im Kühlschrank gelagert werden. Für maximalen Schaum muss die Milch kalte Temperatur (5–7 °C) haben. Die Karaffe hält die Milchfrische optimal und verhindert Quellen.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Ja, die abnehmbare Karaffe kann bis zu 48 Stunden bei 4–6 °C im Kühlschrank gelagert werden. Für maximalen Schaum muss die Milch kalte Temperatur (5–7 °C) haben. Die Karaffe hält die Milchfrische optimal und verhindert Quellen.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Welche Materialien sind in der Karaffe verbaut und warum sind sie langlebig?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Verdampfer: 1.4310-Edelstahl, Gehäuse: POM mit Glasfaser, Dichtungen: EPDM (70 Shore A) und VMQ. Diese Werkstoffe sind korrosionsbeständig, hitzebeständig bis 120 °C und mechanisch robust bei Betriebsdrücken bis 2 bar.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Verdampfer: 1.4310-Edelstahl, Gehäuse: POM mit Glasfaser, Dichtungen: EPDM (70 Shore A) und VMQ. Diese Werkstoffe sind korrosionsbeständig, hitzebeständig bis 120 °C und mechanisch robust bei Betriebsdrücken bis 2 bar.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
             </div>
           </div>
@@ -1799,6 +1822,6 @@ footer a:hover{text-decoration:underline}
   }, { passive: true });
 })();
 </script>
-<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822741697" defer></script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792823338365" defer></script>
 </body>
 </html>

@@ -677,84 +677,91 @@ body.header-hidden .p-sidebar {
   background: var(--wash);
 }
 
-/* Modern Accordions (Clean Rounded Panels + Smooth Icon Rotation) */
+/* Modern Accordions (Single Active, Smooth 60fps Grid Animation) */
 .faq {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
-.faq details {
+.faq-item {
   background: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
-.faq details:hover {
-  border-color: rgba(31, 77, 58, 0.35);
-  box-shadow: 0 4px 16px rgba(21, 32, 27, 0.05);
+.faq-item:hover {
+  border-color: rgba(31, 77, 58, 0.4);
 }
-.faq details[open] {
+.faq-item.is-open {
   border-color: var(--pine);
   box-shadow: 0 4px 20px rgba(31, 77, 58, 0.08);
 }
-.faq summary {
-  cursor: pointer;
-  padding: 16px 20px;
-  font-weight: 600;
-  color: var(--ink);
-  font-size: 1.02rem;
-  line-height: 1.4;
-  list-style: none;
+.faq-btn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
-  user-select: none;
-  transition: color 0.15s ease, background 0.15s ease;
+  gap: 16px;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  transition: color 0.15s ease, background-color 0.2s ease;
 }
-.faq summary::-webkit-details-marker,
-.faq summary::marker {
-  display: none !important;
-}
-.faq summary:hover {
-  color: var(--pine);
-}
-.faq details[open] summary {
+.faq-item.is-open .faq-btn {
   color: var(--pine);
   font-weight: 700;
   background: var(--wash);
   border-bottom: 1px solid var(--rule);
 }
-.faq .faq-q {
+.faq-q {
   flex: 1;
 }
-.faq .faq-icon {
-  width: 26px;
-  height: 26px;
+.faq-icon {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: rgba(31, 77, 58, 0.08);
+  color: var(--pine);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--pine);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, color 0.25s ease;
 }
-.faq details[open] .faq-icon {
+.faq-item.is-open .faq-icon {
   transform: rotate(180deg);
   background: var(--pine);
   color: #ffffff;
 }
-.faq .faq-body {
-  padding: 16px 20px 18px;
+/* Modern CSS Grid 60fps collapse/expand transition */
+.faq-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-item.is-open .faq-collapse {
+  grid-template-rows: 1fr;
+}
+.faq-collapse-inner {
+  overflow: hidden;
+}
+.faq-body {
+  padding: 16px 20px 20px;
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--body);
   background: #ffffff;
 }
-.faq .faq-body p {
+.faq-body p {
   margin: 0;
 }
 .disc{background:var(--wash);border-left:3px solid var(--oak);
@@ -1117,7 +1124,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822741697">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792823338365">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Aqualogis AL-S002 DeLonghi Wasserfilter","sku":"B07958MK2Y","brand":{"@type":"Brand","name":"DeLonghi"},"description":"Aqualogis AL-S002 Kompatible Wasserfilterpatronen für DeLonghi ECAM ESAM ETAM Serie inkl. SER3017, DLS C002, 5513292811. Aktivkohlefilter entfernt Chlor, Schwermetalle und Kalk für saubere Rohre, besseren Kaffee und verlängerte Maschinenlebensdauer. 100% recycelbar, 3er-Set.","image":["https://m.media-amazon.com/images/I/61dE1Qqb88L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61AW2bTeNML._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/41Ut8qJYEyL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/51PIM4ll0vL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61GnKGkUn3L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/51qQOAeBacL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71NocAusRQL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/716jLWdUzVL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61HlyRqqp2L._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/delonghi/aqualogis-al-s002-wasserfilter-kompatibel-mit-delo-b07958mk2y/"}</script>
 </head>
 <body>
@@ -1433,58 +1440,74 @@ footer a:hover{text-decoration:underline}
             </div>
           </div>
 
-          <!-- Section: FAQ -->
+          <!-- Section: Modern FAQ Accordion (Strictly Single Active) -->
           <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
             <h2>Häufige Fragen (FAQ)</h2>
-            <div class="faq" style="margin-top:14px;">
+            <div class="faq" style="margin-top:16px;" role="region" aria-label="Häufige Fragen">
               
-                <details name="prod-faq" open>
-                  <summary>
+                <div class="faq-item is-open">
+                  <button type="button" class="faq-btn" aria-expanded="true">
                     <span class="faq-q">Wie oft muss der Aqualogis AL-S002 Wasserfilter gewechselt werden?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Bei normaler Nutzung alle 30 Tage, bei sehr hartem Leitungswasser alle 20–25 Tage. Der Filter hat eine Kapazität von ca. 150 Liter.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Bei normaler Nutzung alle 30 Tage, bei sehr hartem Leitungswasser alle 20–25 Tage. Der Filter hat eine Kapazität von ca. 150 Liter.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Passt der Filter auch zu den neueren ECAM-Modellen wie ECAM 45.760.W?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Ja, der Aqualogis AL-S002 ist exakt kompatibel mit allen aktuellen ECAM-, ESAM- und ETAM-Serienmodelle wie ECAM 45.760.W Eletta Cappuccino Top und ECAM 44.660.B Eletta Cappuccino.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Ja, der Aqualogis AL-S002 ist exakt kompatibel mit allen aktuellen ECAM-, ESAM- und ETAM-Serienmodelle wie ECAM 45.760.W Eletta Cappuccino Top und ECAM 44.660.B Eletta Cappuccino.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Ist der Filter 100 % recycelbar?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Ja, die gesamte Filterpatrone und Verpackung sind zu 100 % recycelbar. Die Aktivkohle wird vollständig recycelt und das POM-Gehäuse ist thermoplastisch recycelbar.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Ja, die gesamte Filterpatrone und Verpackung sind zu 100 % recycelbar. Die Aktivkohle wird vollständig recycelt und das POM-Gehäuse ist thermoplastisch recycelbar.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Kann ich den Filter selbst ausbauen?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Ja, der Wechsel dauert exakt 60 Sekunden und erfordert keine Werkzeuge. Der Prozess ist für jeden Heimwerker einfach nachzuvollziehen.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Ja, der Wechsel dauert exakt 60 Sekunden und erfordert keine Werkzeuge. Der Prozess ist für jeden Heimwerker einfach nachzuvollziehen.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
             </div>
           </div>
@@ -1795,6 +1818,6 @@ footer a:hover{text-decoration:underline}
   }, { passive: true });
 })();
 </script>
-<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822741697" defer></script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792823338365" defer></script>
 </body>
 </html>

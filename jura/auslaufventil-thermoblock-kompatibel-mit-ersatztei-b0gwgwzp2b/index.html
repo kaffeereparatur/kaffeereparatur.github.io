@@ -677,84 +677,91 @@ body.header-hidden .p-sidebar {
   background: var(--wash);
 }
 
-/* Modern Accordions (Clean Rounded Panels + Smooth Icon Rotation) */
+/* Modern Accordions (Single Active, Smooth 60fps Grid Animation) */
 .faq {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
-.faq details {
+.faq-item {
   background: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
-.faq details:hover {
-  border-color: rgba(31, 77, 58, 0.35);
-  box-shadow: 0 4px 16px rgba(21, 32, 27, 0.05);
+.faq-item:hover {
+  border-color: rgba(31, 77, 58, 0.4);
 }
-.faq details[open] {
+.faq-item.is-open {
   border-color: var(--pine);
   box-shadow: 0 4px 20px rgba(31, 77, 58, 0.08);
 }
-.faq summary {
-  cursor: pointer;
-  padding: 16px 20px;
-  font-weight: 600;
-  color: var(--ink);
-  font-size: 1.02rem;
-  line-height: 1.4;
-  list-style: none;
+.faq-btn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
-  user-select: none;
-  transition: color 0.15s ease, background 0.15s ease;
+  gap: 16px;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  transition: color 0.15s ease, background-color 0.2s ease;
 }
-.faq summary::-webkit-details-marker,
-.faq summary::marker {
-  display: none !important;
-}
-.faq summary:hover {
-  color: var(--pine);
-}
-.faq details[open] summary {
+.faq-item.is-open .faq-btn {
   color: var(--pine);
   font-weight: 700;
   background: var(--wash);
   border-bottom: 1px solid var(--rule);
 }
-.faq .faq-q {
+.faq-q {
   flex: 1;
 }
-.faq .faq-icon {
-  width: 26px;
-  height: 26px;
+.faq-icon {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: rgba(31, 77, 58, 0.08);
+  color: var(--pine);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--pine);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, color 0.25s ease;
 }
-.faq details[open] .faq-icon {
+.faq-item.is-open .faq-icon {
   transform: rotate(180deg);
   background: var(--pine);
   color: #ffffff;
 }
-.faq .faq-body {
-  padding: 16px 20px 18px;
+/* Modern CSS Grid 60fps collapse/expand transition */
+.faq-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-item.is-open .faq-collapse {
+  grid-template-rows: 1fr;
+}
+.faq-collapse-inner {
+  overflow: hidden;
+}
+.faq-body {
+  padding: 16px 20px 20px;
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--body);
   background: #ffffff;
 }
-.faq .faq-body p {
+.faq-body p {
   margin: 0;
 }
 .disc{background:var(--wash);border-left:3px solid var(--oak);
@@ -1117,7 +1124,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822741697">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792823338365">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Jura 66289 Thermoblock Auslaufventil Ersatzteil Pack 2 - Dichtung Passgenau","sku":"B0GWGWZP2B","brand":{"@type":"Brand","name":"Jura"},"description":"Jura 66289 Auslaufventil (Thermoblock) kompatibel - Packung mit 2 in Erstausrüster-Qualität. Perfekte Passform, hohe Dichtigkeit und zuverlässige Leistung bei Jura Kaffeevollautomaten. Ideal als günstiges Ersatzteil. Lieferung inkl. Anleitung.","image":["https://m.media-amazon.com/images/I/31FAH0MaaML._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/jura/auslaufventil-thermoblock-kompatibel-mit-ersatztei-b0gwgwzp2b/"}</script>
 </head>
 <body>
@@ -1354,46 +1361,58 @@ footer a:hover{text-decoration:underline}
             </div>
           </div>
 
-          <!-- Section: FAQ -->
+          <!-- Section: Modern FAQ Accordion (Strictly Single Active) -->
           <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
             <h2>Häufige Fragen (FAQ)</h2>
-            <div class="faq" style="margin-top:14px;">
+            <div class="faq" style="margin-top:16px;" role="region" aria-label="Häufige Fragen">
               
-                <details name="prod-faq" open>
-                  <summary>
+                <div class="faq-item is-open">
+                  <button type="button" class="faq-btn" aria-expanded="true">
                     <span class="faq-q">Welche Werkstoffe sind im Auslaufventil für Jura 66289 enthalten?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Der Gehäusekörper ist aus 1.4310 Edelstahl, Dichtelemente aus VMQ-Silikon und Gleitflächen aus POM. Diese Materialien sorgen für hervorragende Resistenz gegen Temperatur, Druck und Chemikalien in der Kaffeeverarbeitung.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Der Gehäusekörper ist aus 1.4310 Edelstahl, Dichtelemente aus VMQ-Silikon und Gleitflächen aus POM. Diese Materialien sorgen für hervorragende Resistenz gegen Temperatur, Druck und Chemikalien in der Kaffeeverarbeitung.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Kann ich das Ventil mit Original-Jura-Öl oder einem Dichtmittel behandeln?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Ja, eine dünne Schicht hochwertiges Jura-Öl oder PTFE-Mittel an den Dichtflächen verbessert die Lebensdauer. Achten Sie jedoch darauf, keine Fettstoffe auf die Kolben zu bringen, da diese die Gleitfähigkeit beeinträchtigen könnten.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Ja, eine dünne Schicht hochwertiges Jura-Öl oder PTFE-Mittel an den Dichtflächen verbessert die Lebensdauer. Achten Sie jedoch darauf, keine Fettstoffe auf die Kolben zu bringen, da diese die Gleitfähigkeit beeinträchtigen könnten.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Wie oft muss ich das Thermoblock-Ventil wechseln?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Bei normaler Nutzung alle 6-12 Monate oder nach 5000 Kaffees. Früher Wechsel ist ratsam, wenn Sie die Maschine intensiv mit Milchprodukten nutzen, da Ablagerungen die Dichtwirkung reduzieren.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Bei normaler Nutzung alle 6-12 Monate oder nach 5000 Kaffees. Früher Wechsel ist ratsam, wenn Sie die Maschine intensiv mit Milchprodukten nutzen, da Ablagerungen die Dichtwirkung reduzieren.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
             </div>
           </div>
@@ -1704,6 +1723,6 @@ footer a:hover{text-decoration:underline}
   }, { passive: true });
 })();
 </script>
-<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822741697" defer></script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792823338365" defer></script>
 </body>
 </html>

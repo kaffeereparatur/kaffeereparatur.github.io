@@ -677,84 +677,91 @@ body.header-hidden .p-sidebar {
   background: var(--wash);
 }
 
-/* Modern Accordions (Clean Rounded Panels + Smooth Icon Rotation) */
+/* Modern Accordions (Single Active, Smooth 60fps Grid Animation) */
 .faq {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 14px;
+  margin-top: 16px;
 }
-.faq details {
+.faq-item {
   background: #ffffff;
   border: 1px solid var(--rule);
   border-radius: 12px;
   overflow: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
-.faq details:hover {
-  border-color: rgba(31, 77, 58, 0.35);
-  box-shadow: 0 4px 16px rgba(21, 32, 27, 0.05);
+.faq-item:hover {
+  border-color: rgba(31, 77, 58, 0.4);
 }
-.faq details[open] {
+.faq-item.is-open {
   border-color: var(--pine);
   box-shadow: 0 4px 20px rgba(31, 77, 58, 0.08);
 }
-.faq summary {
-  cursor: pointer;
-  padding: 16px 20px;
-  font-weight: 600;
-  color: var(--ink);
-  font-size: 1.02rem;
-  line-height: 1.4;
-  list-style: none;
+.faq-btn {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
-  user-select: none;
-  transition: color 0.15s ease, background 0.15s ease;
+  gap: 16px;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  transition: color 0.15s ease, background-color 0.2s ease;
 }
-.faq summary::-webkit-details-marker,
-.faq summary::marker {
-  display: none !important;
-}
-.faq summary:hover {
-  color: var(--pine);
-}
-.faq details[open] summary {
+.faq-item.is-open .faq-btn {
   color: var(--pine);
   font-weight: 700;
   background: var(--wash);
   border-bottom: 1px solid var(--rule);
 }
-.faq .faq-q {
+.faq-q {
   flex: 1;
 }
-.faq .faq-icon {
-  width: 26px;
-  height: 26px;
+.faq-icon {
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: rgba(31, 77, 58, 0.08);
+  color: var(--pine);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--pine);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease, color 0.2s ease;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, color 0.25s ease;
 }
-.faq details[open] .faq-icon {
+.faq-item.is-open .faq-icon {
   transform: rotate(180deg);
   background: var(--pine);
   color: #ffffff;
 }
-.faq .faq-body {
-  padding: 16px 20px 18px;
+/* Modern CSS Grid 60fps collapse/expand transition */
+.faq-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.faq-item.is-open .faq-collapse {
+  grid-template-rows: 1fr;
+}
+.faq-collapse-inner {
+  overflow: hidden;
+}
+.faq-body {
+  padding: 16px 20px 20px;
   font-size: 0.95rem;
   line-height: 1.65;
   color: var(--body);
   background: #ffffff;
 }
-.faq .faq-body p {
+.faq-body p {
   margin: 0;
 }
 .disc{background:var(--wash);border-left:3px solid var(--oak);
@@ -1117,7 +1124,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792822741697">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792823338365">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"JURA CLARIS Smart+ Filterpatrone 3er-Pack mit RFID &amp; 3-Phasen-Reinigung - TÜV","sku":"B0CB913WHJ","brand":{"@type":"Brand","name":"Jura"},"description":"Original JURA CLARIS Smart+ Filterpatrone 3er-Pack (24233) mit automatischer RFID-Filtererkennung und TÜV-zertifizierten 3-Phasen-Reinigungstabletten (24225). Maximale Wasserhygiene, Kalkschutz und Kaffeequalität für alle JURA-Vollautomaten. TÜV-zertifiziert, RFID-gesteuert, 3-Phasen-Reinigung.","image":["https://m.media-amazon.com/images/I/71cdqE2osxL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61BEJCjjZAL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61sL3yZZdmL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71OyHhANh-L._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61JV22KDrOL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71IJeVvk1JL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/71iW6X2SZHL._AC_SL1500_.jpg","https://m.media-amazon.com/images/I/61f8WU1RhZL._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/jura/jura-original-claris-smart-filterpatrone-mit-autom-b0cb913whj/"}</script>
 </head>
 <body>
@@ -1443,58 +1450,74 @@ footer a:hover{text-decoration:underline}
             </div>
           </div>
 
-          <!-- Section: FAQ -->
+          <!-- Section: Modern FAQ Accordion (Strictly Single Active) -->
           <div class="card-section" id="faq" style="margin-bottom:20px; padding-top:24px; border-top:1px solid var(--rule);">
             <h2>Häufige Fragen (FAQ)</h2>
-            <div class="faq" style="margin-top:14px;">
+            <div class="faq" style="margin-top:16px;" role="region" aria-label="Häufige Fragen">
               
-                <details name="prod-faq" open>
-                  <summary>
+                <div class="faq-item is-open">
+                  <button type="button" class="faq-btn" aria-expanded="true">
                     <span class="faq-q">Wie oft muss die CLARIS Smart+ Filterpatrone gewechselt werden?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Die Kapazität beträgt je nach Wasserhärtegrad 40–65 Liter. Die RFID-Erkennung meldet automatisch Erschöpfung. Wechseln Sie die Patrone spätestens nach dieser Zeit oder bei der Meldung, um optimale Filterung und Maschinenschutz zu gewährleisten.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Die Kapazität beträgt je nach Wasserhärtegrad 40–65 Liter. Die RFID-Erkennung meldet automatisch Erschöpfung. Wechseln Sie die Patrone spätestens nach dieser Zeit oder bei der Meldung, um optimale Filterung und Maschinenschutz zu gewährleisten.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Sind die 3-Phasen-Reinigungstabletten kompatibel mit allen JURA-Modellen?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Ja, die Tabletten (24225) sind für alle JURA-Vollautomaten mit CLARIS Smart+-Kompatibilität geeignet. Sie passen exakt in den dafür vorgesehenen Bereich und wurden TÜV-zertifiziert für die Reinigung der Brüheinheit und des Auslaufs.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Ja, die Tabletten (24225) sind für alle JURA-Vollautomaten mit CLARIS Smart+-Kompatibilität geeignet. Sie passen exakt in den dafür vorgesehenen Bereich und wurden TÜV-zertifiziert für die Reinigung der Brüheinheit und des Auslaufs.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Wie funktioniert die RFID-Technologie in der CLARIS Smart+ Filterpatrone?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Der integrierte RFID-Chip sendet eine eindeutige Identifikationsnummer an den Vollautomaten. Die Maschine verifiziert die Daten, passt die Pumpenleistung an und zeigt bei Erschöpfung die Meldung an. Dadurch wird die Wasseraufbereitung immer exakt auf die Patrone abgestimmt.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Der integrierte RFID-Chip sendet eine eindeutige Identifikationsnummer an den Vollautomaten. Die Maschine verifiziert die Daten, passt die Pumpenleistung an und zeigt bei Erschöpfung die Meldung an. Dadurch wird die Wasseraufbereitung immer exakt auf die Patrone abgestimmt.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
-                <details name="prod-faq">
-                  <summary>
+                <div class="faq-item">
+                  <button type="button" class="faq-btn" aria-expanded="false">
                     <span class="faq-q">Kann ich Drittanbieter-Tabletten für die 3-Phasen-Reinigung verwenden?</span>
                     <span class="faq-icon" aria-hidden="true">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </span>
-                  </summary>
-                  <div class="faq-body">
-                    <p>Nein, nur originale JURA-Produkte garantieren die TÜV-zertifizierte Hygiene und die perfekte chemische Zusammensetzung. Drittanbieter können die Brüheinheit beschädigen oder die Garantie beeinträchtigen.</p>
+                  </button>
+                  <div class="faq-collapse">
+                    <div class="faq-collapse-inner">
+                      <div class="faq-body">
+                        <p>Nein, nur originale JURA-Produkte garantieren die TÜV-zertifizierte Hygiene und die perfekte chemische Zusammensetzung. Drittanbieter können die Brüheinheit beschädigen oder die Garantie beeinträchtigen.</p>
+                      </div>
+                    </div>
                   </div>
-                </details>
+                </div>
               
             </div>
           </div>
@@ -1805,6 +1828,6 @@ footer a:hover{text-decoration:underline}
   }, { passive: true });
 })();
 </script>
-<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792822741697" defer></script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792823338365" defer></script>
 </body>
 </html>
