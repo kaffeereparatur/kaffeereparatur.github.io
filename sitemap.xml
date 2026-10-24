@@ -4166,6 +4166,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kaffeereparatur.github.io/delonghi/eletta/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kaffeereparatur.github.io/delonghi/dedica-specialista/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -4196,6 +4202,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kaffeereparatur.github.io/siemens/eq700-eq8/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://kaffeereparatur.github.io/jura/e-serie/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -4203,6 +4215,12 @@
   </url>
   <url>
     <loc>https://kaffeereparatur.github.io/jura/impressa/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kaffeereparatur.github.io/jura/j-z-serie/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -4221,6 +4239,12 @@
   </url>
   <url>
     <loc>https://kaffeereparatur.github.io/bosch/verobar/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kaffeereparatur.github.io/bosch/verocup/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

@@ -92,36 +92,207 @@ p{margin:0 0 1.1em}
   .hero{padding:22px 0 18px}
   .hero p.sub{font-size:.99rem;line-height:1.55}
   h1{font-size:1.65rem}
-  .grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:20px 0}
-  .card h3{font-size:.86rem;line-height:1.28}
-  .card .body{padding:10px 11px 12px}
-  .chip{font-size:.64rem;padding:2px 6px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:16px 0 28px}
+  .card .ph{height:165px;min-height:165px;max-height:165px;padding:10px}
+  .card .body{padding:10px 10px 12px}
+  .card h3{font-size:.86rem;line-height:1.28;min-height:2.6em}
+  .card-action{display:none}
   .wrap{padding:0 14px}
   .nav{gap:14px;font-size:.88rem}
-  .sec{padding:26px 0}
+  .sec{padding:24px 0}
 }
 .eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
   color:var(--oak-d);font-weight:700;margin:0 0 10px}
 
 /* grid */
-.grid{display:grid;gap:22px;padding:30px 0;
-  grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
-.card{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);
-  overflow:hidden;display:flex;flex-direction:column;
-  transition:box-shadow .18s ease,transform .18s ease}
-.card:hover{box-shadow:0 6px 22px rgba(21,32,27,.09);transform:translateY(-2px)}
-.card .ph{background:#fff;aspect-ratio:1/1;display:block;
-  border-bottom:1px solid var(--rule)}
-.card .ph img{width:100%;height:100%;object-fit:contain;padding:10px}
-.card .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
-.card .bd{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--oak-d);font-weight:700;margin-bottom:5px}
-.card h3{font-size:.98rem;line-height:1.35;margin:0 0 9px}
-.card h3 a{text-decoration:none;color:var(--ink)}
-.card h3 a:hover{color:var(--pine)}
-.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:10px}
-.chip{font-size:.7rem;background:var(--wash);color:var(--stone);
-  padding:3px 8px;border-radius:99px;white-space:nowrap}
+.grid {
+  display: grid;
+  gap: 22px;
+  padding: 24px 0 40px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 0 10px 28px rgba(21, 32, 27, .09);
+  transform: translateY(-3px);
+  border-color: #cbd5e1;
+}
+.card .ph {
+  background: #ffffff;
+  width: 100%;
+  height: 240px;
+  min-height: 240px;
+  max-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--rule);
+  padding: 16px;
+  position: relative;
+}
+.card .ph img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  transition: transform .25s cubic-bezier(.16,1,.3,1);
+}
+.card:hover .ph img {
+  transform: scale(1.05);
+}
+.card .badge-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  color: var(--pine);
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.04);
+  z-index: 2;
+}
+.card .body {
+  padding: 15px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.card-brand {
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--oak-d);
+  font-weight: 700;
+}
+.card-oem {
+  font-size: .7rem;
+  color: var(--stone);
+  background: var(--wash);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+.card h3 {
+  font-size: .96rem;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  font-family: var(--f-body);
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.7em;
+}
+.card h3 a {
+  text-decoration: none;
+  color: var(--ink);
+  transition: color .15s;
+}
+.card h3 a:hover {
+  color: var(--pine);
+}
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .8rem;
+  color: var(--stone);
+  margin-bottom: 12px;
+}
+.card-rating .stars {
+  color: var(--oak);
+  font-weight: 700;
+}
+.card-rating .stock-status {
+  margin-left: auto;
+  color: #059669;
+  font-size: .74rem;
+  font-weight: 600;
+}
+.card-action {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--wash);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-cat {
+  font-size: .7rem;
+  background: var(--wash);
+  color: var(--stone);
+  padding: 3px 8px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+.card-btn {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--pine);
+  text-decoration: none;
+}
+.card:hover .card-btn {
+  color: var(--oak-d);
+}
+
+/* Listing Hero Badges & Filter Bar */
+.listing-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--wash);
+}
+.listing-metrics {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.metric-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--wash);
+  border: 1px solid var(--rule);
+  color: var(--body);
+  font-size: .76rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 99px;
+}
+.metric-pill strong {
+  color: var(--pine);
+}
 
 /* product */
 .pwrap{display:grid;gap:38px;padding:26px 0 10px;grid-template-columns:1fr}
@@ -521,7 +692,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792817402247">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792818877996">
 </head>
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -562,6 +733,14 @@ footer a:hover{text-decoration:underline}
       <p class="sub">Entdecken Sie 36 verifizierte Original- &amp; OEM-Ersatzteile für Saeco Kaffeevollautomaten mit technischen Einbauanleitungen und direkter Verfügbarkeitsprüfung auf Amazon.de.</p>
       
       
+
+      <div class="listing-head">
+        <div class="listing-metrics">
+          <span class="metric-pill">Verifizierte Ersatzteile: <strong>36</strong></span>
+          
+          <span class="metric-pill">Qualitätsstandard: <strong>OEM &amp; Zertifiziert</strong></span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -572,504 +751,828 @@ footer a:hover{text-decoration:underline}
         
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0h3p9q63g/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61WUEg85+IL._AC_SL1500_.jpg" alt="2x Keramik Mahlringe Mahlscheiben Saeco EP" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0h3p9q63g/">2x Keramik Mahlringe Mahlscheiben Saeco EP</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/keramik-mahlscheibe-fuer-philips-saeco-mahlwerk-gr-b0fxl78jr9/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51MXF2MhyKL._AC_SL1500_.jpg" alt="Keramik Mahlscheiben für Philips Saeco EP Serie" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/keramik-mahlscheibe-fuer-philips-saeco-mahlwerk-gr-b0fxl78jr9/">Keramik Mahlscheiben für Philips Saeco EP Serie</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.2</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.2</span>
+        <span class="reviews">(291)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2er-set-keramik-mahlscheiben-kompatibel-mit-philip-b0gxk99n9z/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/614QmkGwvcL._AC_SL1500_.jpg" alt="2er Keramik Mahlscheiben Saeco Philips 5400" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2er-set-keramik-mahlscheiben-kompatibel-mit-philip-b0gxk99n9z/">2er Keramik Mahlscheiben Saeco Philips 5400</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlscheiben-28x48x6-5-mm-mahlringe-b0h6zlmddc/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61XaztvjU+L._AC_SL1500_.jpg" alt="Keramik Mahlscheiben 28x48x6,5 mm Saeco" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlscheiben-28x48x6-5-mm-mahlringe-b0h6zlmddc/">Keramik Mahlscheiben 28x48x6,5 mm Saeco</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/keramik-mahlringe-mahlscheiben-fuer-philips-saeco-b0gczfy1km/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61Pdt4H6z7L._AC_SL1500_.jpg" alt="Keramik Mahlringe Mahlscheiben Philips Saeco" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/keramik-mahlringe-mahlscheiben-fuer-philips-saeco-b0gczfy1km/">Keramik Mahlringe Mahlscheiben Philips Saeco</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/sophisticate-kaffeemaschine-mahlsteine-aus-keramik-b0gd78xqrt/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61ZmhmGqOZL._AC_SL1500_.jpg" alt="Sophisticate Keramik Mahlsteine" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/sophisticate-kaffeemaschine-mahlsteine-aus-keramik-b0gd78xqrt/">Sophisticate Keramik Mahlsteine</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.8</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.8</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/kenekos-2x-mahlwerk-v5-geeignet-fuer-jura-impressa-b0b14xym35/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51kVQINOC9S._AC_SL1500_.jpg" alt="Kenekos Mahlwerk V5 kompatibel Jura Impressa" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/kenekos-2x-mahlwerk-v5-geeignet-fuer-jura-impressa-b0b14xym35/">Kenekos Mahlwerk V5 kompatibel Jura Impressa</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/40mm-kaffeemuehlen-mahlscheiben-set-metall-ersatzt-b0fh4vv4b8/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51k2LMGLBJL._AC_SL1500_.jpg" alt="40mm Saeco Mahlscheiben-Set Metall" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/40mm-kaffeemuehlen-mahlscheiben-set-metall-ersatzt-b0fh4vv4b8/">40mm Saeco Mahlscheiben-Set Metall</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(3287)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlscheibe-kompatibel-mit-philip-b0gft5p9w7/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51ntJy-ew6L._AC_SL1500_.jpg" alt="Keramik Mahlscheibe 2 Stück" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlscheibe-kompatibel-mit-philip-b0gft5p9w7/">Keramik Mahlscheibe 2 Stück</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlring-mahlscheibe-hochwertige-b0h35vl2j6/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51VOWdtRFRL._AC_SL1500_.jpg" alt="Keramik Mahlring Mahlscheibe 2er Set Saeco" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlring-mahlscheibe-hochwertige-b0h35vl2j6/">Keramik Mahlring Mahlscheibe 2er Set Saeco</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2er-pack-keramik-mahlring-mahlscheiben-28-x-48-x-6-b0gs9s9ln6/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51tHsbQG3TL._AC_SL1500_.jpg" alt="Keramik-Mahlring 28x48x6,40mm 2er-Pack Saeco" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2er-pack-keramik-mahlring-mahlscheiben-28-x-48-x-6-b0gs9s9ln6/">Keramik-Mahlring 28x48x6,40mm 2er-Pack Saeco</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2x-keramik-mahlscheibe-kaffeevollautomat-mit-mahlw-b0gp2tg53w/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61OGXsuW-EL._AC_SL1500_.jpg" alt="2x Keramik Mahlscheibe 146520100 für Philips" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">146520100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2x-keramik-mahlscheibe-kaffeevollautomat-mit-mahlw-b0gp2tg53w/">2x Keramik Mahlscheibe 146520100 für Philips</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlring-mahlscheibe-fuer-philips-sa-b0g4l9wsqy/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61pVRkPfyOL._AC_SL1500_.jpg" alt="Keramik Mahlring Mahlscheibe 2 Stk. für Saeco" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2-stk-keramik-mahlring-mahlscheibe-fuer-philips-sa-b0g4l9wsqy/">Keramik Mahlring Mahlscheibe 2 Stk. für Saeco</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0g5n91p85/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61ANDgaHHbL._AC_SL1500_.jpg" alt="Keramik Mahlringe Mahlscheiben Saeco Philips" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0g5n91p85/">Keramik Mahlringe Mahlscheiben Saeco Philips</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0gtpxfzxz/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/518ClJkIr4L._AC_SL1500_.jpg" alt="Keramik Mahlringe Mahlscheiben Saeco Gaggia EP" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2-stueck-keramik-mahlringe-mahlscheiben-fuer-phili-b0gtpxfzxz/">Keramik Mahlringe Mahlscheiben Saeco Gaggia EP</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.2</span>
+        <span class="reviews">(18)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-2x-keramik-mahlscheibe-28-x-48-fu-b0cg3qthsq/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61eCd6Zfi3L._AC_SL1500_.jpg" alt="Snapworld 2x Keramik Mahlscheibe 28x48" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-2x-keramik-mahlscheibe-28-x-48-fu-b0cg3qthsq/">Snapworld 2x Keramik Mahlscheibe 28x48</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.2</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.2</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/saeco-keramik-mahlscheibe-48x28-b008w821sq/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/31pWdlpUEzS._AC_SL1500_.jpg" alt="Saeco Keramik Mahlscheibe 48x28" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/saeco-keramik-mahlscheibe-48x28-b008w821sq/">Saeco Keramik Mahlscheibe 48x28</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-6-0-mm-bohrung-kompa-b08zzsgrh5/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/91RYMV+-gIL._AC_SL1500_.jpg" alt="Wolfcut INOX Lochscheibe Gr. 8-6,0 mm Bohrung" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-6-0-mm-bohrung-kompa-b08zzsgrh5/">Wolfcut INOX Lochscheibe Gr. 8-6,0 mm Bohrung</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-4-5-mm-bohrung-kompa-b08zzrgryg/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/91kpEh+-OUL._AC_SL1500_.jpg" alt="Wolfcut INOX Lochscheibe Gr. 8-4,5 mm Bohrung" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/wolfcut-inox-lochscheibe-gr-8-4-5-mm-bohrung-kompa-b08zzrgryg/">Wolfcut INOX Lochscheibe Gr. 8-4,5 mm Bohrung</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.9</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.9</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/2satz-38-mm-konische-mahlscheiben-fuer-manuelle-ka-b0gx73xyn3/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/515kKZYeX-L._AC_SL1500_.jpg" alt="38mm Konische Mahlscheiben Paar Saeco" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-MW-12014</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/2satz-38-mm-konische-mahlscheiben-fuer-manuelle-ka-b0gx73xyn3/">38mm Konische Mahlscheiben Paar Saeco</a></h3>
-      <div class="chips">
-        <span class="chip">Mahlwerke &amp; Mahlkegel</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Mahlwerke &amp; Mahlkegel</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61f4pTOuz3L._AC_SL1500_.jpg" alt="Snapworld Saeco Kaffee Auslaufstutzen" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0ft8qw86z/">Snapworld Saeco Kaffee Auslaufstutzen</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61Iisqkul-L._AC_SL1500_.jpg" alt="Ancable O-Ring Dichtung Philips Saeco 7er Set" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ring-fuer-philips-saeco-7pcs-o-b0d1qdbtwr/">Ancable O-Ring Dichtung Philips Saeco 7er Set</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61rn5XLrBgL._AC_SL1500_.jpg" alt="O-Ring Dichtungssatz Supportventil Saeco" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/dichtung-wartungssatz-o-ringe-fuer-supportventil-d-b079vmx35m/">O-Ring Dichtungssatz Supportventil Saeco</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71r+CcVGfbL._AC_SL1500_.jpg" alt="Saeco 10x Dichtung Thermoblock Gaggia Siemens" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/saeco-10x-dichtung-gaggia-siemens-bosch-koenig-sol-b07ldqs3ts/">Saeco 10x Dichtung Thermoblock Gaggia Siemens</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61X+zseBu2L._AC_SL1500_.jpg" alt="Snapworld Auslaufstutzen Saeco Philips Gaggia" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-auslaufstutzen-fuer-saeco-philips-b0fnpgfzmw/">Snapworld Auslaufstutzen Saeco Philips Gaggia</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71Zeqwuhp6L._AC_SL1500_.jpg" alt="Ancable Silikon O-Ringe Saeco Philips" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/ancable-dichtung-o-ringe-fuer-philips-saeco-30pcs-b0dgfxc2mq/">Ancable Silikon O-Ringe Saeco Philips</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/714FRXNpe6L._AC_SL1500_.jpg" alt="O-Ring Dichtungen 30 Stück Saeco Philips +" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/dichtung-o-ringe-fuer-philips-kaffeevollautomat-30-b0dmdgr69r/">O-Ring Dichtungen 30 Stück Saeco Philips +</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(291)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71kAROEOADL._AC_SL1500_.jpg" alt="Saeco 17x Dichtung Thermoblock" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/saeco-17x-dichtung-fuer-tchibo-spidem-krups-solis-b07b6q3bvs/">Saeco 17x Dichtung Thermoblock</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/81AFmG8sIML._AC_SL1500_.jpg" alt="85er O-Ring Bausatz Silikon Dichtungen" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/85-stuecke-kaffeemaschinen-o-ringe-bausatz-siliko-b0fc5hcpwd/">85er O-Ring Bausatz Silikon Dichtungen</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.2</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.2</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71SpXzRSf1L._AC_SL1500_.jpg" alt="Saeco Xelsis Dichtungssatz 15 Stück + Bürsten" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/15-stueck-dichtungsringe-fuer-saeco-xelsis-dichtun-b0f4bx2hgg/">Saeco Xelsis Dichtungssatz 15 Stück + Bürsten</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(746)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61q9E2wXjLL._AC_SL1500_.jpg" alt="Snapworld Einlaufstutzen + O-Ring Philips" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/snapworld-kaffee-einlaufstutzen-o-ring-fuer-philip-b0dt7fhcpx/">Snapworld Einlaufstutzen + O-Ring Philips</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51KPjYSw20L._AC_SL1500_.jpg" alt="Wartungsset Dichtung O-Ringe Philips Saeco" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/wartungsset-dichtungssatz-o-ringe-fuer-kaffeevolla-b0glgszj98/">Wartungsset Dichtung O-Ringe Philips Saeco</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61uA159mT3L._AC_SL1500_.jpg" alt="Saeco Crema Ventil Kugel Feder Dichtung" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/saeco-set-crema-ventil-kugel-feder-dichtung-fuer-b-b07qgfmy77/">Saeco Crema Ventil Kugel Feder Dichtung</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61r2R6412YL._AC_SL1500_.jpg" alt="45 Saeco Dichtungsringe + Reinigungsset" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/45-stueck-philips-latte-go-dichtungsringe-und-5-st-b0dxkn1cdq/">45 Saeco Dichtungsringe + Reinigungsset</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/21vlklxS5zL._AC_SL1500_.jpg" alt="Ventilstift Saeco 421944081491" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">421944081491</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/ventilstift-kompatibel-mit-ersatzteil-fuer-philips-b0cld1yhq3/">Ventilstift Saeco 421944081491</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61lQphfeJ2L._AC_SL1500_.jpg" alt="Saeco Cappuccinatore schwarz" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Saeco</p>
+      <div class="card-meta">
+        <span class="card-brand">Saeco</span>
+        <span class="card-oem">OEM-DV-62100</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/saeco/saeco-ersatzteile-cappuccinatore-schwarz-b009q13cp4/">Saeco Cappuccinatore schwarz</a></h3>
-      <div class="chips">
-        <span class="chip">Drainageventile &amp; Kappen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Drainageventile &amp; Kappen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>

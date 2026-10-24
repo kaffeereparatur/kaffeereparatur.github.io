@@ -92,36 +92,207 @@ p{margin:0 0 1.1em}
   .hero{padding:22px 0 18px}
   .hero p.sub{font-size:.99rem;line-height:1.55}
   h1{font-size:1.65rem}
-  .grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:20px 0}
-  .card h3{font-size:.86rem;line-height:1.28}
-  .card .body{padding:10px 11px 12px}
-  .chip{font-size:.64rem;padding:2px 6px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px;padding:16px 0 28px}
+  .card .ph{height:165px;min-height:165px;max-height:165px;padding:10px}
+  .card .body{padding:10px 10px 12px}
+  .card h3{font-size:.86rem;line-height:1.28;min-height:2.6em}
+  .card-action{display:none}
   .wrap{padding:0 14px}
   .nav{gap:14px;font-size:.88rem}
-  .sec{padding:26px 0}
+  .sec{padding:24px 0}
 }
 .eyebrow{font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;
   color:var(--oak-d);font-weight:700;margin:0 0 10px}
 
 /* grid */
-.grid{display:grid;gap:22px;padding:30px 0;
-  grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
-.card{background:var(--card);border:1px solid var(--rule);border-radius:var(--r);
-  overflow:hidden;display:flex;flex-direction:column;
-  transition:box-shadow .18s ease,transform .18s ease}
-.card:hover{box-shadow:0 6px 22px rgba(21,32,27,.09);transform:translateY(-2px)}
-.card .ph{background:#fff;aspect-ratio:1/1;display:block;
-  border-bottom:1px solid var(--rule)}
-.card .ph img{width:100%;height:100%;object-fit:contain;padding:10px}
-.card .body{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
-.card .bd{font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--oak-d);font-weight:700;margin-bottom:5px}
-.card h3{font-size:.98rem;line-height:1.35;margin:0 0 9px}
-.card h3 a{text-decoration:none;color:var(--ink)}
-.card h3 a:hover{color:var(--pine)}
-.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:10px}
-.chip{font-size:.7rem;background:var(--wash);color:var(--stone);
-  padding:3px 8px;border-radius:99px;white-space:nowrap}
+.grid {
+  display: grid;
+  gap: 22px;
+  padding: 24px 0 40px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 0 10px 28px rgba(21, 32, 27, .09);
+  transform: translateY(-3px);
+  border-color: #cbd5e1;
+}
+.card .ph {
+  background: #ffffff;
+  width: 100%;
+  height: 240px;
+  min-height: 240px;
+  max-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--rule);
+  padding: 16px;
+  position: relative;
+}
+.card .ph img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  transition: transform .25s cubic-bezier(.16,1,.3,1);
+}
+.card:hover .ph img {
+  transform: scale(1.05);
+}
+.card .badge-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  color: var(--pine);
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.04);
+  z-index: 2;
+}
+.card .body {
+  padding: 15px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.card-brand {
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--oak-d);
+  font-weight: 700;
+}
+.card-oem {
+  font-size: .7rem;
+  color: var(--stone);
+  background: var(--wash);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+.card h3 {
+  font-size: .96rem;
+  line-height: 1.35;
+  margin: 0 0 10px;
+  font-family: var(--f-body);
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.7em;
+}
+.card h3 a {
+  text-decoration: none;
+  color: var(--ink);
+  transition: color .15s;
+}
+.card h3 a:hover {
+  color: var(--pine);
+}
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .8rem;
+  color: var(--stone);
+  margin-bottom: 12px;
+}
+.card-rating .stars {
+  color: var(--oak);
+  font-weight: 700;
+}
+.card-rating .stock-status {
+  margin-left: auto;
+  color: #059669;
+  font-size: .74rem;
+  font-weight: 600;
+}
+.card-action {
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--wash);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-cat {
+  font-size: .7rem;
+  background: var(--wash);
+  color: var(--stone);
+  padding: 3px 8px;
+  border-radius: 99px;
+  white-space: nowrap;
+}
+.card-btn {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--pine);
+  text-decoration: none;
+}
+.card:hover .card-btn {
+  color: var(--oak-d);
+}
+
+/* Listing Hero Badges & Filter Bar */
+.listing-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--wash);
+}
+.listing-metrics {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.metric-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--wash);
+  border: 1px solid var(--rule);
+  color: var(--body);
+  font-size: .76rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 99px;
+}
+.metric-pill strong {
+  color: var(--pine);
+}
 
 /* product */
 .pwrap{display:grid;gap:38px;padding:26px 0 10px;grid-template-columns:1fr}
@@ -521,7 +692,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792817402247">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792818877996">
 </head>
 <body>
 <a class="skip" href="#main">Zum Inhalt springen</a>
@@ -560,6 +731,14 @@ footer a:hover{text-decoration:underline}
       <p class="eyebrow">Bauteil-Kategorie</p>
       <h1>Milchsysteme &amp; Karaffen für Kaffeevollautomaten</h1>
       <p class="sub">Passgenaue Originalteile, Dichtungssätze und mechatronische Instandsetzungsanleitungen für alle führenden Kaffeevollautomaten-Hersteller.</p>
+      
+      <div class="listing-head">
+        <div class="listing-metrics">
+          <span class="metric-pill">Geprüfte Bauteile: <strong>97</strong></span>
+          <span class="metric-pill">Kategorie: <strong>Milchsysteme &amp; Karaffen</strong></span>
+          <span class="metric-pill">Lieferung: <strong>Direkt via Amazon.de Prime</strong></span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -570,1358 +749,2231 @@ footer a:hover{text-decoration:underline}
         
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-lattecrema-cool-upgrade-set-dlsc032-fuer-b0f67ls1q7/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71JsSNn0Z0L._AC_SL1500_.jpg" alt="De&#39;Longhi LatteCrema Cool Upgrade Set DLSC032" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC032</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-lattecrema-cool-upgrade-set-dlsc032-fuer-b0f67ls1q7/">De&#39;Longhi LatteCrema Cool Upgrade Set DLSC032</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(2151)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-delonghi-dlsc027-milchbehaelter-as000011-b09p5d66wx/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61PLEE0fbLL._AC_SL1500_.jpg" alt="DeLonghi AS00001199 Milchbehälter DLSC027 500ml" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC027</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-delonghi-dlsc027-milchbehaelter-as000011-b09p5d66wx/">DeLonghi AS00001199 Milchbehälter DLSC027 500ml</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(18)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/milchbehaelteras00005734-dlsc029-kompatibel-mit-er-b0cbj1kw9z/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61815rR3lKL._AC_SL1500_.jpg" alt="DeLonghi Milchbehälter AS00005734" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC029</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/milchbehaelteras00005734-dlsc029-kompatibel-mit-er-b0cbj1kw9z/">DeLonghi Milchbehälter AS00005734</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.8</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.8</span>
+        <span class="reviews">(271)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-krug-milch-maschine-caff-perfecta-evo-lux-b08by2kn4x/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61qoxKiVbwL._AC_SL1500_.jpg" alt="DeLonghi LatteCrema-Krug Milch Maschine" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ESAM420</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-krug-milch-maschine-caff-perfecta-evo-lux-b08by2kn4x/">DeLonghi LatteCrema-Krug Milch Maschine</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(2451)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/spares2go-milchkaennchen-aufschaeumer-fuer-lattecr-b0fhqq2q62/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61B3ligVnZL._AC_SL1500_.jpg" alt="SPARES2GO DLSC028 Milchaufschäumer" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">SPARES2GO</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/spares2go-milchkaennchen-aufschaeumer-fuer-lattecr-b0fhqq2q62/">SPARES2GO DLSC028 Milchaufschäumer</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(5833)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchaufschaeumer-karaffe-magnifica-evo-b0cxtpyfpy/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71x1J1vv2UL._AC_SL1500_.jpg" alt="De&#39;Longhi Milchaufschäumer Karaffe Magnifica" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ECAM290</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchaufschaeumer-karaffe-magnifica-evo-b0cxtpyfpy/">De&#39;Longhi Milchaufschäumer Karaffe Magnifica</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(3377)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchbehaelter-mit-aufschaeumer-esam-690-b00upc5ezy/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71voG2+r4WL._AC_SL1500_.jpg" alt="De&#39;Longhi Milchbehälter DLSC008 ESAM6900" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchbehaelter-mit-aufschaeumer-esam-690-b00upc5ezy/">De&#39;Longhi Milchbehälter DLSC008 ESAM6900</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(267)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-primadonna-ecam-656-85-ms-656-75-ms-650-8-b08v555qvh/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61uGMP6g7VL._AC_SL1500_.jpg" alt="DeLonghi PrimaDonna ECAM Schutzfolien Set" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-primadonna-ecam-656-85-ms-656-75-ms-650-8-b08v555qvh/">DeLonghi PrimaDonna ECAM Schutzfolien Set</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.7</span>
+        <span class="reviews">(183)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-dlsc016-mixcarafe-fuer-kaffeevollautomate-b07hvgktx2/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/817a9kXTTLL._AC_SL1500_.jpg" alt="DeLonghi DLSC016 Mixkaraffe" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC016</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-dlsc016-mixcarafe-fuer-kaffeevollautomate-b07hvgktx2/">DeLonghi DLSC016 Mixkaraffe</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(4)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-dlsc031-milchbehaelter-as00006308-kaffeem-b0cmw1hfj7/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51f4JiaJJqL._AC_SL1500_.jpg" alt="DeLonghi DLSC031 Milchbehälter AS00006308" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC031</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-dlsc031-milchbehaelter-as00006308-kaffeem-b0cmw1hfj7/">DeLonghi DLSC031 Milchbehälter AS00006308</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(2151)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchbehaelter-fuer-primadonna-elite-650-b01eothkw8/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51DY24+SWwL._AC_SL1500_.jpg" alt="DeLonghi Milchbehälter DLSC014" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchbehaelter-fuer-primadonna-elite-650-b01eothkw8/">DeLonghi Milchbehälter DLSC014</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(220)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/vioks-milchbehaelter-kaffeemaschine-ersatz-fuer-de-b0h2hfc3rv/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71KIw1iBE-L._AC_SL1500_.jpg" alt="VIOKS Milchbehälter Ersatz DeLonghi Magnifica" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC028</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/vioks-milchbehaelter-kaffeemaschine-ersatz-fuer-de-b0h2hfc3rv/">VIOKS Milchbehälter Ersatz DeLonghi Magnifica</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(491)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/milchkaennchen-mit-schaumdeckel-fuer-kaffeemaschin-b0168ez0fg/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51fRT7Mu2rS._AC_SL1500_.jpg" alt="DeLonghi 5513296641 Milchkännchen" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ECAM35</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/milchkaennchen-mit-schaumdeckel-fuer-kaffeemaschin-b0168ez0fg/">DeLonghi 5513296641 Milchkännchen</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(6118)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/dl-pro-milchbehaelter-deckel-buerste-passend-fuer-b08qcj94qn/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71NP0PEMxlL._AC_SL1500_.jpg" alt="DL-PRO Milchbehälter Deckel Bürste" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC012</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/dl-pro-milchbehaelter-deckel-buerste-passend-fuer-b08qcj94qn/">DL-PRO Milchbehälter Deckel Bürste</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(6118)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchkaraffe-lattecrema-hot-dlsc034-as00-b0gzdrdpjq/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51xctgKdIjL._AC_SL1500_.jpg" alt="De&#39;Longhi Milchkaraffe LatteCrema Hot DLSC034" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC034</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchkaraffe-lattecrema-hot-dlsc034-as00-b0gzdrdpjq/">De&#39;Longhi Milchkaraffe LatteCrema Hot DLSC034</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(3797)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-milchbehaelter-milchkaennchen-komplett-in-b09m7sntt7/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71iYOdRyIFL._AC_SL1500_.jpg" alt="DeLonghi DLSC020 Milchbehälter inkl. Deckel" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">5513282811</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-milchbehaelter-milchkaennchen-komplett-in-b09m7sntt7/">DeLonghi DLSC020 Milchbehälter inkl. Deckel</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 1.9</span>
+      <div class="card-rating">
+        <span class="stars">★ 1.9</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchbehaelter-fuer-modell-ecam370-95-55-b07s8v9f3v/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/717NSn-wbOL._AC_SL1500_.jpg" alt="De Longhi Milchbehälter ECAM370.95 5513282281" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ECAM370</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/de-longhi-milchbehaelter-fuer-modell-ecam370-95-55-b07s8v9f3v/">De Longhi Milchbehälter ECAM370.95 5513282281</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(3317)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/scarlet-espresso-milchkaennchen-l-art-profi-fuer-l-b074khsw1q/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61fmwMsHcrL._AC_SL1500_.jpg" alt="DeLonghi L&#39;Art Profi Milchkännchen 700ml" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/scarlet-espresso-milchkaennchen-l-art-profi-fuer-l-b074khsw1q/">DeLonghi L&#39;Art Profi Milchkännchen 700ml</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.8</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.8</span>
+        <span class="reviews">(387)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-fancy-box-6er-set-thermo-glaeser-espresso-b07rz8sxwk/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51fbwDGLxxL._AC_SL1500_.jpg" alt="DeLonghi DLSC302 Thermo Gläser 6er Set" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DLSC302</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-fancy-box-6er-set-thermo-glaeser-espresso-b07rz8sxwk/">DeLonghi DLSC302 Thermo Gläser 6er Set</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.3</span>
+        <span class="reviews">(2)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/paktrade-duesenset-pc-reinigungsset-fuer-delonghi-b083lkz5ns/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61jXRUrAQpL._AC_SL1500_.jpg" alt="PakTrade Düsenset PC-Reinigungsset" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">DELONGHI</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/paktrade-duesenset-pc-reinigungsset-fuer-delonghi-b083lkz5ns/">PakTrade Düsenset PC-Reinigungsset</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 1</span>
+      <div class="card-rating">
+        <span class="stars">★ 1</span>
+        <span class="reviews">(1)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/kaffeemaschine-dampfduese-edelstahl-dampfstab-wied-b0fnzvmm8q/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61Yw9WNsoeL._AC_SL1500_.jpg" alt="Dampfdüse Edelstahl 1.4310 DeLonghi EC685" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/kaffeemaschine-dampfduese-edelstahl-dampfstab-wied-b0fnzvmm8q/">Dampfdüse Edelstahl 1.4310 DeLonghi EC685</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.9</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.9</span>
+        <span class="reviews">(587)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/edelstahl-milchschaumduese-fuer-delonghi-dedica-ec-b0gtgcw2lt/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51DV1R4IgRL._AC_SL1500_.jpg" alt="Edelstahl Milchschaumdüse für DeLonghi Dedica" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/edelstahl-milchschaumduese-fuer-delonghi-dedica-ec-b0gtgcw2lt/">Edelstahl Milchschaumdüse für DeLonghi Dedica</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.2</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.3</span>
+        <span class="reviews">(587)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/ersatz-dampflanze-set-kompatibel-mit-delonghi-dedi-b0h8sp4y1b/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/6191PcbEdLL._AC_SL1500_.jpg" alt="Ersatz Dampflanze Set DeLonghi Dedica EC685" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/ersatz-dampflanze-set-kompatibel-mit-delonghi-dedi-b0h8sp4y1b/">Ersatz Dampflanze Set DeLonghi Dedica EC685</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(1494)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-5332169300-innenrohr-milchaufschaeumer-fu-b0733cqfr2/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/31Q+s54v5lL._AC_SL1500_.jpg" alt="DeLonghi 5332169300 Innenrohr" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">5332169300</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-5332169300-innenrohr-milchaufschaeumer-fu-b0733cqfr2/">DeLonghi 5332169300 Innenrohr</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(371)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/dampfduese-for-delonghi-ec680-685-eco310-ecp3420-e-b0bf96gs42/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/81kGQR391gL._AC_SL1500_.jpg" alt="Dampfdüse Delonghi EC680 EC685 ECP3420" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ECO310</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/dampfduese-for-delonghi-ec680-685-eco310-ecp3420-e-b0bf96gs42/">Dampfdüse Delonghi EC680 EC685 ECP3420</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.2</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.2</span>
+        <span class="reviews">(77)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/rancilio-silvia-v1-v2-dampfstab-b00k49gmmw/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/41tURn1B6ML._AC_SL1500_.jpg" alt="Rancilio Silvia V1/V2 Dampfstab OEM Ersatz" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/rancilio-silvia-v1-v2-dampfstab-b00k49gmmw/">Rancilio Silvia V1/V2 Dampfstab OEM Ersatz</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(587)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/ersatzduese-fuer-ec680-effizientes-milchaufschaeum-b0g35q9gt8/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51tnVguxH+L._AC_SL1500_.jpg" alt="DeLonghi EC680 Ersatzdampfdüse 304 Edelstahl" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/ersatzduese-fuer-ec680-effizientes-milchaufschaeum-b0g35q9gt8/">DeLonghi EC680 Ersatzdampfdüse 304 Edelstahl</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.2</span>
+        <span class="reviews">(47388)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/ejoyous-dampfduese-fuer-edelstahl-dampflanze-fuer-b0cv4b6wtz/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51VJ3c78ErL._AC_SL1500_.jpg" alt="Ejoyous Dampfdüse Edelstahl für DeLonghi" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ECP3420</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/ejoyous-dampfduese-fuer-edelstahl-dampflanze-fuer-b0cv4b6wtz/">Ejoyous Dampfdüse Edelstahl für DeLonghi</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.4</span>
+        <span class="reviews">(25)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/aussen-rohr-fuer-milchaufschaeumer-kaffeevollautom-b0f5x2xgsn/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61ZkcefTB-L._AC_SL1500_.jpg" alt="Außen Rohr Milchaufschäumer 5513270219 DeLonghi" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">5513270219</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/aussen-rohr-fuer-milchaufschaeumer-kaffeevollautom-b0f5x2xgsn/">Außen Rohr Milchaufschäumer 5513270219 DeLonghi</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.2</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.2</span>
+        <span class="reviews">(7)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/capfei-dampfduese-for-de-longhi-dedica-style-ec680-b0d83p4sk2/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/81kGQR391gL._AC_SL1500_.jpg" alt="CAPFEI Dampfdüse für De&#39;Longhi Dedica" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">CAPFEI</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/capfei-dampfduese-for-de-longhi-dedica-style-ec680-b0d83p4sk2/">CAPFEI Dampfdüse für De&#39;Longhi Dedica</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.3</span>
+        <span class="reviews">(256)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/edelstahl-dampfduese-milchaufschaeumer-fuer-delong-b0gl7zlwh9/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71fvPfqMHGL._AC_SL1500_.jpg" alt="Edelstahl Dampfdüse Milchaufschäumer DeLonghi" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/edelstahl-dampfduese-milchaufschaeumer-fuer-delong-b0gl7zlwh9/">Edelstahl Dampfdüse Milchaufschäumer DeLonghi</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.4</span>
+        <span class="reviews">(12)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-milchschaumduese-aussen-5513270219-ecam21-b074j9qtd6/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71iqan9SueL._AC_SL1500_.jpg" alt="DeLonghi Milchschaumdüse außen 5513270219" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">5513270219</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-milchschaumduese-aussen-5513270219-ecam21-b074j9qtd6/">DeLonghi Milchschaumdüse außen 5513270219</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.8</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.8</span>
+        <span class="reviews">(371)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-dampfhahn-mit-rohr-und-du-b0f6vwgpls/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/512j5rF+YML._AC_SL1500_.jpg" alt="LUTH Dampfhahn mit Rohr Düse DeLonghi" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">7313216621</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-dampfhahn-mit-rohr-und-du-b0f6vwgpls/">LUTH Dampfhahn mit Rohr Düse DeLonghi</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.8</span>
+        <span class="reviews">(6)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-milchbehaelter-kompatibel-b0cldxrtfq/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61MU+lpwFEL._AC_SL1500_.jpg" alt="LUTH Premium Profi Parts Milchbehälter" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">5513294531</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/luth-premium-profi-parts-milchbehaelter-kompatibel-b0cldxrtfq/">LUTH Premium Profi Parts Milchbehälter</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(491)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/delonghi-5313221171-aussenrohr-milchaufschaeumer-f-b07p8qjfdf/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71txQw10wBL._AC_SL1500_.jpg" alt="DeLonghi 5313221171 Außenrohr Milchaufschäumer" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">5313221171</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/delonghi-5313221171-aussenrohr-milchaufschaeumer-f-b07p8qjfdf/">DeLonghi 5313221171 Außenrohr Milchaufschäumer</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(262)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/ancable-2x-milchansaugrohr-fuer-delonghi-ecam-etam-b0dwf47t4p/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61ZFgACYT6L._AC_SL1500_.jpg" alt="Ancable 2x Milchansaugrohr 15,7cm DeLonghi" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">5313232961</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/ancable-2x-milchansaugrohr-fuer-delonghi-ecam-etam-b0dwf47t4p/">Ancable 2x Milchansaugrohr 15,7cm DeLonghi</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(491)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/fockety-kaffeemaschinenduese-304-edelstahl-kaffeem-b0cf58t3q5/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51Z1iyxsACL._AC_SL1500_.jpg" alt="Fockety Kaffeemaschinendüse 304 Edelstahl" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ECP3420</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/fockety-kaffeemaschinenduese-304-edelstahl-kaffeem-b0cf58t3q5/">Fockety Kaffeemaschinendüse 304 Edelstahl</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.8</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.8</span>
+        <span class="reviews">(46)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/edelstahl-dampflanze-fuer-kaffeemaschinen-kaffee-f-b0f944747x/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71fvPfqMHGL._AC_SL1500_.jpg" alt="Edelstahl Dampflanze Delonghi ECP3420" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ECP3420</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/edelstahl-dampflanze-fuer-kaffeemaschinen-kaffee-f-b0f944747x/">Edelstahl Dampflanze Delonghi ECP3420</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.5</span>
+        <span class="reviews">(24)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/dampfduese-fuer-kaffeemaschine-edelstahl-steam-mil-b0fpbcqcrt/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51ViJLu53-L._AC_SL1500_.jpg" alt="Dampfdüse Edelstahl 1 Loch für De&#39;Longhi" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">ECP3420</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/dampfduese-fuer-kaffeemaschine-edelstahl-steam-mil-b0fpbcqcrt/">Dampfdüse Edelstahl 1 Loch für De&#39;Longhi</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.7</span>
+        <span class="reviews">(67)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/dgsl-dampfduese-fuer-delonghi-dedica-ec685-edelsta-b0h19xp42q/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61YLbmIaTKL._AC_SL1500_.jpg" alt="DGSL Edelstahl-Dampfdüse EC685" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/dgsl-dampfduese-fuer-delonghi-dedica-ec685-edelsta-b0h19xp42q/">DGSL Edelstahl-Dampfdüse EC685</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.9</span>
+        <span class="reviews">(77)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/delonghi/naroote-kaffeeemaschine-dampfduese-aus-edelstahl-4-b0hglpwsqv/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51cHvfM96xL._AC_SL1500_.jpg" alt="Naroote Kaffeeemaschine Dampfdüse 4-Loch" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">DeLonghi</p>
+      <div class="card-meta">
+        <span class="card-brand">DeLonghi</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/delonghi/naroote-kaffeeemaschine-dampfduese-aus-edelstahl-4-b0hglpwsqv/">Naroote Kaffeeemaschine Dampfdüse 4-Loch</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/milchschlauch-fuer-bosch-siemens-12004554-kaffeevo-b0gklwdwq7/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51wPuOo6PkL._AC_SL1500_.jpg" alt="Milchschlauch 220mm für Bosch Siemens" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">12004554</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/milchschlauch-fuer-bosch-siemens-12004554-kaffeevo-b0gklwdwq7/">Milchschlauch 220mm für Bosch Siemens</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4</span>
+        <span class="reviews">(1863)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/milchschlauch-set-fuer-siemens-eq6-eq7-2-silikon-e-b0d8hp2j46/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61-+WANXH4L._AC_SL1500_.jpg" alt="Milchschlauch Set Siemens EQ6 EQ7" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/milchschlauch-set-fuer-siemens-eq6-eq7-2-silikon-e-b0d8hp2j46/">Milchschlauch Set Siemens EQ6 EQ7</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(1744)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/mellbree-milchschlauch-kompatibel-mit-siemens-eq6-b0cphqyjwb/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61-dOaKV72L._AC_SL1500_.jpg" alt="Mellbree Milchschlauch Kompatibel Siemens EQ6" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/mellbree-milchschlauch-kompatibel-mit-siemens-eq6-b0cphqyjwb/">Mellbree Milchschlauch Kompatibel Siemens EQ6</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(29529)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/milchschlauch-ansaugrohr-und-piebert-reinigungsbue-b013rcvr54/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51BdK1RaHML._AC_SL1500_.jpg" alt="Milchschlauch Ansaugrohr Piebert" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">12004554</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/milchschlauch-ansaugrohr-und-piebert-reinigungsbue-b013rcvr54/">Milchschlauch Ansaugrohr Piebert</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(493)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/milchschlauch-2er-set-fuer-siemens-eq6-plus-s700-e-b0dy7dxgxx/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51EOQkNiisL._AC_SL1500_.jpg" alt="Milchschlauch 2er Set Siemens EQ6 EQ7" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/milchschlauch-2er-set-fuer-siemens-eq6-plus-s700-e-b0dy7dxgxx/">Milchschlauch 2er Set Siemens EQ6 EQ7</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(1863)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/milchschlauch-edelstahles-milchrohr-und-reinigungs-b0bwn5yky5/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/5178nheDLML._AC_SL1500_.jpg" alt="Milchschlauch Set mit Reinigungsbürste" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/milchschlauch-edelstahles-milchrohr-und-reinigungs-b0bwn5yky5/">Milchschlauch Set mit Reinigungsbürste</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4</span>
+        <span class="reviews">(1863)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/2-edelstahles-milchrohr-1-silikonschlauch-kompatib-b0dxkngp3c/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61JOQTpnIDL._AC_SL1500_.jpg" alt="2 Edelstahl Milchrohre + Silikonschlauch" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/2-edelstahles-milchrohr-1-silikonschlauch-kompatib-b0dxkngp3c/">2 Edelstahl Milchrohre + Silikonschlauch</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.9</span>
+      <div class="card-rating">
+        <span class="stars">★ 4</span>
+        <span class="reviews">(227)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/milchschlauch-edelstahles-kaffeevollautomat-zubeho-b0d2nqz6cn/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51-1uWlMsML._AC_SL1500_.jpg" alt="Milchschlauch Edelstahl Siemens EQ6 Bosch" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/milchschlauch-edelstahles-kaffeevollautomat-zubeho-b0d2nqz6cn/">Milchschlauch Edelstahl Siemens EQ6 Bosch</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(2423)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/milchschlauch-3er-set-fuer-siemens-eq6-plus-s700-e-b0dy76vfq7/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61Igxgcc9eL._AC_SL1500_.jpg" alt="Milchschlauch 3er Set für Siemens EQ6 EQ7" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/milchschlauch-3er-set-fuer-siemens-eq6-plus-s700-e-b0dy76vfq7/">Milchschlauch 3er Set für Siemens EQ6 EQ7</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(140)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/milchschlauch-edelstahles-milchrohr-und-2-reinigun-b0d3lk26sv/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61IukiiodzL._AC_SL1500_.jpg" alt="Milchschlauch Edelstahl 304 + 2" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/milchschlauch-edelstahles-milchrohr-und-2-reinigun-b0d3lk26sv/">Milchschlauch Edelstahl 304 + 2</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(10141)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/kaffeemaschine-ersatzset-fuer-siemens-fuer-eq6-ink-b0fp13pm3s/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51rVR99nvdL._AC_SL1500_.jpg" alt="Siemens EQ6 Milchaufschäumer Schlauch Set Ersatz" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/kaffeemaschine-ersatzset-fuer-siemens-fuer-eq6-ink-b0fp13pm3s/">Siemens EQ6 Milchaufschäumer Schlauch Set Ersatz</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(180)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/vhbw-milchschlauch-set-kompatibel-mit-siemens-vero-b0fpx5vwhj/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61N1Ye3COxL._AC_SL1500_.jpg" alt="vhbw Milchschlauch-Set Siemens VeroAroma EQ.6" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/vhbw-milchschlauch-set-kompatibel-mit-siemens-vero-b0fpx5vwhj/">vhbw Milchschlauch-Set Siemens VeroAroma EQ.6</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(1863)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/lionizer-milchrohr-fuer-siemens-eq-6-plus-s300-te6-b0h4wgyn9b/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51witeDzzvL._AC_SL1500_.jpg" alt="LIONIZER Milchrohr" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">LIONIZER</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/lionizer-milchrohr-fuer-siemens-eq-6-plus-s300-te6-b0h4wgyn9b/">LIONIZER Milchrohr</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(57)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/4-pcs-milchschlauch-und-reinigungsbuerste-fuer-lan-b0h55kqs9x/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51gKBXHhMGL._AC_SL1500_.jpg" alt="Milchschlauch Siemens EQ6" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/4-pcs-milchschlauch-und-reinigungsbuerste-fuer-lan-b0h55kqs9x/">Milchschlauch Siemens EQ6</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(180)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/tz70001-milchbehaelter-adapter-fuer-siemens-eq700-b0gqytst48/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61Hon8eOAmL._AC_SL1500_.jpg" alt="Milchbehälter-Adapter TZ70001 für Siemens" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">TZ70001</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/tz70001-milchbehaelter-adapter-fuer-siemens-eq700-b0gqytst48/">Milchbehälter-Adapter TZ70001 für Siemens</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.5</span>
+        <span class="reviews">(61)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/2x-ersatzschlauch-fuer-milchbehaelter-passend-fuer-b0gx9z5n7q/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51kk24mI-+L._AC_SL1500_.jpg" alt="Siemens Milchschlauch 2er Pack EQ700 EQ900" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">SIEMENS</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/2x-ersatzschlauch-fuer-milchbehaelter-passend-fuer-b0gx9z5n7q/">Siemens Milchschlauch 2er Pack EQ700 EQ900</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.3</span>
+        <span class="reviews">(974)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/sskhe-siemens-kaffeevollautomat-zubehoer-milchschl-b0f5gssszs/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51F6ZukX5TL._AC_SL1500_.jpg" alt="Siemens EQ6 Milchschlauch Kompatibel Set" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/sskhe-siemens-kaffeevollautomat-zubehoer-milchschl-b0f5gssszs/">Siemens EQ6 Milchschlauch Kompatibel Set</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(180)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/siemens/2x-schlauch-milchbehaelter-passend-fuer-siemens-eq-b0h1dgl118/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61FUaBCyJWL._AC_SL1500_.jpg" alt="2x Schlauch Milchbehälter Siemens EQ.500" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Siemens</p>
+      <div class="card-meta">
+        <span class="card-brand">Siemens</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/siemens/2x-schlauch-milchbehaelter-passend-fuer-siemens-eq-b0h1dgl118/">2x Schlauch Milchbehälter Siemens EQ.500</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(204)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/jura-72168-profi-feinschaumduese-inklusive-milchsy-b019231ry8/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61D4LEds4pL._AC_SL1500_.jpg" alt="Jura 72168 Profi-Feinschaumdüse" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/jura-72168-profi-feinschaumduese-inklusive-milchsy-b019231ry8/">Jura 72168 Profi-Feinschaumdüse</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(1323)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/jura-original-profi-feinschaumduese-g2-1er-pack-24-b09yyx37rb/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51CdvfdjgKL._AC_SL1500_.jpg" alt="Jura Profi-Feinschaumdüse G2" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/jura-original-profi-feinschaumduese-g2-1er-pack-24-b09yyx37rb/">Jura Profi-Feinschaumdüse G2</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(2813)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/jura-72166-feinschaumduese-inklusive-milchsystem-r-b015p1o2os/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71hsdftLWYL._AC_SL1500_.jpg" alt="Jura 72166 Feinschaumdüse inkl" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/jura-72166-feinschaumduese-inklusive-milchsystem-r-b015p1o2os/">Jura 72166 Feinschaumdüse inkl</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(12812)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/jura-24251-profi-feinschaumduese-ea-b09yyyvsgf/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51qbnyjJJcL._AC_SL1500_.jpg" alt="Jura 24251 Profi-Feinschaumdüse G2" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/jura-24251-profi-feinschaumduese-ea-b09yyyvsgf/">Jura 24251 Profi-Feinschaumdüse G2</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(39)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/jura-24255-feinschaumduese-ea-schwarz-b09rpl4wxh/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51Gq3erUKrL._AC_SL1500_.jpg" alt="Jura 24255 Feinschaumdüse Original" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/jura-24255-feinschaumduese-ea-schwarz-b09rpl4wxh/">Jura 24255 Feinschaumdüse Original</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(186)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/quirl-einsatz-29371-kompatibel-mit-ersatzteil-fuer-b09nnvqnp1/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/611Z0jLajpL._AC_SL1500_.jpg" alt="Jura Milchsystem Ersatzteil 29371 Quirl Einsatz" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/quirl-einsatz-29371-kompatibel-mit-ersatzteil-fuer-b09nnvqnp1/">Jura Milchsystem Ersatzteil 29371 Quirl Einsatz</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.8</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.8</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/milchauslauf-passend-fuer-jura-feinschaumduese-722-b0fb3t3snc/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71mxL4MwwCL._AC_SL1500_.jpg" alt="Jura Milchauslauf 72228-10er Pack" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/milchauslauf-passend-fuer-jura-feinschaumduese-722-b0fb3t3snc/">Jura Milchauslauf 72228-10er Pack</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/dampfduese-milchaufschaeumer-kompatibel-mit-ersatz-b0f1fvvds6/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/413fCQPVtYL._AC_SL1500_.jpg" alt="Jura 72240 Dampfdüse Milchaufschäumer" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">GIGA10</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/dampfduese-milchaufschaeumer-kompatibel-mit-ersatz-b0f1fvvds6/">Jura 72240 Dampfdüse Milchaufschäumer</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 5</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(6)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/milchaufschaeumduese-kompatibel-mit-ersatzteil-fue-b0f8j4m4r9/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/41Gbo2sf1EL._AC_SL1500_.jpg" alt="Milchaufschäumdüse" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/milchaufschaeumduese-kompatibel-mit-ersatzteil-fue-b0f8j4m4r9/">Milchaufschäumdüse</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.1</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.1</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/jura-giga-aufschaeumhilfe-fuer-alle-giga-b01jpd11qo/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61JdTRKawvL._AC_SL1500_.jpg" alt="Jura Giga Aufschäumhilfe" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/jura-giga-aufschaeumhilfe-fuer-alle-giga-b01jpd11qo/">Jura Giga Aufschäumhilfe</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.8</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.8</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/zubehoer-set-mit-milchschlauch-passend-fuer-jura-p-b00l38nciu/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61S-eLMxDfL._AC_SL1500_.jpg" alt="Jura Milchschlauch Zubehör Set" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/zubehoer-set-mit-milchschlauch-passend-fuer-jura-p-b00l38nciu/">Jura Milchschlauch Zubehör Set</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(12812)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/milchaufschaeumer-ersatzteile-fuer-aeroccino-3-aer-b0g58rt9r5/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61p+FK47RSL._AC_SL1500_.jpg" alt="Aeroccino 3 4 Schneebesen Milchaufschäumer" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/milchaufschaeumer-ersatzteile-fuer-aeroccino-3-aer-b0g58rt9r5/">Aeroccino 3 4 Schneebesen Milchaufschäumer</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.4</span>
+        <span class="reviews">(54)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/nespresso-parts-ms-623523-milchaufschaeumer-b07sz8tv1l/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61j98amgNvL._AC_SL1500_.jpg" alt="Nespresso Parts MS-623523 Milchaufschäumer" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">623523</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/nespresso-parts-ms-623523-milchaufschaeumer-b07sz8tv1l/">Nespresso Parts MS-623523 Milchaufschäumer</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(434)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/dampfduese-kompatibel-mit-ersatzteil-fuer-jura-665-b0f1ft97qq/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/41-5BMLVJyL._AC_SL1500_.jpg" alt="Jura Dampfdüse 66590" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/dampfduese-kompatibel-mit-ersatzteil-fuer-jura-665-b0f1ft97qq/">Jura Dampfdüse 66590</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/milchaufschaeumer-ersatzteile-fuer-nespresso-aeroc-b0dz6rwflk/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71hFLIEpUFL._AC_SL1500_.jpg" alt="Jura Milchaufschäumer Schneebesen" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/milchaufschaeumer-ersatzteile-fuer-nespresso-aeroc-b0dz6rwflk/">Jura Milchaufschäumer Schneebesen</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.6</span>
+        <span class="reviews">(54)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/3-loch-milchschaumduese-aufschaeumduese-lebensmitt-b0h2gnpl7t/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51xYfCd7L7L._AC_SL1500_.jpg" alt="3-Loch Milchschaumdüse 1mm Edelstahl Ersatz" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/3-loch-milchschaumduese-aufschaeumduese-lebensmitt-b0h2gnpl7t/">3-Loch Milchschaumdüse 1mm Edelstahl Ersatz</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 5</span>
+        <span class="reviews">(1)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/elektrische-milchaufschaeumer-teile-ersatz-2-pack-b0h3xhgs3d/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51hMuAbWJFL._AC_SL1500_.jpg" alt="Jura MMF 809 Milchaufschäumer Belüfter 2er" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/elektrische-milchaufschaeumer-teile-ersatz-2-pack-b0h3xhgs3d/">Jura MMF 809 Milchaufschäumer Belüfter 2er</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.8</span>
+        <span class="reviews">(32)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/jura/ersatz-schneebesen-fuer-milchaufschaeumer-espresso-b0fxmgzl8k/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61hJpB4HWiL._AC_SL1500_.jpg" alt="Jura Milchaufschäumer Ersatz-Schneebesen" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Jura</p>
+      <div class="card-meta">
+        <span class="card-brand">Jura</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/jura/ersatz-schneebesen-fuer-milchaufschaeumer-espresso-b0fxmgzl8k/">Jura Milchaufschäumer Ersatz-Schneebesen</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.5</span>
+        <span class="reviews">(6)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61l2a1DJlgL._AC_SL1500_.jpg" alt="Saeco LatteGo Milchbehälter-Karaffe-Baugruppe" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/saeco-lattego-milchbehaelter-karaffe-baugruppe-fue-b07s7bmsd9/">Saeco LatteGo Milchbehälter-Karaffe-Baugruppe</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/512r-ijQNxL._AC_SL1500_.jpg" alt="Philips LatteGo Milchbehälter Version C" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/philips-milchbehaelter-version-c-zu-lattego-kaffee-b08x177k8d/">Philips LatteGo Milchbehälter Version C</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(1199)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71ZHY2aWUtL._AC_SL1500_.jpg" alt="VIOKS Milchkaraffe für Philips LatteGo 4200" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">421945016211</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/vioks-milchkaraffe-kaffeevollautomat-ersatz-fuer-p-b0ffhc9l2l/">VIOKS Milchkaraffe für Philips LatteGo 4200</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.8</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.8</span>
+        <span class="reviews">(13383)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61K+ncwmX5L._AC_SL1500_.jpg" alt="Philips LatteGo Ersatzkaraffe Premium Large" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">EP5447</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/philips-lattego-espressomaschine-ersatzkaraffe-pre-b0b4f2qh5y/">Philips LatteGo Ersatzkaraffe Premium Large</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/philips-lattego-ersatzkaraffe-fuer-ep2230-14-ep324-b08ksjm62h/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61RC6f4k7IL._AC_SL1500_.jpg" alt="Philips LatteGo Ersatzkaraffe EP2230/14" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">EP2230</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/philips-lattego-ersatzkaraffe-fuer-ep2230-14-ep324-b08ksjm62h/">Philips LatteGo Ersatzkaraffe EP2230/14</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/philips-saeco-421944029453-original-milchbehaelter-b07vfmhctb/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51x62TGKOlL._AC_SL1500_.jpg" alt="Philips Saeco 421944029453 Original" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">PHILIPS</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/philips-saeco-421944029453-original-milchbehaelter-b07vfmhctb/">Philips Saeco 421944029453 Original</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(36395)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/philips-cp0355-01-milchbehaelter-komplettset-fuer-b07qfscnqj/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/714RkvB+gDL._AC_SL1500_.jpg" alt="Philips CP0355/01 Milchbehälter-Komplettset" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">CP0355</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/philips-cp0355-01-milchbehaelter-komplettset-fuer-b07qfscnqj/">Philips CP0355/01 Milchbehälter-Komplettset</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/milchkaennchen-kompatibel-mit-philips-lattego-5000-b0hhnrbrn4/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51CZs71+P7L._AC_SL1500_.jpg" alt="Milchkännchen Ersatz Philips LatteGo 5000" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/milchkaennchen-kompatibel-mit-philips-lattego-5000-b0hhnrbrn4/">Milchkännchen Ersatz Philips LatteGo 5000</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-saec-b09wnbnrzl/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51iGArXRVWL._AC_SL1500_.jpg" alt="Milchbehälter kompatibel mit/Ersatzteil" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">CP0154</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-saec-b09wnbnrzl/">Milchbehälter kompatibel mit/Ersatzteil</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.9</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.9</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71RmPwqRw6L._AC_SL1500_.jpg" alt="Milchbehälter 421944075462 421944075461 Philips" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">421944075462</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kaffeevollautomat-421944075462-4219-b0gp2519qp/">Milchbehälter 421944075462 421944075461 Philips</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/philips-saeco-minuto-granbaristo-4000-incanto-neu-b0144lv9ku/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51x62TGKOlL._AC_SL1500_.jpg" alt="Philips Saeco Minuto GranBaristo 4000 Incanto" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/philips-saeco-minuto-granbaristo-4000-incanto-neu-b0144lv9ku/">Philips Saeco Minuto GranBaristo 4000 Incanto</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.4</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.4</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/konzept-wasserkaraffe-ohne-deckel-2er-set-glaskara-b0czxr94v3/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61eP-pWXLdL._AC_SL1500_.jpg" alt="Philips Konzept Wasserkaraffe 1L Set 2er" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">KONZEPT</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/konzept-wasserkaraffe-ohne-deckel-2er-set-glaskara-b0czxr94v3/">Philips Konzept Wasserkaraffe 1L Set 2er</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.6</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/lionizer-ersatz-wassertank-passend-fuer-philips-la-b0h329vwlw/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61IIkDCEJeL._AC_SL1500_.jpg" alt="LIONIZER Wassertank mit Griff Chrom" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">LIONIZER</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/lionizer-ersatz-wassertank-passend-fuer-philips-la-b0h329vwlw/">LIONIZER Wassertank mit Griff Chrom</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.3</span>
+        <span class="reviews">(148)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/lionizer-wassertank-passend-fuer-philips-lattego-e-b0h3fg9jgc/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/71dmGa83-qL._AC_SL1500_.jpg" alt="LIONIZER Wassertank" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">LIONIZER</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/lionizer-wassertank-passend-fuer-philips-lattego-e-b0h3fg9jgc/">LIONIZER Wassertank</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.7</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0ctty751g/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61iTn27SruL._AC_SL1500_.jpg" alt="Philips Saeco Milchbehälter 421941300151" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">421946509871</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0ctty751g/">Philips Saeco Milchbehälter 421941300151</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 3.9</span>
+      <div class="card-rating">
+        <span class="stars">★ 3.9</span>
+        <span class="reviews">(4)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0h4l7xmpl/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61bAmRKSw5L._AC_SL1500_.jpg" alt="Philips 642001018555 Milchbehälter EP8757/20" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">642001018555</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/milchbehaelter-kompatibel-mit-ersatzteil-fuer-phil-b0h4l7xmpl/">Philips 642001018555 Milchbehälter EP8757/20</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(1814)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/dl-pro-philips-milchbehaelter-dl-pro-reinigungsbue-b0c24lxsfm/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61ki1shZCFL._AC_SL1500_.jpg" alt="Philips DL-pro Milchbehälter Milchkaraffe" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">421944029081</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/dl-pro-philips-milchbehaelter-dl-pro-reinigungsbue-b0c24lxsfm/">Philips DL-pro Milchbehälter Milchkaraffe</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.3</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.3</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/bohnenbehaelter-aufsatz-passend-fuer-philips-kaffe-b0dpddbl6v/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/61lr5WveorL._AC_SL1500_.jpg" alt="Bohnenbehälter Aufsatz Philips EP800-5500 650g" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/bohnenbehaelter-aufsatz-passend-fuer-philips-kaffe-b0dpddbl6v/">Bohnenbehälter Aufsatz Philips EP800-5500 650g</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.2</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.2</span>
+        <span class="reviews">(36395)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/lppp-milchbehaelter-milchtank-700-ml-kompatibel-mi-b0bvrd7wql/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51rWvmgAAPL._AC_SL1500_.jpg" alt="LPPP Milchbehälter 700ml kompatibel Siemens" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">11032160</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/lppp-milchbehaelter-milchtank-700-ml-kompatibel-mi-b0bvrd7wql/">LPPP Milchbehälter 700ml kompatibel Siemens</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.5</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.5</span>
+        <span class="reviews">(145)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
 
   <article class="card">
     <a class="ph" href="https://kaffeereparatur.github.io/philips/kompatibel-mit-philips-lattego-3200-5000-milchbeha-b0gl75fxtw/">
+      <span class="badge-tag">Geprüft</span>
       <img src="https://m.media-amazon.com/images/I/51ZaOjfKT6L._AC_SL1500_.jpg" alt="Kompatibler Milchbehälter Glas Philips" width="400" height="400" loading="lazy" decoding="async">
     </a>
     <div class="body">
-      <p class="bd">Philips</p>
+      <div class="card-meta">
+        <span class="card-brand">Philips</span>
+        <span class="card-oem">OEM-MS-55132</span>
+      </div>
       <h3><a href="https://kaffeereparatur.github.io/philips/kompatibel-mit-philips-lattego-3200-5000-milchbeha-b0gl75fxtw/">Kompatibler Milchbehälter Glas Philips</a></h3>
-      <div class="chips">
-        <span class="chip">Milchsysteme &amp; Karaffen</span>
-        <span class="chip">★ 4.7</span>
+      <div class="card-rating">
+        <span class="stars">★ 4.6</span>
+        <span class="reviews">(1814)</span>
+        <span class="stock-status">● Auf Lager</span>
+      </div>
+      <div class="card-action">
+        <span class="card-cat">Milchsysteme &amp; Karaffen</span>
+        <span class="card-btn">Details ↗</span>
       </div>
     </div>
   </article>
