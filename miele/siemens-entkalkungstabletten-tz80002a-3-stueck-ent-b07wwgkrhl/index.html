@@ -85,6 +85,7 @@ p{margin:0 0 1.1em}
 #qres .b{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--oak-d);
   font-weight:700}
 #qres .none{padding:14px;color:var(--stone);font-size:.88rem}
+#qres[hidden]{display:none !important}
 
 /* Mobile App Bottom Dock - ONLY FOR MOBILE VERSION, NO DESKTOP */
 .mobile-app-dock{display:none !important}
@@ -714,27 +715,55 @@ footer a:hover{text-decoration:underline}
     display: none !important;
   }
 
-  /* Header: Clean Logo + Full-Width Search Input */
+  /* Header: Centered Logo + Search Bar Below (Zero Extra Gap) */
   .topbar {
     display: flex !important;
     flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 8px !important;
-    padding: 10px 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    padding: 12px 0 10px !important;
+    margin: 0 auto !important;
+    width: 100% !important;
   }
   .brand {
-    font-size: 1.25rem !important;
+    font-size: 1.3rem !important;
+    text-align: center !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    width: 100% !important;
   }
   .srch {
-    max-width: none !important;
+    position: relative !important;
+    flex: none !important; /* CRITICAL: Resets flex-basis so search box does not expand to 210px! */
     width: 100% !important;
+    max-width: 100% !important;
+    height: 42px !important;
     margin: 0 !important;
+    display: block !important;
   }
   .srch input {
-    padding: 9px 14px 9px 38px !important;
-    font-size: 0.88rem !important;
-    background: rgba(255,255,255,0.14) !important;
-    border: 1px solid rgba(255,255,255,0.25) !important;
+    width: 100% !important;
+    height: 42px !important;
+    padding: 0 14px 0 38px !important;
+    font-size: 0.9rem !important;
+    background: rgba(255,255,255,0.15) !important;
+    border: 1px solid rgba(255,255,255,0.28) !important;
+    border-radius: 99px !important;
+    box-sizing: border-box !important;
+    line-height: 42px !important;
+  }
+  .srch-icon {
+    position: absolute !important;
+    left: 13px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 16px !important;
+    height: 16px !important;
+    color: rgba(255,255,255,0.7) !important;
+    pointer-events: none !important;
+    z-index: 2 !important;
   }
 
   /* Grid: 100% Fitted Single Column Card Layout - ZERO Horizontal Overflow */
@@ -787,7 +816,7 @@ footer a:hover{text-decoration:underline}
     background: #ffffff !important;
     border-top: 1px solid var(--rule) !important;
     box-shadow: 0 -4px 18px rgba(0,0,0,0.07) !important;
-    z-index: 9999 !important;
+    z-index: 10001 !important;
     align-items: center !important;
     justify-content: space-around !important;
     padding-bottom: env(safe-area-inset-bottom, 0px) !important;
@@ -834,7 +863,7 @@ footer a:hover{text-decoration:underline}
     background: #ffffff !important;
     border-top: 1px solid var(--rule) !important;
     box-shadow: 0 -4px 20px rgba(0,0,0,0.12) !important;
-    z-index: 9999 !important;
+    z-index: 10002 !important;
     align-items: center !important;
     justify-content: space-between !important;
     padding: 8px 14px calc(8px + env(safe-area-inset-bottom, 0px)) !important;
@@ -884,7 +913,7 @@ footer a:hover{text-decoration:underline}
   /* Slide-down hidden state for scroll direction toggle */
   .mobile-app-dock.bar-hidden,
   .mobile-sticky-cta.bar-hidden {
-    transform: translateY(115%) !important;
+    transform: translateY(120%) !important;
     pointer-events: none !important;
     opacity: 0 !important;
   }
@@ -909,7 +938,7 @@ footer a:hover{text-decoration:underline}
 }
 
 </style>
-<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792820397961">
+<link rel="stylesheet" href="https://kaffeereparatur.github.io/style.css?v=1792821196853">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Siemens Entkalkungstabletten TZ80002A Original 3 Stück - Kalkreiniger EQ Surpresso","sku":"B07WWGKRHL","brand":{"@type":"Brand","name":"Miele"},"description":"Siemens Entkalkungstabletten TZ80002A Original 3 Stück von Miele: Entfernt Kalkablagerungen, schützt vor Korrosion. Erstausrüster-Qualität passend für Kaffeevollautomaten EQ, surpresso und Einbauvollautomaten. 4,8 Sterne bei 145 Bewertungen. Passgenaues Ersatzteil für perfekte Leistung und Langlebigkeit.","image":["https://m.media-amazon.com/images/I/71kaddNyUjL._AC_SL1500_.jpg"],"url":"https://kaffeereparatur.github.io/miele/siemens-entkalkungstabletten-tz80002a-3-stueck-ent-b07wwgkrhl/"}</script>
 </head>
 <body>
@@ -1412,7 +1441,7 @@ footer a:hover{text-decoration:underline}
 </footer>
 
 <!-- Mobile App Bottom Dock (Visible across full website on mobile) -->
-<nav class="mobile-app-dock" aria-label="Mobile Navigation">
+<nav class="mobile-app-dock bar-hidden" aria-label="Mobile Navigation">
   <a href="https://kaffeereparatur.github.io/" class="dock-item">
     <svg width="21" height="21" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1h-5v-6h-4v6H4a1 1 0 01-1-1V9.5z"/></svg>
     <span>Start</span>
@@ -1434,6 +1463,46 @@ footer a:hover{text-decoration:underline}
     <span>Suche</span>
   </a>
 </nav>
-<script src="https://kaffeereparatur.github.io/instant-search.js" defer></script>
+<script>
+(function(){
+  var cta = document.querySelector('.mobile-sticky-cta');
+  var dock = document.querySelector('.mobile-app-dock');
+  if (!cta || !dock) return;
+  var lastY = window.pageYOffset || document.documentElement.scrollTop || 0;
+  var ticking = false;
+  function updateBars(){
+    if (window.innerWidth > 640) return;
+    var currY = window.pageYOffset || document.documentElement.scrollTop || 0;
+    if (currY < 0) currY = 0;
+    var diff = currY - lastY;
+    if (Math.abs(diff) >= 4) {
+      if (diff > 0) {
+        // Scrolling DOWN -> SHOW sticky CTA button, HIDE bottom dock
+        cta.classList.remove('bar-hidden');
+        dock.classList.add('bar-hidden');
+      } else {
+        // Scrolling UP -> SHOW bottom dock, HIDE sticky CTA button
+        dock.classList.remove('bar-hidden');
+        cta.classList.add('bar-hidden');
+      }
+      lastY = currY;
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function(){
+    if (!ticking) {
+      window.requestAnimationFrame(updateBars);
+      ticking = true;
+    }
+  }, { passive: true });
+  window.addEventListener('touchmove', function(){
+    if (!ticking) {
+      window.requestAnimationFrame(updateBars);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+</script>
+<script src="https://kaffeereparatur.github.io/instant-search.js?v=1792821196853" defer></script>
 </body>
 </html>
