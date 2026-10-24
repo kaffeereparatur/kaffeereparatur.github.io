@@ -1,7 +1,10 @@
 
   (function() {
-    // 1. Smart Auto-Hiding / Showing Sticky Navigation Header
     var header = document.querySelector('.top');
+    var qInput = document.getElementById('q');
+    var qres = document.getElementById('qres');
+
+    // 1. Smart Auto-Hiding / Showing Sticky Navigation Header
     if (header) {
       var lastY = window.pageYOffset || document.documentElement.scrollTop;
       var ticking = false;
@@ -9,6 +12,13 @@
       window.addEventListener('scroll', function() {
         if (!ticking) {
           window.requestAnimationFrame(function() {
+            // Keep header visible if search input is focused or search results are open
+            if (document.activeElement === qInput || (qres && !qres.hidden && qres.style.display !== 'none')) {
+              header.classList.remove('nav-hidden');
+              ticking = false;
+              return;
+            }
+
             var currentY = window.pageYOffset || document.documentElement.scrollTop;
             if (currentY > 60) {
               header.classList.add('nav-scrolled');
@@ -32,57 +42,122 @@
     }
 
     // 2. Instant Search Autocomplete
-    var indexData = [];
-    var qInput = document.getElementById('q');
-    var qres = document.getElementById('qres');
-
     if (!qInput || !qres) return;
 
-    fetch('https://kaffeereparatur.github.io/search-index.json')
-      .then(function(r) { return r.json(); })
-      .then(function(d) { indexData = d; })
-      .catch(function(e) { console.error('Search load error:', e); });
+    var indexData = [];
+    var isFetching = true;
+
+    function hideResults() {
+      qres.hidden = true;
+      qres.setAttribute('hidden', '');
+      qres.style.display = 'none';
+    }
+
+    function showResults() {
+      qres.hidden = false;
+      qres.removeAttribute('hidden');
+      qres.style.display = 'block';
+    }
+
+    function norm(s) {
+      return (s || '').toLowerCase()
+        .replace(/ä/g, 'ae')
+        .replace(/ö/g, 'oe')
+        .replace(/ü/g, 'ue')
+        .replace(/ß/g, 'ss');
+    }
 
     function performSearch() {
-      var q = qInput.value.trim().toLowerCase();
+      var q = qInput.value.trim();
       if (!q) {
-        qres.hidden = true;
+        hideResults();
         qres.innerHTML = '';
         return;
       }
 
-      var terms = q.split(/\s+/);
+      if (isFetching && (!indexData || indexData.length === 0)) {
+        qres.innerHTML = '<div class="none">Katalog wird geladen…</div>';
+        showResults();
+        return;
+      }
+
+      var qNorm = norm(q);
+      var terms = qNorm.split(/\s+/).filter(Boolean);
+
       var matches = indexData.filter(function(item) {
-        var hay = (item.title + ' ' + (item.h1 || '') + ' ' + (item.category || '') + ' ' + (item.asin || '')).toLowerCase();
+        var hay = norm(item.title + ' ' + (item.h1 || '') + ' ' + (item.category || '') + ' ' + (item.brand || '') + ' ' + (item.asin || ''));
         return terms.every(function(t) { return hay.indexOf(t) !== -1; });
-      }).slice(0, 8);
+      }).slice(0, 10);
 
       if (matches.length === 0) {
-        qres.innerHTML = '<div class="none">Keine passenden Ersatzteile gefunden.</div>';
-        qres.hidden = false;
+        qres.innerHTML = '<div class="none">Keine passenden Ersatzteile für „' + q.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '“ gefunden.</div>';
+        showResults();
         return;
       }
 
       qres.innerHTML = matches.map(function(m) {
         return '<a href="' + m.url + '">' +
-          '<img src="' + m.thumb + '" alt="' + m.title + '">' +
-          '<div style="overflow:hidden;">' +
-            '<div class="t">' + m.title + '</div>' +
-            '<div class="b">' + m.category + ' • ASIN: ' + m.asin + '</div>' +
+          '<img src="' + m.thumb + '" alt="' + (m.title || '').replace(/"/g, '&quot;') + '" width="44" height="44" loading="lazy">' +
+          '<div style="overflow:hidden; flex:1;">' +
+            '<div class="t">' + (m.title || '') + '</div>' +
+            '<div class="b">' + (m.brand ? m.brand + ' • ' : '') + (m.category || '') + ' • ASIN: ' + m.asin + '</div>' +
           '</div>' +
         '</a>';
       }).join('');
-      qres.hidden = false;
+      showResults();
     }
 
+    // Load search index with fallback
+    var indexUrl = '/search-index.json';
+    try {
+      if (window.location.protocol === 'file:') indexUrl = 'https://kaffeereparatur.github.io/search-index.json';
+    } catch(e) {}
+
+    fetch(indexUrl)
+      .catch(function() { return fetch('https://kaffeereparatur.github.io/search-index.json'); })
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        indexData = d;
+        isFetching = false;
+        if (qInput.value.trim()) {
+          performSearch();
+        }
+      })
+      .catch(function(e) {
+        isFetching = false;
+        console.error('Search load error:', e);
+      });
+
     qInput.addEventListener('input', performSearch);
+    qInput.addEventListener('search', performSearch);
     qInput.addEventListener('focus', function() {
-      if (qInput.value.trim()) qres.hidden = false;
+      if (qInput.value.trim()) {
+        performSearch();
+      }
     });
 
     document.addEventListener('click', function(e) {
       if (!qInput.contains(e.target) && !qres.contains(e.target)) {
-        qres.hidden = true;
+        hideResults();
+      }
+    });
+
+    document.addEventListener('touchstart', function(e) {
+      if (!qInput.contains(e.target) && !qres.contains(e.target)) {
+        hideResults();
+      }
+    }, { passive: true });
+
+    qInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        hideResults();
+        qInput.blur();
+      } else if (e.key === 'Enter') {
+        var first = qres.querySelector('a');
+        if (first && !qres.hidden && qres.style.display !== 'none') {
+          e.preventDefault();
+          window.location.href = first.getAttribute('href');
+        }
       }
     });
 
