@@ -7,7 +7,7 @@
     // 1. Smart Auto-Hiding / Showing Sticky Navigation Header (STRICTLY DESKTOP ONLY > 640px)
     if (header) {
       var lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
-      var scrollThreshold = 8;
+      var scrollTolerance = 6;
       var isHeaderTicking = false;
 
       window.addEventListener('scroll', function() {
@@ -33,7 +33,7 @@
             if (currentScrollY < 0) currentScrollY = 0;
 
             // Header elevation shadow
-            if (currentScrollY > 20) {
+            if (currentScrollY > 15) {
               header.classList.add('nav-scrolled');
             } else {
               header.classList.remove('nav-scrolled');
@@ -41,12 +41,12 @@
 
             var diff = currentScrollY - lastScrollY;
 
-            // When at top of page (<= 80px), always show header
-            if (currentScrollY <= 80) {
+            // When near top of page (<= 70px), always show header
+            if (currentScrollY <= 70) {
               header.classList.remove('nav-hidden');
               document.body.classList.remove('header-hidden');
               lastScrollY = currentScrollY;
-            } else if (Math.abs(diff) >= scrollThreshold) {
+            } else if (Math.abs(diff) >= scrollTolerance) {
               if (diff > 0) {
                 // Scrolling DOWN -> HIDE menu
                 header.classList.add('nav-hidden');
